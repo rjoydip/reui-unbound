@@ -1,0 +1,433 @@
+import { useEffect, useMemo, useRef, useState } from "react"
+import { flushSync } from "react-dom"
+import { tokenize } from "kirari"
+import { renderDecorated } from "kirari/decorations"
+import { tsx, typescript } from "kirari/languages"
+import "kirari/themes/github-light.css"
+import { toast } from "sonner"
+
+import { Sheet, SheetContent } from "@/components/ui/sheet"
+import { Toaster } from "@/components/ui/sonner"
+import { TooltipProvider } from "@/components/ui/tooltip"
+import { DemoSidebar, type SidebarView } from "@/components/demo-sidebar"
+import {
+  DemoHeader,
+  type Device,
+  type Theme,
+  type View,
+} from "@/components/demo-toolbar"
+import { CustomizePanel } from "@/components/customize-panel"
+import {
+  DEFAULT_OPTIONS,
+  type CustomizeOptions,
+} from "@/components/customize-options"
+import { BLOCKS, installCommand, registryName } from "@/blocks/registry"
+import type { BlockFile, PackageManager } from "@/blocks/registry"
+import { cn } from "cn"
+
+const FAVORITES_KEY = "reui-demo-favorites"
+const THEME_KEY = "reui-demo-theme"
+
+const BASE_COLORS = ["Neutral", "Gray", "Slate", "Stone", "Zinc"]
+const THEME_COLORS = ["Neutral", "Blue", "Green", "Orange", "Rose"]
+const RADII = ["Default", "Small", "Large"]
+const ACCENTS = ["Subtle", "Bold"]
+
+const PRIMARY_TONES: Record<string, { light: string; dark: string }> = {
+  Neutral: { light: "oklch(0.205 0 0)", dark: "oklch(0.922 0 0)" },
+  Gray: {
+    light: "oklch(0.21 0.034 264.665)",
+    dark: "oklch(0.928 0.006 264.531)",
+  },
+  Slate: {
+    light: "oklch(0.208 0.042 265.755)",
+    dark: "oklch(0.929 0.013 255.508)",
+  },
+  Stone: {
+    light: "oklch(0.216 0.006 56.043)",
+    dark: "oklch(0.923 0.003 48.717)",
+  },
+  Zinc: {
+    light: "oklch(0.21 0.006 285.885)",
+    dark: "oklch(0.92 0.004 286.32)",
+  },
+}
+
+function readFavorites() {
+  try {
+    const raw = localStorage.getItem(FAVORITES_KEY)
+    return raw ? (JSON.parse(raw) as string[]) : []
+  } catch {
+    return []
+  }
+}
+
+function readTheme(): Theme {
+  const stored = localStorage.getItem(THEME_KEY)
+  if (stored === "light" || stored === "dark") return stored
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light"
+}
+
+function readBlockId() {
+  const hash = window.location.hash.replace("#", "")
+  return BLOCKS.find((block) => block.id === hash)?.id ?? BLOCKS[0].id
+}
+
+function CodePanel({ file }: { file: BlockFile }) {
+  const html = useMemo(
+    () =>
+      renderDecorated(
+        tokenize(file.code, file.lang === "tsx" ? tsx : typescript),
+        { lines: true },
+      ),
+    [file],
+  )
+
+  return (
+    <pre
+      className="kirari kirari-lines max-h-[calc(100svh-9rem)] overflow-auto p-4 text-xs leading-5"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  )
+}
+
+export default function App() {
+  const [blockId, setBlockId] = useState(readBlockId)
+  const [view, setView] = useState<View>("preview")
+  const [theme, setTheme] = useState<Theme>(readTheme)
+  const [device, setDevice] = useState<Device>("desktop")
+  const [favorites, setFavorites] = useState<string[]>(readFavorites)
+  const [refreshKey, setRefreshKey] = useState(0)
+  const [sidebarView, setSidebarView] = useState<SidebarView>("all")
+  const [expanded, setExpanded] = useState<string[]>(() => {
+    const category = BLOCKS.find(
+      (entry) => entry.id === readBlockId(),
+    )?.category
+    return category ? [category] : ["Base"]
+  })
+  const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [customizeOpen, setCustomizeOpen] = useState(false)
+  const [options, setOptions] = useState<CustomizeOptions>(DEFAULT_OPTIONS)
+  const [packageManager, setPackageManager] = useState<PackageManager>("npm")
+  const [activeFile, setActiveFile] = useState<string | null>(null)
+
+  const previewRef = useRef<HTMLDivElement>(null)
+
+  const block = BLOCKS.find((entry) => entry.id === blockId) ?? BLOCKS[0]
+  const activeFileEntry =
+    block.files.find((entry) => entry.name === activeFile) ?? block.files[0]
+  const favorite = favorites.includes(block.id)
+
+  const install = installCommand(block.id, packageManager)
+  const aiPrompt = [
+    `Build the "${block.name}" (${block.id}) block from reui-unbound in my app.`,
+    "",
+    `Registry: ${registryName(block.id)}`,
+    `Docs:`,
+    `Install (${packageManager}): ${install}`,
+    "",
+    "Registry dependencies:",
+    ...block.dependencies.registry.map((entry) => {
+      if (entry.startsWith("@reui/")) {
+        return `- @/components/reui-unbound/${entry.slice("@reui/".length)}`
+      }
+      if (entry.startsWith("@")) return `- ${entry}`
+      return `- @/components/ui/${entry}`
+    }),
+    "",
+    "npm packages:",
+    ...block.dependencies.packages.map((entry) => `- ${entry}`),
+    "",
+    "Keep the layout, design tokens and component variants from the docs, and adapt only the demo data.",
+  ].join("\n")
+
+  function setThemeAnimated(next: Theme, event?: React.MouseEvent) {
+    if (next === theme) return
+
+    const apply = () => flushSync(() => setTheme(next))
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches
+    const transitionDocument = document as Document & {
+      startViewTransition?: (callback: () => void) => {
+        ready: Promise<void>
+        finished: Promise<void>
+      }
+    }
+
+    if (!transitionDocument.startViewTransition || reduceMotion) {
+      apply()
+      return
+    }
+
+    const x = event?.clientX ?? window.innerWidth / 2
+    const y = event?.clientY ?? window.innerHeight / 2
+    const radius = Math.hypot(
+      Math.max(x, window.innerWidth - x),
+      Math.max(y, window.innerHeight - y),
+    )
+    const disableTransitions = document.createElement("style")
+    disableTransitions.textContent =
+      "*,*::before,*::after{transition:none!important}"
+    document.head.append(disableTransitions)
+
+    const transition = transitionDocument.startViewTransition(() => apply())
+    transition.finished.finally(() => disableTransitions.remove())
+
+    transition.ready.then(() => {
+      const frames = [
+        `circle(0px at ${x}px ${y}px)`,
+        `circle(${radius}px at ${x}px ${y}px)`,
+      ]
+      document.documentElement.animate(
+        { clipPath: next === "dark" ? [...frames].reverse() : frames },
+        {
+          duration: 400,
+          easing: "ease-out",
+          fill: "forwards",
+          pseudoElement:
+            next === "dark"
+              ? "::view-transition-old(root)"
+              : "::view-transition-new(root)",
+        },
+      )
+    })
+  }
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark")
+    document.documentElement.style.colorScheme = theme
+    localStorage.setItem(THEME_KEY, theme)
+  }, [theme])
+
+  useEffect(() => {
+    localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites))
+  }, [favorites])
+
+  useEffect(() => {
+    if (!customizeOpen) return
+
+    function onKeyDown(event: KeyboardEvent) {
+      const target = event.target as HTMLElement | null
+      if (target && /^(INPUT|TEXTAREA|SELECT)$/.test(target.tagName)) return
+      if (event.key.toLowerCase() === "r") {
+        event.preventDefault()
+        shuffleOptions()
+      }
+    }
+
+    window.addEventListener("keydown", onKeyDown)
+    return () => window.removeEventListener("keydown", onKeyDown)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [customizeOpen])
+
+  useEffect(() => {
+    const root = document.documentElement
+    const radius =
+      options.radius === "Small"
+        ? "0.375rem"
+        : options.radius === "Large"
+          ? "0.875rem"
+          : "0.625rem"
+    const tone = PRIMARY_TONES[options.baseColor] ?? PRIMARY_TONES.Neutral
+    root.style.setProperty("--radius", radius)
+    root.style.setProperty(
+      "--primary",
+      theme === "dark" ? tone.dark : tone.light,
+    )
+  }, [options.radius, options.baseColor, theme])
+
+  function selectBlock(id: string) {
+    const next = BLOCKS.find((entry) => entry.id === id)
+    setBlockId(id)
+    setActiveFile(null)
+    if (next) {
+      setExpanded((current) =>
+        current.includes(next.category) ? current : [...current, next.category],
+      )
+    }
+    window.history.replaceState(null, "", `#${id}`)
+    setSidebarOpen(false)
+    previewRef.current?.scrollIntoView({ block: "start" })
+  }
+
+  function toggleCategory(name: string) {
+    setExpanded((current) =>
+      current.includes(name)
+        ? current.filter((entry) => entry !== name)
+        : [...current, name],
+    )
+  }
+
+  function toggleFavorite() {
+    setFavorites((current) =>
+      current.includes(block.id)
+        ? current.filter((id) => id !== block.id)
+        : [...current, block.id],
+    )
+  }
+
+  function shuffleOptions() {
+    const pick = <T,>(list: T[]) =>
+      list[Math.floor(Math.random() * list.length)]
+    setOptions((current) => ({
+      ...current,
+      baseColor: pick(BASE_COLORS),
+      themeName: pick(THEME_COLORS),
+      chartColor: pick(THEME_COLORS),
+      radius: pick(RADII),
+      menuAccent: pick(ACCENTS),
+      preset: Math.random().toString(36).slice(2, 4),
+    }))
+    toast("Preset shuffled")
+  }
+
+  function resetOptions() {
+    setOptions(DEFAULT_OPTIONS)
+    toast("Customize reset")
+  }
+
+  const deviceWidth =
+    device === "mobile" ? 420 : device === "tablet" ? 900 : undefined
+
+  // Standalone block preview: /?preview=<id> renders the block without the demo shell.
+  const standaloneId = new URLSearchParams(window.location.search).get("preview")
+  const standaloneBlock = standaloneId
+    ? BLOCKS.find((entry) => entry.id === standaloneId)
+    : undefined
+
+  if (standaloneBlock) {
+    return (
+      <TooltipProvider delayDuration={200}>
+        <div className="bg-background text-foreground min-h-svh">
+          <standaloneBlock.Component />
+          <Toaster position="bottom-right" theme={theme} />
+        </div>
+      </TooltipProvider>
+    )
+  }
+
+  const sidebar = (
+    <DemoSidebar
+      current={block}
+      view={sidebarView}
+      onViewChange={setSidebarView}
+      favorites={favorites}
+      onSelect={(entry) => selectBlock(entry.id)}
+      expanded={expanded}
+      onToggleCategory={toggleCategory}
+      theme={theme}
+      onToggleTheme={(event) =>
+        setThemeAnimated(theme === "dark" ? "light" : "dark", event)
+      }
+    />
+  )
+
+  return (
+    <TooltipProvider delayDuration={200}>
+      <div className="bg-background text-foreground flex min-h-svh">
+        <aside className="bg-sidebar text-sidebar-foreground sticky top-0 hidden h-svh w-72 shrink-0 border-r lg:block">
+          {sidebar}
+        </aside>
+
+        <div className="flex min-w-0 flex-1 flex-col">
+          <DemoHeader
+            block={block}
+            view={view}
+            onViewChange={setView}
+            theme={theme}
+            onToggleTheme={(event) =>
+              setThemeAnimated(theme === "dark" ? "light" : "dark", event)
+            }
+            onRefresh={() => setRefreshKey((key) => key + 1)}
+            onFullscreen={() => previewRef.current?.requestFullscreen()}
+            onOpenSidebar={() => setSidebarOpen(true)}
+            favorite={favorite}
+            onToggleFavorite={toggleFavorite}
+            device={device}
+            onDeviceChange={setDevice}
+            onCustomize={() => setCustomizeOpen(true)}
+            packageManager={packageManager}
+            onPackageManagerChange={setPackageManager}
+            aiPrompt={aiPrompt}
+          />
+
+          {view === "preview" ? (
+            <main
+              ref={previewRef}
+              className="bg-muted/30 flex flex-1 justify-center overflow-x-hidden"
+            >
+              <div
+                className={cn(
+                  "bg-background w-full",
+                  device !== "desktop" && "overflow-x-auto border-x shadow-sm",
+                )}
+                style={{ maxWidth: deviceWidth }}
+              >
+                <div
+                  key={refreshKey}
+                  className="[&>div]:min-h-[calc(100svh-3.5rem)]"
+                >
+                  <block.Component />
+                </div>
+              </div>
+            </main>
+          ) : (
+            <main className="flex-1">
+              <div className="mx-auto w-full max-w-6xl p-4 sm:p-6">
+                <div className="overflow-hidden rounded-xl border">
+                  <div className="bg-muted/40 flex flex-wrap items-center gap-1 border-b px-2 py-1.5">
+                    {block.files.map((entry) => (
+                      <button
+                        key={entry.name}
+                        type="button"
+                        onClick={() => setActiveFile(entry.name)}
+                        className={cn(
+                          "rounded-md px-2.5 py-1 font-mono text-xs transition-colors",
+                          entry.name === activeFileEntry.name
+                            ? "bg-background text-foreground border border-border"
+                            : "text-muted-foreground hover:text-foreground",
+                        )}
+                      >
+                        {entry.name}
+                      </button>
+                    ))}
+                    <span className="text-muted-foreground ml-auto pr-1 text-xs tabular-nums">
+                      {activeFileEntry.code.split("\n").length} lines
+                    </span>
+                  </div>
+
+                  <CodePanel file={activeFileEntry} />
+                </div>
+              </div>
+            </main>
+          )}
+        </div>
+      </div>
+
+      <Sheet open={sidebarOpen} onOpenChange={setSidebarOpen}>
+        <SheetContent side="left" className="w-72 p-0 pt-8">
+          {sidebar}
+        </SheetContent>
+      </Sheet>
+
+      <CustomizePanel
+        block={block}
+        open={customizeOpen}
+        onOpenChange={setCustomizeOpen}
+        options={options}
+        onChange={setOptions}
+        theme={theme}
+        onThemeChange={(next) => setThemeAnimated(next)}
+        packageManager={packageManager}
+        onPackageManagerChange={setPackageManager}
+        onShuffle={shuffleOptions}
+        onReset={resetOptions}
+      />
+
+      <Toaster position="bottom-right" theme={theme} />
+    </TooltipProvider>
+  )
+}

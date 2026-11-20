@@ -1,0 +1,148 @@
+export interface AccessMember {
+  id: string
+  name: string
+  email: string
+  role: string
+  presence: string
+  online: boolean
+  settings: boolean
+  billing: boolean
+  integrations: boolean
+  users: boolean
+  permissions: boolean
+}
+
+export const ACCESS_MEMBERS: AccessMember[] = [
+  {
+    id: "mem-1",
+    name: "Leila Cole",
+    email: "leila@example.com",
+    role: "Workspace owner",
+    presence: "Online",
+    online: true,
+    settings: true,
+    billing: true,
+    integrations: true,
+    users: true,
+    permissions: true,
+  },
+  {
+    id: "mem-2",
+    name: "Aiden Brooks",
+    email: "aiden@example.com",
+    role: "Platform admin",
+    presence: "Last active 3m ago",
+    online: false,
+    settings: true,
+    billing: true,
+    integrations: true,
+    users: false,
+    permissions: false,
+  },
+  {
+    id: "mem-3",
+    name: "Jonah Voss",
+    email: "jonah@example.com",
+    role: "Integrations lead",
+    presence: "Online",
+    online: true,
+    settings: true,
+    billing: false,
+    integrations: true,
+    users: false,
+    permissions: false,
+  },
+  {
+    id: "mem-4",
+    name: "Kira Santos",
+    email: "kira@example.com",
+    role: "Growth ops lead",
+    presence: "Online",
+    online: true,
+    settings: true,
+    billing: false,
+    integrations: false,
+    users: true,
+    permissions: false,
+  },
+  {
+    id: "mem-5",
+    name: "Kris Owens",
+    email: "kris@example.com",
+    role: "Support lead",
+    presence: "Last active 2d ago",
+    online: false,
+    settings: true,
+    billing: false,
+    integrations: false,
+    users: false,
+    permissions: false,
+  },
+  {
+    id: "mem-6",
+    name: "Mara Lind",
+    email: "mara@example.com",
+    role: "Finance lead",
+    presence: "Online",
+    online: true,
+    settings: true,
+    billing: true,
+    integrations: false,
+    users: true,
+    permissions: false,
+  },
+  {
+    id: "mem-7",
+    name: "Noah Park",
+    email: "noah@example.com",
+    role: "Support agent",
+    presence: "Last active 1h ago",
+    online: false,
+    settings: true,
+    billing: false,
+    integrations: false,
+    users: false,
+    permissions: false,
+  },
+  {
+    id: "mem-8",
+    name: "Priya Shah",
+    email: "priya@example.com",
+    role: "Product manager",
+    presence: "Online",
+    online: true,
+    settings: true,
+    billing: false,
+    integrations: true,
+    users: false,
+    permissions: false,
+  },
+  {
+    id: "mem-9",
+    name: "Ravi Menon",
+    email: "ravi@example.com",
+    role: "Engineer",
+    presence: "Last active 4h ago",
+    online: false,
+    settings: true,
+    billing: false,
+    integrations: false,
+    users: false,
+    permissions: false,
+  },
+  {
+    id: "mem-10",
+    name: "Sofia Marin",
+    email: "sofia@example.com",
+    role: "Designer",
+    presence: "Online",
+    online: true,
+    settings: true,
+    billing: false,
+    integrations: false,
+    users: false,
+    permissions: false,
+  },
+]
+
+export const ACCESS_ROLES = ["All roles", "Workspace owner", "Platform admin", "Integrations lead", "Growth ops lead", "Support lead"]
