@@ -27,9 +27,17 @@ jobs:
       - name: Build
         run: bun run build
 
+      - name: Ensure Pages project exists
+        # `pages deploy` does not create projects; first run on a fresh account
+        # fails with "Project not found" until this runs once.
+        run: bunx --bun wrangler@3.90.0 pages project create reui-unbound --production-branch=main || echo "::warning::Pages project create skipped — it already exists, or the token lacks Account → Cloudflare Pages → Edit"
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=reui-unbound
+          command: pages deploy dist --project-name=reui-unbound --commit-dirty=true
