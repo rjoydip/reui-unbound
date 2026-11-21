@@ -26,3 +26,8 @@ dist-ssr
 
 # Generated shadcn registry payloads
 public/r
+
+# Playwright
+test-results
+playwright-report
+blob-report
