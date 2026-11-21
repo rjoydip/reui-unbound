@@ -1,0 +1,866 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "alert",
+      "files": [
+        {
+          "path": "alert.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/alert.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "autocomplete",
+      "type": "registry:ui",
+      "title": "autocomplete",
+      "files": [
+        {
+          "path": "autocomplete.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/autocomplete.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "badge",
+      "files": [
+        {
+          "path": "badge.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/badge.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "cascader",
+      "type": "registry:ui",
+      "title": "cascader",
+      "files": [
+        {
+          "path": "cascader/cascader-async.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-async.tsx"
+        },
+        {
+          "path": "cascader/cascader-columns.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-columns.tsx"
+        },
+        {
+          "path": "cascader/cascader-context.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-context.tsx"
+        },
+        {
+          "path": "cascader/cascader-footer.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-footer.tsx"
+        },
+        {
+          "path": "cascader/cascader-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-i18n.tsx"
+        },
+        {
+          "path": "cascader/cascader-item.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-item.tsx"
+        },
+        {
+          "path": "cascader/cascader-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-lib.tsx"
+        },
+        {
+          "path": "cascader/cascader-nav.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-nav.tsx"
+        },
+        {
+          "path": "cascader/cascader-types.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-types.tsx"
+        },
+        {
+          "path": "cascader/cascader-virtual.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/cascader/cascader-virtual.tsx"
+        },
+        {
+          "path": "cascader/cascader.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/cascader/cascader.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "@tanstack/react-virtual",
+        "cn",
+        "lucide-react",
+        "not fetched yet",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "scroll-area",
+        "spinner"
+      ]
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "code-block",
+      "files": [
+        {
+          "path": "code-block/code-block-highlight.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/code-block/code-block-highlight.tsx"
+        },
+        {
+          "path": "code-block/code-block.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/code-block/code-block.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "shiki"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "color-picker",
+      "files": [
+        {
+          "path": "color-picker.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/color-picker.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "separator"
+      ]
+    },
+    {
+      "name": "data-grid",
+      "type": "registry:ui",
+      "title": "data-grid",
+      "files": [
+        {
+          "path": "data-grid/data-grid-cell-selection.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-cell-selection.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-column-filter.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-column-filter.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-column-header.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-column-header.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-column-visibility.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-column-visibility.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-i18n.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-pagination.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-pagination.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-scroll-area.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-scroll-area.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-table-dnd-rows.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-table-dnd-rows.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-table-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-table-dnd.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-table-virtual.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-table-virtual.tsx"
+        },
+        {
+          "path": "data-grid/data-grid-table.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/data-grid/data-grid-table.tsx"
+        },
+        {
+          "path": "data-grid/data-grid.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/data-grid/data-grid.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "@tanstack/react-virtual",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "select",
+        "separator",
+        "skeleton",
+        "spinner"
+      ]
+    },
+    {
+      "name": "date-selector",
+      "type": "registry:ui",
+      "title": "date-selector",
+      "files": [
+        {
+          "path": "date-selector.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/date-selector.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "date-fns",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "@reui-unbound/use-mobile",
+        "button",
+        "calendar",
+        "input",
+        "scroll-area",
+        "tabs"
+      ]
+    },
+    {
+      "name": "emoji-picker",
+      "type": "registry:ui",
+      "title": "emoji-picker",
+      "files": [
+        {
+          "path": "emoji-picker.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/emoji-picker.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "dropdown-menu",
+        "empty",
+        "input-group",
+        "popover",
+        "skeleton",
+        "tabs"
+      ]
+    },
+    {
+      "name": "event-calendar",
+      "type": "registry:ui",
+      "title": "event-calendar",
+      "files": [
+        {
+          "path": "event-calendar/event-calendar-agenda-view.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-agenda-view.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-content.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-content.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-dnd.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-event.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-event.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-i18n.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-lib.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-month-view.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-month-view.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-nav.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-nav.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-recurrence.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-recurrence.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-resource-view.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-resource-view.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-time-grid.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-time-grid.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar-types.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/event-calendar/event-calendar-types.tsx"
+        },
+        {
+          "path": "event-calendar/event-calendar.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/event-calendar/event-calendar.tsx"
+        }
+      ],
+      "dependencies": [
+        "@date-fns/tz",
+        "cn",
+        "date-fns",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "@reui-unbound/icon-stack",
+        "button",
+        "calendar",
+        "dropdown-menu",
+        "popover",
+        "scroll-area",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "file-type",
+      "type": "registry:ui",
+      "title": "file-type",
+      "files": [
+        {
+          "path": "file-type.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/file-type.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "filters",
+      "type": "registry:ui",
+      "title": "filters",
+      "files": [
+        {
+          "path": "filters/filters-advanced.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-advanced.tsx"
+        },
+        {
+          "path": "filters/filters-builder.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-builder.tsx"
+        },
+        {
+          "path": "filters/filters-chip.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-chip.tsx"
+        },
+        {
+          "path": "filters/filters-context.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-context.tsx"
+        },
+        {
+          "path": "filters/filters-date.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-date.tsx"
+        },
+        {
+          "path": "filters/filters-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-dnd.tsx"
+        },
+        {
+          "path": "filters/filters-draft.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-draft.tsx"
+        },
+        {
+          "path": "filters/filters-editors.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-editors.tsx"
+        },
+        {
+          "path": "filters/filters-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-i18n.tsx"
+        },
+        {
+          "path": "filters/filters-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-lib.tsx"
+        },
+        {
+          "path": "filters/filters-operators.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-operators.tsx"
+        },
+        {
+          "path": "filters/filters-query.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-query.tsx"
+        },
+        {
+          "path": "filters/filters-types.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/filters/filters-types.tsx"
+        },
+        {
+          "path": "filters/filters.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/filters/filters.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/cascader",
+        "button",
+        "button-group",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "frame",
+      "type": "registry:ui",
+      "title": "frame",
+      "files": [
+        {
+          "path": "frame.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/frame.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "gantt",
+      "type": "registry:ui",
+      "title": "gantt",
+      "files": [
+        {
+          "path": "gantt/gantt-bar.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-bar.tsx"
+        },
+        {
+          "path": "gantt/gantt-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-dnd.tsx"
+        },
+        {
+          "path": "gantt/gantt-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-i18n.tsx"
+        },
+        {
+          "path": "gantt/gantt-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-lib.tsx"
+        },
+        {
+          "path": "gantt/gantt-nav.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-nav.tsx"
+        },
+        {
+          "path": "gantt/gantt-recurrence.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-recurrence.tsx"
+        },
+        {
+          "path": "gantt/gantt-types.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-types.tsx"
+        },
+        {
+          "path": "gantt/gantt-view.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/gantt/gantt-view.tsx"
+        },
+        {
+          "path": "gantt/gantt.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/gantt/gantt.tsx"
+        }
+      ],
+      "dependencies": [
+        "@date-fns/tz",
+        "cn",
+        "date-fns",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "calendar",
+        "checkbox",
+        "context-menu",
+        "dropdown-menu",
+        "popover",
+        "scroll-area",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "icon-stack",
+      "type": "registry:ui",
+      "title": "icon-stack",
+      "files": [
+        {
+          "path": "icon-stack.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/icon-stack.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "icon-tile",
+      "type": "registry:ui",
+      "title": "icon-tile",
+      "files": [
+        {
+          "path": "icon-tile.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/icon-tile.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "kanban",
+      "type": "registry:ui",
+      "title": "kanban",
+      "files": [
+        {
+          "path": "kanban.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/kanban.tsx"
+        }
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "number-field",
+      "type": "registry:ui",
+      "title": "number-field",
+      "files": [
+        {
+          "path": "number-field.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/number-field.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "phone-input",
+      "type": "registry:ui",
+      "title": "phone-input",
+      "files": [
+        {
+          "path": "phone-input.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/phone-input.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "react-phone-number-input"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "combobox",
+        "input",
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "rating",
+      "type": "registry:ui",
+      "title": "rating",
+      "files": [
+        {
+          "path": "rating.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/rating.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder"
+      ]
+    },
+    {
+      "name": "scrollspy",
+      "type": "registry:ui",
+      "title": "scrollspy",
+      "files": [
+        {
+          "path": "scrollspy.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/scrollspy.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "signature-pad",
+      "type": "registry:ui",
+      "title": "signature-pad",
+      "files": [
+        {
+          "path": "signature-pad.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/signature-pad.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ]
+    },
+    {
+      "name": "sortable",
+      "type": "registry:ui",
+      "title": "sortable",
+      "files": [
+        {
+          "path": "sortable.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/sortable.tsx"
+        }
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "stepper",
+      "files": [
+        {
+          "path": "stepper.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/stepper.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "time-picker",
+      "type": "registry:ui",
+      "title": "time-picker",
+      "files": [
+        {
+          "path": "time-picker.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/time-picker.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "input-group",
+        "popover"
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "timeline",
+      "files": [
+        {
+          "path": "timeline.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/timeline.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "tree",
+      "type": "registry:ui",
+      "title": "tree",
+      "files": [
+        {
+          "path": "tree.tsx",
+          "type": "registry:ui",
+          "target": "@components/reui-unbound/tree.tsx"
+        }
+      ],
+      "dependencies": [
+        "@headless-tree/core",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder"
+      ]
+    },
+    {
+      "name": "icon-placeholder",
+      "type": "registry:component",
+      "title": "Icon Placeholder",
+      "files": [
+        {
+          "path": "icon-placeholder.tsx",
+          "type": "registry:component",
+          "target": "@components/reui-unbound/icon-placeholder.tsx"
+        }
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
+    }
+  ]
+}

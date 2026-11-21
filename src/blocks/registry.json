@@ -1,0 +1,2769 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "data-grid-base-1",
+      "type": "registry:block",
+      "title": "Customers",
+      "description": "Customers data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/cascader",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "@reui-unbound/number-field",
+        "alert-dialog",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "field",
+        "input",
+        "input-group",
+        "kbd",
+        "select",
+        "sheet",
+        "sonner",
+        "tabs",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-1/index.tsx"
+        },
+        {
+          "path": "data-grid-base-1/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-1/parts.tsx"
+        },
+        {
+          "path": "data-grid-base-1/customer-sheets.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-1/customer-sheets.tsx"
+        },
+        {
+          "path": "data-grid-base-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-2",
+      "type": "registry:block",
+      "title": "Contacts",
+      "description": "Contacts data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/number-field",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "field",
+        "input",
+        "input-group",
+        "kbd",
+        "select",
+        "sheet",
+        "sonner",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-2/index.tsx"
+        },
+        {
+          "path": "data-grid-base-2/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-2/parts.tsx"
+        },
+        {
+          "path": "data-grid-base-2/contact-filters.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-2/contact-filters.tsx"
+        },
+        {
+          "path": "data-grid-base-2/contact-sheets.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-2/contact-sheets.tsx"
+        },
+        {
+          "path": "data-grid-base-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-3",
+      "type": "registry:block",
+      "title": "Opportunities",
+      "description": "Opportunities data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "sonner",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-3/index.tsx"
+        },
+        {
+          "path": "data-grid-base-3/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-3/parts.tsx"
+        },
+        {
+          "path": "data-grid-base-3/pipeline-filters.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-3/pipeline-filters.tsx"
+        },
+        {
+          "path": "data-grid-base-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-3/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-4",
+      "type": "registry:block",
+      "title": "Timesheets",
+      "description": "Timesheets data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "date-fns",
+        "lucide-react",
+        "react-day-picker",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "calendar",
+        "popover",
+        "select",
+        "separator",
+        "sonner",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-4/index.tsx"
+        },
+        {
+          "path": "data-grid-base-4/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-4/parts.tsx"
+        },
+        {
+          "path": "data-grid-base-4/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-4/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-5",
+      "type": "registry:block",
+      "title": "Support Queue",
+      "description": "Support Queue data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "alert-dialog",
+        "avatar",
+        "button",
+        "card",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-5/index.tsx"
+        },
+        {
+          "path": "data-grid-base-5/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-5/parts.tsx"
+        },
+        {
+          "path": "data-grid-base-5/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-5/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-6",
+      "type": "registry:block",
+      "title": "Members",
+      "description": "Members data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-6/index.tsx"
+        },
+        {
+          "path": "data-grid-base-6/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-6/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-7",
+      "type": "registry:block",
+      "title": "Modules",
+      "description": "Modules data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/icon-tile",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-7/index.tsx"
+        },
+        {
+          "path": "data-grid-base-7/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-7/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-8",
+      "type": "registry:block",
+      "title": "Rate Card",
+      "description": "Rate Card data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "separator",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-8/index.tsx"
+        },
+        {
+          "path": "data-grid-base-8/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-8/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-base-9",
+      "type": "registry:block",
+      "title": "API Requests",
+      "description": "API Requests data grid block.",
+      "meta": {
+        "category": "Base"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "kbd",
+        "select",
+        "sheet",
+        "sonner",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-base-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-9/index.tsx"
+        },
+        {
+          "path": "data-grid-base-9/traffic-chart.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-9/traffic-chart.tsx"
+        },
+        {
+          "path": "data-grid-base-9/log-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-9/log-sheet.tsx"
+        },
+        {
+          "path": "data-grid-base-9/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-base-9/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-columns-1",
+      "type": "registry:block",
+      "title": "Workspace Access Review",
+      "description": "Workspace Access Review data grid block.",
+      "meta": {
+        "category": "Columns"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sonner",
+        "switch",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-columns-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-1/index.tsx"
+        },
+        {
+          "path": "data-grid-columns-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-columns-2",
+      "type": "registry:block",
+      "title": "Course Catalog",
+      "description": "Course Catalog data grid block.",
+      "meta": {
+        "category": "Columns"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sonner",
+        "switch",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-columns-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-2/index.tsx"
+        },
+        {
+          "path": "data-grid-columns-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-columns-3",
+      "type": "registry:block",
+      "title": "Work Queue",
+      "description": "Work Queue data grid block.",
+      "meta": {
+        "category": "Columns"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sonner",
+        "switch",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-columns-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-3/index.tsx"
+        },
+        {
+          "path": "data-grid-columns-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-3/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-columns-4",
+      "type": "registry:block",
+      "title": "Members",
+      "description": "Members data grid block.",
+      "meta": {
+        "category": "Columns"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sonner",
+        "switch",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-columns-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-4/index.tsx"
+        },
+        {
+          "path": "data-grid-columns-4/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-4/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-columns-5",
+      "type": "registry:block",
+      "title": "Companies",
+      "description": "Companies data grid block.",
+      "meta": {
+        "category": "Columns"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sonner",
+        "switch",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-columns-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-5/index.tsx"
+        },
+        {
+          "path": "data-grid-columns-5/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-columns-5/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-drag-drop-1",
+      "type": "registry:block",
+      "title": "Sprint Backlog",
+      "description": "Sprint Backlog data grid block.",
+      "meta": {
+        "category": "Drag & Drop"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-drag-drop-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-1/index.tsx"
+        },
+        {
+          "path": "data-grid-drag-drop-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-drag-drop-2",
+      "type": "registry:block",
+      "title": "Routing Rules",
+      "description": "Routing Rules data grid block.",
+      "meta": {
+        "category": "Drag & Drop"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-drag-drop-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-2/index.tsx"
+        },
+        {
+          "path": "data-grid-drag-drop-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-drag-drop-3",
+      "type": "registry:block",
+      "title": "Dispatch Layout",
+      "description": "Dispatch Layout data grid block.",
+      "meta": {
+        "category": "Drag & Drop"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-drag-drop-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-3/index.tsx"
+        },
+        {
+          "path": "data-grid-drag-drop-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-3/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-drag-drop-4",
+      "type": "registry:block",
+      "title": "Shared Drive",
+      "description": "Shared Drive data grid block.",
+      "meta": {
+        "category": "Drag & Drop"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-drag-drop-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-4/index.tsx"
+        },
+        {
+          "path": "data-grid-drag-drop-4/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-drag-drop-4/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-editing-1",
+      "type": "registry:block",
+      "title": "Labels",
+      "description": "Labels data grid block.",
+      "meta": {
+        "category": "Editing"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-editing-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-1/index.tsx"
+        },
+        {
+          "path": "data-grid-editing-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-editing-2",
+      "type": "registry:block",
+      "title": "Product Inventory",
+      "description": "Product Inventory data grid block.",
+      "meta": {
+        "category": "Editing"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-editing-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-2/index.tsx"
+        },
+        {
+          "path": "data-grid-editing-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-editing-3",
+      "type": "registry:block",
+      "title": "Project Intake",
+      "description": "Project Intake data grid block.",
+      "meta": {
+        "category": "Editing"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-editing-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-3/index.tsx"
+        },
+        {
+          "path": "data-grid-editing-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-3/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-editing-4",
+      "type": "registry:block",
+      "title": "Plans",
+      "description": "Plans data grid block.",
+      "meta": {
+        "category": "Editing"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-editing-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-4/index.tsx"
+        },
+        {
+          "path": "data-grid-editing-4/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-4/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-editing-5",
+      "type": "registry:block",
+      "title": "Launch Runbook",
+      "description": "Launch Runbook data grid block.",
+      "meta": {
+        "category": "Editing"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-editing-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-5/index.tsx"
+        },
+        {
+          "path": "data-grid-editing-5/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-5/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-editing-6",
+      "type": "registry:block",
+      "title": "Reorder Plan",
+      "description": "Reorder Plan data grid block.",
+      "meta": {
+        "category": "Editing"
+      },
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-editing-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-6/index.tsx"
+        },
+        {
+          "path": "data-grid-editing-6/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-editing-6/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-expansion-1",
+      "type": "registry:block",
+      "title": "Task Delivery",
+      "description": "Task Delivery data grid block.",
+      "meta": {
+        "category": "Expansion"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-expansion-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-expansion-1/index.tsx"
+        },
+        {
+          "path": "data-grid-expansion-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-expansion-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-expansion-2",
+      "type": "registry:block",
+      "title": "Treasury Waterfall",
+      "description": "Treasury Waterfall data grid block.",
+      "meta": {
+        "category": "Expansion"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-expansion-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-expansion-2/index.tsx"
+        },
+        {
+          "path": "data-grid-expansion-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-expansion-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-expansion-3",
+      "type": "registry:block",
+      "title": "Release Reviews",
+      "description": "Release Reviews data grid block.",
+      "meta": {
+        "category": "Expansion"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-expansion-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-expansion-3/index.tsx"
+        },
+        {
+          "path": "data-grid-expansion-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-expansion-3/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-filtering-1",
+      "type": "registry:block",
+      "title": "Transactions",
+      "description": "Transactions data grid block.",
+      "meta": {
+        "category": "Filtering"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "button",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "popover",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-filtering-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-1/index.tsx"
+        },
+        {
+          "path": "data-grid-filtering-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-filtering-2",
+      "type": "registry:block",
+      "title": "Automation Library",
+      "description": "Automation Library data grid block.",
+      "meta": {
+        "category": "Filtering"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-filtering-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-2/index.tsx"
+        },
+        {
+          "path": "data-grid-filtering-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-filtering-3",
+      "type": "registry:block",
+      "title": "Renewals Review",
+      "description": "Renewals Review data grid block.",
+      "meta": {
+        "category": "Filtering"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-filtering-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-3/index.tsx"
+        },
+        {
+          "path": "data-grid-filtering-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-3/data.ts"
+        },
+        {
+          "path": "data-grid-filtering-3/brand-icons.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-3/brand-icons.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-filtering-4",
+      "type": "registry:block",
+      "title": "Renewals Risk",
+      "description": "Renewals Risk data grid block.",
+      "meta": {
+        "category": "Filtering"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-filtering-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-4/index.tsx"
+        },
+        {
+          "path": "data-grid-filtering-4/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-4/data.ts"
+        },
+        {
+          "path": "data-grid-filtering-4/brand-icons.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-filtering-4/brand-icons.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-grouping-1",
+      "type": "registry:block",
+      "title": "Roadmap Queue",
+      "description": "Roadmap Queue data grid block.",
+      "meta": {
+        "category": "Grouping"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-grouping-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-1/index.tsx"
+        },
+        {
+          "path": "data-grid-grouping-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-grouping-2",
+      "type": "registry:block",
+      "title": "Revenue By Region",
+      "description": "Revenue By Region data grid block.",
+      "meta": {
+        "category": "Grouping"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-grouping-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-2/index.tsx"
+        },
+        {
+          "path": "data-grid-grouping-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-grouping-3",
+      "type": "registry:block",
+      "title": "Access Cohort",
+      "description": "Access Cohort data grid block.",
+      "meta": {
+        "category": "Grouping"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "input-group",
+        "select",
+        "switch",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-grouping-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-3/index.tsx"
+        },
+        {
+          "path": "data-grid-grouping-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-3/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-grouping-4",
+      "type": "registry:block",
+      "title": "Bill Of Materials",
+      "description": "Bill Of Materials data grid block.",
+      "meta": {
+        "category": "Grouping"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-grouping-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-4/index.tsx"
+        },
+        {
+          "path": "data-grid-grouping-4/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-4/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-grouping-5",
+      "type": "registry:block",
+      "title": "Reporting Lines",
+      "description": "Reporting Lines data grid block.",
+      "meta": {
+        "category": "Grouping"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-grouping-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-5/index.tsx"
+        },
+        {
+          "path": "data-grid-grouping-5/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-5/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-grouping-6",
+      "type": "registry:block",
+      "title": "Production Desk",
+      "description": "Production Desk data grid block.",
+      "meta": {
+        "category": "Grouping"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-grouping-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-6/index.tsx"
+        },
+        {
+          "path": "data-grid-grouping-6/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-6/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-grouping-7",
+      "type": "registry:block",
+      "title": "Delivery Board",
+      "description": "Delivery Board data grid block.",
+      "meta": {
+        "category": "Grouping"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "checkbox",
+        "input-group",
+        "popover",
+        "select",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-grouping-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-7/index.tsx"
+        },
+        {
+          "path": "data-grid-grouping-7/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-grouping-7/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-virtualization-1",
+      "type": "registry:block",
+      "title": "Transactions",
+      "description": "Transactions data grid block.",
+      "meta": {
+        "category": "Virtualization"
+      },
+      "dependencies": [
+        "@tanstack/react-virtual",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-virtualization-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-virtualization-1/index.tsx"
+        },
+        {
+          "path": "data-grid-virtualization-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-virtualization-1/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-virtualization-2",
+      "type": "registry:block",
+      "title": "Exception Queue",
+      "description": "Exception Queue data grid block.",
+      "meta": {
+        "category": "Virtualization"
+      },
+      "dependencies": [
+        "@tanstack/react-virtual",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "sonner",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "data-grid-virtualization-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-virtualization-2/index.tsx"
+        },
+        {
+          "path": "data-grid-virtualization-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-virtualization-2/data.ts"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-1",
+      "type": "registry:block",
+      "title": "Campaign Performance",
+      "description": "Campaign Performance data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-1/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-1/campaign-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-1/campaign-sheet.tsx"
+        },
+        {
+          "path": "data-grid-advanced-1/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-1/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-1/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-1/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-2",
+      "type": "registry:block",
+      "title": "Store P&L",
+      "description": "Store P&L data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sheet",
+        "sonner",
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-2/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-2/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-2/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-2/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-2/parts.tsx"
+        },
+        {
+          "path": "data-grid-advanced-2/store-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-2/store-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-3",
+      "type": "registry:block",
+      "title": "Campaign Targets",
+      "description": "Campaign Targets data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "@reui-unbound/number-field",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "label",
+        "select",
+        "sheet",
+        "sonner",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-3/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-3/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-3/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-3/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-3/parts.tsx"
+        },
+        {
+          "path": "data-grid-advanced-3/target-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-3/target-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-4",
+      "type": "registry:block",
+      "title": "Reliability Index",
+      "description": "Reliability Index data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sheet",
+        "sonner",
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-4/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-4/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-4/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-4/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-4/parts.tsx"
+        },
+        {
+          "path": "data-grid-advanced-4/slo-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-4/slo-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-5",
+      "type": "registry:block",
+      "title": "Wholesale Applications",
+      "description": "Wholesale Applications data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "button",
+        "card",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sheet",
+        "sonner",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-5/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-5/account-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-5/account-sheet.tsx"
+        },
+        {
+          "path": "data-grid-advanced-5/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-5/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-5/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-5/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-6",
+      "type": "registry:block",
+      "title": "Stock Mix",
+      "description": "Stock Mix data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "input-group",
+        "select",
+        "separator",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-6/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-6/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-6/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-6/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-6/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-7",
+      "type": "registry:block",
+      "title": "Fourplex Pro Forma",
+      "description": "Fourplex Pro Forma data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-7/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-7/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-7/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-7/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-7/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-8",
+      "type": "registry:block",
+      "title": "Product KPIs",
+      "description": "Product KPIs data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/cascader",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "select",
+        "separator",
+        "sheet",
+        "sonner",
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-8/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-8/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-8/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-8/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-8/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-9",
+      "type": "registry:block",
+      "title": "Service Visits",
+      "description": "Service Visits data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/cascader",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-9/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-9/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-9/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-9/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-9/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-10",
+      "type": "registry:block",
+      "title": "Technician Capacity",
+      "description": "Technician Capacity data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input",
+        "input-group",
+        "select",
+        "separator",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-10/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-10/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-10/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-10/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-10/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-11",
+      "type": "registry:block",
+      "title": "Factory Scorecard",
+      "description": "Factory Scorecard data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/cascader",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/number-field",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input-group",
+        "popover",
+        "select",
+        "sheet",
+        "sonner",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-11/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-11/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-11/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-11/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-11/parts.tsx"
+        },
+        {
+          "path": "data-grid-advanced-11/sheets.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-11/sheets.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-12",
+      "type": "registry:block",
+      "title": "Freight & Cargo Services",
+      "description": "Freight & Cargo Services data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/number-field",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input-group",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-12/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-12/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-12/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-12/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-12/parts.tsx"
+        },
+        {
+          "path": "data-grid-advanced-12/sheets.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-12/sheets.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-13",
+      "type": "registry:block",
+      "title": "HR Scorecard",
+      "description": "HR Scorecard data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/number-field",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input-group",
+        "popover",
+        "select",
+        "sheet",
+        "sonner",
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-13/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-13/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-13/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-13/dialogs.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-13/dialogs.tsx"
+        },
+        {
+          "path": "data-grid-advanced-13/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-13/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-14",
+      "type": "registry:block",
+      "title": "Strategy Scorecard",
+      "description": "Strategy Scorecard data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/number-field",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input",
+        "input-group",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-14/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-14/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-14/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-14/dialogs.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-14/dialogs.tsx"
+        },
+        {
+          "path": "data-grid-advanced-14/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-14/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-15",
+      "type": "registry:block",
+      "title": "P&L Outlook",
+      "description": "P&L Outlook data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "@reui-unbound/number-field",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "select",
+        "sheet",
+        "sonner",
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-15/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-15/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-15/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-15/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-15/dialogs.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-15/dialogs.tsx"
+        },
+        {
+          "path": "data-grid-advanced-15/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-15/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-16",
+      "type": "registry:block",
+      "title": "Store KPIs",
+      "description": "Store KPIs data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "kbd",
+        "progress",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-16/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-16/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-16/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-16/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-16/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-16/parts.tsx"
+        },
+        {
+          "path": "data-grid-advanced-16/store-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-16/store-sheet.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-17",
+      "type": "registry:block",
+      "title": "Support Scorecard",
+      "description": "Support Scorecard data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "progress",
+        "select",
+        "sheet",
+        "sonner",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-17/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-17/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-17/agent-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-17/agent-sheet.tsx"
+        },
+        {
+          "path": "data-grid-advanced-17/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-17/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-17/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-17/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-18",
+      "type": "registry:block",
+      "title": "Job Schedule",
+      "description": "Job Schedule data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "progress",
+        "select",
+        "sheet",
+        "sonner",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-18/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-18/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-18/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-18/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-18/job-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-18/job-sheet.tsx"
+        },
+        {
+          "path": "data-grid-advanced-18/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-18/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-19",
+      "type": "registry:block",
+      "title": "Prospects",
+      "description": "Prospects data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "progress",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-19/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-19/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-19/company-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-19/company-sheet.tsx"
+        },
+        {
+          "path": "data-grid-advanced-19/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-19/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-19/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-19/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-20",
+      "type": "registry:block",
+      "title": "Project Budget",
+      "description": "Project Budget data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "@reui-unbound/number-field",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "progress",
+        "select",
+        "sheet",
+        "sonner",
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-20/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-20/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-20/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-20/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-20/line-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-20/line-sheet.tsx"
+        },
+        {
+          "path": "data-grid-advanced-20/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-20/parts.tsx"
+        }
+      ]
+    },
+    {
+      "name": "data-grid-advanced-21",
+      "type": "registry:block",
+      "title": "Invoices",
+      "description": "Invoices data grid block.",
+      "meta": {
+        "category": "Advanced"
+      },
+      "dependencies": [
+        "@tanstack/react-table",
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/cascader",
+        "@reui-unbound/data-grid",
+        "@reui-unbound/filters",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input-group",
+        "kbd",
+        "select",
+        "sheet",
+        "sonner"
+      ],
+      "files": [
+        {
+          "path": "data-grid-advanced-21/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-21/index.tsx"
+        },
+        {
+          "path": "data-grid-advanced-21/customer-sheet.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-21/customer-sheet.tsx"
+        },
+        {
+          "path": "data-grid-advanced-21/data.ts",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-21/data.ts"
+        },
+        {
+          "path": "data-grid-advanced-21/parts.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/data-grid-advanced-21/parts.tsx"
+        }
+      ]
+    }
+  ]
+}

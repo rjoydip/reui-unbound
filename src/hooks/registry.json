@@ -1,0 +1,113 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "use-copy-to-clipboard",
+      "type": "registry:hook",
+      "title": "use-copy-to-clipboard",
+      "files": [
+        {
+          "path": "use-copy-to-clipboard.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-copy-to-clipboard.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-file-upload",
+      "type": "registry:hook",
+      "title": "use-file-upload",
+      "files": [
+        {
+          "path": "use-file-upload.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-file-upload.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-intersection-observer",
+      "type": "registry:hook",
+      "title": "use-intersection-observer",
+      "files": [
+        {
+          "path": "use-intersection-observer.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-intersection-observer.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-isomorphic-layout-effect",
+      "type": "registry:hook",
+      "title": "use-isomorphic-layout-effect",
+      "files": [
+        {
+          "path": "use-isomorphic-layout-effect.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-isomorphic-layout-effect.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-media-query",
+      "type": "registry:hook",
+      "title": "use-media-query",
+      "files": [
+        {
+          "path": "use-media-query.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-media-query.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "use-mobile",
+      "files": [
+        {
+          "path": "use-mobile.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-mobile.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-mounted",
+      "type": "registry:hook",
+      "title": "use-mounted",
+      "files": [
+        {
+          "path": "use-mounted.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-mounted.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-mutation-observer",
+      "type": "registry:hook",
+      "title": "use-mutation-observer",
+      "files": [
+        {
+          "path": "use-mutation-observer.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-mutation-observer.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-scroll-active-into-view",
+      "type": "registry:hook",
+      "title": "use-scroll-active-into-view",
+      "files": [
+        {
+          "path": "use-scroll-active-into-view.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-scroll-active-into-view.ts"
+        }
+      ]
+    }
+  ]
+}

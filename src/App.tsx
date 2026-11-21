@@ -9,19 +9,27 @@ import { toast } from "sonner"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
 import { Toaster } from "@/components/ui/sonner"
 import { TooltipProvider } from "@/components/ui/tooltip"
-import { DemoSidebar, type SidebarView } from "@/components/demo-sidebar"
 import {
-  DemoHeader,
+  CatalogSidebar,
+  type Section,
+  type SidebarView,
+} from "@/components/catalog-sidebar"
+import {
+  PreviewHeader,
   type Device,
   type Theme,
   type View,
-} from "@/components/demo-toolbar"
+} from "@/components/preview-header"
 import { CustomizePanel } from "@/components/customize-panel"
+import { SiteHeader } from "@/components/site-header"
+import { DocsViewer } from "@/components/docs-viewer"
 import {
   DEFAULT_OPTIONS,
   type CustomizeOptions,
 } from "@/components/customize-options"
-import { BLOCKS, installCommand, registryName } from "@/blocks/registry"
+import { CATALOG, COMPONENT_ENTRIES } from "@/blocks/components/catalog"
+import { GITHUB_REPOSITORY, githubSourceUrl } from "@/lib/source-url"
+import { installCommandFor, registryName } from "@/blocks/registry"
 import type { BlockFile, PackageManager } from "@/blocks/registry"
 import { cn } from "cn"
 
@@ -72,7 +80,7 @@ function readTheme(): Theme {
 
 function readBlockId() {
   const hash = window.location.hash.replace("#", "")
-  return BLOCKS.find((block) => block.id === hash)?.id ?? BLOCKS[0].id
+  return CATALOG.find((block) => block.id === hash)?.id ?? CATALOG[0].id
 }
 
 function CodePanel({ file }: { file: BlockFile }) {
@@ -100,9 +108,14 @@ export default function App() {
   const [device, setDevice] = useState<Device>("desktop")
   const [favorites, setFavorites] = useState<string[]>(readFavorites)
   const [refreshKey, setRefreshKey] = useState(0)
+  const [section, setSection] = useState<Section>(() =>
+    CATALOG.find((entry) => entry.id === readBlockId())?.kind === "component"
+      ? "components"
+      : "blocks",
+  )
   const [sidebarView, setSidebarView] = useState<SidebarView>("all")
   const [expanded, setExpanded] = useState<string[]>(() => {
-    const category = BLOCKS.find(
+    const category = CATALOG.find(
       (entry) => entry.id === readBlockId(),
     )?.category
     return category ? [category] : ["Base"]
@@ -110,26 +123,45 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [customizeOpen, setCustomizeOpen] = useState(false)
   const [options, setOptions] = useState<CustomizeOptions>(DEFAULT_OPTIONS)
-  const [packageManager, setPackageManager] = useState<PackageManager>("npm")
+  const [packageManager, setPackageManager] = useState<PackageManager>("bun")
   const [activeFile, setActiveFile] = useState<string | null>(null)
 
   const previewRef = useRef<HTMLDivElement>(null)
 
-  const block = BLOCKS.find((entry) => entry.id === blockId) ?? BLOCKS[0]
+  const block = CATALOG.find((entry) => entry.id === blockId) ?? CATALOG[0]
+  const githubUrl =
+    section === "docs"
+      ? `${GITHUB_REPOSITORY}/blob/main/docs/README.md`
+      : githubSourceUrl(block)
   const activeFileEntry =
     block.files.find((entry) => entry.name === activeFile) ?? block.files[0]
   const favorite = favorites.includes(block.id)
 
-  const install = installCommand(block.id, packageManager)
+  const registryTarget =
+    block.installTarget ?? registryName(block.registryId ?? block.id)
+  const install = installCommandFor(registryTarget, packageManager)
   const aiPrompt = [
-    `Build the "${block.name}" (${block.id}) block from reui-unbound in my app.`,
+    `Build the "${block.name}" (${block.kind === "component" ? "component" : "block"}) from reui-unbound in my app.`,
     "",
-    `Registry: ${registryName(block.id)}`,
+    `Registry: ${registryTarget}`,
     `Docs:`,
     `Install (${packageManager}): ${install}`,
     "",
     "Registry dependencies:",
     ...block.dependencies.registry.map((entry) => {
+      if (entry.startsWith("@reui-unbound/")) {
+        const name = entry.slice("@reui-unbound/".length)
+        if (name.startsWith("base-ui-")) {
+          return `- @/components/reui-unbound/base/ui/${name.slice("base-ui-".length)}`
+        }
+        if (name.startsWith("base-")) {
+          return `- @/components/reui-unbound/base/${name.slice("base-".length)}`
+        }
+        if (name.startsWith("use-")) {
+          return `- @/hooks/${name}`
+        }
+        return `- @/components/reui-unbound/${name}`
+      }
       if (entry.startsWith("@reui/")) {
         return `- @/components/reui-unbound/${entry.slice("@reui/".length)}`
       }
@@ -240,7 +272,8 @@ export default function App() {
   }, [options.radius, options.baseColor, theme])
 
   function selectBlock(id: string) {
-    const next = BLOCKS.find((entry) => entry.id === id)
+    const next = CATALOG.find((entry) => entry.id === id)
+    if (next) setSection(next.kind === "component" ? "components" : "blocks")
     setBlockId(id)
     setActiveFile(null)
     if (next) {
@@ -251,6 +284,17 @@ export default function App() {
     window.history.replaceState(null, "", `#${id}`)
     setSidebarOpen(false)
     previewRef.current?.scrollIntoView({ block: "start" })
+  }
+
+  function changeSection(next: Section) {
+    setSection(next)
+    if (next === "components" && block.kind !== "component") {
+      const first = COMPONENT_ENTRIES[0]
+      if (first) selectBlock(first.id)
+    } else if (next === "blocks" && block.kind === "component") {
+      const first = CATALOG.find((entry) => entry.kind !== "component")
+      if (first) selectBlock(first.id)
+    }
   }
 
   function toggleCategory(name: string) {
@@ -295,14 +339,22 @@ export default function App() {
   // Standalone block preview: /?preview=<id> renders the block without the demo shell.
   const standaloneId = new URLSearchParams(window.location.search).get("preview")
   const standaloneBlock = standaloneId
-    ? BLOCKS.find((entry) => entry.id === standaloneId)
+    ? CATALOG.find((entry) => entry.id === standaloneId)
     : undefined
 
   if (standaloneBlock) {
     return (
       <TooltipProvider delayDuration={200}>
         <div className="bg-background text-foreground min-h-svh">
-          <standaloneBlock.Component />
+          {standaloneBlock.kind === "component" ? (
+            <div className="flex min-h-svh items-center justify-center p-6 sm:p-10">
+              <div className="flex w-full max-w-5xl justify-center">
+                <standaloneBlock.Component />
+              </div>
+            </div>
+          ) : (
+            <standaloneBlock.Component />
+          )}
           <Toaster position="bottom-right" theme={theme} />
         </div>
       </TooltipProvider>
@@ -310,37 +362,59 @@ export default function App() {
   }
 
   const sidebar = (
-    <DemoSidebar
+    <CatalogSidebar
       current={block}
+      section={section}
       view={sidebarView}
       onViewChange={setSidebarView}
       favorites={favorites}
       onSelect={(entry) => selectBlock(entry.id)}
       expanded={expanded}
       onToggleCategory={toggleCategory}
+    />
+  )
+
+  const siteHeader = (
+    <SiteHeader
+      section={section}
+      onSectionChange={changeSection}
+      onSelect={selectBlock}
+      githubUrl={githubUrl}
       theme={theme}
       onToggleTheme={(event) =>
         setThemeAnimated(theme === "dark" ? "light" : "dark", event)
       }
+      onCustomize={() => setCustomizeOpen(true)}
     />
   )
 
+  if (section === "docs") {
+    return (
+      <TooltipProvider delayDuration={200}>
+        <div className="bg-background text-foreground flex h-svh flex-col overflow-hidden">
+          {siteHeader}
+          <DocsViewer />
+          <Toaster position="bottom-right" theme={theme} />
+        </div>
+      </TooltipProvider>
+    )
+  }
+
   return (
     <TooltipProvider delayDuration={200}>
-      <div className="bg-background text-foreground flex min-h-svh">
-        <aside className="bg-sidebar text-sidebar-foreground sticky top-0 hidden h-svh w-72 shrink-0 border-r lg:block">
-          {sidebar}
-        </aside>
+      <div className="bg-background text-foreground flex min-h-svh flex-col">
+        {siteHeader}
+        <div className="flex min-h-0 flex-1">
+          <aside className="bg-sidebar text-sidebar-foreground sticky top-16 hidden h-[calc(100svh-4rem)] w-72 shrink-0 border-r lg:block">
+            {sidebar}
+          </aside>
 
-        <div className="flex min-w-0 flex-1 flex-col">
-          <DemoHeader
-            block={block}
-            view={view}
+          <div className="flex min-w-0 flex-1 flex-col">
+            <PreviewHeader
+              block={block}
+              view={view}
             onViewChange={setView}
             theme={theme}
-            onToggleTheme={(event) =>
-              setThemeAnimated(theme === "dark" ? "light" : "dark", event)
-            }
             onRefresh={() => setRefreshKey((key) => key + 1)}
             onFullscreen={() => previewRef.current?.requestFullscreen()}
             onOpenSidebar={() => setSidebarOpen(true)}
@@ -348,7 +422,6 @@ export default function App() {
             onToggleFavorite={toggleFavorite}
             device={device}
             onDeviceChange={setDevice}
-            onCustomize={() => setCustomizeOpen(true)}
             packageManager={packageManager}
             onPackageManagerChange={setPackageManager}
             aiPrompt={aiPrompt}
@@ -366,12 +439,23 @@ export default function App() {
                 )}
                 style={{ maxWidth: deviceWidth }}
               >
-                <div
-                  key={refreshKey}
-                  className="[&>div]:min-h-[calc(100svh-3.5rem)]"
-                >
-                  <block.Component />
-                </div>
+                {block.kind === "component" ? (
+                  <div
+                    key={refreshKey}
+                    className="flex min-h-[calc(100svh-3.5rem)] items-center justify-center p-6 sm:p-10"
+                  >
+                    <div className="flex w-full max-w-5xl justify-center">
+                      <block.Component />
+                    </div>
+                  </div>
+                ) : (
+                  <div
+                    key={refreshKey}
+                    className="[&>div]:min-h-[calc(100svh-3.5rem)]"
+                  >
+                    <block.Component />
+                  </div>
+                )}
               </div>
             </main>
           ) : (
@@ -404,6 +488,7 @@ export default function App() {
               </div>
             </main>
           )}
+          </div>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-# reui-extended
+# reui-unbound
 
 Open-source, AI-assisted implementations of advanced UI components and blocks inspired by [ReUI](https://reui.io/). Built from scratch using modern React, TypeScript, and Tailwind CSS to replicate and extend PRO and ULTIMATE tier functionality without proprietary dependencies.
 
@@ -12,16 +12,19 @@ Open-source, AI-assisted implementations of advanced UI components and blocks in
 - **Copy-Paste Ready:** Designed to drop directly into existing Next.js or Vite + React projects.
 - **Type-Safe:** Strict TypeScript definitions with composable prop interfaces.
 - **Accessible:** Keyboard navigation, ARIA attributes, and focus management baked in.
+- **61 Data Grid Blocks:** Grouping, filtering, editing, expansion, drag & drop, columns and virtualization demos.
+- **87 Component Categories:** 110 Radix/Base and shadcn/ui previews with searchable navigation.
+- **Markdown Docs:** Generated docs for every block and component.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** React 19 / Next.js (App Router compatible)
+- **Framework:** React 19 / Vite
 - **Styling:** Tailwind CSS v4
 - **Primitives:** Radix UI / Base UI
 - **Icons:** Lucide React
-- **Animations:** Motion (Framer Motion)
+- **Runtime:** Bun 1.4.5
 
 ---
 
@@ -30,22 +33,22 @@ Open-source, AI-assisted implementations of advanced UI components and blocks in
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/reui-extended.git
-cd reui-extended
+git clone https://github.com/rjoydip/reui-unbound.git
+cd reui-unbound
 ```
 
 ### 2. Install dependencies
 
+Requires Bun 1.4.5 (see `.bun-version`).
+
 ```bash
-npm install
-# or
 bun install
 ```
 
 ### 3. Run the local showcase / dev server
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 ### 4. Using a component in your project
@@ -54,8 +57,25 @@ Copy the target component from `src/components/reui-unbound/` into your own code
 
 ```bash
 # Example peer dependencies
-npx shadcn@latest add button dialog popover
-npm install lucide-react motion
+bunx --bun shadcn@latest add button dialog popover
+bun add lucide-react
+```
+
+---
+
+## 📚 Documentation
+
+Generated documentation lives in `docs/`:
+
+- [Blocks](docs/blocks/README.md) — 61 data-grid blocks.
+- [Components](docs/components/README.md) — 87 component categories and 110 previews.
+
+Each page includes the live preview link, install command, source files, dependencies and usage.
+The same Markdown files are rendered inside the app under **Docs**, using
+react-markdown with GitHub-flavored Markdown and build-time syntax highlighting.
+
+```bash
+bun run docs:generate
 ```
 
 ---
@@ -114,13 +134,41 @@ src/
 
 ---
 
+## 📦 Registry
+
+The project exposes its blocks and components as a [shadcn registry](https://ui.shadcn.com/docs/registry).
+
+- `registry.json` is the registry entry point. It composes the source registries with `include`:
+  - `src/blocks/registry.json` — 61 `registry:block` items
+  - `src/components/reui-unbound/registry.json` — ReUI components and the shared icon placeholder
+  - `src/components/reui-unbound/base/registry.json` — Base-flavor ReUI components and primitives
+  - `src/hooks/registry.json` — hooks
+- Blocks use `registryDependencies` for UI/ReUI components instead of bundling duplicate copies, and `dependencies` for npm packages.
+- Every source file is owned by exactly one registry item, and every item install `target` is unique. The generator enforces both checks.
+
+Commands:
+
+```bash
+bun run registry:generate   # regenerate registry manifests from source
+bun run registry:verify     # validate the generated public/r payloads
+bun run registry:build      # generate + shadcn build + verify -> public/r
+```
+
+`predev` and `prebuild` run `registry:build` automatically. Generated payloads in `public/r` are ignored by git and served at `/r/[name].json`. The `@reui-unbound` namespace is configured in `components.json`:
+
+```bash
+bunx --bun shadcn@latest add @reui-unbound/data-grid-base-1
+```
+
+---
+
 ## 🤝 Contributing
 
 Contributions, bug reports, and new component reconstructions are welcome:
 
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feat/component-name`).
-3. Ensure TypeScript checks and linting pass (`npm run lint && npm run typecheck`).
+3. Ensure TypeScript checks and linting pass (`bun run lint && bun run typecheck`).
 4. Open a Pull Request with a brief demo GIF or screenshot.
 
 ---
