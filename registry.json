@@ -1,0 +1,11 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "reui-unbound",
+  "homepage": "https://reui-unbound.pages.dev",
+  "include": [
+    "src/blocks/registry.json",
+    "src/components/reui-unbound/registry.json",
+    "src/components/reui-unbound/base/registry.json",
+    "src/hooks/registry.json"
+  ]
+}

@@ -1,0 +1,49 @@
+---
+title: Revenue By Region
+description: Revenue By Region data grid block.
+category: Grouping
+---
+
+# Revenue By Region
+
+**Block:** `data-grid-grouping-2` · **Category:** Grouping
+
+[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-2)
+
+## Install
+
+```bash
+bunx --bun shadcn@latest add @reui-unbound/data-grid-grouping-2
+```
+
+## Usage
+
+```tsx
+import { RevenueByRegionBlock } from "@/blocks/data-grid-grouping-2"
+
+export default function Page() {
+  return <RevenueByRegionBlock />
+}
+```
+
+## Files
+
+- `src/blocks/data-grid-grouping-2/index.tsx`
+- `src/blocks/data-grid-grouping-2/data.ts`
+
+## Dependencies
+
+- `cn`
+- `lucide-react`
+- `sonner`
+
+## Registry dependencies
+
+- `@reui-unbound/badge`
+- `avatar`
+- `button`
+- `dropdown-menu`
+- `input-group`
+- `popover`
+- `select`
+- `sonner`

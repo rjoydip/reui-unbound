@@ -29,6 +29,8 @@ import {
 } from "@/components/ui/sheet"
 import { cn } from "cn"
 
+import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
+
 import type { PackageManager } from "@/blocks/registry"
 import { PackageManagerIcon } from "@/components/pm-icon"
 import {
@@ -116,15 +118,6 @@ const OPTION_ROWS: {
   { key: "menuAccent", label: "Menu Accent", values: ACCENTS, icon: BrushIcon },
 ]
 
-async function copyText(text: string, label: string) {
-  try {
-    await navigator.clipboard.writeText(text)
-    toast(label)
-  } catch {
-    toast("Copy failed", { description: text })
-  }
-}
-
 export function CustomizePanel({
   block,
   open,
@@ -150,6 +143,13 @@ export function CustomizePanel({
   onShuffle: () => void
   onReset: () => void
 }) {
+
+  const { copyToClipboard } = useCopyToClipboard()
+
+  function copyText(text: string, label: string) {
+    copyToClipboard(text)
+    toast(label)
+  }
   return (
     <Sheet open={open} onOpenChange={onOpenChange}>
       <SheetContent className="w-full gap-0 p-0 sm:max-w-sm">
