@@ -1,5 +1,6 @@
 import { ChevronsUpDownIcon, CopyIcon } from "lucide-react"
 
+import { cn } from "cn"
 import type { PackageManager } from "@/blocks/registry"
 import { PackageManagerIcon } from "@/components/pm-icon"
 import {
@@ -18,6 +19,8 @@ export function InstallCommandPill({
   onPackageManagerChange,
   theme,
   onCopy,
+  compact = false,
+  fluid = false,
 }: {
   install: string
   registryId: string
@@ -25,9 +28,16 @@ export function InstallCommandPill({
   onPackageManagerChange: (next: PackageManager) => void
   theme: "light" | "dark"
   onCopy: () => void
+  compact?: boolean
+  fluid?: boolean
 }) {
   return (
-    <div className="bg-background flex w-fit items-center overflow-hidden rounded-md border">
+    <div
+      className={cn(
+        "bg-background flex items-center overflow-hidden rounded-md border",
+        fluid ? "w-full min-w-0" : "w-fit",
+      )}
+    >
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button
@@ -73,7 +83,18 @@ export function InstallCommandPill({
         aria-label="Copy install command"
         className="hover:bg-muted flex h-8 items-center gap-2 px-2.5 font-mono text-xs transition-colors"
       >
-        <span className="max-w-[280px] truncate">{registryId}</span>
+        <span
+          className={cn(
+            "truncate",
+            fluid
+              ? "min-w-0 max-w-none flex-1"
+              : compact
+                ? "max-w-[260px]"
+                : "max-w-[280px]",
+          )}
+        >
+          {registryId}
+        </span>
         <CopyIcon className="text-muted-foreground size-3.5 shrink-0" />
       </button>
     </div>

@@ -1,0 +1,1331 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "accordion-bordered",
+      "type": "registry:block",
+      "title": "Bordered Rounded Accordion",
+      "description": "Bordered Rounded example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-bordered.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-bordered.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-disabled-items",
+      "type": "registry:block",
+      "title": "Disabled Items Accordion",
+      "description": "Disabled Items example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-disabled-items.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-disabled-items.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-icons-badges",
+      "type": "registry:block",
+      "title": "Icons & Badges Accordion",
+      "description": "Icons & Badges example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-placeholder",
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-icons-badges.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-icons-badges.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-in-card",
+      "type": "registry:block",
+      "title": "In Card Accordion",
+      "description": "In Card example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "accordion",
+        "button",
+        "card"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-in-card.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-in-card.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-in-frame",
+      "type": "registry:block",
+      "title": "In Frame Accordion",
+      "description": "In Frame example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-in-frame.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-in-frame.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-nested",
+      "type": "registry:block",
+      "title": "Nested Accordion",
+      "description": "Nested example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-nested.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-nested.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-plus-minus",
+      "type": "registry:block",
+      "title": "Plus Minus Accordion",
+      "description": "Plus Minus example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-plus-minus.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-plus-minus.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-rotating-arrow",
+      "type": "registry:block",
+      "title": "Rotating Arrow Accordion",
+      "description": "Rotating Arrow example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-rotating-arrow.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-rotating-arrow.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-setup-steps",
+      "type": "registry:block",
+      "title": "Setup Steps Accordion",
+      "description": "Setup Steps example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-placeholder",
+        "accordion",
+        "button",
+        "button-group",
+        "input",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-setup-steps.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-setup-steps.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-single-expand",
+      "type": "registry:block",
+      "title": "Single Expand Accordion",
+      "description": "Single Expand example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "accordion"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-single-expand.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-single-expand.tsx"
+        }
+      ]
+    },
+    {
+      "name": "accordion-user-list",
+      "type": "registry:block",
+      "title": "User List Accordion",
+      "description": "User List example for Accordion.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "accordion",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/accordion-user-list.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/accordion-user-list.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-comment-mention",
+      "type": "registry:block",
+      "title": "Comment Mention Alert",
+      "description": "Comment Mention example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-comment-mention.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-comment-mention.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-description-actions",
+      "type": "registry:block",
+      "title": "Description & Actions Alert",
+      "description": "Description & Actions example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-description-actions.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-description-actions.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-account-deactivation",
+      "type": "registry:block",
+      "title": "Account Deactivation Alert Dialog",
+      "description": "Account Deactivation example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-account-deactivation.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-account-deactivation.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-billing-warning",
+      "type": "registry:block",
+      "title": "Billing Warning Alert Dialog",
+      "description": "Billing Warning example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-billing-warning.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-billing-warning.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-confirmation",
+      "type": "registry:block",
+      "title": "Confirmation Alert Dialog",
+      "description": "Confirmation example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-confirmation.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-confirmation.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-destructive-delete",
+      "type": "registry:block",
+      "title": "Destructive Delete Alert Dialog",
+      "description": "Destructive Delete example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-destructive-delete.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-destructive-delete.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-e-ticket-receipt",
+      "type": "registry:block",
+      "title": "E-Ticket Receipt Alert Dialog",
+      "description": "E-Ticket Receipt example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-e-ticket-receipt.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-e-ticket-receipt.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-logout-confirmation",
+      "type": "registry:block",
+      "title": "Logout Confirmation Alert Dialog",
+      "description": "Logout Confirmation example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-logout-confirmation.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-logout-confirmation.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-nested-in-dialog",
+      "type": "registry:block",
+      "title": "Nested In Dialog Alert Dialog",
+      "description": "Nested In Dialog example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "alert-dialog",
+        "button",
+        "dialog"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-nested-in-dialog.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-nested-in-dialog.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-security-audit",
+      "type": "registry:block",
+      "title": "Security Audit Alert Dialog",
+      "description": "Security Audit example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-security-audit.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-security-audit.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-small",
+      "type": "registry:block",
+      "title": "Small Size Alert Dialog",
+      "description": "Small Size example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-small.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-small.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-small-with-icon",
+      "type": "registry:block",
+      "title": "Small With Icon Alert Dialog",
+      "description": "Small With Icon example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-small-with-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-small-with-icon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-success-notice",
+      "type": "registry:block",
+      "title": "Success Notice Alert Dialog",
+      "description": "Success Notice example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button",
+        "checkbox",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-success-notice.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-success-notice.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-system-update",
+      "type": "registry:block",
+      "title": "System Update Alert Dialog",
+      "description": "System Update example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-system-update.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-system-update.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-unsaved-changes",
+      "type": "registry:block",
+      "title": "Unsaved Changes Alert Dialog",
+      "description": "Unsaved Changes example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button",
+        "checkbox",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-unsaved-changes.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-unsaved-changes.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-dialog-with-icon",
+      "type": "registry:block",
+      "title": "With Icon Alert Dialog",
+      "description": "With Icon example for Alert Dialog.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "alert-dialog",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-dialog-with-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-dialog-with-icon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-direct-message",
+      "type": "registry:block",
+      "title": "Direct Message Alert",
+      "description": "Direct Message example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-direct-message.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-direct-message.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-error-variant",
+      "type": "registry:block",
+      "title": "Error Variant Alert",
+      "description": "Error Variant example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-error-variant.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-error-variant.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-feature-discovery",
+      "type": "registry:block",
+      "title": "Feature Discovery Alert",
+      "description": "Feature Discovery example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-feature-discovery.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-feature-discovery.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-frame-reset-borders",
+      "type": "registry:block",
+      "title": "Frame Reset Borders Alert",
+      "description": "Frame Reset Borders example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-frame-reset-borders.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-frame-reset-borders.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-frame-with-actions",
+      "type": "registry:block",
+      "title": "Frame With Actions Alert",
+      "description": "Frame With Actions example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-frame-with-actions.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-frame-with-actions.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-icon-actions",
+      "type": "registry:block",
+      "title": "Icon & Actions Alert",
+      "description": "Icon & Actions example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-icon-actions.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-icon-actions.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-info-variant",
+      "type": "registry:block",
+      "title": "Info Variant Alert",
+      "description": "Info Variant example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-info-variant.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-info-variant.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-invert-variant",
+      "type": "registry:block",
+      "title": "Invert Variant Alert",
+      "description": "Invert Variant example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-invert-variant.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-invert-variant.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-leading-icon",
+      "type": "registry:block",
+      "title": "Leading Icon Alert",
+      "description": "Leading Icon example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-leading-icon.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-leading-icon.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-payment-failure",
+      "type": "registry:block",
+      "title": "Payment Failure Alert",
+      "description": "Payment Failure example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-payment-failure.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-payment-failure.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-pro-upsell",
+      "type": "registry:block",
+      "title": "Pro Upsell Alert",
+      "description": "Pro Upsell example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-pro-upsell.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-pro-upsell.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-service-status",
+      "type": "registry:block",
+      "title": "Service Status Alert",
+      "description": "Service Status example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-service-status.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-service-status.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-stacked-in-frame",
+      "type": "registry:block",
+      "title": "Stacked in Frame Alert",
+      "description": "Stacked in Frame example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-stacked-in-frame.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-stacked-in-frame.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-success-variant",
+      "type": "registry:block",
+      "title": "Success Variant Alert",
+      "description": "Success Variant example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-success-variant.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-success-variant.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-title-actions",
+      "type": "registry:block",
+      "title": "Title & Actions Alert",
+      "description": "Title & Actions example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-title-actions.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-title-actions.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-title-description",
+      "type": "registry:block",
+      "title": "Title & Description Alert",
+      "description": "Title & Description example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-title-description.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-title-description.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-urgent-billing",
+      "type": "registry:block",
+      "title": "Urgent Billing Alert",
+      "description": "Urgent Billing example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-urgent-billing.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-urgent-billing.tsx"
+        }
+      ]
+    },
+    {
+      "name": "alert-warning-variant",
+      "type": "registry:block",
+      "title": "Warning Variant Alert",
+      "description": "Warning Variant example for Alert.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/icon-placeholder"
+      ],
+      "files": [
+        {
+          "path": "radix/alert-warning-variant.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/alert-warning-variant.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-classic-photo",
+      "type": "registry:block",
+      "title": "Classic Photo Aspect Ratio",
+      "description": "Classic Photo example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-classic-photo.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-classic-photo.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-monitor",
+      "type": "registry:block",
+      "title": "Monitor Aspect Ratio",
+      "description": "Monitor example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-monitor.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-monitor.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-social-portrait",
+      "type": "registry:block",
+      "title": "Social Portrait Aspect Ratio",
+      "description": "Social Portrait example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-social-portrait.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-social-portrait.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-square",
+      "type": "registry:block",
+      "title": "Square Aspect Ratio",
+      "description": "Square example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-square.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-square.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-standard",
+      "type": "registry:block",
+      "title": "Standard Aspect Ratio",
+      "description": "Standard example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-standard.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-standard.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-tall-portrait",
+      "type": "registry:block",
+      "title": "Tall Portrait Aspect Ratio",
+      "description": "Tall Portrait example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-tall-portrait.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-tall-portrait.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-ultrawide",
+      "type": "registry:block",
+      "title": "Ultrawide Aspect Ratio",
+      "description": "Ultrawide example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-ultrawide.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-ultrawide.tsx"
+        }
+      ]
+    },
+    {
+      "name": "aspect-ratio-widescreen",
+      "type": "registry:block",
+      "title": "Widescreen Aspect Ratio",
+      "description": "Widescreen example for Aspect Ratio.",
+      "dependencies": [],
+      "registryDependencies": [
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "radix/aspect-ratio-widescreen.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/aspect-ratio-widescreen.tsx"
+        }
+      ]
+    },
+    {
+      "name": "attachment-assistant-reply",
+      "type": "registry:block",
+      "title": "Assistant Reply Attachment",
+      "description": "Assistant Reply example for Attachment.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "radix/attachment-assistant-reply.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/attachment-assistant-reply.tsx"
+        }
+      ]
+    },
+    {
+      "name": "attachment-composer-tray",
+      "type": "registry:block",
+      "title": "Composer Tray Attachment",
+      "description": "Composer Tray example for Attachment.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "attachment",
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "radix/attachment-composer-tray.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/attachment-composer-tray.tsx"
+        }
+      ]
+    },
+    {
+      "name": "attachment-file-picker",
+      "type": "registry:block",
+      "title": "File Picker Attachment",
+      "description": "File Picker example for Attachment.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "@reui-unbound/use-file-upload",
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "radix/attachment-file-picker.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/attachment-file-picker.tsx"
+        }
+      ]
+    },
+    {
+      "name": "attachment-image-strip",
+      "type": "registry:block",
+      "title": "Image Strip Attachment",
+      "description": "Image Strip example for Attachment.",
+      "dependencies": [],
+      "registryDependencies": [
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "radix/attachment-image-strip.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/attachment-image-strip.tsx"
+        }
+      ]
+    },
+    {
+      "name": "attachment-three-sizes",
+      "type": "registry:block",
+      "title": "Three Sizes Attachment",
+      "description": "Three Sizes example for Attachment.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "attachment"
+      ],
+      "files": [
+        {
+          "path": "radix/attachment-three-sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/attachment-three-sizes.tsx"
+        }
+      ]
+    },
+    {
+      "name": "attachment-upload-queue",
+      "type": "registry:block",
+      "title": "Upload Queue Attachment",
+      "description": "Upload Queue example for Attachment.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "attachment",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "radix/attachment-upload-queue.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/attachment-upload-queue.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-auto-highlight",
+      "type": "registry:block",
+      "title": "Auto Highlight Autocomplete",
+      "description": "Auto Highlight example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-auto-highlight.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-auto-highlight.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-clear-button",
+      "type": "registry:block",
+      "title": "Clear Button Autocomplete",
+      "description": "Clear Button example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-clear-button.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-clear-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-clear-trigger",
+      "type": "registry:block",
+      "title": "Clear & Trigger Autocomplete",
+      "description": "Clear & Trigger example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-clear-trigger.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-clear-trigger.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-disabled",
+      "type": "registry:block",
+      "title": "Disabled Autocomplete",
+      "description": "Disabled example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-disabled.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-disabled.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-form-integration",
+      "type": "registry:block",
+      "title": "Form Integration Autocomplete",
+      "description": "Form Integration example for Autocomplete.",
+      "dependencies": [
+        "@hookform/resolvers",
+        "react-hook-form",
+        "sonner",
+        "zod"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/alert",
+        "@reui-unbound/autocomplete",
+        "@reui-unbound/icon-placeholder",
+        "alert",
+        "button",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-form-integration.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-form-integration.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-groups-labels",
+      "type": "registry:block",
+      "title": "Groups & Labels Autocomplete",
+      "description": "Groups & Labels example for Autocomplete.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-groups-labels.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-groups-labels.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-labeled",
+      "type": "registry:block",
+      "title": "Labeled Autocomplete",
+      "description": "Labeled example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-labeled.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-labeled.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-large",
+      "type": "registry:block",
+      "title": "Large Autocomplete",
+      "description": "Large example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-large.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-large.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-search-results",
+      "type": "registry:block",
+      "title": "Search Results Autocomplete",
+      "description": "Search Results example for Autocomplete.",
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete",
+        "@reui-unbound/icon-placeholder",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-search-results.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-search-results.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-small",
+      "type": "registry:block",
+      "title": "Small Autocomplete",
+      "description": "Small example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-small.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-small.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-standard",
+      "type": "registry:block",
+      "title": "Standard Autocomplete",
+      "description": "Standard example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-standard.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-standard.tsx"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-trigger-button",
+      "type": "registry:block",
+      "title": "Trigger Button Autocomplete",
+      "description": "Trigger Button example for Autocomplete.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/autocomplete"
+      ],
+      "files": [
+        {
+          "path": "radix/autocomplete-trigger-button.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/autocomplete-trigger-button.tsx"
+        }
+      ]
+    }
+  ]
+}

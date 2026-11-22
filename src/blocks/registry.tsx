@@ -293,6 +293,7 @@ export interface BlockEntry {
   }
   kind?: "block" | "component"
   flavor?: "radix" | "base"
+  variant?: string
   registryId?: string
   installTarget?: string
 }
@@ -333,6 +334,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-1",
+    installTarget: "@reui-unbound/data-grid-base-customers",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -369,6 +371,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-2",
+    installTarget: "@reui-unbound/data-grid-base-contacts",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -404,6 +407,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-3",
+    installTarget: "@reui-unbound/data-grid-base-opportunities",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -432,6 +436,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-4",
+    installTarget: "@reui-unbound/data-grid-base-timesheets",
     dependencies: {
       registry: [
         "@reui-unbound/data-grid",
@@ -460,6 +465,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-5",
+    installTarget: "@reui-unbound/data-grid-base-support-queue",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -488,6 +494,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-6",
+    installTarget: "@reui-unbound/data-grid-base-members",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -512,6 +519,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-7",
+    installTarget: "@reui-unbound/data-grid-base-modules",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -536,6 +544,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-8",
+    installTarget: "@reui-unbound/data-grid-base-rate-card",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -567,6 +576,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Base",
     stage: "Base",
     href: "https://reui.io/blocks/data-grid/base/data-grid-base-9",
+    installTarget: "@reui-unbound/data-grid-base-api-requests",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -597,6 +607,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Columns",
     stage: "Columns",
     href: "https://reui.io/blocks/data-grid/columns/data-grid-columns-1",
+    installTarget: "@reui-unbound/data-grid-columns-workspace-access-review",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner", "switch", "tooltip"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -613,6 +624,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Columns",
     stage: "Columns",
     href: "https://reui.io/blocks/data-grid/columns/data-grid-columns-2",
+    installTarget: "@reui-unbound/data-grid-columns-course-catalog",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner", "switch", "tooltip"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -629,6 +641,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Columns",
     stage: "Columns",
     href: "https://reui.io/blocks/data-grid/columns/data-grid-columns-3",
+    installTarget: "@reui-unbound/data-grid-columns-work-queue",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner", "switch", "tooltip"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -645,6 +658,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Columns",
     stage: "Columns",
     href: "https://reui.io/blocks/data-grid/columns/data-grid-columns-4",
+    installTarget: "@reui-unbound/data-grid-columns-members",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner", "switch", "tooltip"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -661,6 +675,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Columns",
     stage: "Columns",
     href: "https://reui.io/blocks/data-grid/columns/data-grid-columns-5",
+    installTarget: "@reui-unbound/data-grid-columns-companies",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner", "switch", "tooltip"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -677,6 +692,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Drag & Drop",
     stage: "Drag & Drop",
     href: "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-1",
+    installTarget: "@reui-unbound/data-grid-drag-drop-sprint-backlog",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "@reui-unbound/icon-tile", "avatar", "button", "sonner", "switch"],
       packages: ["@dnd-kit/core", "@dnd-kit/modifiers", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -693,6 +709,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Drag & Drop",
     stage: "Drag & Drop",
     href: "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-2",
+    installTarget: "@reui-unbound/data-grid-drag-drop-routing-rules",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "@reui-unbound/icon-tile", "avatar", "button", "sonner", "switch"],
       packages: ["@dnd-kit/core", "@dnd-kit/modifiers", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -709,6 +726,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Drag & Drop",
     stage: "Drag & Drop",
     href: "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-3",
+    installTarget: "@reui-unbound/data-grid-drag-drop-dispatch-layout",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "@reui-unbound/icon-tile", "avatar", "button", "sonner", "switch"],
       packages: ["@dnd-kit/core", "@dnd-kit/modifiers", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -725,6 +743,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Drag & Drop",
     stage: "Drag & Drop",
     href: "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-4",
+    installTarget: "@reui-unbound/data-grid-drag-drop-shared-drive",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "@reui-unbound/icon-tile", "avatar", "button", "sonner", "switch"],
       packages: ["@dnd-kit/core", "@dnd-kit/modifiers", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -741,6 +760,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Editing",
     stage: "Editing",
     href: "https://reui.io/blocks/data-grid/editing/data-grid-editing-1",
+    installTarget: "@reui-unbound/data-grid-editing-labels",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dialog", "dropdown-menu", "input", "input-group", "select", "switch", "sonner"],
       packages: ["@dnd-kit/core", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -757,6 +777,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Editing",
     stage: "Editing",
     href: "https://reui.io/blocks/data-grid/editing/data-grid-editing-2",
+    installTarget: "@reui-unbound/data-grid-editing-product-inventory",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dialog", "dropdown-menu", "input", "input-group", "select", "switch", "sonner"],
       packages: ["@dnd-kit/core", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -773,6 +794,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Editing",
     stage: "Editing",
     href: "https://reui.io/blocks/data-grid/editing/data-grid-editing-3",
+    installTarget: "@reui-unbound/data-grid-editing-project-intake",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dialog", "dropdown-menu", "input", "input-group", "select", "switch", "sonner"],
       packages: ["@dnd-kit/core", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -789,6 +811,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Editing",
     stage: "Editing",
     href: "https://reui.io/blocks/data-grid/editing/data-grid-editing-4",
+    installTarget: "@reui-unbound/data-grid-editing-plans",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dialog", "dropdown-menu", "input", "input-group", "select", "switch", "sonner"],
       packages: ["@dnd-kit/core", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -805,6 +828,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Editing",
     stage: "Editing",
     href: "https://reui.io/blocks/data-grid/editing/data-grid-editing-5",
+    installTarget: "@reui-unbound/data-grid-editing-launch-runbook",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dialog", "dropdown-menu", "input", "input-group", "select", "switch", "sonner"],
       packages: ["@dnd-kit/core", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -821,6 +845,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Editing",
     stage: "Editing",
     href: "https://reui.io/blocks/data-grid/editing/data-grid-editing-6",
+    installTarget: "@reui-unbound/data-grid-editing-reorder-plan",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dialog", "dropdown-menu", "input", "input-group", "select", "switch", "sonner"],
       packages: ["@dnd-kit/core", "@dnd-kit/sortable", "@dnd-kit/utilities", "@tanstack/react-table", "sonner", "cn"],
@@ -837,6 +862,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Expansion",
     stage: "Expansion",
     href: "https://reui.io/blocks/data-grid/expansion/data-grid-expansion-1",
+    installTarget: "@reui-unbound/data-grid-expansion-task-delivery",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -853,6 +879,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Expansion",
     stage: "Expansion",
     href: "https://reui.io/blocks/data-grid/expansion/data-grid-expansion-2",
+    installTarget: "@reui-unbound/data-grid-expansion-treasury-waterfall",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -869,6 +896,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Expansion",
     stage: "Expansion",
     href: "https://reui.io/blocks/data-grid/expansion/data-grid-expansion-3",
+    installTarget: "@reui-unbound/data-grid-expansion-release-reviews",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "avatar", "button", "dropdown-menu", "input-group", "select", "sonner"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -885,6 +913,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Filtering",
     stage: "Filtering",
     href: "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-1",
+    installTarget: "@reui-unbound/data-grid-filtering-transactions",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "@reui-unbound/frame", "@reui-unbound/icon-tile", "button", "dropdown-menu", "input", "input-group", "popover", "sonner"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -901,6 +930,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Filtering",
     stage: "Filtering",
     href: "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-2",
+    installTarget: "@reui-unbound/data-grid-filtering-automation-library",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "avatar", "button", "dropdown-menu", "input", "popover", "switch", "sonner"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -917,6 +947,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Filtering",
     stage: "Filtering",
     href: "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-3",
+    installTarget: "@reui-unbound/data-grid-filtering-renewals-review",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "avatar", "button", "dropdown-menu", "input", "popover", "sonner"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -934,6 +965,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Filtering",
     stage: "Filtering",
     href: "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-4",
+    installTarget: "@reui-unbound/data-grid-filtering-renewals-risk",
     dependencies: {
       registry: ["@reui-unbound/badge", "@reui-unbound/data-grid", "avatar", "button", "dropdown-menu", "input", "popover", "switch", "sonner"],
       packages: ["@tanstack/react-table", "sonner", "cn"],
@@ -951,6 +983,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Grouping",
     stage: "Grouping",
     href: "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-1",
+    installTarget: "@reui-unbound/data-grid-grouping-roadmap-queue",
     dependencies: {
       registry: ["@reui-unbound/badge", "avatar", "button", "dropdown-menu", "input-group", "popover", "select", "switch", "sonner"],
       packages: ["sonner", "cn"],
@@ -967,6 +1000,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Grouping",
     stage: "Grouping",
     href: "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-2",
+    installTarget: "@reui-unbound/data-grid-grouping-revenue-by-region",
     dependencies: {
       registry: ["@reui-unbound/badge", "avatar", "button", "dropdown-menu", "input-group", "popover", "select", "sonner"],
       packages: ["sonner", "cn"],
@@ -983,6 +1017,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Grouping",
     stage: "Grouping",
     href: "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-3",
+    installTarget: "@reui-unbound/data-grid-grouping-access-cohort",
     dependencies: {
       registry: ["@reui-unbound/badge", "button", "input-group", "select", "switch"],
       packages: ["cn"],
@@ -999,6 +1034,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Grouping",
     stage: "Grouping",
     href: "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-4",
+    installTarget: "@reui-unbound/data-grid-grouping-bill-of-materials",
     dependencies: {
       registry: ["@reui-unbound/badge", "button", "dropdown-menu", "input-group", "popover", "select", "switch", "sonner"],
       packages: ["sonner", "cn"],
@@ -1015,6 +1051,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Grouping",
     stage: "Grouping",
     href: "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-5",
+    installTarget: "@reui-unbound/data-grid-grouping-reporting-lines",
     dependencies: {
       registry: ["@reui-unbound/badge", "avatar", "button", "checkbox", "dropdown-menu", "input-group", "popover", "select", "switch", "sonner"],
       packages: ["sonner", "cn"],
@@ -1031,6 +1068,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Grouping",
     stage: "Grouping",
     href: "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-6",
+    installTarget: "@reui-unbound/data-grid-grouping-production-desk",
     dependencies: {
       registry: ["@reui-unbound/badge", "avatar", "button", "dropdown-menu", "input-group", "popover", "select", "switch", "sonner"],
       packages: ["sonner", "cn"],
@@ -1047,6 +1085,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Grouping",
     stage: "Grouping",
     href: "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-7",
+    installTarget: "@reui-unbound/data-grid-grouping-delivery-board",
     dependencies: {
       registry: ["@reui-unbound/badge", "avatar", "button", "checkbox", "input-group", "popover", "select", "sonner"],
       packages: ["sonner", "cn"],
@@ -1063,6 +1102,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Virtualization",
     stage: "Virtualization",
     href: "https://reui.io/blocks/data-grid/virtualization/data-grid-virtualization-1",
+    installTarget: "@reui-unbound/data-grid-virtualization-transactions",
     dependencies: {
       registry: ["@reui-unbound/badge", "avatar", "button", "checkbox", "dropdown-menu", "input-group", "popover", "switch", "sonner"],
       packages: ["@tanstack/react-virtual", "sonner", "cn"],
@@ -1079,6 +1119,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Virtualization",
     stage: "Virtualization",
     href: "https://reui.io/blocks/data-grid/virtualization/data-grid-virtualization-2",
+    installTarget: "@reui-unbound/data-grid-virtualization-exception-queue",
     dependencies: {
       registry: ["@reui-unbound/badge", "avatar", "button", "checkbox", "dropdown-menu", "input-group", "popover", "switch", "sonner"],
       packages: ["@tanstack/react-virtual", "sonner", "cn"],
@@ -1095,6 +1136,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-1",
+    installTarget: "@reui-unbound/data-grid-advanced-campaign-performance",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1124,6 +1166,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-2",
+    installTarget: "@reui-unbound/data-grid-advanced-store-p-l",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1153,6 +1196,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-3",
+    installTarget: "@reui-unbound/data-grid-advanced-campaign-targets",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1182,6 +1226,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-4",
+    installTarget: "@reui-unbound/data-grid-advanced-reliability-index",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1211,6 +1256,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-5",
+    installTarget: "@reui-unbound/data-grid-advanced-wholesale-applications",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1240,6 +1286,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-6",
+    installTarget: "@reui-unbound/data-grid-advanced-stock-mix",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1268,6 +1315,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-7",
+    installTarget: "@reui-unbound/data-grid-advanced-fourplex-pro-forma",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1296,6 +1344,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-8",
+    installTarget: "@reui-unbound/data-grid-advanced-product-kpis",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1324,6 +1373,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-9",
+    installTarget: "@reui-unbound/data-grid-advanced-service-visits",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1352,6 +1402,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-10",
+    installTarget: "@reui-unbound/data-grid-advanced-technician-capacity",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1380,6 +1431,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-11",
+    installTarget: "@reui-unbound/data-grid-advanced-factory-scorecard",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1409,6 +1461,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-12",
+    installTarget: "@reui-unbound/data-grid-advanced-freight-cargo-services",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1438,6 +1491,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-13",
+    installTarget: "@reui-unbound/data-grid-advanced-hr-scorecard",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1467,6 +1521,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-14",
+    installTarget: "@reui-unbound/data-grid-advanced-strategy-scorecard",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1496,6 +1551,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-15",
+    installTarget: "@reui-unbound/data-grid-advanced-p-l-outlook",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1525,6 +1581,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-16",
+    installTarget: "@reui-unbound/data-grid-advanced-store-kpis",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1554,6 +1611,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-17",
+    installTarget: "@reui-unbound/data-grid-advanced-support-scorecard",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1583,6 +1641,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-22",
+    installTarget: "@reui-unbound/data-grid-advanced-job-schedule",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1612,6 +1671,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-23",
+    installTarget: "@reui-unbound/data-grid-advanced-prospects",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1641,6 +1701,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-27",
+    installTarget: "@reui-unbound/data-grid-advanced-project-budget",
     dependencies: {
       registry: [
         "@reui-unbound/badge",
@@ -1670,6 +1731,7 @@ export const BLOCKS: BlockEntry[] = [
     category: "Advanced",
     stage: "Advanced",
     href: "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-28",
+    installTarget: "@reui-unbound/data-grid-advanced-invoices",
     dependencies: {
       registry: [
         "@reui-unbound/badge",

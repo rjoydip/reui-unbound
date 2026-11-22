@@ -141,6 +141,10 @@ for (const part of blockParts) {
 
   const name = part.match(/name:\s*"([^"]+)"/)?.[1] ?? id
   const category = part.match(/category:\s*"([^"]+)"/)?.[1]
+  const installTarget = part.match(/installTarget:\s*"([^"]+)"/)?.[1]
+  const itemName = installTarget?.startsWith("@reui-unbound/")
+    ? installTarget.slice("@reui-unbound/".length)
+    : id
   const depsMatch = part.match(
     /dependencies:\s*\{\s*registry:\s*\[([\s\S]*?)\],\s*packages:\s*\[([\s\S]*?)\],?\s*\}/,
   )
@@ -162,11 +166,11 @@ for (const part of blockParts) {
   )
 
   blockItems.push({
-    name: id,
+    name: itemName,
     type: "registry:block",
     title: name,
     description: `${name} data grid block.`,
-    ...(category ? { meta: { category } } : {}),
+    ...(category ? { meta: { category, id } } : {}),
     dependencies: [...new Set([...declaredPackages, ...scanned.dependencies])].sort(),
     registryDependencies: [
       ...new Set([...declaredRegistry, ...scanned.registryDependencies]),
@@ -182,6 +186,93 @@ for (const part of blockParts) {
 writeJson("src/blocks/registry.json", {
   $schema: "https://ui.shadcn.com/schema/registry.json",
   items: blockItems,
+})
+
+/* -------------------------------------------------------------------------- */
+/* Component examples                                                          */
+/* -------------------------------------------------------------------------- */
+
+function quotedFields(block) {
+  return Object.fromEntries(
+    [...block.matchAll(/(\w+):\s*"([^"]*)"/g)].map((match) => [
+      match[1],
+      match[2],
+    ]),
+  )
+}
+
+const exampleItems = []
+
+for (const catalogFile of [
+  "src/blocks/components/catalog.tsx",
+  "src/blocks/components/ui-catalog.tsx",
+]) {
+  const catalogSource = read(catalogFile).replace(/\r\n/g, "\n")
+  const rawImports = new Map()
+  for (const match of catalogSource.matchAll(
+    /import\s+(\w+)\s+from\s+"\.\/radix\/([^"?]+)\?raw"/g,
+  )) {
+    rawImports.set(match[1], match[2])
+  }
+
+  for (const match of catalogSource.matchAll(
+    /(?:componentEntry|uiEntry)\(\{([\s\S]*?)\n  \}\),/g,
+  )) {
+    const block = match[1]
+    const fields = quotedFields(block)
+    const installTarget = fields.installTarget
+    if (!installTarget?.startsWith("@reui-unbound/")) continue
+
+    const name = installTarget.slice("@reui-unbound/".length)
+    const sourceName = block.match(/source:\s*(\w+)/)?.[1]
+    const rawFile = rawImports.get(sourceName)
+    if (!rawFile) {
+      console.warn(`registry: no source file for ${name}`)
+      continue
+    }
+    const relative = `radix/${rawFile}`
+
+    const file = `src/blocks/components/${relative}`
+    const scanned = scanSource([file], name)
+    const declaredDependencies = [
+      ...(block
+        .match(/(?:extraDependencies|dependencies):\s*\[([\s\S]*?)\]/)?.[1] ?? "")
+        .matchAll(/"([^"]+)"/g),
+    ].map((entry) => entry[1])
+    const declaredPackages = [
+      ...(block.match(/extraPackages:\s*\[([\s\S]*?)\]/)?.[1] ?? "").matchAll(
+        /"([^"]+)"/g,
+      ),
+    ].map((entry) => entry[1])
+
+    const component = fields.label ?? fields.name ?? "Component"
+    const variant = fields.variant ?? component
+
+    exampleItems.push({
+      name,
+      type: "registry:block",
+      title: `${variant} ${component}`,
+      description: `${variant} example for ${component}.`,
+      dependencies: [...new Set([...scanned.dependencies, ...declaredPackages])].sort(),
+      registryDependencies: [
+        ...new Set([...scanned.registryDependencies, ...declaredDependencies]),
+      ].sort(),
+      files: [
+        {
+          path: relative,
+          type: "registry:component",
+          target: `@components/examples/${name}.tsx`,
+        },
+      ],
+    })
+  }
+}
+
+exampleItems.sort((a, b) => a.name.localeCompare(b.name))
+
+writeJson("src/blocks/components/registry.json", {
+  $schema: "https://ui.shadcn.com/schema/registry.json",
+  items: exampleItems,
 })
 
 /* -------------------------------------------------------------------------- */
@@ -414,6 +505,7 @@ if (duplicates.length > 0) {
 
 const manifests = [
   { dir: "src/blocks", items: blockItems },
+  { dir: "src/blocks/components", items: exampleItems },
   { dir: reuiDir, items: reuiItems },
   { dir: baseDir, items: baseItems },
   { dir: hooksDir, items: hookItems },
@@ -468,6 +560,7 @@ writeJson("registry.json", {
   homepage: "https://reui-unbound.pages.dev",
   include: [
     "src/blocks/registry.json",
+    "src/blocks/components/registry.json",
     "src/components/reui-unbound/registry.json",
     "src/components/reui-unbound/base/registry.json",
     "src/hooks/registry.json",
@@ -475,5 +568,5 @@ writeJson("registry.json", {
 })
 
 console.log(
-  `registry: ${blockItems.length} blocks, ${reuiItems.length} reui, ${baseItems.length} base, ${hookItems.length} hooks`,
+  `registry: ${blockItems.length} blocks, ${exampleItems.length} examples, ${reuiItems.length} reui, ${baseItems.length} base, ${hookItems.length} hooks`,
 )

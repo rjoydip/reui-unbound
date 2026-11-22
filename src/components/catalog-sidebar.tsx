@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react"
+import { useEffect, useMemo, useState, type ReactNode } from "react"
 import {
   BoxesIcon,
   ChevronRightIcon,
@@ -82,8 +82,12 @@ export function CatalogSidebar({
   onViewChange,
   favorites,
   onSelect,
+  onSelectGroup,
+  onSelectAllBlocks,
+  onSelectBlockCategory,
   expanded,
   onToggleCategory,
+  resetKey,
 }: {
   current: BlockEntry
   section: Section
@@ -91,14 +95,22 @@ export function CatalogSidebar({
   onViewChange: (view: SidebarView) => void
   favorites: string[]
   onSelect: (block: BlockEntry) => void
+  onSelectGroup: (name: string) => void
+  onSelectAllBlocks: () => void
+  onSelectBlockCategory: (name: string) => void
   expanded: string[]
   onToggleCategory: (name: string) => void
+  resetKey: number
 }) {
   const [query, setQuery] = useState("")
   const [mode, setMode] = useState<"list" | "grid">("list")
   const [expandedComponents, setExpandedComponents] = useState<string[]>(
     () => (current.kind === "component" ? [current.name] : []),
   )
+
+  useEffect(() => {
+    setExpandedComponents([])
+  }, [resetKey])
 
   const favoriteBlocks = [...BLOCKS, ...COMPONENT_ENTRIES].filter((block) =>
     favorites.includes(block.id),
@@ -207,6 +219,7 @@ export function CatalogSidebar({
       <div className="px-3">
         <button
           type="button"
+          onClick={section === "blocks" ? onSelectAllBlocks : undefined}
           className="border-border bg-background flex h-10 w-full items-center gap-2 rounded-lg border px-3 text-sm font-medium"
         >
           {section === "components" ? (
@@ -264,30 +277,38 @@ export function CatalogSidebar({
 
               return (
                 <div key={category.name}>
-                  <button
-                    type="button"
-                    aria-expanded={isOpen}
-                    onClick={() => onToggleCategory(category.name)}
-                    className={cn(
-                      "flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm transition-colors",
-                      isActive && "bg-muted font-medium",
-                      !isActive && "hover:bg-muted/60",
-                    )}
-                  >
-                    <ChevronRightIcon
-                      className={cn(
-                        "text-muted-foreground size-3.5 shrink-0 transition-transform",
-                        isOpen && "rotate-90",
-                      )}
-                    />
-                    <span className="truncate">{category.name}</span>
-                    {blocks.length > 0 && (
-                      <span className="bg-info size-1.5 shrink-0 rounded-full" />
-                    )}
-                    <span className="text-muted-foreground ml-auto text-xs tabular-nums">
-                      {category.count}
-                    </span>
-                  </button>
+                  <HoverCard openDelay={250} closeDelay={100}>
+                    <HoverCardTrigger asChild>
+                      <button
+                        type="button"
+                        aria-expanded={isOpen}
+                        onClick={() => {
+                          onSelectBlockCategory(category.name)
+                          onToggleCategory(category.name)
+                        }}
+                        className={cn(
+                          "flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm transition-colors",
+                          isActive && "bg-muted font-medium",
+                          !isActive && "hover:bg-muted/60",
+                        )}
+                      >
+                        <ChevronRightIcon
+                          className={cn(
+                            "text-muted-foreground size-3.5 shrink-0 transition-transform",
+                            isOpen && "rotate-90",
+                          )}
+                        />
+                        <span className="truncate">{category.name}</span>
+                        {blocks.length > 0 && (
+                          <span className="bg-info size-1.5 shrink-0 rounded-full" />
+                        )}
+                        <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+                          {category.count}
+                        </span>
+                      </button>
+                    </HoverCardTrigger>
+                    <BlockCategoryHover category={category.name} blocks={blocks} />
+                  </HoverCard>
 
                   {isOpen && (
                     <div className="border-border/70 ml-4 flex flex-col gap-0.5 border-l py-1 pl-2">
@@ -357,7 +378,6 @@ export function CatalogSidebar({
           mode === "grid" ? (
             <div className="grid grid-cols-2 gap-1.5 px-1">
               {filteredGroups.map((group) => {
-                const target = group.entries[0]
                 const active =
                   current.kind === "component" && current.name === group.name
                 return (
@@ -365,7 +385,7 @@ export function CatalogSidebar({
                     <HoverCardTrigger asChild>
                       <button
                         type="button"
-                        onClick={() => onSelect(target)}
+                        onClick={() => onSelectGroup(group.name)}
                         className={cn(
                           "flex items-center justify-between gap-2 rounded-md border px-2.5 py-1.5 text-left text-xs transition-colors",
                           active
@@ -385,7 +405,6 @@ export function CatalogSidebar({
           ) : (
             <div className="flex flex-col gap-0.5">
               {filteredGroups.map((group) => {
-                const target = group.entries[0]
                 const active =
                   current.kind === "component" && current.name === group.name
                 const open = expandedComponents.includes(group.name)
@@ -406,7 +425,7 @@ export function CatalogSidebar({
                               open ? "Collapse category" : "Expand category"
                             }
                             onClick={() => {
-                              onSelect(target)
+                              onSelectGroup(group.name)
                               setExpandedComponents((current) =>
                                 current.includes(group.name)
                                   ? current.filter(
@@ -450,7 +469,8 @@ export function CatalogSidebar({
                                 : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
                             )}
                           >
-                            {entry.flavor === "base" ? "Base" : "Radix"}
+                            {entry.variant ??
+                              (entry.flavor === "base" ? "Base" : "Default")}
                           </button>
                         ))}
                       </div>
@@ -471,8 +491,24 @@ export function CatalogSidebar({
   )
 }
 
-function ComponentHover({ group }: { group: { name: string; entries: BlockEntry[] } }) {
-  const base = group.entries.some((entry) => entry.flavor === "base")
+function HoverPreview({ children }: { children: ReactNode }) {
+  return (
+    <div className="bg-muted/30 relative mb-3 h-32 overflow-hidden rounded-lg border">
+      <div className="pointer-events-none absolute top-0 left-0 w-[250%] origin-top-left scale-[0.4] p-1">
+        {children}
+      </div>
+    </div>
+  )
+}
+
+function BlockCategoryHover({
+  category,
+  blocks,
+}: {
+  category: string
+  blocks: BlockEntry[]
+}) {
+  const First = blocks[0]?.Component
   return (
     <HoverCardContent
       side="right"
@@ -480,10 +516,38 @@ function ComponentHover({ group }: { group: { name: string; entries: BlockEntry[
       sideOffset={12}
       className="w-80 p-3"
     >
+      {First ? (
+        <HoverPreview>
+          <First />
+        </HoverPreview>
+      ) : null}
+      <div className="text-sm font-medium">{category}</div>
+      <div className="text-muted-foreground mt-0.5 text-xs">
+        {blocks.length} {blocks.length === 1 ? "block" : "blocks"}
+      </div>
+    </HoverCardContent>
+  )
+}
+
+function ComponentHover({ group }: { group: { name: string; entries: BlockEntry[] } }) {
+  const base = group.entries.some((entry) => entry.flavor === "base")
+  const First = group.entries[0]?.Component
+  return (
+    <HoverCardContent
+      side="right"
+      align="start"
+      sideOffset={12}
+      className="w-80 p-3"
+    >
+      {First ? (
+        <HoverPreview>
+          <First />
+        </HoverPreview>
+      ) : null}
       <div className="text-sm font-medium">{group.name}</div>
       <div className="text-muted-foreground mt-0.5 text-xs">
         {group.entries.length} {group.entries.length === 1 ? "preview" : "previews"}
-        {base ? " · Radix + Base" : " · Radix"}
+        {base ? " · Default + Base" : " · Default"}
       </div>
       <p className="text-muted-foreground mt-2 text-sm">
         {COMPONENT_NOTES[group.name] ??

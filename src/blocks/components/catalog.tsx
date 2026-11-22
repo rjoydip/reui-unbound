@@ -5,7 +5,38 @@ import baseRegistry from "@/components/reui-unbound/base/registry.json"
 import reuiRegistry from "@/components/reui-unbound/registry.json"
 
 import RadixAlertPreview from "./radix/alert"
-import RadixAutocompletePreview from "./radix/autocomplete"
+import RadixAlertTitleDescriptionPreview from "./radix/alert-title-description"
+import RadixAlertLeadingIconPreview from "./radix/alert-leading-icon"
+import RadixAlertIconActionsPreview from "./radix/alert-icon-actions"
+import RadixAlertPaymentFailurePreview from "./radix/alert-payment-failure"
+import RadixAlertInfoVariantPreview from "./radix/alert-info-variant"
+import RadixAlertSuccessVariantPreview from "./radix/alert-success-variant"
+import RadixAlertWarningVariantPreview from "./radix/alert-warning-variant"
+import RadixAlertErrorVariantPreview from "./radix/alert-error-variant"
+import RadixAlertInvertVariantPreview from "./radix/alert-invert-variant"
+import RadixAlertTitleActionsPreview from "./radix/alert-title-actions"
+import RadixAlertDescriptionActionsPreview from "./radix/alert-description-actions"
+import RadixAlertFrameResetBordersPreview from "./radix/alert-frame-reset-borders"
+import RadixAlertStackedInFramePreview from "./radix/alert-stacked-in-frame"
+import RadixAlertFrameWithActionsPreview from "./radix/alert-frame-with-actions"
+import RadixAlertProUpsellPreview from "./radix/alert-pro-upsell"
+import RadixAlertUrgentBillingPreview from "./radix/alert-urgent-billing"
+import RadixAlertServiceStatusPreview from "./radix/alert-service-status"
+import RadixAlertFeatureDiscoveryPreview from "./radix/alert-feature-discovery"
+import RadixAlertDirectMessagePreview from "./radix/alert-direct-message"
+import RadixAlertCommentMentionPreview from "./radix/alert-comment-mention"
+import RadixAutocompleteStandardPreview from "./radix/autocomplete-standard"
+import RadixAutocompleteDisabledPreview from "./radix/autocomplete-disabled"
+import RadixAutocompleteAutoHighlightPreview from "./radix/autocomplete-auto-highlight"
+import RadixAutocompleteLabeledPreview from "./radix/autocomplete-labeled"
+import RadixAutocompleteClearButtonPreview from "./radix/autocomplete-clear-button"
+import RadixAutocompleteTriggerButtonPreview from "./radix/autocomplete-trigger-button"
+import RadixAutocompleteClearTriggerPreview from "./radix/autocomplete-clear-trigger"
+import RadixAutocompleteGroupsLabelsPreview from "./radix/autocomplete-groups-labels"
+import RadixAutocompleteSearchResultsPreview from "./radix/autocomplete-search-results"
+import RadixAutocompleteSmallPreview from "./radix/autocomplete-small"
+import RadixAutocompleteLargePreview from "./radix/autocomplete-large"
+import RadixAutocompleteFormIntegrationPreview from "./radix/autocomplete-form-integration"
 import RadixBadgePreview from "./radix/badge"
 import RadixCascaderPreview from "./radix/cascader"
 import RadixCodeBlockPreview from "./radix/code-block"
@@ -56,7 +87,38 @@ import BaseTimelinePreview from "./base/timeline"
 import BaseTreePreview from "./base/tree"
 
 import RadixAlertSource from "./radix/alert.tsx?raw"
-import RadixAutocompleteSource from "./radix/autocomplete.tsx?raw"
+import RadixAlertTitleDescriptionSource from "./radix/alert-title-description.tsx?raw"
+import RadixAlertLeadingIconSource from "./radix/alert-leading-icon.tsx?raw"
+import RadixAlertIconActionsSource from "./radix/alert-icon-actions.tsx?raw"
+import RadixAlertPaymentFailureSource from "./radix/alert-payment-failure.tsx?raw"
+import RadixAlertInfoVariantSource from "./radix/alert-info-variant.tsx?raw"
+import RadixAlertSuccessVariantSource from "./radix/alert-success-variant.tsx?raw"
+import RadixAlertWarningVariantSource from "./radix/alert-warning-variant.tsx?raw"
+import RadixAlertErrorVariantSource from "./radix/alert-error-variant.tsx?raw"
+import RadixAlertInvertVariantSource from "./radix/alert-invert-variant.tsx?raw"
+import RadixAlertTitleActionsSource from "./radix/alert-title-actions.tsx?raw"
+import RadixAlertDescriptionActionsSource from "./radix/alert-description-actions.tsx?raw"
+import RadixAlertFrameResetBordersSource from "./radix/alert-frame-reset-borders.tsx?raw"
+import RadixAlertStackedInFrameSource from "./radix/alert-stacked-in-frame.tsx?raw"
+import RadixAlertFrameWithActionsSource from "./radix/alert-frame-with-actions.tsx?raw"
+import RadixAlertProUpsellSource from "./radix/alert-pro-upsell.tsx?raw"
+import RadixAlertUrgentBillingSource from "./radix/alert-urgent-billing.tsx?raw"
+import RadixAlertServiceStatusSource from "./radix/alert-service-status.tsx?raw"
+import RadixAlertFeatureDiscoverySource from "./radix/alert-feature-discovery.tsx?raw"
+import RadixAlertDirectMessageSource from "./radix/alert-direct-message.tsx?raw"
+import RadixAlertCommentMentionSource from "./radix/alert-comment-mention.tsx?raw"
+import RadixAutocompleteStandardSource from "./radix/autocomplete-standard.tsx?raw"
+import RadixAutocompleteDisabledSource from "./radix/autocomplete-disabled.tsx?raw"
+import RadixAutocompleteAutoHighlightSource from "./radix/autocomplete-auto-highlight.tsx?raw"
+import RadixAutocompleteLabeledSource from "./radix/autocomplete-labeled.tsx?raw"
+import RadixAutocompleteClearButtonSource from "./radix/autocomplete-clear-button.tsx?raw"
+import RadixAutocompleteTriggerButtonSource from "./radix/autocomplete-trigger-button.tsx?raw"
+import RadixAutocompleteClearTriggerSource from "./radix/autocomplete-clear-trigger.tsx?raw"
+import RadixAutocompleteGroupsLabelsSource from "./radix/autocomplete-groups-labels.tsx?raw"
+import RadixAutocompleteSearchResultsSource from "./radix/autocomplete-search-results.tsx?raw"
+import RadixAutocompleteSmallSource from "./radix/autocomplete-small.tsx?raw"
+import RadixAutocompleteLargeSource from "./radix/autocomplete-large.tsx?raw"
+import RadixAutocompleteFormIntegrationSource from "./radix/autocomplete-form-integration.tsx?raw"
 import RadixBadgeSource from "./radix/badge.tsx?raw"
 import RadixCascaderSource from "./radix/cascader.tsx?raw"
 import RadixCodeBlockSource from "./radix/code-block.tsx?raw"
@@ -128,6 +190,10 @@ function componentEntry({
   item,
   id,
   name,
+  variant,
+  extraDependencies = [],
+  extraPackages = [],
+  installTarget,
   Component,
   source,
 }: {
@@ -135,6 +201,10 @@ function componentEntry({
   item: string
   id: string
   name: string
+  variant?: string
+  extraDependencies?: string[]
+  extraPackages?: string[]
+  installTarget?: string
   Component: () => React.JSX.Element
   source: string
 }): BlockEntry {
@@ -142,6 +212,7 @@ function componentEntry({
   const registryDependencies = [
     `@reui-unbound/${item}`,
     ...(registry?.registryDependencies ?? []),
+    ...extraDependencies,
   ]
 
   return {
@@ -152,13 +223,15 @@ function componentEntry({
     href: `https://reui.io/components/${item.replace(/^base-/, "")}`,
     dependencies: {
       registry: [...new Set(registryDependencies)],
-      packages: registry?.dependencies ?? [],
+      packages: [...(registry?.dependencies ?? []), ...extraPackages],
     },
     Component,
     files: [file("preview.tsx", source)],
     kind: "component",
     flavor,
     registryId: item,
+    installTarget,
+    variant,
   }
 }
 
@@ -173,11 +246,347 @@ const REUI_COMPONENT_ENTRIES: BlockEntry[] = [
   }),
   componentEntry({
     flavor: "radix",
+    item: "alert",
+    id: "alert-title-description-radix",
+    name: "Alert",
+    variant: "Title & Description",
+    installTarget: "@reui-unbound/alert-title-description",
+    Component: RadixAlertTitleDescriptionPreview,
+    source: RadixAlertTitleDescriptionSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-leading-icon-radix",
+    name: "Alert",
+    variant: "Leading Icon",
+    installTarget: "@reui-unbound/alert-leading-icon",
+    Component: RadixAlertLeadingIconPreview,
+    extraDependencies: ["@reui-unbound/icon-placeholder"],
+    source: RadixAlertLeadingIconSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-icon-actions-radix",
+    name: "Alert",
+    variant: "Icon & Actions",
+    installTarget: "@reui-unbound/alert-icon-actions",
+    Component: RadixAlertIconActionsPreview,
+    extraDependencies: ["button", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertIconActionsSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-payment-failure-radix",
+    name: "Alert",
+    variant: "Payment Failure",
+    installTarget: "@reui-unbound/alert-payment-failure",
+    Component: RadixAlertPaymentFailurePreview,
+    extraDependencies: ["@reui-unbound/icon-placeholder"],
+    source: RadixAlertPaymentFailureSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-info-variant-radix",
+    name: "Alert",
+    variant: "Info Variant",
+    installTarget: "@reui-unbound/alert-info-variant",
+    Component: RadixAlertInfoVariantPreview,
+    extraDependencies: ["@reui-unbound/icon-placeholder"],
+    source: RadixAlertInfoVariantSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-success-variant-radix",
+    name: "Alert",
+    variant: "Success Variant",
+    installTarget: "@reui-unbound/alert-success-variant",
+    Component: RadixAlertSuccessVariantPreview,
+    extraDependencies: ["@reui-unbound/icon-placeholder"],
+    source: RadixAlertSuccessVariantSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-warning-variant-radix",
+    name: "Alert",
+    variant: "Warning Variant",
+    installTarget: "@reui-unbound/alert-warning-variant",
+    Component: RadixAlertWarningVariantPreview,
+    extraDependencies: ["@reui-unbound/icon-placeholder"],
+    source: RadixAlertWarningVariantSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-error-variant-radix",
+    name: "Alert",
+    variant: "Error Variant",
+    installTarget: "@reui-unbound/alert-error-variant",
+    Component: RadixAlertErrorVariantPreview,
+    extraDependencies: ["@reui-unbound/icon-placeholder"],
+    source: RadixAlertErrorVariantSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-invert-variant-radix",
+    name: "Alert",
+    variant: "Invert Variant",
+    installTarget: "@reui-unbound/alert-invert-variant",
+    Component: RadixAlertInvertVariantPreview,
+    extraDependencies: ["@reui-unbound/icon-placeholder"],
+    source: RadixAlertInvertVariantSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-title-actions-radix",
+    name: "Alert",
+    variant: "Title & Actions",
+    installTarget: "@reui-unbound/alert-title-actions",
+    Component: RadixAlertTitleActionsPreview,
+    extraDependencies: ["button", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertTitleActionsSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-description-actions-radix",
+    name: "Alert",
+    variant: "Description & Actions",
+    installTarget: "@reui-unbound/alert-description-actions",
+    Component: RadixAlertDescriptionActionsPreview,
+    extraDependencies: ["button", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertDescriptionActionsSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-frame-reset-borders-radix",
+    name: "Alert",
+    variant: "Frame Reset Borders",
+    installTarget: "@reui-unbound/alert-frame-reset-borders",
+    Component: RadixAlertFrameResetBordersPreview,
+    extraDependencies: ["@reui-unbound/frame", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertFrameResetBordersSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-stacked-in-frame-radix",
+    name: "Alert",
+    variant: "Stacked in Frame",
+    installTarget: "@reui-unbound/alert-stacked-in-frame",
+    Component: RadixAlertStackedInFramePreview,
+    extraDependencies: ["button", "@reui-unbound/frame", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertStackedInFrameSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-frame-with-actions-radix",
+    name: "Alert",
+    variant: "Frame With Actions",
+    installTarget: "@reui-unbound/alert-frame-with-actions",
+    Component: RadixAlertFrameWithActionsPreview,
+    extraDependencies: ["button", "@reui-unbound/frame", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertFrameWithActionsSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-pro-upsell-radix",
+    name: "Alert",
+    variant: "Pro Upsell",
+    installTarget: "@reui-unbound/alert-pro-upsell",
+    Component: RadixAlertProUpsellPreview,
+    extraDependencies: ["button", "@reui-unbound/frame", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertProUpsellSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-urgent-billing-radix",
+    name: "Alert",
+    variant: "Urgent Billing",
+    installTarget: "@reui-unbound/alert-urgent-billing",
+    Component: RadixAlertUrgentBillingPreview,
+    extraDependencies: ["button", "@reui-unbound/frame", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertUrgentBillingSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-service-status-radix",
+    name: "Alert",
+    variant: "Service Status",
+    installTarget: "@reui-unbound/alert-service-status",
+    Component: RadixAlertServiceStatusPreview,
+    extraDependencies: ["button", "@reui-unbound/frame", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertServiceStatusSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-feature-discovery-radix",
+    name: "Alert",
+    variant: "Feature Discovery",
+    installTarget: "@reui-unbound/alert-feature-discovery",
+    Component: RadixAlertFeatureDiscoveryPreview,
+    extraDependencies: ["button", "@reui-unbound/frame", "@reui-unbound/icon-placeholder"],
+    source: RadixAlertFeatureDiscoverySource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-direct-message-radix",
+    name: "Alert",
+    variant: "Direct Message",
+    installTarget: "@reui-unbound/alert-direct-message",
+    Component: RadixAlertDirectMessagePreview,
+    extraDependencies: ["avatar", "button", "@reui-unbound/frame"],
+    source: RadixAlertDirectMessageSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "alert",
+    id: "alert-comment-mention-radix",
+    name: "Alert",
+    variant: "Comment Mention",
+    installTarget: "@reui-unbound/alert-comment-mention",
+    Component: RadixAlertCommentMentionPreview,
+    extraDependencies: ["avatar", "button", "@reui-unbound/frame"],
+    source: RadixAlertCommentMentionSource,
+  }),
+  componentEntry({
+    flavor: "radix",
     item: "autocomplete",
-    id: "autocomplete-radix",
+    id: "autocomplete-standard-radix",
     name: "Autocomplete",
-    Component: RadixAutocompletePreview,
-    source: RadixAutocompleteSource,
+    variant: "Standard",
+    installTarget: "@reui-unbound/autocomplete-standard",
+    Component: RadixAutocompleteStandardPreview,
+    source: RadixAutocompleteStandardSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-disabled-radix",
+    name: "Autocomplete",
+    variant: "Disabled",
+    installTarget: "@reui-unbound/autocomplete-disabled",
+    Component: RadixAutocompleteDisabledPreview,
+    source: RadixAutocompleteDisabledSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-auto-highlight-radix",
+    name: "Autocomplete",
+    variant: "Auto Highlight",
+    installTarget: "@reui-unbound/autocomplete-auto-highlight",
+    Component: RadixAutocompleteAutoHighlightPreview,
+    source: RadixAutocompleteAutoHighlightSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-labeled-radix",
+    name: "Autocomplete",
+    variant: "Labeled",
+    installTarget: "@reui-unbound/autocomplete-labeled",
+    extraDependencies: ["label"],
+    Component: RadixAutocompleteLabeledPreview,
+    source: RadixAutocompleteLabeledSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-clear-button-radix",
+    name: "Autocomplete",
+    variant: "Clear Button",
+    installTarget: "@reui-unbound/autocomplete-clear-button",
+    Component: RadixAutocompleteClearButtonPreview,
+    source: RadixAutocompleteClearButtonSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-trigger-button-radix",
+    name: "Autocomplete",
+    variant: "Trigger Button",
+    installTarget: "@reui-unbound/autocomplete-trigger-button",
+    Component: RadixAutocompleteTriggerButtonPreview,
+    source: RadixAutocompleteTriggerButtonSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-clear-trigger-radix",
+    name: "Autocomplete",
+    variant: "Clear & Trigger",
+    installTarget: "@reui-unbound/autocomplete-clear-trigger",
+    Component: RadixAutocompleteClearTriggerPreview,
+    source: RadixAutocompleteClearTriggerSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-groups-labels-radix",
+    name: "Autocomplete",
+    variant: "Groups & Labels",
+    installTarget: "@reui-unbound/autocomplete-groups-labels",
+    extraDependencies: ["avatar"],
+    Component: RadixAutocompleteGroupsLabelsPreview,
+    source: RadixAutocompleteGroupsLabelsSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-search-results-radix",
+    name: "Autocomplete",
+    variant: "Search Results",
+    installTarget: "@reui-unbound/autocomplete-search-results",
+    extraDependencies: ["avatar", "@reui-unbound/icon-placeholder"],
+    Component: RadixAutocompleteSearchResultsPreview,
+    source: RadixAutocompleteSearchResultsSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-small-radix",
+    name: "Autocomplete",
+    variant: "Small",
+    installTarget: "@reui-unbound/autocomplete-small",
+    Component: RadixAutocompleteSmallPreview,
+    source: RadixAutocompleteSmallSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-large-radix",
+    name: "Autocomplete",
+    variant: "Large",
+    installTarget: "@reui-unbound/autocomplete-large",
+    Component: RadixAutocompleteLargePreview,
+    source: RadixAutocompleteLargeSource,
+  }),
+  componentEntry({
+    flavor: "radix",
+    item: "autocomplete",
+    id: "autocomplete-form-integration-radix",
+    name: "Autocomplete",
+    variant: "Form Integration",
+    installTarget: "@reui-unbound/autocomplete-form-integration",
+    extraDependencies: ["@reui-unbound/alert", "button", "field", "@reui-unbound/icon-placeholder"],
+    extraPackages: ["react-hook-form", "zod", "@hookform/resolvers", "sonner"],
+    Component: RadixAutocompleteFormIntegrationPreview,
+    source: RadixAutocompleteFormIntegrationSource,
   }),
   componentEntry({
     flavor: "radix",

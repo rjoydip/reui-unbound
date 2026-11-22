@@ -23,6 +23,8 @@ import {
 import { CustomizePanel } from "@/components/customize-panel"
 import { SiteHeader } from "@/components/site-header"
 import { DocsViewer } from "@/components/docs-viewer"
+import { ComponentOverview } from "@/components/component-overview"
+import { BlocksOverview } from "@/components/blocks-overview"
 import {
   DEFAULT_OPTIONS,
   type CustomizeOptions,
@@ -30,11 +32,16 @@ import {
 import { CATALOG, COMPONENT_ENTRIES } from "@/blocks/components/catalog"
 import { GITHUB_REPOSITORY, githubSourceUrl } from "@/lib/source-url"
 import { installCommandFor, registryName } from "@/blocks/registry"
+import { BLOCKS, blocksInCategory } from "@/blocks/registry"
 import type { BlockFile, PackageManager } from "@/blocks/registry"
 import { cn } from "cn"
 
 const FAVORITES_KEY = "reui-demo-favorites"
 const THEME_KEY = "reui-demo-theme"
+
+type CatalogOverview =
+  | { kind: "component"; name: string }
+  | { kind: "block"; name: string | null }
 
 const BASE_COLORS = ["Neutral", "Gray", "Slate", "Stone", "Zinc"]
 const THEME_COLORS = ["Neutral", "Blue", "Green", "Orange", "Rose"]
@@ -122,6 +129,8 @@ export default function App() {
   })
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [customizeOpen, setCustomizeOpen] = useState(false)
+  const [overview, setOverview] = useState<CatalogOverview | null>(null)
+  const [sidebarResetKey, setSidebarResetKey] = useState(0)
   const [options, setOptions] = useState<CustomizeOptions>(DEFAULT_OPTIONS)
   const [packageManager, setPackageManager] = useState<PackageManager>("bun")
   const [activeFile, setActiveFile] = useState<string | null>(null)
@@ -129,6 +138,10 @@ export default function App() {
   const previewRef = useRef<HTMLDivElement>(null)
 
   const block = CATALOG.find((entry) => entry.id === blockId) ?? CATALOG[0]
+  const overviewEntries =
+    overview?.kind === "component"
+      ? COMPONENT_ENTRIES.filter((entry) => entry.name === overview.name)
+      : null
   const githubUrl =
     section === "docs"
       ? `${GITHUB_REPOSITORY}/blob/main/docs/README.md`
@@ -273,6 +286,7 @@ export default function App() {
 
   function selectBlock(id: string) {
     const next = CATALOG.find((entry) => entry.id === id)
+    setOverview(null)
     if (next) setSection(next.kind === "component" ? "components" : "blocks")
     setBlockId(id)
     setActiveFile(null)
@@ -286,14 +300,49 @@ export default function App() {
     previewRef.current?.scrollIntoView({ block: "start" })
   }
 
+  function selectGroup(name: string) {
+    const entries = COMPONENT_ENTRIES.filter((entry) => entry.name === name)
+    const first = entries[0]
+    if (!first) return
+    setSection("components")
+    setBlockId(first.id)
+    setActiveFile(null)
+    setOverview({ kind: "component", name })
+    window.history.replaceState(null, "", `#${first.id}`)
+    setSidebarOpen(false)
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0 })
+      document.querySelector("main")?.scrollTo({ top: 0 })
+    })
+  }
+
+  function selectBlockCategory(name: string | null) {
+    const first = name ? blocksInCategory(name)[0] : BLOCKS[0]
+    if (first) {
+      setSection("blocks")
+      setBlockId(first.id)
+      setActiveFile(null)
+      window.history.replaceState(null, "", `#${first.id}`)
+    }
+    setOverview({ kind: "block", name })
+    setSidebarOpen(false)
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0 })
+      document.querySelector("main")?.scrollTo({ top: 0 })
+    })
+  }
+
   function changeSection(next: Section) {
+    setOverview(null)
     setSection(next)
-    if (next === "components" && block.kind !== "component") {
-      const first = COMPONENT_ENTRIES[0]
-      if (first) selectBlock(first.id)
-    } else if (next === "blocks" && block.kind === "component") {
-      const first = CATALOG.find((entry) => entry.kind !== "component")
-      if (first) selectBlock(first.id)
+    setExpanded([])
+    setSidebarResetKey((key) => key + 1)
+    if (next === "components") {
+      const names = [...new Set(COMPONENT_ENTRIES.map((entry) => entry.name))]
+        .sort((a, b) => a.localeCompare(b))
+      if (names[0]) selectGroup(names[0])
+    } else if (next === "blocks") {
+      selectBlockCategory(null)
     }
   }
 
@@ -369,8 +418,12 @@ export default function App() {
       onViewChange={setSidebarView}
       favorites={favorites}
       onSelect={(entry) => selectBlock(entry.id)}
+      onSelectGroup={selectGroup}
+      onSelectAllBlocks={() => selectBlockCategory(null)}
+      onSelectBlockCategory={selectBlockCategory}
       expanded={expanded}
       onToggleCategory={toggleCategory}
+      resetKey={sidebarResetKey}
     />
   )
 
@@ -410,24 +463,67 @@ export default function App() {
           </aside>
 
           <div className="flex min-w-0 flex-1 flex-col">
-            <PreviewHeader
-              block={block}
-              view={view}
-            onViewChange={setView}
-            theme={theme}
-            onRefresh={() => setRefreshKey((key) => key + 1)}
-            onFullscreen={() => previewRef.current?.requestFullscreen()}
-            onOpenSidebar={() => setSidebarOpen(true)}
-            favorite={favorite}
-            onToggleFavorite={toggleFavorite}
-            device={device}
-            onDeviceChange={setDevice}
-            packageManager={packageManager}
-            onPackageManagerChange={setPackageManager}
-            aiPrompt={aiPrompt}
-          />
+            {!overview && (
+              <PreviewHeader
+                block={block}
+                view={view}
+                onViewChange={(next) => {
+                  setOverview(null)
+                  setView(next)
+                }}
+                theme={theme}
+                onRefresh={() => setRefreshKey((key) => key + 1)}
+                onFullscreen={() => previewRef.current?.requestFullscreen()}
+                onOpenSidebar={() => setSidebarOpen(true)}
+                favorite={favorite}
+                onToggleFavorite={toggleFavorite}
+                device={device}
+                onDeviceChange={setDevice}
+                packageManager={packageManager}
+                onPackageManagerChange={setPackageManager}
+                aiPrompt={aiPrompt}
+              />
+            )}
 
-          {view === "preview" ? (
+          {overview?.kind === "block" ? (
+            <main className="flex-1 overflow-y-auto">
+              <BlocksOverview
+                category={overview.name}
+                onCategoryChange={(name) =>
+                  setOverview({ kind: "block", name })
+                }
+                packageManager={packageManager}
+                onPackageManagerChange={setPackageManager}
+                theme={theme}
+                onOpen={(entry) => {
+                  selectBlock(entry.id)
+                  setView("preview")
+                }}
+                onViewCode={(entry) => {
+                  selectBlock(entry.id)
+                  setView("code")
+                }}
+              />
+            </main>
+          ) : overview?.kind === "component" && overviewEntries ? (
+            <main className="flex-1 overflow-y-auto">
+              <ComponentOverview
+                name={overview.name}
+                entries={overviewEntries}
+                packageManager={packageManager}
+                onPackageManagerChange={setPackageManager}
+                theme={theme}
+                onOpen={(entry) => {
+                  selectBlock(entry.id)
+                  setView("preview")
+                }}
+                onViewCode={(entry) => {
+                  selectBlock(entry.id)
+                  setView("code")
+                }}
+              />
+            </main>
+          ) : view === "preview" ? (
             <main
               ref={previewRef}
               className="bg-muted/30 flex flex-1 justify-center overflow-x-hidden"

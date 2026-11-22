@@ -84,8 +84,9 @@ for (const block of [...blocksRegistry].sort((a, b) =>
   a.title.localeCompare(b.title),
 )) {
   const category = block.meta?.category ?? "General"
+  const previewId = block.meta?.id ?? block.name
   const target = `@reui-unbound/${block.name}`
-  const preview = `/?preview=${block.name}`
+  const preview = `/?preview=${previewId}`
   const sourceFile = block.files[0]?.path.replace(/\/[^/]+$/, "")
   const exportName = sourceFile
     ? read(`src/blocks/${block.files[0].path}`).match(
@@ -144,7 +145,7 @@ ${
 
   write(`docs/blocks/${block.name}.md`, content)
   blockRows.push(
-    `| [${block.title}](./${block.name}.md) | \`${block.name}\` | ${category} | [Preview](https://reui-unbound.pages.dev${preview}) |`,
+    `| [${block.title}](./${block.name}.md) | \`${previewId}\` | ${category} | [Preview](https://reui-unbound.pages.dev${preview}) |`,
   )
 }
 
@@ -209,7 +210,7 @@ for (const group of [...groups.values()].sort((a, b) =>
     if (entry.kind === "ui") {
       const uiFile = `src/components/ui/${entry.name}.tsx`
       if (exists(uiFile)) files.push(uiFile)
-      const target = entry.name
+      const target = entry.installTarget ?? entry.name
       installs.push({ label: "shadcn/ui", target })
       const source = exists(uiFile) ? read(uiFile) : ""
       for (const match of source.matchAll(/from\s+["']([^"']+)["']/g)) {
@@ -227,7 +228,7 @@ for (const group of [...groups.values()].sort((a, b) =>
         flavor === "base"
           ? registryByFlavor.base.get(entry.item)
           : registryByFlavor.radix.get(entry.item)
-      const target = `@reui-unbound/${entry.item}`
+      const target = entry.installTarget ?? `@reui-unbound/${entry.item}`
       installs.push({ label: flavor === "base" ? "Base" : "Radix", target })
       if (item) {
         for (const file of item.files ?? []) {

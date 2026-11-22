@@ -1,9 +1,47 @@
 import type { BlockEntry, BlockFile } from "@/blocks/registry"
 
 import UiAccordionPreview from "./radix/accordion"
-import UiAlertDialogPreview from "./radix/alert-dialog"
+import UiAccordionSingleExpandPreview from "./radix/accordion-single-expand"
+import UiAccordionPlusMinusPreview from "./radix/accordion-plus-minus"
+import UiAccordionBorderedPreview from "./radix/accordion-bordered"
+import UiAccordionInCardPreview from "./radix/accordion-in-card"
+import UiAccordionDisabledItemsPreview from "./radix/accordion-disabled-items"
+import UiAccordionIconsBadgesPreview from "./radix/accordion-icons-badges"
+import UiAccordionInFramePreview from "./radix/accordion-in-frame"
+import UiAccordionNestedPreview from "./radix/accordion-nested"
+import UiAccordionUserListPreview from "./radix/accordion-user-list"
+import UiAccordionRotatingArrowPreview from "./radix/accordion-rotating-arrow"
+import UiAccordionSetupStepsPreview from "./radix/accordion-setup-steps"
+import UiAlertDialogConfirmationPreview from "./radix/alert-dialog-confirmation"
+import UiAlertDialogSmallPreview from "./radix/alert-dialog-small"
+import UiAlertDialogWithIconPreview from "./radix/alert-dialog-with-icon"
+import UiAlertDialogSmallWithIconPreview from "./radix/alert-dialog-small-with-icon"
+import UiAlertDialogDestructiveDeletePreview from "./radix/alert-dialog-destructive-delete"
+import UiAlertDialogNestedInDialogPreview from "./radix/alert-dialog-nested-in-dialog"
+import UiAlertDialogSuccessNoticePreview from "./radix/alert-dialog-success-notice"
+import UiAlertDialogAccountDeactivationPreview from "./radix/alert-dialog-account-deactivation"
+import UiAlertDialogUnsavedChangesPreview from "./radix/alert-dialog-unsaved-changes"
+import UiAlertDialogETicketReceiptPreview from "./radix/alert-dialog-e-ticket-receipt"
+import UiAlertDialogSystemUpdatePreview from "./radix/alert-dialog-system-update"
+import UiAlertDialogBillingWarningPreview from "./radix/alert-dialog-billing-warning"
+import UiAlertDialogLogoutConfirmationPreview from "./radix/alert-dialog-logout-confirmation"
+import UiAlertDialogSecurityAuditPreview from "./radix/alert-dialog-security-audit"
 import UiAspectRatioPreview from "./radix/aspect-ratio"
+import UiAspectRatioWidescreenPreview from "./radix/aspect-ratio-widescreen"
+import UiAspectRatioStandardPreview from "./radix/aspect-ratio-standard"
+import UiAspectRatioSquarePreview from "./radix/aspect-ratio-square"
+import UiAspectRatioUltrawidePreview from "./radix/aspect-ratio-ultrawide"
+import UiAspectRatioTallPortraitPreview from "./radix/aspect-ratio-tall-portrait"
+import UiAspectRatioClassicPhotoPreview from "./radix/aspect-ratio-classic-photo"
+import UiAspectRatioSocialPortraitPreview from "./radix/aspect-ratio-social-portrait"
+import UiAspectRatioMonitorPreview from "./radix/aspect-ratio-monitor"
 import UiAttachmentPreview from "./radix/attachment"
+import UiAttachmentAssistantReplyPreview from "./radix/attachment-assistant-reply"
+import UiAttachmentComposerTrayPreview from "./radix/attachment-composer-tray"
+import UiAttachmentImageStripPreview from "./radix/attachment-image-strip"
+import UiAttachmentThreeSizesPreview from "./radix/attachment-three-sizes"
+import UiAttachmentUploadQueuePreview from "./radix/attachment-upload-queue"
+import UiAttachmentFilePickerPreview from "./radix/attachment-file-picker"
 import UiAvatarPreview from "./radix/avatar"
 import UiBreadcrumbPreview from "./radix/breadcrumb"
 import UiBubblePreview from "./radix/bubble"
@@ -62,9 +100,47 @@ import UiTooltipPreview from "./radix/tooltip"
 import UiTracePreview from "./radix/trace"
 
 import UiAccordionSource from "./radix/accordion.tsx?raw"
-import UiAlertDialogSource from "./radix/alert-dialog.tsx?raw"
+import UiAccordionSingleExpandSource from "./radix/accordion-single-expand.tsx?raw"
+import UiAccordionPlusMinusSource from "./radix/accordion-plus-minus.tsx?raw"
+import UiAccordionBorderedSource from "./radix/accordion-bordered.tsx?raw"
+import UiAccordionInCardSource from "./radix/accordion-in-card.tsx?raw"
+import UiAccordionDisabledItemsSource from "./radix/accordion-disabled-items.tsx?raw"
+import UiAccordionIconsBadgesSource from "./radix/accordion-icons-badges.tsx?raw"
+import UiAccordionInFrameSource from "./radix/accordion-in-frame.tsx?raw"
+import UiAccordionNestedSource from "./radix/accordion-nested.tsx?raw"
+import UiAccordionUserListSource from "./radix/accordion-user-list.tsx?raw"
+import UiAccordionRotatingArrowSource from "./radix/accordion-rotating-arrow.tsx?raw"
+import UiAccordionSetupStepsSource from "./radix/accordion-setup-steps.tsx?raw"
+import UiAlertDialogConfirmationSource from "./radix/alert-dialog-confirmation.tsx?raw"
+import UiAlertDialogSmallSource from "./radix/alert-dialog-small.tsx?raw"
+import UiAlertDialogWithIconSource from "./radix/alert-dialog-with-icon.tsx?raw"
+import UiAlertDialogSmallWithIconSource from "./radix/alert-dialog-small-with-icon.tsx?raw"
+import UiAlertDialogDestructiveDeleteSource from "./radix/alert-dialog-destructive-delete.tsx?raw"
+import UiAlertDialogNestedInDialogSource from "./radix/alert-dialog-nested-in-dialog.tsx?raw"
+import UiAlertDialogSuccessNoticeSource from "./radix/alert-dialog-success-notice.tsx?raw"
+import UiAlertDialogAccountDeactivationSource from "./radix/alert-dialog-account-deactivation.tsx?raw"
+import UiAlertDialogUnsavedChangesSource from "./radix/alert-dialog-unsaved-changes.tsx?raw"
+import UiAlertDialogETicketReceiptSource from "./radix/alert-dialog-e-ticket-receipt.tsx?raw"
+import UiAlertDialogSystemUpdateSource from "./radix/alert-dialog-system-update.tsx?raw"
+import UiAlertDialogBillingWarningSource from "./radix/alert-dialog-billing-warning.tsx?raw"
+import UiAlertDialogLogoutConfirmationSource from "./radix/alert-dialog-logout-confirmation.tsx?raw"
+import UiAlertDialogSecurityAuditSource from "./radix/alert-dialog-security-audit.tsx?raw"
 import UiAspectRatioSource from "./radix/aspect-ratio.tsx?raw"
+import UiAspectRatioWidescreenSource from "./radix/aspect-ratio-widescreen.tsx?raw"
+import UiAspectRatioStandardSource from "./radix/aspect-ratio-standard.tsx?raw"
+import UiAspectRatioSquareSource from "./radix/aspect-ratio-square.tsx?raw"
+import UiAspectRatioUltrawideSource from "./radix/aspect-ratio-ultrawide.tsx?raw"
+import UiAspectRatioTallPortraitSource from "./radix/aspect-ratio-tall-portrait.tsx?raw"
+import UiAspectRatioClassicPhotoSource from "./radix/aspect-ratio-classic-photo.tsx?raw"
+import UiAspectRatioSocialPortraitSource from "./radix/aspect-ratio-social-portrait.tsx?raw"
+import UiAspectRatioMonitorSource from "./radix/aspect-ratio-monitor.tsx?raw"
 import UiAttachmentSource from "./radix/attachment.tsx?raw"
+import UiAttachmentAssistantReplySource from "./radix/attachment-assistant-reply.tsx?raw"
+import UiAttachmentComposerTraySource from "./radix/attachment-composer-tray.tsx?raw"
+import UiAttachmentImageStripSource from "./radix/attachment-image-strip.tsx?raw"
+import UiAttachmentThreeSizesSource from "./radix/attachment-three-sizes.tsx?raw"
+import UiAttachmentUploadQueueSource from "./radix/attachment-upload-queue.tsx?raw"
+import UiAttachmentFilePickerSource from "./radix/attachment-file-picker.tsx?raw"
 import UiAvatarSource from "./radix/avatar.tsx?raw"
 import UiBreadcrumbSource from "./radix/breadcrumb.tsx?raw"
 import UiBubbleSource from "./radix/bubble.tsx?raw"
@@ -131,22 +207,30 @@ const file = (name: string, code: string): BlockFile => ({
 function uiEntry({
   name,
   label,
+  id,
+  variant,
+  dependencies = [],
+  installTarget,
   Component,
   source,
 }: {
   name: string
   label: string
+  id?: string
+  variant?: string
+  dependencies?: string[]
+  installTarget?: string
   Component: () => React.JSX.Element
   source: string
 }): BlockEntry {
   return {
-    id: `${name}-radix`,
+    id: id ?? `${name}-radix`,
     name: label,
     category: "Components",
     stage: "Radix",
     href: `https://reui.io/components/${name}`,
     dependencies: {
-      registry: [name],
+      registry: [name, ...dependencies],
       packages: [],
     },
     Component,
@@ -154,7 +238,8 @@ function uiEntry({
     kind: "component",
     flavor: "radix",
     registryId: name,
-    installTarget: name,
+    installTarget: installTarget ?? name,
+    variant,
   }
 }
 
@@ -166,10 +251,261 @@ export const UI_COMPONENT_ENTRIES: BlockEntry[] = [
     source: UiAccordionSource,
   }),
   uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-single-expand-radix",
+    variant: "Single Expand",
+    installTarget: "@reui-unbound/accordion-single-expand",
+    Component: UiAccordionSingleExpandPreview,
+    source: UiAccordionSingleExpandSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-plus-minus-radix",
+    variant: "Plus Minus",
+    installTarget: "@reui-unbound/accordion-plus-minus",
+    dependencies: ["@reui-unbound/icon-placeholder"],
+    Component: UiAccordionPlusMinusPreview,
+    source: UiAccordionPlusMinusSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-bordered-radix",
+    variant: "Bordered Rounded",
+    installTarget: "@reui-unbound/accordion-bordered",
+    Component: UiAccordionBorderedPreview,
+    source: UiAccordionBorderedSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-in-card-radix",
+    variant: "In Card",
+    installTarget: "@reui-unbound/accordion-in-card",
+    dependencies: ["button", "card", "@reui-unbound/icon-placeholder"],
+    Component: UiAccordionInCardPreview,
+    source: UiAccordionInCardSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-disabled-items-radix",
+    variant: "Disabled Items",
+    installTarget: "@reui-unbound/accordion-disabled-items",
+    Component: UiAccordionDisabledItemsPreview,
+    source: UiAccordionDisabledItemsSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-icons-badges-radix",
+    variant: "Icons & Badges",
+    installTarget: "@reui-unbound/accordion-icons-badges",
+    dependencies: ["@reui-unbound/badge", "@reui-unbound/icon-placeholder"],
+    Component: UiAccordionIconsBadgesPreview,
+    source: UiAccordionIconsBadgesSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-in-frame-radix",
+    variant: "In Frame",
+    installTarget: "@reui-unbound/accordion-in-frame",
+    dependencies: [
+      "@reui-unbound/badge",
+      "@reui-unbound/frame",
+      "@reui-unbound/icon-placeholder",
+    ],
+    Component: UiAccordionInFramePreview,
+    source: UiAccordionInFrameSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-nested-radix",
+    variant: "Nested",
+    installTarget: "@reui-unbound/accordion-nested",
+    Component: UiAccordionNestedPreview,
+    source: UiAccordionNestedSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-user-list-radix",
+    variant: "User List",
+    installTarget: "@reui-unbound/accordion-user-list",
+    dependencies: ["avatar", "@reui-unbound/badge", "@reui-unbound/frame"],
+    Component: UiAccordionUserListPreview,
+    source: UiAccordionUserListSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-rotating-arrow-radix",
+    variant: "Rotating Arrow",
+    installTarget: "@reui-unbound/accordion-rotating-arrow",
+    dependencies: ["@reui-unbound/icon-placeholder"],
+    Component: UiAccordionRotatingArrowPreview,
+    source: UiAccordionRotatingArrowSource,
+  }),
+  uiEntry({
+    name: "accordion",
+    label: "Accordion",
+    id: "accordion-setup-steps-radix",
+    variant: "Setup Steps",
+    installTarget: "@reui-unbound/accordion-setup-steps",
+    dependencies: [
+      "@reui-unbound/badge",
+      "@reui-unbound/icon-placeholder",
+      "button",
+      "button-group",
+      "input",
+      "spinner",
+    ],
+    Component: UiAccordionSetupStepsPreview,
+    source: UiAccordionSetupStepsSource,
+  }),
+  uiEntry({
     name: "alert-dialog",
     label: "Alert Dialog",
-    Component: UiAlertDialogPreview,
-    source: UiAlertDialogSource,
+    id: "alert-dialog-confirmation-radix",
+    variant: "Confirmation",
+    installTarget: "@reui-unbound/alert-dialog-confirmation",
+    dependencies: ["button"],
+    Component: UiAlertDialogConfirmationPreview,
+    source: UiAlertDialogConfirmationSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-small-radix",
+    variant: "Small Size",
+    installTarget: "@reui-unbound/alert-dialog-small",
+    dependencies: ["button"],
+    Component: UiAlertDialogSmallPreview,
+    source: UiAlertDialogSmallSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-with-icon-radix",
+    variant: "With Icon",
+    installTarget: "@reui-unbound/alert-dialog-with-icon",
+    dependencies: ["button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogWithIconPreview,
+    source: UiAlertDialogWithIconSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-small-with-icon-radix",
+    variant: "Small With Icon",
+    installTarget: "@reui-unbound/alert-dialog-small-with-icon",
+    dependencies: ["button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogSmallWithIconPreview,
+    source: UiAlertDialogSmallWithIconSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-destructive-delete-radix",
+    variant: "Destructive Delete",
+    installTarget: "@reui-unbound/alert-dialog-destructive-delete",
+    dependencies: ["button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogDestructiveDeletePreview,
+    source: UiAlertDialogDestructiveDeleteSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-nested-in-dialog-radix",
+    variant: "Nested In Dialog",
+    installTarget: "@reui-unbound/alert-dialog-nested-in-dialog",
+    dependencies: ["button", "dialog"],
+    Component: UiAlertDialogNestedInDialogPreview,
+    source: UiAlertDialogNestedInDialogSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-success-notice-radix",
+    variant: "Success Notice",
+    installTarget: "@reui-unbound/alert-dialog-success-notice",
+    dependencies: ["button", "checkbox", "label", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogSuccessNoticePreview,
+    source: UiAlertDialogSuccessNoticeSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-account-deactivation-radix",
+    variant: "Account Deactivation",
+    installTarget: "@reui-unbound/alert-dialog-account-deactivation",
+    dependencies: ["button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogAccountDeactivationPreview,
+    source: UiAlertDialogAccountDeactivationSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-unsaved-changes-radix",
+    variant: "Unsaved Changes",
+    installTarget: "@reui-unbound/alert-dialog-unsaved-changes",
+    dependencies: ["button", "checkbox", "@reui-unbound/frame", "label", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogUnsavedChangesPreview,
+    source: UiAlertDialogUnsavedChangesSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-e-ticket-receipt-radix",
+    variant: "E-Ticket Receipt",
+    installTarget: "@reui-unbound/alert-dialog-e-ticket-receipt",
+    dependencies: ["button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogETicketReceiptPreview,
+    source: UiAlertDialogETicketReceiptSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-system-update-radix",
+    variant: "System Update",
+    installTarget: "@reui-unbound/alert-dialog-system-update",
+    dependencies: ["@reui-unbound/badge", "button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogSystemUpdatePreview,
+    source: UiAlertDialogSystemUpdateSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-billing-warning-radix",
+    variant: "Billing Warning",
+    installTarget: "@reui-unbound/alert-dialog-billing-warning",
+    dependencies: ["@reui-unbound/badge", "button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogBillingWarningPreview,
+    source: UiAlertDialogBillingWarningSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-logout-confirmation-radix",
+    variant: "Logout Confirmation",
+    installTarget: "@reui-unbound/alert-dialog-logout-confirmation",
+    dependencies: ["button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogLogoutConfirmationPreview,
+    source: UiAlertDialogLogoutConfirmationSource,
+  }),
+  uiEntry({
+    name: "alert-dialog",
+    label: "Alert Dialog",
+    id: "alert-dialog-security-audit-radix",
+    variant: "Security Audit",
+    installTarget: "@reui-unbound/alert-dialog-security-audit",
+    dependencies: ["@reui-unbound/badge", "button", "@reui-unbound/icon-placeholder"],
+    Component: UiAlertDialogSecurityAuditPreview,
+    source: UiAlertDialogSecurityAuditSource,
   }),
   uiEntry({
     name: "aspect-ratio",
@@ -178,10 +514,141 @@ export const UI_COMPONENT_ENTRIES: BlockEntry[] = [
     source: UiAspectRatioSource,
   }),
   uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-widescreen-radix",
+    variant: "Widescreen",
+    installTarget: "@reui-unbound/aspect-ratio-widescreen",
+    Component: UiAspectRatioWidescreenPreview,
+    source: UiAspectRatioWidescreenSource,
+  }),
+  uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-standard-radix",
+    variant: "Standard",
+    installTarget: "@reui-unbound/aspect-ratio-standard",
+    Component: UiAspectRatioStandardPreview,
+    source: UiAspectRatioStandardSource,
+  }),
+  uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-square-radix",
+    variant: "Square",
+    installTarget: "@reui-unbound/aspect-ratio-square",
+    Component: UiAspectRatioSquarePreview,
+    source: UiAspectRatioSquareSource,
+  }),
+  uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-ultrawide-radix",
+    variant: "Ultrawide",
+    installTarget: "@reui-unbound/aspect-ratio-ultrawide",
+    Component: UiAspectRatioUltrawidePreview,
+    source: UiAspectRatioUltrawideSource,
+  }),
+  uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-tall-portrait-radix",
+    variant: "Tall Portrait",
+    installTarget: "@reui-unbound/aspect-ratio-tall-portrait",
+    Component: UiAspectRatioTallPortraitPreview,
+    source: UiAspectRatioTallPortraitSource,
+  }),
+  uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-classic-photo-radix",
+    variant: "Classic Photo",
+    installTarget: "@reui-unbound/aspect-ratio-classic-photo",
+    Component: UiAspectRatioClassicPhotoPreview,
+    source: UiAspectRatioClassicPhotoSource,
+  }),
+  uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-social-portrait-radix",
+    variant: "Social Portrait",
+    installTarget: "@reui-unbound/aspect-ratio-social-portrait",
+    Component: UiAspectRatioSocialPortraitPreview,
+    source: UiAspectRatioSocialPortraitSource,
+  }),
+  uiEntry({
+    name: "aspect-ratio",
+    label: "Aspect Ratio",
+    id: "aspect-ratio-monitor-radix",
+    variant: "Monitor",
+    installTarget: "@reui-unbound/aspect-ratio-monitor",
+    Component: UiAspectRatioMonitorPreview,
+    source: UiAspectRatioMonitorSource,
+  }),
+  uiEntry({
     name: "attachment",
     label: "Attachment",
     Component: UiAttachmentPreview,
     source: UiAttachmentSource,
+  }),
+  uiEntry({
+    name: "attachment",
+    label: "Attachment",
+    id: "attachment-assistant-reply-radix",
+    variant: "Assistant Reply",
+    installTarget: "@reui-unbound/attachment-assistant-reply",
+    dependencies: ["@reui-unbound/icon-placeholder"],
+    Component: UiAttachmentAssistantReplyPreview,
+    source: UiAttachmentAssistantReplySource,
+  }),
+  uiEntry({
+    name: "attachment",
+    label: "Attachment",
+    id: "attachment-composer-tray-radix",
+    variant: "Composer Tray",
+    installTarget: "@reui-unbound/attachment-composer-tray",
+    dependencies: ["field", "input-group", "@reui-unbound/icon-placeholder"],
+    Component: UiAttachmentComposerTrayPreview,
+    source: UiAttachmentComposerTraySource,
+  }),
+  uiEntry({
+    name: "attachment",
+    label: "Attachment",
+    id: "attachment-image-strip-radix",
+    variant: "Image Strip",
+    installTarget: "@reui-unbound/attachment-image-strip",
+    Component: UiAttachmentImageStripPreview,
+    source: UiAttachmentImageStripSource,
+  }),
+  uiEntry({
+    name: "attachment",
+    label: "Attachment",
+    id: "attachment-three-sizes-radix",
+    variant: "Three Sizes",
+    installTarget: "@reui-unbound/attachment-three-sizes",
+    dependencies: ["@reui-unbound/icon-placeholder"],
+    Component: UiAttachmentThreeSizesPreview,
+    source: UiAttachmentThreeSizesSource,
+  }),
+  uiEntry({
+    name: "attachment",
+    label: "Attachment",
+    id: "attachment-upload-queue-radix",
+    variant: "Upload Queue",
+    installTarget: "@reui-unbound/attachment-upload-queue",
+    dependencies: ["spinner", "@reui-unbound/icon-placeholder"],
+    Component: UiAttachmentUploadQueuePreview,
+    source: UiAttachmentUploadQueueSource,
+  }),
+  uiEntry({
+    name: "attachment",
+    label: "Attachment",
+    id: "attachment-file-picker-radix",
+    variant: "File Picker",
+    installTarget: "@reui-unbound/attachment-file-picker",
+    dependencies: ["@reui-unbound/use-file-upload", "@reui-unbound/icon-placeholder"],
+    Component: UiAttachmentFilePickerPreview,
+    source: UiAttachmentFilePickerSource,
   }),
   uiEntry({
     name: "avatar",

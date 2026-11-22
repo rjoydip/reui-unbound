@@ -2,12 +2,13 @@
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "items": [
     {
-      "name": "data-grid-base-1",
+      "name": "data-grid-base-customers",
       "type": "registry:block",
       "title": "Customers",
       "description": "Customers data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -59,12 +60,13 @@
       ]
     },
     {
-      "name": "data-grid-base-2",
+      "name": "data-grid-base-contacts",
       "type": "registry:block",
       "title": "Contacts",
       "description": "Contacts data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -119,12 +121,13 @@
       ]
     },
     {
-      "name": "data-grid-base-3",
+      "name": "data-grid-base-opportunities",
       "type": "registry:block",
       "title": "Opportunities",
       "description": "Opportunities data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -168,12 +171,13 @@
       ]
     },
     {
-      "name": "data-grid-base-4",
+      "name": "data-grid-base-timesheets",
       "type": "registry:block",
       "title": "Timesheets",
       "description": "Timesheets data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -214,12 +218,13 @@
       ]
     },
     {
-      "name": "data-grid-base-5",
+      "name": "data-grid-base-support-queue",
       "type": "registry:block",
       "title": "Support Queue",
       "description": "Support Queue data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-5"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -258,12 +263,13 @@
       ]
     },
     {
-      "name": "data-grid-base-6",
+      "name": "data-grid-base-members",
       "type": "registry:block",
       "title": "Members",
       "description": "Members data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-6"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -294,12 +300,13 @@
       ]
     },
     {
-      "name": "data-grid-base-7",
+      "name": "data-grid-base-modules",
       "type": "registry:block",
       "title": "Modules",
       "description": "Modules data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-7"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -330,12 +337,13 @@
       ]
     },
     {
-      "name": "data-grid-base-8",
+      "name": "data-grid-base-rate-card",
       "type": "registry:block",
       "title": "Rate Card",
       "description": "Rate Card data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-8"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -374,12 +382,13 @@
       ]
     },
     {
-      "name": "data-grid-base-9",
+      "name": "data-grid-base-api-requests",
       "type": "registry:block",
       "title": "API Requests",
       "description": "API Requests data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-9"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -425,12 +434,13 @@
       ]
     },
     {
-      "name": "data-grid-columns-1",
+      "name": "data-grid-columns-workspace-access-review",
       "type": "registry:block",
       "title": "Workspace Access Review",
       "description": "Workspace Access Review data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -465,12 +475,13 @@
       ]
     },
     {
-      "name": "data-grid-columns-2",
+      "name": "data-grid-columns-course-catalog",
       "type": "registry:block",
       "title": "Course Catalog",
       "description": "Course Catalog data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -505,12 +516,13 @@
       ]
     },
     {
-      "name": "data-grid-columns-3",
+      "name": "data-grid-columns-work-queue",
       "type": "registry:block",
       "title": "Work Queue",
       "description": "Work Queue data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -545,12 +557,13 @@
       ]
     },
     {
-      "name": "data-grid-columns-4",
+      "name": "data-grid-columns-members",
       "type": "registry:block",
       "title": "Members",
       "description": "Members data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -585,12 +598,13 @@
       ]
     },
     {
-      "name": "data-grid-columns-5",
+      "name": "data-grid-columns-companies",
       "type": "registry:block",
       "title": "Companies",
       "description": "Companies data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-5"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -625,12 +639,13 @@
       ]
     },
     {
-      "name": "data-grid-drag-drop-1",
+      "name": "data-grid-drag-drop-sprint-backlog",
       "type": "registry:block",
       "title": "Sprint Backlog",
       "description": "Sprint Backlog data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-1"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -667,12 +682,13 @@
       ]
     },
     {
-      "name": "data-grid-drag-drop-2",
+      "name": "data-grid-drag-drop-routing-rules",
       "type": "registry:block",
       "title": "Routing Rules",
       "description": "Routing Rules data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-2"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -709,12 +725,13 @@
       ]
     },
     {
-      "name": "data-grid-drag-drop-3",
+      "name": "data-grid-drag-drop-dispatch-layout",
       "type": "registry:block",
       "title": "Dispatch Layout",
       "description": "Dispatch Layout data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-3"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -750,12 +767,13 @@
       ]
     },
     {
-      "name": "data-grid-drag-drop-4",
+      "name": "data-grid-drag-drop-shared-drive",
       "type": "registry:block",
       "title": "Shared Drive",
       "description": "Shared Drive data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-4"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -792,12 +810,13 @@
       ]
     },
     {
-      "name": "data-grid-editing-1",
+      "name": "data-grid-editing-labels",
       "type": "registry:block",
       "title": "Labels",
       "description": "Labels data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-1"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -836,12 +855,13 @@
       ]
     },
     {
-      "name": "data-grid-editing-2",
+      "name": "data-grid-editing-product-inventory",
       "type": "registry:block",
       "title": "Product Inventory",
       "description": "Product Inventory data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-2"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -881,12 +901,13 @@
       ]
     },
     {
-      "name": "data-grid-editing-3",
+      "name": "data-grid-editing-project-intake",
       "type": "registry:block",
       "title": "Project Intake",
       "description": "Project Intake data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-3"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -926,12 +947,13 @@
       ]
     },
     {
-      "name": "data-grid-editing-4",
+      "name": "data-grid-editing-plans",
       "type": "registry:block",
       "title": "Plans",
       "description": "Plans data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-4"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -971,12 +993,13 @@
       ]
     },
     {
-      "name": "data-grid-editing-5",
+      "name": "data-grid-editing-launch-runbook",
       "type": "registry:block",
       "title": "Launch Runbook",
       "description": "Launch Runbook data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-5"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -1016,12 +1039,13 @@
       ]
     },
     {
-      "name": "data-grid-editing-6",
+      "name": "data-grid-editing-reorder-plan",
       "type": "registry:block",
       "title": "Reorder Plan",
       "description": "Reorder Plan data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-6"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -1061,12 +1085,13 @@
       ]
     },
     {
-      "name": "data-grid-expansion-1",
+      "name": "data-grid-expansion-task-delivery",
       "type": "registry:block",
       "title": "Task Delivery",
       "description": "Task Delivery data grid block.",
       "meta": {
-        "category": "Expansion"
+        "category": "Expansion",
+        "id": "data-grid-expansion-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1103,12 +1128,13 @@
       ]
     },
     {
-      "name": "data-grid-expansion-2",
+      "name": "data-grid-expansion-treasury-waterfall",
       "type": "registry:block",
       "title": "Treasury Waterfall",
       "description": "Treasury Waterfall data grid block.",
       "meta": {
-        "category": "Expansion"
+        "category": "Expansion",
+        "id": "data-grid-expansion-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1142,12 +1168,13 @@
       ]
     },
     {
-      "name": "data-grid-expansion-3",
+      "name": "data-grid-expansion-release-reviews",
       "type": "registry:block",
       "title": "Release Reviews",
       "description": "Release Reviews data grid block.",
       "meta": {
-        "category": "Expansion"
+        "category": "Expansion",
+        "id": "data-grid-expansion-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1182,12 +1209,13 @@
       ]
     },
     {
-      "name": "data-grid-filtering-1",
+      "name": "data-grid-filtering-transactions",
       "type": "registry:block",
       "title": "Transactions",
       "description": "Transactions data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1221,12 +1249,13 @@
       ]
     },
     {
-      "name": "data-grid-filtering-2",
+      "name": "data-grid-filtering-automation-library",
       "type": "registry:block",
       "title": "Automation Library",
       "description": "Automation Library data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1259,12 +1288,13 @@
       ]
     },
     {
-      "name": "data-grid-filtering-3",
+      "name": "data-grid-filtering-renewals-review",
       "type": "registry:block",
       "title": "Renewals Review",
       "description": "Renewals Review data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1301,12 +1331,13 @@
       ]
     },
     {
-      "name": "data-grid-filtering-4",
+      "name": "data-grid-filtering-renewals-risk",
       "type": "registry:block",
       "title": "Renewals Risk",
       "description": "Renewals Risk data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1344,12 +1375,13 @@
       ]
     },
     {
-      "name": "data-grid-grouping-1",
+      "name": "data-grid-grouping-roadmap-queue",
       "type": "registry:block",
       "title": "Roadmap Queue",
       "description": "Roadmap Queue data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-1"
       },
       "dependencies": [
         "cn",
@@ -1381,12 +1413,13 @@
       ]
     },
     {
-      "name": "data-grid-grouping-2",
+      "name": "data-grid-grouping-revenue-by-region",
       "type": "registry:block",
       "title": "Revenue By Region",
       "description": "Revenue By Region data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-2"
       },
       "dependencies": [
         "cn",
@@ -1417,12 +1450,13 @@
       ]
     },
     {
-      "name": "data-grid-grouping-3",
+      "name": "data-grid-grouping-access-cohort",
       "type": "registry:block",
       "title": "Access Cohort",
       "description": "Access Cohort data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-3"
       },
       "dependencies": [
         "cn",
@@ -1450,12 +1484,13 @@
       ]
     },
     {
-      "name": "data-grid-grouping-4",
+      "name": "data-grid-grouping-bill-of-materials",
       "type": "registry:block",
       "title": "Bill Of Materials",
       "description": "Bill Of Materials data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-4"
       },
       "dependencies": [
         "cn",
@@ -1486,12 +1521,13 @@
       ]
     },
     {
-      "name": "data-grid-grouping-5",
+      "name": "data-grid-grouping-reporting-lines",
       "type": "registry:block",
       "title": "Reporting Lines",
       "description": "Reporting Lines data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-5"
       },
       "dependencies": [
         "cn",
@@ -1524,12 +1560,13 @@
       ]
     },
     {
-      "name": "data-grid-grouping-6",
+      "name": "data-grid-grouping-production-desk",
       "type": "registry:block",
       "title": "Production Desk",
       "description": "Production Desk data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-6"
       },
       "dependencies": [
         "cn",
@@ -1561,12 +1598,13 @@
       ]
     },
     {
-      "name": "data-grid-grouping-7",
+      "name": "data-grid-grouping-delivery-board",
       "type": "registry:block",
       "title": "Delivery Board",
       "description": "Delivery Board data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-7"
       },
       "dependencies": [
         "cn",
@@ -1597,12 +1635,13 @@
       ]
     },
     {
-      "name": "data-grid-virtualization-1",
+      "name": "data-grid-virtualization-transactions",
       "type": "registry:block",
       "title": "Transactions",
       "description": "Transactions data grid block.",
       "meta": {
-        "category": "Virtualization"
+        "category": "Virtualization",
+        "id": "data-grid-virtualization-1"
       },
       "dependencies": [
         "@tanstack/react-virtual",
@@ -1635,12 +1674,13 @@
       ]
     },
     {
-      "name": "data-grid-virtualization-2",
+      "name": "data-grid-virtualization-exception-queue",
       "type": "registry:block",
       "title": "Exception Queue",
       "description": "Exception Queue data grid block.",
       "meta": {
-        "category": "Virtualization"
+        "category": "Virtualization",
+        "id": "data-grid-virtualization-2"
       },
       "dependencies": [
         "@tanstack/react-virtual",
@@ -1673,12 +1713,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-1",
+      "name": "data-grid-advanced-campaign-performance",
       "type": "registry:block",
       "title": "Campaign Performance",
       "description": "Campaign Performance data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1724,12 +1765,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-2",
+      "name": "data-grid-advanced-store-p-l",
       "type": "registry:block",
       "title": "Store P&L",
       "description": "Store P&L data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1776,12 +1818,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-3",
+      "name": "data-grid-advanced-campaign-targets",
       "type": "registry:block",
       "title": "Campaign Targets",
       "description": "Campaign Targets data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1831,12 +1874,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-4",
+      "name": "data-grid-advanced-reliability-index",
       "type": "registry:block",
       "title": "Reliability Index",
       "description": "Reliability Index data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1883,12 +1927,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-5",
+      "name": "data-grid-advanced-wholesale-applications",
       "type": "registry:block",
       "title": "Wholesale Applications",
       "description": "Wholesale Applications data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-5"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1936,12 +1981,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-6",
+      "name": "data-grid-advanced-stock-mix",
       "type": "registry:block",
       "title": "Stock Mix",
       "description": "Stock Mix data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-6"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1983,12 +2029,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-7",
+      "name": "data-grid-advanced-fourplex-pro-forma",
       "type": "registry:block",
       "title": "Fourplex Pro Forma",
       "description": "Fourplex Pro Forma data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-7"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2029,12 +2076,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-8",
+      "name": "data-grid-advanced-product-kpis",
       "type": "registry:block",
       "title": "Product KPIs",
       "description": "Product KPIs data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-8"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2079,12 +2127,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-9",
+      "name": "data-grid-advanced-service-visits",
       "type": "registry:block",
       "title": "Service Visits",
       "description": "Service Visits data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-9"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2125,12 +2174,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-10",
+      "name": "data-grid-advanced-technician-capacity",
       "type": "registry:block",
       "title": "Technician Capacity",
       "description": "Technician Capacity data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-10"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2174,12 +2224,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-11",
+      "name": "data-grid-advanced-factory-scorecard",
       "type": "registry:block",
       "title": "Factory Scorecard",
       "description": "Factory Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-11"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2229,12 +2280,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-12",
+      "name": "data-grid-advanced-freight-cargo-services",
       "type": "registry:block",
       "title": "Freight & Cargo Services",
       "description": "Freight & Cargo Services data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-12"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2281,12 +2333,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-13",
+      "name": "data-grid-advanced-hr-scorecard",
       "type": "registry:block",
       "title": "HR Scorecard",
       "description": "HR Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-13"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2336,12 +2389,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-14",
+      "name": "data-grid-advanced-strategy-scorecard",
       "type": "registry:block",
       "title": "Strategy Scorecard",
       "description": "Strategy Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-14"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2390,12 +2444,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-15",
+      "name": "data-grid-advanced-p-l-outlook",
       "type": "registry:block",
       "title": "P&L Outlook",
       "description": "P&L Outlook data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-15"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2443,12 +2498,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-16",
+      "name": "data-grid-advanced-store-kpis",
       "type": "registry:block",
       "title": "Store KPIs",
       "description": "Store KPIs data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-16"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2496,12 +2552,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-17",
+      "name": "data-grid-advanced-support-scorecard",
       "type": "registry:block",
       "title": "Support Scorecard",
       "description": "Support Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-17"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2549,12 +2606,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-18",
+      "name": "data-grid-advanced-job-schedule",
       "type": "registry:block",
       "title": "Job Schedule",
       "description": "Job Schedule data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-18"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2602,12 +2660,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-19",
+      "name": "data-grid-advanced-prospects",
       "type": "registry:block",
       "title": "Prospects",
       "description": "Prospects data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-19"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2657,12 +2716,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-20",
+      "name": "data-grid-advanced-project-budget",
       "type": "registry:block",
       "title": "Project Budget",
       "description": "Project Budget data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-20"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2712,12 +2772,13 @@
       ]
     },
     {
-      "name": "data-grid-advanced-21",
+      "name": "data-grid-advanced-invoices",
       "type": "registry:block",
       "title": "Invoices",
       "description": "Invoices data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-21"
       },
       "dependencies": [
         "@tanstack/react-table",
