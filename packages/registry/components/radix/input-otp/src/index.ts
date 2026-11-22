@@ -2,5 +2,5 @@
 // Lazy-import map of every Input Otp preview in the radix group.
 
 export const previews = {
-  "input-otp-radix": () => import("@/blocks/components/radix/input-otp"),
+  "input-otp-radix": () => import("@/blocks/components/radix/input-otp/default"),
 }

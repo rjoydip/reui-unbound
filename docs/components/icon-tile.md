@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-icon-tile
 
 ## Files
 
-- `src/blocks/components/radix/icon-tile.tsx`
-- `src/components/reui-unbound/icon-tile.tsx`
-- `src/blocks/components/base/icon-tile.tsx`
-- `src/components/reui-unbound/base/icon-tile.tsx`
+- `src/blocks/components/radix/icon-tile/default.tsx`
+- `src/components/kit/icon-tile.tsx`
+- `src/blocks/components/base/icon-tile/default.tsx`
+- `src/components/kit/base/icon-tile.tsx`
 
 ## Dependencies
 

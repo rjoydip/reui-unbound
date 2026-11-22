@@ -2,5 +2,5 @@
 // Lazy-import map of every Context Menu preview in the radix group.
 
 export const previews = {
-  "context-menu-radix": () => import("@/blocks/components/radix/context-menu"),
+  "context-menu-radix": () => import("@/blocks/components/radix/context-menu/default"),
 }

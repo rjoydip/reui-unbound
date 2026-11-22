@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-tree
 
 ## Files
 
-- `src/blocks/components/radix/tree.tsx`
-- `src/components/reui-unbound/tree.tsx`
-- `src/blocks/components/base/tree.tsx`
-- `src/components/reui-unbound/base/tree.tsx`
+- `src/blocks/components/radix/tree/default.tsx`
+- `src/components/kit/tree.tsx`
+- `src/blocks/components/base/tree/default.tsx`
+- `src/components/kit/base/tree.tsx`
 
 ## Dependencies
 

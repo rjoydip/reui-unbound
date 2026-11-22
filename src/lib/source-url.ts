@@ -1,4 +1,4 @@
-import type { BlockEntry } from "@/blocks/registry"
+import type { BlockEntry } from "@/blocks/~internal/registry"
 
 const REPOSITORY = "https://github.com/rjoydip/reui-unbound/blob/main"
 

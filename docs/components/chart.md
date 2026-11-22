@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add chart
 
 ## Files
 
-- `src/blocks/components/radix/chart.tsx`
+- `src/blocks/components/radix/chart/default.tsx`
 - `src/components/ui/chart.tsx`
 
 ## Dependencies

@@ -2,5 +2,5 @@
 // Lazy-import map of every Carousel preview in the radix group.
 
 export const previews = {
-  "carousel-radix": () => import("@/blocks/components/radix/carousel"),
+  "carousel-radix": () => import("@/blocks/components/radix/carousel/default"),
 }

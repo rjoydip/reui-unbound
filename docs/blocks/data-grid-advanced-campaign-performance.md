@@ -28,10 +28,10 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-advanced-1/index.tsx`
-- `src/blocks/data-grid-advanced-1/campaign-sheet.tsx`
-- `src/blocks/data-grid-advanced-1/data.ts`
-- `src/blocks/data-grid-advanced-1/parts.tsx`
+- `src/blocks/data-grid/advanced/campaign-performance/index.tsx`
+- `src/blocks/data-grid/advanced/campaign-performance/campaign-sheet.tsx`
+- `src/blocks/data-grid/advanced/campaign-performance/data.ts`
+- `src/blocks/data-grid/advanced/campaign-performance/parts.tsx`
 
 ## Dependencies
 

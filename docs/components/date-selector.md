@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-date-selector
 
 ## Files
 
-- `src/blocks/components/radix/date-selector.tsx`
-- `src/components/reui-unbound/date-selector.tsx`
-- `src/blocks/components/base/date-selector.tsx`
-- `src/components/reui-unbound/base/date-selector.tsx`
+- `src/blocks/components/radix/date-selector/default.tsx`
+- `src/components/kit/date-selector.tsx`
+- `src/blocks/components/base/date-selector/default.tsx`
+- `src/components/kit/base/date-selector.tsx`
 
 ## Dependencies
 

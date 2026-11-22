@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-grouping-6/index.tsx`
-- `src/blocks/data-grid-grouping-6/data.ts`
+- `src/blocks/data-grid/grouping/production-desk/index.tsx`
+- `src/blocks/data-grid/grouping/production-desk/data.ts`
 
 ## Dependencies
 

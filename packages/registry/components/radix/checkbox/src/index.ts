@@ -2,5 +2,5 @@
 // Lazy-import map of every Checkbox preview in the radix group.
 
 export const previews = {
-  "checkbox-radix": () => import("@/blocks/components/radix/checkbox"),
+  "checkbox-radix": () => import("@/blocks/components/radix/checkbox/default"),
 }

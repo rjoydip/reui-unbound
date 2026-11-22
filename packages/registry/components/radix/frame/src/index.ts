@@ -2,5 +2,5 @@
 // Lazy-import map of every Frame preview in the radix group.
 
 export const previews = {
-  "frame-radix": () => import("@/blocks/components/radix/frame"),
+  "frame-radix": () => import("@/blocks/components/radix/frame/default"),
 }

@@ -2,5 +2,5 @@
 // Lazy-import map of every Tooltip preview in the radix group.
 
 export const previews = {
-  "tooltip-radix": () => import("@/blocks/components/radix/tooltip"),
+  "tooltip-radix": () => import("@/blocks/components/radix/tooltip/default"),
 }

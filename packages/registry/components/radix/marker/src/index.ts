@@ -2,5 +2,5 @@
 // Lazy-import map of every Marker preview in the radix group.
 
 export const previews = {
-  "marker-radix": () => import("@/blocks/components/radix/marker"),
+  "marker-radix": () => import("@/blocks/components/radix/marker/default"),
 }

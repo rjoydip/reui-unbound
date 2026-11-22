@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add command
 
 ## Files
 
-- `src/blocks/components/radix/command.tsx`
+- `src/blocks/components/radix/command/default.tsx`
 - `src/components/ui/command.tsx`
 
 ## Dependencies

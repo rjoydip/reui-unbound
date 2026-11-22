@@ -2,5 +2,5 @@
 // Lazy-import map of every Dialog preview in the radix group.
 
 export const previews = {
-  "dialog-radix": () => import("@/blocks/components/radix/dialog"),
+  "dialog-radix": () => import("@/blocks/components/radix/dialog/default"),
 }

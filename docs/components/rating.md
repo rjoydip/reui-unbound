@@ -20,8 +20,8 @@ bunx --bun shadcn@latest add @reui-unbound/rating
 
 ## Files
 
-- `src/blocks/components/radix/rating.tsx`
-- `src/components/reui-unbound/rating.tsx`
+- `src/blocks/components/radix/rating/default.tsx`
+- `src/components/kit/rating.tsx`
 
 ## Dependencies
 

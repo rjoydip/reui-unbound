@@ -13,27 +13,27 @@ import {
   CatalogSidebar,
   type Section,
   type SidebarView,
-} from "@/components/catalog-sidebar"
+} from "@/components/~app/catalog-sidebar"
 import {
   PreviewHeader,
   type Device,
   type Theme,
   type View,
-} from "@/components/preview-header"
-import { CustomizePanel } from "@/components/customize-panel"
-import { SiteHeader } from "@/components/site-header"
-import { DocsViewer } from "@/components/docs-viewer"
-import { ComponentOverview } from "@/components/component-overview"
-import { BlocksOverview } from "@/components/blocks-overview"
+} from "@/components/~app/preview-header"
+import { CustomizePanel } from "@/components/~app/customize-panel"
+import { SiteHeader } from "@/components/~app/site-header"
+import { DocsViewer } from "@/components/~app/docs-viewer"
+import { ComponentOverview } from "@/components/~app/component-overview"
+import { BlocksOverview } from "@/components/~app/blocks-overview"
 import {
   DEFAULT_OPTIONS,
   type CustomizeOptions,
-} from "@/components/customize-options"
-import { CATALOG, COMPONENT_ENTRIES } from "@/blocks/components/catalog"
+} from "@/components/~app/customize-options"
+import { CATALOG, COMPONENT_ENTRIES } from "@/blocks/components/~catalog/catalog"
 import { GITHUB_REPOSITORY, githubSourceUrl } from "@/lib/source-url"
-import { installCommandFor, registryName } from "@/blocks/registry"
-import { BLOCKS, blocksInCategory } from "@/blocks/registry"
-import type { BlockFile, PackageManager } from "@/blocks/registry"
+import { installCommandFor, registryName } from "@/blocks/~internal/registry"
+import { BLOCKS, blocksInCategory } from "@/blocks/~internal/registry"
+import type { BlockFile, PackageManager } from "@/blocks/~internal/registry"
 import { cn } from "cn"
 
 const FAVORITES_KEY = "reui-demo-favorites"
@@ -165,18 +165,18 @@ export default function App() {
       if (entry.startsWith("@reui-unbound/")) {
         const name = entry.slice("@reui-unbound/".length)
         if (name.startsWith("base-ui-")) {
-          return `- @/components/reui-unbound/base/ui/${name.slice("base-ui-".length)}`
+          return `- @/components/kit/base/ui/${name.slice("base-ui-".length)}`
         }
         if (name.startsWith("base-")) {
-          return `- @/components/reui-unbound/base/${name.slice("base-".length)}`
+          return `- @/components/kit/base/${name.slice("base-".length)}`
         }
         if (name.startsWith("use-")) {
           return `- @/hooks/${name}`
         }
-        return `- @/components/reui-unbound/${name}`
+        return `- @/components/kit/${name}`
       }
       if (entry.startsWith("@reui/")) {
-        return `- @/components/reui-unbound/${entry.slice("@reui/".length)}`
+        return `- @/components/kit/${entry.slice("@reui/".length)}`
       }
       if (entry.startsWith("@")) return `- ${entry}`
       return `- @/components/ui/${entry}`

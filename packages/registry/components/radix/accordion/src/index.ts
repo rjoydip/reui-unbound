@@ -2,15 +2,15 @@
 // Lazy-import map of every Accordion preview in the radix group.
 
 export const previews = {
-  "accordion-single-expand-radix": () => import("@/blocks/components/radix/accordion-single-expand"),
-  "accordion-plus-minus-radix": () => import("@/blocks/components/radix/accordion-plus-minus"),
-  "accordion-bordered-radix": () => import("@/blocks/components/radix/accordion-bordered"),
-  "accordion-in-card-radix": () => import("@/blocks/components/radix/accordion-in-card"),
-  "accordion-disabled-items-radix": () => import("@/blocks/components/radix/accordion-disabled-items"),
-  "accordion-icons-badges-radix": () => import("@/blocks/components/radix/accordion-icons-badges"),
-  "accordion-in-frame-radix": () => import("@/blocks/components/radix/accordion-in-frame"),
-  "accordion-nested-radix": () => import("@/blocks/components/radix/accordion-nested"),
-  "accordion-user-list-radix": () => import("@/blocks/components/radix/accordion-user-list"),
-  "accordion-rotating-arrow-radix": () => import("@/blocks/components/radix/accordion-rotating-arrow"),
-  "accordion-setup-steps-radix": () => import("@/blocks/components/radix/accordion-setup-steps"),
+  "accordion-single-expand-radix": () => import("@/blocks/components/radix/accordion/single-expand"),
+  "accordion-plus-minus-radix": () => import("@/blocks/components/radix/accordion/plus-minus"),
+  "accordion-bordered-radix": () => import("@/blocks/components/radix/accordion/bordered"),
+  "accordion-in-card-radix": () => import("@/blocks/components/radix/accordion/in-card"),
+  "accordion-disabled-items-radix": () => import("@/blocks/components/radix/accordion/disabled-items"),
+  "accordion-icons-badges-radix": () => import("@/blocks/components/radix/accordion/icons-badges"),
+  "accordion-in-frame-radix": () => import("@/blocks/components/radix/accordion/in-frame"),
+  "accordion-nested-radix": () => import("@/blocks/components/radix/accordion/nested"),
+  "accordion-user-list-radix": () => import("@/blocks/components/radix/accordion/user-list"),
+  "accordion-rotating-arrow-radix": () => import("@/blocks/components/radix/accordion/rotating-arrow"),
+  "accordion-setup-steps-radix": () => import("@/blocks/components/radix/accordion/setup-steps"),
 }

@@ -2,5 +2,5 @@
 // Lazy-import map of every Progress preview in the radix group.
 
 export const previews = {
-  "progress-radix": () => import("@/blocks/components/radix/progress"),
+  "progress-radix": () => import("@/blocks/components/radix/progress/default"),
 }

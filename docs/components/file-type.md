@@ -20,8 +20,8 @@ bunx --bun shadcn@latest add @reui-unbound/file-type
 
 ## Files
 
-- `src/blocks/components/radix/file-type.tsx`
-- `src/components/reui-unbound/file-type.tsx`
+- `src/blocks/components/radix/file-type/default.tsx`
+- `src/components/kit/file-type.tsx`
 
 ## Dependencies
 

@@ -2,5 +2,5 @@
 // Lazy-import map of every Phone Input preview in the base group.
 
 export const previews = {
-  "phone-input-base": () => import("@/blocks/components/base/phone-input"),
+  "phone-input-base": () => import("@/blocks/components/base/phone-input/default"),
 }

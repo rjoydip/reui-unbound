@@ -9,7 +9,6 @@ Attachment component with live previews.
 
 ## Preview
 
-- **Radix** — [`attachment-radix`](https://reui-unbound.pages.dev/?preview=attachment-radix)
 - **Radix** — [`attachment-assistant-reply-radix`](https://reui-unbound.pages.dev/?preview=attachment-assistant-reply-radix)
 - **Radix** — [`attachment-composer-tray-radix`](https://reui-unbound.pages.dev/?preview=attachment-composer-tray-radix)
 - **Radix** — [`attachment-image-strip-radix`](https://reui-unbound.pages.dev/?preview=attachment-image-strip-radix)
@@ -18,11 +17,6 @@ Attachment component with live previews.
 - **Radix** — [`attachment-file-picker-radix`](https://reui-unbound.pages.dev/?preview=attachment-file-picker-radix)
 
 ## Install
-
-```bash
-# shadcn/ui
-bunx --bun shadcn@latest add attachment
-```
 
 ```bash
 # shadcn/ui
@@ -56,14 +50,13 @@ bunx --bun shadcn@latest add @reui-unbound/attachment-file-picker
 
 ## Files
 
-- `src/blocks/components/radix/attachment.tsx`
+- `src/blocks/components/radix/attachment/assistant-reply.tsx`
 - `src/components/ui/attachment.tsx`
-- `src/blocks/components/radix/attachment-assistant-reply.tsx`
-- `src/blocks/components/radix/attachment-composer-tray.tsx`
-- `src/blocks/components/radix/attachment-image-strip.tsx`
-- `src/blocks/components/radix/attachment-three-sizes.tsx`
-- `src/blocks/components/radix/attachment-upload-queue.tsx`
-- `src/blocks/components/radix/attachment-file-picker.tsx`
+- `src/blocks/components/radix/attachment/composer-tray.tsx`
+- `src/blocks/components/radix/attachment/image-strip.tsx`
+- `src/blocks/components/radix/attachment/three-sizes.tsx`
+- `src/blocks/components/radix/attachment/upload-queue.tsx`
+- `src/blocks/components/radix/attachment/file-picker.tsx`
 
 ## Dependencies
 

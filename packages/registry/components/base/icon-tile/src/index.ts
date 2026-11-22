@@ -2,5 +2,5 @@
 // Lazy-import map of every Icon Tile preview in the base group.
 
 export const previews = {
-  "icon-tile-base": () => import("@/blocks/components/base/icon-tile"),
+  "icon-tile-base": () => import("@/blocks/components/base/icon-tile/default"),
 }

@@ -2,5 +2,5 @@
 // Lazy-import map of every Tree preview in the radix group.
 
 export const previews = {
-  "tree-radix": () => import("@/blocks/components/radix/tree"),
+  "tree-radix": () => import("@/blocks/components/radix/tree/default"),
 }

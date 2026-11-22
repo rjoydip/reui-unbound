@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add popover
 
 ## Files
 
-- `src/blocks/components/radix/popover.tsx`
+- `src/blocks/components/radix/popover/default.tsx`
 - `src/components/ui/popover.tsx`
 
 ## Dependencies

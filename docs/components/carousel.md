@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add carousel
 
 ## Files
 
-- `src/blocks/components/radix/carousel.tsx`
+- `src/blocks/components/radix/carousel/default.tsx`
 - `src/components/ui/carousel.tsx`
 
 ## Dependencies

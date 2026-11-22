@@ -2,5 +2,5 @@
 // Lazy-import map of every Gantt preview in the base group.
 
 export const previews = {
-  "gantt-base": () => import("@/blocks/components/base/gantt"),
+  "gantt-base": () => import("@/blocks/components/base/gantt/default"),
 }

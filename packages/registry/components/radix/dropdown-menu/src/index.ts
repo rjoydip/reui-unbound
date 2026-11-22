@@ -2,5 +2,5 @@
 // Lazy-import map of every Dropdown Menu preview in the radix group.
 
 export const previews = {
-  "dropdown-menu-radix": () => import("@/blocks/components/radix/dropdown-menu"),
+  "dropdown-menu-radix": () => import("@/blocks/components/radix/dropdown-menu/default"),
 }

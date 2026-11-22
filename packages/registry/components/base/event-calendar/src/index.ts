@@ -2,5 +2,5 @@
 // Lazy-import map of every Event Calendar preview in the base group.
 
 export const previews = {
-  "event-calendar-base": () => import("@/blocks/components/base/event-calendar"),
+  "event-calendar-base": () => import("@/blocks/components/base/event-calendar/default"),
 }

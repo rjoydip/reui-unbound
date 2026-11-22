@@ -2,5 +2,5 @@
 // Lazy-import map of every Emoji Picker preview in the base group.
 
 export const previews = {
-  "emoji-picker-base": () => import("@/blocks/components/base/emoji-picker"),
+  "emoji-picker-base": () => import("@/blocks/components/base/emoji-picker/default"),
 }

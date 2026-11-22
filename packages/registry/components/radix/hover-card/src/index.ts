@@ -2,5 +2,5 @@
 // Lazy-import map of every Hover Card preview in the radix group.
 
 export const previews = {
-  "hover-card-radix": () => import("@/blocks/components/radix/hover-card"),
+  "hover-card-radix": () => import("@/blocks/components/radix/hover-card/default"),
 }

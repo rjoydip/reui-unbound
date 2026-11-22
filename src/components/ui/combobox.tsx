@@ -11,7 +11,7 @@ import {
   InputGroupButton,
   InputGroupInput,
 } from "@/components/ui/input-group"
-import { IconPlaceholder } from "@/components/reui-unbound/icon-placeholder"
+import { IconPlaceholder } from "@/components/kit/icon-placeholder"
 
 const Combobox = ComboboxPrimitive.Root
 

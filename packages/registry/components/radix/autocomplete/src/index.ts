@@ -2,16 +2,16 @@
 // Lazy-import map of every Autocomplete preview in the radix group.
 
 export const previews = {
-  "autocomplete-standard-radix": () => import("@/blocks/components/radix/autocomplete-standard"),
-  "autocomplete-disabled-radix": () => import("@/blocks/components/radix/autocomplete-disabled"),
-  "autocomplete-auto-highlight-radix": () => import("@/blocks/components/radix/autocomplete-auto-highlight"),
-  "autocomplete-labeled-radix": () => import("@/blocks/components/radix/autocomplete-labeled"),
-  "autocomplete-clear-button-radix": () => import("@/blocks/components/radix/autocomplete-clear-button"),
-  "autocomplete-trigger-button-radix": () => import("@/blocks/components/radix/autocomplete-trigger-button"),
-  "autocomplete-clear-trigger-radix": () => import("@/blocks/components/radix/autocomplete-clear-trigger"),
-  "autocomplete-groups-labels-radix": () => import("@/blocks/components/radix/autocomplete-groups-labels"),
-  "autocomplete-search-results-radix": () => import("@/blocks/components/radix/autocomplete-search-results"),
-  "autocomplete-small-radix": () => import("@/blocks/components/radix/autocomplete-small"),
-  "autocomplete-large-radix": () => import("@/blocks/components/radix/autocomplete-large"),
-  "autocomplete-form-integration-radix": () => import("@/blocks/components/radix/autocomplete-form-integration"),
+  "autocomplete-standard-radix": () => import("@/blocks/components/radix/autocomplete/standard"),
+  "autocomplete-disabled-radix": () => import("@/blocks/components/radix/autocomplete/disabled"),
+  "autocomplete-auto-highlight-radix": () => import("@/blocks/components/radix/autocomplete/auto-highlight"),
+  "autocomplete-labeled-radix": () => import("@/blocks/components/radix/autocomplete/labeled"),
+  "autocomplete-clear-button-radix": () => import("@/blocks/components/radix/autocomplete/clear-button"),
+  "autocomplete-trigger-button-radix": () => import("@/blocks/components/radix/autocomplete/trigger-button"),
+  "autocomplete-clear-trigger-radix": () => import("@/blocks/components/radix/autocomplete/clear-trigger"),
+  "autocomplete-groups-labels-radix": () => import("@/blocks/components/radix/autocomplete/groups-labels"),
+  "autocomplete-search-results-radix": () => import("@/blocks/components/radix/autocomplete/search-results"),
+  "autocomplete-small-radix": () => import("@/blocks/components/radix/autocomplete/small"),
+  "autocomplete-large-radix": () => import("@/blocks/components/radix/autocomplete/large"),
+  "autocomplete-form-integration-radix": () => import("@/blocks/components/radix/autocomplete/form-integration"),
 }

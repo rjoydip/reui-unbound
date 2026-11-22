@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-emoji-picker
 
 ## Files
 
-- `src/blocks/components/radix/emoji-picker.tsx`
-- `src/components/reui-unbound/emoji-picker.tsx`
-- `src/blocks/components/base/emoji-picker.tsx`
-- `src/components/reui-unbound/base/emoji-picker.tsx`
+- `src/blocks/components/radix/emoji-picker/default.tsx`
+- `src/components/kit/emoji-picker.tsx`
+- `src/blocks/components/base/emoji-picker/default.tsx`
+- `src/components/kit/base/emoji-picker.tsx`
 
 ## Dependencies
 

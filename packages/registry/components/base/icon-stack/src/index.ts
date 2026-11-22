@@ -2,5 +2,5 @@
 // Lazy-import map of every Icon Stack preview in the base group.
 
 export const previews = {
-  "icon-stack-base": () => import("@/blocks/components/base/icon-stack"),
+  "icon-stack-base": () => import("@/blocks/components/base/icon-stack/default"),
 }

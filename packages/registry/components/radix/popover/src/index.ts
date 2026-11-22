@@ -2,5 +2,5 @@
 // Lazy-import map of every Popover preview in the radix group.
 
 export const previews = {
-  "popover-radix": () => import("@/blocks/components/radix/popover"),
+  "popover-radix": () => import("@/blocks/components/radix/popover/default"),
 }

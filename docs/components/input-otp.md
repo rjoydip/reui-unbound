@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add input-otp
 
 ## Files
 
-- `src/blocks/components/radix/input-otp.tsx`
+- `src/blocks/components/radix/input-otp/default.tsx`
 - `src/components/ui/input-otp.tsx`
 
 ## Dependencies

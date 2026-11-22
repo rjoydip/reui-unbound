@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add separator
 
 ## Files
 
-- `src/blocks/components/radix/separator.tsx`
+- `src/blocks/components/radix/separator/default.tsx`
 - `src/components/ui/separator.tsx`
 
 ## Dependencies

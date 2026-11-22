@@ -2,5 +2,5 @@
 // Lazy-import map of every Item preview in the radix group.
 
 export const previews = {
-  "item-radix": () => import("@/blocks/components/radix/item"),
+  "item-radix": () => import("@/blocks/components/radix/item/default"),
 }

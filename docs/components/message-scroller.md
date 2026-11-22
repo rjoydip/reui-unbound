@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add message-scroller
 
 ## Files
 
-- `src/blocks/components/radix/message-scroller.tsx`
+- `src/blocks/components/radix/message-scroller/default.tsx`
 - `src/components/ui/message-scroller.tsx`
 
 ## Dependencies

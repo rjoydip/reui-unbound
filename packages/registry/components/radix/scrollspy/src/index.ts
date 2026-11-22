@@ -2,5 +2,5 @@
 // Lazy-import map of every Scrollspy preview in the radix group.
 
 export const previews = {
-  "scrollspy-radix": () => import("@/blocks/components/radix/scrollspy"),
+  "scrollspy-radix": () => import("@/blocks/components/radix/scrollspy/default"),
 }

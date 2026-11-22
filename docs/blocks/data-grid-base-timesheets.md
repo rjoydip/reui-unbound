@@ -28,9 +28,9 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-base-4/index.tsx`
-- `src/blocks/data-grid-base-4/parts.tsx`
-- `src/blocks/data-grid-base-4/data.ts`
+- `src/blocks/data-grid/base/timesheets/index.tsx`
+- `src/blocks/data-grid/base/timesheets/parts.tsx`
+- `src/blocks/data-grid/base/timesheets/data.ts`
 
 ## Dependencies
 

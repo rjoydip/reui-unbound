@@ -6,7 +6,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
-import { IconPlaceholder } from "@/components/reui-unbound/icon-placeholder"
+import { IconPlaceholder } from "@/components/kit/icon-placeholder"
 
 function Trace({ className, ...props }: React.ComponentProps<"div">) {
   return (

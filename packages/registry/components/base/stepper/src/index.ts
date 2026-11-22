@@ -2,5 +2,5 @@
 // Lazy-import map of every Stepper preview in the base group.
 
 export const previews = {
-  "stepper-base": () => import("@/blocks/components/base/stepper"),
+  "stepper-base": () => import("@/blocks/components/base/stepper/default"),
 }

@@ -2,5 +2,5 @@
 // Lazy-import map of every Tree preview in the base group.
 
 export const previews = {
-  "tree-base": () => import("@/blocks/components/base/tree"),
+  "tree-base": () => import("@/blocks/components/base/tree/default"),
 }

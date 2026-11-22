@@ -20,4 +20,4 @@ bunx --bun shadcn@latest add file-upload
 
 ## Files
 
-- `src/blocks/components/radix/file-upload.tsx`
+- `src/blocks/components/radix/file-upload/default.tsx`

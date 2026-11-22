@@ -2,5 +2,5 @@
 // Lazy-import map of every Sonner preview in the radix group.
 
 export const previews = {
-  "sonner-radix": () => import("@/blocks/components/radix/sonner"),
+  "sonner-radix": () => import("@/blocks/components/radix/sonner/default"),
 }

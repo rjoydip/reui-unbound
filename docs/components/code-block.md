@@ -26,11 +26,11 @@ bunx --bun shadcn@latest add @reui-unbound/base-code-block
 
 ## Files
 
-- `src/blocks/components/radix/code-block.tsx`
-- `src/components/reui-unbound/code-block/code-block-highlight.tsx`
-- `src/components/reui-unbound/code-block/code-block.tsx`
-- `src/blocks/components/base/code-block.tsx`
-- `src/components/reui-unbound/base/code-block/code-block.tsx`
+- `src/blocks/components/radix/code-block/default.tsx`
+- `src/components/kit/code-block/code-block.tsx`
+- `src/components/kit/code-block/~code-block-highlight.tsx`
+- `src/blocks/components/base/code-block/default.tsx`
+- `src/components/kit/base/code-block/code-block.tsx`
 
 ## Dependencies
 

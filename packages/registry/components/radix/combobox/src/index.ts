@@ -2,5 +2,5 @@
 // Lazy-import map of every Combobox preview in the radix group.
 
 export const previews = {
-  "combobox-radix": () => import("@/blocks/components/radix/combobox"),
+  "combobox-radix": () => import("@/blocks/components/radix/combobox/default"),
 }

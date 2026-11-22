@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-base-8/index.tsx`
-- `src/blocks/data-grid-base-8/data.ts`
+- `src/blocks/data-grid/base/rate-card/index.tsx`
+- `src/blocks/data-grid/base/rate-card/data.ts`
 
 ## Dependencies
 

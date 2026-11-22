@@ -2,5 +2,5 @@
 // Lazy-import map of every Frame preview in the base group.
 
 export const previews = {
-  "frame-base": () => import("@/blocks/components/base/frame"),
+  "frame-base": () => import("@/blocks/components/base/frame/default"),
 }

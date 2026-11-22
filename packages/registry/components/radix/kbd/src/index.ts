@@ -2,5 +2,5 @@
 // Lazy-import map of every Kbd preview in the radix group.
 
 export const previews = {
-  "kbd-radix": () => import("@/blocks/components/radix/kbd"),
+  "kbd-radix": () => import("@/blocks/components/radix/kbd/default"),
 }

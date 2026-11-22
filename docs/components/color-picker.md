@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-color-picker
 
 ## Files
 
-- `src/blocks/components/radix/color-picker.tsx`
-- `src/components/reui-unbound/color-picker.tsx`
-- `src/blocks/components/base/color-picker.tsx`
-- `src/components/reui-unbound/base/color-picker.tsx`
+- `src/blocks/components/radix/color-picker/default.tsx`
+- `src/components/kit/color-picker.tsx`
+- `src/blocks/components/base/color-picker/default.tsx`
+- `src/components/kit/base/color-picker.tsx`
 
 ## Dependencies
 

@@ -2,5 +2,5 @@
 // Lazy-import map of every Switch preview in the radix group.
 
 export const previews = {
-  "switch-radix": () => import("@/blocks/components/radix/switch"),
+  "switch-radix": () => import("@/blocks/components/radix/switch/default"),
 }

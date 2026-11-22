@@ -2,5 +2,5 @@
 // Lazy-import map of every Sortable preview in the radix group.
 
 export const previews = {
-  "sortable-radix": () => import("@/blocks/components/radix/sortable"),
+  "sortable-radix": () => import("@/blocks/components/radix/sortable/default"),
 }

@@ -28,10 +28,10 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-advanced-21/index.tsx`
-- `src/blocks/data-grid-advanced-21/customer-sheet.tsx`
-- `src/blocks/data-grid-advanced-21/data.ts`
-- `src/blocks/data-grid-advanced-21/parts.tsx`
+- `src/blocks/data-grid/advanced/invoices/index.tsx`
+- `src/blocks/data-grid/advanced/invoices/customer-sheet.tsx`
+- `src/blocks/data-grid/advanced/invoices/data.ts`
+- `src/blocks/data-grid/advanced/invoices/parts.tsx`
 
 ## Dependencies
 

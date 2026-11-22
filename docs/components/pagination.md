@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add pagination
 
 ## Files
 
-- `src/blocks/components/radix/pagination.tsx`
+- `src/blocks/components/radix/pagination/default.tsx`
 - `src/components/ui/pagination.tsx`
 
 ## Dependencies

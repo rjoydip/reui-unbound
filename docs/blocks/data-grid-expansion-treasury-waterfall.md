@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-expansion-2/index.tsx`
-- `src/blocks/data-grid-expansion-2/data.ts`
+- `src/blocks/data-grid/expansion/treasury-waterfall/index.tsx`
+- `src/blocks/data-grid/expansion/treasury-waterfall/data.ts`
 
 ## Dependencies
 

@@ -28,10 +28,10 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-base-1/index.tsx`
-- `src/blocks/data-grid-base-1/parts.tsx`
-- `src/blocks/data-grid-base-1/customer-sheets.tsx`
-- `src/blocks/data-grid-base-1/data.ts`
+- `src/blocks/data-grid/base/customers/index.tsx`
+- `src/blocks/data-grid/base/customers/parts.tsx`
+- `src/blocks/data-grid/base/customers/customer-sheets.tsx`
+- `src/blocks/data-grid/base/customers/data.ts`
 
 ## Dependencies
 

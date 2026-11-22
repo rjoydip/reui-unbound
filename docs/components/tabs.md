@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add tabs
 
 ## Files
 
-- `src/blocks/components/radix/tabs.tsx`
+- `src/blocks/components/radix/tabs/default.tsx`
 - `src/components/ui/tabs.tsx`
 
 ## Dependencies

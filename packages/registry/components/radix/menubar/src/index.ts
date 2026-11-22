@@ -2,5 +2,5 @@
 // Lazy-import map of every Menubar preview in the radix group.
 
 export const previews = {
-  "menubar-radix": () => import("@/blocks/components/radix/menubar"),
+  "menubar-radix": () => import("@/blocks/components/radix/menubar/default"),
 }

@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add skeleton
 
 ## Files
 
-- `src/blocks/components/radix/skeleton.tsx`
+- `src/blocks/components/radix/skeleton/default.tsx`
 - `src/components/ui/skeleton.tsx`
 
 ## Dependencies

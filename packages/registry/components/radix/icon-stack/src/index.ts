@@ -2,5 +2,5 @@
 // Lazy-import map of every Icon Stack preview in the radix group.
 
 export const previews = {
-  "icon-stack-radix": () => import("@/blocks/components/radix/icon-stack"),
+  "icon-stack-radix": () => import("@/blocks/components/radix/icon-stack/default"),
 }

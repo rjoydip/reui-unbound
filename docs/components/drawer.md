@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add drawer
 
 ## Files
 
-- `src/blocks/components/radix/drawer.tsx`
+- `src/blocks/components/radix/drawer/default.tsx`
 - `src/components/ui/drawer.tsx`
 
 ## Dependencies

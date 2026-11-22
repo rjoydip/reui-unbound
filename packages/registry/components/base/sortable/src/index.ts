@@ -2,5 +2,5 @@
 // Lazy-import map of every Sortable preview in the base group.
 
 export const previews = {
-  "sortable-base": () => import("@/blocks/components/base/sortable"),
+  "sortable-base": () => import("@/blocks/components/base/sortable/default"),
 }

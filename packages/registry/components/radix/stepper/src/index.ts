@@ -2,5 +2,5 @@
 // Lazy-import map of every Stepper preview in the radix group.
 
 export const previews = {
-  "stepper-radix": () => import("@/blocks/components/radix/stepper"),
+  "stepper-radix": () => import("@/blocks/components/radix/stepper/default"),
 }

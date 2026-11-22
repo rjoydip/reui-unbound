@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add bubble
 
 ## Files
 
-- `src/blocks/components/radix/bubble.tsx`
+- `src/blocks/components/radix/bubble/default.tsx`
 - `src/components/ui/bubble.tsx`
 
 ## Dependencies

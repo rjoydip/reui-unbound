@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add sheet
 
 ## Files
 
-- `src/blocks/components/radix/sheet.tsx`
+- `src/blocks/components/radix/sheet/default.tsx`
 - `src/components/ui/sheet.tsx`
 
 ## Dependencies

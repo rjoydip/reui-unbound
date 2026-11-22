@@ -2,5 +2,5 @@
 // Lazy-import map of every Rating preview in the radix group.
 
 export const previews = {
-  "rating-radix": () => import("@/blocks/components/radix/rating"),
+  "rating-radix": () => import("@/blocks/components/radix/rating/default"),
 }

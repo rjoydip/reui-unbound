@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add resizable
 
 ## Files
 
-- `src/blocks/components/radix/resizable.tsx`
+- `src/blocks/components/radix/resizable/default.tsx`
 - `src/components/ui/resizable.tsx`
 
 ## Dependencies

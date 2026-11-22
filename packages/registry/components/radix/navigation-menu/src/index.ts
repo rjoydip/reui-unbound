@@ -2,5 +2,5 @@
 // Lazy-import map of every Navigation Menu preview in the radix group.
 
 export const previews = {
-  "navigation-menu-radix": () => import("@/blocks/components/radix/navigation-menu"),
+  "navigation-menu-radix": () => import("@/blocks/components/radix/navigation-menu/default"),
 }

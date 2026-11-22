@@ -2,5 +2,5 @@
 // Lazy-import map of every Input preview in the radix group.
 
 export const previews = {
-  "input-radix": () => import("@/blocks/components/radix/input"),
+  "input-radix": () => import("@/blocks/components/radix/input/default"),
 }

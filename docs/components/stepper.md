@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-stepper
 
 ## Files
 
-- `src/blocks/components/radix/stepper.tsx`
-- `src/components/reui-unbound/stepper.tsx`
-- `src/blocks/components/base/stepper.tsx`
-- `src/components/reui-unbound/base/stepper.tsx`
+- `src/blocks/components/radix/stepper/default.tsx`
+- `src/components/kit/stepper.tsx`
+- `src/blocks/components/base/stepper/default.tsx`
+- `src/components/kit/base/stepper.tsx`
 
 ## Dependencies
 

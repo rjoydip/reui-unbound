@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add empty
 
 ## Files
 
-- `src/blocks/components/radix/empty.tsx`
+- `src/blocks/components/radix/empty/default.tsx`
 - `src/components/ui/empty.tsx`
 
 ## Dependencies

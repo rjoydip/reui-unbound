@@ -2,5 +2,5 @@
 // Lazy-import map of every Label preview in the radix group.
 
 export const previews = {
-  "label-radix": () => import("@/blocks/components/radix/label"),
+  "label-radix": () => import("@/blocks/components/radix/label/default"),
 }

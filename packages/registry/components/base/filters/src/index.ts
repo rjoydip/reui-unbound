@@ -2,5 +2,5 @@
 // Lazy-import map of every Filters preview in the base group.
 
 export const previews = {
-  "filters-base": () => import("@/blocks/components/base/filters"),
+  "filters-base": () => import("@/blocks/components/base/filters/default"),
 }

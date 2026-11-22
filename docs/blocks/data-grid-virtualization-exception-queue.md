@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-virtualization-2/index.tsx`
-- `src/blocks/data-grid-virtualization-2/data.ts`
+- `src/blocks/data-grid/virtualization/exception-queue/index.tsx`
+- `src/blocks/data-grid/virtualization/exception-queue/data.ts`
 
 ## Dependencies
 

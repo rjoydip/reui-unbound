@@ -2,5 +2,5 @@
 // Lazy-import map of every File Upload preview in the radix group.
 
 export const previews = {
-  "file-upload-radix": () => import("@/blocks/components/radix/file-upload"),
+  "file-upload-radix": () => import("@/blocks/components/radix/file-upload/default"),
 }

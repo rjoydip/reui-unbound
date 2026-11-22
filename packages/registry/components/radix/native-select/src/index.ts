@@ -2,5 +2,5 @@
 // Lazy-import map of every Native Select preview in the radix group.
 
 export const previews = {
-  "native-select-radix": () => import("@/blocks/components/radix/native-select"),
+  "native-select-radix": () => import("@/blocks/components/radix/native-select/default"),
 }

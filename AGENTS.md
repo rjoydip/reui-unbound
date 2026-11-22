@@ -30,17 +30,18 @@ bun run docs:generate  # regenerate docs/ from the registries and catalog
 
 ## Structure
 
-- `src/blocks/<id>/` — one folder per demo block (`index.tsx`, `data.ts`, optional `parts.tsx`, sheets, etc.).
-- `src/blocks/registry.tsx` — runtime catalog: metadata, dependencies, raw source imports.
-- `src/blocks/components/{radix,base}/` — one preview per ReUI component.
-- `src/blocks/components/catalog.tsx` — component catalog (`kind: "component"`).
+- `src/blocks/data-grid/<category>/<name>/` — one folder per demo block (`index.tsx`, `data.ts`, optional `parts.tsx`, sheets, etc.).
+- `src/blocks/~internal/registry.tsx` — runtime catalog: metadata, dependencies, raw source imports.
+- `src/blocks/components/radix/<component>/<variant>.tsx` and `src/blocks/components/base/<component>/default.tsx` — one preview per component variant.
+- `src/blocks/components/~catalog/{catalog,ui-catalog}.tsx` — component catalogs (`kind: "component"`).
 - `src/blocks/registry.json` — generated shadcn block items. Do not hand-edit.
-- `src/components/reui-unbound/` — ReUI components (current/Radix flavor).
-  - `base/` — Base UI flavor: `base/reui` components + `base/ui` primitives.
+- `src/components/kit/` — ReUI components (current/Radix flavor).
+  - `base/` — Base UI flavor: `base/*` components + `base/ui` primitives.
+  - Internal implementation files inside component folders are prefixed `~`.
   - Identical cross-flavor modules have one canonical copy; base files import it.
 - `src/components/ui/` — shadcn-style primitives used by blocks (Radix).
 - `src/hooks/` — ReUI hooks (copy, mobile, media query, observers, etc.).
-- `src/components/custom/` — small presentational primitives.
+- `src/components/~app/` — internal app chrome and shared shell components.
 - Header switches Blocks/Components. The sidebar renders block categories +
   favorites for Blocks, and searchable, flavor-filtered categories for
   Components. Component previews use the same shell, code tab and
@@ -62,7 +63,7 @@ bun run docs:generate  # regenerate docs/ from the registries and catalog
 
 - Imports use `@/` aliases. Use `cn` from the `cn` package.
 - Use design tokens (`bg-background`, `text-muted-foreground`, …); support light and dark.
-- Reuse existing `src/components/ui` and `src/components/reui-unbound` components before writing new ones.
+- Reuse existing `src/components/ui` and `src/components/reui` components before writing new ones.
 - Keep demo data static and deterministic; no backend.
 - One source file belongs to one registry item; no duplicate implementations across flavors.
 - Blocks: keep tables responsive, compact controls, matching header/footer surfaces.

@@ -2,5 +2,5 @@
 // Lazy-import map of every Bubble preview in the radix group.
 
 export const previews = {
-  "bubble-radix": () => import("@/blocks/components/radix/bubble"),
+  "bubble-radix": () => import("@/blocks/components/radix/bubble/default"),
 }

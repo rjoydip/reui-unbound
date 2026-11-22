@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-editing-5/index.tsx`
-- `src/blocks/data-grid-editing-5/data.ts`
+- `src/blocks/data-grid/editing/launch-runbook/index.tsx`
+- `src/blocks/data-grid/editing/launch-runbook/data.ts`
 
 ## Dependencies
 

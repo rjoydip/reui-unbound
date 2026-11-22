@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add switch
 
 ## Files
 
-- `src/blocks/components/radix/switch.tsx`
+- `src/blocks/components/radix/switch/default.tsx`
 - `src/components/ui/switch.tsx`
 
 ## Dependencies

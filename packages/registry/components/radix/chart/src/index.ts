@@ -2,5 +2,5 @@
 // Lazy-import map of every Chart preview in the radix group.
 
 export const previews = {
-  "chart-radix": () => import("@/blocks/components/radix/chart"),
+  "chart-radix": () => import("@/blocks/components/radix/chart/default"),
 }

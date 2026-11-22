@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add scroll-area
 
 ## Files
 
-- `src/blocks/components/radix/scroll-area.tsx`
+- `src/blocks/components/radix/scroll-area/default.tsx`
 - `src/components/ui/scroll-area.tsx`
 
 ## Dependencies

@@ -2,5 +2,5 @@
 // Lazy-import map of every Cascader preview in the radix group.
 
 export const previews = {
-  "cascader-radix": () => import("@/blocks/components/radix/cascader"),
+  "cascader-radix": () => import("@/blocks/components/radix/cascader/default"),
 }

@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add item
 
 ## Files
 
-- `src/blocks/components/radix/item.tsx`
+- `src/blocks/components/radix/item/default.tsx`
 - `src/components/ui/item.tsx`
 
 ## Dependencies

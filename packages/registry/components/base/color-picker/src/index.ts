@@ -2,5 +2,5 @@
 // Lazy-import map of every Color Picker preview in the base group.
 
 export const previews = {
-  "color-picker-base": () => import("@/blocks/components/base/color-picker"),
+  "color-picker-base": () => import("@/blocks/components/base/color-picker/default"),
 }

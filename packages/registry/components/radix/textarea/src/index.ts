@@ -2,5 +2,5 @@
 // Lazy-import map of every Textarea preview in the radix group.
 
 export const previews = {
-  "textarea-radix": () => import("@/blocks/components/radix/textarea"),
+  "textarea-radix": () => import("@/blocks/components/radix/textarea/default"),
 }

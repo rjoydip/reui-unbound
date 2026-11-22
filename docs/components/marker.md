@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add marker
 
 ## Files
 
-- `src/blocks/components/radix/marker.tsx`
+- `src/blocks/components/radix/marker/default.tsx`
 - `src/components/ui/marker.tsx`
 
 ## Dependencies

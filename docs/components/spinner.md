@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add spinner
 
 ## Files
 
-- `src/blocks/components/radix/spinner.tsx`
+- `src/blocks/components/radix/spinner/default.tsx`
 - `src/components/ui/spinner.tsx`
 
 ## Dependencies

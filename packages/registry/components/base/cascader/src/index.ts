@@ -2,5 +2,5 @@
 // Lazy-import map of every Cascader preview in the base group.
 
 export const previews = {
-  "cascader-base": () => import("@/blocks/components/base/cascader"),
+  "cascader-base": () => import("@/blocks/components/base/cascader/default"),
 }

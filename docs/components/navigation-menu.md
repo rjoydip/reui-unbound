@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add navigation-menu
 
 ## Files
 
-- `src/blocks/components/radix/navigation-menu.tsx`
+- `src/blocks/components/radix/navigation-menu/default.tsx`
 - `src/components/ui/navigation-menu.tsx`
 
 ## Dependencies

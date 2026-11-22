@@ -2,5 +2,5 @@
 // Lazy-import map of every Timeline preview in the base group.
 
 export const previews = {
-  "timeline-base": () => import("@/blocks/components/base/timeline"),
+  "timeline-base": () => import("@/blocks/components/base/timeline/default"),
 }

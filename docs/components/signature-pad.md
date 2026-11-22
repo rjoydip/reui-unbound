@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-signature-pad
 
 ## Files
 
-- `src/blocks/components/radix/signature-pad.tsx`
-- `src/components/reui-unbound/signature-pad.tsx`
-- `src/blocks/components/base/signature-pad.tsx`
-- `src/components/reui-unbound/base/signature-pad.tsx`
+- `src/blocks/components/radix/signature-pad/default.tsx`
+- `src/components/kit/signature-pad.tsx`
+- `src/blocks/components/base/signature-pad/default.tsx`
+- `src/components/kit/base/signature-pad.tsx`
 
 ## Dependencies
 

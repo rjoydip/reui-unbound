@@ -2,5 +2,5 @@
 // Lazy-import map of every Trace preview in the radix group.
 
 export const previews = {
-  "trace-radix": () => import("@/blocks/components/radix/trace"),
+  "trace-radix": () => import("@/blocks/components/radix/trace/default"),
 }

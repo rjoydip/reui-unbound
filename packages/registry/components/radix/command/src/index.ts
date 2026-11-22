@@ -2,5 +2,5 @@
 // Lazy-import map of every Command preview in the radix group.
 
 export const previews = {
-  "command-radix": () => import("@/blocks/components/radix/command"),
+  "command-radix": () => import("@/blocks/components/radix/command/default"),
 }

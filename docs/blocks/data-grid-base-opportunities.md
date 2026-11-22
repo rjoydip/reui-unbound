@@ -28,10 +28,10 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-base-3/index.tsx`
-- `src/blocks/data-grid-base-3/parts.tsx`
-- `src/blocks/data-grid-base-3/pipeline-filters.tsx`
-- `src/blocks/data-grid-base-3/data.ts`
+- `src/blocks/data-grid/base/opportunities/index.tsx`
+- `src/blocks/data-grid/base/opportunities/parts.tsx`
+- `src/blocks/data-grid/base/opportunities/pipeline-filters.tsx`
+- `src/blocks/data-grid/base/opportunities/data.ts`
 
 ## Dependencies
 

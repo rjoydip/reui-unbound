@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add toggle-group
 
 ## Files
 
-- `src/blocks/components/radix/toggle-group.tsx`
+- `src/blocks/components/radix/toggle-group/default.tsx`
 - `src/components/ui/toggle-group.tsx`
 
 ## Dependencies

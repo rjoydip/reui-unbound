@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add sonner
 
 ## Files
 
-- `src/blocks/components/radix/sonner.tsx`
+- `src/blocks/components/radix/sonner/default.tsx`
 - `src/components/ui/sonner.tsx`
 
 ## Dependencies

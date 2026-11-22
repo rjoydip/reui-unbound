@@ -2,5 +2,5 @@
 // Lazy-import map of every Badge preview in the base group.
 
 export const previews = {
-  "badge-base": () => import("@/blocks/components/base/badge"),
+  "badge-base": () => import("@/blocks/components/base/badge/default"),
 }

@@ -12,7 +12,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-bordered.tsx",
+          "path": "radix/accordion/bordered.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-bordered.tsx"
         }
@@ -29,7 +29,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-disabled-items.tsx",
+          "path": "radix/accordion/disabled-items.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-disabled-items.tsx"
         }
@@ -48,7 +48,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-icons-badges.tsx",
+          "path": "radix/accordion/icons-badges.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-icons-badges.tsx"
         }
@@ -68,7 +68,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-in-card.tsx",
+          "path": "radix/accordion/in-card.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-in-card.tsx"
         }
@@ -88,7 +88,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-in-frame.tsx",
+          "path": "radix/accordion/in-frame.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-in-frame.tsx"
         }
@@ -105,7 +105,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-nested.tsx",
+          "path": "radix/accordion/nested.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-nested.tsx"
         }
@@ -123,7 +123,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-plus-minus.tsx",
+          "path": "radix/accordion/plus-minus.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-plus-minus.tsx"
         }
@@ -141,7 +141,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-rotating-arrow.tsx",
+          "path": "radix/accordion/rotating-arrow.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-rotating-arrow.tsx"
         }
@@ -164,7 +164,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-setup-steps.tsx",
+          "path": "radix/accordion/setup-steps.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-setup-steps.tsx"
         }
@@ -181,7 +181,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-single-expand.tsx",
+          "path": "radix/accordion/single-expand.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-single-expand.tsx"
         }
@@ -201,7 +201,7 @@
       ],
       "files": [
         {
-          "path": "radix/accordion-user-list.tsx",
+          "path": "radix/accordion/user-list.tsx",
           "type": "registry:component",
           "target": "@components/examples/accordion-user-list.tsx"
         }
@@ -221,7 +221,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-comment-mention.tsx",
+          "path": "radix/alert/comment-mention.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-comment-mention.tsx"
         }
@@ -240,7 +240,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-description-actions.tsx",
+          "path": "radix/alert/description-actions.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-description-actions.tsx"
         }
@@ -259,7 +259,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-account-deactivation.tsx",
+          "path": "radix/alert-dialog/account-deactivation.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-account-deactivation.tsx"
         }
@@ -279,7 +279,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-billing-warning.tsx",
+          "path": "radix/alert-dialog/billing-warning.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-billing-warning.tsx"
         }
@@ -297,7 +297,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-confirmation.tsx",
+          "path": "radix/alert-dialog/confirmation.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-confirmation.tsx"
         }
@@ -316,7 +316,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-destructive-delete.tsx",
+          "path": "radix/alert-dialog/destructive-delete.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-destructive-delete.tsx"
         }
@@ -335,7 +335,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-e-ticket-receipt.tsx",
+          "path": "radix/alert-dialog/e-ticket-receipt.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-e-ticket-receipt.tsx"
         }
@@ -354,7 +354,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-logout-confirmation.tsx",
+          "path": "radix/alert-dialog/logout-confirmation.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-logout-confirmation.tsx"
         }
@@ -373,7 +373,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-nested-in-dialog.tsx",
+          "path": "radix/alert-dialog/nested-in-dialog.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-nested-in-dialog.tsx"
         }
@@ -393,7 +393,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-security-audit.tsx",
+          "path": "radix/alert-dialog/security-audit.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-security-audit.tsx"
         }
@@ -411,7 +411,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-small.tsx",
+          "path": "radix/alert-dialog/small.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-small.tsx"
         }
@@ -430,7 +430,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-small-with-icon.tsx",
+          "path": "radix/alert-dialog/small-with-icon.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-small-with-icon.tsx"
         }
@@ -451,7 +451,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-success-notice.tsx",
+          "path": "radix/alert-dialog/success-notice.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-success-notice.tsx"
         }
@@ -471,7 +471,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-system-update.tsx",
+          "path": "radix/alert-dialog/system-update.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-system-update.tsx"
         }
@@ -493,7 +493,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-unsaved-changes.tsx",
+          "path": "radix/alert-dialog/unsaved-changes.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-unsaved-changes.tsx"
         }
@@ -512,7 +512,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-dialog-with-icon.tsx",
+          "path": "radix/alert-dialog/with-icon.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-dialog-with-icon.tsx"
         }
@@ -532,7 +532,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-direct-message.tsx",
+          "path": "radix/alert/direct-message.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-direct-message.tsx"
         }
@@ -550,7 +550,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-error-variant.tsx",
+          "path": "radix/alert/error-variant.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-error-variant.tsx"
         }
@@ -570,7 +570,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-feature-discovery.tsx",
+          "path": "radix/alert/feature-discovery.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-feature-discovery.tsx"
         }
@@ -589,7 +589,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-frame-reset-borders.tsx",
+          "path": "radix/alert/frame-reset-borders.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-frame-reset-borders.tsx"
         }
@@ -609,7 +609,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-frame-with-actions.tsx",
+          "path": "radix/alert/frame-with-actions.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-frame-with-actions.tsx"
         }
@@ -628,7 +628,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-icon-actions.tsx",
+          "path": "radix/alert/icon-actions.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-icon-actions.tsx"
         }
@@ -646,7 +646,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-info-variant.tsx",
+          "path": "radix/alert/info-variant.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-info-variant.tsx"
         }
@@ -664,7 +664,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-invert-variant.tsx",
+          "path": "radix/alert/invert-variant.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-invert-variant.tsx"
         }
@@ -682,7 +682,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-leading-icon.tsx",
+          "path": "radix/alert/leading-icon.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-leading-icon.tsx"
         }
@@ -700,7 +700,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-payment-failure.tsx",
+          "path": "radix/alert/payment-failure.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-payment-failure.tsx"
         }
@@ -720,7 +720,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-pro-upsell.tsx",
+          "path": "radix/alert/pro-upsell.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-pro-upsell.tsx"
         }
@@ -740,7 +740,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-service-status.tsx",
+          "path": "radix/alert/service-status.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-service-status.tsx"
         }
@@ -760,7 +760,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-stacked-in-frame.tsx",
+          "path": "radix/alert/stacked-in-frame.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-stacked-in-frame.tsx"
         }
@@ -778,7 +778,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-success-variant.tsx",
+          "path": "radix/alert/success-variant.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-success-variant.tsx"
         }
@@ -797,7 +797,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-title-actions.tsx",
+          "path": "radix/alert/title-actions.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-title-actions.tsx"
         }
@@ -814,7 +814,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-title-description.tsx",
+          "path": "radix/alert/title-description.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-title-description.tsx"
         }
@@ -834,7 +834,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-urgent-billing.tsx",
+          "path": "radix/alert/urgent-billing.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-urgent-billing.tsx"
         }
@@ -852,7 +852,7 @@
       ],
       "files": [
         {
-          "path": "radix/alert-warning-variant.tsx",
+          "path": "radix/alert/warning-variant.tsx",
           "type": "registry:component",
           "target": "@components/examples/alert-warning-variant.tsx"
         }
@@ -869,7 +869,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-classic-photo.tsx",
+          "path": "radix/aspect-ratio/classic-photo.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-classic-photo.tsx"
         }
@@ -886,7 +886,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-monitor.tsx",
+          "path": "radix/aspect-ratio/monitor.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-monitor.tsx"
         }
@@ -903,7 +903,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-social-portrait.tsx",
+          "path": "radix/aspect-ratio/social-portrait.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-social-portrait.tsx"
         }
@@ -920,7 +920,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-square.tsx",
+          "path": "radix/aspect-ratio/square.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-square.tsx"
         }
@@ -937,7 +937,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-standard.tsx",
+          "path": "radix/aspect-ratio/standard.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-standard.tsx"
         }
@@ -954,7 +954,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-tall-portrait.tsx",
+          "path": "radix/aspect-ratio/tall-portrait.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-tall-portrait.tsx"
         }
@@ -971,7 +971,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-ultrawide.tsx",
+          "path": "radix/aspect-ratio/ultrawide.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-ultrawide.tsx"
         }
@@ -988,7 +988,7 @@
       ],
       "files": [
         {
-          "path": "radix/aspect-ratio-widescreen.tsx",
+          "path": "radix/aspect-ratio/widescreen.tsx",
           "type": "registry:component",
           "target": "@components/examples/aspect-ratio-widescreen.tsx"
         }
@@ -1006,7 +1006,7 @@
       ],
       "files": [
         {
-          "path": "radix/attachment-assistant-reply.tsx",
+          "path": "radix/attachment/assistant-reply.tsx",
           "type": "registry:component",
           "target": "@components/examples/attachment-assistant-reply.tsx"
         }
@@ -1026,7 +1026,7 @@
       ],
       "files": [
         {
-          "path": "radix/attachment-composer-tray.tsx",
+          "path": "radix/attachment/composer-tray.tsx",
           "type": "registry:component",
           "target": "@components/examples/attachment-composer-tray.tsx"
         }
@@ -1045,7 +1045,7 @@
       ],
       "files": [
         {
-          "path": "radix/attachment-file-picker.tsx",
+          "path": "radix/attachment/file-picker.tsx",
           "type": "registry:component",
           "target": "@components/examples/attachment-file-picker.tsx"
         }
@@ -1062,7 +1062,7 @@
       ],
       "files": [
         {
-          "path": "radix/attachment-image-strip.tsx",
+          "path": "radix/attachment/image-strip.tsx",
           "type": "registry:component",
           "target": "@components/examples/attachment-image-strip.tsx"
         }
@@ -1080,7 +1080,7 @@
       ],
       "files": [
         {
-          "path": "radix/attachment-three-sizes.tsx",
+          "path": "radix/attachment/three-sizes.tsx",
           "type": "registry:component",
           "target": "@components/examples/attachment-three-sizes.tsx"
         }
@@ -1099,7 +1099,7 @@
       ],
       "files": [
         {
-          "path": "radix/attachment-upload-queue.tsx",
+          "path": "radix/attachment/upload-queue.tsx",
           "type": "registry:component",
           "target": "@components/examples/attachment-upload-queue.tsx"
         }
@@ -1116,7 +1116,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-auto-highlight.tsx",
+          "path": "radix/autocomplete/auto-highlight.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-auto-highlight.tsx"
         }
@@ -1133,7 +1133,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-clear-button.tsx",
+          "path": "radix/autocomplete/clear-button.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-clear-button.tsx"
         }
@@ -1150,7 +1150,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-clear-trigger.tsx",
+          "path": "radix/autocomplete/clear-trigger.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-clear-trigger.tsx"
         }
@@ -1167,7 +1167,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-disabled.tsx",
+          "path": "radix/autocomplete/disabled.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-disabled.tsx"
         }
@@ -1194,7 +1194,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-form-integration.tsx",
+          "path": "radix/autocomplete/form-integration.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-form-integration.tsx"
         }
@@ -1214,7 +1214,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-groups-labels.tsx",
+          "path": "radix/autocomplete/groups-labels.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-groups-labels.tsx"
         }
@@ -1232,7 +1232,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-labeled.tsx",
+          "path": "radix/autocomplete/labeled.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-labeled.tsx"
         }
@@ -1249,7 +1249,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-large.tsx",
+          "path": "radix/autocomplete/large.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-large.tsx"
         }
@@ -1270,7 +1270,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-search-results.tsx",
+          "path": "radix/autocomplete/search-results.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-search-results.tsx"
         }
@@ -1287,7 +1287,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-small.tsx",
+          "path": "radix/autocomplete/small.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-small.tsx"
         }
@@ -1304,7 +1304,7 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-standard.tsx",
+          "path": "radix/autocomplete/standard.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-standard.tsx"
         }
@@ -1321,9 +1321,631 @@
       ],
       "files": [
         {
-          "path": "radix/autocomplete-trigger-button.tsx",
+          "path": "radix/autocomplete/trigger-button.tsx",
           "type": "registry:component",
           "target": "@components/examples/autocomplete-trigger-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-avatar-group",
+      "type": "registry:block",
+      "title": "Avatar Group Avatar",
+      "description": "Avatar Group example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/avatar-group.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-avatar-group.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-badge-icons",
+      "type": "registry:block",
+      "title": "Badge Icons Avatar",
+      "description": "Badge Icons example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/badge-icons.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-badge-icons.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-border-radius",
+      "type": "registry:block",
+      "title": "Border Radius Avatar",
+      "description": "Border Radius example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/border-radius.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-border-radius.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-border-rings",
+      "type": "registry:block",
+      "title": "Border Rings Avatar",
+      "description": "Border Rings example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/border-rings.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-border-rings.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-bordered-count-pill",
+      "type": "registry:block",
+      "title": "Bordered Count Pill Avatar",
+      "description": "Bordered Count Pill example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/bordered-count-pill.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-bordered-count-pill.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-compact-social-proof",
+      "type": "registry:block",
+      "title": "Compact Social Proof Avatar",
+      "description": "Compact Social Proof example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/compact-social-proof.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-compact-social-proof.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-custom-badge",
+      "type": "registry:block",
+      "title": "Custom Badge Avatar",
+      "description": "Custom Badge example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "spinner"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/custom-badge.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-custom-badge.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-custom-sizes",
+      "type": "registry:block",
+      "title": "Custom Sizes Avatar",
+      "description": "Custom Sizes example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/custom-sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-custom-sizes.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-dropdown-menu",
+      "type": "registry:block",
+      "title": "Dropdown Menu Avatar",
+      "description": "Dropdown Menu example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "avatar",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/dropdown-menu.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-dropdown-menu.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-empty-state",
+      "type": "registry:block",
+      "title": "Empty State Avatar",
+      "description": "Empty State example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/empty-state.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-empty-state.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-fallbacks",
+      "type": "registry:block",
+      "title": "Fallbacks Avatar",
+      "description": "Fallbacks example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/fallbacks.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-fallbacks.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-fan-with-tooltips",
+      "type": "registry:block",
+      "title": "Fan With Tooltips Avatar",
+      "description": "Fan With Tooltips example for Avatar.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/fan-with-tooltips.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-fan-with-tooltips.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-gradient-ring",
+      "type": "registry:block",
+      "title": "Gradient Ring Avatar",
+      "description": "Gradient Ring example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/gradient-ring.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-gradient-ring.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-grayscale",
+      "type": "registry:block",
+      "title": "Grayscale Avatar",
+      "description": "Grayscale example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/grayscale.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-grayscale.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group-add-button",
+      "type": "registry:block",
+      "title": "Group Add Button Avatar",
+      "description": "Group Add Button example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "avatar",
+        "button",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/group-add-button.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-group-add-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group-presence",
+      "type": "registry:block",
+      "title": "Group Presence Avatar",
+      "description": "Group Presence example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/group-presence.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-group-presence.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-group-with-count",
+      "type": "registry:block",
+      "title": "Group With Count Avatar",
+      "description": "Group With Count example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/group-with-count.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-group-with-count.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-hover-fan",
+      "type": "registry:block",
+      "title": "Hover Fan Avatar",
+      "description": "Hover Fan example for Avatar.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/hover-fan.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-hover-fan.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-lift-tooltips",
+      "type": "registry:block",
+      "title": "Lift Tooltips Avatar",
+      "description": "Lift Tooltips example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/lift-tooltips.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-lift-tooltips.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-loading-state",
+      "type": "registry:block",
+      "title": "Loading State Avatar",
+      "description": "Loading State example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "avatar",
+        "button",
+        "spinner",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/loading-state.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-loading-state.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-multiple-badges",
+      "type": "registry:block",
+      "title": "Multiple Badges Avatar",
+      "description": "Multiple Badges example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/multiple-badges.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-multiple-badges.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-outline-button",
+      "type": "registry:block",
+      "title": "Outline Button Avatar",
+      "description": "Outline Button example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/outline-button.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-outline-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-pill-outline-button",
+      "type": "registry:block",
+      "title": "Pill Outline Button Avatar",
+      "description": "Pill Outline Button example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/pill-outline-button.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-pill-outline-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-pill-primary-button",
+      "type": "registry:block",
+      "title": "Pill Primary Button Avatar",
+      "description": "Pill Primary Button example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/pill-primary-button.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-pill-primary-button.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-plus-chip-group",
+      "type": "registry:block",
+      "title": "Plus Chip Group Avatar",
+      "description": "Plus Chip Group example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/plus-chip-group.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-plus-chip-group.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-pulsing-ring",
+      "type": "registry:block",
+      "title": "Pulsing Ring Avatar",
+      "description": "Pulsing Ring example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/pulsing-ring.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-pulsing-ring.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-round-badge-corners",
+      "type": "registry:block",
+      "title": "Round Badge Corners Avatar",
+      "description": "Round Badge Corners example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/round-badge-corners.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-round-badge-corners.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-sizes",
+      "type": "registry:block",
+      "title": "Sizes Avatar",
+      "description": "Sizes example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/sizes.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-sizes.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-social-proof-pill",
+      "type": "registry:block",
+      "title": "Social Proof Pill Avatar",
+      "description": "Social Proof Pill example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/social-proof-pill.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-social-proof-pill.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-soft-fallbacks",
+      "type": "registry:block",
+      "title": "Soft Fallbacks Avatar",
+      "description": "Soft Fallbacks example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/soft-fallbacks.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-soft-fallbacks.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-solid-fallbacks",
+      "type": "registry:block",
+      "title": "Solid Fallbacks Avatar",
+      "description": "Solid Fallbacks example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/solid-fallbacks.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-solid-fallbacks.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-square-badge-corners",
+      "type": "registry:block",
+      "title": "Square Badge Corners Avatar",
+      "description": "Square Badge Corners example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/square-badge-corners.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-square-badge-corners.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-standard",
+      "type": "registry:block",
+      "title": "Standard Avatar",
+      "description": "Standard example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/standard.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-standard.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-status-dots",
+      "type": "registry:block",
+      "title": "Status Dots Avatar",
+      "description": "Status Dots example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/status-dots.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-status-dots.tsx"
+        }
+      ]
+    },
+    {
+      "name": "avatar-user-details",
+      "type": "registry:block",
+      "title": "User Details Avatar",
+      "description": "User Details example for Avatar.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "radix/avatar/user-details.tsx",
+          "type": "registry:component",
+          "target": "@components/examples/avatar-user-details.tsx"
         }
       ]
     }

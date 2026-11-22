@@ -92,21 +92,21 @@ bunx --bun shadcn@latest add @reui-unbound/base-autocomplete
 
 ## Files
 
-- `src/blocks/components/radix/autocomplete-standard.tsx`
-- `src/components/reui-unbound/autocomplete.tsx`
-- `src/blocks/components/radix/autocomplete-disabled.tsx`
-- `src/blocks/components/radix/autocomplete-auto-highlight.tsx`
-- `src/blocks/components/radix/autocomplete-labeled.tsx`
-- `src/blocks/components/radix/autocomplete-clear-button.tsx`
-- `src/blocks/components/radix/autocomplete-trigger-button.tsx`
-- `src/blocks/components/radix/autocomplete-clear-trigger.tsx`
-- `src/blocks/components/radix/autocomplete-groups-labels.tsx`
-- `src/blocks/components/radix/autocomplete-search-results.tsx`
-- `src/blocks/components/radix/autocomplete-small.tsx`
-- `src/blocks/components/radix/autocomplete-large.tsx`
-- `src/blocks/components/radix/autocomplete-form-integration.tsx`
-- `src/blocks/components/base/autocomplete.tsx`
-- `src/components/reui-unbound/base/autocomplete.tsx`
+- `src/blocks/components/radix/autocomplete/standard.tsx`
+- `src/components/kit/autocomplete.tsx`
+- `src/blocks/components/radix/autocomplete/disabled.tsx`
+- `src/blocks/components/radix/autocomplete/auto-highlight.tsx`
+- `src/blocks/components/radix/autocomplete/labeled.tsx`
+- `src/blocks/components/radix/autocomplete/clear-button.tsx`
+- `src/blocks/components/radix/autocomplete/trigger-button.tsx`
+- `src/blocks/components/radix/autocomplete/clear-trigger.tsx`
+- `src/blocks/components/radix/autocomplete/groups-labels.tsx`
+- `src/blocks/components/radix/autocomplete/search-results.tsx`
+- `src/blocks/components/radix/autocomplete/small.tsx`
+- `src/blocks/components/radix/autocomplete/large.tsx`
+- `src/blocks/components/radix/autocomplete/form-integration.tsx`
+- `src/blocks/components/base/autocomplete/default.tsx`
+- `src/components/kit/base/autocomplete.tsx`
 
 ## Dependencies
 

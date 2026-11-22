@@ -28,11 +28,11 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-base-2/index.tsx`
-- `src/blocks/data-grid-base-2/parts.tsx`
-- `src/blocks/data-grid-base-2/contact-filters.tsx`
-- `src/blocks/data-grid-base-2/contact-sheets.tsx`
-- `src/blocks/data-grid-base-2/data.ts`
+- `src/blocks/data-grid/base/contacts/index.tsx`
+- `src/blocks/data-grid/base/contacts/parts.tsx`
+- `src/blocks/data-grid/base/contacts/contact-filters.tsx`
+- `src/blocks/data-grid/base/contacts/contact-sheets.tsx`
+- `src/blocks/data-grid/base/contacts/data.ts`
 
 ## Dependencies
 

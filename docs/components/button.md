@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add button
 
 ## Files
 
-- `src/blocks/components/radix/button.tsx`
+- `src/blocks/components/radix/button/default.tsx`
 - `src/components/ui/button.tsx`
 
 ## Dependencies

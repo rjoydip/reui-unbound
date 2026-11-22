@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add native-select
 
 ## Files
 
-- `src/blocks/components/radix/native-select.tsx`
+- `src/blocks/components/radix/native-select/default.tsx`
 - `src/components/ui/native-select.tsx`
 
 ## Dependencies

@@ -2,5 +2,5 @@
 // Lazy-import map of every Kanban preview in the radix group.
 
 export const previews = {
-  "kanban-radix": () => import("@/blocks/components/radix/kanban"),
+  "kanban-radix": () => import("@/blocks/components/radix/kanban/default"),
 }

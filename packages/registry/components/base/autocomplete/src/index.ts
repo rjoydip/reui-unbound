@@ -2,5 +2,5 @@
 // Lazy-import map of every Autocomplete preview in the base group.
 
 export const previews = {
-  "autocomplete-base": () => import("@/blocks/components/base/autocomplete"),
+  "autocomplete-base": () => import("@/blocks/components/base/autocomplete/default"),
 }

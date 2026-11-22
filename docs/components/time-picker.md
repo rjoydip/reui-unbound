@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-time-picker
 
 ## Files
 
-- `src/blocks/components/radix/time-picker.tsx`
-- `src/components/reui-unbound/time-picker.tsx`
-- `src/blocks/components/base/time-picker.tsx`
-- `src/components/reui-unbound/base/time-picker.tsx`
+- `src/blocks/components/radix/time-picker/default.tsx`
+- `src/components/kit/time-picker.tsx`
+- `src/blocks/components/base/time-picker/default.tsx`
+- `src/components/kit/base/time-picker.tsx`
 
 ## Dependencies
 

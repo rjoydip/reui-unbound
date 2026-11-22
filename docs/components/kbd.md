@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add kbd
 
 ## Files
 
-- `src/blocks/components/radix/kbd.tsx`
+- `src/blocks/components/radix/kbd/default.tsx`
 - `src/components/ui/kbd.tsx`
 
 ## Dependencies

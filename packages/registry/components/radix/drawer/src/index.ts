@@ -2,5 +2,5 @@
 // Lazy-import map of every Drawer preview in the radix group.
 
 export const previews = {
-  "drawer-radix": () => import("@/blocks/components/radix/drawer"),
+  "drawer-radix": () => import("@/blocks/components/radix/drawer/default"),
 }

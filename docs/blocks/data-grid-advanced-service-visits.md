@@ -28,9 +28,9 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-advanced-9/index.tsx`
-- `src/blocks/data-grid-advanced-9/data.ts`
-- `src/blocks/data-grid-advanced-9/parts.tsx`
+- `src/blocks/data-grid/advanced/service-visits/index.tsx`
+- `src/blocks/data-grid/advanced/service-visits/data.ts`
+- `src/blocks/data-grid/advanced/service-visits/parts.tsx`
 
 ## Dependencies
 

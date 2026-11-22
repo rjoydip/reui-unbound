@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add radio-group
 
 ## Files
 
-- `src/blocks/components/radix/radio-group.tsx`
+- `src/blocks/components/radix/radio-group/default.tsx`
 - `src/components/ui/radio-group.tsx`
 
 ## Dependencies

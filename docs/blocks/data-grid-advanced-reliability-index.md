@@ -28,10 +28,10 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-advanced-4/index.tsx`
-- `src/blocks/data-grid-advanced-4/data.ts`
-- `src/blocks/data-grid-advanced-4/parts.tsx`
-- `src/blocks/data-grid-advanced-4/slo-sheet.tsx`
+- `src/blocks/data-grid/advanced/reliability-index/index.tsx`
+- `src/blocks/data-grid/advanced/reliability-index/data.ts`
+- `src/blocks/data-grid/advanced/reliability-index/parts.tsx`
+- `src/blocks/data-grid/advanced/reliability-index/slo-sheet.tsx`
 
 ## Dependencies
 

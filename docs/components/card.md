@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add card
 
 ## Files
 
-- `src/blocks/components/radix/card.tsx`
+- `src/blocks/components/radix/card/default.tsx`
 - `src/components/ui/card.tsx`
 
 ## Dependencies

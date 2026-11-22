@@ -2,5 +2,5 @@
 // Lazy-import map of every Sidebar preview in the radix group.
 
 export const previews = {
-  "sidebar-radix": () => import("@/blocks/components/radix/sidebar"),
+  "sidebar-radix": () => import("@/blocks/components/radix/sidebar/default"),
 }

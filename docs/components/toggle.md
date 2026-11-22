@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add toggle
 
 ## Files
 
-- `src/blocks/components/radix/toggle.tsx`
+- `src/blocks/components/radix/toggle/default.tsx`
 - `src/components/ui/toggle.tsx`
 
 ## Dependencies

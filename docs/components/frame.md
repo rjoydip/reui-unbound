@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-frame
 
 ## Files
 
-- `src/blocks/components/radix/frame.tsx`
-- `src/components/reui-unbound/frame.tsx`
-- `src/blocks/components/base/frame.tsx`
-- `src/components/reui-unbound/base/frame.tsx`
+- `src/blocks/components/radix/frame/default.tsx`
+- `src/components/kit/frame.tsx`
+- `src/blocks/components/base/frame/default.tsx`
+- `src/components/kit/base/frame.tsx`
 
 ## Dependencies
 

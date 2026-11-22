@@ -2,5 +2,5 @@
 // Lazy-import map of every Resizable preview in the radix group.
 
 export const previews = {
-  "resizable-radix": () => import("@/blocks/components/radix/resizable"),
+  "resizable-radix": () => import("@/blocks/components/radix/resizable/default"),
 }

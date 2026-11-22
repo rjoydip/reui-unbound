@@ -2,5 +2,5 @@
 // Lazy-import map of every Time Picker preview in the base group.
 
 export const previews = {
-  "time-picker-base": () => import("@/blocks/components/base/time-picker"),
+  "time-picker-base": () => import("@/blocks/components/base/time-picker/default"),
 }

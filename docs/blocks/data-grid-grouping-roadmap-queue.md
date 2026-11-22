@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-grouping-1/index.tsx`
-- `src/blocks/data-grid-grouping-1/data.ts`
+- `src/blocks/data-grid/grouping/roadmap-queue/index.tsx`
+- `src/blocks/data-grid/grouping/roadmap-queue/data.ts`
 
 ## Dependencies
 

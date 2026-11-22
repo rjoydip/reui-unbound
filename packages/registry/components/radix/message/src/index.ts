@@ -2,5 +2,5 @@
 // Lazy-import map of every Message preview in the radix group.
 
 export const previews = {
-  "message-radix": () => import("@/blocks/components/radix/message"),
+  "message-radix": () => import("@/blocks/components/radix/message/default"),
 }

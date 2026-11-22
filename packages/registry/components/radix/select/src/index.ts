@@ -2,5 +2,5 @@
 // Lazy-import map of every Select preview in the radix group.
 
 export const previews = {
-  "select-radix": () => import("@/blocks/components/radix/select"),
+  "select-radix": () => import("@/blocks/components/radix/select/default"),
 }

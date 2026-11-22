@@ -7,15 +7,15 @@ const exists = (file) => fs.existsSync(path.join(root, file))
 
 const blocksRegistry = JSON.parse(read("src/blocks/registry.json")).items
 const radixRegistry = JSON.parse(
-  read("src/components/reui-unbound/registry.json"),
+  read("src/components/kit/registry.json"),
 ).items
 const baseRegistry = JSON.parse(
-  read("src/components/reui-unbound/base/registry.json"),
+  read("src/components/kit/base/registry.json"),
 ).items
 
-const catalogSource = read("src/blocks/components/catalog.tsx")
-const uiCatalogSource = read("src/blocks/components/ui-catalog.tsx")
-const sidebarSource = read("src/components/catalog-sidebar.tsx")
+const catalogSource = read("src/blocks/components/~catalog/catalog.tsx").replace(/\r\n/g, "\n")
+const uiCatalogSource = read("src/blocks/components/~catalog/ui-catalog.tsx").replace(/\r\n/g, "\n")
+const sidebarSource = read("src/components/~app/catalog-sidebar.tsx")
 
 function quotedFields(block) {
   return Object.fromEntries(
@@ -27,12 +27,41 @@ function quotedFields(block) {
 }
 
 const reuiEntries = [
-  ...catalogSource.matchAll(/componentEntry\(\{([\s\S]*?)\n  \}\),/g),
-].map((match) => quotedFields(match[1]))
+  ...catalogSource.matchAll(
+    /componentEntry\(\{\n    flavor: "[\s\S]*?\n  \}\),/g,
+  ),
+].map((match) => quotedFields(match[0]))
 
 const uiEntries = [
-  ...uiCatalogSource.matchAll(/uiEntry\(\{([\s\S]*?)\n  \}\),/g),
-].map((match) => quotedFields(match[1]))
+  ...uiCatalogSource.matchAll(/uiEntry\(\{\n    name: "[\s\S]*?\n  \}\),/g),
+].map((match) => quotedFields(match[0]))
+
+function previewSources(catalogSource) {
+  const raw = new Map()
+  for (const match of catalogSource.matchAll(
+    /import\s+(\w+)\s+from\s+"\.\.?\/(radix|base)\/([^"?]+)\?raw"/g,
+  )) {
+    raw.set(
+      match[1],
+      `src/blocks/components/${match[2]}/${match[3]}`,
+    )
+  }
+  const sources = new Map()
+  for (const match of catalogSource.matchAll(
+    /(?:componentEntry|uiEntry)\(\{\n    (?:flavor|name): [\s\S]*?\n  \}\),/g,
+  )) {
+    const fields = quotedFields(match[0])
+    const id = fields.id ?? (fields.name ? `${fields.name}-radix` : undefined)
+    const source = match[0].match(/source:\s*(\w+)/)?.[1]
+    if (id && source && raw.has(source)) sources.set(id, raw.get(source))
+  }
+  return sources
+}
+
+const previewSourceById = new Map([
+  ...previewSources(catalogSource),
+  ...previewSources(uiCatalogSource),
+])
 
 const notesSource = sidebarSource.slice(
   sidebarSource.indexOf("const COMPONENT_NOTES"),
@@ -200,11 +229,13 @@ for (const group of [...groups.values()].sort((a, b) =>
 
   for (const entry of group.entries) {
     const flavor = entry.flavor ?? "radix"
+    const previewId = entry.id ?? `${entry.name}-radix`
     const previewName = entry.id
       ? entry.id.replace(/-(radix|base)$/, "")
       : entry.name
-    const previewFile = `src/blocks/components/${flavor}/${previewName}.tsx`
-    const previewId = entry.id ?? `${entry.name}-radix`
+    const previewFile =
+      previewSourceById.get(previewId) ??
+      `src/blocks/components/${flavor}/${previewName}.tsx`
     if (exists(previewFile)) files.push(previewFile)
 
     if (entry.kind === "ui") {
@@ -233,7 +264,7 @@ for (const group of [...groups.values()].sort((a, b) =>
       if (item) {
         for (const file of item.files ?? []) {
           files.push(
-            `src/components/reui-unbound/${flavor === "base" ? "base/" : ""}${file.path}`,
+            `src/components/kit/${flavor === "base" ? "base/" : ""}${file.path}`,
           )
         }
         for (const dependency of item.dependencies ?? []) {

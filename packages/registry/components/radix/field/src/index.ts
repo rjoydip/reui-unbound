@@ -2,5 +2,5 @@
 // Lazy-import map of every Field preview in the radix group.
 
 export const previews = {
-  "field-radix": () => import("@/blocks/components/radix/field"),
+  "field-radix": () => import("@/blocks/components/radix/field/default"),
 }

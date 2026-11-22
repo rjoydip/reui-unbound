@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add input
 
 ## Files
 
-- `src/blocks/components/radix/input.tsx`
+- `src/blocks/components/radix/input/default.tsx`
 - `src/components/ui/input.tsx`
 
 ## Dependencies

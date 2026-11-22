@@ -2,5 +2,5 @@
 // Lazy-import map of every Table preview in the radix group.
 
 export const previews = {
-  "table-radix": () => import("@/blocks/components/radix/table"),
+  "table-radix": () => import("@/blocks/components/radix/table/default"),
 }

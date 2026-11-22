@@ -2,5 +2,5 @@
 // Lazy-import map of every Card preview in the radix group.
 
 export const previews = {
-  "card-radix": () => import("@/blocks/components/radix/card"),
+  "card-radix": () => import("@/blocks/components/radix/card/default"),
 }

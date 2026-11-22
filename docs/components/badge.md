@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-badge
 
 ## Files
 
-- `src/blocks/components/radix/badge.tsx`
-- `src/components/reui-unbound/badge.tsx`
-- `src/blocks/components/base/badge.tsx`
-- `src/components/reui-unbound/base/badge.tsx`
+- `src/blocks/components/radix/badge/default.tsx`
+- `src/components/kit/badge.tsx`
+- `src/blocks/components/base/badge/default.tsx`
+- `src/components/kit/base/badge.tsx`
 
 ## Dependencies
 

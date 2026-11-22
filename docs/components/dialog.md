@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add dialog
 
 ## Files
 
-- `src/blocks/components/radix/dialog.tsx`
+- `src/blocks/components/radix/dialog/default.tsx`
 - `src/components/ui/dialog.tsx`
 
 ## Dependencies

@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-sortable
 
 ## Files
 
-- `src/blocks/components/radix/sortable.tsx`
-- `src/components/reui-unbound/sortable.tsx`
-- `src/blocks/components/base/sortable.tsx`
-- `src/components/reui-unbound/base/sortable.tsx`
+- `src/blocks/components/radix/sortable/default.tsx`
+- `src/components/kit/sortable.tsx`
+- `src/blocks/components/base/sortable/default.tsx`
+- `src/components/kit/base/sortable.tsx`
 
 ## Dependencies
 

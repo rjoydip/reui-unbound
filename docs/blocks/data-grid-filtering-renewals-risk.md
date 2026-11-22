@@ -28,9 +28,9 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-filtering-4/index.tsx`
-- `src/blocks/data-grid-filtering-4/data.ts`
-- `src/blocks/data-grid-filtering-4/brand-icons.tsx`
+- `src/blocks/data-grid/filtering/renewals-risk/index.tsx`
+- `src/blocks/data-grid/filtering/renewals-risk/data.ts`
+- `src/blocks/data-grid/filtering/renewals-risk/brand-icons.tsx`
 
 ## Dependencies
 

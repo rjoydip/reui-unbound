@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add trace
 
 ## Files
 
-- `src/blocks/components/radix/trace.tsx`
+- `src/blocks/components/radix/trace/default.tsx`
 - `src/components/ui/trace.tsx`
 
 ## Dependencies

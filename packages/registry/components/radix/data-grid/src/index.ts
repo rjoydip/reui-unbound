@@ -2,5 +2,5 @@
 // Lazy-import map of every Data Grid preview in the radix group.
 
 export const previews = {
-  "data-grid-radix": () => import("@/blocks/components/radix/data-grid"),
+  "data-grid-radix": () => import("@/blocks/components/radix/data-grid/default"),
 }

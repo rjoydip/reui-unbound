@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add message
 
 ## Files
 
-- `src/blocks/components/radix/message.tsx`
+- `src/blocks/components/radix/message/default.tsx`
 - `src/components/ui/message.tsx`
 
 ## Dependencies

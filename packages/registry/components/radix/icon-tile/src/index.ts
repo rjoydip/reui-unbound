@@ -2,5 +2,5 @@
 // Lazy-import map of every Icon Tile preview in the radix group.
 
 export const previews = {
-  "icon-tile-radix": () => import("@/blocks/components/radix/icon-tile"),
+  "icon-tile-radix": () => import("@/blocks/components/radix/icon-tile/default"),
 }

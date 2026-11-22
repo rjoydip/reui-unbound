@@ -2,5 +2,5 @@
 // Lazy-import map of every Gantt preview in the radix group.
 
 export const previews = {
-  "gantt-radix": () => import("@/blocks/components/radix/gantt"),
+  "gantt-radix": () => import("@/blocks/components/radix/gantt/default"),
 }

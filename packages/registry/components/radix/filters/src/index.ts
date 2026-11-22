@@ -2,5 +2,5 @@
 // Lazy-import map of every Filters preview in the radix group.
 
 export const previews = {
-  "filters-radix": () => import("@/blocks/components/radix/filters"),
+  "filters-radix": () => import("@/blocks/components/radix/filters/default"),
 }

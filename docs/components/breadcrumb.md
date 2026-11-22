@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add breadcrumb
 
 ## Files
 
-- `src/blocks/components/radix/breadcrumb.tsx`
+- `src/blocks/components/radix/breadcrumb/default.tsx`
 - `src/components/ui/breadcrumb.tsx`
 
 ## Dependencies

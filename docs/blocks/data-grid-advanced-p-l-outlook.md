@@ -28,10 +28,10 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-advanced-15/index.tsx`
-- `src/blocks/data-grid-advanced-15/data.ts`
-- `src/blocks/data-grid-advanced-15/dialogs.tsx`
-- `src/blocks/data-grid-advanced-15/parts.tsx`
+- `src/blocks/data-grid/advanced/p-l-outlook/index.tsx`
+- `src/blocks/data-grid/advanced/p-l-outlook/data.ts`
+- `src/blocks/data-grid/advanced/p-l-outlook/dialogs.tsx`
+- `src/blocks/data-grid/advanced/p-l-outlook/parts.tsx`
 
 ## Dependencies
 

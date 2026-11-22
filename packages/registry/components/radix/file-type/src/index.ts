@@ -2,5 +2,5 @@
 // Lazy-import map of every File Type preview in the radix group.
 
 export const previews = {
-  "file-type-radix": () => import("@/blocks/components/radix/file-type"),
+  "file-type-radix": () => import("@/blocks/components/radix/file-type/default"),
 }

@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add questionnaire
 
 ## Files
 
-- `src/blocks/components/radix/questionnaire.tsx`
+- `src/blocks/components/radix/questionnaire/default.tsx`
 - `src/components/ui/questionnaire.tsx`
 
 ## Dependencies

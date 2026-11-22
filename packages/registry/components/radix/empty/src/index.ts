@@ -2,5 +2,5 @@
 // Lazy-import map of every Empty preview in the radix group.
 
 export const previews = {
-  "empty-radix": () => import("@/blocks/components/radix/empty"),
+  "empty-radix": () => import("@/blocks/components/radix/empty/default"),
 }

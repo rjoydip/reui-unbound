@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add combobox
 
 ## Files
 
-- `src/blocks/components/radix/combobox.tsx`
+- `src/blocks/components/radix/combobox/default.tsx`
 - `src/components/ui/combobox.tsx`
 
 ## Dependencies

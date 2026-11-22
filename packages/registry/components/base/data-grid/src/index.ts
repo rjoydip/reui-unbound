@@ -2,5 +2,5 @@
 // Lazy-import map of every Data Grid preview in the base group.
 
 export const previews = {
-  "data-grid-base": () => import("@/blocks/components/base/data-grid"),
+  "data-grid-base": () => import("@/blocks/components/base/data-grid/default"),
 }

@@ -2,5 +2,5 @@
 // Lazy-import map of every Code Block preview in the base group.
 
 export const previews = {
-  "code-block-base": () => import("@/blocks/components/base/code-block"),
+  "code-block-base": () => import("@/blocks/components/base/code-block/default"),
 }

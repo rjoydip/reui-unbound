@@ -2,5 +2,5 @@
 // Lazy-import map of every Number Field preview in the base group.
 
 export const previews = {
-  "number-field-base": () => import("@/blocks/components/base/number-field"),
+  "number-field-base": () => import("@/blocks/components/base/number-field/default"),
 }

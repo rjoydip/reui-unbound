@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add hover-card
 
 ## Files
 
-- `src/blocks/components/radix/hover-card.tsx`
+- `src/blocks/components/radix/hover-card/default.tsx`
 - `src/components/ui/hover-card.tsx`
 
 ## Dependencies

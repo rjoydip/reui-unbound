@@ -2,5 +2,5 @@
 // Lazy-import map of every Phone Input preview in the radix group.
 
 export const previews = {
-  "phone-input-radix": () => import("@/blocks/components/radix/phone-input"),
+  "phone-input-radix": () => import("@/blocks/components/radix/phone-input/default"),
 }

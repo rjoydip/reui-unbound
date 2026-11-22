@@ -2,5 +2,5 @@
 // Lazy-import map of every Number Field preview in the radix group.
 
 export const previews = {
-  "number-field-radix": () => import("@/blocks/components/radix/number-field"),
+  "number-field-radix": () => import("@/blocks/components/radix/number-field/default"),
 }

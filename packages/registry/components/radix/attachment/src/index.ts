@@ -2,11 +2,10 @@
 // Lazy-import map of every Attachment preview in the radix group.
 
 export const previews = {
-  "attachment-radix": () => import("@/blocks/components/radix/attachment"),
-  "attachment-assistant-reply-radix": () => import("@/blocks/components/radix/attachment-assistant-reply"),
-  "attachment-composer-tray-radix": () => import("@/blocks/components/radix/attachment-composer-tray"),
-  "attachment-image-strip-radix": () => import("@/blocks/components/radix/attachment-image-strip"),
-  "attachment-three-sizes-radix": () => import("@/blocks/components/radix/attachment-three-sizes"),
-  "attachment-upload-queue-radix": () => import("@/blocks/components/radix/attachment-upload-queue"),
-  "attachment-file-picker-radix": () => import("@/blocks/components/radix/attachment-file-picker"),
+  "attachment-assistant-reply-radix": () => import("@/blocks/components/radix/attachment/assistant-reply"),
+  "attachment-composer-tray-radix": () => import("@/blocks/components/radix/attachment/composer-tray"),
+  "attachment-image-strip-radix": () => import("@/blocks/components/radix/attachment/image-strip"),
+  "attachment-three-sizes-radix": () => import("@/blocks/components/radix/attachment/three-sizes"),
+  "attachment-upload-queue-radix": () => import("@/blocks/components/radix/attachment/upload-queue"),
+  "attachment-file-picker-radix": () => import("@/blocks/components/radix/attachment/file-picker"),
 }

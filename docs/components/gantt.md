@@ -26,22 +26,22 @@ bunx --bun shadcn@latest add @reui-unbound/base-gantt
 
 ## Files
 
-- `src/blocks/components/radix/gantt.tsx`
-- `src/components/reui-unbound/gantt/gantt-bar.tsx`
-- `src/components/reui-unbound/gantt/gantt-dnd.tsx`
-- `src/components/reui-unbound/gantt/gantt-i18n.tsx`
-- `src/components/reui-unbound/gantt/gantt-lib.tsx`
-- `src/components/reui-unbound/gantt/gantt-nav.tsx`
-- `src/components/reui-unbound/gantt/gantt-recurrence.tsx`
-- `src/components/reui-unbound/gantt/gantt-types.tsx`
-- `src/components/reui-unbound/gantt/gantt-view.tsx`
-- `src/components/reui-unbound/gantt/gantt.tsx`
-- `src/blocks/components/base/gantt.tsx`
-- `src/components/reui-unbound/base/gantt/gantt-bar.tsx`
-- `src/components/reui-unbound/base/gantt/gantt-dnd.tsx`
-- `src/components/reui-unbound/base/gantt/gantt-nav.tsx`
-- `src/components/reui-unbound/base/gantt/gantt-view.tsx`
-- `src/components/reui-unbound/base/gantt/gantt.tsx`
+- `src/blocks/components/radix/gantt/default.tsx`
+- `src/components/kit/gantt/gantt.tsx`
+- `src/components/kit/gantt/~gantt-bar.tsx`
+- `src/components/kit/gantt/~gantt-dnd.tsx`
+- `src/components/kit/gantt/~gantt-i18n.tsx`
+- `src/components/kit/gantt/~gantt-lib.tsx`
+- `src/components/kit/gantt/~gantt-nav.tsx`
+- `src/components/kit/gantt/~gantt-recurrence.tsx`
+- `src/components/kit/gantt/~gantt-types.tsx`
+- `src/components/kit/gantt/~gantt-view.tsx`
+- `src/blocks/components/base/gantt/default.tsx`
+- `src/components/kit/base/gantt/gantt.tsx`
+- `src/components/kit/base/gantt/~gantt-bar.tsx`
+- `src/components/kit/base/gantt/~gantt-dnd.tsx`
+- `src/components/kit/base/gantt/~gantt-nav.tsx`
+- `src/components/kit/base/gantt/~gantt-view.tsx`
 
 ## Dependencies
 

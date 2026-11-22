@@ -2,5 +2,5 @@
 // Lazy-import map of every Spinner preview in the radix group.
 
 export const previews = {
-  "spinner-radix": () => import("@/blocks/components/radix/spinner"),
+  "spinner-radix": () => import("@/blocks/components/radix/spinner/default"),
 }

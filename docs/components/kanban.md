@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-kanban
 
 ## Files
 
-- `src/blocks/components/radix/kanban.tsx`
-- `src/components/reui-unbound/kanban.tsx`
-- `src/blocks/components/base/kanban.tsx`
-- `src/components/reui-unbound/base/kanban.tsx`
+- `src/blocks/components/radix/kanban/default.tsx`
+- `src/components/kit/kanban.tsx`
+- `src/blocks/components/base/kanban/default.tsx`
+- `src/components/kit/base/kanban.tsx`
 
 ## Dependencies
 

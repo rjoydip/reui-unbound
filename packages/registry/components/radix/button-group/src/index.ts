@@ -2,5 +2,5 @@
 // Lazy-import map of every Button Group preview in the radix group.
 
 export const previews = {
-  "button-group-radix": () => import("@/blocks/components/radix/button-group"),
+  "button-group-radix": () => import("@/blocks/components/radix/button-group/default"),
 }

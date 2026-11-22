@@ -2,5 +2,5 @@
 // Lazy-import map of every Time Picker preview in the radix group.
 
 export const previews = {
-  "time-picker-radix": () => import("@/blocks/components/radix/time-picker"),
+  "time-picker-radix": () => import("@/blocks/components/radix/time-picker/default"),
 }

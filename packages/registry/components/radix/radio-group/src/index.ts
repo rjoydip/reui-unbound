@@ -2,5 +2,5 @@
 // Lazy-import map of every Radio Group preview in the radix group.
 
 export const previews = {
-  "radio-group-radix": () => import("@/blocks/components/radix/radio-group"),
+  "radio-group-radix": () => import("@/blocks/components/radix/radio-group/default"),
 }

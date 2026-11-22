@@ -2,5 +2,5 @@
 // Lazy-import map of every Badge preview in the radix group.
 
 export const previews = {
-  "badge-radix": () => import("@/blocks/components/radix/badge"),
+  "badge-radix": () => import("@/blocks/components/radix/badge/default"),
 }

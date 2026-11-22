@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add label
 
 ## Files
 
-- `src/blocks/components/radix/label.tsx`
+- `src/blocks/components/radix/label/default.tsx`
 - `src/components/ui/label.tsx`
 
 ## Dependencies

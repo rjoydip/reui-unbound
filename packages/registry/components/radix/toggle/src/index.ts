@@ -2,5 +2,5 @@
 // Lazy-import map of every Toggle preview in the radix group.
 
 export const previews = {
-  "toggle-radix": () => import("@/blocks/components/radix/toggle"),
+  "toggle-radix": () => import("@/blocks/components/radix/toggle/default"),
 }

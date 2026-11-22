@@ -167,22 +167,17 @@ function parseCatalog(file) {
   const source = read(file).replace(/\r\n/g, "\n")
   const rawImports = new Map()
   for (const match of source.matchAll(
-    /import\s+(\w+)\s+from\s+"\.\/radix\/([^"?]+)\?raw"/g,
+    /import\s+(\w+)\s+from\s+"\.\.?\/(radix|base)\/([^"?]+)\?raw"/g,
   )) {
-    rawImports.set(match[1], `radix/${match[2]}`)
-  }
-  for (const match of source.matchAll(
-    /import\s+(\w+)\s+from\s+"\.\/base\/([^"?]+)\?raw"/g,
-  )) {
-    rawImports.set(match[1], `base/${match[2]}`)
+    rawImports.set(match[1], `${match[2]}/${match[3]}`)
   }
 
   const entries = []
   for (const match of source.matchAll(
-    /(componentEntry|uiEntry)\(\{([\s\S]*?)\n  \}\),/g,
+    /(?:componentEntry|uiEntry)\(\{\n    (?:flavor|name): [\s\S]*?\n  \}\),/g,
   )) {
-    const kind = match[1] === "uiEntry" ? "ui" : "reui"
-    const block = match[2]
+    const block = match[0]
+    const kind = block.startsWith("componentEntry") ? "reui" : "ui"
     const fields = Object.fromEntries(
       [...block.matchAll(/(\w+):\s*"([^"]*)"/g)].map((field) => [
         field[1],
@@ -207,8 +202,8 @@ function parseCatalog(file) {
 }
 
 const entries = [
-  ...parseCatalog("src/blocks/components/catalog.tsx"),
-  ...parseCatalog("src/blocks/components/ui-catalog.tsx"),
+  ...parseCatalog("src/blocks/components/~catalog/catalog.tsx"),
+  ...parseCatalog("src/blocks/components/~catalog/ui-catalog.tsx"),
 ]
 
 for (const entry of entries) {

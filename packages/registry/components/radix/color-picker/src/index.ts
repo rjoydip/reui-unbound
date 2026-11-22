@@ -2,5 +2,5 @@
 // Lazy-import map of every Color Picker preview in the radix group.
 
 export const previews = {
-  "color-picker-radix": () => import("@/blocks/components/radix/color-picker"),
+  "color-picker-radix": () => import("@/blocks/components/radix/color-picker/default"),
 }

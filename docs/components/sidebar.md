@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add sidebar
 
 ## Files
 
-- `src/blocks/components/radix/sidebar.tsx`
+- `src/blocks/components/radix/sidebar/default.tsx`
 - `src/components/ui/sidebar.tsx`
 
 ## Dependencies

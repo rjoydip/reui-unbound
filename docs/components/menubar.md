@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add menubar
 
 ## Files
 
-- `src/blocks/components/radix/menubar.tsx`
+- `src/blocks/components/radix/menubar/default.tsx`
 - `src/components/ui/menubar.tsx`
 
 ## Dependencies

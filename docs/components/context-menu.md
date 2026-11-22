@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add context-menu
 
 ## Files
 
-- `src/blocks/components/radix/context-menu.tsx`
+- `src/blocks/components/radix/context-menu/default.tsx`
 - `src/components/ui/context-menu.tsx`
 
 ## Dependencies

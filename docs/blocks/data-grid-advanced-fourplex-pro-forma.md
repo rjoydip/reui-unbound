@@ -28,9 +28,9 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-advanced-7/index.tsx`
-- `src/blocks/data-grid-advanced-7/data.ts`
-- `src/blocks/data-grid-advanced-7/parts.tsx`
+- `src/blocks/data-grid/advanced/fourplex-pro-forma/index.tsx`
+- `src/blocks/data-grid/advanced/fourplex-pro-forma/data.ts`
+- `src/blocks/data-grid/advanced/fourplex-pro-forma/parts.tsx`
 
 ## Dependencies
 

@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add tooltip
 
 ## Files
 
-- `src/blocks/components/radix/tooltip.tsx`
+- `src/blocks/components/radix/tooltip/default.tsx`
 - `src/components/ui/tooltip.tsx`
 
 ## Dependencies

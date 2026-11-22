@@ -9,7 +9,6 @@ Inline status messages with title, description and actions.
 
 ## Preview
 
-- **Radix** — [`alert-radix`](https://reui-unbound.pages.dev/?preview=alert-radix)
 - **Radix** — [`alert-title-description-radix`](https://reui-unbound.pages.dev/?preview=alert-title-description-radix)
 - **Radix** — [`alert-leading-icon-radix`](https://reui-unbound.pages.dev/?preview=alert-leading-icon-radix)
 - **Radix** — [`alert-icon-actions-radix`](https://reui-unbound.pages.dev/?preview=alert-icon-actions-radix)
@@ -32,11 +31,6 @@ Inline status messages with title, description and actions.
 - **Radix** — [`alert-comment-mention-radix`](https://reui-unbound.pages.dev/?preview=alert-comment-mention-radix)
 
 ## Install
-
-```bash
-# Radix
-bunx --bun shadcn@latest add @reui-unbound/alert
-```
 
 ```bash
 # Radix
@@ -140,28 +134,27 @@ bunx --bun shadcn@latest add @reui-unbound/alert-comment-mention
 
 ## Files
 
-- `src/blocks/components/radix/alert.tsx`
-- `src/components/reui-unbound/alert.tsx`
-- `src/blocks/components/radix/alert-title-description.tsx`
-- `src/blocks/components/radix/alert-leading-icon.tsx`
-- `src/blocks/components/radix/alert-icon-actions.tsx`
-- `src/blocks/components/radix/alert-payment-failure.tsx`
-- `src/blocks/components/radix/alert-info-variant.tsx`
-- `src/blocks/components/radix/alert-success-variant.tsx`
-- `src/blocks/components/radix/alert-warning-variant.tsx`
-- `src/blocks/components/radix/alert-error-variant.tsx`
-- `src/blocks/components/radix/alert-invert-variant.tsx`
-- `src/blocks/components/radix/alert-title-actions.tsx`
-- `src/blocks/components/radix/alert-description-actions.tsx`
-- `src/blocks/components/radix/alert-frame-reset-borders.tsx`
-- `src/blocks/components/radix/alert-stacked-in-frame.tsx`
-- `src/blocks/components/radix/alert-frame-with-actions.tsx`
-- `src/blocks/components/radix/alert-pro-upsell.tsx`
-- `src/blocks/components/radix/alert-urgent-billing.tsx`
-- `src/blocks/components/radix/alert-service-status.tsx`
-- `src/blocks/components/radix/alert-feature-discovery.tsx`
-- `src/blocks/components/radix/alert-direct-message.tsx`
-- `src/blocks/components/radix/alert-comment-mention.tsx`
+- `src/blocks/components/radix/alert/title-description.tsx`
+- `src/components/kit/alert.tsx`
+- `src/blocks/components/radix/alert/leading-icon.tsx`
+- `src/blocks/components/radix/alert/icon-actions.tsx`
+- `src/blocks/components/radix/alert/payment-failure.tsx`
+- `src/blocks/components/radix/alert/info-variant.tsx`
+- `src/blocks/components/radix/alert/success-variant.tsx`
+- `src/blocks/components/radix/alert/warning-variant.tsx`
+- `src/blocks/components/radix/alert/error-variant.tsx`
+- `src/blocks/components/radix/alert/invert-variant.tsx`
+- `src/blocks/components/radix/alert/title-actions.tsx`
+- `src/blocks/components/radix/alert/description-actions.tsx`
+- `src/blocks/components/radix/alert/frame-reset-borders.tsx`
+- `src/blocks/components/radix/alert/stacked-in-frame.tsx`
+- `src/blocks/components/radix/alert/frame-with-actions.tsx`
+- `src/blocks/components/radix/alert/pro-upsell.tsx`
+- `src/blocks/components/radix/alert/urgent-billing.tsx`
+- `src/blocks/components/radix/alert/service-status.tsx`
+- `src/blocks/components/radix/alert/feature-discovery.tsx`
+- `src/blocks/components/radix/alert/direct-message.tsx`
+- `src/blocks/components/radix/alert/comment-mention.tsx`
 
 ## Dependencies
 

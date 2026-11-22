@@ -26,30 +26,30 @@ bunx --bun shadcn@latest add @reui-unbound/base-event-calendar
 
 ## Files
 
-- `src/blocks/components/radix/event-calendar.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-agenda-view.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-content.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-dnd.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-event.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-i18n.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-lib.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-month-view.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-nav.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-recurrence.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-resource-view.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-time-grid.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar-types.tsx`
-- `src/components/reui-unbound/event-calendar/event-calendar.tsx`
-- `src/blocks/components/base/event-calendar.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-agenda-view.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-content.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-dnd.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-event.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-month-view.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-nav.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-resource-view.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar-time-grid.tsx`
-- `src/components/reui-unbound/base/event-calendar/event-calendar.tsx`
+- `src/blocks/components/radix/event-calendar/default.tsx`
+- `src/components/kit/event-calendar/event-calendar.tsx`
+- `src/components/kit/event-calendar/~event-calendar-agenda-view.tsx`
+- `src/components/kit/event-calendar/~event-calendar-content.tsx`
+- `src/components/kit/event-calendar/~event-calendar-dnd.tsx`
+- `src/components/kit/event-calendar/~event-calendar-event.tsx`
+- `src/components/kit/event-calendar/~event-calendar-i18n.tsx`
+- `src/components/kit/event-calendar/~event-calendar-lib.tsx`
+- `src/components/kit/event-calendar/~event-calendar-month-view.tsx`
+- `src/components/kit/event-calendar/~event-calendar-nav.tsx`
+- `src/components/kit/event-calendar/~event-calendar-recurrence.tsx`
+- `src/components/kit/event-calendar/~event-calendar-resource-view.tsx`
+- `src/components/kit/event-calendar/~event-calendar-time-grid.tsx`
+- `src/components/kit/event-calendar/~event-calendar-types.tsx`
+- `src/blocks/components/base/event-calendar/default.tsx`
+- `src/components/kit/base/event-calendar/event-calendar.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-agenda-view.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-content.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-dnd.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-event.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-month-view.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-nav.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-resource-view.tsx`
+- `src/components/kit/base/event-calendar/~event-calendar-time-grid.tsx`
 
 ## Dependencies
 

@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add slider
 
 ## Files
 
-- `src/blocks/components/radix/slider.tsx`
+- `src/blocks/components/radix/slider/default.tsx`
 - `src/components/ui/slider.tsx`
 
 ## Dependencies

@@ -2,5 +2,5 @@
 // Lazy-import map of every Questionnaire preview in the radix group.
 
 export const previews = {
-  "questionnaire-radix": () => import("@/blocks/components/radix/questionnaire"),
+  "questionnaire-radix": () => import("@/blocks/components/radix/questionnaire/default"),
 }

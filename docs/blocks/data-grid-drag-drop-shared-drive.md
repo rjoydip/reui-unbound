@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-drag-drop-4/index.tsx`
-- `src/blocks/data-grid-drag-drop-4/data.ts`
+- `src/blocks/data-grid/drag-drop/shared-drive/index.tsx`
+- `src/blocks/data-grid/drag-drop/shared-drive/data.ts`
 
 ## Dependencies
 

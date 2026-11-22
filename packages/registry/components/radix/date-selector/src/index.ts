@@ -2,5 +2,5 @@
 // Lazy-import map of every Date Selector preview in the radix group.
 
 export const previews = {
-  "date-selector-radix": () => import("@/blocks/components/radix/date-selector"),
+  "date-selector-radix": () => import("@/blocks/components/radix/date-selector/default"),
 }

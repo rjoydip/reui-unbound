@@ -2,5 +2,5 @@
 // Lazy-import map of every Skeleton preview in the radix group.
 
 export const previews = {
-  "skeleton-radix": () => import("@/blocks/components/radix/skeleton"),
+  "skeleton-radix": () => import("@/blocks/components/radix/skeleton/default"),
 }

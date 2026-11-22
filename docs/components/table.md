@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add table
 
 ## Files
 
-- `src/blocks/components/radix/table.tsx`
+- `src/blocks/components/radix/table/default.tsx`
 - `src/components/ui/table.tsx`
 
 ## Dependencies

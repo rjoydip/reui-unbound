@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add collapsible
 
 ## Files
 
-- `src/blocks/components/radix/collapsible.tsx`
+- `src/blocks/components/radix/collapsible/default.tsx`
 - `src/components/ui/collapsible.tsx`
 
 ## Dependencies

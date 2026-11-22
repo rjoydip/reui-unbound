@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add progress
 
 ## Files
 
-- `src/blocks/components/radix/progress.tsx`
+- `src/blocks/components/radix/progress/default.tsx`
 - `src/components/ui/progress.tsx`
 
 ## Dependencies

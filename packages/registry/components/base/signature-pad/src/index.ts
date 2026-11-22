@@ -2,5 +2,5 @@
 // Lazy-import map of every Signature Pad preview in the base group.
 
 export const previews = {
-  "signature-pad-base": () => import("@/blocks/components/base/signature-pad"),
+  "signature-pad-base": () => import("@/blocks/components/base/signature-pad/default"),
 }

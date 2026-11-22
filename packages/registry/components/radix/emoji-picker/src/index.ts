@@ -2,5 +2,5 @@
 // Lazy-import map of every Emoji Picker preview in the radix group.
 
 export const previews = {
-  "emoji-picker-radix": () => import("@/blocks/components/radix/emoji-picker"),
+  "emoji-picker-radix": () => import("@/blocks/components/radix/emoji-picker/default"),
 }

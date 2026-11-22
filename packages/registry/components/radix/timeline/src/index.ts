@@ -2,5 +2,5 @@
 // Lazy-import map of every Timeline preview in the radix group.
 
 export const previews = {
-  "timeline-radix": () => import("@/blocks/components/radix/timeline"),
+  "timeline-radix": () => import("@/blocks/components/radix/timeline/default"),
 }

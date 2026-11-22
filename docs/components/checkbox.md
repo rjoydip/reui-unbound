@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add checkbox
 
 ## Files
 
-- `src/blocks/components/radix/checkbox.tsx`
+- `src/blocks/components/radix/checkbox/default.tsx`
 - `src/components/ui/checkbox.tsx`
 
 ## Dependencies

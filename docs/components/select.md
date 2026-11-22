@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add select
 
 ## Files
 
-- `src/blocks/components/radix/select.tsx`
+- `src/blocks/components/radix/select/default.tsx`
 - `src/components/ui/select.tsx`
 
 ## Dependencies

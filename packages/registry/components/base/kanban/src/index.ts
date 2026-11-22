@@ -2,5 +2,5 @@
 // Lazy-import map of every Kanban preview in the base group.
 
 export const previews = {
-  "kanban-base": () => import("@/blocks/components/base/kanban"),
+  "kanban-base": () => import("@/blocks/components/base/kanban/default"),
 }

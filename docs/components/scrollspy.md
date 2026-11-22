@@ -20,5 +20,5 @@ bunx --bun shadcn@latest add @reui-unbound/scrollspy
 
 ## Files
 
-- `src/blocks/components/radix/scrollspy.tsx`
-- `src/components/reui-unbound/scrollspy.tsx`
+- `src/blocks/components/radix/scrollspy/default.tsx`
+- `src/components/kit/scrollspy.tsx`

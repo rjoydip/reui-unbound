@@ -2,5 +2,5 @@
 // Lazy-import map of every Slider preview in the radix group.
 
 export const previews = {
-  "slider-radix": () => import("@/blocks/components/radix/slider"),
+  "slider-radix": () => import("@/blocks/components/radix/slider/default"),
 }

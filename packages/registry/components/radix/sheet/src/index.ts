@@ -2,5 +2,5 @@
 // Lazy-import map of every Sheet preview in the radix group.
 
 export const previews = {
-  "sheet-radix": () => import("@/blocks/components/radix/sheet"),
+  "sheet-radix": () => import("@/blocks/components/radix/sheet/default"),
 }

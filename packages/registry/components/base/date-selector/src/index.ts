@@ -2,5 +2,5 @@
 // Lazy-import map of every Date Selector preview in the base group.
 
 export const previews = {
-  "date-selector-base": () => import("@/blocks/components/base/date-selector"),
+  "date-selector-base": () => import("@/blocks/components/base/date-selector/default"),
 }

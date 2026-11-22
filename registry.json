@@ -5,8 +5,8 @@
   "include": [
     "src/blocks/registry.json",
     "src/blocks/components/registry.json",
-    "src/components/reui-unbound/registry.json",
-    "src/components/reui-unbound/base/registry.json",
+    "src/components/kit/registry.json",
+    "src/components/kit/base/registry.json",
     "src/hooks/registry.json"
   ]
 }

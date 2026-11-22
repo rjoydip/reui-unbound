@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-phone-input
 
 ## Files
 
-- `src/blocks/components/radix/phone-input.tsx`
-- `src/components/reui-unbound/phone-input.tsx`
-- `src/blocks/components/base/phone-input.tsx`
-- `src/components/reui-unbound/base/phone-input.tsx`
+- `src/blocks/components/radix/phone-input/default.tsx`
+- `src/components/kit/phone-input.tsx`
+- `src/blocks/components/base/phone-input/default.tsx`
+- `src/components/kit/base/phone-input.tsx`
 
 ## Dependencies
 

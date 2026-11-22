@@ -2,5 +2,5 @@
 // Lazy-import map of every Scroll Area preview in the radix group.
 
 export const previews = {
-  "scroll-area-radix": () => import("@/blocks/components/radix/scroll-area"),
+  "scroll-area-radix": () => import("@/blocks/components/radix/scroll-area/default"),
 }

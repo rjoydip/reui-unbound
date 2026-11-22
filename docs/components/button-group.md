@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add button-group
 
 ## Files
 
-- `src/blocks/components/radix/button-group.tsx`
+- `src/blocks/components/radix/button-group/default.tsx`
 - `src/components/ui/button-group.tsx`
 
 ## Dependencies

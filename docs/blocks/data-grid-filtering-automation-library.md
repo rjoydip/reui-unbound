@@ -28,8 +28,8 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/data-grid-filtering-2/index.tsx`
-- `src/blocks/data-grid-filtering-2/data.ts`
+- `src/blocks/data-grid/filtering/automation-library/index.tsx`
+- `src/blocks/data-grid/filtering/automation-library/data.ts`
 
 ## Dependencies
 

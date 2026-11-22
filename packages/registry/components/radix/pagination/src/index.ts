@@ -2,5 +2,5 @@
 // Lazy-import map of every Pagination preview in the radix group.
 
 export const previews = {
-  "pagination-radix": () => import("@/blocks/components/radix/pagination"),
+  "pagination-radix": () => import("@/blocks/components/radix/pagination/default"),
 }

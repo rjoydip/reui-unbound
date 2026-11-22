@@ -2,5 +2,5 @@
 // Lazy-import map of every Breadcrumb preview in the radix group.
 
 export const previews = {
-  "breadcrumb-radix": () => import("@/blocks/components/radix/breadcrumb"),
+  "breadcrumb-radix": () => import("@/blocks/components/radix/breadcrumb/default"),
 }

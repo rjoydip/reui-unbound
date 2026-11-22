@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-icon-stack
 
 ## Files
 
-- `src/blocks/components/radix/icon-stack.tsx`
-- `src/components/reui-unbound/icon-stack.tsx`
-- `src/blocks/components/base/icon-stack.tsx`
-- `src/components/reui-unbound/base/icon-stack.tsx`
+- `src/blocks/components/radix/icon-stack/default.tsx`
+- `src/components/kit/icon-stack.tsx`
+- `src/blocks/components/base/icon-stack/default.tsx`
+- `src/components/kit/base/icon-stack.tsx`
 
 ## Dependencies
 

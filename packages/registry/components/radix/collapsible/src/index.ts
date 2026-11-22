@@ -2,5 +2,5 @@
 // Lazy-import map of every Collapsible preview in the radix group.
 
 export const previews = {
-  "collapsible-radix": () => import("@/blocks/components/radix/collapsible"),
+  "collapsible-radix": () => import("@/blocks/components/radix/collapsible/default"),
 }

@@ -2,5 +2,5 @@
 // Lazy-import map of every Code Block preview in the radix group.
 
 export const previews = {
-  "code-block-radix": () => import("@/blocks/components/radix/code-block"),
+  "code-block-radix": () => import("@/blocks/components/radix/code-block/default"),
 }

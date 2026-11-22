@@ -2,5 +2,5 @@
 // Lazy-import map of every Message Scroller preview in the radix group.
 
 export const previews = {
-  "message-scroller-radix": () => import("@/blocks/components/radix/message-scroller"),
+  "message-scroller-radix": () => import("@/blocks/components/radix/message-scroller/default"),
 }

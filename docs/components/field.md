@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add field
 
 ## Files
 
-- `src/blocks/components/radix/field.tsx`
+- `src/blocks/components/radix/field/default.tsx`
 - `src/components/ui/field.tsx`
 
 ## Dependencies

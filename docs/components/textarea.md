@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add textarea
 
 ## Files
 
-- `src/blocks/components/radix/textarea.tsx`
+- `src/blocks/components/radix/textarea/default.tsx`
 - `src/components/ui/textarea.tsx`
 
 ## Dependencies

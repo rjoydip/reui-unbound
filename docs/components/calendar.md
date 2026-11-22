@@ -20,7 +20,7 @@ bunx --bun shadcn@latest add calendar
 
 ## Files
 
-- `src/blocks/components/radix/calendar.tsx`
+- `src/blocks/components/radix/calendar/default.tsx`
 - `src/components/ui/calendar.tsx`
 
 ## Dependencies

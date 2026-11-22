@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-timeline
 
 ## Files
 
-- `src/blocks/components/radix/timeline.tsx`
-- `src/components/reui-unbound/timeline.tsx`
-- `src/blocks/components/base/timeline.tsx`
-- `src/components/reui-unbound/base/timeline.tsx`
+- `src/blocks/components/radix/timeline/default.tsx`
+- `src/components/kit/timeline.tsx`
+- `src/blocks/components/base/timeline/default.tsx`
+- `src/components/kit/base/timeline.tsx`
 
 ## Dependencies
 

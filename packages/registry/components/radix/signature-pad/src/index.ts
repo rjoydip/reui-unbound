@@ -2,5 +2,5 @@
 // Lazy-import map of every Signature Pad preview in the radix group.
 
 export const previews = {
-  "signature-pad-radix": () => import("@/blocks/components/radix/signature-pad"),
+  "signature-pad-radix": () => import("@/blocks/components/radix/signature-pad/default"),
 }

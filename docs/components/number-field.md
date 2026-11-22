@@ -26,10 +26,10 @@ bunx --bun shadcn@latest add @reui-unbound/base-number-field
 
 ## Files
 
-- `src/blocks/components/radix/number-field.tsx`
-- `src/components/reui-unbound/number-field.tsx`
-- `src/blocks/components/base/number-field.tsx`
-- `src/components/reui-unbound/base/number-field.tsx`
+- `src/blocks/components/radix/number-field/default.tsx`
+- `src/components/kit/number-field.tsx`
+- `src/blocks/components/base/number-field/default.tsx`
+- `src/components/kit/base/number-field.tsx`
 
 ## Dependencies
 

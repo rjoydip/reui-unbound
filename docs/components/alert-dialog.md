@@ -98,21 +98,21 @@ bunx --bun shadcn@latest add @reui-unbound/alert-dialog-security-audit
 
 ## Files
 
-- `src/blocks/components/radix/alert-dialog-confirmation.tsx`
+- `src/blocks/components/radix/alert-dialog/confirmation.tsx`
 - `src/components/ui/alert-dialog.tsx`
-- `src/blocks/components/radix/alert-dialog-small.tsx`
-- `src/blocks/components/radix/alert-dialog-with-icon.tsx`
-- `src/blocks/components/radix/alert-dialog-small-with-icon.tsx`
-- `src/blocks/components/radix/alert-dialog-destructive-delete.tsx`
-- `src/blocks/components/radix/alert-dialog-nested-in-dialog.tsx`
-- `src/blocks/components/radix/alert-dialog-success-notice.tsx`
-- `src/blocks/components/radix/alert-dialog-account-deactivation.tsx`
-- `src/blocks/components/radix/alert-dialog-unsaved-changes.tsx`
-- `src/blocks/components/radix/alert-dialog-e-ticket-receipt.tsx`
-- `src/blocks/components/radix/alert-dialog-system-update.tsx`
-- `src/blocks/components/radix/alert-dialog-billing-warning.tsx`
-- `src/blocks/components/radix/alert-dialog-logout-confirmation.tsx`
-- `src/blocks/components/radix/alert-dialog-security-audit.tsx`
+- `src/blocks/components/radix/alert-dialog/small.tsx`
+- `src/blocks/components/radix/alert-dialog/with-icon.tsx`
+- `src/blocks/components/radix/alert-dialog/small-with-icon.tsx`
+- `src/blocks/components/radix/alert-dialog/destructive-delete.tsx`
+- `src/blocks/components/radix/alert-dialog/nested-in-dialog.tsx`
+- `src/blocks/components/radix/alert-dialog/success-notice.tsx`
+- `src/blocks/components/radix/alert-dialog/account-deactivation.tsx`
+- `src/blocks/components/radix/alert-dialog/unsaved-changes.tsx`
+- `src/blocks/components/radix/alert-dialog/e-ticket-receipt.tsx`
+- `src/blocks/components/radix/alert-dialog/system-update.tsx`
+- `src/blocks/components/radix/alert-dialog/billing-warning.tsx`
+- `src/blocks/components/radix/alert-dialog/logout-confirmation.tsx`
+- `src/blocks/components/radix/alert-dialog/security-audit.tsx`
 
 ## Dependencies
 

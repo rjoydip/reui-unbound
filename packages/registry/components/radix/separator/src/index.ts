@@ -2,5 +2,5 @@
 // Lazy-import map of every Separator preview in the radix group.
 
 export const previews = {
-  "separator-radix": () => import("@/blocks/components/radix/separator"),
+  "separator-radix": () => import("@/blocks/components/radix/separator/default"),
 }

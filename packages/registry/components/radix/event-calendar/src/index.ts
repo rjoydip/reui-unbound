@@ -2,5 +2,5 @@
 // Lazy-import map of every Event Calendar preview in the radix group.
 
 export const previews = {
-  "event-calendar-radix": () => import("@/blocks/components/radix/event-calendar"),
+  "event-calendar-radix": () => import("@/blocks/components/radix/event-calendar/default"),
 }
