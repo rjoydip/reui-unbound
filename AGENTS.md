@@ -16,6 +16,8 @@ bun install
 bun run dev            # predev runs the registry build first
 bun run typecheck      # bunx --bun tsc -b
 bun run lint           # bunx --bun oxlint
+bun test src           # unit tests (bun:test)
+bun run test:e2e       # Playwright, starts the dev server
 bun run build          # prebuild runs registry build, then tsc + vite build
 bun run preview
 
