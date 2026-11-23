@@ -5,7 +5,7 @@ import { Questionnaire as QuestionnairePrimitive } from "@shadcn/react/questionn
 import { cn } from "cn"
 
 import { buttonVariants, type Button } from "@/components/ui/button"
-import { IconPlaceholder } from "@/components/reui-unbound/icon-placeholder"
+import { IconPlaceholder } from "@/components/kit/icon-placeholder"
 
 function Questionnaire({
   className,

@@ -7,7 +7,7 @@ import useEmblaCarousel, {
 } from "embla-carousel-react"
 
 import { Button } from "@/components/ui/button"
-import { IconPlaceholder } from "@/components/reui-unbound/icon-placeholder"
+import { IconPlaceholder } from "@/components/kit/icon-placeholder"
 
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>

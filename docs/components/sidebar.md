@@ -10,6 +10,11 @@ Sidebar component with live previews.
 ## Preview
 
 - **Radix** — [`sidebar-radix`](https://reui-unbound.pages.dev/?preview=sidebar-radix)
+- **Radix** — [`sidebar-workspace-switcher-radix`](https://reui-unbound.pages.dev/?preview=sidebar-workspace-switcher-radix)
+- **Radix** — [`sidebar-icon-rail-radix`](https://reui-unbound.pages.dev/?preview=sidebar-icon-rail-radix)
+- **Radix** — [`sidebar-docs-navigation-radix`](https://reui-unbound.pages.dev/?preview=sidebar-docs-navigation-radix)
+- **Radix** — [`sidebar-inspector-panel-radix`](https://reui-unbound.pages.dev/?preview=sidebar-inspector-panel-radix)
+- **Radix** — [`sidebar-filter-loading-radix`](https://reui-unbound.pages.dev/?preview=sidebar-filter-loading-radix)
 
 ## Install
 
@@ -18,10 +23,40 @@ Sidebar component with live previews.
 bunx --bun shadcn@latest add sidebar
 ```
 
+```bash
+# shadcn/ui
+bunx --bun shadcn@latest add @reui-unbound/sidebar-workspace-switcher
+```
+
+```bash
+# shadcn/ui
+bunx --bun shadcn@latest add @reui-unbound/sidebar-icon-rail
+```
+
+```bash
+# shadcn/ui
+bunx --bun shadcn@latest add @reui-unbound/sidebar-docs-navigation
+```
+
+```bash
+# shadcn/ui
+bunx --bun shadcn@latest add @reui-unbound/sidebar-inspector-panel
+```
+
+```bash
+# shadcn/ui
+bunx --bun shadcn@latest add @reui-unbound/sidebar-filter-loading
+```
+
 ## Files
 
-- `src/blocks/components/radix/sidebar.tsx`
+- `src/blocks/components/radix/sidebar/default.tsx`
 - `src/components/ui/sidebar.tsx`
+- `src/blocks/components/radix/sidebar/workspace-switcher.tsx`
+- `src/blocks/components/radix/sidebar/icon-rail.tsx`
+- `src/blocks/components/radix/sidebar/docs-navigation.tsx`
+- `src/blocks/components/radix/sidebar/inspector-panel.tsx`
+- `src/blocks/components/radix/sidebar/filter-loading.tsx`
 
 ## Dependencies
 

@@ -1,6 +1,6 @@
 import { describe, expect, test } from "bun:test"
 
-import type { BlockEntry } from "../blocks/registry"
+import type { BlockEntry } from "../blocks/~internal/registry"
 import { GITHUB_REPOSITORY, githubSourceUrl } from "./source-url"
 
 function entry(overrides: Partial<BlockEntry>): BlockEntry {

@@ -10,6 +10,12 @@ Numeric input with increment, decrement and scrub interactions.
 ## Preview
 
 - **Radix** — [`number-field-radix`](https://reui-unbound.pages.dev/?preview=number-field-radix)
+- **Radix** — [`number-field-default-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-default-size-radix)
+- **Radix** — [`number-field-small-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-small-size-radix)
+- **Radix** — [`number-field-large-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-large-size-radix)
+- **Radix** — [`number-field-buttons-on-right-radix`](https://reui-unbound.pages.dev/?preview=number-field-buttons-on-right-radix)
+- **Radix** — [`number-field-spinner-buttons-radix`](https://reui-unbound.pages.dev/?preview=number-field-spinner-buttons-radix)
+- **Radix** — [`number-field-form-validation-radix`](https://reui-unbound.pages.dev/?preview=number-field-form-validation-radix)
 - **Base** — [`number-field-base`](https://reui-unbound.pages.dev/?preview=number-field-base)
 
 ## Install
@@ -20,16 +26,52 @@ bunx --bun shadcn@latest add @reui-unbound/number-field
 ```
 
 ```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/number-field-default-size
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/number-field-small-size
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/number-field-large-size
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/number-field-buttons-on-right
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/number-field-spinner-buttons
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/number-field-form-validation
+```
+
+```bash
 # Base
 bunx --bun shadcn@latest add @reui-unbound/base-number-field
 ```
 
 ## Files
 
-- `src/blocks/components/radix/number-field.tsx`
-- `src/components/reui-unbound/number-field.tsx`
-- `src/blocks/components/base/number-field.tsx`
-- `src/components/reui-unbound/base/number-field.tsx`
+- `src/blocks/components/radix/number-field/default.tsx`
+- `src/components/kit/number-field.tsx`
+- `src/blocks/components/radix/number-field/default-size.tsx`
+- `src/blocks/components/radix/number-field/small-size.tsx`
+- `src/blocks/components/radix/number-field/large-size.tsx`
+- `src/blocks/components/radix/number-field/buttons-on-right.tsx`
+- `src/blocks/components/radix/number-field/spinner-buttons.tsx`
+- `src/blocks/components/radix/number-field/form-validation.tsx`
+- `src/blocks/components/base/number-field/default.tsx`
+- `src/components/kit/base/number-field.tsx`
 
 ## Dependencies
 

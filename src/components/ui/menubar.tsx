@@ -4,7 +4,7 @@ import * as React from "react"
 import { cn } from "cn"
 import { Menubar as MenubarPrimitive } from "radix-ui"
 
-import { IconPlaceholder } from "@/components/reui-unbound/icon-placeholder"
+import { IconPlaceholder } from "@/components/kit/icon-placeholder"
 
 function Menubar({
   className,

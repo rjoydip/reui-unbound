@@ -2,12 +2,13 @@
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "items": [
     {
-      "name": "data-grid-base-1",
+      "name": "data-grid-base-customers",
       "type": "registry:block",
       "title": "Customers",
       "description": "Customers data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -37,34 +38,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-1/index.tsx",
+          "path": "data-grid/base/customers/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-1/index.tsx"
         },
         {
-          "path": "data-grid-base-1/parts.tsx",
+          "path": "data-grid/base/customers/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-1/parts.tsx"
         },
         {
-          "path": "data-grid-base-1/customer-sheets.tsx",
+          "path": "data-grid/base/customers/customer-sheets.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-1/customer-sheets.tsx"
         },
         {
-          "path": "data-grid-base-1/data.ts",
+          "path": "data-grid/base/customers/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-2",
+      "name": "data-grid-base-contacts",
       "type": "registry:block",
       "title": "Contacts",
       "description": "Contacts data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -92,39 +94,40 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-2/index.tsx",
+          "path": "data-grid/base/contacts/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-2/index.tsx"
         },
         {
-          "path": "data-grid-base-2/parts.tsx",
+          "path": "data-grid/base/contacts/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-2/parts.tsx"
         },
         {
-          "path": "data-grid-base-2/contact-filters.tsx",
+          "path": "data-grid/base/contacts/contact-filters.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-2/contact-filters.tsx"
         },
         {
-          "path": "data-grid-base-2/contact-sheets.tsx",
+          "path": "data-grid/base/contacts/contact-sheets.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-2/contact-sheets.tsx"
         },
         {
-          "path": "data-grid-base-2/data.ts",
+          "path": "data-grid/base/contacts/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-3",
+      "name": "data-grid-base-opportunities",
       "type": "registry:block",
       "title": "Opportunities",
       "description": "Opportunities data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -146,34 +149,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-3/index.tsx",
+          "path": "data-grid/base/opportunities/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-3/index.tsx"
         },
         {
-          "path": "data-grid-base-3/parts.tsx",
+          "path": "data-grid/base/opportunities/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-3/parts.tsx"
         },
         {
-          "path": "data-grid-base-3/pipeline-filters.tsx",
+          "path": "data-grid/base/opportunities/pipeline-filters.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-3/pipeline-filters.tsx"
         },
         {
-          "path": "data-grid-base-3/data.ts",
+          "path": "data-grid/base/opportunities/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-3/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-4",
+      "name": "data-grid-base-timesheets",
       "type": "registry:block",
       "title": "Timesheets",
       "description": "Timesheets data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -197,29 +201,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-4/index.tsx",
+          "path": "data-grid/base/timesheets/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-4/index.tsx"
         },
         {
-          "path": "data-grid-base-4/parts.tsx",
+          "path": "data-grid/base/timesheets/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-4/parts.tsx"
         },
         {
-          "path": "data-grid-base-4/data.ts",
+          "path": "data-grid/base/timesheets/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-4/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-5",
+      "name": "data-grid-base-support-queue",
       "type": "registry:block",
       "title": "Support Queue",
       "description": "Support Queue data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-5"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -241,29 +246,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-5/index.tsx",
+          "path": "data-grid/base/support-queue/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-5/index.tsx"
         },
         {
-          "path": "data-grid-base-5/parts.tsx",
+          "path": "data-grid/base/support-queue/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-5/parts.tsx"
         },
         {
-          "path": "data-grid-base-5/data.ts",
+          "path": "data-grid/base/support-queue/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-5/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-6",
+      "name": "data-grid-base-members",
       "type": "registry:block",
       "title": "Members",
       "description": "Members data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-6"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -282,24 +288,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-6/index.tsx",
+          "path": "data-grid/base/members/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-6/index.tsx"
         },
         {
-          "path": "data-grid-base-6/data.ts",
+          "path": "data-grid/base/members/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-6/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-7",
+      "name": "data-grid-base-modules",
       "type": "registry:block",
       "title": "Modules",
       "description": "Modules data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-7"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -318,24 +325,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-7/index.tsx",
+          "path": "data-grid/base/modules/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-7/index.tsx"
         },
         {
-          "path": "data-grid-base-7/data.ts",
+          "path": "data-grid/base/modules/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-7/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-8",
+      "name": "data-grid-base-rate-card",
       "type": "registry:block",
       "title": "Rate Card",
       "description": "Rate Card data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-8"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -362,24 +370,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-8/index.tsx",
+          "path": "data-grid/base/rate-card/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-8/index.tsx"
         },
         {
-          "path": "data-grid-base-8/data.ts",
+          "path": "data-grid/base/rate-card/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-8/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-base-9",
+      "name": "data-grid-base-api-requests",
       "type": "registry:block",
       "title": "API Requests",
       "description": "API Requests data grid block.",
       "meta": {
-        "category": "Base"
+        "category": "Base",
+        "id": "data-grid-base-9"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -403,34 +412,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-base-9/index.tsx",
+          "path": "data-grid/base/api-requests/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-9/index.tsx"
         },
         {
-          "path": "data-grid-base-9/traffic-chart.tsx",
+          "path": "data-grid/base/api-requests/traffic-chart.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-9/traffic-chart.tsx"
         },
         {
-          "path": "data-grid-base-9/log-sheet.tsx",
+          "path": "data-grid/base/api-requests/log-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-9/log-sheet.tsx"
         },
         {
-          "path": "data-grid-base-9/data.ts",
+          "path": "data-grid/base/api-requests/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-base-9/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-columns-1",
+      "name": "data-grid-columns-workspace-access-review",
       "type": "registry:block",
       "title": "Workspace Access Review",
       "description": "Workspace Access Review data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -453,24 +463,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-columns-1/index.tsx",
+          "path": "data-grid/columns/workspace-access-review/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-1/index.tsx"
         },
         {
-          "path": "data-grid-columns-1/data.ts",
+          "path": "data-grid/columns/workspace-access-review/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-columns-2",
+      "name": "data-grid-columns-course-catalog",
       "type": "registry:block",
       "title": "Course Catalog",
       "description": "Course Catalog data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -493,24 +504,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-columns-2/index.tsx",
+          "path": "data-grid/columns/course-catalog/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-2/index.tsx"
         },
         {
-          "path": "data-grid-columns-2/data.ts",
+          "path": "data-grid/columns/course-catalog/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-columns-3",
+      "name": "data-grid-columns-work-queue",
       "type": "registry:block",
       "title": "Work Queue",
       "description": "Work Queue data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -533,24 +545,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-columns-3/index.tsx",
+          "path": "data-grid/columns/work-queue/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-3/index.tsx"
         },
         {
-          "path": "data-grid-columns-3/data.ts",
+          "path": "data-grid/columns/work-queue/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-3/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-columns-4",
+      "name": "data-grid-columns-members",
       "type": "registry:block",
       "title": "Members",
       "description": "Members data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -573,24 +586,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-columns-4/index.tsx",
+          "path": "data-grid/columns/members/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-4/index.tsx"
         },
         {
-          "path": "data-grid-columns-4/data.ts",
+          "path": "data-grid/columns/members/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-4/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-columns-5",
+      "name": "data-grid-columns-companies",
       "type": "registry:block",
       "title": "Companies",
       "description": "Companies data grid block.",
       "meta": {
-        "category": "Columns"
+        "category": "Columns",
+        "id": "data-grid-columns-5"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -613,24 +627,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-columns-5/index.tsx",
+          "path": "data-grid/columns/companies/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-5/index.tsx"
         },
         {
-          "path": "data-grid-columns-5/data.ts",
+          "path": "data-grid/columns/companies/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-columns-5/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-drag-drop-1",
+      "name": "data-grid-drag-drop-sprint-backlog",
       "type": "registry:block",
       "title": "Sprint Backlog",
       "description": "Sprint Backlog data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-1"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -655,24 +670,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-drag-drop-1/index.tsx",
+          "path": "data-grid/drag-drop/sprint-backlog/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-1/index.tsx"
         },
         {
-          "path": "data-grid-drag-drop-1/data.ts",
+          "path": "data-grid/drag-drop/sprint-backlog/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-drag-drop-2",
+      "name": "data-grid-drag-drop-routing-rules",
       "type": "registry:block",
       "title": "Routing Rules",
       "description": "Routing Rules data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-2"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -697,24 +713,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-drag-drop-2/index.tsx",
+          "path": "data-grid/drag-drop/routing-rules/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-2/index.tsx"
         },
         {
-          "path": "data-grid-drag-drop-2/data.ts",
+          "path": "data-grid/drag-drop/routing-rules/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-drag-drop-3",
+      "name": "data-grid-drag-drop-dispatch-layout",
       "type": "registry:block",
       "title": "Dispatch Layout",
       "description": "Dispatch Layout data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-3"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -738,24 +755,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-drag-drop-3/index.tsx",
+          "path": "data-grid/drag-drop/dispatch-layout/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-3/index.tsx"
         },
         {
-          "path": "data-grid-drag-drop-3/data.ts",
+          "path": "data-grid/drag-drop/dispatch-layout/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-3/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-drag-drop-4",
+      "name": "data-grid-drag-drop-shared-drive",
       "type": "registry:block",
       "title": "Shared Drive",
       "description": "Shared Drive data grid block.",
       "meta": {
-        "category": "Drag & Drop"
+        "category": "Drag & Drop",
+        "id": "data-grid-drag-drop-4"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -780,24 +798,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-drag-drop-4/index.tsx",
+          "path": "data-grid/drag-drop/shared-drive/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-4/index.tsx"
         },
         {
-          "path": "data-grid-drag-drop-4/data.ts",
+          "path": "data-grid/drag-drop/shared-drive/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-drag-drop-4/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-editing-1",
+      "name": "data-grid-editing-labels",
       "type": "registry:block",
       "title": "Labels",
       "description": "Labels data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-1"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -824,24 +843,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-editing-1/index.tsx",
+          "path": "data-grid/editing/labels/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-1/index.tsx"
         },
         {
-          "path": "data-grid-editing-1/data.ts",
+          "path": "data-grid/editing/labels/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-editing-2",
+      "name": "data-grid-editing-product-inventory",
       "type": "registry:block",
       "title": "Product Inventory",
       "description": "Product Inventory data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-2"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -869,24 +889,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-editing-2/index.tsx",
+          "path": "data-grid/editing/product-inventory/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-2/index.tsx"
         },
         {
-          "path": "data-grid-editing-2/data.ts",
+          "path": "data-grid/editing/product-inventory/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-editing-3",
+      "name": "data-grid-editing-project-intake",
       "type": "registry:block",
       "title": "Project Intake",
       "description": "Project Intake data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-3"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -914,24 +935,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-editing-3/index.tsx",
+          "path": "data-grid/editing/project-intake/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-3/index.tsx"
         },
         {
-          "path": "data-grid-editing-3/data.ts",
+          "path": "data-grid/editing/project-intake/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-3/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-editing-4",
+      "name": "data-grid-editing-plans",
       "type": "registry:block",
       "title": "Plans",
       "description": "Plans data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-4"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -959,24 +981,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-editing-4/index.tsx",
+          "path": "data-grid/editing/plans/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-4/index.tsx"
         },
         {
-          "path": "data-grid-editing-4/data.ts",
+          "path": "data-grid/editing/plans/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-4/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-editing-5",
+      "name": "data-grid-editing-launch-runbook",
       "type": "registry:block",
       "title": "Launch Runbook",
       "description": "Launch Runbook data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-5"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -1004,24 +1027,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-editing-5/index.tsx",
+          "path": "data-grid/editing/launch-runbook/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-5/index.tsx"
         },
         {
-          "path": "data-grid-editing-5/data.ts",
+          "path": "data-grid/editing/launch-runbook/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-5/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-editing-6",
+      "name": "data-grid-editing-reorder-plan",
       "type": "registry:block",
       "title": "Reorder Plan",
       "description": "Reorder Plan data grid block.",
       "meta": {
-        "category": "Editing"
+        "category": "Editing",
+        "id": "data-grid-editing-6"
       },
       "dependencies": [
         "@dnd-kit/core",
@@ -1049,24 +1073,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-editing-6/index.tsx",
+          "path": "data-grid/editing/reorder-plan/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-6/index.tsx"
         },
         {
-          "path": "data-grid-editing-6/data.ts",
+          "path": "data-grid/editing/reorder-plan/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-editing-6/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-expansion-1",
+      "name": "data-grid-expansion-task-delivery",
       "type": "registry:block",
       "title": "Task Delivery",
       "description": "Task Delivery data grid block.",
       "meta": {
-        "category": "Expansion"
+        "category": "Expansion",
+        "id": "data-grid-expansion-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1091,24 +1116,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-expansion-1/index.tsx",
+          "path": "data-grid/expansion/task-delivery/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-expansion-1/index.tsx"
         },
         {
-          "path": "data-grid-expansion-1/data.ts",
+          "path": "data-grid/expansion/task-delivery/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-expansion-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-expansion-2",
+      "name": "data-grid-expansion-treasury-waterfall",
       "type": "registry:block",
       "title": "Treasury Waterfall",
       "description": "Treasury Waterfall data grid block.",
       "meta": {
-        "category": "Expansion"
+        "category": "Expansion",
+        "id": "data-grid-expansion-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1130,24 +1156,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-expansion-2/index.tsx",
+          "path": "data-grid/expansion/treasury-waterfall/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-expansion-2/index.tsx"
         },
         {
-          "path": "data-grid-expansion-2/data.ts",
+          "path": "data-grid/expansion/treasury-waterfall/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-expansion-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-expansion-3",
+      "name": "data-grid-expansion-release-reviews",
       "type": "registry:block",
       "title": "Release Reviews",
       "description": "Release Reviews data grid block.",
       "meta": {
-        "category": "Expansion"
+        "category": "Expansion",
+        "id": "data-grid-expansion-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1170,24 +1197,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-expansion-3/index.tsx",
+          "path": "data-grid/expansion/release-reviews/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-expansion-3/index.tsx"
         },
         {
-          "path": "data-grid-expansion-3/data.ts",
+          "path": "data-grid/expansion/release-reviews/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-expansion-3/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-filtering-1",
+      "name": "data-grid-filtering-transactions",
       "type": "registry:block",
       "title": "Transactions",
       "description": "Transactions data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1209,24 +1237,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-filtering-1/index.tsx",
+          "path": "data-grid/filtering/transactions/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-1/index.tsx"
         },
         {
-          "path": "data-grid-filtering-1/data.ts",
+          "path": "data-grid/filtering/transactions/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-filtering-2",
+      "name": "data-grid-filtering-automation-library",
       "type": "registry:block",
       "title": "Automation Library",
       "description": "Automation Library data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1247,24 +1276,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-filtering-2/index.tsx",
+          "path": "data-grid/filtering/automation-library/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-2/index.tsx"
         },
         {
-          "path": "data-grid-filtering-2/data.ts",
+          "path": "data-grid/filtering/automation-library/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-filtering-3",
+      "name": "data-grid-filtering-renewals-review",
       "type": "registry:block",
       "title": "Renewals Review",
       "description": "Renewals Review data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1284,29 +1314,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-filtering-3/index.tsx",
+          "path": "data-grid/filtering/renewals-review/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-3/index.tsx"
         },
         {
-          "path": "data-grid-filtering-3/data.ts",
+          "path": "data-grid/filtering/renewals-review/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-3/data.ts"
         },
         {
-          "path": "data-grid-filtering-3/brand-icons.tsx",
+          "path": "data-grid/filtering/renewals-review/brand-icons.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-3/brand-icons.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-filtering-4",
+      "name": "data-grid-filtering-renewals-risk",
       "type": "registry:block",
       "title": "Renewals Risk",
       "description": "Renewals Risk data grid block.",
       "meta": {
-        "category": "Filtering"
+        "category": "Filtering",
+        "id": "data-grid-filtering-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1327,29 +1358,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-filtering-4/index.tsx",
+          "path": "data-grid/filtering/renewals-risk/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-4/index.tsx"
         },
         {
-          "path": "data-grid-filtering-4/data.ts",
+          "path": "data-grid/filtering/renewals-risk/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-4/data.ts"
         },
         {
-          "path": "data-grid-filtering-4/brand-icons.tsx",
+          "path": "data-grid/filtering/renewals-risk/brand-icons.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-filtering-4/brand-icons.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-grouping-1",
+      "name": "data-grid-grouping-roadmap-queue",
       "type": "registry:block",
       "title": "Roadmap Queue",
       "description": "Roadmap Queue data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-1"
       },
       "dependencies": [
         "cn",
@@ -1369,24 +1401,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-grouping-1/index.tsx",
+          "path": "data-grid/grouping/roadmap-queue/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-1/index.tsx"
         },
         {
-          "path": "data-grid-grouping-1/data.ts",
+          "path": "data-grid/grouping/roadmap-queue/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-grouping-2",
+      "name": "data-grid-grouping-revenue-by-region",
       "type": "registry:block",
       "title": "Revenue By Region",
       "description": "Revenue By Region data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-2"
       },
       "dependencies": [
         "cn",
@@ -1405,24 +1438,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-grouping-2/index.tsx",
+          "path": "data-grid/grouping/revenue-by-region/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-2/index.tsx"
         },
         {
-          "path": "data-grid-grouping-2/data.ts",
+          "path": "data-grid/grouping/revenue-by-region/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-grouping-3",
+      "name": "data-grid-grouping-access-cohort",
       "type": "registry:block",
       "title": "Access Cohort",
       "description": "Access Cohort data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-3"
       },
       "dependencies": [
         "cn",
@@ -1438,24 +1472,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-grouping-3/index.tsx",
+          "path": "data-grid/grouping/access-cohort/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-3/index.tsx"
         },
         {
-          "path": "data-grid-grouping-3/data.ts",
+          "path": "data-grid/grouping/access-cohort/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-3/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-grouping-4",
+      "name": "data-grid-grouping-bill-of-materials",
       "type": "registry:block",
       "title": "Bill Of Materials",
       "description": "Bill Of Materials data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-4"
       },
       "dependencies": [
         "cn",
@@ -1474,24 +1509,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-grouping-4/index.tsx",
+          "path": "data-grid/grouping/bill-of-materials/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-4/index.tsx"
         },
         {
-          "path": "data-grid-grouping-4/data.ts",
+          "path": "data-grid/grouping/bill-of-materials/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-4/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-grouping-5",
+      "name": "data-grid-grouping-reporting-lines",
       "type": "registry:block",
       "title": "Reporting Lines",
       "description": "Reporting Lines data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-5"
       },
       "dependencies": [
         "cn",
@@ -1512,24 +1548,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-grouping-5/index.tsx",
+          "path": "data-grid/grouping/reporting-lines/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-5/index.tsx"
         },
         {
-          "path": "data-grid-grouping-5/data.ts",
+          "path": "data-grid/grouping/reporting-lines/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-5/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-grouping-6",
+      "name": "data-grid-grouping-production-desk",
       "type": "registry:block",
       "title": "Production Desk",
       "description": "Production Desk data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-6"
       },
       "dependencies": [
         "cn",
@@ -1549,24 +1586,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-grouping-6/index.tsx",
+          "path": "data-grid/grouping/production-desk/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-6/index.tsx"
         },
         {
-          "path": "data-grid-grouping-6/data.ts",
+          "path": "data-grid/grouping/production-desk/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-6/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-grouping-7",
+      "name": "data-grid-grouping-delivery-board",
       "type": "registry:block",
       "title": "Delivery Board",
       "description": "Delivery Board data grid block.",
       "meta": {
-        "category": "Grouping"
+        "category": "Grouping",
+        "id": "data-grid-grouping-7"
       },
       "dependencies": [
         "cn",
@@ -1585,24 +1623,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-grouping-7/index.tsx",
+          "path": "data-grid/grouping/delivery-board/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-7/index.tsx"
         },
         {
-          "path": "data-grid-grouping-7/data.ts",
+          "path": "data-grid/grouping/delivery-board/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-grouping-7/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-virtualization-1",
+      "name": "data-grid-virtualization-transactions",
       "type": "registry:block",
       "title": "Transactions",
       "description": "Transactions data grid block.",
       "meta": {
-        "category": "Virtualization"
+        "category": "Virtualization",
+        "id": "data-grid-virtualization-1"
       },
       "dependencies": [
         "@tanstack/react-virtual",
@@ -1623,24 +1662,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-virtualization-1/index.tsx",
+          "path": "data-grid/virtualization/transactions/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-virtualization-1/index.tsx"
         },
         {
-          "path": "data-grid-virtualization-1/data.ts",
+          "path": "data-grid/virtualization/transactions/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-virtualization-1/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-virtualization-2",
+      "name": "data-grid-virtualization-exception-queue",
       "type": "registry:block",
       "title": "Exception Queue",
       "description": "Exception Queue data grid block.",
       "meta": {
-        "category": "Virtualization"
+        "category": "Virtualization",
+        "id": "data-grid-virtualization-2"
       },
       "dependencies": [
         "@tanstack/react-virtual",
@@ -1661,24 +1701,25 @@
       ],
       "files": [
         {
-          "path": "data-grid-virtualization-2/index.tsx",
+          "path": "data-grid/virtualization/exception-queue/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-virtualization-2/index.tsx"
         },
         {
-          "path": "data-grid-virtualization-2/data.ts",
+          "path": "data-grid/virtualization/exception-queue/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-virtualization-2/data.ts"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-1",
+      "name": "data-grid-advanced-campaign-performance",
       "type": "registry:block",
       "title": "Campaign Performance",
       "description": "Campaign Performance data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-1"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1702,34 +1743,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-1/index.tsx",
+          "path": "data-grid/advanced/campaign-performance/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-1/index.tsx"
         },
         {
-          "path": "data-grid-advanced-1/campaign-sheet.tsx",
+          "path": "data-grid/advanced/campaign-performance/campaign-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-1/campaign-sheet.tsx"
         },
         {
-          "path": "data-grid-advanced-1/data.ts",
+          "path": "data-grid/advanced/campaign-performance/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-1/data.ts"
         },
         {
-          "path": "data-grid-advanced-1/parts.tsx",
+          "path": "data-grid/advanced/campaign-performance/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-1/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-2",
+      "name": "data-grid-advanced-store-p-l",
       "type": "registry:block",
       "title": "Store P&L",
       "description": "Store P&L data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-2"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1754,34 +1796,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-2/index.tsx",
+          "path": "data-grid/advanced/store-p-l/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-2/index.tsx"
         },
         {
-          "path": "data-grid-advanced-2/data.ts",
+          "path": "data-grid/advanced/store-p-l/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-2/data.ts"
         },
         {
-          "path": "data-grid-advanced-2/parts.tsx",
+          "path": "data-grid/advanced/store-p-l/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-2/parts.tsx"
         },
         {
-          "path": "data-grid-advanced-2/store-sheet.tsx",
+          "path": "data-grid/advanced/store-p-l/store-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-2/store-sheet.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-3",
+      "name": "data-grid-advanced-campaign-targets",
       "type": "registry:block",
       "title": "Campaign Targets",
       "description": "Campaign Targets data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-3"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1809,34 +1852,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-3/index.tsx",
+          "path": "data-grid/advanced/campaign-targets/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-3/index.tsx"
         },
         {
-          "path": "data-grid-advanced-3/data.ts",
+          "path": "data-grid/advanced/campaign-targets/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-3/data.ts"
         },
         {
-          "path": "data-grid-advanced-3/parts.tsx",
+          "path": "data-grid/advanced/campaign-targets/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-3/parts.tsx"
         },
         {
-          "path": "data-grid-advanced-3/target-sheet.tsx",
+          "path": "data-grid/advanced/campaign-targets/target-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-3/target-sheet.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-4",
+      "name": "data-grid-advanced-reliability-index",
       "type": "registry:block",
       "title": "Reliability Index",
       "description": "Reliability Index data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-4"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1861,34 +1905,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-4/index.tsx",
+          "path": "data-grid/advanced/reliability-index/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-4/index.tsx"
         },
         {
-          "path": "data-grid-advanced-4/data.ts",
+          "path": "data-grid/advanced/reliability-index/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-4/data.ts"
         },
         {
-          "path": "data-grid-advanced-4/parts.tsx",
+          "path": "data-grid/advanced/reliability-index/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-4/parts.tsx"
         },
         {
-          "path": "data-grid-advanced-4/slo-sheet.tsx",
+          "path": "data-grid/advanced/reliability-index/slo-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-4/slo-sheet.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-5",
+      "name": "data-grid-advanced-wholesale-applications",
       "type": "registry:block",
       "title": "Wholesale Applications",
       "description": "Wholesale Applications data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-5"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1914,34 +1959,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-5/index.tsx",
+          "path": "data-grid/advanced/wholesale-applications/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-5/index.tsx"
         },
         {
-          "path": "data-grid-advanced-5/account-sheet.tsx",
+          "path": "data-grid/advanced/wholesale-applications/account-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-5/account-sheet.tsx"
         },
         {
-          "path": "data-grid-advanced-5/data.ts",
+          "path": "data-grid/advanced/wholesale-applications/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-5/data.ts"
         },
         {
-          "path": "data-grid-advanced-5/parts.tsx",
+          "path": "data-grid/advanced/wholesale-applications/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-5/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-6",
+      "name": "data-grid-advanced-stock-mix",
       "type": "registry:block",
       "title": "Stock Mix",
       "description": "Stock Mix data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-6"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -1966,29 +2012,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-6/index.tsx",
+          "path": "data-grid/advanced/stock-mix/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-6/index.tsx"
         },
         {
-          "path": "data-grid-advanced-6/data.ts",
+          "path": "data-grid/advanced/stock-mix/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-6/data.ts"
         },
         {
-          "path": "data-grid-advanced-6/parts.tsx",
+          "path": "data-grid/advanced/stock-mix/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-6/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-7",
+      "name": "data-grid-advanced-fourplex-pro-forma",
       "type": "registry:block",
       "title": "Fourplex Pro Forma",
       "description": "Fourplex Pro Forma data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-7"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2012,29 +2059,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-7/index.tsx",
+          "path": "data-grid/advanced/fourplex-pro-forma/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-7/index.tsx"
         },
         {
-          "path": "data-grid-advanced-7/data.ts",
+          "path": "data-grid/advanced/fourplex-pro-forma/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-7/data.ts"
         },
         {
-          "path": "data-grid-advanced-7/parts.tsx",
+          "path": "data-grid/advanced/fourplex-pro-forma/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-7/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-8",
+      "name": "data-grid-advanced-product-kpis",
       "type": "registry:block",
       "title": "Product KPIs",
       "description": "Product KPIs data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-8"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2062,29 +2110,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-8/index.tsx",
+          "path": "data-grid/advanced/product-kpis/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-8/index.tsx"
         },
         {
-          "path": "data-grid-advanced-8/data.ts",
+          "path": "data-grid/advanced/product-kpis/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-8/data.ts"
         },
         {
-          "path": "data-grid-advanced-8/parts.tsx",
+          "path": "data-grid/advanced/product-kpis/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-8/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-9",
+      "name": "data-grid-advanced-service-visits",
       "type": "registry:block",
       "title": "Service Visits",
       "description": "Service Visits data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-9"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2108,29 +2157,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-9/index.tsx",
+          "path": "data-grid/advanced/service-visits/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-9/index.tsx"
         },
         {
-          "path": "data-grid-advanced-9/data.ts",
+          "path": "data-grid/advanced/service-visits/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-9/data.ts"
         },
         {
-          "path": "data-grid-advanced-9/parts.tsx",
+          "path": "data-grid/advanced/service-visits/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-9/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-10",
+      "name": "data-grid-advanced-technician-capacity",
       "type": "registry:block",
       "title": "Technician Capacity",
       "description": "Technician Capacity data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-10"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2157,29 +2207,30 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-10/index.tsx",
+          "path": "data-grid/advanced/technician-capacity/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-10/index.tsx"
         },
         {
-          "path": "data-grid-advanced-10/data.ts",
+          "path": "data-grid/advanced/technician-capacity/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-10/data.ts"
         },
         {
-          "path": "data-grid-advanced-10/parts.tsx",
+          "path": "data-grid/advanced/technician-capacity/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-10/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-11",
+      "name": "data-grid-advanced-factory-scorecard",
       "type": "registry:block",
       "title": "Factory Scorecard",
       "description": "Factory Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-11"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2207,34 +2258,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-11/index.tsx",
+          "path": "data-grid/advanced/factory-scorecard/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-11/index.tsx"
         },
         {
-          "path": "data-grid-advanced-11/data.ts",
+          "path": "data-grid/advanced/factory-scorecard/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-11/data.ts"
         },
         {
-          "path": "data-grid-advanced-11/parts.tsx",
+          "path": "data-grid/advanced/factory-scorecard/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-11/parts.tsx"
         },
         {
-          "path": "data-grid-advanced-11/sheets.tsx",
+          "path": "data-grid/advanced/factory-scorecard/sheets.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-11/sheets.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-12",
+      "name": "data-grid-advanced-freight-cargo-services",
       "type": "registry:block",
       "title": "Freight & Cargo Services",
       "description": "Freight & Cargo Services data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-12"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2259,34 +2311,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-12/index.tsx",
+          "path": "data-grid/advanced/freight-cargo-services/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-12/index.tsx"
         },
         {
-          "path": "data-grid-advanced-12/data.ts",
+          "path": "data-grid/advanced/freight-cargo-services/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-12/data.ts"
         },
         {
-          "path": "data-grid-advanced-12/parts.tsx",
+          "path": "data-grid/advanced/freight-cargo-services/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-12/parts.tsx"
         },
         {
-          "path": "data-grid-advanced-12/sheets.tsx",
+          "path": "data-grid/advanced/freight-cargo-services/sheets.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-12/sheets.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-13",
+      "name": "data-grid-advanced-hr-scorecard",
       "type": "registry:block",
       "title": "HR Scorecard",
       "description": "HR Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-13"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2314,34 +2367,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-13/index.tsx",
+          "path": "data-grid/advanced/hr-scorecard/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-13/index.tsx"
         },
         {
-          "path": "data-grid-advanced-13/data.ts",
+          "path": "data-grid/advanced/hr-scorecard/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-13/data.ts"
         },
         {
-          "path": "data-grid-advanced-13/dialogs.tsx",
+          "path": "data-grid/advanced/hr-scorecard/dialogs.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-13/dialogs.tsx"
         },
         {
-          "path": "data-grid-advanced-13/parts.tsx",
+          "path": "data-grid/advanced/hr-scorecard/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-13/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-14",
+      "name": "data-grid-advanced-strategy-scorecard",
       "type": "registry:block",
       "title": "Strategy Scorecard",
       "description": "Strategy Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-14"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2368,34 +2422,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-14/index.tsx",
+          "path": "data-grid/advanced/strategy-scorecard/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-14/index.tsx"
         },
         {
-          "path": "data-grid-advanced-14/data.ts",
+          "path": "data-grid/advanced/strategy-scorecard/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-14/data.ts"
         },
         {
-          "path": "data-grid-advanced-14/dialogs.tsx",
+          "path": "data-grid/advanced/strategy-scorecard/dialogs.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-14/dialogs.tsx"
         },
         {
-          "path": "data-grid-advanced-14/parts.tsx",
+          "path": "data-grid/advanced/strategy-scorecard/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-14/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-15",
+      "name": "data-grid-advanced-p-l-outlook",
       "type": "registry:block",
       "title": "P&L Outlook",
       "description": "P&L Outlook data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-15"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2421,34 +2476,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-15/index.tsx",
+          "path": "data-grid/advanced/p-l-outlook/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-15/index.tsx"
         },
         {
-          "path": "data-grid-advanced-15/data.ts",
+          "path": "data-grid/advanced/p-l-outlook/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-15/data.ts"
         },
         {
-          "path": "data-grid-advanced-15/dialogs.tsx",
+          "path": "data-grid/advanced/p-l-outlook/dialogs.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-15/dialogs.tsx"
         },
         {
-          "path": "data-grid-advanced-15/parts.tsx",
+          "path": "data-grid/advanced/p-l-outlook/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-15/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-16",
+      "name": "data-grid-advanced-store-kpis",
       "type": "registry:block",
       "title": "Store KPIs",
       "description": "Store KPIs data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-16"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2474,34 +2530,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-16/index.tsx",
+          "path": "data-grid/advanced/store-kpis/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-16/index.tsx"
         },
         {
-          "path": "data-grid-advanced-16/data.ts",
+          "path": "data-grid/advanced/store-kpis/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-16/data.ts"
         },
         {
-          "path": "data-grid-advanced-16/parts.tsx",
+          "path": "data-grid/advanced/store-kpis/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-16/parts.tsx"
         },
         {
-          "path": "data-grid-advanced-16/store-sheet.tsx",
+          "path": "data-grid/advanced/store-kpis/store-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-16/store-sheet.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-17",
+      "name": "data-grid-advanced-support-scorecard",
       "type": "registry:block",
       "title": "Support Scorecard",
       "description": "Support Scorecard data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-17"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2527,34 +2584,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-17/index.tsx",
+          "path": "data-grid/advanced/support-scorecard/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-17/index.tsx"
         },
         {
-          "path": "data-grid-advanced-17/agent-sheet.tsx",
+          "path": "data-grid/advanced/support-scorecard/agent-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-17/agent-sheet.tsx"
         },
         {
-          "path": "data-grid-advanced-17/data.ts",
+          "path": "data-grid/advanced/support-scorecard/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-17/data.ts"
         },
         {
-          "path": "data-grid-advanced-17/parts.tsx",
+          "path": "data-grid/advanced/support-scorecard/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-17/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-18",
+      "name": "data-grid-advanced-job-schedule",
       "type": "registry:block",
       "title": "Job Schedule",
       "description": "Job Schedule data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-18"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2580,34 +2638,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-18/index.tsx",
+          "path": "data-grid/advanced/job-schedule/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-18/index.tsx"
         },
         {
-          "path": "data-grid-advanced-18/data.ts",
+          "path": "data-grid/advanced/job-schedule/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-18/data.ts"
         },
         {
-          "path": "data-grid-advanced-18/job-sheet.tsx",
+          "path": "data-grid/advanced/job-schedule/job-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-18/job-sheet.tsx"
         },
         {
-          "path": "data-grid-advanced-18/parts.tsx",
+          "path": "data-grid/advanced/job-schedule/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-18/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-19",
+      "name": "data-grid-advanced-prospects",
       "type": "registry:block",
       "title": "Prospects",
       "description": "Prospects data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-19"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2635,34 +2694,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-19/index.tsx",
+          "path": "data-grid/advanced/prospects/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-19/index.tsx"
         },
         {
-          "path": "data-grid-advanced-19/company-sheet.tsx",
+          "path": "data-grid/advanced/prospects/company-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-19/company-sheet.tsx"
         },
         {
-          "path": "data-grid-advanced-19/data.ts",
+          "path": "data-grid/advanced/prospects/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-19/data.ts"
         },
         {
-          "path": "data-grid-advanced-19/parts.tsx",
+          "path": "data-grid/advanced/prospects/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-19/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-20",
+      "name": "data-grid-advanced-project-budget",
       "type": "registry:block",
       "title": "Project Budget",
       "description": "Project Budget data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-20"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2690,34 +2750,35 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-20/index.tsx",
+          "path": "data-grid/advanced/project-budget/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-20/index.tsx"
         },
         {
-          "path": "data-grid-advanced-20/data.ts",
+          "path": "data-grid/advanced/project-budget/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-20/data.ts"
         },
         {
-          "path": "data-grid-advanced-20/line-sheet.tsx",
+          "path": "data-grid/advanced/project-budget/line-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-20/line-sheet.tsx"
         },
         {
-          "path": "data-grid-advanced-20/parts.tsx",
+          "path": "data-grid/advanced/project-budget/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-20/parts.tsx"
         }
       ]
     },
     {
-      "name": "data-grid-advanced-21",
+      "name": "data-grid-advanced-invoices",
       "type": "registry:block",
       "title": "Invoices",
       "description": "Invoices data grid block.",
       "meta": {
-        "category": "Advanced"
+        "category": "Advanced",
+        "id": "data-grid-advanced-21"
       },
       "dependencies": [
         "@tanstack/react-table",
@@ -2744,22 +2805,22 @@
       ],
       "files": [
         {
-          "path": "data-grid-advanced-21/index.tsx",
+          "path": "data-grid/advanced/invoices/index.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-21/index.tsx"
         },
         {
-          "path": "data-grid-advanced-21/customer-sheet.tsx",
+          "path": "data-grid/advanced/invoices/customer-sheet.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-21/customer-sheet.tsx"
         },
         {
-          "path": "data-grid-advanced-21/data.ts",
+          "path": "data-grid/advanced/invoices/data.ts",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-21/data.ts"
         },
         {
-          "path": "data-grid-advanced-21/parts.tsx",
+          "path": "data-grid/advanced/invoices/parts.tsx",
           "type": "registry:component",
           "target": "@components/blocks/data-grid-advanced-21/parts.tsx"
         }

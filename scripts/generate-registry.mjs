@@ -31,22 +31,22 @@ function registryDep(specifier) {
   if (specifier.startsWith("@/components/ui/")) {
     return specifier.slice("@/components/ui/".length).split("/")[0]
   }
-  if (specifier.startsWith("@/components/reui-unbound/base/ui/")) {
+  if (specifier.startsWith("@/components/kit/base/ui/")) {
     return (
       "@reui-unbound/base-ui-" +
-      specifier.slice("@/components/reui-unbound/base/ui/".length).split("/")[0]
+      specifier.slice("@/components/kit/base/ui/".length).split("/")[0]
     )
   }
-  if (specifier.startsWith("@/components/reui-unbound/base/")) {
+  if (specifier.startsWith("@/components/kit/base/")) {
     const name = specifier
-      .slice("@/components/reui-unbound/base/".length)
+      .slice("@/components/kit/base/".length)
       .split("/")[0]
       .replace(/\.tsx?$/, "")
     return "@reui-unbound/base-" + name
   }
-  if (specifier.startsWith("@/components/reui-unbound/")) {
+  if (specifier.startsWith("@/components/kit/")) {
     const name = specifier
-      .slice("@/components/reui-unbound/".length)
+      .slice("@/components/kit/".length)
       .split("/")[0]
       .replace(/\.tsx?$/, "")
     return "@reui-unbound/" + name
@@ -60,7 +60,7 @@ function registryDep(specifier) {
   return null
 }
 
-const REUI_ROOT = "src/components/reui-unbound/"
+const REUI_ROOT = "src/components/kit/"
 
 function relativeItemName(file, specifier) {
   const absolute = path.posix.normalize(
@@ -124,7 +124,7 @@ function listFiles(dir) {
 /* Blocks                                                                     */
 /* -------------------------------------------------------------------------- */
 
-const blocksSource = read("src/blocks/registry.tsx").replace(/\r\n/g, "\n")
+const blocksSource = read("src/blocks/~internal/registry.tsx").replace(/\r\n/g, "\n")
 const rawImports = new Map()
 for (const match of blocksSource.matchAll(
   /import\s+(\w+)\s+from\s+"(@\/blocks\/[^"?]+)\?raw"/g,
@@ -141,6 +141,10 @@ for (const part of blockParts) {
 
   const name = part.match(/name:\s*"([^"]+)"/)?.[1] ?? id
   const category = part.match(/category:\s*"([^"]+)"/)?.[1]
+  const installTarget = part.match(/installTarget:\s*"([^"]+)"/)?.[1]
+  const itemName = installTarget?.startsWith("@reui-unbound/")
+    ? installTarget.slice("@reui-unbound/".length)
+    : id
   const depsMatch = part.match(
     /dependencies:\s*\{\s*registry:\s*\[([\s\S]*?)\],\s*packages:\s*\[([\s\S]*?)\],?\s*\}/,
   )
@@ -162,11 +166,11 @@ for (const part of blockParts) {
   )
 
   blockItems.push({
-    name: id,
+    name: itemName,
     type: "registry:block",
     title: name,
     description: `${name} data grid block.`,
-    ...(category ? { meta: { category } } : {}),
+    ...(category ? { meta: { category, id } } : {}),
     dependencies: [...new Set([...declaredPackages, ...scanned.dependencies])].sort(),
     registryDependencies: [
       ...new Set([...declaredRegistry, ...scanned.registryDependencies]),
@@ -185,10 +189,97 @@ writeJson("src/blocks/registry.json", {
 })
 
 /* -------------------------------------------------------------------------- */
+/* Component examples                                                          */
+/* -------------------------------------------------------------------------- */
+
+function quotedFields(block) {
+  return Object.fromEntries(
+    [...block.matchAll(/(\w+):\s*"([^"]*)"/g)].map((match) => [
+      match[1],
+      match[2],
+    ]),
+  )
+}
+
+const exampleItems = []
+
+for (const catalogFile of [
+  "src/blocks/components/~catalog/catalog.tsx",
+  "src/blocks/components/~catalog/ui-catalog.tsx",
+]) {
+  const catalogSource = read(catalogFile).replace(/\r\n/g, "\n")
+  const rawImports = new Map()
+  for (const match of catalogSource.matchAll(
+    /import\s+(\w+)\s+from\s+"\.\.?\/(?:radix|base)\/([^"?]+)\?raw"/g,
+  )) {
+    rawImports.set(match[1], match[2])
+  }
+
+  for (const match of catalogSource.matchAll(
+    /(?:componentEntry|uiEntry)\(\{\n    (?:flavor|name): [\s\S]*?\n  \}\),/g,
+  )) {
+    const block = match[0]
+    const fields = quotedFields(block)
+    const installTarget = fields.installTarget
+    if (!installTarget?.startsWith("@reui-unbound/")) continue
+
+    const name = installTarget.slice("@reui-unbound/".length)
+    const sourceName = block.match(/source:\s*(\w+)/)?.[1]
+    const rawFile = rawImports.get(sourceName)
+    if (!rawFile) {
+      console.warn(`registry: no source file for ${name}`)
+      continue
+    }
+    const relative = `radix/${rawFile}`
+
+    const file = `src/blocks/components/${relative}`
+    const scanned = scanSource([file], name)
+    const declaredDependencies = [
+      ...(block
+        .match(/(?:extraDependencies|dependencies):\s*\[([\s\S]*?)\]/)?.[1] ?? "")
+        .matchAll(/"([^"]+)"/g),
+    ].map((entry) => entry[1])
+    const declaredPackages = [
+      ...(block.match(/extraPackages:\s*\[([\s\S]*?)\]/)?.[1] ?? "").matchAll(
+        /"([^"]+)"/g,
+      ),
+    ].map((entry) => entry[1])
+
+    const component = fields.label ?? fields.name ?? "Component"
+    const variant = fields.variant ?? component
+
+    exampleItems.push({
+      name,
+      type: "registry:block",
+      title: `${variant} ${component}`,
+      description: `${variant} example for ${component}.`,
+      dependencies: [...new Set([...scanned.dependencies, ...declaredPackages])].sort(),
+      registryDependencies: [
+        ...new Set([...scanned.registryDependencies, ...declaredDependencies]),
+      ].sort(),
+      files: [
+        {
+          path: relative,
+          type: "registry:component",
+          target: `@components/examples/${name}.tsx`,
+        },
+      ],
+    })
+  }
+}
+
+exampleItems.sort((a, b) => a.name.localeCompare(b.name))
+
+writeJson("src/blocks/components/registry.json", {
+  $schema: "https://ui.shadcn.com/schema/registry.json",
+  items: exampleItems,
+})
+
+/* -------------------------------------------------------------------------- */
 /* ReUI components (radix / current)                                          */
 /* -------------------------------------------------------------------------- */
 
-const reuiDir = "src/components/reui-unbound"
+const reuiDir = "src/components/kit"
 const reuiItems = []
 
 function reuiItemName(entry) {
@@ -221,7 +312,7 @@ for (const entry of fs.readdirSync(path.join(root, reuiDir), {
         return {
           path: relative,
           type: file === mainFile ? "registry:ui" : "registry:component",
-          target: `@components/reui-unbound/${relative}`,
+          target: `@components/kit/${relative}`,
         }
       }),
       dependencies: scanned.dependencies,
@@ -241,7 +332,7 @@ for (const entry of fs.readdirSync(path.join(root, reuiDir), {
         {
           path: entry.name,
           type: "registry:ui",
-          target: `@components/reui-unbound/${entry.name}`,
+          target: `@components/kit/${entry.name}`,
         },
       ],
       dependencies: scanned.dependencies,
@@ -260,7 +351,7 @@ reuiItems.push({
     {
       path: "icon-placeholder.tsx",
       type: "registry:component",
-      target: "@components/reui-unbound/icon-placeholder.tsx",
+      target: "@components/kit/icon-placeholder.tsx",
     },
   ],
   dependencies: ["lucide-react"],
@@ -275,7 +366,7 @@ writeJson(path.posix.join(reuiDir, "registry.json"), {
 /* ReUI components (base flavor) + Base UI primitives                         */
 /* -------------------------------------------------------------------------- */
 
-const baseDir = "src/components/reui-unbound/base"
+const baseDir = "src/components/kit/base"
 const baseItems = []
 
 for (const entry of fs.readdirSync(path.join(root, baseDir), {
@@ -304,7 +395,7 @@ for (const entry of fs.readdirSync(path.join(root, baseDir), {
         return {
           path: relative,
           type: file === mainFile ? "registry:ui" : "registry:component",
-          target: `@components/reui-unbound/base/${relative}`,
+          target: `@components/kit/base/${relative}`,
         }
       }),
       dependencies: scanned.dependencies,
@@ -324,7 +415,7 @@ for (const entry of fs.readdirSync(path.join(root, baseDir), {
         {
           path: entry.name,
           type: "registry:ui",
-          target: `@components/reui-unbound/base/${entry.name}`,
+          target: `@components/kit/base/${entry.name}`,
         },
       ],
       dependencies: scanned.dependencies,
@@ -353,7 +444,7 @@ for (const file of fs
       {
         path: relative,
         type: "registry:ui",
-        target: `@components/reui-unbound/base/${relative}`,
+        target: `@components/kit/base/${relative}`,
       },
     ],
     dependencies: scanned.dependencies,
@@ -414,6 +505,7 @@ if (duplicates.length > 0) {
 
 const manifests = [
   { dir: "src/blocks", items: blockItems },
+  { dir: "src/blocks/components", items: exampleItems },
   { dir: reuiDir, items: reuiItems },
   { dir: baseDir, items: baseItems },
   { dir: hooksDir, items: hookItems },
@@ -468,12 +560,13 @@ writeJson("registry.json", {
   homepage: "https://reui-unbound.pages.dev",
   include: [
     "src/blocks/registry.json",
-    "src/components/reui-unbound/registry.json",
-    "src/components/reui-unbound/base/registry.json",
+    "src/blocks/components/registry.json",
+    "src/components/kit/registry.json",
+    "src/components/kit/base/registry.json",
     "src/hooks/registry.json",
   ],
 })
 
 console.log(
-  `registry: ${blockItems.length} blocks, ${reuiItems.length} reui, ${baseItems.length} base, ${hookItems.length} hooks`,
+  `registry: ${blockItems.length} blocks, ${exampleItems.length} examples, ${reuiItems.length} reui, ${baseItems.length} base, ${hookItems.length} hooks`,
 )

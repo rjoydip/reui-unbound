@@ -1,0 +1,61 @@
+---
+title: Contacts
+description: Contacts data grid block.
+category: Base
+---
+
+# Contacts
+
+**Block:** `data-grid-base-contacts` · **Category:** Base
+
+[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-2)
+
+## Install
+
+```bash
+bunx --bun shadcn@latest add @reui-unbound/data-grid-base-contacts
+```
+
+## Usage
+
+```tsx
+import { LeadScoringContactsBlock } from "@/blocks/data-grid-base-contacts"
+
+export default function Page() {
+  return <LeadScoringContactsBlock />
+}
+```
+
+## Files
+
+- `src/blocks/data-grid/base/contacts/index.tsx`
+- `src/blocks/data-grid/base/contacts/parts.tsx`
+- `src/blocks/data-grid/base/contacts/contact-filters.tsx`
+- `src/blocks/data-grid/base/contacts/contact-sheets.tsx`
+- `src/blocks/data-grid/base/contacts/data.ts`
+
+## Dependencies
+
+- `@tanstack/react-table`
+- `cn`
+- `lucide-react`
+- `sonner`
+
+## Registry dependencies
+
+- `@reui-unbound/badge`
+- `@reui-unbound/data-grid`
+- `@reui-unbound/filters`
+- `@reui-unbound/frame`
+- `@reui-unbound/number-field`
+- `avatar`
+- `button`
+- `dropdown-menu`
+- `field`
+- `input`
+- `input-group`
+- `kbd`
+- `select`
+- `sheet`
+- `sonner`
+- `tooltip`

@@ -7,15 +7,15 @@ const exists = (file) => fs.existsSync(path.join(root, file))
 
 const blocksRegistry = JSON.parse(read("src/blocks/registry.json")).items
 const radixRegistry = JSON.parse(
-  read("src/components/reui-unbound/registry.json"),
+  read("src/components/kit/registry.json"),
 ).items
 const baseRegistry = JSON.parse(
-  read("src/components/reui-unbound/base/registry.json"),
+  read("src/components/kit/base/registry.json"),
 ).items
 
-const catalogSource = read("src/blocks/components/catalog.tsx")
-const uiCatalogSource = read("src/blocks/components/ui-catalog.tsx")
-const sidebarSource = read("src/components/catalog-sidebar.tsx")
+const catalogSource = read("src/blocks/components/~catalog/catalog.tsx").replace(/\r\n/g, "\n")
+const uiCatalogSource = read("src/blocks/components/~catalog/ui-catalog.tsx").replace(/\r\n/g, "\n")
+const sidebarSource = read("src/components/~app/catalog-sidebar.tsx")
 
 function quotedFields(block) {
   return Object.fromEntries(
@@ -27,12 +27,41 @@ function quotedFields(block) {
 }
 
 const reuiEntries = [
-  ...catalogSource.matchAll(/componentEntry\(\{([\s\S]*?)\n  \}\),/g),
-].map((match) => quotedFields(match[1]))
+  ...catalogSource.matchAll(
+    /componentEntry\(\{\n    flavor: "[\s\S]*?\n  \}\),/g,
+  ),
+].map((match) => quotedFields(match[0]))
 
 const uiEntries = [
-  ...uiCatalogSource.matchAll(/uiEntry\(\{([\s\S]*?)\n  \}\),/g),
-].map((match) => quotedFields(match[1]))
+  ...uiCatalogSource.matchAll(/uiEntry\(\{\n    name: "[\s\S]*?\n  \}\),/g),
+].map((match) => quotedFields(match[0]))
+
+function previewSources(catalogSource) {
+  const raw = new Map()
+  for (const match of catalogSource.matchAll(
+    /import\s+(\w+)\s+from\s+"\.\.?\/(radix|base)\/([^"?]+)\?raw"/g,
+  )) {
+    raw.set(
+      match[1],
+      `src/blocks/components/${match[2]}/${match[3]}`,
+    )
+  }
+  const sources = new Map()
+  for (const match of catalogSource.matchAll(
+    /(?:componentEntry|uiEntry)\(\{\n    (?:flavor|name): [\s\S]*?\n  \}\),/g,
+  )) {
+    const fields = quotedFields(match[0])
+    const id = fields.id ?? (fields.name ? `${fields.name}-radix` : undefined)
+    const source = match[0].match(/source:\s*(\w+)/)?.[1]
+    if (id && source && raw.has(source)) sources.set(id, raw.get(source))
+  }
+  return sources
+}
+
+const previewSourceById = new Map([
+  ...previewSources(catalogSource),
+  ...previewSources(uiCatalogSource),
+])
 
 const notesSource = sidebarSource.slice(
   sidebarSource.indexOf("const COMPONENT_NOTES"),
@@ -84,8 +113,9 @@ for (const block of [...blocksRegistry].sort((a, b) =>
   a.title.localeCompare(b.title),
 )) {
   const category = block.meta?.category ?? "General"
+  const previewId = block.meta?.id ?? block.name
   const target = `@reui-unbound/${block.name}`
-  const preview = `/?preview=${block.name}`
+  const preview = `/?preview=${previewId}`
   const sourceFile = block.files[0]?.path.replace(/\/[^/]+$/, "")
   const exportName = sourceFile
     ? read(`src/blocks/${block.files[0].path}`).match(
@@ -144,7 +174,7 @@ ${
 
   write(`docs/blocks/${block.name}.md`, content)
   blockRows.push(
-    `| [${block.title}](./${block.name}.md) | \`${block.name}\` | ${category} | [Preview](https://reui-unbound.pages.dev${preview}) |`,
+    `| [${block.title}](./${block.name}.md) | \`${previewId}\` | ${category} | [Preview](https://reui-unbound.pages.dev${preview}) |`,
   )
 }
 
@@ -199,17 +229,19 @@ for (const group of [...groups.values()].sort((a, b) =>
 
   for (const entry of group.entries) {
     const flavor = entry.flavor ?? "radix"
+    const previewId = entry.id ?? `${entry.name}-radix`
     const previewName = entry.id
       ? entry.id.replace(/-(radix|base)$/, "")
       : entry.name
-    const previewFile = `src/blocks/components/${flavor}/${previewName}.tsx`
-    const previewId = entry.id ?? `${entry.name}-radix`
+    const previewFile =
+      previewSourceById.get(previewId) ??
+      `src/blocks/components/${flavor}/${previewName}.tsx`
     if (exists(previewFile)) files.push(previewFile)
 
     if (entry.kind === "ui") {
       const uiFile = `src/components/ui/${entry.name}.tsx`
       if (exists(uiFile)) files.push(uiFile)
-      const target = entry.name
+      const target = entry.installTarget ?? entry.name
       installs.push({ label: "shadcn/ui", target })
       const source = exists(uiFile) ? read(uiFile) : ""
       for (const match of source.matchAll(/from\s+["']([^"']+)["']/g)) {
@@ -227,12 +259,12 @@ for (const group of [...groups.values()].sort((a, b) =>
         flavor === "base"
           ? registryByFlavor.base.get(entry.item)
           : registryByFlavor.radix.get(entry.item)
-      const target = `@reui-unbound/${entry.item}`
+      const target = entry.installTarget ?? `@reui-unbound/${entry.item}`
       installs.push({ label: flavor === "base" ? "Base" : "Radix", target })
       if (item) {
         for (const file of item.files ?? []) {
           files.push(
-            `src/components/reui-unbound/${flavor === "base" ? "base/" : ""}${file.path}`,
+            `src/components/kit/${flavor === "base" ? "base/" : ""}${file.path}`,
           )
         }
         for (const dependency of item.dependencies ?? []) {

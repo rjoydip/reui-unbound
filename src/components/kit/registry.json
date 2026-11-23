@@ -1,0 +1,866 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "items": [
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "alert",
+      "files": [
+        {
+          "path": "alert.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/alert.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "autocomplete",
+      "type": "registry:ui",
+      "title": "autocomplete",
+      "files": [
+        {
+          "path": "autocomplete.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/autocomplete.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "badge",
+      "files": [
+        {
+          "path": "badge.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/badge.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "cascader",
+      "type": "registry:ui",
+      "title": "cascader",
+      "files": [
+        {
+          "path": "cascader/cascader.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/cascader/cascader.tsx"
+        },
+        {
+          "path": "cascader/~cascader-async.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-async.tsx"
+        },
+        {
+          "path": "cascader/~cascader-columns.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-columns.tsx"
+        },
+        {
+          "path": "cascader/~cascader-context.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-context.tsx"
+        },
+        {
+          "path": "cascader/~cascader-footer.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-footer.tsx"
+        },
+        {
+          "path": "cascader/~cascader-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-i18n.tsx"
+        },
+        {
+          "path": "cascader/~cascader-item.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-item.tsx"
+        },
+        {
+          "path": "cascader/~cascader-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-lib.tsx"
+        },
+        {
+          "path": "cascader/~cascader-nav.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-nav.tsx"
+        },
+        {
+          "path": "cascader/~cascader-types.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-types.tsx"
+        },
+        {
+          "path": "cascader/~cascader-virtual.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/cascader/~cascader-virtual.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "@tanstack/react-virtual",
+        "cn",
+        "lucide-react",
+        "not fetched yet",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "scroll-area",
+        "spinner"
+      ]
+    },
+    {
+      "name": "code-block",
+      "type": "registry:ui",
+      "title": "code-block",
+      "files": [
+        {
+          "path": "code-block/code-block.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/code-block/code-block.tsx"
+        },
+        {
+          "path": "code-block/~code-block-highlight.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/code-block/~code-block-highlight.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "shiki"
+      ],
+      "registryDependencies": [
+        "button"
+      ]
+    },
+    {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "color-picker",
+      "files": [
+        {
+          "path": "color-picker.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/color-picker.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "separator"
+      ]
+    },
+    {
+      "name": "data-grid",
+      "type": "registry:ui",
+      "title": "data-grid",
+      "files": [
+        {
+          "path": "data-grid/data-grid.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/data-grid/data-grid.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-cell-selection.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-cell-selection.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-column-filter.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-column-filter.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-column-header.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-column-header.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-column-visibility.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-column-visibility.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-i18n.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-pagination.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-pagination.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-scroll-area.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-scroll-area.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-table-dnd-rows.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-table-dnd-rows.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-table-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-table-dnd.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-table-virtual.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-table-virtual.tsx"
+        },
+        {
+          "path": "data-grid/~data-grid-table.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/data-grid/~data-grid-table.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tanstack/react-table",
+        "@tanstack/react-virtual",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "select",
+        "separator",
+        "skeleton",
+        "spinner"
+      ]
+    },
+    {
+      "name": "date-selector",
+      "type": "registry:ui",
+      "title": "date-selector",
+      "files": [
+        {
+          "path": "date-selector.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/date-selector.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "date-fns",
+        "react-day-picker"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "@reui-unbound/use-mobile",
+        "button",
+        "calendar",
+        "input",
+        "scroll-area",
+        "tabs"
+      ]
+    },
+    {
+      "name": "emoji-picker",
+      "type": "registry:ui",
+      "title": "emoji-picker",
+      "files": [
+        {
+          "path": "emoji-picker.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/emoji-picker.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "dropdown-menu",
+        "empty",
+        "input-group",
+        "popover",
+        "skeleton",
+        "tabs"
+      ]
+    },
+    {
+      "name": "event-calendar",
+      "type": "registry:ui",
+      "title": "event-calendar",
+      "files": [
+        {
+          "path": "event-calendar/event-calendar.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/event-calendar/event-calendar.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-agenda-view.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-agenda-view.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-content.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-content.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-dnd.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-event.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-event.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-i18n.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-lib.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-month-view.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-month-view.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-nav.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-nav.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-recurrence.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-recurrence.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-resource-view.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-resource-view.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-time-grid.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-time-grid.tsx"
+        },
+        {
+          "path": "event-calendar/~event-calendar-types.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/event-calendar/~event-calendar-types.tsx"
+        }
+      ],
+      "dependencies": [
+        "@date-fns/tz",
+        "cn",
+        "date-fns",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "@reui-unbound/icon-stack",
+        "button",
+        "calendar",
+        "dropdown-menu",
+        "popover",
+        "scroll-area",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "file-type",
+      "type": "registry:ui",
+      "title": "file-type",
+      "files": [
+        {
+          "path": "file-type.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/file-type.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "filters",
+      "type": "registry:ui",
+      "title": "filters",
+      "files": [
+        {
+          "path": "filters/filters.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/filters/filters.tsx"
+        },
+        {
+          "path": "filters/~filters-advanced.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-advanced.tsx"
+        },
+        {
+          "path": "filters/~filters-builder.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-builder.tsx"
+        },
+        {
+          "path": "filters/~filters-chip.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-chip.tsx"
+        },
+        {
+          "path": "filters/~filters-context.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-context.tsx"
+        },
+        {
+          "path": "filters/~filters-date.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-date.tsx"
+        },
+        {
+          "path": "filters/~filters-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-dnd.tsx"
+        },
+        {
+          "path": "filters/~filters-draft.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-draft.tsx"
+        },
+        {
+          "path": "filters/~filters-editors.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-editors.tsx"
+        },
+        {
+          "path": "filters/~filters-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-i18n.tsx"
+        },
+        {
+          "path": "filters/~filters-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-lib.tsx"
+        },
+        {
+          "path": "filters/~filters-operators.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-operators.tsx"
+        },
+        {
+          "path": "filters/~filters-query.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-query.tsx"
+        },
+        {
+          "path": "filters/~filters-types.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/filters/~filters-types.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/cascader",
+        "button",
+        "button-group",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "frame",
+      "type": "registry:ui",
+      "title": "frame",
+      "files": [
+        {
+          "path": "frame.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/frame.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "gantt",
+      "type": "registry:ui",
+      "title": "gantt",
+      "files": [
+        {
+          "path": "gantt/gantt.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/gantt/gantt.tsx"
+        },
+        {
+          "path": "gantt/~gantt-bar.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-bar.tsx"
+        },
+        {
+          "path": "gantt/~gantt-dnd.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-dnd.tsx"
+        },
+        {
+          "path": "gantt/~gantt-i18n.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-i18n.tsx"
+        },
+        {
+          "path": "gantt/~gantt-lib.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-lib.tsx"
+        },
+        {
+          "path": "gantt/~gantt-nav.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-nav.tsx"
+        },
+        {
+          "path": "gantt/~gantt-recurrence.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-recurrence.tsx"
+        },
+        {
+          "path": "gantt/~gantt-types.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-types.tsx"
+        },
+        {
+          "path": "gantt/~gantt-view.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/gantt/~gantt-view.tsx"
+        }
+      ],
+      "dependencies": [
+        "@date-fns/tz",
+        "cn",
+        "date-fns",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "calendar",
+        "checkbox",
+        "context-menu",
+        "dropdown-menu",
+        "popover",
+        "scroll-area",
+        "tooltip"
+      ]
+    },
+    {
+      "name": "icon-stack",
+      "type": "registry:ui",
+      "title": "icon-stack",
+      "files": [
+        {
+          "path": "icon-stack.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/icon-stack.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "icon-tile",
+      "type": "registry:ui",
+      "title": "icon-tile",
+      "files": [
+        {
+          "path": "icon-tile.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/icon-tile.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "kanban",
+      "type": "registry:ui",
+      "title": "kanban",
+      "files": [
+        {
+          "path": "kanban.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/kanban.tsx"
+        }
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "number-field",
+      "type": "registry:ui",
+      "title": "number-field",
+      "files": [
+        {
+          "path": "number-field.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/number-field.tsx"
+        }
+      ],
+      "dependencies": [
+        "@base-ui/react",
+        "class-variance-authority",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "label"
+      ]
+    },
+    {
+      "name": "phone-input",
+      "type": "registry:ui",
+      "title": "phone-input",
+      "files": [
+        {
+          "path": "phone-input.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/phone-input.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "react-phone-number-input"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "combobox",
+        "input",
+        "scroll-area"
+      ]
+    },
+    {
+      "name": "rating",
+      "type": "registry:ui",
+      "title": "rating",
+      "files": [
+        {
+          "path": "rating.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/rating.tsx"
+        }
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder"
+      ]
+    },
+    {
+      "name": "scrollspy",
+      "type": "registry:ui",
+      "title": "scrollspy",
+      "files": [
+        {
+          "path": "scrollspy.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/scrollspy.tsx"
+        }
+      ],
+      "dependencies": [],
+      "registryDependencies": []
+    },
+    {
+      "name": "signature-pad",
+      "type": "registry:ui",
+      "title": "signature-pad",
+      "files": [
+        {
+          "path": "signature-pad.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/signature-pad.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button"
+      ]
+    },
+    {
+      "name": "sortable",
+      "type": "registry:ui",
+      "title": "sortable",
+      "files": [
+        {
+          "path": "sortable.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/sortable.tsx"
+        }
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "stepper",
+      "type": "registry:ui",
+      "title": "stepper",
+      "files": [
+        {
+          "path": "stepper.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/stepper.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "time-picker",
+      "type": "registry:ui",
+      "title": "time-picker",
+      "files": [
+        {
+          "path": "time-picker.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/time-picker.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder",
+        "button",
+        "input-group",
+        "popover"
+      ]
+    },
+    {
+      "name": "timeline",
+      "type": "registry:ui",
+      "title": "timeline",
+      "files": [
+        {
+          "path": "timeline.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/timeline.tsx"
+        }
+      ],
+      "dependencies": [
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": []
+    },
+    {
+      "name": "tree",
+      "type": "registry:ui",
+      "title": "tree",
+      "files": [
+        {
+          "path": "tree.tsx",
+          "type": "registry:ui",
+          "target": "@components/kit/tree.tsx"
+        }
+      ],
+      "dependencies": [
+        "@headless-tree/core",
+        "cn",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-placeholder"
+      ]
+    },
+    {
+      "name": "icon-placeholder",
+      "type": "registry:component",
+      "title": "Icon Placeholder",
+      "files": [
+        {
+          "path": "icon-placeholder.tsx",
+          "type": "registry:component",
+          "target": "@components/kit/icon-placeholder.tsx"
+        }
+      ],
+      "dependencies": [
+        "lucide-react"
+      ]
+    }
+  ]
+}

@@ -10,6 +10,10 @@ Date and range selection built on a calendar popover.
 ## Preview
 
 - **Radix** — [`date-selector-radix`](https://reui-unbound.pages.dev/?preview=date-selector-radix)
+- **Radix** — [`date-selector-standard-inline-radix`](https://reui-unbound.pages.dev/?preview=date-selector-standard-inline-radix)
+- **Radix** — [`date-selector-popover-radix`](https://reui-unbound.pages.dev/?preview=date-selector-popover-radix)
+- **Radix** — [`date-selector-dialog-radix`](https://reui-unbound.pages.dev/?preview=date-selector-dialog-radix)
+- **Radix** — [`date-selector-language-menu-radix`](https://reui-unbound.pages.dev/?preview=date-selector-language-menu-radix)
 - **Base** — [`date-selector-base`](https://reui-unbound.pages.dev/?preview=date-selector-base)
 
 ## Install
@@ -20,16 +24,40 @@ bunx --bun shadcn@latest add @reui-unbound/date-selector
 ```
 
 ```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/date-selector-standard-inline
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/date-selector-popover
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/date-selector-dialog
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/date-selector-language-menu
+```
+
+```bash
 # Base
 bunx --bun shadcn@latest add @reui-unbound/base-date-selector
 ```
 
 ## Files
 
-- `src/blocks/components/radix/date-selector.tsx`
-- `src/components/reui-unbound/date-selector.tsx`
-- `src/blocks/components/base/date-selector.tsx`
-- `src/components/reui-unbound/base/date-selector.tsx`
+- `src/blocks/components/radix/date-selector/default.tsx`
+- `src/components/kit/date-selector.tsx`
+- `src/blocks/components/radix/date-selector/standard-inline.tsx`
+- `src/blocks/components/radix/date-selector/popover.tsx`
+- `src/blocks/components/radix/date-selector/dialog.tsx`
+- `src/blocks/components/radix/date-selector/language-menu.tsx`
+- `src/blocks/components/base/date-selector/default.tsx`
+- `src/components/kit/base/date-selector.tsx`
 
 ## Dependencies
 
