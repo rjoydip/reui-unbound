@@ -2,5 +2,19 @@
 // Lazy-import map of every Breadcrumb preview in the radix group.
 
 export const previews = {
-  "breadcrumb-radix": () => import("@/blocks/components/radix/breadcrumb/default"),
+  "breadcrumb-standard-radix": () => import("@/blocks/components/radix/breadcrumb/standard"),
+  "breadcrumb-dropdown-menu-radix": () => import("@/blocks/components/radix/breadcrumb/dropdown-menu"),
+  "breadcrumb-router-link-radix": () => import("@/blocks/components/radix/breadcrumb/router-link"),
+  "breadcrumb-slash-separator-radix": () => import("@/blocks/components/radix/breadcrumb/slash-separator"),
+  "breadcrumb-item-icons-radix": () => import("@/blocks/components/radix/breadcrumb/item-icons"),
+  "breadcrumb-static-ellipsis-radix": () => import("@/blocks/components/radix/breadcrumb/static-ellipsis"),
+  "breadcrumb-avatars-radix": () => import("@/blocks/components/radix/breadcrumb/avatars"),
+  "breadcrumb-double-chevron-radix": () => import("@/blocks/components/radix/breadcrumb/double-chevron"),
+  "breadcrumb-in-card-radix": () => import("@/blocks/components/radix/breadcrumb/in-card"),
+  "breadcrumb-pill-in-frame-radix": () => import("@/blocks/components/radix/breadcrumb/pill-in-frame"),
+  "breadcrumb-count-badge-radix": () => import("@/blocks/components/radix/breadcrumb/count-badge"),
+  "breadcrumb-home-icon-button-radix": () => import("@/blocks/components/radix/breadcrumb/home-icon-button"),
+  "breadcrumb-bar-separator-radix": () => import("@/blocks/components/radix/breadcrumb/bar-separator"),
+  "breadcrumb-button-style-radix": () => import("@/blocks/components/radix/breadcrumb/button-style"),
+  "breadcrumb-project-document-radix": () => import("@/blocks/components/radix/breadcrumb/project-document"),
 }

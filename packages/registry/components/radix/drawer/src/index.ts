@@ -3,4 +3,9 @@
 
 export const previews = {
   "drawer-radix": () => import("@/blocks/components/radix/drawer/default"),
+  "drawer-scrollable-content-radix": () => import("@/blocks/components/radix/drawer/scrollable-content"),
+  "drawer-right-side-radix": () => import("@/blocks/components/radix/drawer/right-side"),
+  "drawer-left-side-radix": () => import("@/blocks/components/radix/drawer/left-side"),
+  "drawer-top-side-radix": () => import("@/blocks/components/radix/drawer/top-side"),
+  "drawer-all-sides-radix": () => import("@/blocks/components/radix/drawer/all-sides"),
 }

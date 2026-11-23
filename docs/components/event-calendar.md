@@ -10,6 +10,11 @@ Month, week and agenda views with drag-and-drop events.
 ## Preview
 
 - **Radix** — [`event-calendar-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-radix)
+- **Radix** — [`event-calendar-all-views-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-all-views-radix)
+- **Radix** — [`event-calendar-room-bookings-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-room-bookings-radix)
+- **Radix** — [`event-calendar-event-form-dialog-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-event-form-dialog-radix)
+- **Radix** — [`event-calendar-custom-event-chips-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-custom-event-chips-radix)
+- **Radix** — [`event-calendar-drag-to-book-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-drag-to-book-radix)
 - **Base** — [`event-calendar-base`](https://reui-unbound.pages.dev/?preview=event-calendar-base)
 
 ## Install
@@ -17,6 +22,31 @@ Month, week and agenda views with drag-and-drop events.
 ```bash
 # Radix
 bunx --bun shadcn@latest add @reui-unbound/event-calendar
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/event-calendar-all-views
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/event-calendar-room-bookings
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/event-calendar-event-form-dialog
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/event-calendar-custom-event-chips
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/event-calendar-drag-to-book
 ```
 
 ```bash
@@ -40,6 +70,11 @@ bunx --bun shadcn@latest add @reui-unbound/base-event-calendar
 - `src/components/kit/event-calendar/~event-calendar-resource-view.tsx`
 - `src/components/kit/event-calendar/~event-calendar-time-grid.tsx`
 - `src/components/kit/event-calendar/~event-calendar-types.tsx`
+- `src/blocks/components/radix/event-calendar/all-views.tsx`
+- `src/blocks/components/radix/event-calendar/room-bookings.tsx`
+- `src/blocks/components/radix/event-calendar/event-form-dialog.tsx`
+- `src/blocks/components/radix/event-calendar/custom-event-chips.tsx`
+- `src/blocks/components/radix/event-calendar/drag-to-book.tsx`
 - `src/blocks/components/base/event-calendar/default.tsx`
 - `src/components/kit/base/event-calendar/event-calendar.tsx`
 - `src/components/kit/base/event-calendar/~event-calendar-agenda-view.tsx`

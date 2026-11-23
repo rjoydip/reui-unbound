@@ -3,4 +3,11 @@
 
 export const previews = {
   "questionnaire-radix": () => import("@/blocks/components/radix/questionnaire/default"),
+  "questionnaire-guided-setup-radix": () => import("@/blocks/components/radix/questionnaire/guided-setup"),
+  "questionnaire-multi-select-radix": () => import("@/blocks/components/radix/questionnaire/multi-select"),
+  "questionnaire-write-in-answer-radix": () => import("@/blocks/components/radix/questionnaire/write-in-answer"),
+  "questionnaire-segmented-progress-radix": () => import("@/blocks/components/radix/questionnaire/segmented-progress"),
+  "questionnaire-optional-skip-radix": () => import("@/blocks/components/radix/questionnaire/optional-skip"),
+  "questionnaire-cross-question-rule-radix": () => import("@/blocks/components/radix/questionnaire/cross-question-rule"),
+  "questionnaire-conditional-branch-radix": () => import("@/blocks/components/radix/questionnaire/conditional-branch"),
 }

@@ -3,4 +3,14 @@
 
 export const previews = {
   "dialog-radix": () => import("@/blocks/components/radix/dialog/default"),
+  "dialog-standard-radix": () => import("@/blocks/components/radix/dialog/standard"),
+  "dialog-scrollable-content-radix": () => import("@/blocks/components/radix/dialog/scrollable-content"),
+  "dialog-sticky-footer-radix": () => import("@/blocks/components/radix/dialog/sticky-footer"),
+  "dialog-no-close-button-radix": () => import("@/blocks/components/radix/dialog/no-close-button"),
+  "dialog-custom-close-button-radix": () => import("@/blocks/components/radix/dialog/custom-close-button"),
+  "dialog-full-screen-radix": () => import("@/blocks/components/radix/dialog/full-screen"),
+  "dialog-destructive-confirmation-radix": () => import("@/blocks/components/radix/dialog/destructive-confirmation"),
+  "dialog-cookie-consent-radix": () => import("@/blocks/components/radix/dialog/cookie-consent"),
+  "dialog-keyboard-shortcuts-radix": () => import("@/blocks/components/radix/dialog/keyboard-shortcuts"),
+  "dialog-full-width-button-radix": () => import("@/blocks/components/radix/dialog/full-width-button"),
 }

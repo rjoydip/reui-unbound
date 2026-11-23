@@ -3,4 +3,21 @@
 
 export const previews = {
   "table-radix": () => import("@/blocks/components/radix/table/default"),
+  "table-standard-radix": () => import("@/blocks/components/radix/table/standard"),
+  "table-with-footer-radix": () => import("@/blocks/components/radix/table/with-footer"),
+  "table-status-badges-radix": () => import("@/blocks/components/radix/table/status-badges"),
+  "table-actions-column-radix": () => import("@/blocks/components/radix/table/actions-column"),
+  "table-interactive-rows-radix": () => import("@/blocks/components/radix/table/interactive-rows"),
+  "table-team-members-radix": () => import("@/blocks/components/radix/table/team-members"),
+  "table-orders-radix": () => import("@/blocks/components/radix/table/orders"),
+  "table-projects-radix": () => import("@/blocks/components/radix/table/projects"),
+  "table-activity-log-radix": () => import("@/blocks/components/radix/table/activity-log"),
+  "table-subscriptions-radix": () => import("@/blocks/components/radix/table/subscriptions"),
+  "table-inventory-radix": () => import("@/blocks/components/radix/table/inventory"),
+  "table-api-keys-radix": () => import("@/blocks/components/radix/table/api-keys"),
+  "table-file-manager-radix": () => import("@/blocks/components/radix/table/file-manager"),
+  "table-issues-radix": () => import("@/blocks/components/radix/table/issues"),
+  "table-leaderboard-radix": () => import("@/blocks/components/radix/table/leaderboard"),
+  "table-employee-profile-radix": () => import("@/blocks/components/radix/table/employee-profile"),
+  "table-server-config-radix": () => import("@/blocks/components/radix/table/server-config"),
 }

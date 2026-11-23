@@ -10,12 +10,7 @@ import {
 import { DataGridPagination } from "@/components/kit/data-grid/~data-grid-pagination"
 import { DataGridScrollArea } from "@/components/kit/data-grid/~data-grid-scroll-area"
 import { DataGridTable } from "@/components/kit/data-grid/~data-grid-table"
-import {
-  useTable,
-  type ColumnDef,
-  type PaginationState,
-  type SortingState,
-} from "@tanstack/react-table"
+import { useTable, type ColumnDef, type PaginationState, type SortingState } from "@tanstack/react-table"
 
 const users = [
   {

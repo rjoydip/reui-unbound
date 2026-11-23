@@ -3,4 +3,10 @@
 
 export const previews = {
   "kanban-radix": () => import("@/blocks/components/radix/kanban/default"),
+  "kanban-placeholder-overlay-radix": () => import("@/blocks/components/radix/kanban/placeholder-overlay"),
+  "kanban-dynamic-overlay-radix": () => import("@/blocks/components/radix/kanban/dynamic-overlay"),
+  "kanban-frame-columns-radix": () => import("@/blocks/components/radix/kanban/frame-columns"),
+  "kanban-stacked-frame-radix": () => import("@/blocks/components/radix/kanban/stacked-frame"),
+  "kanban-feature-roadmap-radix": () => import("@/blocks/components/radix/kanban/feature-roadmap"),
+  "kanban-persisted-moves-radix": () => import("@/blocks/components/radix/kanban/persisted-moves"),
 }

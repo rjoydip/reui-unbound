@@ -3,4 +3,14 @@
 
 export const previews = {
   "resizable-radix": () => import("@/blocks/components/radix/resizable/default"),
+  "resizable-horizontal-layout-radix": () => import("@/blocks/components/radix/resizable/horizontal-layout"),
+  "resizable-vertical-layout-radix": () => import("@/blocks/components/radix/resizable/vertical-layout"),
+  "resizable-mixed-directions-radix": () => import("@/blocks/components/radix/resizable/mixed-directions"),
+  "resizable-nested-grips-radix": () => import("@/blocks/components/radix/resizable/nested-grips"),
+  "resizable-animated-pill-radix": () => import("@/blocks/components/radix/resizable/animated-pill"),
+  "resizable-spring-pill-radix": () => import("@/blocks/components/radix/resizable/spring-pill"),
+  "resizable-capsule-expansion-radix": () => import("@/blocks/components/radix/resizable/capsule-expansion"),
+  "resizable-nested-pills-radix": () => import("@/blocks/components/radix/resizable/nested-pills"),
+  "resizable-three-panels-radix": () => import("@/blocks/components/radix/resizable/three-panels"),
+  "resizable-size-tracking-radix": () => import("@/blocks/components/radix/resizable/size-tracking"),
 }

@@ -3,4 +3,14 @@
 
 export const previews = {
   "skeleton-radix": () => import("@/blocks/components/radix/skeleton/default"),
+  "skeleton-avatar-info-radix": () => import("@/blocks/components/radix/skeleton/avatar-info"),
+  "skeleton-card-radix": () => import("@/blocks/components/radix/skeleton/card"),
+  "skeleton-text-paragraphs-radix": () => import("@/blocks/components/radix/skeleton/text-paragraphs"),
+  "skeleton-form-radix": () => import("@/blocks/components/radix/skeleton/form"),
+  "skeleton-data-table-radix": () => import("@/blocks/components/radix/skeleton/data-table"),
+  "skeleton-stats-row-radix": () => import("@/blocks/components/radix/skeleton/stats-row"),
+  "skeleton-list-with-actions-radix": () => import("@/blocks/components/radix/skeleton/list-with-actions"),
+  "skeleton-card-grid-radix": () => import("@/blocks/components/radix/skeleton/card-grid"),
+  "skeleton-profile-page-radix": () => import("@/blocks/components/radix/skeleton/profile-page"),
+  "skeleton-chat-messages-radix": () => import("@/blocks/components/radix/skeleton/chat-messages"),
 }

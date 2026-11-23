@@ -3,4 +3,16 @@
 
 export const previews = {
   "timeline-radix": () => import("@/blocks/components/radix/timeline/default"),
+  "timeline-standard-radix": () => import("@/blocks/components/radix/timeline/standard"),
+  "timeline-roadmap-radix": () => import("@/blocks/components/radix/timeline/roadmap"),
+  "timeline-order-status-radix": () => import("@/blocks/components/radix/timeline/order-status"),
+  "timeline-git-activity-radix": () => import("@/blocks/components/radix/timeline/git-activity"),
+  "timeline-milestones-radix": () => import("@/blocks/components/radix/timeline/milestones"),
+  "timeline-pipeline-steps-radix": () => import("@/blocks/components/radix/timeline/pipeline-steps"),
+  "timeline-roadmap-items-radix": () => import("@/blocks/components/radix/timeline/roadmap-items"),
+  "timeline-horizontal-radix": () => import("@/blocks/components/radix/timeline/horizontal"),
+  "timeline-leading-labels-radix": () => import("@/blocks/components/radix/timeline/leading-labels"),
+  "timeline-deployment-log-radix": () => import("@/blocks/components/radix/timeline/deployment-log"),
+  "timeline-avatar-activity-radix": () => import("@/blocks/components/radix/timeline/avatar-activity"),
+  "timeline-compact-milestones-radix": () => import("@/blocks/components/radix/timeline/compact-milestones"),
 }

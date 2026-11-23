@@ -3,4 +3,9 @@
 
 export const previews = {
   "scroll-area-radix": () => import("@/blocks/components/radix/scroll-area/default"),
+  "scroll-area-standard-radix": () => import("@/blocks/components/radix/scroll-area/standard"),
+  "scroll-area-horizontal-radix": () => import("@/blocks/components/radix/scroll-area/horizontal"),
+  "scroll-area-both-scrollbars-radix": () => import("@/blocks/components/radix/scroll-area/both-scrollbars"),
+  "scroll-area-fade-edges-radix": () => import("@/blocks/components/radix/scroll-area/fade-edges"),
+  "scroll-area-scrollbar-gutter-radix": () => import("@/blocks/components/radix/scroll-area/scrollbar-gutter"),
 }

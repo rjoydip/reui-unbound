@@ -3,4 +3,10 @@
 
 export const previews = {
   "native-select-radix": () => import("@/blocks/components/radix/native-select/default"),
+  "native-select-standard-radix": () => import("@/blocks/components/radix/native-select/standard"),
+  "native-select-grouped-options-radix": () => import("@/blocks/components/radix/native-select/grouped-options"),
+  "native-select-small-radix": () => import("@/blocks/components/radix/native-select/small"),
+  "native-select-field-with-label-radix": () => import("@/blocks/components/radix/native-select/field-with-label"),
+  "native-select-disabled-radix": () => import("@/blocks/components/radix/native-select/disabled"),
+  "native-select-invalid-radix": () => import("@/blocks/components/radix/native-select/invalid"),
 }

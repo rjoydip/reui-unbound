@@ -3,4 +3,12 @@
 
 export const previews = {
   "command-radix": () => import("@/blocks/components/radix/command/default"),
+  "command-standard-radix": () => import("@/blocks/components/radix/command/standard"),
+  "command-shortcuts-radix": () => import("@/blocks/components/radix/command/shortcuts"),
+  "command-groups-radix": () => import("@/blocks/components/radix/command/groups"),
+  "command-many-groups-radix": () => import("@/blocks/components/radix/command/many-groups"),
+  "command-file-search-radix": () => import("@/blocks/components/radix/command/file-search"),
+  "command-user-search-radix": () => import("@/blocks/components/radix/command/user-search"),
+  "command-action-palette-radix": () => import("@/blocks/components/radix/command/action-palette"),
+  "command-recent-favorites-radix": () => import("@/blocks/components/radix/command/recent-favorites"),
 }

@@ -3,4 +3,16 @@
 
 export const previews = {
   "spinner-radix": () => import("@/blocks/components/radix/spinner/default"),
+  "spinner-standard-radix": () => import("@/blocks/components/radix/spinner/standard"),
+  "spinner-in-buttons-radix": () => import("@/blocks/components/radix/spinner/in-buttons"),
+  "spinner-in-badges-radix": () => import("@/blocks/components/radix/spinner/in-badges"),
+  "spinner-in-input-group-radix": () => import("@/blocks/components/radix/spinner/in-input-group"),
+  "spinner-in-empty-state-radix": () => import("@/blocks/components/radix/spinner/in-empty-state"),
+  "spinner-pending-buttons-radix": () => import("@/blocks/components/radix/spinner/pending-buttons"),
+  "spinner-overlay-with-caption-radix": () => import("@/blocks/components/radix/spinner/overlay-with-caption"),
+  "spinner-full-page-radix": () => import("@/blocks/components/radix/spinner/full-page"),
+  "spinner-inline-text-radix": () => import("@/blocks/components/radix/spinner/inline-text"),
+  "spinner-loading-dots-radix": () => import("@/blocks/components/radix/spinner/loading-dots"),
+  "spinner-card-overlay-radix": () => import("@/blocks/components/radix/spinner/card-overlay"),
+  "spinner-color-variants-radix": () => import("@/blocks/components/radix/spinner/color-variants"),
 }

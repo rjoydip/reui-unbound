@@ -3,4 +3,14 @@
 
 export const previews = {
   "file-upload-radix": () => import("@/blocks/components/radix/file-upload/default"),
+  "file-upload-standard-radix": () => import("@/blocks/components/radix/file-upload/standard"),
+  "file-upload-avatar-radix": () => import("@/blocks/components/radix/file-upload/avatar"),
+  "file-upload-drag-drop-radix": () => import("@/blocks/components/radix/file-upload/drag-drop"),
+  "file-upload-gallery-radix": () => import("@/blocks/components/radix/file-upload/gallery"),
+  "file-upload-progress-list-radix": () => import("@/blocks/components/radix/file-upload/progress-list"),
+  "file-upload-table-radix": () => import("@/blocks/components/radix/file-upload/table"),
+  "file-upload-product-images-radix": () => import("@/blocks/components/radix/file-upload/product-images"),
+  "file-upload-sortable-images-radix": () => import("@/blocks/components/radix/file-upload/sortable-images"),
+  "file-upload-preview-cards-radix": () => import("@/blocks/components/radix/file-upload/preview-cards"),
+  "file-upload-cover-image-radix": () => import("@/blocks/components/radix/file-upload/cover-image"),
 }

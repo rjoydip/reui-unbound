@@ -3,4 +3,12 @@
 
 export const previews = {
   "gantt-radix": () => import("@/blocks/components/radix/gantt/default"),
+  "gantt-settings-menu-radix": () => import("@/blocks/components/radix/gantt/settings-menu"),
+  "gantt-drag-reorder-radix": () => import("@/blocks/components/radix/gantt/drag-reorder"),
+  "gantt-quarter-roadmap-radix": () => import("@/blocks/components/radix/gantt/quarter-roadmap"),
+  "gantt-capacity-board-radix": () => import("@/blocks/components/radix/gantt/capacity-board"),
+  "gantt-task-table-radix": () => import("@/blocks/components/radix/gantt/task-table"),
+  "gantt-baseline-tracking-radix": () => import("@/blocks/components/radix/gantt/baseline-tracking"),
+  "gantt-dependencies-milestones-radix": () => import("@/blocks/components/radix/gantt/dependencies-milestones"),
+  "gantt-working-days-radix": () => import("@/blocks/components/radix/gantt/working-days"),
 }

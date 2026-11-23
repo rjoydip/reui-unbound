@@ -18,7 +18,10 @@
       "import": "./dist/index.js"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "cn": "^0.5.2",
+    "@shadcn/react": "^0.3.1"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"

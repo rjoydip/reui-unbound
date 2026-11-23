@@ -3,4 +3,8 @@
 
 export const previews = {
   "date-selector-radix": () => import("@/blocks/components/radix/date-selector/default"),
+  "date-selector-standard-inline-radix": () => import("@/blocks/components/radix/date-selector/standard-inline"),
+  "date-selector-popover-radix": () => import("@/blocks/components/radix/date-selector/popover"),
+  "date-selector-dialog-radix": () => import("@/blocks/components/radix/date-selector/dialog"),
+  "date-selector-language-menu-radix": () => import("@/blocks/components/radix/date-selector/language-menu"),
 }

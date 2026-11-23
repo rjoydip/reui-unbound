@@ -3,4 +3,10 @@
 
 export const previews = {
   "number-field-radix": () => import("@/blocks/components/radix/number-field/default"),
+  "number-field-default-size-radix": () => import("@/blocks/components/radix/number-field/default-size"),
+  "number-field-small-size-radix": () => import("@/blocks/components/radix/number-field/small-size"),
+  "number-field-large-size-radix": () => import("@/blocks/components/radix/number-field/large-size"),
+  "number-field-buttons-on-right-radix": () => import("@/blocks/components/radix/number-field/buttons-on-right"),
+  "number-field-spinner-buttons-radix": () => import("@/blocks/components/radix/number-field/spinner-buttons"),
+  "number-field-form-validation-radix": () => import("@/blocks/components/radix/number-field/form-validation"),
 }

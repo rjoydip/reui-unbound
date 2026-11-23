@@ -3,4 +3,13 @@
 
 export const previews = {
   "tabs-radix": () => import("@/blocks/components/radix/tabs/default"),
+  "tabs-standard-radix": () => import("@/blocks/components/radix/tabs/standard"),
+  "tabs-line-variant-radix": () => import("@/blocks/components/radix/tabs/line-variant"),
+  "tabs-vertical-radix": () => import("@/blocks/components/radix/tabs/vertical"),
+  "tabs-vertical-line-radix": () => import("@/blocks/components/radix/tabs/vertical-line"),
+  "tabs-icons-radix": () => import("@/blocks/components/radix/tabs/icons"),
+  "tabs-full-width-icons-radix": () => import("@/blocks/components/radix/tabs/full-width-icons"),
+  "tabs-badge-counts-radix": () => import("@/blocks/components/radix/tabs/badge-counts"),
+  "tabs-side-list-icons-radix": () => import("@/blocks/components/radix/tabs/side-list-icons"),
+  "tabs-segmented-control-radix": () => import("@/blocks/components/radix/tabs/segmented-control"),
 }

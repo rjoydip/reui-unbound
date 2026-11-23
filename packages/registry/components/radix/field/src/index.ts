@@ -3,4 +3,15 @@
 
 export const previews = {
   "field-radix": () => import("@/blocks/components/radix/field/default"),
+  "field-standard-radix": () => import("@/blocks/components/radix/field/standard"),
+  "field-input-textarea-radix": () => import("@/blocks/components/radix/field/input-textarea"),
+  "field-select-controls-radix": () => import("@/blocks/components/radix/field/select-controls"),
+  "field-radio-checkboxes-radix": () => import("@/blocks/components/radix/field/radio-checkboxes"),
+  "field-slider-switch-radix": () => import("@/blocks/components/radix/field/slider-switch"),
+  "field-otp-input-radix": () => import("@/blocks/components/radix/field/otp-input"),
+  "field-settings-form-radix": () => import("@/blocks/components/radix/field/settings-form"),
+  "field-permissions-radix": () => import("@/blocks/components/radix/field/permissions"),
+  "field-responsive-layout-radix": () => import("@/blocks/components/radix/field/responsive-layout"),
+  "field-notification-preferences-radix": () => import("@/blocks/components/radix/field/notification-preferences"),
+  "field-validation-errors-radix": () => import("@/blocks/components/radix/field/validation-errors"),
 }

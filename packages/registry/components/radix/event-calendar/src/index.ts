@@ -3,4 +3,9 @@
 
 export const previews = {
   "event-calendar-radix": () => import("@/blocks/components/radix/event-calendar/default"),
+  "event-calendar-all-views-radix": () => import("@/blocks/components/radix/event-calendar/all-views"),
+  "event-calendar-room-bookings-radix": () => import("@/blocks/components/radix/event-calendar/room-bookings"),
+  "event-calendar-event-form-dialog-radix": () => import("@/blocks/components/radix/event-calendar/event-form-dialog"),
+  "event-calendar-custom-event-chips-radix": () => import("@/blocks/components/radix/event-calendar/custom-event-chips"),
+  "event-calendar-drag-to-book-radix": () => import("@/blocks/components/radix/event-calendar/drag-to-book"),
 }

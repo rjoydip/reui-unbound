@@ -3,4 +3,9 @@
 
 export const previews = {
   "menubar-radix": () => import("@/blocks/components/radix/menubar/default"),
+  "menubar-standard-radix": () => import("@/blocks/components/radix/menubar/standard"),
+  "menubar-submenus-radix": () => import("@/blocks/components/radix/menubar/submenus"),
+  "menubar-checkbox-radio-radix": () => import("@/blocks/components/radix/menubar/checkbox-radio"),
+  "menubar-icons-radix": () => import("@/blocks/components/radix/menubar/icons"),
+  "menubar-formatting-media-radix": () => import("@/blocks/components/radix/menubar/formatting-media"),
 }

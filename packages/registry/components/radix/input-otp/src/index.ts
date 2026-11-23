@@ -3,4 +3,10 @@
 
 export const previews = {
   "input-otp-radix": () => import("@/blocks/components/radix/input-otp/default"),
+  "input-otp-standard-radix": () => import("@/blocks/components/radix/input-otp/standard"),
+  "input-otp-digits-only-radix": () => import("@/blocks/components/radix/input-otp/digits-only"),
+  "input-otp-multiple-separators-radix": () => import("@/blocks/components/radix/input-otp/multiple-separators"),
+  "input-otp-letters-numbers-radix": () => import("@/blocks/components/radix/input-otp/letters-numbers"),
+  "input-otp-pin-code-radix": () => import("@/blocks/components/radix/input-otp/pin-code"),
+  "input-otp-verification-card-radix": () => import("@/blocks/components/radix/input-otp/verification-card"),
 }

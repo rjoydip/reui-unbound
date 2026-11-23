@@ -3,4 +3,16 @@
 
 export const previews = {
   "slider-radix": () => import("@/blocks/components/radix/slider/default"),
+  "slider-standard-radix": () => import("@/blocks/components/radix/slider/standard"),
+  "slider-disabled-radix": () => import("@/blocks/components/radix/slider/disabled"),
+  "slider-multiple-thumbs-radix": () => import("@/blocks/components/radix/slider/multiple-thumbs"),
+  "slider-vertical-radix": () => import("@/blocks/components/radix/slider/vertical"),
+  "slider-controlled-value-radix": () => import("@/blocks/components/radix/slider/controlled-value"),
+  "slider-range-radix": () => import("@/blocks/components/radix/slider/range"),
+  "slider-number-input-radix": () => import("@/blocks/components/radix/slider/number-input"),
+  "slider-color-temperature-radix": () => import("@/blocks/components/radix/slider/color-temperature"),
+  "slider-reference-labels-radix": () => import("@/blocks/components/radix/slider/reference-labels"),
+  "slider-tick-marks-radix": () => import("@/blocks/components/radix/slider/tick-marks"),
+  "slider-value-tooltip-radix": () => import("@/blocks/components/radix/slider/value-tooltip"),
+  "slider-emoji-rating-radix": () => import("@/blocks/components/radix/slider/emoji-rating"),
 }

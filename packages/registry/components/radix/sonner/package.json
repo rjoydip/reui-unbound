@@ -18,7 +18,9 @@
       "import": "./dist/index.js"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "sonner": "^2.0.8"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"

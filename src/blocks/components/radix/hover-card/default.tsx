@@ -8,7 +8,7 @@ import {
 export default function Pattern() {
   return (
     <div className="flex min-h-[100px] items-center justify-center">
-      <HoverCard openDelay={100} closeDelay={100}>
+      <HoverCard openDelay={100}>
         <HoverCardTrigger asChild>
           <Button variant="outline">Hover Me</Button>
         </HoverCardTrigger>

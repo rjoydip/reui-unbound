@@ -24,7 +24,8 @@
     "cn": "^0.5.2",
     "lucide-react": "^1.74.0",
     "not fetched yet": "*",
-    "radix-ui": "^1.8.1"
+    "radix-ui": "^1.8.1",
+    "Design\n * system": "*"
   },
   "peerDependencies": {
     "react": ">=18",

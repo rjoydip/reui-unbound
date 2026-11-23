@@ -3,4 +3,21 @@
 
 export const previews = {
   "radio-group-radix": () => import("@/blocks/components/radix/radio-group/default"),
+  "radio-group-standard-radix": () => import("@/blocks/components/radix/radio-group/standard"),
+  "radio-group-disabled-radix": () => import("@/blocks/components/radix/radio-group/disabled"),
+  "radio-group-descriptions-radix": () => import("@/blocks/components/radix/radio-group/descriptions"),
+  "radio-group-invalid-radix": () => import("@/blocks/components/radix/radio-group/invalid"),
+  "radio-group-colored-radix": () => import("@/blocks/components/radix/radio-group/colored"),
+  "radio-group-legend-description-radix": () => import("@/blocks/components/radix/radio-group/legend-description"),
+  "radio-group-descriptive-cards-radix": () => import("@/blocks/components/radix/radio-group/descriptive-cards"),
+  "radio-group-card-separators-radix": () => import("@/blocks/components/radix/radio-group/card-separators"),
+  "radio-group-card-icons-radix": () => import("@/blocks/components/radix/radio-group/card-icons"),
+  "radio-group-in-frame-radix": () => import("@/blocks/components/radix/radio-group/in-frame"),
+  "radio-group-grid-layout-radix": () => import("@/blocks/components/radix/radio-group/grid-layout"),
+  "radio-group-avatar-cards-radix": () => import("@/blocks/components/radix/radio-group/avatar-cards"),
+  "radio-group-payment-methods-radix": () => import("@/blocks/components/radix/radio-group/payment-methods"),
+  "radio-group-tooltip-info-radix": () => import("@/blocks/components/radix/radio-group/tooltip-info"),
+  "radio-group-badges-radix": () => import("@/blocks/components/radix/radio-group/badges"),
+  "radio-group-inline-horizontal-radix": () => import("@/blocks/components/radix/radio-group/inline-horizontal"),
+  "radio-group-pricing-tiers-radix": () => import("@/blocks/components/radix/radio-group/pricing-tiers"),
 }

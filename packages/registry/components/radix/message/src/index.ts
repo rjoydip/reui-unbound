@@ -3,4 +3,11 @@
 
 export const previews = {
   "message-radix": () => import("@/blocks/components/radix/message/default"),
+  "message-two-sided-chat-radix": () => import("@/blocks/components/radix/message/two-sided-chat"),
+  "message-avatars-radix": () => import("@/blocks/components/radix/message/avatars"),
+  "message-sender-status-radix": () => import("@/blocks/components/radix/message/sender-status"),
+  "message-reply-actions-radix": () => import("@/blocks/components/radix/message/reply-actions"),
+  "message-shared-files-radix": () => import("@/blocks/components/radix/message/shared-files"),
+  "message-consecutive-messages-radix": () => import("@/blocks/components/radix/message/consecutive-messages"),
+  "message-streaming-reply-radix": () => import("@/blocks/components/radix/message/streaming-reply"),
 }

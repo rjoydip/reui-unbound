@@ -8,12 +8,10 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import {
-  ChartContainer,
+import { ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
-  type ChartConfig,
-} from "@/components/ui/chart"
+  type ChartConfig } from "@/components/ui/chart"
 import { IconPlaceholder } from "@/components/kit/icon-placeholder"
 
 const chartData = [

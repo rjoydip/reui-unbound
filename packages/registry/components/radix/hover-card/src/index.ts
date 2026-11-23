@@ -3,4 +3,12 @@
 
 export const previews = {
   "hover-card-radix": () => import("@/blocks/components/radix/hover-card/default"),
+  "hover-card-standard-radix": () => import("@/blocks/components/radix/hover-card/standard"),
+  "hover-card-positions-radix": () => import("@/blocks/components/radix/hover-card/positions"),
+  "hover-card-profile-radix": () => import("@/blocks/components/radix/hover-card/profile"),
+  "hover-card-icon-radix": () => import("@/blocks/components/radix/hover-card/icon"),
+  "hover-card-image-text-radix": () => import("@/blocks/components/radix/hover-card/image-text"),
+  "hover-card-in-dialog-radix": () => import("@/blocks/components/radix/hover-card/in-dialog"),
+  "hover-card-live-timestamp-radix": () => import("@/blocks/components/radix/hover-card/live-timestamp"),
+  "hover-card-release-notes-radix": () => import("@/blocks/components/radix/hover-card/release-notes"),
 }

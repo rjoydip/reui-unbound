@@ -3,4 +3,10 @@
 
 export const previews = {
   "textarea-radix": () => import("@/blocks/components/radix/textarea/default"),
+  "textarea-standard-radix": () => import("@/blocks/components/radix/textarea/standard"),
+  "textarea-invalid-radix": () => import("@/blocks/components/radix/textarea/invalid"),
+  "textarea-with-label-radix": () => import("@/blocks/components/radix/textarea/with-label"),
+  "textarea-with-description-radix": () => import("@/blocks/components/radix/textarea/with-description"),
+  "textarea-disabled-radix": () => import("@/blocks/components/radix/textarea/disabled"),
+  "textarea-auto-resize-counter-radix": () => import("@/blocks/components/radix/textarea/auto-resize-counter"),
 }

@@ -10,6 +10,18 @@ Filter builder with fields, operators, chips and query serialization.
 ## Preview
 
 - **Radix** — [`filters-radix`](https://reui-unbound.pages.dev/?preview=filters-radix)
+- **Radix** — [`filters-full-filter-bar-radix`](https://reui-unbound.pages.dev/?preview=filters-full-filter-bar-radix)
+- **Radix** — [`filters-nested-attributes-radix`](https://reui-unbound.pages.dev/?preview=filters-nested-attributes-radix)
+- **Radix** — [`filters-status-badges-radix`](https://reui-unbound.pages.dev/?preview=filters-status-badges-radix)
+- **Radix** — [`filters-avatars-paging-radix`](https://reui-unbound.pages.dev/?preview=filters-avatars-paging-radix)
+- **Radix** — [`filters-date-editors-radix`](https://reui-unbound.pages.dev/?preview=filters-date-editors-radix)
+- **Radix** — [`filters-slider-editor-radix`](https://reui-unbound.pages.dev/?preview=filters-slider-editor-radix)
+- **Radix** — [`filters-table-filtering-radix`](https://reui-unbound.pages.dev/?preview=filters-table-filtering-radix)
+- **Radix** — [`filters-choice-controls-radix`](https://reui-unbound.pages.dev/?preview=filters-choice-controls-radix)
+- **Radix** — [`filters-typed-inputs-radix`](https://reui-unbound.pages.dev/?preview=filters-typed-inputs-radix)
+- **Radix** — [`filters-popover-builder-radix`](https://reui-unbound.pages.dev/?preview=filters-popover-builder-radix)
+- **Radix** — [`filters-inline-builder-radix`](https://reui-unbound.pages.dev/?preview=filters-inline-builder-radix)
+- **Radix** — [`filters-controlled-translated-radix`](https://reui-unbound.pages.dev/?preview=filters-controlled-translated-radix)
 - **Base** — [`filters-base`](https://reui-unbound.pages.dev/?preview=filters-base)
 
 ## Install
@@ -17,6 +29,66 @@ Filter builder with fields, operators, chips and query serialization.
 ```bash
 # Radix
 bunx --bun shadcn@latest add @reui-unbound/filters
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-full-filter-bar
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-nested-attributes
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-status-badges
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-avatars-paging
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-date-editors
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-slider-editor
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-table-filtering
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-choice-controls
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-typed-inputs
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-popover-builder
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-inline-builder
+```
+
+```bash
+# Radix
+bunx --bun shadcn@latest add @reui-unbound/filters-controlled-translated
 ```
 
 ```bash
@@ -41,6 +113,18 @@ bunx --bun shadcn@latest add @reui-unbound/base-filters
 - `src/components/kit/filters/~filters-operators.tsx`
 - `src/components/kit/filters/~filters-query.tsx`
 - `src/components/kit/filters/~filters-types.tsx`
+- `src/blocks/components/radix/filters/full-filter-bar.tsx`
+- `src/blocks/components/radix/filters/nested-attributes.tsx`
+- `src/blocks/components/radix/filters/status-badges.tsx`
+- `src/blocks/components/radix/filters/avatars-paging.tsx`
+- `src/blocks/components/radix/filters/date-editors.tsx`
+- `src/blocks/components/radix/filters/slider-editor.tsx`
+- `src/blocks/components/radix/filters/table-filtering.tsx`
+- `src/blocks/components/radix/filters/choice-controls.tsx`
+- `src/blocks/components/radix/filters/typed-inputs.tsx`
+- `src/blocks/components/radix/filters/popover-builder.tsx`
+- `src/blocks/components/radix/filters/inline-builder.tsx`
+- `src/blocks/components/radix/filters/controlled-translated.tsx`
 - `src/blocks/components/base/filters/default.tsx`
 - `src/components/kit/base/filters/filters.tsx`
 - `src/components/kit/base/filters/~filters-advanced.tsx`

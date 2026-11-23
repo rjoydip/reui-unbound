@@ -2,5 +2,11 @@
 // Lazy-import map of every Bubble preview in the radix group.
 
 export const previews = {
-  "bubble-radix": () => import("@/blocks/components/radix/bubble/default"),
+  "bubble-sender-alignment-radix": () => import("@/blocks/components/radix/bubble/sender-alignment"),
+  "bubble-all-variants-radix": () => import("@/blocks/components/radix/bubble/all-variants"),
+  "bubble-grouped-messages-radix": () => import("@/blocks/components/radix/bubble/grouped-messages"),
+  "bubble-reactions-radix": () => import("@/blocks/components/radix/bubble/reactions"),
+  "bubble-show-more-radix": () => import("@/blocks/components/radix/bubble/show-more"),
+  "bubble-quick-replies-radix": () => import("@/blocks/components/radix/bubble/quick-replies"),
+  "bubble-formatted-answer-radix": () => import("@/blocks/components/radix/bubble/formatted-answer"),
 }

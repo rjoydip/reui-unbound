@@ -3,4 +3,12 @@
 
 export const previews = {
   "phone-input-radix": () => import("@/blocks/components/radix/phone-input/default"),
+  "phone-input-standard-radix": () => import("@/blocks/components/radix/phone-input/standard"),
+  "phone-input-small-radix": () => import("@/blocks/components/radix/phone-input/small"),
+  "phone-input-large-radix": () => import("@/blocks/components/radix/phone-input/large"),
+  "phone-input-disabled-radix": () => import("@/blocks/components/radix/phone-input/disabled"),
+  "phone-input-preset-value-radix": () => import("@/blocks/components/radix/phone-input/preset-value"),
+  "phone-input-error-state-radix": () => import("@/blocks/components/radix/phone-input/error-state"),
+  "phone-input-default-country-radix": () => import("@/blocks/components/radix/phone-input/default-country"),
+  "phone-input-read-only-radix": () => import("@/blocks/components/radix/phone-input/read-only"),
 }

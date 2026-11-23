@@ -3,4 +3,11 @@
 
 export const previews = {
   "tree-radix": () => import("@/blocks/components/radix/tree/default"),
+  "tree-standard-radix": () => import("@/blocks/components/radix/tree/standard"),
+  "tree-indent-lines-radix": () => import("@/blocks/components/radix/tree/indent-lines"),
+  "tree-folder-file-icons-radix": () => import("@/blocks/components/radix/tree/folder-file-icons"),
+  "tree-plus-minus-toggles-radix": () => import("@/blocks/components/radix/tree/plus-minus-toggles"),
+  "tree-file-explorer-radix": () => import("@/blocks/components/radix/tree/file-explorer"),
+  "tree-org-chart-radix": () => import("@/blocks/components/radix/tree/org-chart"),
+  "tree-permissions-radix": () => import("@/blocks/components/radix/tree/permissions"),
 }

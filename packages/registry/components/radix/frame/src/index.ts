@@ -3,4 +3,23 @@
 
 export const previews = {
   "frame-radix": () => import("@/blocks/components/radix/frame/default"),
+  "frame-standard-radix": () => import("@/blocks/components/radix/frame/standard"),
+  "frame-separated-panels-radix": () => import("@/blocks/components/radix/frame/separated-panels"),
+  "frame-stacked-panels-radix": () => import("@/blocks/components/radix/frame/stacked-panels"),
+  "frame-stacked-dense-radix": () => import("@/blocks/components/radix/frame/stacked-dense"),
+  "frame-collapsible-panels-radix": () => import("@/blocks/components/radix/frame/collapsible-panels"),
+  "frame-ghost-variant-radix": () => import("@/blocks/components/radix/frame/ghost-variant"),
+  "frame-dense-layout-radix": () => import("@/blocks/components/radix/frame/dense-layout"),
+  "frame-stacked-rows-radix": () => import("@/blocks/components/radix/frame/stacked-rows"),
+  "frame-extra-small-spacing-radix": () => import("@/blocks/components/radix/frame/extra-small-spacing"),
+  "frame-small-spacing-radix": () => import("@/blocks/components/radix/frame/small-spacing"),
+  "frame-default-spacing-radix": () => import("@/blocks/components/radix/frame/default-spacing"),
+  "frame-large-spacing-radix": () => import("@/blocks/components/radix/frame/large-spacing"),
+  "frame-small-radius-radix": () => import("@/blocks/components/radix/frame/small-radius"),
+  "frame-medium-radius-radix": () => import("@/blocks/components/radix/frame/medium-radius"),
+  "frame-large-radius-radix": () => import("@/blocks/components/radix/frame/large-radius"),
+  "frame-default-radius-radix": () => import("@/blocks/components/radix/frame/default-radius"),
+  "frame-extra-large-radius-radix": () => import("@/blocks/components/radix/frame/extra-large-radius"),
+  "frame-content-only-panels-radix": () => import("@/blocks/components/radix/frame/content-only-panels"),
+  "frame-stacked-content-only-radix": () => import("@/blocks/components/radix/frame/stacked-content-only"),
 }

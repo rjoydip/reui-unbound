@@ -3,4 +3,8 @@
 
 export const previews = {
   "navigation-menu-radix": () => import("@/blocks/components/radix/navigation-menu/default"),
+  "navigation-menu-standard-radix": () => import("@/blocks/components/radix/navigation-menu/standard"),
+  "navigation-menu-grid-layout-radix": () => import("@/blocks/components/radix/navigation-menu/grid-layout"),
+  "navigation-menu-with-icons-radix": () => import("@/blocks/components/radix/navigation-menu/with-icons"),
+  "navigation-menu-learn-more-button-radix": () => import("@/blocks/components/radix/navigation-menu/learn-more-button"),
 }

@@ -3,4 +3,10 @@
 
 export const previews = {
   "kbd-radix": () => import("@/blocks/components/radix/kbd/default"),
+  "kbd-standard-keys-radix": () => import("@/blocks/components/radix/kbd/standard-keys"),
+  "kbd-grouped-keys-radix": () => import("@/blocks/components/radix/kbd/grouped-keys"),
+  "kbd-keys-with-icons-radix": () => import("@/blocks/components/radix/kbd/keys-with-icons"),
+  "kbd-in-input-radix": () => import("@/blocks/components/radix/kbd/in-input"),
+  "kbd-in-tooltip-radix": () => import("@/blocks/components/radix/kbd/in-tooltip"),
+  "kbd-shortcut-list-radix": () => import("@/blocks/components/radix/kbd/shortcut-list"),
 }

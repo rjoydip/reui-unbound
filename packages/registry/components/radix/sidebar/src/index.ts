@@ -3,4 +3,9 @@
 
 export const previews = {
   "sidebar-radix": () => import("@/blocks/components/radix/sidebar/default"),
+  "sidebar-workspace-switcher-radix": () => import("@/blocks/components/radix/sidebar/workspace-switcher"),
+  "sidebar-icon-rail-radix": () => import("@/blocks/components/radix/sidebar/icon-rail"),
+  "sidebar-docs-navigation-radix": () => import("@/blocks/components/radix/sidebar/docs-navigation"),
+  "sidebar-inspector-panel-radix": () => import("@/blocks/components/radix/sidebar/inspector-panel"),
+  "sidebar-filter-loading-radix": () => import("@/blocks/components/radix/sidebar/filter-loading"),
 }

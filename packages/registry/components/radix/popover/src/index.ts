@@ -3,4 +3,15 @@
 
 export const previews = {
   "popover-radix": () => import("@/blocks/components/radix/popover/default"),
+  "popover-standard-radix": () => import("@/blocks/components/radix/popover/standard"),
+  "popover-opening-sides-radix": () => import("@/blocks/components/radix/popover/opening-sides"),
+  "popover-inline-form-radix": () => import("@/blocks/components/radix/popover/inline-form"),
+  "popover-alignment-radix": () => import("@/blocks/components/radix/popover/alignment"),
+  "popover-in-dialog-radix": () => import("@/blocks/components/radix/popover/in-dialog"),
+  "popover-profile-card-radix": () => import("@/blocks/components/radix/popover/profile-card"),
+  "popover-feature-pitch-radix": () => import("@/blocks/components/radix/popover/feature-pitch"),
+  "popover-media-preview-radix": () => import("@/blocks/components/radix/popover/media-preview"),
+  "popover-relative-time-radix": () => import("@/blocks/components/radix/popover/relative-time"),
+  "popover-controls-radix": () => import("@/blocks/components/radix/popover/controls"),
+  "popover-step-tour-radix": () => import("@/blocks/components/radix/popover/step-tour"),
 }

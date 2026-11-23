@@ -18,7 +18,10 @@
       "import": "./dist/index.js"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "lucide-react": "^1.74.0",
+    "date-fns": "^4.4.0"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"

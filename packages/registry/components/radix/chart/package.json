@@ -18,7 +18,11 @@
       "import": "./dist/index.js"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "recharts": "^3.8.0",
+    "cn": "^0.5.2",
+    "motion": "^14.14.0"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"

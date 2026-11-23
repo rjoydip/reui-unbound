@@ -3,4 +3,6 @@
 
 export const previews = {
   "scrollspy-radix": () => import("@/blocks/components/radix/scrollspy/default"),
+  "scrollspy-vertical-nav-radix": () => import("@/blocks/components/radix/scrollspy/vertical-nav"),
+  "scrollspy-horizontal-nav-radix": () => import("@/blocks/components/radix/scrollspy/horizontal-nav"),
 }

@@ -3,4 +3,15 @@
 
 export const previews = {
   "carousel-radix": () => import("@/blocks/components/radix/carousel/default"),
+  "carousel-standard-radix": () => import("@/blocks/components/radix/carousel/standard"),
+  "carousel-vertical-radix": () => import("@/blocks/components/radix/carousel/vertical"),
+  "carousel-multiple-items-radix": () => import("@/blocks/components/radix/carousel/multiple-items"),
+  "carousel-responsive-basis-radix": () => import("@/blocks/components/radix/carousel/responsive-basis"),
+  "carousel-autoplay-radix": () => import("@/blocks/components/radix/carousel/autoplay"),
+  "carousel-centered-alignment-radix": () => import("@/blocks/components/radix/carousel/centered-alignment"),
+  "carousel-custom-spacing-radix": () => import("@/blocks/components/radix/carousel/custom-spacing"),
+  "carousel-image-overlays-radix": () => import("@/blocks/components/radix/carousel/image-overlays"),
+  "carousel-thumbnail-strip-radix": () => import("@/blocks/components/radix/carousel/thumbnail-strip"),
+  "carousel-overlay-thumbnails-radix": () => import("@/blocks/components/radix/carousel/overlay-thumbnails"),
+  "carousel-dots-navigation-radix": () => import("@/blocks/components/radix/carousel/dots-navigation"),
 }

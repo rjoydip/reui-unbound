@@ -3,4 +3,12 @@
 
 export const previews = {
   "progress-radix": () => import("@/blocks/components/radix/progress/default"),
+  "progress-standard-radix": () => import("@/blocks/components/radix/progress/standard"),
+  "progress-small-radix": () => import("@/blocks/components/radix/progress/small"),
+  "progress-large-radix": () => import("@/blocks/components/radix/progress/large"),
+  "progress-status-messages-radix": () => import("@/blocks/components/radix/progress/status-messages"),
+  "progress-file-uploads-radix": () => import("@/blocks/components/radix/progress/file-uploads"),
+  "progress-with-slider-radix": () => import("@/blocks/components/radix/progress/with-slider"),
+  "progress-multi-step-radix": () => import("@/blocks/components/radix/progress/multi-step"),
+  "progress-custom-colors-radix": () => import("@/blocks/components/radix/progress/custom-colors"),
 }

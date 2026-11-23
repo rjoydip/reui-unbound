@@ -3,4 +3,10 @@
 
 export const previews = {
   "separator-radix": () => import("@/blocks/components/radix/separator/default"),
+  "separator-horizontal-radix": () => import("@/blocks/components/radix/separator/horizontal"),
+  "separator-vertical-radix": () => import("@/blocks/components/radix/separator/vertical"),
+  "separator-grouped-menu-items-radix": () => import("@/blocks/components/radix/separator/grouped-menu-items"),
+  "separator-list-rows-radix": () => import("@/blocks/components/radix/separator/list-rows"),
+  "separator-centered-label-radix": () => import("@/blocks/components/radix/separator/centered-label"),
+  "separator-order-summary-radix": () => import("@/blocks/components/radix/separator/order-summary"),
 }

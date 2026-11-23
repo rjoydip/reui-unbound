@@ -3,4 +3,18 @@
 
 export const previews = {
   "switch-radix": () => import("@/blocks/components/radix/switch/default"),
+  "switch-standard-radix": () => import("@/blocks/components/radix/switch/standard"),
+  "switch-with-description-radix": () => import("@/blocks/components/radix/switch/with-description"),
+  "switch-disabled-radix": () => import("@/blocks/components/radix/switch/disabled"),
+  "switch-sizes-radix": () => import("@/blocks/components/radix/switch/sizes"),
+  "switch-switch-group-radix": () => import("@/blocks/components/radix/switch/switch-group"),
+  "switch-card-separators-radix": () => import("@/blocks/components/radix/switch/card-separators"),
+  "switch-card-with-icons-radix": () => import("@/blocks/components/radix/switch/card-with-icons"),
+  "switch-in-frame-radix": () => import("@/blocks/components/radix/switch/in-frame"),
+  "switch-tooltip-info-radix": () => import("@/blocks/components/radix/switch/tooltip-info"),
+  "switch-with-badges-radix": () => import("@/blocks/components/radix/switch/with-badges"),
+  "switch-colored-radix": () => import("@/blocks/components/radix/switch/colored"),
+  "switch-destructive-confirm-radix": () => import("@/blocks/components/radix/switch/destructive-confirm"),
+  "switch-compact-table-radix": () => import("@/blocks/components/radix/switch/compact-table"),
+  "switch-card-grid-radix": () => import("@/blocks/components/radix/switch/card-grid"),
 }

@@ -3,4 +3,17 @@
 
 export const previews = {
   "time-picker-radix": () => import("@/blocks/components/radix/time-picker/default"),
+  "time-picker-inline-panel-radix": () => import("@/blocks/components/radix/time-picker/inline-panel"),
+  "time-picker-popover-radix": () => import("@/blocks/components/radix/time-picker/popover"),
+  "time-picker-typable-input-radix": () => import("@/blocks/components/radix/time-picker/typable-input"),
+  "time-picker-12-hour-seconds-radix": () => import("@/blocks/components/radix/time-picker/12-hour-seconds"),
+  "time-picker-hour-only-radix": () => import("@/blocks/components/radix/time-picker/hour-only"),
+  "time-picker-opening-hours-radix": () => import("@/blocks/components/radix/time-picker/opening-hours"),
+  "time-picker-unavailable-slots-radix": () => import("@/blocks/components/radix/time-picker/unavailable-slots"),
+  "time-picker-start-end-radix": () => import("@/blocks/components/radix/time-picker/start-end"),
+  "time-picker-time-zone-radix": () => import("@/blocks/components/radix/time-picker/time-zone"),
+  "time-picker-confirm-before-apply-radix": () => import("@/blocks/components/radix/time-picker/confirm-before-apply"),
+  "time-picker-localized-radix": () => import("@/blocks/components/radix/time-picker/localized"),
+  "time-picker-form-validation-radix": () => import("@/blocks/components/radix/time-picker/form-validation"),
+  "time-picker-date-time-radix": () => import("@/blocks/components/radix/time-picker/date-time"),
 }

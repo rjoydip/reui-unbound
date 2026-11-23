@@ -3,4 +3,19 @@
 
 export const previews = {
   "color-picker-radix": () => import("@/blocks/components/radix/color-picker/default"),
+  "color-picker-inline-panel-radix": () => import("@/blocks/components/radix/color-picker/inline-panel"),
+  "color-picker-popover-radix": () => import("@/blocks/components/radix/color-picker/popover"),
+  "color-picker-color-input-radix": () => import("@/blocks/components/radix/color-picker/color-input"),
+  "color-picker-opacity-radix": () => import("@/blocks/components/radix/color-picker/opacity"),
+  "color-picker-preset-swatches-radix": () => import("@/blocks/components/radix/color-picker/preset-swatches"),
+  "color-picker-oklch-token-radix": () => import("@/blocks/components/radix/color-picker/oklch-token"),
+  "color-picker-format-converter-radix": () => import("@/blocks/components/radix/color-picker/format-converter"),
+  "color-picker-hue-wheel-radix": () => import("@/blocks/components/radix/color-picker/hue-wheel"),
+  "color-picker-recent-colors-radix": () => import("@/blocks/components/radix/color-picker/recent-colors"),
+  "color-picker-text-highlight-radix": () => import("@/blocks/components/radix/color-picker/text-highlight"),
+  "color-picker-channel-sliders-radix": () => import("@/blocks/components/radix/color-picker/channel-sliders"),
+  "color-picker-design-inspector-radix": () => import("@/blocks/components/radix/color-picker/design-inspector"),
+  "color-picker-contrast-checker-radix": () => import("@/blocks/components/radix/color-picker/contrast-checker"),
+  "color-picker-brand-scale-radix": () => import("@/blocks/components/radix/color-picker/brand-scale"),
+  "color-picker-form-validation-radix": () => import("@/blocks/components/radix/color-picker/form-validation"),
 }

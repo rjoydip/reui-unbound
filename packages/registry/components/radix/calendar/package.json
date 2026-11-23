@@ -18,7 +18,12 @@
       "import": "./dist/index.js"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "date-fns": "^4.4.0",
+    "react-day-picker": "^10.0.2",
+    "cn": "^0.5.2",
+    "little-date": "^1.2.1"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"

@@ -3,4 +3,16 @@
 
 export const previews = {
   "filters-radix": () => import("@/blocks/components/radix/filters/default"),
+  "filters-full-filter-bar-radix": () => import("@/blocks/components/radix/filters/full-filter-bar"),
+  "filters-nested-attributes-radix": () => import("@/blocks/components/radix/filters/nested-attributes"),
+  "filters-status-badges-radix": () => import("@/blocks/components/radix/filters/status-badges"),
+  "filters-avatars-paging-radix": () => import("@/blocks/components/radix/filters/avatars-paging"),
+  "filters-date-editors-radix": () => import("@/blocks/components/radix/filters/date-editors"),
+  "filters-slider-editor-radix": () => import("@/blocks/components/radix/filters/slider-editor"),
+  "filters-table-filtering-radix": () => import("@/blocks/components/radix/filters/table-filtering"),
+  "filters-choice-controls-radix": () => import("@/blocks/components/radix/filters/choice-controls"),
+  "filters-typed-inputs-radix": () => import("@/blocks/components/radix/filters/typed-inputs"),
+  "filters-popover-builder-radix": () => import("@/blocks/components/radix/filters/popover-builder"),
+  "filters-inline-builder-radix": () => import("@/blocks/components/radix/filters/inline-builder"),
+  "filters-controlled-translated-radix": () => import("@/blocks/components/radix/filters/controlled-translated"),
 }

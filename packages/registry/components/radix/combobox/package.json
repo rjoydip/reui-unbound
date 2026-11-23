@@ -18,7 +18,12 @@
       "import": "./dist/index.js"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "sonner": "^2.0.8",
+    "@base-ui/react": "^1.9.0",
+    "cn": "^0.5.2",
+    "date-fns": "^4.4.0"
+  },
   "peerDependencies": {
     "react": ">=18",
     "react-dom": ">=18"

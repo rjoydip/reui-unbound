@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "cn": "^0.5.2",
-    "radix-ui": "^1.8.1"
+    "radix-ui": "^1.8.1",
+    "@headless-tree/core": "^1.8.0",
+    "@headless-tree/react": "^1.8.0"
   },
   "peerDependencies": {
     "react": ">=18",

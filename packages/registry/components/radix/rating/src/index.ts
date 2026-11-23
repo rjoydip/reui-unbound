@@ -3,4 +3,13 @@
 
 export const previews = {
   "rating-radix": () => import("@/blocks/components/radix/rating/default"),
+  "rating-standard-radix": () => import("@/blocks/components/radix/rating/standard"),
+  "rating-decimal-value-radix": () => import("@/blocks/components/radix/rating/decimal-value"),
+  "rating-show-value-radix": () => import("@/blocks/components/radix/rating/show-value"),
+  "rating-editable-radix": () => import("@/blocks/components/radix/rating/editable"),
+  "rating-sizes-radix": () => import("@/blocks/components/radix/rating/sizes"),
+  "rating-review-summary-radix": () => import("@/blocks/components/radix/rating/review-summary"),
+  "rating-half-star-input-radix": () => import("@/blocks/components/radix/rating/half-star-input"),
+  "rating-emoji-reactions-radix": () => import("@/blocks/components/radix/rating/emoji-reactions"),
+  "rating-review-text-radix": () => import("@/blocks/components/radix/rating/review-text"),
 }

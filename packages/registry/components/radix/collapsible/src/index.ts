@@ -3,4 +3,14 @@
 
 export const previews = {
   "collapsible-radix": () => import("@/blocks/components/radix/collapsible/default"),
+  "collapsible-standard-radix": () => import("@/blocks/components/radix/collapsible/standard"),
+  "collapsible-checkbox-settings-radix": () => import("@/blocks/components/radix/collapsible/checkbox-settings"),
+  "collapsible-animated-card-radix": () => import("@/blocks/components/radix/collapsible/animated-card"),
+  "collapsible-bottom-trigger-radix": () => import("@/blocks/components/radix/collapsible/bottom-trigger"),
+  "collapsible-form-fields-radix": () => import("@/blocks/components/radix/collapsible/form-fields"),
+  "collapsible-in-frame-radix": () => import("@/blocks/components/radix/collapsible/in-frame"),
+  "collapsible-nested-list-radix": () => import("@/blocks/components/radix/collapsible/nested-list"),
+  "collapsible-user-profile-radix": () => import("@/blocks/components/radix/collapsible/user-profile"),
+  "collapsible-multi-level-menu-radix": () => import("@/blocks/components/radix/collapsible/multi-level-menu"),
+  "collapsible-file-tree-radix": () => import("@/blocks/components/radix/collapsible/file-tree"),
 }

@@ -3,4 +3,8 @@
 
 export const previews = {
   "sheet-radix": () => import("@/blocks/components/radix/sheet/default"),
+  "sheet-profile-editor-radix": () => import("@/blocks/components/radix/sheet/profile-editor"),
+  "sheet-no-close-button-radix": () => import("@/blocks/components/radix/sheet/no-close-button"),
+  "sheet-any-side-radix": () => import("@/blocks/components/radix/sheet/any-side"),
+  "sheet-scrollable-content-radix": () => import("@/blocks/components/radix/sheet/scrollable-content"),
 }

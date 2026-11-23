@@ -3,4 +3,10 @@
 
 export const previews = {
   "icon-stack-radix": () => import("@/blocks/components/radix/icon-stack/default"),
+  "icon-stack-isometric-radix": () => import("@/blocks/components/radix/icon-stack/isometric"),
+  "icon-stack-sizes-radix": () => import("@/blocks/components/radix/icon-stack/sizes"),
+  "icon-stack-colors-radix": () => import("@/blocks/components/radix/icon-stack/colors"),
+  "icon-stack-badge-overlay-radix": () => import("@/blocks/components/radix/icon-stack/badge-overlay"),
+  "icon-stack-empty-state-radix": () => import("@/blocks/components/radix/icon-stack/empty-state"),
+  "icon-stack-item-media-radix": () => import("@/blocks/components/radix/icon-stack/item-media"),
 }

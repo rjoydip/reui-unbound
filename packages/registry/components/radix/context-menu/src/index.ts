@@ -3,4 +3,14 @@
 
 export const previews = {
   "context-menu-radix": () => import("@/blocks/components/radix/context-menu/default"),
+  "context-menu-standard-radix": () => import("@/blocks/components/radix/context-menu/standard"),
+  "context-menu-icons-radix": () => import("@/blocks/components/radix/context-menu/icons"),
+  "context-menu-shortcuts-radix": () => import("@/blocks/components/radix/context-menu/shortcuts"),
+  "context-menu-nested-submenus-radix": () => import("@/blocks/components/radix/context-menu/nested-submenus"),
+  "context-menu-labels-separators-radix": () => import("@/blocks/components/radix/context-menu/labels-separators"),
+  "context-menu-checkbox-items-radix": () => import("@/blocks/components/radix/context-menu/checkbox-items"),
+  "context-menu-radio-items-radix": () => import("@/blocks/components/radix/context-menu/radio-items"),
+  "context-menu-destructive-actions-radix": () => import("@/blocks/components/radix/context-menu/destructive-actions"),
+  "context-menu-alignment-sides-radix": () => import("@/blocks/components/radix/context-menu/alignment-sides"),
+  "context-menu-inside-dialog-radix": () => import("@/blocks/components/radix/context-menu/inside-dialog"),
 }

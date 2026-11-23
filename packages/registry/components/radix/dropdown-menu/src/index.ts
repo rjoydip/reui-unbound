@@ -3,4 +3,22 @@
 
 export const previews = {
   "dropdown-menu-radix": () => import("@/blocks/components/radix/dropdown-menu/default"),
+  "dropdown-menu-standard-radix": () => import("@/blocks/components/radix/dropdown-menu/standard"),
+  "dropdown-menu-opening-positions-radix": () => import("@/blocks/components/radix/dropdown-menu/opening-positions"),
+  "dropdown-menu-icons-radix": () => import("@/blocks/components/radix/dropdown-menu/icons"),
+  "dropdown-menu-keyboard-shortcuts-radix": () => import("@/blocks/components/radix/dropdown-menu/keyboard-shortcuts"),
+  "dropdown-menu-nested-submenus-radix": () => import("@/blocks/components/radix/dropdown-menu/nested-submenus"),
+  "dropdown-menu-checkboxes-radix": () => import("@/blocks/components/radix/dropdown-menu/checkboxes"),
+  "dropdown-menu-radio-groups-radix": () => import("@/blocks/components/radix/dropdown-menu/radio-groups"),
+  "dropdown-menu-all-item-types-radix": () => import("@/blocks/components/radix/dropdown-menu/all-item-types"),
+  "dropdown-menu-user-profile-radix": () => import("@/blocks/components/radix/dropdown-menu/user-profile"),
+  "dropdown-menu-workspace-switcher-radix": () => import("@/blocks/components/radix/dropdown-menu/workspace-switcher"),
+  "dropdown-menu-notification-feed-radix": () => import("@/blocks/components/radix/dropdown-menu/notification-feed"),
+  "dropdown-menu-record-actions-radix": () => import("@/blocks/components/radix/dropdown-menu/record-actions"),
+  "dropdown-menu-share-export-radix": () => import("@/blocks/components/radix/dropdown-menu/share-export"),
+  "dropdown-menu-theme-status-radix": () => import("@/blocks/components/radix/dropdown-menu/theme-status"),
+  "dropdown-menu-user-create-radix": () => import("@/blocks/components/radix/dropdown-menu/user-create"),
+  "dropdown-menu-quick-actions-radix": () => import("@/blocks/components/radix/dropdown-menu/quick-actions"),
+  "dropdown-menu-notification-items-radix": () => import("@/blocks/components/radix/dropdown-menu/notification-items"),
+  "dropdown-menu-ai-model-selector-radix": () => import("@/blocks/components/radix/dropdown-menu/ai-model-selector"),
 }

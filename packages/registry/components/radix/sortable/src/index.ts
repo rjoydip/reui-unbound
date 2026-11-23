@@ -3,4 +3,12 @@
 
 export const previews = {
   "sortable-radix": () => import("@/blocks/components/radix/sortable/default"),
+  "sortable-file-list-radix": () => import("@/blocks/components/radix/sortable/file-list"),
+  "sortable-grid-layout-radix": () => import("@/blocks/components/radix/sortable/grid-layout"),
+  "sortable-nested-layout-radix": () => import("@/blocks/components/radix/sortable/nested-layout"),
+  "sortable-playlist-radix": () => import("@/blocks/components/radix/sortable/playlist"),
+  "sortable-settings-priority-radix": () => import("@/blocks/components/radix/sortable/settings-priority"),
+  "sortable-sidebar-navigation-radix": () => import("@/blocks/components/radix/sortable/sidebar-navigation"),
+  "sortable-image-gallery-radix": () => import("@/blocks/components/radix/sortable/image-gallery"),
+  "sortable-persisted-order-radix": () => import("@/blocks/components/radix/sortable/persisted-order"),
 }

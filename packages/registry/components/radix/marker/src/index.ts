@@ -3,4 +3,10 @@
 
 export const previews = {
   "marker-radix": () => import("@/blocks/components/radix/marker/default"),
+  "marker-standard-variants-radix": () => import("@/blocks/components/radix/marker/standard-variants"),
+  "marker-tool-call-log-radix": () => import("@/blocks/components/radix/marker/tool-call-log"),
+  "marker-run-status-radix": () => import("@/blocks/components/radix/marker/run-status"),
+  "marker-phase-separators-radix": () => import("@/blocks/components/radix/marker/phase-separators"),
+  "marker-changed-files-radix": () => import("@/blocks/components/radix/marker/changed-files"),
+  "marker-links-action-radix": () => import("@/blocks/components/radix/marker/links-action"),
 }

@@ -3,4 +3,20 @@
 
 export const previews = {
   "tooltip-radix": () => import("@/blocks/components/radix/tooltip/default"),
+  "tooltip-standard-radix": () => import("@/blocks/components/radix/tooltip/standard"),
+  "tooltip-placements-radix": () => import("@/blocks/components/radix/tooltip/placements"),
+  "tooltip-icon-trigger-radix": () => import("@/blocks/components/radix/tooltip/icon-trigger"),
+  "tooltip-keyboard-shortcut-radix": () => import("@/blocks/components/radix/tooltip/keyboard-shortcut"),
+  "tooltip-bell-with-count-radix": () => import("@/blocks/components/radix/tooltip/bell-with-count"),
+  "tooltip-status-badges-radix": () => import("@/blocks/components/radix/tooltip/status-badges"),
+  "tooltip-verified-domain-radix": () => import("@/blocks/components/radix/tooltip/verified-domain"),
+  "tooltip-toolbar-actions-radix": () => import("@/blocks/components/radix/tooltip/toolbar-actions"),
+  "tooltip-warning-radix": () => import("@/blocks/components/radix/tooltip/warning"),
+  "tooltip-upgrade-prompt-radix": () => import("@/blocks/components/radix/tooltip/upgrade-prompt"),
+  "tooltip-avatar-role-badge-radix": () => import("@/blocks/components/radix/tooltip/avatar-role-badge"),
+  "tooltip-disabled-button-radix": () => import("@/blocks/components/radix/tooltip/disabled-button"),
+  "tooltip-online-status-radix": () => import("@/blocks/components/radix/tooltip/online-status"),
+  "tooltip-file-info-radix": () => import("@/blocks/components/radix/tooltip/file-info"),
+  "tooltip-label-badges-radix": () => import("@/blocks/components/radix/tooltip/label-badges"),
+  "tooltip-unread-bell-radix": () => import("@/blocks/components/radix/tooltip/unread-bell"),
 }
