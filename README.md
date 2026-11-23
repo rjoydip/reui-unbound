@@ -14,6 +14,7 @@ Open-source, AI-assisted implementations of advanced UI components and blocks in
 - **Accessible:** Keyboard navigation, ARIA attributes, and focus management baked in.
 - **61 Data Grid Blocks + 4 Application Shells:** Data-grid demos plus app shells from the reui.io Application catalog (Icon Rail Dashboard, Floating Sidebar Admin, Project Tracker Sidebar, Mail Inbox).
 - **305 Captured Application Blocks:** Every block at <https://reui.io/blocks/application> captured (light, dark, interaction) under `captures/application`.
+- **Catalogue-Style Navigation:** `/blocks` renders the blocks page with the 687-block group selector (Application, Data Grid, Charts, Solutions, AI & Agents, eCommerce, Marketing).
 - **87 Component Categories:** 1,365 Radix/Base and shadcn/ui previews with searchable navigation and flavor filtering.
 - **Composable Components:** Radix (shadcn) and Base UI flavors share one canonical implementation per module.
 - **shadcn Registry:** 65 block items plus 1,265 component items — 1,406+ items / 1,600+ install targets served at `/r/*.json`.

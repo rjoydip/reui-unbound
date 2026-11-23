@@ -372,6 +372,50 @@ export const APPLICATION_TOTAL = APPLICATION_CATEGORIES.reduce(
   0,
 )
 
+/** Top-level ReUI block groups shown in the sidebar selector and blocks page. */
+export interface BlockGroupEntry {
+  name: string
+  count: number
+  categories: string[]
+}
+
+export const BLOCK_GROUPS: BlockGroupEntry[] = [
+  {
+    name: "Application",
+    count: 305,
+    categories: APPLICATION_CATEGORIES.map((category) => category.name),
+  },
+  {
+    name: "Data Grid",
+    count: 70,
+    categories: CATEGORIES.map((category) => category.name),
+  },
+  { name: "Charts", count: 54, categories: [] },
+  { name: "Solutions", count: 82, categories: [] },
+  { name: "AI & Agents", count: 22, categories: [] },
+  { name: "eCommerce", count: 87, categories: [] },
+  { name: "Marketing", count: 67, categories: [] },
+]
+
+export const BLOCK_TOTAL = BLOCK_GROUPS.reduce(
+  (sum, group) => sum + group.count,
+  0,
+)
+
+export function categoriesInGroup(group: string | null): CategoryEntry[] {
+  if (!group) return [...APPLICATION_CATEGORIES, ...CATEGORIES]
+  if (group === "Application") return APPLICATION_CATEGORIES
+  if (group === "Data Grid") return CATEGORIES
+  return []
+}
+
+export function blocksInGroup(group: string | null): BlockEntry[] {
+  if (!group) return BLOCKS
+  const entry = BLOCK_GROUPS.find((item) => item.name === group)
+  if (!entry) return []
+  return BLOCKS.filter((block) => entry.categories.includes(block.category))
+}
+
 export const BLOCKS: BlockEntry[] = [
   {
     id: "data-grid-base-1",
