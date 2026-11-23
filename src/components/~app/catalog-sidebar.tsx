@@ -20,6 +20,8 @@ import { Input } from "@/components/ui/input"
 import { cn } from "cn"
 
 import {
+  APPLICATION_CATEGORIES,
+  APPLICATION_TOTAL,
   BLOCKS,
   CATEGORIES,
   DATA_GRID_TOTAL,
@@ -123,7 +125,8 @@ export function CatalogSidebar({
     )
   }, [query])
 
-  const allBlocksExpanded = CATEGORIES.every((category) =>
+  const allBlockFamilies = [...APPLICATION_CATEGORIES, ...CATEGORIES]
+  const allBlocksExpanded = allBlockFamilies.every((category) =>
     expanded.includes(category.name),
   )
   const allComponentsExpanded =
@@ -132,7 +135,7 @@ export function CatalogSidebar({
 
   function toggleAllCategories() {
     if (section === "blocks") {
-      for (const category of CATEGORIES) {
+      for (const category of allBlockFamilies) {
         const open = expanded.includes(category.name)
         if (allBlocksExpanded ? open : !open) {
           onToggleCategory(category.name)
@@ -231,7 +234,7 @@ export function CatalogSidebar({
           <span className="text-muted-foreground ml-auto text-xs tabular-nums">
             {section === "components"
               ? COMPONENT_ENTRIES.length
-              : DATA_GRID_TOTAL}
+              : DATA_GRID_TOTAL + APPLICATION_TOTAL}
           </span>
           {section === "blocks" && (
             <ChevronRightIcon className="text-muted-foreground size-4 rotate-90" />
@@ -270,78 +273,93 @@ export function CatalogSidebar({
       >
         {section === "blocks" ? (
           view === "all" ? (
-            CATEGORIES.map((category) => {
-              const blocks = blocksInCategory(category.name)
-              const isOpen = expanded.includes(category.name)
-              const isActive = category.name === current.category
+            <div className="flex flex-col gap-1">
+              {[
+                { label: "Application", items: APPLICATION_CATEGORIES },
+                { label: "Data Grid", items: CATEGORIES },
+              ].map((family) => (
+                <div key={family.label} className="flex flex-col gap-0.5">
+                  <div className="text-muted-foreground/70 mt-3 px-2 text-[11px] font-medium tracking-wide uppercase first:mt-0">
+                    {family.label}
+                  </div>
+                  {family.items.map((category) => {
+                    const blocks = blocksInCategory(category.name)
+                    const isOpen = expanded.includes(category.name)
+                    const isActive = category.name === current.category
 
-              return (
-                <div key={category.name}>
-                  <HoverCard openDelay={250} closeDelay={100}>
-                    <HoverCardTrigger asChild>
-                      <button
-                        type="button"
-                        aria-expanded={isOpen}
-                        onClick={() => {
-                          onSelectBlockCategory(category.name)
-                          onToggleCategory(category.name)
-                        }}
-                        className={cn(
-                          "flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm transition-colors",
-                          isActive && "bg-muted font-medium",
-                          !isActive && "hover:bg-muted/60",
-                        )}
-                      >
-                        <ChevronRightIcon
-                          className={cn(
-                            "text-muted-foreground size-3.5 shrink-0 transition-transform",
-                            isOpen && "rotate-90",
-                          )}
-                        />
-                        <span className="truncate">{category.name}</span>
-                        {blocks.length > 0 && (
-                          <span className="bg-info size-1.5 shrink-0 rounded-full" />
-                        )}
-                        <span className="text-muted-foreground ml-auto text-xs tabular-nums">
-                          {category.count}
-                        </span>
-                      </button>
-                    </HoverCardTrigger>
-                    <BlockCategoryHover category={category.name} blocks={blocks} />
-                  </HoverCard>
+                    return (
+                      <div key={category.name}>
+                        <HoverCard openDelay={250} closeDelay={100}>
+                          <HoverCardTrigger asChild>
+                            <button
+                              type="button"
+                              aria-expanded={isOpen}
+                              onClick={() => {
+                                onSelectBlockCategory(category.name)
+                                onToggleCategory(category.name)
+                              }}
+                              className={cn(
+                                "flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm transition-colors",
+                                isActive && "bg-muted font-medium",
+                                !isActive && "hover:bg-muted/60",
+                              )}
+                            >
+                              <ChevronRightIcon
+                                className={cn(
+                                  "text-muted-foreground size-3.5 shrink-0 transition-transform",
+                                  isOpen && "rotate-90",
+                                )}
+                              />
+                              <span className="truncate">{category.name}</span>
+                              {blocks.length > 0 && (
+                                <span className="bg-info size-1.5 shrink-0 rounded-full" />
+                              )}
+                              <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+                                {category.count}
+                              </span>
+                            </button>
+                          </HoverCardTrigger>
+                          <BlockCategoryHover
+                            category={category.name}
+                            blocks={blocks}
+                          />
+                        </HoverCard>
 
-                  {isOpen && (
-                    <div className="border-border/70 ml-4 flex flex-col gap-0.5 border-l py-1 pl-2">
-                      {blocks.map((block) => (
-                        <button
-                          key={block.id}
-                          type="button"
-                          onClick={() => onSelect(block)}
-                          className={cn(
-                            "truncate rounded-md px-2 py-1.5 text-left text-sm transition-colors",
-                            block.id === current.id
-                              ? "bg-accent text-accent-foreground font-medium"
-                              : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
-                          )}
-                        >
-                          {block.name}
-                        </button>
-                      ))}
-                      {blocks.length === 0 && (
-                        <span className="text-muted-foreground px-2 py-1.5 text-xs">
-                          No local examples yet
-                        </span>
-                      )}
-                      {category.count > blocks.length && (
-                        <span className="text-muted-foreground/70 px-2 py-1 text-[11px]">
-                          +{category.count - blocks.length} more in ReUI
-                        </span>
-                      )}
-                    </div>
-                  )}
+                        {isOpen && (
+                          <div className="border-border/70 ml-4 flex flex-col gap-0.5 border-l py-1 pl-2">
+                            {blocks.map((block) => (
+                              <button
+                                key={block.id}
+                                type="button"
+                                onClick={() => onSelect(block)}
+                                className={cn(
+                                  "truncate rounded-md px-2 py-1.5 text-left text-sm transition-colors",
+                                  block.id === current.id
+                                    ? "bg-accent text-accent-foreground font-medium"
+                                    : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
+                                )}
+                              >
+                                {block.name}
+                              </button>
+                            ))}
+                            {blocks.length === 0 && (
+                              <span className="text-muted-foreground px-2 py-1.5 text-xs">
+                                No local examples yet
+                              </span>
+                            )}
+                            {category.count > blocks.length && (
+                              <span className="text-muted-foreground/70 px-2 py-1 text-[11px]">
+                                +{category.count - blocks.length} more in ReUI
+                              </span>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
                 </div>
-              )
-            })
+              ))}
+            </div>
           ) : favoriteBlocks.length > 0 ? (
             <div className="flex flex-col gap-0.5">
               {favoriteBlocks.map((block) => (

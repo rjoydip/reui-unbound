@@ -137,7 +137,8 @@ const blockItems = []
 
 for (const part of blockParts) {
   const id = part.slice(0, part.indexOf('"'))
-  if (!id || id.startsWith("data-grid-") === false) continue
+  const group = part.match(/group:\s*"([^"]+)"/)?.[1] ?? "data-grid"
+  if (!id || (group !== "application" && !id.startsWith("data-grid-"))) continue
 
   const name = part.match(/name:\s*"([^"]+)"/)?.[1] ?? id
   const category = part.match(/category:\s*"([^"]+)"/)?.[1]
@@ -169,7 +170,7 @@ for (const part of blockParts) {
     name: itemName,
     type: "registry:block",
     title: name,
-    description: `${name} data grid block.`,
+    description: `${name} ${group === "application" ? "application" : "data grid"} block.`,
     ...(category ? { meta: { category, id } } : {}),
     dependencies: [...new Set([...declaredPackages, ...scanned.dependencies])].sort(),
     registryDependencies: [

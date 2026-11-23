@@ -361,7 +361,7 @@ write(
   "docs/README.md",
   `# Documentation
 
-- [Blocks](./blocks/README.md) — ${blocksRegistry.length} data-grid demo blocks.
+- [Blocks](./blocks/README.md) — ${blocksRegistry.length} application and data-grid demo blocks.
 - [Components](./components/README.md) — ${groups.size} component categories and ${reuiEntries.length + uiEntries.length} previews.
 
 Each page includes the preview link, install command, source files, and dependencies.

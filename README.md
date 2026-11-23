@@ -12,9 +12,14 @@ Open-source, AI-assisted implementations of advanced UI components and blocks in
 - **Copy-Paste Ready:** Designed to drop directly into existing Next.js or Vite + React projects.
 - **Type-Safe:** Strict TypeScript definitions with composable prop interfaces.
 - **Accessible:** Keyboard navigation, ARIA attributes, and focus management baked in.
-- **61 Data Grid Blocks:** Grouping, filtering, editing, expansion, drag & drop, columns and virtualization demos.
-- **87 Component Categories:** 110 Radix/Base and shadcn/ui previews with searchable navigation.
-- **Markdown Docs:** Generated docs for every block and component.
+- **61 Data Grid Blocks + 4 Application Shells:** Data-grid demos plus app shells from the reui.io Application catalog (Icon Rail Dashboard, Floating Sidebar Admin, Project Tracker Sidebar, Mail Inbox).
+- **305 Captured Application Blocks:** Every block at <https://reui.io/blocks/application> captured (light, dark, interaction) under `captures/application`.
+- **87 Component Categories:** 1,365 Radix/Base and shadcn/ui previews with searchable navigation and flavor filtering.
+- **Composable Components:** Radix (shadcn) and Base UI flavors share one canonical implementation per module.
+- **shadcn Registry:** 65 block items plus 1,265 component items — 1,406+ items / 1,600+ install targets served at `/r/*.json`.
+- **npm Packages:** Per-component (radix/base) and per-block-category packages under `packages/registry`.
+- **Markdown Docs:** Generated docs for every block and component, also rendered in-app under **Docs**.
+- **Tested:** Bun unit tests and Playwright E2E coverage for every block and component.
 
 ---
 
@@ -53,7 +58,19 @@ bun run dev
 
 ### 4. Using a component in your project
 
-Copy the target component from `src/components/reui-unbound/` into your own codebase and install any required peer dependencies listed at the top of the file:
+Install any item straight from the registry (recommended):
+
+```bash
+bunx --bun shadcn@latest add @reui-unbound/avatar-standard
+bunx --bun shadcn@latest add @reui-unbound/data-grid-base-1
+```
+
+Or copy the source from the repo and add the peer dependencies listed by the
+docs page:
+
+- Components: `src/components/kit/` (Radix flavor) and `src/components/kit/base/` (Base UI flavor), with shadcn primitives in `src/components/ui/`.
+- Previews: `src/blocks/components/<flavor>/<component>/<variant>.tsx`.
+- Blocks: `src/blocks/data-grid/<category>/<name>/`.
 
 ```bash
 # Example peer dependencies
@@ -67,8 +84,8 @@ bun add lucide-react
 
 Generated documentation lives in `docs/`:
 
-- [Blocks](docs/blocks/README.md) — 61 data-grid blocks.
-- [Components](docs/components/README.md) — 87 component categories and 110 previews.
+- [Blocks](docs/blocks/README.md) — 65 blocks: 61 data grid blocks across 9 categories and 4 application shells.
+- [Components](docs/components/README.md) — 87 categories, 1,365 previews, Radix and Base flavors.
 
 Each page includes the live preview link, install command, source files, dependencies and usage.
 The same Markdown files are rendered inside the app under **Docs**, using
@@ -80,30 +97,57 @@ bun run docs:generate
 
 ---
 
-## 📊 Component Status Tracker
+## 📊 Coverage
 
-| Category | Component / Block | Tier Target | Status | Notes |
-| :--- | :--- | :---: | :---: | :--- |
-| **Data Display** | Advanced Data Grid | PRO | 🟢 Ready | Supports sorting, filtering, & column pinning |
-| **Data Display** | Customer Balances (`data-grid-base-1`) | PRO | 🟢 Ready | Search, status filter, sorting, bulk actions, CSV export, view/edit sheets, delete with Undo |
-| **Data Display** | Invoice Manager (`data-grid-advanced-21`) | PRO | 🟢 Ready | Grouped receivables, collection timeline, expected pay days, customer sheet, CSV export |
-| **Data Display** | Lead Scoring Contacts (`data-grid-base-2`) | PRO | 🟢 Ready | Score bars, engagement trends, pinned rows, AND/OR filters, CRUD sheets |
-| **Data Display** | Deal Pipeline (`data-grid-base-3`) | PRO | 🟢 Ready | Pinned deals, faceted filters, progress rings, alert tooltips |
-| **Data Display** | Weekly Timesheet (`data-grid-base-4`) | PRO | 🟢 Ready | Per-day hours, work-kind bars, coverage totals, week picker |
-| **Data Display** | Support Tickets (`data-grid-base-5`) | PRO | 🟢 Ready | SLA countdown, queue/status filters, bulk owner assignment, close dialog |
-| **Data Display** | Team Members (`data-grid-base-6`) | PRO | 🟢 Ready | Avatar rows, role/billing/auth filters, hover actions |
-| **Data Display** | Project Modules (`data-grid-base-7`) | PRO | 🟢 Ready | Progress rings, date windows, favorites, sort and status filters |
-| **Data Display** | Cloud Rate Card (`data-grid-base-8`) | PRO | 🟢 Ready | Add/edit/duplicate with Undo, commit usage, totals footer, density popover |
-| **Data Display** | API Request Logs (`data-grid-base-9`) | PRO | 🟢 Ready | Status volume chart with zoom, release markers, request sheet and replay |
-| **Data Display** | Kanban Board | ULTIMATE | 🟡 In Progress | Drag-and-drop state sync pending |
-| **Navigation** | Command Palette (`Cmd+K`) | PRO | 🟢 Ready | Fuzzy search + keyboard shortcuts |
-| **Navigation** | Multi-Tenant Sidebar | PRO | ⚪ Planned | — |
-| **Forms** | Multi-Step Wizard | PRO | 🟢 Ready | Zod validation integrated |
-| **Forms** | Rich Tag / Mentions Input | ULTIMATE | ⚪ Planned | — |
-| **Overlays** | Nested Drawer / Sheet | PRO | 🟡 In Progress | Mobile gesture refinements |
-| **Dashboards** | Analytics Overview Block | ULTIMATE | ⚪ Planned | — |
+### Application blocks — 305 catalogued
 
-**Legend:** `🟢 Ready` · `🟡 In Progress` · `⚪ Planned`
+All 305 blocks from <https://reui.io/blocks/application> are catalogued with light,
+dark and interaction screenshots in `captures/application`. Implementations land
+in batches; the first four App Shell blocks are live.
+
+| Category | Blocks | Implemented |
+| :--- | :---: | :--- |
+| App Shell | 36 | Icon Rail Dashboard, Floating Sidebar Admin, Project Tracker Sidebar, Mail Inbox (4) |
+| Auth, Card, Dashboard, Dialog, Empty State, Event Calendar, Flow, Form, Gantt, Kanban Board, List, Navbar, Onboarding, Profile, Rich Text Editor, Schedule, Settings, Sheet, Stats, Timeline, Whiteboard, Wizard | 269 | Queued |
+
+### Data Grid blocks — 61
+
+| Category | Blocks |
+| :--- | :---: |
+| Advanced | 21 |
+| Base | 9 |
+| Columns | 5 |
+| Drag & Drop | 4 |
+| Editing | 6 |
+| Expansion | 3 |
+| Filtering | 4 |
+| Grouping | 7 |
+| Virtualization | 2 |
+
+Highlights: Customer Balances (`data-grid-base-1`), Invoice Manager (`data-grid-advanced-21`), Lead Scoring Contacts (`data-grid-base-2`), Deal Pipeline (`data-grid-base-3`), Support Tickets (`data-grid-base-5`), Cloud Rate Card (`data-grid-base-8`), API Request Logs (`data-grid-base-9`) — all with CSV export, faceted filters, bulk actions and detail sheets where applicable.
+
+### Components — 87 categories
+
+- **Radix/shadcn:** 87 categories, 1,265 previews.
+- **Base UI:** 23 categories with dedicated Base-flavor previews.
+- Catalog UI with search, flavor filter, hover previews and per-example install targets.
+
+---
+
+## 📸 Captures
+
+`captures/application` is the clean-room reference set for the application blocks:
+
+- `screenshots/<slug>-light.png`, `<slug>-dark.png`, `<slug>-interaction.png` — 915 images.
+- `sources/<slug>.md` — the agent-facing block page from reui.io.
+- `index.json` — title, category, source URL and interaction target per block.
+- `README.md` — index table across all 23 categories.
+
+Re-capture with:
+
+```bash
+node scripts/capture-preview.mjs   # Playwright bulk capture, resumable
+```
 
 ---
 
@@ -114,23 +158,35 @@ bun run docs:generate
 ```text
 src/
 ├── components/
-│   ├── ui/              # Base primitives (shadcn/ui compatible)
-│   └── reui/            # Reconstructed PRO & ULTIMATE components
-│       ├── data-grid/
-│       ├── command/
-│       └── wizard/
-├── blocks/              # Full page blocks, one folder per block
-│   └── data-grid-base-1/
-├── hooks/               # Reusable state, keyboard, and media hooks
-├── lib/                 # Utility functions (cn, formatters, etc.)
-└── app/                 # Interactive documentation & live previews
+│   ├── ui/                    # shadcn primitives (Radix)
+│   ├── kit/                    # ReUI components (Radix flavor)
+│   │   └── base/               # Base UI flavor + base/ui primitives
+│   └── ~app/                   # App chrome and shell
+├── blocks/
+│   ├── application/<category>/<slug>/  # Application blocks (app shells, auth, cards…)
+│   ├── data-grid/<category>/<name>/   # Demo blocks (index.tsx, data.ts, parts…)
+│   ├── components/<flavor>/<component>/<variant>.tsx
+│   ├── components/~catalog/    # Component catalogs
+│   └── ~internal/registry.tsx  # Runtime catalog + raw source imports
+├── hooks/                      # ReUI hooks
+├── lib/                        # Utilities (cn, formatters…)
+├── test/                       # Bun unit-test helpers
+└── App.tsx
+docs/                           # Generated Markdown docs
+packages/registry/              # Generated npm packages
+scripts/                        # Registry, docs and package generators
+e2e/                            # Playwright specs
 ```
+
+Internal implementation files inside component folders are prefixed `~`. Identical
+cross-flavor modules have one canonical copy; base files import it.
 
 ### Design Principles
 
 1. **Zero Lock-In:** Components avoid heavy custom abstractions. Everything relies on utility classes (`cn` + `tailwind-merge`) so styling overrides work predictably.
-2. **Compound Component Pattern:** Complex blocks (like the Data Grid and Multi-Step Wizard) expose composable sub-components rather than monolithic config props, making customization straightforward.
-3. **AI-Assisted Workflow:** Each component is scaffolded by analyzing layout structure, state transitions, and responsive breakpoints, followed by manual refactoring for accessibility, edge-case handling, and bundle efficiency.
+2. **Compound Component Pattern:** Complex blocks (like the Data Grid) expose composable sub-components rather than monolithic config props, making customization straightforward.
+3. **One Source of Truth:** Every source file belongs to one registry item; there are no duplicate implementations across flavors.
+4. **AI-Assisted Workflow:** Each component is scaffolded by analyzing layout structure, state transitions, and responsive breakpoints, followed by manual refactoring for accessibility, edge-case handling, and bundle efficiency.
 
 ---
 
@@ -139,9 +195,10 @@ src/
 The project exposes its blocks and components as a [shadcn registry](https://ui.shadcn.com/docs/registry).
 
 - `registry.json` is the registry entry point. It composes the source registries with `include`:
-  - `src/blocks/registry.json` — 61 `registry:block` items
-  - `src/components/reui-unbound/registry.json` — ReUI components and the shared icon placeholder
-  - `src/components/reui-unbound/base/registry.json` — Base-flavor ReUI components and primitives
+  - `src/blocks/registry.json` — 65 `registry:block` items (61 data grid + 4 application)
+  - `src/blocks/components/registry.json` — 1,265 component preview items
+  - `src/components/kit/registry.json` — ReUI components and the shared icon placeholder
+  - `src/components/kit/base/registry.json` — Base-flavor ReUI components and primitives
   - `src/hooks/registry.json` — hooks
 - Blocks use `registryDependencies` for UI/ReUI components instead of bundling duplicate copies, and `dependencies` for npm packages.
 - Every source file is owned by exactly one registry item, and every item install `target` is unique. The generator enforces both checks.
@@ -162,6 +219,50 @@ bunx --bun shadcn@latest add @reui-unbound/data-grid-base-1
 
 ---
 
+## 📤 npm Packages
+
+`packages/registry` mirrors ReUI's layout: one package per component, split by
+**radix / base** flavor, plus one package per block category.
+
+```text
+packages/registry/
+  components/radix/accordion/    # @reui-unbound/components-radix-accordion
+  components/base/autocomplete/  # @reui-unbound/components-base-autocomplete
+  blocks/advanced/               # @reui-unbound/data-grid-blocks-advanced
+```
+
+```bash
+bun run packages:build                 # registry:build + generate all packages
+bun run packages:build --version=0.2.0
+bun run packages:publish:dry           # list publishable packages
+bun run packages:publish               # publish all groups
+bun run packages:publish --filter=accordion
+```
+
+Each package's `src/index.ts` is a lazy loader map over the registry sources, and
+`prepublishOnly` builds `dist/` with Bun. See [`packages/registry/README.md`](packages/registry/README.md)
+for details.
+
+---
+
+## 🧪 Testing
+
+```bash
+bun test src          # unit tests (catalog, source URLs)
+bun run test:e2e      # Playwright, starts the dev server
+```
+
+The E2E suite covers the app shell, every block and every component preview.
+Typecheck and lint must pass too:
+
+```bash
+bun run typecheck
+bun run lint
+bun run build
+```
+
+---
+
 ## 🤝 Contributing
 
 Contributions, bug reports, and new component reconstructions are welcome:
@@ -169,7 +270,10 @@ Contributions, bug reports, and new component reconstructions are welcome:
 1. Fork the repository.
 2. Create a feature branch (`git checkout -b feat/component-name`).
 3. Ensure TypeScript checks and linting pass (`bun run lint && bun run typecheck`).
-4. Open a Pull Request with a brief demo GIF or screenshot.
+4. Update the registry/catalog and run `bun run docs:generate`; never hand-edit `docs/`.
+5. Open a Pull Request with a brief demo GIF or screenshot.
+
+Project skills live in `skills/` (`data-grid-block`, `registry`, `component-flavors`, `bun-cloudflare`).
 
 ---
 

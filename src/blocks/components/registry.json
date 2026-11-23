@@ -6313,7 +6313,7 @@
       "title": "Columns Mode Cascader",
       "description": "Columns Mode example for Cascader.",
       "dependencies": [
-        "Design\n * system",
+        "Design\r\n * system",
         "cn"
       ],
       "registryDependencies": [

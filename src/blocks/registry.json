@@ -2825,6 +2825,124 @@
           "target": "@components/blocks/data-grid-advanced-21/parts.tsx"
         }
       ]
+    },
+    {
+      "name": "app-shell-1",
+      "type": "registry:block",
+      "title": "Icon Rail Dashboard",
+      "description": "Icon Rail Dashboard application block.",
+      "meta": {
+        "category": "App Shell",
+        "id": "app-shell-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "breadcrumb",
+        "button",
+        "collapsible",
+        "dropdown-menu",
+        "sidebar"
+      ],
+      "files": [
+        {
+          "path": "application/app-shell/app-shell-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/app-shell-1/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "app-shell-2",
+      "type": "registry:block",
+      "title": "Floating Sidebar Admin",
+      "description": "Floating Sidebar Admin application block.",
+      "meta": {
+        "category": "App Shell",
+        "id": "app-shell-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "breadcrumb",
+        "collapsible",
+        "dialog",
+        "dropdown-menu",
+        "kbd",
+        "sidebar"
+      ],
+      "files": [
+        {
+          "path": "application/app-shell/app-shell-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/app-shell-2/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "app-shell-3",
+      "type": "registry:block",
+      "title": "Project Tracker Sidebar",
+      "description": "Project Tracker Sidebar application block.",
+      "meta": {
+        "category": "App Shell",
+        "id": "app-shell-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "breadcrumb",
+        "collapsible",
+        "dropdown-menu",
+        "kbd",
+        "sidebar"
+      ],
+      "files": [
+        {
+          "path": "application/app-shell/app-shell-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/app-shell-3/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "app-shell-4",
+      "type": "registry:block",
+      "title": "Mail Inbox",
+      "description": "Mail Inbox application block.",
+      "meta": {
+        "category": "App Shell",
+        "id": "app-shell-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "separator",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/app-shell/app-shell-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/app-shell-4/index.tsx"
+        }
+      ]
     }
   ]
 }

@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { InstallCommandPill } from "@/components/~app/install-command-pill"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import {
+  APPLICATION_CATEGORIES,
   BLOCKS,
   CATEGORIES,
   blocksInCategory,
@@ -93,15 +94,16 @@ export function BlocksOverview({
 
       <div className="mt-2 flex flex-wrap items-center gap-3">
         <h1 className="text-2xl font-semibold tracking-tight">
-          Data Grid Blocks
+          {category ? `${category} Blocks` : "All Blocks"}
         </h1>
         <span className="bg-muted text-muted-foreground rounded-full px-2 py-0.5 text-xs font-medium tabular-nums">
-          {BLOCKS.length}
+          {blocks.length}
         </span>
       </div>
       <p className="text-muted-foreground mt-1 max-w-3xl text-sm">
-        Production-ready data grid blocks for dashboards and internal tools.
-        Pick a category, then open a block to preview or copy its code.
+        Production-ready application and data grid blocks for dashboards and
+        internal tools. Pick a category, then open a block to preview or copy
+        its code.
       </p>
 
       <div className="mt-3 flex items-center gap-1.5 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -117,7 +119,7 @@ export function BlocksOverview({
         >
           All <span className="tabular-nums">{BLOCKS.length}</span>
         </button>
-        {CATEGORIES.map((entry) => (
+        {[...APPLICATION_CATEGORIES, ...CATEGORIES].map((entry) => (
           <button
             key={entry.name}
             type="button"

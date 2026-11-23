@@ -78,6 +78,11 @@ import ProspectDatabaseBlock from "@/blocks/data-grid/advanced/prospects"
 import ProjectBudgetBlock from "@/blocks/data-grid/advanced/project-budget"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
+import { AppShell1Block } from "@/blocks/application/app-shell/app-shell-1"
+import { AppShell2Block } from "@/blocks/application/app-shell/app-shell-2"
+import { AppShell3Block } from "@/blocks/application/app-shell/app-shell-3"
+import { AppShell4Block } from "@/blocks/application/app-shell/app-shell-4"
+
 import base1Index from "@/blocks/data-grid/base/customers/index.tsx?raw"
 import base1Parts from "@/blocks/data-grid/base/customers/parts.tsx?raw"
 import base1CustomerSheets from "@/blocks/data-grid/base/customers/customer-sheets.tsx?raw"
@@ -269,6 +274,11 @@ import adv21CustomerSheet from "@/blocks/data-grid/advanced/invoices/customer-sh
 import adv21Data from "@/blocks/data-grid/advanced/invoices/data.ts?raw"
 import adv21Parts from "@/blocks/data-grid/advanced/invoices/parts.tsx?raw"
 
+import appShell1Index from "@/blocks/application/app-shell/app-shell-1/index.tsx?raw"
+import appShell2Index from "@/blocks/application/app-shell/app-shell-2/index.tsx?raw"
+import appShell3Index from "@/blocks/application/app-shell/app-shell-3/index.tsx?raw"
+import appShell4Index from "@/blocks/application/app-shell/app-shell-4/index.tsx?raw"
+
 export type Lang = "tsx" | "typescript"
 
 export interface BlockFile {
@@ -284,6 +294,8 @@ export interface BlockEntry {
   name: string
   category: string
   stage: string
+  /** Block family. Defaults to `data-grid` when omitted. */
+  group?: "data-grid" | "application"
   href: string
   Component: () => React.JSX.Element
   files: BlockFile[]
@@ -301,6 +313,7 @@ export interface BlockEntry {
 export interface CategoryEntry {
   name: string
   count: number
+  group?: "data-grid" | "application"
 }
 
 const file = (name: string, code: string, lang: Lang = "tsx"): BlockFile => ({
@@ -322,7 +335,39 @@ export const CATEGORIES: CategoryEntry[] = [
   { name: "Virtualization", count: 2 },
 ]
 
+/** Application block categories from https://reui.io/blocks/application. */
+export const APPLICATION_CATEGORIES: CategoryEntry[] = [
+  { name: "App Shell", count: 36 },
+  { name: "Auth", count: 20 },
+  { name: "Card", count: 43 },
+  { name: "Dashboard", count: 8 },
+  { name: "Dialog", count: 15 },
+  { name: "Empty State", count: 14 },
+  { name: "Event Calendar", count: 6 },
+  { name: "Flow", count: 4 },
+  { name: "Form", count: 12 },
+  { name: "Gantt", count: 4 },
+  { name: "Kanban Board", count: 10 },
+  { name: "List", count: 11 },
+  { name: "Navbar", count: 13 },
+  { name: "Onboarding", count: 9 },
+  { name: "Profile", count: 10 },
+  { name: "Rich Text Editor", count: 5 },
+  { name: "Schedule", count: 10 },
+  { name: "Settings", count: 16 },
+  { name: "Sheet", count: 24 },
+  { name: "Stats", count: 17 },
+  { name: "Timeline", count: 9 },
+  { name: "Whiteboard", count: 2 },
+  { name: "Wizard", count: 7 },
+].map((entry) => ({ ...entry, group: "application" as const }))
+
 export const DATA_GRID_TOTAL = CATEGORIES.reduce(
+  (sum, category) => sum + category.count,
+  0,
+)
+
+export const APPLICATION_TOTAL = APPLICATION_CATEGORIES.reduce(
   (sum, category) => sum + category.count,
   0,
 )
@@ -1754,6 +1799,96 @@ export const BLOCKS: BlockEntry[] = [
       file("data.ts", adv21Data, "typescript"),
       file("parts.tsx", adv21Parts, "tsx"),
     ],
+  },
+  {
+    id: "app-shell-1",
+    name: "Icon Rail Dashboard",
+    category: "App Shell",
+    stage: "Application",
+    group: "application",
+    href: "https://reui.io/blocks/application/app-shell/app-shell-1",
+    installTarget: "@reui-unbound/app-shell-1",
+    dependencies: {
+      registry: [
+        "@reui-unbound/badge",
+        "avatar",
+        "breadcrumb",
+        "button",
+        "collapsible",
+        "dropdown-menu",
+        "sidebar",
+      ],
+      packages: ["cn", "lucide-react"],
+    },
+    Component: AppShell1Block,
+    files: [file("index.tsx", appShell1Index, "tsx")],
+  },
+  {
+    id: "app-shell-2",
+    name: "Floating Sidebar Admin",
+    category: "App Shell",
+    stage: "Application",
+    group: "application",
+    href: "https://reui.io/blocks/application/app-shell/app-shell-2",
+    installTarget: "@reui-unbound/app-shell-2",
+    dependencies: {
+      registry: [
+        "breadcrumb",
+        "collapsible",
+        "dialog",
+        "dropdown-menu",
+        "kbd",
+        "sidebar",
+      ],
+      packages: ["cn", "lucide-react"],
+    },
+    Component: AppShell2Block,
+    files: [file("index.tsx", appShell2Index, "tsx")],
+  },
+  {
+    id: "app-shell-3",
+    name: "Project Tracker Sidebar",
+    category: "App Shell",
+    stage: "Application",
+    group: "application",
+    href: "https://reui.io/blocks/application/app-shell/app-shell-3",
+    installTarget: "@reui-unbound/app-shell-3",
+    dependencies: {
+      registry: [
+        "@reui-unbound/badge",
+        "breadcrumb",
+        "collapsible",
+        "dropdown-menu",
+        "kbd",
+        "sidebar",
+      ],
+      packages: ["cn", "lucide-react"],
+    },
+    Component: AppShell3Block,
+    files: [file("index.tsx", appShell3Index, "tsx")],
+  },
+  {
+    id: "app-shell-4",
+    name: "Mail Inbox",
+    category: "App Shell",
+    stage: "Application",
+    group: "application",
+    href: "https://reui.io/blocks/application/app-shell/app-shell-4",
+    installTarget: "@reui-unbound/app-shell-4",
+    dependencies: {
+      registry: [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "separator",
+        "tabs",
+      ],
+      packages: ["cn", "lucide-react"],
+    },
+    Component: AppShell4Block,
+    files: [file("index.tsx", appShell4Index, "tsx")],
   },
 ]
 

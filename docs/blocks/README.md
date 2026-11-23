@@ -1,6 +1,6 @@
 # Blocks
 
-61 demo blocks, grouped by category.
+65 demo blocks, grouped by category.
 
 | Block | ID | Category | Preview |
 | --- | --- | --- | --- |
@@ -18,13 +18,16 @@
 | [Dispatch Layout](./data-grid-drag-drop-dispatch-layout.md) | `data-grid-drag-drop-3` | Drag & Drop | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-3) |
 | [Exception Queue](./data-grid-virtualization-exception-queue.md) | `data-grid-virtualization-2` | Virtualization | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-virtualization-2) |
 | [Factory Scorecard](./data-grid-advanced-factory-scorecard.md) | `data-grid-advanced-11` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-11) |
+| [Floating Sidebar Admin](./app-shell-2.md) | `app-shell-2` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-2) |
 | [Fourplex Pro Forma](./data-grid-advanced-fourplex-pro-forma.md) | `data-grid-advanced-7` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-7) |
 | [Freight & Cargo Services](./data-grid-advanced-freight-cargo-services.md) | `data-grid-advanced-12` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-12) |
 | [HR Scorecard](./data-grid-advanced-hr-scorecard.md) | `data-grid-advanced-13` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-13) |
+| [Icon Rail Dashboard](./app-shell-1.md) | `app-shell-1` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-1) |
 | [Invoices](./data-grid-advanced-invoices.md) | `data-grid-advanced-21` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-21) |
 | [Job Schedule](./data-grid-advanced-job-schedule.md) | `data-grid-advanced-18` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-18) |
 | [Labels](./data-grid-editing-labels.md) | `data-grid-editing-1` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-1) |
 | [Launch Runbook](./data-grid-editing-launch-runbook.md) | `data-grid-editing-5` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-5) |
+| [Mail Inbox](./app-shell-4.md) | `app-shell-4` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-4) |
 | [Members](./data-grid-base-members.md) | `data-grid-base-6` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-6) |
 | [Members](./data-grid-columns-members.md) | `data-grid-columns-4` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-4) |
 | [Modules](./data-grid-base-modules.md) | `data-grid-base-7` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-7) |
@@ -36,6 +39,7 @@
 | [Production Desk](./data-grid-grouping-production-desk.md) | `data-grid-grouping-6` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-6) |
 | [Project Budget](./data-grid-advanced-project-budget.md) | `data-grid-advanced-20` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-20) |
 | [Project Intake](./data-grid-editing-project-intake.md) | `data-grid-editing-3` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-3) |
+| [Project Tracker Sidebar](./app-shell-3.md) | `app-shell-3` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-3) |
 | [Prospects](./data-grid-advanced-prospects.md) | `data-grid-advanced-19` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-19) |
 | [Rate Card](./data-grid-base-rate-card.md) | `data-grid-base-8` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-8) |
 | [Release Reviews](./data-grid-expansion-release-reviews.md) | `data-grid-expansion-3` | Expansion | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-expansion-3) |
