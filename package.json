@@ -23,7 +23,9 @@
     "packages:build": "bun run registry:build && bun scripts/build-npm-packages.mjs",
     "packages:publish": "bun scripts/publish-npm-packages.mjs",
     "packages:publish:dry": "bun scripts/publish-npm-packages.mjs --dry-run",
-    "docs:generate": "bun run registry:generate && bun scripts/generate-docs.mjs"
+    "docs:generate": "bun run registry:generate && bun scripts/generate-docs.mjs && bun scripts/generate-tracker.mjs",
+    "blocks:sync": "bun scripts/sync-app-shell.mjs",
+    "tracker:generate": "bun scripts/generate-tracker.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",

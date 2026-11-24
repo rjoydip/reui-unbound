@@ -76,12 +76,9 @@ import SupportScorecardBlock from "@/blocks/data-grid/advanced/support-scorecard
 import JobScheduleBlock from "@/blocks/data-grid/advanced/job-schedule"
 import ProspectDatabaseBlock from "@/blocks/data-grid/advanced/prospects"
 import ProjectBudgetBlock from "@/blocks/data-grid/advanced/project-budget"
+import { APP_SHELL_BLOCKS } from "@/blocks/application/app-shell/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
-import { AppShell1Block } from "@/blocks/application/app-shell/app-shell-1"
-import { AppShell2Block } from "@/blocks/application/app-shell/app-shell-2"
-import { AppShell3Block } from "@/blocks/application/app-shell/app-shell-3"
-import { AppShell4Block } from "@/blocks/application/app-shell/app-shell-4"
 
 import base1Index from "@/blocks/data-grid/base/customers/index.tsx?raw"
 import base1Parts from "@/blocks/data-grid/base/customers/parts.tsx?raw"
@@ -274,10 +271,6 @@ import adv21CustomerSheet from "@/blocks/data-grid/advanced/invoices/customer-sh
 import adv21Data from "@/blocks/data-grid/advanced/invoices/data.ts?raw"
 import adv21Parts from "@/blocks/data-grid/advanced/invoices/parts.tsx?raw"
 
-import appShell1Index from "@/blocks/application/app-shell/app-shell-1/index.tsx?raw"
-import appShell2Index from "@/blocks/application/app-shell/app-shell-2/index.tsx?raw"
-import appShell3Index from "@/blocks/application/app-shell/app-shell-3/index.tsx?raw"
-import appShell4Index from "@/blocks/application/app-shell/app-shell-4/index.tsx?raw"
 
 export type Lang = "tsx" | "typescript"
 
@@ -1844,96 +1837,7 @@ export const BLOCKS: BlockEntry[] = [
       file("parts.tsx", adv21Parts, "tsx"),
     ],
   },
-  {
-    id: "app-shell-1",
-    name: "Icon Rail Dashboard",
-    category: "App Shell",
-    stage: "Application",
-    group: "application",
-    href: "https://reui.io/blocks/application/app-shell/app-shell-1",
-    installTarget: "@reui-unbound/app-shell-1",
-    dependencies: {
-      registry: [
-        "@reui-unbound/badge",
-        "avatar",
-        "breadcrumb",
-        "button",
-        "collapsible",
-        "dropdown-menu",
-        "sidebar",
-      ],
-      packages: ["cn", "lucide-react"],
-    },
-    Component: AppShell1Block,
-    files: [file("index.tsx", appShell1Index, "tsx")],
-  },
-  {
-    id: "app-shell-2",
-    name: "Floating Sidebar Admin",
-    category: "App Shell",
-    stage: "Application",
-    group: "application",
-    href: "https://reui.io/blocks/application/app-shell/app-shell-2",
-    installTarget: "@reui-unbound/app-shell-2",
-    dependencies: {
-      registry: [
-        "breadcrumb",
-        "collapsible",
-        "dialog",
-        "dropdown-menu",
-        "kbd",
-        "sidebar",
-      ],
-      packages: ["cn", "lucide-react"],
-    },
-    Component: AppShell2Block,
-    files: [file("index.tsx", appShell2Index, "tsx")],
-  },
-  {
-    id: "app-shell-3",
-    name: "Project Tracker Sidebar",
-    category: "App Shell",
-    stage: "Application",
-    group: "application",
-    href: "https://reui.io/blocks/application/app-shell/app-shell-3",
-    installTarget: "@reui-unbound/app-shell-3",
-    dependencies: {
-      registry: [
-        "@reui-unbound/badge",
-        "breadcrumb",
-        "collapsible",
-        "dropdown-menu",
-        "kbd",
-        "sidebar",
-      ],
-      packages: ["cn", "lucide-react"],
-    },
-    Component: AppShell3Block,
-    files: [file("index.tsx", appShell3Index, "tsx")],
-  },
-  {
-    id: "app-shell-4",
-    name: "Mail Inbox",
-    category: "App Shell",
-    stage: "Application",
-    group: "application",
-    href: "https://reui.io/blocks/application/app-shell/app-shell-4",
-    installTarget: "@reui-unbound/app-shell-4",
-    dependencies: {
-      registry: [
-        "@reui-unbound/badge",
-        "avatar",
-        "button",
-        "dropdown-menu",
-        "input",
-        "separator",
-        "tabs",
-      ],
-      packages: ["cn", "lucide-react"],
-    },
-    Component: AppShell4Block,
-    files: [file("index.tsx", appShell4Index, "tsx")],
-  },
+  ...APP_SHELL_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {

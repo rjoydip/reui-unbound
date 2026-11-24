@@ -1,6 +1,6 @@
 ---
 title: Mail Inbox
-description: Mail Inbox application block.
+description: Mail Inbox app-shell block.
 category: App Shell
 ---
 

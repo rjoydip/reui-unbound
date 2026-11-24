@@ -1,7 +1,8 @@
 # reui-unbound — Agent Guide
 
-A Vite + React 19 + TypeScript demo browser for ReUI data-grid blocks, plus a
-shadcn-compatible registry that publishes the blocks, ReUI components and hooks.
+A Vite + React 19 + TypeScript demo browser for ReUI data-grid and application
+blocks, plus a shadcn-compatible registry that publishes the blocks, ReUI
+components and hooks.
 
 ## Runtime
 
@@ -25,13 +26,23 @@ bun run registry:generate
 bun run registry:verify
 bun run registry:build
 
-bun run docs:generate  # regenerate docs/ from the registries and catalog
+bun run blocks:sync      # regenerate src/blocks/application/app-shell/~blocks.tsx
+bun run tracker:generate # regenerate docs/application-blocks.md
+bun run docs:generate    # regenerate docs/ (includes the tracker)
+
+# captures (reui.io reference material, gitignored)
+node scripts/capture-preview.mjs     # all application blocks (light/dark/interaction)
+node scripts/capture-app-shell.mjs   # App Shell category deep interaction captures
 ```
 
 ## Structure
 
 - `src/blocks/data-grid/<category>/<name>/` — one folder per demo block (`index.tsx`, `data.ts`, optional `parts.tsx`, sheets, etc.).
+- `src/blocks/application/<category>/<slug>/index.tsx` — clean-room ports of reui.io application blocks (`app-shell-1`, `auth-3`, …), one folder per block, default export `<PascalSlug>Block`.
+- `src/blocks/application/~manifest.json` — all 305 application blocks (slug, category, title, description, URL) from the capture catalogue.
+- `src/blocks/application/app-shell/~blocks.tsx` — generated `APP_SHELL_BLOCKS` entries; run `bun run blocks:sync` after adding/removing App Shell folders. Never hand-edit.
 - `src/blocks/~internal/registry.tsx` — runtime catalog: metadata, dependencies, raw source imports.
+- `docs/application-blocks.md` — generated port tracker (captured vs implemented) for the 305 application blocks.
 - `src/blocks/components/radix/<component>/<variant>.tsx` and `src/blocks/components/base/<component>/default.tsx` — one preview per component variant.
 - `src/blocks/components/~catalog/{catalog,ui-catalog}.tsx` — component catalogs (`kind: "component"`).
 - `src/blocks/registry.json` — generated shadcn block items. Do not hand-edit.
@@ -63,16 +74,36 @@ bun run docs:generate  # regenerate docs/ from the registries and catalog
 
 - Imports use `@/` aliases. Use `cn` from the `cn` package.
 - Use design tokens (`bg-background`, `text-muted-foreground`, …); support light and dark.
-- Reuse existing `src/components/ui` and `src/components/reui` components before writing new ones.
+- Reuse existing `src/components/ui` and `src/components/kit` components before writing new ones.
 - Keep demo data static and deterministic; no backend.
 - One source file belongs to one registry item; no duplicate implementations across flavors.
 - Blocks: keep tables responsive, compact controls, matching header/footer surfaces.
 - Typecheck, lint and build must pass before finishing.
 - Docs are generated; update the registry/catalog and run `bun run docs:generate` instead of editing `docs/` by hand.
 
+## Application blocks
+
+Reui.io Application block source is licence-gated ("Unlock the source"), so
+ports are clean-room implementations from the captured previews.
+
+1. Capture: `node scripts/capture-preview.mjs` (all 305) and
+   `node scripts/capture-app-shell.mjs` (deep interaction states per App Shell block).
+   Screenshots and `sources/<slug>.md` land in `captures/application` (gitignored).
+2. Implement `src/blocks/application/<category>/<slug>/index.tsx` with a default
+   export named `<PascalSlug>Block` (e.g. `AppShell7Block`), reusing
+   `src/components/ui` and `src/components/kit` components and design tokens.
+3. Run `bun run blocks:sync` for the App Shell category (regenerates
+   `~blocks.tsx`), then `bun run registry:generate`.
+4. Run `bun run docs:generate` to refresh docs and the tracker, and confirm
+   `bun run typecheck && bun run lint && bun run build`.
+
+The sidebar group selector and `/blocks` page read `BLOCK_GROUPS` in
+`src/blocks/~internal/registry.tsx`; categories with no implemented blocks show
+a "No local examples" state.
+
 ## Registry rules
 
-- Add metadata and raw file imports in `src/blocks/registry.tsx`.
+- Add metadata and raw file imports in `src/blocks/~internal/registry.tsx`; application folders are scanned automatically by `generate-registry.mjs`.
 - `bun run registry:generate` regenerates the manifests; `bun run registry:build` also runs `shadcn build` and verification.
 - Block items use `registryDependencies` for components (`@reui-unbound/*` or bare shadcn names) and `dependencies` for npm packages.
 - `@reui-unbound` namespace is configured in `components.json`; generated payloads live in `public/r` (gitignored).

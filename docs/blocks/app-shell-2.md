@@ -1,6 +1,6 @@
 ---
 title: Floating Sidebar Admin
-description: Floating Sidebar Admin application block.
+description: Floating Sidebar Admin app-shell block.
 category: App Shell
 ---
 
@@ -32,7 +32,6 @@ export default function Page() {
 
 ## Dependencies
 
-- `cn`
 - `lucide-react`
 
 ## Registry dependencies

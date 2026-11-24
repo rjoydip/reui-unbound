@@ -1,6 +1,6 @@
 ---
 title: Icon Rail Dashboard
-description: Icon Rail Dashboard application block.
+description: Icon Rail Dashboard app-shell block.
 category: App Shell
 ---
 
@@ -40,7 +40,6 @@ export default function Page() {
 - `@reui-unbound/badge`
 - `avatar`
 - `breadcrumb`
-- `button`
 - `collapsible`
 - `dropdown-menu`
 - `sidebar`

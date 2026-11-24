@@ -400,3 +400,5 @@ export function AppShell4Block() {
     </div>
   )
 }
+
+export default AppShell4Block

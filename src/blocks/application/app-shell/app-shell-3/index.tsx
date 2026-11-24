@@ -278,3 +278,5 @@ export function AppShell3Block() {
     </SidebarProvider>
   )
 }
+
+export default AppShell3Block

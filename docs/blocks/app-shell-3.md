@@ -1,6 +1,6 @@
 ---
 title: Project Tracker Sidebar
-description: Project Tracker Sidebar application block.
+description: Project Tracker Sidebar app-shell block.
 category: App Shell
 ---
 

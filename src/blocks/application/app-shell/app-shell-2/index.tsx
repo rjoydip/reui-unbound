@@ -345,3 +345,5 @@ export function AppShell2Block() {
     </SidebarProvider>
   )
 }
+
+export default AppShell2Block
