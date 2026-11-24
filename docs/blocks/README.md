@@ -1,6 +1,6 @@
 # Blocks
 
-197 demo blocks, grouped by category.
+203 demo blocks, grouped by category.
 
 | Block | ID | Category | Preview |
 | --- | --- | --- | --- |
@@ -25,6 +25,7 @@
 | [Centered Magic Link](./auth-centered-magic-link.md) | `auth-15` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-15) |
 | [Centered Method Picker](./auth-centered-method-picker.md) | `auth-17` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-17) |
 | [Centered Password Login](./auth-centered-password-login.md) | `auth-20` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-20) |
+| [Clinic Chair Board](./event-calendar-clinic-chair-board.md) | `event-calendar-5` | Event Calendar | [Preview](https://reui-unbound.pages.dev/?preview=event-calendar-5) |
 | [Cloud Storage Connect](./empty-state-cloud-storage-connect.md) | `empty-state-13` | Empty State | [Preview](https://reui-unbound.pages.dev/?preview=empty-state-13) |
 | [Community Feed App](./app-shell-community-feed-app.md) | `app-shell-13` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-13) |
 | [Companies](./data-grid-columns-companies.md) | `data-grid-columns-5` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-5) |
@@ -70,6 +71,7 @@
 | [Freight & Cargo Services](./data-grid-advanced-freight-cargo-services.md) | `data-grid-advanced-12` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-12) |
 | [Fulfillment Exceptions](./dashboard-fulfillment-exceptions.md) | `dashboard-1` | Dashboard | [Preview](https://reui-unbound.pages.dev/?preview=dashboard-1) |
 | [Help Center Guides](./card-help-center-guides.md) | `card-20` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-20) |
+| [Hotel Front Desk](./event-calendar-hotel-front-desk.md) | `event-calendar-3` | Event Calendar | [Preview](https://reui-unbound.pages.dev/?preview=event-calendar-3) |
 | [HR Scorecard](./data-grid-advanced-hr-scorecard.md) | `data-grid-advanced-13` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-13) |
 | [Icon Rail Dashboard](./app-shell-icon-rail-dashboard.md) | `app-shell-1` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-1) |
 | [Installed Integration](./card-installed-integration.md) | `card-16` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-16) |
@@ -89,6 +91,7 @@
 | [Labels](./data-grid-editing-labels.md) | `data-grid-editing-1` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-1) |
 | [Launch Checklist](./dialog-launch-checklist.md) | `dialog-4` | Dialog | [Preview](https://reui-unbound.pages.dev/?preview=dialog-4) |
 | [Launch Runbook](./data-grid-editing-launch-runbook.md) | `data-grid-editing-5` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-5) |
+| [Lending Deal Calendar](./event-calendar-lending-deal-calendar.md) | `event-calendar-6` | Event Calendar | [Preview](https://reui-unbound.pages.dev/?preview=event-calendar-6) |
 | [Linked Metric Tiles](./card-linked-metric-tiles.md) | `card-26` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-26) |
 | [Logistics KPI Tiles](./card-logistics-kpi-tiles.md) | `card-30` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-30) |
 | [Magic Link Card](./auth-magic-link-card.md) | `auth-7` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-7) |
@@ -98,6 +101,7 @@
 | [Meeting Agenda Cards](./card-meeting-agenda-cards.md) | `card-15` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-15) |
 | [Members](./data-grid-base-members.md) | `data-grid-base-6` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-6) |
 | [Members](./data-grid-columns-members.md) | `data-grid-columns-4` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-4) |
+| [Mini Month Calendar](./event-calendar-mini-month-calendar.md) | `event-calendar-2` | Event Calendar | [Preview](https://reui-unbound.pages.dev/?preview=event-calendar-2) |
 | [Mission Control](./app-shell-mission-control.md) | `app-shell-25` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-25) |
 | [Model Picker Chat](./app-shell-model-picker-chat.md) | `app-shell-17` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-17) |
 | [Module Tracker](./dashboard-module-tracker.md) | `dashboard-2` | Dashboard | [Preview](https://reui-unbound.pages.dev/?preview=dashboard-2) |
@@ -114,6 +118,7 @@
 | [Partner Showcase](./card-partner-showcase.md) | `card-13` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-13) |
 | [Per-Person Invite](./dialog-per-person-invite.md) | `dialog-8` | Dialog | [Preview](https://reui-unbound.pages.dev/?preview=dialog-8) |
 | [Period Trend KPIs](./card-period-trend-kpis.md) | `card-34` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-34) |
+| [Personal Calendar](./event-calendar-personal-calendar.md) | `event-calendar-1` | Event Calendar | [Preview](https://reui-unbound.pages.dev/?preview=event-calendar-1) |
 | [Photo Backdrop Login](./auth-photo-backdrop-login.md) | `auth-8` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-8) |
 | [Photo Magic Link](./auth-photo-magic-link.md) | `auth-13` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-13) |
 | [Photo Split Login](./auth-photo-split-login.md) | `auth-1` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-1) |
@@ -161,6 +166,7 @@
 | [Settings Setup Tabs](./empty-state-settings-setup-tabs.md) | `empty-state-8` | Empty State | [Preview](https://reui-unbound.pages.dev/?preview=empty-state-8) |
 | [Shared Drive](./data-grid-drag-drop-shared-drive.md) | `data-grid-drag-drop-4` | Drag & Drop | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-4) |
 | [Shared KPI Panels](./card-shared-kpi-panels.md) | `card-28` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-28) |
+| [Shift Roster](./event-calendar-shift-roster.md) | `event-calendar-4` | Event Calendar | [Preview](https://reui-unbound.pages.dev/?preview=event-calendar-4) |
 | [Shortcut Launcher](./card-shortcut-launcher.md) | `card-17` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-17) |
 | [Social Proof Login](./auth-social-proof-login.md) | `auth-18` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-18) |
 | [Source Link Cards](./card-source-link-cards.md) | `card-18` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-18) |

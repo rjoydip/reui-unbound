@@ -21,6 +21,7 @@ const categoryNames = {
   dashboard: "Dashboard",
   dialog: "Dialog",
   "empty-state": "Empty State",
+  "event-calendar": "Event Calendar",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",

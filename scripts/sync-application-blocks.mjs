@@ -15,6 +15,7 @@ const CATEGORIES = [
   { folder: "dashboard", name: "Dashboard", constName: "DASHBOARD_BLOCKS" },
   { folder: "dialog", name: "Dialog", constName: "DIALOG_BLOCKS" },
   { folder: "empty-state", name: "Empty State", constName: "EMPTY_STATE_BLOCKS" },
+  { folder: "event-calendar", name: "Event Calendar", constName: "EVENT_CALENDAR_BLOCKS" },
 ]
 
 function packageName(specifier) {

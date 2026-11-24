@@ -82,6 +82,7 @@ import { CARD_BLOCKS } from "@/blocks/application/card/~blocks"
 import { DASHBOARD_BLOCKS } from "@/blocks/application/dashboard/~blocks"
 import { DIALOG_BLOCKS } from "@/blocks/application/dialog/~blocks"
 import { EMPTY_STATE_BLOCKS } from "@/blocks/application/empty-state/~blocks"
+import { EVENT_CALENDAR_BLOCKS } from "@/blocks/application/event-calendar/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
 
@@ -1848,6 +1849,7 @@ export const BLOCKS: BlockEntry[] = [
   ...DASHBOARD_BLOCKS,
   ...DIALOG_BLOCKS,
   ...EMPTY_STATE_BLOCKS,
+  ...EVENT_CALENDAR_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {
