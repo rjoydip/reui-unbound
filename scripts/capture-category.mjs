@@ -24,6 +24,7 @@ const categoryNames = {
   "event-calendar": "Event Calendar",
   flow: "Flow",
   form: "Form",
+  gantt: "Gantt",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",

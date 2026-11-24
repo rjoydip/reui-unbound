@@ -1,12 +1,13 @@
 # Blocks
 
-219 demo blocks, grouped by category.
+223 demo blocks, grouped by category.
 
 | Block | ID | Category | Preview |
 | --- | --- | --- | --- |
 | [Access Cohort](./data-grid-grouping-access-cohort.md) | `data-grid-grouping-3` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-3) |
 | [Account Balances](./card-account-balances.md) | `card-25` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-25) |
 | [Account Settings Modal](./dialog-account-settings-modal.md) | `dialog-10` | Dialog | [Preview](https://reui-unbound.pages.dev/?preview=dialog-10) |
+| [Agent Playbook](./gantt-agent-playbook.md) | `gantt-3` | Gantt | [Preview](https://reui-unbound.pages.dev/?preview=gantt-3) |
 | [AI Agent Builder](./flow-ai-agent-builder.md) | `flow-2` | Flow | [Preview](https://reui-unbound.pages.dev/?preview=flow-2) |
 | [AI Agents Console](./app-shell-ai-agents-console.md) | `app-shell-10` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-10) |
 | [API Keys Manager](./form-api-keys-manager.md) | `form-8` | Form | [Preview](https://reui-unbound.pages.dev/?preview=form-8) |
@@ -146,6 +147,7 @@
 | [Project Deadline Cards](./card-project-deadline-cards.md) | `card-21` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-21) |
 | [Project Intake](./data-grid-editing-project-intake.md) | `data-grid-editing-3` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-3) |
 | [Project Templates](./dialog-project-templates.md) | `dialog-13` | Dialog | [Preview](https://reui-unbound.pages.dev/?preview=dialog-13) |
+| [Project Timeline](./gantt-project-timeline.md) | `gantt-1` | Gantt | [Preview](https://reui-unbound.pages.dev/?preview=gantt-1) |
 | [Project Tracker Sidebar](./app-shell-project-tracker-sidebar.md) | `app-shell-3` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-3) |
 | [Project With Cover](./dialog-project-with-cover.md) | `dialog-9` | Dialog | [Preview](https://reui-unbound.pages.dev/?preview=dialog-9) |
 | [Prospects](./data-grid-advanced-prospects.md) | `data-grid-advanced-19` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-19) |
@@ -161,6 +163,7 @@
 | [Reporting Lines](./data-grid-grouping-reporting-lines.md) | `data-grid-grouping-5` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-5) |
 | [Reports Workspace](./empty-state-reports-workspace.md) | `empty-state-4` | Empty State | [Preview](https://reui-unbound.pages.dev/?preview=empty-state-4) |
 | [Resizable AI Chat](./app-shell-resizable-ai-chat.md) | `app-shell-21` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-21) |
+| [Resource Capacity](./gantt-resource-capacity.md) | `gantt-4` | Gantt | [Preview](https://reui-unbound.pages.dev/?preview=gantt-4) |
 | [Resource Hub Cards](./card-resource-hub-cards.md) | `card-39` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-39) |
 | [Retail Revenue](./dashboard-retail-revenue.md) | `dashboard-7` | Dashboard | [Preview](https://reui-unbound.pages.dev/?preview=dashboard-7) |
 | [Revenue By Region](./data-grid-grouping-revenue-by-region.md) | `data-grid-grouping-2` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-2) |
@@ -201,6 +204,7 @@
 | [Team Presence Workspace](./app-shell-team-presence-workspace.md) | `app-shell-9` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-9) |
 | [Team Project Switcher](./app-shell-team-project-switcher.md) | `app-shell-23` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-23) |
 | [Technician Capacity](./data-grid-advanced-technician-capacity.md) | `data-grid-advanced-10` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-10) |
+| [Technician Dispatch](./gantt-technician-dispatch.md) | `gantt-2` | Gantt | [Preview](https://reui-unbound.pages.dev/?preview=gantt-2) |
 | [Template Library](./dialog-template-library.md) | `dialog-5` | Dialog | [Preview](https://reui-unbound.pages.dev/?preview=dialog-5) |
 | [Ticket Properties](./form-ticket-properties.md) | `form-7` | Form | [Preview](https://reui-unbound.pages.dev/?preview=form-7) |
 | [Timesheets](./data-grid-base-timesheets.md) | `data-grid-base-4` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-4) |

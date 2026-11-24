@@ -7310,6 +7310,151 @@
           "target": "@components/blocks/form-role-permission-invite/index.tsx"
         }
       ]
+    },
+    {
+      "name": "gantt-project-timeline",
+      "type": "registry:block",
+      "title": "Project Timeline",
+      "description": "Project Timeline gantt block.",
+      "meta": {
+        "category": "Gantt",
+        "id": "gantt-1"
+      },
+      "dependencies": [
+        "cn",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/gantt",
+        "avatar",
+        "button",
+        "button-group",
+        "card",
+        "checkbox",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/gantt/gantt-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/gantt-project-timeline/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "gantt-technician-dispatch",
+      "type": "registry:block",
+      "title": "Technician Dispatch",
+      "description": "Technician Dispatch gantt block.",
+      "meta": {
+        "category": "Gantt",
+        "id": "gantt-2"
+      },
+      "dependencies": [
+        "cn",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/gantt",
+        "avatar",
+        "button",
+        "card",
+        "checkbox",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "select",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/gantt/gantt-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/gantt-technician-dispatch/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "gantt-agent-playbook",
+      "type": "registry:block",
+      "title": "Agent Playbook",
+      "description": "Agent Playbook gantt block.",
+      "meta": {
+        "category": "Gantt",
+        "id": "gantt-3"
+      },
+      "dependencies": [
+        "cn",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/gantt",
+        "button",
+        "card",
+        "checkbox",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "select",
+        "switch",
+        "tabs",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/gantt/gantt-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/gantt-agent-playbook/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "gantt-resource-capacity",
+      "type": "registry:block",
+      "title": "Resource Capacity",
+      "description": "Resource Capacity gantt block.",
+      "meta": {
+        "category": "Gantt",
+        "id": "gantt-4"
+      },
+      "dependencies": [
+        "cn",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/gantt",
+        "avatar",
+        "button",
+        "card",
+        "checkbox",
+        "context-menu",
+        "input",
+        "popover",
+        "select",
+        "sheet",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/gantt/gantt-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/gantt-resource-capacity/index.tsx"
+        }
+      ]
     }
   ]
 }

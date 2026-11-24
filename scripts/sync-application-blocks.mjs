@@ -18,6 +18,7 @@ const CATEGORIES = [
   { folder: "event-calendar", name: "Event Calendar", constName: "EVENT_CALENDAR_BLOCKS" },
   { folder: "flow", name: "Flow", constName: "FLOW_BLOCKS" },
   { folder: "form", name: "Form", constName: "FORM_BLOCKS" },
+  { folder: "gantt", name: "Gantt", constName: "GANTT_BLOCKS" },
 ]
 
 function packageName(specifier) {

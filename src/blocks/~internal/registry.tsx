@@ -85,6 +85,7 @@ import { EMPTY_STATE_BLOCKS } from "@/blocks/application/empty-state/~blocks"
 import { EVENT_CALENDAR_BLOCKS } from "@/blocks/application/event-calendar/~blocks"
 import { FLOW_BLOCKS } from "@/blocks/application/flow/~blocks"
 import { FORM_BLOCKS } from "@/blocks/application/form/~blocks"
+import { GANTT_BLOCKS } from "@/blocks/application/gantt/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
 
@@ -1854,6 +1855,7 @@ export const BLOCKS: BlockEntry[] = [
   ...EVENT_CALENDAR_BLOCKS,
   ...FLOW_BLOCKS,
   ...FORM_BLOCKS,
+  ...GANTT_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {
