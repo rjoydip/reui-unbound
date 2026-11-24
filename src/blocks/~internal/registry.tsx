@@ -87,6 +87,7 @@ import { FLOW_BLOCKS } from "@/blocks/application/flow/~blocks"
 import { FORM_BLOCKS } from "@/blocks/application/form/~blocks"
 import { GANTT_BLOCKS } from "@/blocks/application/gantt/~blocks"
 import { KANBAN_BOARD_BLOCKS } from "@/blocks/application/kanban-board/~blocks"
+import { LIST_BLOCKS } from "@/blocks/application/list/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
 
@@ -1858,6 +1859,7 @@ export const BLOCKS: BlockEntry[] = [
   ...FORM_BLOCKS,
   ...GANTT_BLOCKS,
   ...KANBAN_BOARD_BLOCKS,
+  ...LIST_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {

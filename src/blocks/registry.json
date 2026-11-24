@@ -7757,6 +7757,302 @@
           "target": "@components/blocks/kanban-board-recruiting-pipeline/index.tsx"
         }
       ]
+    },
+    {
+      "name": "list-order-kpi-list",
+      "type": "registry:block",
+      "title": "Order KPI List",
+      "description": "Order KPI List list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-1"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "button",
+        "dialog"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-order-kpi-list/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-recent-investments",
+      "type": "registry:block",
+      "title": "Recent Investments",
+      "description": "Recent Investments list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-10"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "input-group",
+        "kbd",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-recent-investments/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-top-movers",
+      "type": "registry:block",
+      "title": "Top Movers",
+      "description": "Top Movers list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-11"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "badge",
+        "input-group",
+        "kbd",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-top-movers/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-fund-leaderboard",
+      "type": "registry:block",
+      "title": "Fund Leaderboard",
+      "description": "Fund Leaderboard list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-2"
+      },
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-fund-leaderboard/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-capital-inflows",
+      "type": "registry:block",
+      "title": "Capital Inflows",
+      "description": "Capital Inflows list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "item",
+        "tabs",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-capital-inflows/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-crypto-portfolio",
+      "type": "registry:block",
+      "title": "Crypto Portfolio",
+      "description": "Crypto Portfolio list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "button",
+        "dialog",
+        "item",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-crypto-portfolio/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-crypto-activity-feed",
+      "type": "registry:block",
+      "title": "Crypto Activity Feed",
+      "description": "Crypto Activity Feed list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-crypto-activity-feed/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-wallet-transfers",
+      "type": "registry:block",
+      "title": "Wallet Transfers",
+      "description": "Wallet Transfers list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "dialog",
+        "item",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-wallet-transfers/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-spending-feed",
+      "type": "registry:block",
+      "title": "Spending Feed",
+      "description": "Spending Feed list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-7"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "item",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-spending-feed/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-integrations-directory",
+      "type": "registry:block",
+      "title": "Integrations Directory",
+      "description": "Integrations Directory list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-8"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "item",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-integrations-directory/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "list-capability-modules",
+      "type": "registry:block",
+      "title": "Capability Modules",
+      "description": "Capability Modules list block.",
+      "meta": {
+        "category": "List",
+        "id": "list-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "application/list/list-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/list-capability-modules/index.tsx"
+        }
+      ]
     }
   ]
 }

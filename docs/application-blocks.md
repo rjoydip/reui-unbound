@@ -15,7 +15,7 @@ Captured previews live in `captures/application`:
 ## Progress
 
 - Captured: 305 / 305
-- Implemented: 172 / 305
+- Implemented: 183 / 305
 
 | Category | Blocks | Implemented | Status |
 | --- | ---: | ---: | --- |
@@ -30,7 +30,7 @@ Captured previews live in `captures/application`:
 | Form | 12 | 12 | Done |
 | Gantt | 4 | 4 | Done |
 | Kanban Board | 10 | 10 | Done |
-| List | 11 | 0 | Pending |
+| List | 11 | 11 | Done |
 | Navbar | 13 | 0 | Pending |
 | Onboarding | 9 | 0 | Pending |
 | Profile | 10 | 0 | Pending |

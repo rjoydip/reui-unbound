@@ -269,75 +269,35 @@ export function KanbanBoard5Block() {
                   return (
                     <KanbanColumn key={column.id} value={column.id} className="w-10 shrink-0">
                       <KanbanColumnHandle asChild className="h-full w-full opacity-100">
-                        <button
-                          type="button"
-                          onClick={() => toggle(column.id)}
-                          aria-label={`Expand ${column.label}`}
-                          className={cn(
-                            "flex h-full min-h-[460px] flex-col items-center gap-2.5 rounded-xl border py-3 transition-colors hover:opacity-90",
-                            meta.rail
-                          )}
-                        >
+                        <button type="button" onClick={() => toggle(column.id)} aria-label={`Expand ${column.label}`} className={cn("flex h-full min-h-[460px] flex-col items-center gap-2.5 rounded-xl border py-3 transition-colors hover:opacity-90", meta.rail)}>
                           <meta.icon className="size-4 shrink-0" />
-                          <span className="text-[11px] font-semibold tracking-wide uppercase [writing-mode:vertical-rl]">
-                            {meta.label}
-                          </span>
-                          <span className="text-[10px] font-medium tabular-nums opacity-80">
-                            {items.length}
-                          </span>
+                          <span className="text-[11px] font-semibold tracking-wide uppercase [writing-mode:vertical-rl]">{meta.label}</span>
+                          <span className="text-[10px] font-medium tabular-nums opacity-80">{items.length}</span>
                         </button>
                       </KanbanColumnHandle>
                     </KanbanColumn>
                   )
                 }
                 return (
-                  <KanbanColumn
-                    key={column.id}
-                    value={column.id}
-                    className="bg-muted/30 w-[252px] shrink-0 rounded-xl border p-2.5"
-                  >
+                  <KanbanColumn key={column.id} value={column.id} className="bg-muted/30 w-[252px] shrink-0 rounded-xl border p-2.5">
                     <div className="mb-2.5 flex items-center gap-1.5">
-                      <span
-                        className={cn(
-                          "inline-flex items-center gap-1.5 rounded-full px-2 py-1 text-[10px] font-semibold tracking-wide uppercase",
-                          meta.pill
-                        )}
-                      >
+                      <span className={cn("inline-flex items-center gap-1.5 rounded-full px-2 py-1 text-[10px] font-semibold tracking-wide uppercase", meta.pill)}>
                         <meta.icon className="size-3.5" />
                         {meta.label}
                       </span>
-                      <span className="bg-background rounded-md border px-1.5 py-0.5 text-[10px] font-medium tabular-nums">
-                        {items.length}
-                      </span>
+                      <span className="bg-background rounded-md border px-1.5 py-0.5 text-[10px] font-medium tabular-nums">{items.length}</span>
                       <div className="ml-auto flex items-center gap-0.5">
-                        <Button
-                          variant="ghost"
-                          size="icon-xs"
-                          aria-label={`Collapse ${column.label}`}
-                          onClick={() => toggle(column.id)}
-                        >
-                          <ChevronLeftIcon />
-                        </Button>
+                        <Button variant="ghost" size="icon-xs" aria-label={`Collapse ${column.label}`} onClick={() => toggle(column.id)}><ChevronLeftIcon /></Button>
                         <KanbanColumnHandle asChild className="opacity-100">
-                          <Button variant="ghost" size="icon-xs">
-                            <GripVerticalIcon />
-                          </Button>
+                          <Button variant="ghost" size="icon-xs"><GripVerticalIcon /></Button>
                         </KanbanColumnHandle>
                       </div>
                     </div>
                     <div className="flex flex-col gap-2">
-                      {items.map((task) => (
-                        <TaskCard key={task.id} task={task} ring={meta.ring} />
-                      ))}
+                      {items.map((task) => <TaskCard key={task.id} task={task} ring={meta.ring} />)}
                     </div>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="text-muted-foreground mt-1.5 w-full"
-                      onClick={() => addTask(column.id, "New workspace task")}
-                    >
-                      <PlusIcon />
-                      Add task
+                    <Button variant="ghost" size="sm" className="text-muted-foreground mt-1.5 w-full" onClick={() => addTask(column.id, "New workspace task")}>
+                      <PlusIcon />Add task
                     </Button>
                   </KanbanColumn>
                 )
@@ -352,26 +312,10 @@ export function KanbanBoard5Block() {
           <DialogHeader>
             <DialogTitle>New task</DialogTitle>
           </DialogHeader>
-          <Input
-            autoFocus
-            value={draft}
-            onChange={(event) => setDraft(event.target.value)}
-            placeholder="Task title"
-          />
+          <Input autoFocus value={draft} onChange={(event) => setDraft(event.target.value)} placeholder="Task title" />
           <DialogFooter>
-            <Button variant="outline" onClick={() => setOpen(false)}>
-              Cancel
-            </Button>
-            <Button
-              onClick={() => {
-                addTask("backlog", draft)
-                setDraft("")
-                setOpen(false)
-              }}
-              disabled={draft.trim() === ""}
-            >
-              Create task
-            </Button>
+            <Button variant="outline" onClick={() => setOpen(false)}>Cancel</Button>
+            <Button onClick={() => { addTask("backlog", draft); setDraft(""); setOpen(false) }} disabled={draft.trim() === ""}>Create task</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
