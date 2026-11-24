@@ -17,6 +17,7 @@ const manifest = JSON.parse(
 )
 const categoryNames = {
   auth: "Auth",
+  card: "Card",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",

@@ -4483,6 +4483,1029 @@
           "target": "@components/blocks/auth-rotating-quotes-login/index.tsx"
         }
       ]
+    },
+    {
+      "name": "card-brand-logo-grid",
+      "type": "registry:block",
+      "title": "Brand Logo Grid",
+      "description": "Brand Logo Grid card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-1"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-brand-logo-grid/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-report-updates",
+      "type": "registry:block",
+      "title": "Report Updates",
+      "description": "Report Updates card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-10"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "dropdown-menu",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-report-updates/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-notice-cards",
+      "type": "registry:block",
+      "title": "Notice Cards",
+      "description": "Notice Cards card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-11"
+      },
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "application/card/card-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-notice-cards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-quick-link-tiles",
+      "type": "registry:block",
+      "title": "Quick Link Tiles",
+      "description": "Quick Link Tiles card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-12"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-quick-link-tiles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-partner-showcase",
+      "type": "registry:block",
+      "title": "Partner Showcase",
+      "description": "Partner Showcase card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-13"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-partner-showcase/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-delivery-tracking",
+      "type": "registry:block",
+      "title": "Delivery Tracking",
+      "description": "Delivery Tracking card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-14"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-delivery-tracking/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-meeting-agenda-cards",
+      "type": "registry:block",
+      "title": "Meeting Agenda Cards",
+      "description": "Meeting Agenda Cards card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-15"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-15/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-meeting-agenda-cards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-installed-integration",
+      "type": "registry:block",
+      "title": "Installed Integration",
+      "description": "Installed Integration card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-16"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-16/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-installed-integration/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-shortcut-launcher",
+      "type": "registry:block",
+      "title": "Shortcut Launcher",
+      "description": "Shortcut Launcher card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-17"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-17/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-shortcut-launcher/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-source-link-cards",
+      "type": "registry:block",
+      "title": "Source Link Cards",
+      "description": "Source Link Cards card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-18"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-18/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-source-link-cards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-crypto-price-quote",
+      "type": "registry:block",
+      "title": "Crypto Price Quote",
+      "description": "Crypto Price Quote card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-19"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-19/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-crypto-price-quote/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-feature-highlights",
+      "type": "registry:block",
+      "title": "Feature Highlights",
+      "description": "Feature Highlights card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-tile"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-feature-highlights/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-help-center-guides",
+      "type": "registry:block",
+      "title": "Help Center Guides",
+      "description": "Help Center Guides card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-20"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-20/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-help-center-guides/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-project-deadline-cards",
+      "type": "registry:block",
+      "title": "Project Deadline Cards",
+      "description": "Project Deadline Cards card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-21"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-21/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-project-deadline-cards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-upsell-promo",
+      "type": "registry:block",
+      "title": "Upsell Promo",
+      "description": "Upsell Promo card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-22"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-22/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-upsell-promo/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-uptime-monitoring-promo",
+      "type": "registry:block",
+      "title": "Uptime Monitoring Promo",
+      "description": "Uptime Monitoring Promo card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-23"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-23/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-uptime-monitoring-promo/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-job-recommendation",
+      "type": "registry:block",
+      "title": "Job Recommendation",
+      "description": "Job Recommendation card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-24"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-24/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-job-recommendation/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-account-balances",
+      "type": "registry:block",
+      "title": "Account Balances",
+      "description": "Account Balances card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-25"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-25/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-account-balances/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-linked-metric-tiles",
+      "type": "registry:block",
+      "title": "Linked Metric Tiles",
+      "description": "Linked Metric Tiles card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-26"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-26/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-linked-metric-tiles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-application-summary",
+      "type": "registry:block",
+      "title": "Application Summary",
+      "description": "Application Summary card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-27"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-27/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-application-summary/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-shared-kpi-panels",
+      "type": "registry:block",
+      "title": "Shared KPI Panels",
+      "description": "Shared KPI Panels card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-28"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-28/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-shared-kpi-panels/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-kpi-area-charts",
+      "type": "registry:block",
+      "title": "KPI Area Charts",
+      "description": "KPI Area Charts card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-29"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-29/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-kpi-area-charts/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-investor-profile",
+      "type": "registry:block",
+      "title": "Investor Profile",
+      "description": "Investor Profile card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-investor-profile/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-logistics-kpi-tiles",
+      "type": "registry:block",
+      "title": "Logistics KPI Tiles",
+      "description": "Logistics KPI Tiles card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-30"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-30/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-logistics-kpi-tiles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-audience-reach-stats",
+      "type": "registry:block",
+      "title": "Audience Reach Stats",
+      "description": "Audience Reach Stats card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-31"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-31/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-audience-reach-stats/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-compliance-strip",
+      "type": "registry:block",
+      "title": "Compliance Strip",
+      "description": "Compliance Strip card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-32"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-32/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-compliance-strip/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-inventory-counters",
+      "type": "registry:block",
+      "title": "Inventory Counters",
+      "description": "Inventory Counters card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-33"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-33/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-inventory-counters/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-period-trend-kpis",
+      "type": "registry:block",
+      "title": "Period Trend KPIs",
+      "description": "Period Trend KPIs card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-34"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-34/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-period-trend-kpis/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-deal-invoice-tiles",
+      "type": "registry:block",
+      "title": "Deal Invoice Tiles",
+      "description": "Deal Invoice Tiles card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-35"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-35/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-deal-invoice-tiles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-sales-outreach-counters",
+      "type": "registry:block",
+      "title": "Sales Outreach Counters",
+      "description": "Sales Outreach Counters card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-36"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-36/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-sales-outreach-counters/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-company-snapshot",
+      "type": "registry:block",
+      "title": "Company Snapshot",
+      "description": "Company Snapshot card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-37"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-37/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-company-snapshot/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-profile-stat-strip",
+      "type": "registry:block",
+      "title": "Profile Stat Strip",
+      "description": "Profile Stat Strip card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-38"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-38/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-profile-stat-strip/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-resource-hub-cards",
+      "type": "registry:block",
+      "title": "Resource Hub Cards",
+      "description": "Resource Hub Cards card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-39"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-39/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-resource-hub-cards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-kpi-report-links",
+      "type": "registry:block",
+      "title": "KPI Report Links",
+      "description": "KPI Report Links card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "application/card/card-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-kpi-report-links/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-fitness-stats",
+      "type": "registry:block",
+      "title": "Fitness Stats",
+      "description": "Fitness Stats card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-40"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/frame"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-40/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-fitness-stats/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-topic-shortcuts",
+      "type": "registry:block",
+      "title": "Topic Shortcuts",
+      "description": "Topic Shortcuts card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-41"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-41/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-topic-shortcuts/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-customer-profile",
+      "type": "registry:block",
+      "title": "Customer Profile",
+      "description": "Customer Profile card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-42"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-42/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-customer-profile/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-contributor-portfolio",
+      "type": "registry:block",
+      "title": "Contributor Portfolio",
+      "description": "Contributor Portfolio card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-43"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-43/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-contributor-portfolio/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-integration-connector",
+      "type": "registry:block",
+      "title": "Integration Connector",
+      "description": "Integration Connector card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-5"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-integration-connector/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-numbered-setup-steps",
+      "type": "registry:block",
+      "title": "Numbered Setup Steps",
+      "description": "Numbered Setup Steps card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-6"
+      },
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "application/card/card-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-numbered-setup-steps/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-detail-fact-tiles",
+      "type": "registry:block",
+      "title": "Detail Fact Tiles",
+      "description": "Detail Fact Tiles card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-detail-fact-tiles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-service-status-tiles",
+      "type": "registry:block",
+      "title": "Service Status Tiles",
+      "description": "Service Status Tiles card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-8"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-tile"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-service-status-tiles/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "card-applicant-record",
+      "type": "registry:block",
+      "title": "Applicant Record",
+      "description": "Applicant Record card block.",
+      "meta": {
+        "category": "Card",
+        "id": "card-9"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/card/card-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/card-applicant-record/index.tsx"
+        }
+      ]
     }
   ]
 }

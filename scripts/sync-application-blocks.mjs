@@ -11,6 +11,7 @@ const manifest = JSON.parse(
 const CATEGORIES = [
   { folder: "app-shell", name: "App Shell", constName: "APP_SHELL_BLOCKS" },
   { folder: "auth", name: "Auth", constName: "AUTH_BLOCKS" },
+  { folder: "card", name: "Card", constName: "CARD_BLOCKS" },
 ]
 
 function packageName(specifier) {
