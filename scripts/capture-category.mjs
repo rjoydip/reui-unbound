@@ -25,6 +25,7 @@ const categoryNames = {
   flow: "Flow",
   form: "Form",
   gantt: "Gantt",
+  "kanban-board": "Kanban Board",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",

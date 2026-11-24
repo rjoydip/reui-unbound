@@ -19,6 +19,7 @@ const CATEGORIES = [
   { folder: "flow", name: "Flow", constName: "FLOW_BLOCKS" },
   { folder: "form", name: "Form", constName: "FORM_BLOCKS" },
   { folder: "gantt", name: "Gantt", constName: "GANTT_BLOCKS" },
+  { folder: "kanban-board", name: "Kanban Board", constName: "KANBAN_BOARD_BLOCKS" },
 ]
 
 function packageName(specifier) {

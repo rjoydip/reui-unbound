@@ -7455,6 +7455,308 @@
           "target": "@components/blocks/gantt-resource-capacity/index.tsx"
         }
       ]
+    },
+    {
+      "name": "kanban-board-bug-triage",
+      "type": "registry:block",
+      "title": "Bug Triage",
+      "description": "Bug Triage kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-bug-triage/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-access-review",
+      "type": "registry:block",
+      "title": "Access Review",
+      "description": "Access Review kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-10"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "@reui-unbound/rating",
+        "avatar",
+        "button",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-access-review/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-collapsible-columns",
+      "type": "registry:block",
+      "title": "Collapsible Columns",
+      "description": "Collapsible Columns kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-collapsible-columns/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-sales-pipeline",
+      "type": "registry:block",
+      "title": "Sales Pipeline",
+      "description": "Sales Pipeline kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "@reui-unbound/rating",
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-sales-pipeline/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-feature-roadmap-votes",
+      "type": "registry:block",
+      "title": "Feature Roadmap Votes",
+      "description": "Feature Roadmap Votes kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "@reui-unbound/kanban",
+        "button",
+        "dialog",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-feature-roadmap-votes/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-progress-ring-workflow",
+      "type": "registry:block",
+      "title": "Progress Ring Workflow",
+      "description": "Progress Ring Workflow kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-progress-ring-workflow/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-support-escalations",
+      "type": "registry:block",
+      "title": "Support Escalations",
+      "description": "Support Escalations kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "avatar",
+        "button",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-support-escalations/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-renewals-risk",
+      "type": "registry:block",
+      "title": "Renewals Risk",
+      "description": "Renewals Risk kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-7"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "avatar",
+        "button",
+        "card",
+        "input",
+        "popover",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-renewals-risk/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-release-readiness",
+      "type": "registry:block",
+      "title": "Release Readiness",
+      "description": "Release Readiness kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-8"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "avatar",
+        "button",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-release-readiness/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "kanban-board-recruiting-pipeline",
+      "type": "registry:block",
+      "title": "Recruiting Pipeline",
+      "description": "Recruiting Pipeline kanban-board block.",
+      "meta": {
+        "category": "Kanban Board",
+        "id": "kanban-board-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/kanban",
+        "avatar",
+        "button",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/kanban-board/kanban-board-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/kanban-board-recruiting-pipeline/index.tsx"
+        }
+      ]
     }
   ]
 }
