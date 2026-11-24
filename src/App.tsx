@@ -551,7 +551,9 @@ export default function App() {
             >
               <div
                 className={cn(
-                  "bg-background w-full",
+                  // contain: paint makes the block's fixed Sidebar position
+                  // itself inside this preview instead of over the app shell.
+                  "bg-background relative w-full [contain:paint]",
                   device !== "desktop" && "overflow-x-auto border-x shadow-sm",
                 )}
                 style={{ maxWidth: deviceWidth }}
