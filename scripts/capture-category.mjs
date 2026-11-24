@@ -23,6 +23,7 @@ const categoryNames = {
   "empty-state": "Empty State",
   "event-calendar": "Event Calendar",
   flow: "Flow",
+  form: "Form",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",

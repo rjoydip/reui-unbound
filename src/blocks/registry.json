@@ -6913,6 +6913,403 @@
           "target": "@components/blocks/flow-growth-impact-map/index.tsx"
         }
       ]
+    },
+    {
+      "name": "form-profile-settings",
+      "type": "registry:block",
+      "title": "Profile Settings",
+      "description": "Profile Settings form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-1"
+      },
+      "dependencies": [
+        "cn",
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "calendar",
+        "card",
+        "combobox",
+        "field",
+        "input",
+        "popover",
+        "scroll-area",
+        "select",
+        "switch",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-profile-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-customer-onboarding",
+      "type": "registry:block",
+      "title": "Customer Onboarding",
+      "description": "Customer Onboarding form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-10"
+      },
+      "dependencies": [
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "combobox",
+        "input-group",
+        "radio-group",
+        "select",
+        "spinner",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-customer-onboarding/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-deploy-app-setup",
+      "type": "registry:block",
+      "title": "Deploy App Setup",
+      "description": "Deploy App Setup form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-11"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "input-group",
+        "select",
+        "spinner",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-deploy-app-setup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-new-product-form",
+      "type": "registry:block",
+      "title": "New Product Form",
+      "description": "New Product Form form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-12"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "combobox",
+        "input",
+        "input-group",
+        "radio-group",
+        "select",
+        "spinner",
+        "switch",
+        "textarea",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-new-product-form/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-checkout-setup",
+      "type": "registry:block",
+      "title": "Checkout Setup",
+      "description": "Checkout Setup form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "button",
+        "checkbox",
+        "field",
+        "input-group",
+        "select",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-checkout-setup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-invoice-creator",
+      "type": "registry:block",
+      "title": "Invoice Creator",
+      "description": "Invoice Creator form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-3"
+      },
+      "dependencies": [
+        "date-fns",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "calendar",
+        "card",
+        "combobox",
+        "field",
+        "input",
+        "input-group",
+        "popover",
+        "select",
+        "separator",
+        "table",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-invoice-creator/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-auth-method-settings",
+      "type": "registry:block",
+      "title": "Auth Method Settings",
+      "description": "Auth Method Settings form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "input",
+        "select",
+        "switch",
+        "tabs",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-auth-method-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-member-profile-admin",
+      "type": "registry:block",
+      "title": "Member Profile Admin",
+      "description": "Member Profile Admin form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "progress",
+        "select",
+        "switch",
+        "tabs",
+        "textarea",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-member-profile-admin/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-business-verification",
+      "type": "registry:block",
+      "title": "Business Verification",
+      "description": "Business Verification form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-6"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "button",
+        "dialog",
+        "field",
+        "input",
+        "select",
+        "textarea",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-business-verification/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-ticket-properties",
+      "type": "registry:block",
+      "title": "Ticket Properties",
+      "description": "Ticket Properties form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-7"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "calendar",
+        "input",
+        "popover",
+        "select",
+        "spinner",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-ticket-properties/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-api-keys-manager",
+      "type": "registry:block",
+      "title": "API Keys Manager",
+      "description": "API Keys Manager form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-8"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "dialog",
+        "field",
+        "input",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-api-keys-manager/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "form-role-permission-invite",
+      "type": "registry:block",
+      "title": "Role Permission Invite",
+      "description": "Role Permission Invite form block.",
+      "meta": {
+        "category": "Form",
+        "id": "form-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "sonner"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "combobox",
+        "input-group",
+        "radio-group",
+        "select",
+        "spinner",
+        "switch",
+        "textarea",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/form/form-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/form-role-permission-invite/index.tsx"
+        }
+      ]
     }
   ]
 }
