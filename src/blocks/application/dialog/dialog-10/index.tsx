@@ -85,7 +85,7 @@ function FieldBlock({ label, children, hint }: { label: string; children: React.
   )
 }
 function Panel({ children }: { children: React.ReactNode }) {
-  return <div className="flex flex-col gap-5 py-5">{children}</div>
+  return <div className="flex flex-col gap-4 py-4">{children}</div>
 }
 export function Dialog10Block() {
   const [open, setOpen] = useState(false)
@@ -100,7 +100,7 @@ export function Dialog10Block() {
             Account settings
           </Button>
         </DialogTrigger>
-        <DialogContent className="h-[650px] max-h-[calc(100svh-2rem)] gap-0 overflow-hidden p-0 sm:max-w-[960px]">
+        <DialogContent className="grid h-[720px] max-h-[calc(100svh-2rem)] grid-rows-[minmax(0,1fr)] gap-0 overflow-hidden p-0 sm:max-w-[960px]">
           <Tabs value={tab} onValueChange={setTab} orientation="vertical" className="h-full flex-row gap-0">
             <TabsList className="w-[220px] shrink-0 flex-col items-stretch gap-1 rounded-none border-r bg-muted/40 p-3">
               <p className="px-2.5 pb-2 text-xs font-medium tracking-wide text-muted-foreground uppercase">
@@ -154,7 +154,7 @@ export function Dialog10Block() {
                       </InputGroup>
                     </Row>
                     <Row label="Public Details" hint="Shown across Atlas." info>
-                      <div className="flex flex-col gap-3">
+                      <div className="flex flex-col gap-2.5">
                         <FieldBlock label="Role">
                           <Select defaultValue="staff-product-lead">
                             <SelectTrigger className="w-full">
@@ -191,7 +191,7 @@ export function Dialog10Block() {
                     </Row>
                     <Row label="Bio" hint="Short profile summary.">
                       <Textarea
-                        rows={4}
+                        rows={3}
                         defaultValue="Leading launch systems, product operations, and internal tooling across the Atlas workspace."
                         className="resize-none"
                       />

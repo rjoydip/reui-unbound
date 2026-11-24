@@ -126,7 +126,7 @@ export function Dialog13Block() {
         </DialogTrigger>
         <DialogContent
           showCloseButton={false}
-          className="grid h-[calc(100svh-2rem)] w-[calc(100vw-2rem)] max-w-none grid-rows-[auto_minmax(0,1fr)_auto] gap-0 overflow-hidden p-0"
+          className="grid h-[calc(100svh-2rem)] w-[calc(100vw-2rem)] max-w-none grid-rows-[auto_minmax(0,1fr)_auto] gap-0 overflow-hidden p-0 sm:max-w-none"
         >
           <DialogHeader className="flex-row items-center justify-between border-b px-5 py-3">
             <div className="flex items-center gap-2">
@@ -145,7 +145,7 @@ export function Dialog13Block() {
             </Button>
           </DialogHeader>
           <div className="min-h-0 flex-1 overflow-y-auto">
-            <div className="mx-auto w-full max-w-[632px] px-5 py-9">
+            <div className="mx-auto w-full max-w-[672px] px-5 py-9">
               <div className="flex flex-wrap items-center gap-2">
                 <h2 className="font-heading text-xl font-medium tracking-tight">Create Project</h2>
                 <DropdownMenu>

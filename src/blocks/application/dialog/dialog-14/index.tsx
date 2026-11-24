@@ -49,8 +49,8 @@ export function Dialog14Block() {
         <DialogTrigger asChild>
           <Button variant="outline">Connect Gmail</Button>
         </DialogTrigger>
-        <DialogContent className="max-h-[calc(100svh-2rem)] gap-0 overflow-y-auto p-0 sm:max-w-[420px]">
-          <DialogHeader className="items-center gap-0 px-8 pt-6 text-center">
+        <DialogContent className="max-h-[calc(100svh-2rem)] gap-0 overflow-y-auto p-0 sm:max-w-[390px]">
+          <DialogHeader className="items-center gap-0 px-6 pt-6 text-center">
             <div className="flex items-center gap-2.5 text-foreground">
               <Openai />
               <span className="flex items-center gap-1" aria-hidden="true">
@@ -64,7 +64,7 @@ export function Dialog14Block() {
             <DialogDescription>Choose what Gmail can share.</DialogDescription>
           </DialogHeader>
 
-          <div className="mt-5 space-y-3 px-8">
+          <div className="mt-5 space-y-3 px-6">
             {PERMISSIONS.map((permission) => (
               <div key={permission.title} className="flex items-start gap-3">
                 <div className="flex size-9 shrink-0 items-center justify-center rounded-lg border bg-muted/40">
@@ -78,9 +78,9 @@ export function Dialog14Block() {
             ))}
           </div>
 
-          <div className="mx-8 my-5 border-t" />
+          <div className="mx-6 my-5 border-t" />
 
-          <Field className="px-8">
+          <Field className="px-6">
             <FieldLabel className="text-sm font-medium">Sync Scope</FieldLabel>
             <RadioGroup value={scope} onValueChange={setScope} className="mt-1 gap-2">
               {SYNC_SCOPES.map((option) => (
@@ -106,7 +106,7 @@ export function Dialog14Block() {
             </RadioGroup>
           </Field>
 
-          <DialogFooter className="mx-0 mt-6 mb-0 grid grid-cols-2 gap-2 rounded-b-xl bg-background px-8 py-4 sm:grid-cols-2">
+          <DialogFooter className="mx-0 mt-6 mb-0 grid grid-cols-2 gap-2 rounded-b-xl bg-background px-6 py-4 sm:grid-cols-2">
             <Button variant="outline" onClick={() => setOpen(false)}>
               Cancel
             </Button>

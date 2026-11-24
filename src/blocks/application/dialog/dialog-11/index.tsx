@@ -33,6 +33,13 @@ export function Dialog11Block() {
   const previewName = name.trim() || DEFAULTS.name
   const previewTag = tag.trim() || DEFAULTS.tag
   const previewLabel = label.trim() || DEFAULTS.label
+  const previewInitials = previewName
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase()
 
   return (
     <div className="flex min-h-svh items-center justify-center bg-muted/30 p-6">
@@ -140,7 +147,7 @@ export function Dialog11Block() {
               <div className="w-full max-w-[320px] rounded-xl bg-card p-5 text-card-foreground shadow-2xl">
                 <div className="flex items-center gap-3">
                   <div className="flex size-10 items-center justify-center rounded-md bg-muted text-sm font-medium">
-                    {previewName.slice(0, 2).toUpperCase()}
+                    {previewInitials}
                   </div>
                   <div className="min-w-0">
                     <p className="truncate text-sm font-medium">{previewName}</p>

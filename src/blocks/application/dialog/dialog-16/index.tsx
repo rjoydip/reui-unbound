@@ -150,13 +150,13 @@ export function Dialog16Block() {
                         {candidate.band} {candidate.score}%
                       </Badge>
                     </div>
-                    <div className="mt-0.5 flex flex-wrap items-center gap-x-1.5 gap-y-0.5 text-sm text-muted-foreground">
+                    <div className="mt-0.5 flex flex-wrap items-center gap-x-1 gap-y-0.5 text-[13px] text-muted-foreground">
                       <MatchLine value={candidate.email} matched={candidate.emailMatch} />
                       <span aria-hidden="true">·</span>
                       <MatchLine value={candidate.company} matched={candidate.companyMatch} />
                     </div>
                   </div>
-                  <span className="hidden w-16 shrink-0 text-right text-sm text-muted-foreground sm:block">
+                  <span className="hidden w-14 shrink-0 text-right text-sm text-muted-foreground sm:block">
                     {candidate.status}
                   </span>
                   <Button
