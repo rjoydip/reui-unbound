@@ -18,6 +18,7 @@ const manifest = JSON.parse(
 const categoryNames = {
   auth: "Auth",
   card: "Card",
+  dashboard: "Dashboard",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",
@@ -94,7 +95,8 @@ async function capture(block) {
     if (inputCount > 0) {
       for (let i = 0; i < inputCount; i++) {
         const input = inputs.nth(i)
-        const type = (await input.getAttribute('type')) ?? 'text'
+        let type = 'text'
+        try { type = (await input.getAttribute('type', { timeout: 1500 })) ?? 'text' } catch { continue }
         const value =
           type === 'password'
             ? 'Password123!'

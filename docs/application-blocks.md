@@ -15,14 +15,14 @@ Captured previews live in `captures/application`:
 ## Progress
 
 - Captured: 305 / 305
-- Implemented: 99 / 305
+- Implemented: 107 / 305
 
 | Category | Blocks | Implemented | Status |
 | --- | ---: | ---: | --- |
 | App Shell | 36 | 36 | Done |
 | Auth | 20 | 20 | Done |
 | Card | 43 | 43 | Done |
-| Dashboard | 8 | 0 | Pending |
+| Dashboard | 8 | 8 | Done |
 | Dialog | 15 | 0 | Pending |
 | Empty State | 14 | 0 | Pending |
 | Event Calendar | 6 | 0 | Pending |

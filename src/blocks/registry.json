@@ -5506,6 +5506,280 @@
           "target": "@components/blocks/card-applicant-record/index.tsx"
         }
       ]
+    },
+    {
+      "name": "dashboard-fulfillment-exceptions",
+      "type": "registry:block",
+      "title": "Fulfillment Exceptions",
+      "description": "Fulfillment Exceptions dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "breadcrumb",
+        "button",
+        "card",
+        "chart",
+        "checkbox",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "progress",
+        "select",
+        "separator",
+        "table",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-fulfillment-exceptions/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-module-tracker",
+      "type": "registry:block",
+      "title": "Module Tracker",
+      "description": "Module Tracker dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "breadcrumb",
+        "button",
+        "card",
+        "chart",
+        "checkbox",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-module-tracker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-worklog-timesheet",
+      "type": "registry:block",
+      "title": "Worklog Timesheet",
+      "description": "Worklog Timesheet dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "card",
+        "dialog",
+        "dropdown-menu",
+        "empty",
+        "input",
+        "input-group",
+        "label",
+        "select",
+        "table",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-worklog-timesheet/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-voice-agent-calls",
+      "type": "registry:block",
+      "title": "Voice Agent Calls",
+      "description": "Voice Agent Calls dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-tile",
+        "button",
+        "card",
+        "chart",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-voice-agent-calls/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-edge-security-telemetry",
+      "type": "registry:block",
+      "title": "Edge Security Telemetry",
+      "description": "Edge Security Telemetry dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-5"
+      },
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "breadcrumb",
+        "button",
+        "card",
+        "chart",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-edge-security-telemetry/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-workforce-coverage",
+      "type": "registry:block",
+      "title": "Workforce Coverage",
+      "description": "Workforce Coverage dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-6"
+      },
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "breadcrumb",
+        "button",
+        "card",
+        "chart",
+        "dropdown-menu",
+        "popover",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-workforce-coverage/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-retail-revenue",
+      "type": "registry:block",
+      "title": "Retail Revenue",
+      "description": "Retail Revenue dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-7"
+      },
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "card",
+        "chart",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "sheet",
+        "table",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-retail-revenue/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dashboard-royalty-payouts",
+      "type": "registry:block",
+      "title": "Royalty Payouts",
+      "description": "Royalty Payouts dashboard block.",
+      "meta": {
+        "category": "Dashboard",
+        "id": "dashboard-8"
+      },
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-tile",
+        "breadcrumb",
+        "button",
+        "card",
+        "chart",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "select",
+        "separator",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "application/dashboard/dashboard-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dashboard-royalty-payouts/index.tsx"
+        }
+      ]
     }
   ]
 }
