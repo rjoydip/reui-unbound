@@ -1,18 +1,20 @@
 # Blocks
 
-203 demo blocks, grouped by category.
+207 demo blocks, grouped by category.
 
 | Block | ID | Category | Preview |
 | --- | --- | --- | --- |
 | [Access Cohort](./data-grid-grouping-access-cohort.md) | `data-grid-grouping-3` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-3) |
 | [Account Balances](./card-account-balances.md) | `card-25` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-25) |
 | [Account Settings Modal](./dialog-account-settings-modal.md) | `dialog-10` | Dialog | [Preview](https://reui-unbound.pages.dev/?preview=dialog-10) |
+| [AI Agent Builder](./flow-ai-agent-builder.md) | `flow-2` | Flow | [Preview](https://reui-unbound.pages.dev/?preview=flow-2) |
 | [AI Agents Console](./app-shell-ai-agents-console.md) | `app-shell-10` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-10) |
 | [API Requests](./data-grid-base-api-requests.md) | `data-grid-base-9` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-9) |
 | [Applicant Record](./card-applicant-record.md) | `card-9` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-9) |
 | [Application Summary](./card-application-summary.md) | `card-27` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-27) |
 | [Apps Grid Header](./app-shell-apps-grid-header.md) | `app-shell-12` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-12) |
 | [Audience Reach Stats](./card-audience-reach-stats.md) | `card-31` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-31) |
+| [Automation Builder](./flow-automation-builder.md) | `flow-1` | Flow | [Preview](https://reui-unbound.pages.dev/?preview=flow-1) |
 | [Automation Library](./data-grid-filtering-automation-library.md) | `data-grid-filtering-2` | Filtering | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-2) |
 | [Bill Of Materials](./data-grid-grouping-bill-of-materials.md) | `data-grid-grouping-4` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-4) |
 | [Blueprint Library](./empty-state-blueprint-library.md) | `empty-state-10` | Empty State | [Preview](https://reui-unbound.pages.dev/?preview=empty-state-10) |
@@ -70,6 +72,7 @@
 | [Free Trial Signup](./auth-free-trial-signup.md) | `auth-5` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-5) |
 | [Freight & Cargo Services](./data-grid-advanced-freight-cargo-services.md) | `data-grid-advanced-12` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-12) |
 | [Fulfillment Exceptions](./dashboard-fulfillment-exceptions.md) | `dashboard-1` | Dashboard | [Preview](https://reui-unbound.pages.dev/?preview=dashboard-1) |
+| [Growth Impact Map](./flow-growth-impact-map.md) | `flow-4` | Flow | [Preview](https://reui-unbound.pages.dev/?preview=flow-4) |
 | [Help Center Guides](./card-help-center-guides.md) | `card-20` | Card | [Preview](https://reui-unbound.pages.dev/?preview=card-20) |
 | [Hotel Front Desk](./event-calendar-hotel-front-desk.md) | `event-calendar-3` | Event Calendar | [Preview](https://reui-unbound.pages.dev/?preview=event-calendar-3) |
 | [HR Scorecard](./data-grid-advanced-hr-scorecard.md) | `data-grid-advanced-13` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-13) |
@@ -123,6 +126,7 @@
 | [Photo Magic Link](./auth-photo-magic-link.md) | `auth-13` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-13) |
 | [Photo Split Login](./auth-photo-split-login.md) | `auth-1` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-1) |
 | [Pinnable Favorites Nav](./app-shell-pinnable-favorites-nav.md) | `app-shell-15` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-15) |
+| [Pipeline Run Monitor](./flow-pipeline-run-monitor.md) | `flow-3` | Flow | [Preview](https://reui-unbound.pages.dev/?preview=flow-3) |
 | [Plans](./data-grid-editing-plans.md) | `data-grid-editing-4` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-4) |
 | [Product Inventory](./data-grid-editing-product-inventory.md) | `data-grid-editing-2` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-2) |
 | [Product KPIs](./data-grid-advanced-product-kpis.md) | `data-grid-advanced-8` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-8) |

@@ -6782,6 +6782,137 @@
           "target": "@components/blocks/event-calendar-lending-deal-calendar/index.tsx"
         }
       ]
+    },
+    {
+      "name": "flow-automation-builder",
+      "type": "registry:block",
+      "title": "Automation Builder",
+      "description": "Automation Builder flow block.",
+      "meta": {
+        "category": "Flow",
+        "id": "flow-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "kbd",
+        "popover",
+        "scroll-area",
+        "select",
+        "separator",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "application/flow/flow-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/flow-automation-builder/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "flow-ai-agent-builder",
+      "type": "registry:block",
+      "title": "AI Agent Builder",
+      "description": "AI Agent Builder flow block.",
+      "meta": {
+        "category": "Flow",
+        "id": "flow-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "select",
+        "separator",
+        "sheet"
+      ],
+      "files": [
+        {
+          "path": "application/flow/flow-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/flow-ai-agent-builder/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "flow-pipeline-run-monitor",
+      "type": "registry:block",
+      "title": "Pipeline Run Monitor",
+      "description": "Pipeline Run Monitor flow block.",
+      "meta": {
+        "category": "Flow",
+        "id": "flow-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "select",
+        "separator",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/flow/flow-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/flow-pipeline-run-monitor/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "flow-growth-impact-map",
+      "type": "registry:block",
+      "title": "Growth Impact Map",
+      "description": "Growth Impact Map flow block.",
+      "meta": {
+        "category": "Flow",
+        "id": "flow-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/icon-tile",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "select",
+        "separator",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/flow/flow-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/flow-growth-impact-map/index.tsx"
+        }
+      ]
     }
   ]
 }
