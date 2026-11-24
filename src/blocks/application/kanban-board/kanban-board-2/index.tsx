@@ -1,53 +1,15 @@
 "use client"
-
 import { useMemo, useState } from "react"
-import {
-  AlertCircleIcon,
-  ChevronsLeftIcon,
-  Columns3Icon,
-  CheckCircle2Icon,
-  CheckSquare2Icon,
-  CircleDollarSignIcon,
-  CircleDotIcon,
-  CircleIcon,
-  Clock3Icon,
-  ClockIcon,
-  GripVerticalIcon,
-  MessageSquareIcon,
-  PaperclipIcon,
-  PlusIcon,
-  SearchIcon,
-  FilterIcon,
-  TrophyIcon,
-  UserIcon,
-  XCircleIcon,
-} from "lucide-react"
-
+import { AlertCircleIcon, ChevronsLeftIcon, Columns3Icon, CheckCircle2Icon, CheckSquare2Icon, CircleDollarSignIcon, CircleDotIcon, CircleIcon, Clock3Icon, ClockIcon, GripVerticalIcon, MessageSquareIcon, PaperclipIcon, PlusIcon, SearchIcon, FilterIcon, TrophyIcon, UserIcon, XCircleIcon } from "lucide-react"
 import { cn } from "cn"
 import { Badge } from "@/components/kit/badge"
-import {
-  Kanban,
-  KanbanBoard,
-  KanbanColumn,
-  KanbanColumnContent,
-  KanbanColumnHandle,
-  KanbanItem,
-  KanbanItemHandle,
-  KanbanOverlay,
-} from "@/components/kit/kanban"
+import { Kanban, KanbanBoard, KanbanColumn, KanbanColumnContent, KanbanColumnHandle, KanbanItem, KanbanItemHandle, KanbanOverlay } from "@/components/kit/kanban"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
-import {
-  Dialog,
-  DialogContent,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-
 interface WorkItem {
   id: string
   title: string
@@ -60,7 +22,6 @@ interface WorkItem {
   due: string
   crew: string[]
 }
-
 const AVATARS: Record<string, string> = {
   "Elena Torres": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&dpr=2&q=80",
   "Nora Lee": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&h=64&dpr=2&q=80",
@@ -69,14 +30,12 @@ const AVATARS: Record<string, string> = {
   "Liam Carter": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&dpr=2&q=80",
   "Marcus Chen": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=64&h=64&dpr=2&q=80",
 }
-
 interface ColumnMeta {
   id: string
   label: string
   icon: typeof ClockIcon
   color: string
 }
-
 const COLUMN_LIST: ColumnMeta[] = [
   { id: "backlog", label: "Backlog", icon: Clock3Icon, color: "text-muted-foreground" },
   { id: "todo", label: "Todo", icon: CircleIcon, color: "text-sky-500" },
@@ -87,9 +46,7 @@ const COLUMN_LIST: ColumnMeta[] = [
   { id: "closed", label: "Closed", icon: CheckCircle2Icon, color: "text-rose-400" },
   { id: "cancelled", label: "Cancelled", icon: XCircleIcon, color: "text-orange-500" },
 ]
-
 const DEFAULT_COLLAPSED = ["blocked", "review", "done", "closed", "cancelled"]
-
 const INITIAL: Record<string, WorkItem[]> = {
   backlog: [
     { id: "w1", title: "Draft partner intake workflow for multi-region teams", owner: "Elena Torres", value: "$12,800.00", nextStep: "Define approval path...", attachments: 1, checklists: 3, comments: 2, due: "24d", crew: ["Elena Torres", "Nora Lee"] },
@@ -123,15 +80,12 @@ const INITIAL: Record<string, WorkItem[]> = {
     { id: "w16", title: "Remove sunset API keys", owner: "Priya Shah", value: "$3,100.00", nextStep: "Security sign-off...", attachments: 1, checklists: 2, comments: 0, due: "Closed", crew: ["Priya Shah", "Marcus Chen"] },
   ],
 }
-
 function initials(name: string) {
   return name.split(" ").map((part) => part[0]).join("")
 }
-
 function MetaIcon({ children }: { children: React.ReactNode }) {
   return <span className="text-muted-foreground flex size-4 shrink-0 items-center justify-center [&_svg]:size-3.5">{children}</span>
 }
-
 function CountIcon({ icon: Icon, value }: { icon: typeof PaperclipIcon; value: number }) {
   return (
     <span className="text-muted-foreground flex items-center gap-1 text-[11px] tabular-nums">
@@ -140,7 +94,6 @@ function CountIcon({ icon: Icon, value }: { icon: typeof PaperclipIcon; value: n
     </span>
   )
 }
-
 function WorkCard({ item, overlay }: { item: WorkItem; overlay?: boolean }) {
   return (
     <div
@@ -189,7 +142,6 @@ function WorkCard({ item, overlay }: { item: WorkItem; overlay?: boolean }) {
     </div>
   )
 }
-
 export function KanbanBoard2Block() {
   const [columns, setColumns] = useState<Record<string, WorkItem[]>>(INITIAL)
   const [collapsed, setCollapsed] = useState<string[]>(DEFAULT_COLLAPSED)
@@ -197,22 +149,18 @@ export function KanbanBoard2Block() {
   const [owners, setOwners] = useState<string[]>([])
   const [draft, setDraft] = useState("")
   const [open, setOpen] = useState(false)
-
   const people = useMemo(
     () => Array.from(new Set(Object.values(columns).flat().map((item) => item.owner))),
     [columns]
   )
-
   const matches = (item: WorkItem) =>
     (query.trim() === "" ||
       `${item.title} ${item.owner}`.toLowerCase().includes(query.toLowerCase())) &&
     (owners.length === 0 || owners.includes(item.owner))
-
   const toggle = (id: string) =>
     setCollapsed((current) =>
       current.includes(id) ? current.filter((key) => key !== id) : [...current, id]
     )
-
   const addCard = () => {
     const title = draft.trim()
     if (!title) return
@@ -239,7 +187,6 @@ export function KanbanBoard2Block() {
     setDraft("")
     setOpen(false)
   }
-
   return (
     <div className="bg-background min-h-svh p-4">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-5">
@@ -310,7 +257,6 @@ export function KanbanBoard2Block() {
             </Button>
           </div>
         </header>
-
         <div className="-mx-1 overflow-x-auto pb-4">
           <Kanban
             value={columns}
@@ -395,7 +341,6 @@ export function KanbanBoard2Block() {
           </Kanban>
         </div>
       </div>
-
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="sm:max-w-sm">
           <DialogHeader>
@@ -420,5 +365,4 @@ export function KanbanBoard2Block() {
     </div>
   )
 }
-
 export default KanbanBoard2Block

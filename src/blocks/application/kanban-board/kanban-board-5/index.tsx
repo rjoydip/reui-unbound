@@ -1,46 +1,16 @@
 "use client"
-
 import { useMemo, useState } from "react"
-import {
-  CheckSquare2Icon,
-  ChevronLeftIcon,
-  Columns3Icon,
-  CircleIcon,
-  CircleSlashIcon,
-  Clock3Icon,
-  GripVerticalIcon,
-  MessageSquareIcon,
-  PaperclipIcon,
-  PauseCircleIcon,
-  PlusIcon,
-  SearchIcon,
-  FilterIcon,
-} from "lucide-react"
-
+import { CheckSquare2Icon, ChevronLeftIcon, Columns3Icon, CircleIcon, CircleSlashIcon, Clock3Icon, GripVerticalIcon, MessageSquareIcon, PaperclipIcon, PauseCircleIcon, PlusIcon, SearchIcon, FilterIcon } from "lucide-react"
 import { cn } from "cn"
-import {
-  Kanban,
-  KanbanBoard,
-  KanbanColumn,
-  KanbanColumnHandle,
-  KanbanOverlay,
-} from "@/components/kit/kanban"
+import { Kanban, KanbanBoard, KanbanColumn, KanbanColumnHandle, KanbanOverlay } from "@/components/kit/kanban"
 import { Badge } from "@/components/kit/badge"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
-import {
-  Dialog,
-  DialogContent,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-
 type Category = "Prep" | "Legal" | "Commercial" | "Finance" | "Blocked"
-
 interface Task {
   id: string
   title: string
@@ -55,7 +25,6 @@ interface Task {
   comments: number
   due: string
 }
-
 interface ColumnMeta {
   id: string
   label: string
@@ -64,7 +33,6 @@ interface ColumnMeta {
   rail: string
   ring: string
 }
-
 const AVATARS: Record<string, string> = {
   "Nora Lee": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=64&h=64&dpr=2&q=80",
   "Elena Torres": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&dpr=2&q=80",
@@ -73,7 +41,6 @@ const AVATARS: Record<string, string> = {
   "Priya Shah": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=64&h=64&dpr=2&q=80",
   "Liam Carter": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=64&h=64&dpr=2&q=80",
 }
-
 const COLUMN_LIST: ColumnMeta[] = [
   {
     id: "backlog",
@@ -126,7 +93,6 @@ const COLUMN_LIST: ColumnMeta[] = [
 ]
 const COLUMNS = Object.fromEntries(COLUMN_LIST.map((column) => [column.id, column]))
 const DEFAULT_COLLAPSED = ["paused", "completed", "cancelled"]
-
 const INITIAL: Record<string, Task[]> = {
   backlog: [
     { id: "t1", title: "Draft renewal checklist for strategic workspace rollouts", category: "Prep", state: "Confirmed", stateTone: "success", owner: "Nora Lee", role: "Ops", progress: 61, attachments: 1, checklists: 4, comments: 2, due: "22d" },
@@ -156,7 +122,6 @@ const INITIAL: Record<string, Task[]> = {
     { id: "t15", title: "Remove deprecated audit fields", category: "Legal", state: "Missing", stateTone: "danger", owner: "Priya Shah", role: "Product", progress: 0, attachments: 1, checklists: 1, comments: 0, due: "Closed" },
   ],
 }
-
 const CATEGORY_TONES: Record<Category, string> = {
   Prep: "border-border bg-muted/60 text-foreground",
   Legal: "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300",
@@ -164,17 +129,14 @@ const CATEGORY_TONES: Record<Category, string> = {
   Finance: "border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-300",
   Blocked: "border-rose-500/25 bg-rose-500/10 text-rose-700 dark:text-rose-300",
 }
-
 const STATE_DOT: Record<Task["stateTone"], string> = {
   success: "bg-emerald-500",
   warning: "bg-amber-500",
   danger: "bg-rose-500",
 }
-
 function initials(name: string) {
   return name.split(" ").map((part) => part[0]).join("")
 }
-
 function ProgressRing({ value, ring }: { value: number; ring: string }) {
   return (
     <span
@@ -187,7 +149,6 @@ function ProgressRing({ value, ring }: { value: number; ring: string }) {
     </span>
   )
 }
-
 function TaskCard({ task, ring }: { task: Task; ring: string }) {
   return (
     <div className="bg-card flex flex-col gap-2 rounded-lg border p-3 shadow-xs">
@@ -215,27 +176,14 @@ function TaskCard({ task, ring }: { task: Task; ring: string }) {
         </span>
       </div>
       <div className="text-muted-foreground mt-0.5 flex items-center gap-3 text-[11px]">
-        <span className="flex items-center gap-1 tabular-nums">
-          <PaperclipIcon className="size-3.5" />
-          {task.attachments}
-        </span>
-        <span className="flex items-center gap-1 tabular-nums">
-          <CheckSquare2Icon className="size-3.5" />
-          {task.checklists}
-        </span>
-        <span className="flex items-center gap-1 tabular-nums">
-          <MessageSquareIcon className="size-3.5" />
-          {task.comments}
-        </span>
-        <span className="ml-auto flex items-center gap-1">
-          <Clock3Icon className="size-3.5" />
-          {task.due}
-        </span>
+        <span className="flex items-center gap-1 tabular-nums"><PaperclipIcon className="size-3.5" />{task.attachments}</span>
+        <span className="flex items-center gap-1 tabular-nums"><CheckSquare2Icon className="size-3.5" />{task.checklists}</span>
+        <span className="flex items-center gap-1 tabular-nums"><MessageSquareIcon className="size-3.5" />{task.comments}</span>
+        <span className="ml-auto flex items-center gap-1"><Clock3Icon className="size-3.5" />{task.due}</span>
       </div>
     </div>
   )
 }
-
 export function KanbanBoard5Block() {
   const [columns, setColumns] = useState<Record<string, Task[]>>(INITIAL)
   const [collapsed, setCollapsed] = useState<string[]>(DEFAULT_COLLAPSED)
@@ -243,22 +191,12 @@ export function KanbanBoard5Block() {
   const [owners, setOwners] = useState<string[]>([])
   const [draft, setDraft] = useState("")
   const [open, setOpen] = useState(false)
-
-  const people = useMemo(
-    () => Array.from(new Set(Object.values(columns).flat().map((task) => task.owner))),
-    [columns]
-  )
-
+  const people = useMemo(() => Array.from(new Set(Object.values(columns).flat().map((task) => task.owner))), [columns])
   const matches = (task: Task) =>
     (query.trim() === "" ||
       `${task.title} ${task.owner}`.toLowerCase().includes(query.toLowerCase())) &&
     (owners.length === 0 || owners.includes(task.owner))
-
-  const toggle = (id: string) =>
-    setCollapsed((current) =>
-      current.includes(id) ? current.filter((key) => key !== id) : [...current, id]
-    )
-
+  const toggle = (id: string) => setCollapsed((current) => current.includes(id) ? current.filter((key) => key !== id) : [...current, id])
   const addTask = (columnId: string, title: string) => {
     const value = title.trim()
     if (!value) return
@@ -266,26 +204,12 @@ export function KanbanBoard5Block() {
     setColumns({
       ...columns,
       [columnId]: [
-        {
-          id,
-          title: value,
-          category: "Prep",
-          state: "Confirmed",
-          stateTone: "success",
-          owner: "Nora Lee",
-          role: "Ops",
-          progress: 0,
-          attachments: 0,
-          checklists: 0,
-          comments: 0,
-          due: "30d",
-        },
+        { id, title: value, category: "Prep", state: "Confirmed", stateTone: "success", owner: "Nora Lee", role: "Ops", progress: 0, attachments: 0, checklists: 0, comments: 0, due: "30d" },
         ...columns[columnId],
       ],
     })
     setCollapsed((current) => current.filter((key) => key !== columnId))
   }
-
   return (
     <div className="bg-background min-h-svh p-4">
       <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-5">
@@ -294,34 +218,18 @@ export function KanbanBoard5Block() {
           <div className="flex items-center gap-2">
             <Popover>
               <PopoverTrigger asChild>
-                <Button variant="outline" size="sm">
-                  <FilterIcon />
-                  Filters
-                  {owners.length > 0 && <Badge variant="secondary">{owners.length}</Badge>}
-                </Button>
+                <Button variant="outline" size="sm"><FilterIcon />Filters{owners.length > 0 && <Badge variant="secondary">{owners.length}</Badge>}</Button>
               </PopoverTrigger>
               <PopoverContent align="end" className="w-60 space-y-3">
                 <div className="relative">
                   <SearchIcon className="text-muted-foreground pointer-events-none absolute top-2.5 left-2 size-3.5" />
-                  <Input
-                    value={query}
-                    onChange={(event) => setQuery(event.target.value)}
-                    placeholder="Search tasks"
-                    className="h-8 pl-7 text-xs"
-                  />
+                  <Input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search tasks" className="h-8 pl-7 text-xs" />
                 </div>
                 <div className="space-y-1.5">
                   <p className="text-muted-foreground text-xs font-medium">Owner</p>
                   {people.map((person) => (
                     <label key={person} className="flex items-center gap-2 text-xs">
-                      <Checkbox
-                        checked={owners.includes(person)}
-                        onCheckedChange={(checked) =>
-                          setOwners(
-                            checked ? [...owners, person] : owners.filter((item) => item !== person)
-                          )
-                        }
-                      />
+                      <Checkbox checked={owners.includes(person)} onCheckedChange={(checked) => setOwners(checked ? [...owners, person] : owners.filter((item) => item !== person))} />
                       {person}
                     </label>
                   ))}
@@ -330,33 +238,21 @@ export function KanbanBoard5Block() {
             </Popover>
             <Popover>
               <PopoverTrigger asChild>
-                <Button variant="outline" size="sm">
-                  <Columns3Icon />
-                  Columns
-                </Button>
+                <Button variant="outline" size="sm"><Columns3Icon />Columns</Button>
               </PopoverTrigger>
               <PopoverContent align="end" className="w-52 space-y-1.5 p-2">
                 {COLUMN_LIST.map((column) => (
                   <label key={column.id} className="flex items-center gap-2 rounded px-1 py-0.5 text-xs">
-                    <Checkbox
-                      checked={!collapsed.includes(column.id)}
-                      onCheckedChange={() => toggle(column.id)}
-                    />
+                    <Checkbox checked={!collapsed.includes(column.id)} onCheckedChange={() => toggle(column.id)} />
                     {column.label}
-                    <span className="text-muted-foreground ml-auto tabular-nums">
-                      {columns[column.id].length}
-                    </span>
+                    <span className="text-muted-foreground ml-auto tabular-nums">{columns[column.id].length}</span>
                   </label>
                 ))}
               </PopoverContent>
             </Popover>
-            <Button size="sm" onClick={() => setOpen(true)}>
-              <PlusIcon />
-              New task
-            </Button>
+            <Button size="sm" onClick={() => setOpen(true)}><PlusIcon />New task</Button>
           </div>
         </header>
-
         <div className="-mx-1 overflow-x-auto pb-4">
           <Kanban
             value={columns}
@@ -451,7 +347,6 @@ export function KanbanBoard5Block() {
           </Kanban>
         </div>
       </div>
-
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="sm:max-w-sm">
           <DialogHeader>
@@ -483,5 +378,4 @@ export function KanbanBoard5Block() {
     </div>
   )
 }
-
 export default KanbanBoard5Block
