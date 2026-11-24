@@ -1,14 +1,20 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react"
 import {
   BoxesIcon,
+  ChartColumnIcon,
+  CheckIcon,
   ChevronRightIcon,
   FilterIcon,
   LayoutGridIcon,
   LayoutListIcon,
   ListTreeIcon,
+  MegaphoneIcon,
   MinusIcon,
   Rows3Icon,
+  ShoppingCartIcon,
+  SparklesIcon,
   StarIcon,
+  TableIcon,
 } from "lucide-react"
 
 import {
@@ -16,14 +22,22 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
 import { cn } from "cn"
 
 import {
+  BLOCK_GROUPS,
+  BLOCK_TOTAL,
   BLOCKS,
-  CATEGORIES,
-  DATA_GRID_TOTAL,
   blocksInCategory,
+  categoriesInGroup,
 } from "@/blocks/~internal/registry"
 import type { BlockEntry } from "@/blocks/~internal/registry"
 import { COMPONENT_ENTRIES } from "@/blocks/components/~catalog/catalog"
@@ -75,6 +89,16 @@ function componentGroups() {
 
 const COMPONENT_GROUPS = componentGroups()
 
+const GROUP_ICONS: Record<string, typeof BoxesIcon> = {
+  Application: LayoutGridIcon,
+  "Data Grid": TableIcon,
+  Charts: ChartColumnIcon,
+  Solutions: BoxesIcon,
+  "AI & Agents": SparklesIcon,
+  eCommerce: ShoppingCartIcon,
+  Marketing: MegaphoneIcon,
+}
+
 export function CatalogSidebar({
   current,
   section,
@@ -83,8 +107,9 @@ export function CatalogSidebar({
   favorites,
   onSelect,
   onSelectGroup,
-  onSelectAllBlocks,
   onSelectBlockCategory,
+  blockGroup,
+  onBlockGroupChange,
   expanded,
   onToggleCategory,
   resetKey,
@@ -96,8 +121,9 @@ export function CatalogSidebar({
   favorites: string[]
   onSelect: (block: BlockEntry) => void
   onSelectGroup: (name: string) => void
-  onSelectAllBlocks: () => void
   onSelectBlockCategory: (name: string) => void
+  blockGroup: string | null
+  onBlockGroupChange: (group: string | null) => void
   expanded: string[]
   onToggleCategory: (name: string) => void
   resetKey: number
@@ -123,7 +149,10 @@ export function CatalogSidebar({
     )
   }, [query])
 
-  const allBlocksExpanded = CATEGORIES.every((category) =>
+  const visibleCategories = categoriesInGroup(
+    section === "blocks" ? blockGroup : null,
+  )
+  const allBlocksExpanded = visibleCategories.every((category) =>
     expanded.includes(category.name),
   )
   const allComponentsExpanded =
@@ -132,7 +161,7 @@ export function CatalogSidebar({
 
   function toggleAllCategories() {
     if (section === "blocks") {
-      for (const category of CATEGORIES) {
+      for (const category of visibleCategories) {
         const open = expanded.includes(category.name)
         if (allBlocksExpanded ? open : !open) {
           onToggleCategory(category.name)
@@ -217,26 +246,77 @@ export function CatalogSidebar({
       )}
 
       <div className="px-3">
-        <button
-          type="button"
-          onClick={section === "blocks" ? onSelectAllBlocks : undefined}
-          className="border-border bg-background flex h-10 w-full items-center gap-2 rounded-lg border px-3 text-sm font-medium"
-        >
-          {section === "components" ? (
+        {section === "components" ? (
+          <button
+            type="button"
+            className="border-border bg-background flex h-10 w-full items-center gap-2 rounded-lg border px-3 text-sm font-medium"
+          >
             <BoxesIcon className="size-4" />
-          ) : (
-            <LayoutGridIcon className="size-4" />
-          )}
-          {section === "components" ? "All Components" : "All blocks"}
-          <span className="text-muted-foreground ml-auto text-xs tabular-nums">
-            {section === "components"
-              ? COMPONENT_ENTRIES.length
-              : DATA_GRID_TOTAL}
-          </span>
-          {section === "blocks" && (
-            <ChevronRightIcon className="text-muted-foreground size-4 rotate-90" />
-          )}
-        </button>
+            All Components
+            <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+              {COMPONENT_ENTRIES.length}
+            </span>
+          </button>
+        ) : (
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                type="button"
+                aria-label="Select block group"
+                className="border-border bg-background hover:bg-muted/40 flex h-10 w-full items-center gap-2 rounded-lg border px-3 text-sm font-medium transition-colors"
+              >
+                {(() => {
+                  const Icon = GROUP_ICONS[blockGroup ?? ""] ?? BoxesIcon
+                  return <Icon className="size-4" />
+                })()}
+                {blockGroup ?? "All blocks"}
+                <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+                  {blockGroup
+                    ? (BLOCK_GROUPS.find((group) => group.name === blockGroup)
+                        ?.count ?? 0)
+                    : BLOCK_TOTAL}
+                </span>
+                <ChevronRightIcon className="text-muted-foreground size-4 rotate-90" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              align="start"
+              className="w-(--radix-dropdown-menu-trigger-width) min-w-56 p-1"
+            >
+              <DropdownMenuItem
+                className="h-9 gap-2 text-sm"
+                onSelect={() => onBlockGroupChange(null)}
+              >
+                <BoxesIcon className="size-4" />
+                All blocks
+                <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+                  {BLOCK_TOTAL}
+                </span>
+                {blockGroup === null && <CheckIcon className="size-4" />}
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              {BLOCK_GROUPS.map((group) => {
+                const Icon = GROUP_ICONS[group.name] ?? BoxesIcon
+                return (
+                  <DropdownMenuItem
+                    key={group.name}
+                    className="h-9 gap-2 text-sm"
+                    onSelect={() => onBlockGroupChange(group.name)}
+                  >
+                    <Icon className="size-4" />
+                    {group.name}
+                    <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+                      {group.count}
+                    </span>
+                    {blockGroup === group.name && (
+                      <CheckIcon className="size-4" />
+                    )}
+                  </DropdownMenuItem>
+                )
+              })}
+            </DropdownMenuContent>
+          </DropdownMenu>
+        )}
       </div>
 
       <div className="text-muted-foreground mt-4 flex items-center justify-between px-4 text-xs">
@@ -270,78 +350,93 @@ export function CatalogSidebar({
       >
         {section === "blocks" ? (
           view === "all" ? (
-            CATEGORIES.map((category) => {
-              const blocks = blocksInCategory(category.name)
-              const isOpen = expanded.includes(category.name)
-              const isActive = category.name === current.category
+            visibleCategories.length > 0 ? (
+              <div className="flex flex-col gap-0.5">
+                {visibleCategories.map((category) => {
+                  const blocks = blocksInCategory(category.name)
+                  const isOpen = expanded.includes(category.name)
+                  const isActive = category.name === current.category
 
-              return (
-                <div key={category.name}>
-                  <HoverCard openDelay={250} closeDelay={100}>
-                    <HoverCardTrigger asChild>
-                      <button
-                        type="button"
-                        aria-expanded={isOpen}
-                        onClick={() => {
-                          onSelectBlockCategory(category.name)
-                          onToggleCategory(category.name)
-                        }}
-                        className={cn(
-                          "flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm transition-colors",
-                          isActive && "bg-muted font-medium",
-                          !isActive && "hover:bg-muted/60",
-                        )}
-                      >
-                        <ChevronRightIcon
-                          className={cn(
-                            "text-muted-foreground size-3.5 shrink-0 transition-transform",
-                            isOpen && "rotate-90",
-                          )}
+                  return (
+                    <div key={category.name}>
+                      <HoverCard openDelay={250} closeDelay={100}>
+                        <HoverCardTrigger asChild>
+                          <button
+                            type="button"
+                            aria-expanded={isOpen}
+                            onClick={() => {
+                              onSelectBlockCategory(category.name)
+                              onToggleCategory(category.name)
+                            }}
+                            className={cn(
+                              "flex w-full items-center gap-2 rounded-md px-2 py-2 text-sm transition-colors",
+                              isActive && "bg-muted font-medium",
+                              !isActive && "hover:bg-muted/60",
+                            )}
+                          >
+                            <ChevronRightIcon
+                              className={cn(
+                                "text-muted-foreground size-3.5 shrink-0 transition-transform",
+                                isOpen && "rotate-90",
+                              )}
+                            />
+                            <span className="truncate">{category.name}</span>
+                            {blocks.length > 0 && (
+                              <span className="bg-info size-1.5 shrink-0 rounded-full" />
+                            )}
+                            <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+                              {category.count}
+                            </span>
+                          </button>
+                        </HoverCardTrigger>
+                        <BlockCategoryHover
+                          category={category.name}
+                          blocks={blocks}
                         />
-                        <span className="truncate">{category.name}</span>
-                        {blocks.length > 0 && (
-                          <span className="bg-info size-1.5 shrink-0 rounded-full" />
-                        )}
-                        <span className="text-muted-foreground ml-auto text-xs tabular-nums">
-                          {category.count}
-                        </span>
-                      </button>
-                    </HoverCardTrigger>
-                    <BlockCategoryHover category={category.name} blocks={blocks} />
-                  </HoverCard>
+                      </HoverCard>
 
-                  {isOpen && (
-                    <div className="border-border/70 ml-4 flex flex-col gap-0.5 border-l py-1 pl-2">
-                      {blocks.map((block) => (
-                        <button
-                          key={block.id}
-                          type="button"
-                          onClick={() => onSelect(block)}
-                          className={cn(
-                            "truncate rounded-md px-2 py-1.5 text-left text-sm transition-colors",
-                            block.id === current.id
-                              ? "bg-accent text-accent-foreground font-medium"
-                              : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
+                      {isOpen && (
+                        <div className="border-border/70 ml-4 flex flex-col gap-0.5 border-l py-1 pl-2">
+                          {blocks.map((block) => (
+                            <button
+                              key={block.id}
+                              type="button"
+                              onClick={() => onSelect(block)}
+                              className={cn(
+                                "truncate rounded-md px-2 py-1.5 text-left text-sm transition-colors",
+                                block.id === current.id
+                                  ? "bg-accent text-accent-foreground font-medium"
+                                  : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
+                              )}
+                            >
+                              {block.name}
+                            </button>
+                          ))}
+                          {blocks.length === 0 && (
+                            <span className="text-muted-foreground px-2 py-1.5 text-xs">
+                              No local examples yet
+                            </span>
                           )}
-                        >
-                          {block.name}
-                        </button>
-                      ))}
-                      {blocks.length === 0 && (
-                        <span className="text-muted-foreground px-2 py-1.5 text-xs">
-                          No local examples yet
-                        </span>
-                      )}
-                      {category.count > blocks.length && (
-                        <span className="text-muted-foreground/70 px-2 py-1 text-[11px]">
-                          +{category.count - blocks.length} more in ReUI
-                        </span>
+                          {category.count > blocks.length && (
+                            <span className="text-muted-foreground/70 px-2 py-1 text-[11px]">
+                              +{category.count - blocks.length} more in ReUI
+                            </span>
+                          )}
+                        </div>
                       )}
                     </div>
-                  )}
-                </div>
-              )
-            })
+                  )
+                })}
+              </div>
+            ) : (
+              <div className="text-muted-foreground px-3 py-6 text-sm">
+                <BoxesIcon className="mx-auto mb-2 size-5" />
+                <p className="text-center">
+                  No local examples in {blockGroup} yet. Browse the ReUI catalog
+                  for this group.
+                </p>
+              </div>
+            )
           ) : favoriteBlocks.length > 0 ? (
             <div className="flex flex-col gap-0.5">
               {favoriteBlocks.map((block) => (

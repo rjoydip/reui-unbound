@@ -7,9 +7,10 @@ import { Input } from "@/components/ui/input"
 import { InstallCommandPill } from "@/components/~app/install-command-pill"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import {
-  BLOCKS,
-  CATEGORIES,
+  BLOCK_GROUPS,
+  BLOCK_TOTAL,
   blocksInCategory,
+  blocksInGroup,
   installCommandFor,
   registryName,
 } from "@/blocks/~internal/registry"
@@ -48,16 +49,18 @@ function LazyPreview({ children }: { children: React.ReactNode }) {
 }
 
 export function BlocksOverview({
+  group,
   category,
-  onCategoryChange,
+  onGroupChange,
   packageManager,
   onPackageManagerChange,
   theme,
   onOpen,
   onViewCode,
 }: {
+  group: string | null
   category: string | null
-  onCategoryChange: (category: string | null) => void
+  onGroupChange: (group: string | null) => void
   packageManager: PackageManager
   onPackageManagerChange: (next: PackageManager) => void
   theme: "light" | "dark"
@@ -67,7 +70,7 @@ export function BlocksOverview({
   const { copyToClipboard } = useCopyToClipboard()
   const [query, setQuery] = useState("")
 
-  const source = category ? blocksInCategory(category) : BLOCKS
+  const source = category ? blocksInCategory(category) : blocksInGroup(group)
   const term = query.trim().toLowerCase()
   const blocks = term
     ? source.filter((block) => block.name.toLowerCase().includes(term))
@@ -75,66 +78,69 @@ export function BlocksOverview({
 
   return (
     <div className="mx-auto w-full max-w-7xl p-4 sm:p-6">
-      <div className="flex items-center justify-between gap-3">
-        <div className="text-muted-foreground flex items-center gap-2 text-sm font-medium">
-          <LayoutGridIcon className="size-4" />
-          Blocks
+      <p className="text-muted-foreground max-w-5xl text-base">
+        Browse {BLOCK_TOTAL}+ production-ready shadcn blocks for SaaS,
+        marketing, AI products, eCommerce, fintech, dashboards, and developer
+        tools. Pick a product surface, then jump into complete layouts built for
+        Tailwind CSS and ReUI themes.
+      </p>
+
+      <div className="mt-4 flex flex-wrap items-center gap-3">
+        <div className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <button
+            type="button"
+            onClick={() => onGroupChange(null)}
+            className={cn(
+              "h-8 shrink-0 rounded-full border px-2.5 text-sm font-medium transition-colors",
+              group === null
+                ? "border-border bg-background text-foreground shadow-xs"
+                : "text-muted-foreground hover:text-foreground hover:bg-muted border-transparent",
+            )}
+          >
+            All <span className="tabular-nums">{BLOCK_TOTAL}</span>
+          </button>
+          {BLOCK_GROUPS.map((entry) => (
+            <button
+              key={entry.name}
+              type="button"
+              onClick={() => onGroupChange(entry.name)}
+              className={cn(
+                "h-8 shrink-0 rounded-full border px-2.5 text-sm font-medium transition-colors",
+                group === entry.name
+                  ? "border-border bg-background text-foreground shadow-xs"
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted border-transparent",
+              )}
+            >
+              {entry.name} <span className="tabular-nums">{entry.count}</span>
+            </button>
+          ))}
         </div>
-        <div className="relative w-full max-w-64">
+        <div className="relative w-full max-w-56 shrink-0">
           <SearchIcon className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2" />
           <Input
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search blocks..."
-            className="h-8 pl-9 text-sm"
+            placeholder="Search..."
+            className="h-9 pl-9 text-sm"
           />
         </div>
       </div>
 
-      <div className="mt-2 flex flex-wrap items-center gap-3">
-        <h1 className="text-2xl font-semibold tracking-tight">
-          Data Grid Blocks
-        </h1>
-        <span className="bg-muted text-muted-foreground rounded-full px-2 py-0.5 text-xs font-medium tabular-nums">
-          {BLOCKS.length}
-        </span>
-      </div>
-      <p className="text-muted-foreground mt-1 max-w-3xl text-sm">
-        Production-ready data grid blocks for dashboards and internal tools.
-        Pick a category, then open a block to preview or copy its code.
-      </p>
-
-      <div className="mt-3 flex items-center gap-1.5 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <button
-          type="button"
-          onClick={() => onCategoryChange(null)}
-          className={cn(
-            "h-8 shrink-0 rounded-full px-3 text-sm font-medium transition-[background-color]",
-            category === null
-              ? "bg-foreground text-background"
-              : "text-muted-foreground hover:text-foreground hover:bg-muted",
-          )}
-        >
-          All <span className="tabular-nums">{BLOCKS.length}</span>
-        </button>
-        {CATEGORIES.map((entry) => (
-          <button
-            key={entry.name}
-            type="button"
-            onClick={() => onCategoryChange(entry.name)}
-            className={cn(
-              "h-8 shrink-0 rounded-full px-3 text-sm font-medium transition-[background-color]",
-              category === entry.name
-                ? "bg-foreground text-background"
-                : "text-muted-foreground hover:text-foreground hover:bg-muted",
-            )}
-          >
-            {entry.name} <span className="tabular-nums">{entry.count}</span>
-          </button>
-        ))}
-      </div>
-
+      {blocks.length === 0 ? (
+        <div className="border-border bg-muted/20 mt-5 flex min-h-48 flex-col items-center justify-center rounded-xl border border-dashed p-8 text-center">
+          <LayoutGridIcon className="text-muted-foreground mb-2 size-6" />
+          <p className="text-sm font-medium">
+            No local examples in {category ?? group ?? "this group"} yet
+          </p>
+          <p className="text-muted-foreground mt-1 max-w-md text-sm">
+            The ReUI {group ?? "block"} catalog is captured under
+            <code className="mx-1">captures/application</code> and lands in
+            batches.
+          </p>
+        </div>
+      ) : (
       <div className="mt-5 grid gap-4 lg:grid-cols-2">
+
         {blocks.map((block) => {
           const target =
             block.installTarget ?? registryName(block.registryId ?? block.id)
@@ -194,12 +200,7 @@ export function BlocksOverview({
           )
         })}
       </div>
-
-      {blocks.length === 0 ? (
-        <p className="text-muted-foreground py-12 text-center text-sm">
-          No blocks match “{query}”.
-        </p>
-      ) : null}
+      )}
     </div>
   )
 }

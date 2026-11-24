@@ -76,7 +76,20 @@ import SupportScorecardBlock from "@/blocks/data-grid/advanced/support-scorecard
 import JobScheduleBlock from "@/blocks/data-grid/advanced/job-schedule"
 import ProspectDatabaseBlock from "@/blocks/data-grid/advanced/prospects"
 import ProjectBudgetBlock from "@/blocks/data-grid/advanced/project-budget"
+import { APP_SHELL_BLOCKS } from "@/blocks/application/app-shell/~blocks"
+import { AUTH_BLOCKS } from "@/blocks/application/auth/~blocks"
+import { CARD_BLOCKS } from "@/blocks/application/card/~blocks"
+import { DASHBOARD_BLOCKS } from "@/blocks/application/dashboard/~blocks"
+import { DIALOG_BLOCKS } from "@/blocks/application/dialog/~blocks"
+import { EMPTY_STATE_BLOCKS } from "@/blocks/application/empty-state/~blocks"
+import { EVENT_CALENDAR_BLOCKS } from "@/blocks/application/event-calendar/~blocks"
+import { FLOW_BLOCKS } from "@/blocks/application/flow/~blocks"
+import { FORM_BLOCKS } from "@/blocks/application/form/~blocks"
+import { GANTT_BLOCKS } from "@/blocks/application/gantt/~blocks"
+import { KANBAN_BOARD_BLOCKS } from "@/blocks/application/kanban-board/~blocks"
+import { LIST_BLOCKS } from "@/blocks/application/list/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
+
 
 import base1Index from "@/blocks/data-grid/base/customers/index.tsx?raw"
 import base1Parts from "@/blocks/data-grid/base/customers/parts.tsx?raw"
@@ -269,6 +282,7 @@ import adv21CustomerSheet from "@/blocks/data-grid/advanced/invoices/customer-sh
 import adv21Data from "@/blocks/data-grid/advanced/invoices/data.ts?raw"
 import adv21Parts from "@/blocks/data-grid/advanced/invoices/parts.tsx?raw"
 
+
 export type Lang = "tsx" | "typescript"
 
 export interface BlockFile {
@@ -284,6 +298,8 @@ export interface BlockEntry {
   name: string
   category: string
   stage: string
+  /** Block family. Defaults to `data-grid` when omitted. */
+  group?: "data-grid" | "application"
   href: string
   Component: () => React.JSX.Element
   files: BlockFile[]
@@ -301,6 +317,7 @@ export interface BlockEntry {
 export interface CategoryEntry {
   name: string
   count: number
+  group?: "data-grid" | "application"
 }
 
 const file = (name: string, code: string, lang: Lang = "tsx"): BlockFile => ({
@@ -322,10 +339,86 @@ export const CATEGORIES: CategoryEntry[] = [
   { name: "Virtualization", count: 2 },
 ]
 
+/** Application block categories from https://reui.io/blocks/application. */
+export const APPLICATION_CATEGORIES: CategoryEntry[] = [
+  { name: "App Shell", count: 36 },
+  { name: "Auth", count: 20 },
+  { name: "Card", count: 43 },
+  { name: "Dashboard", count: 8 },
+  { name: "Dialog", count: 15 },
+  { name: "Empty State", count: 14 },
+  { name: "Event Calendar", count: 6 },
+  { name: "Flow", count: 4 },
+  { name: "Form", count: 12 },
+  { name: "Gantt", count: 4 },
+  { name: "Kanban Board", count: 10 },
+  { name: "List", count: 11 },
+  { name: "Navbar", count: 13 },
+  { name: "Onboarding", count: 9 },
+  { name: "Profile", count: 10 },
+  { name: "Rich Text Editor", count: 5 },
+  { name: "Schedule", count: 10 },
+  { name: "Settings", count: 16 },
+  { name: "Sheet", count: 24 },
+  { name: "Stats", count: 17 },
+  { name: "Timeline", count: 9 },
+  { name: "Whiteboard", count: 2 },
+  { name: "Wizard", count: 7 },
+].map((entry) => ({ ...entry, group: "application" as const }))
+
 export const DATA_GRID_TOTAL = CATEGORIES.reduce(
   (sum, category) => sum + category.count,
   0,
 )
+
+export const APPLICATION_TOTAL = APPLICATION_CATEGORIES.reduce(
+  (sum, category) => sum + category.count,
+  0,
+)
+
+/** Top-level ReUI block groups shown in the sidebar selector and blocks page. */
+export interface BlockGroupEntry {
+  name: string
+  count: number
+  categories: string[]
+}
+
+export const BLOCK_GROUPS: BlockGroupEntry[] = [
+  {
+    name: "Application",
+    count: 305,
+    categories: APPLICATION_CATEGORIES.map((category) => category.name),
+  },
+  {
+    name: "Data Grid",
+    count: 70,
+    categories: CATEGORIES.map((category) => category.name),
+  },
+  { name: "Charts", count: 54, categories: [] },
+  { name: "Solutions", count: 82, categories: [] },
+  { name: "AI & Agents", count: 22, categories: [] },
+  { name: "eCommerce", count: 87, categories: [] },
+  { name: "Marketing", count: 67, categories: [] },
+]
+
+export const BLOCK_TOTAL = BLOCK_GROUPS.reduce(
+  (sum, group) => sum + group.count,
+  0,
+)
+
+export function categoriesInGroup(group: string | null): CategoryEntry[] {
+  if (!group) return [...APPLICATION_CATEGORIES, ...CATEGORIES]
+  if (group === "Application") return APPLICATION_CATEGORIES
+  if (group === "Data Grid") return CATEGORIES
+  return []
+}
+
+export function blocksInGroup(group: string | null): BlockEntry[] {
+  if (!group) return BLOCKS
+  const entry = BLOCK_GROUPS.find((item) => item.name === group)
+  if (!entry) return []
+  return BLOCKS.filter((block) => entry.categories.includes(block.category))
+}
 
 export const BLOCKS: BlockEntry[] = [
   {
@@ -1755,6 +1848,18 @@ export const BLOCKS: BlockEntry[] = [
       file("parts.tsx", adv21Parts, "tsx"),
     ],
   },
+  ...APP_SHELL_BLOCKS,
+  ...AUTH_BLOCKS,
+  ...CARD_BLOCKS,
+  ...DASHBOARD_BLOCKS,
+  ...DIALOG_BLOCKS,
+  ...EMPTY_STATE_BLOCKS,
+  ...EVENT_CALENDAR_BLOCKS,
+  ...FLOW_BLOCKS,
+  ...FORM_BLOCKS,
+  ...GANTT_BLOCKS,
+  ...KANBAN_BOARD_BLOCKS,
+  ...LIST_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {

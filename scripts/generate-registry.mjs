@@ -137,7 +137,8 @@ const blockItems = []
 
 for (const part of blockParts) {
   const id = part.slice(0, part.indexOf('"'))
-  if (!id || id.startsWith("data-grid-") === false) continue
+  const group = part.match(/group:\s*"([^"]+)"/)?.[1] ?? "data-grid"
+  if (!id || (group !== "application" && !id.startsWith("data-grid-"))) continue
 
   const name = part.match(/name:\s*"([^"]+)"/)?.[1] ?? id
   const category = part.match(/category:\s*"([^"]+)"/)?.[1]
@@ -169,7 +170,7 @@ for (const part of blockParts) {
     name: itemName,
     type: "registry:block",
     title: name,
-    description: `${name} data grid block.`,
+    description: `${name} ${group === "application" ? "application" : "data grid"} block.`,
     ...(category ? { meta: { category, id } } : {}),
     dependencies: [...new Set([...declaredPackages, ...scanned.dependencies])].sort(),
     registryDependencies: [
@@ -181,6 +182,53 @@ for (const part of blockParts) {
       target: `@components/blocks/${id}/${path.posix.basename(file)}`,
     })),
   })
+}
+
+/* Application blocks: scan implemented folders, metadata from the manifest. */
+const appManifest = JSON.parse(read("src/blocks/application/~manifest.json"))
+const appRoot = "src/blocks/application"
+
+for (const categoryEntry of fs.readdirSync(path.join(root, appRoot), {
+  withFileTypes: true,
+})) {
+  if (!categoryEntry.isDirectory() || categoryEntry.name.startsWith("~")) continue
+  const categoryDir = path.posix.join(appRoot, categoryEntry.name)
+  for (const blockEntry of fs.readdirSync(path.join(root, categoryDir), {
+    withFileTypes: true,
+  })) {
+    if (!blockEntry.isDirectory()) continue
+    const file = path.posix.join(categoryDir, blockEntry.name, "index.tsx")
+    if (!exists(file)) continue
+    const meta = appManifest.find((item) => item.slug === blockEntry.name)
+    if (!meta) {
+      console.warn(`registry: no manifest entry for ${blockEntry.name}`)
+      continue
+    }
+    const scanned = scanSource([file], blockEntry.name)
+    const registryName =
+      categoryEntry.name +
+      "-" +
+      meta.title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "")
+    blockItems.push({
+      name: registryName,
+      type: "registry:block",
+      title: meta.title,
+      description: `${meta.title} ${categoryEntry.name.toLowerCase()} block.`,
+      meta: { category: meta.category, id: blockEntry.name },
+      dependencies: scanned.dependencies,
+      registryDependencies: scanned.registryDependencies,
+      files: [
+        {
+          path: `application/${categoryEntry.name}/${blockEntry.name}/index.tsx`,
+          type: "registry:component",
+          target: `@components/blocks/${registryName}/index.tsx`,
+        },
+      ],
+    })
+  }
 }
 
 writeJson("src/blocks/registry.json", {

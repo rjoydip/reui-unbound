@@ -129,7 +129,15 @@ export default function App() {
   })
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [customizeOpen, setCustomizeOpen] = useState(false)
-  const [overview, setOverview] = useState<CatalogOverview | null>(null)
+  const [overview, setOverview] = useState<CatalogOverview | null>(() =>
+    window.location.pathname.replace(/\/+$/, "") === "/blocks"
+      ? { kind: "block", name: null }
+      : null,
+  )
+  const [blockGroup, setBlockGroup] = useState<string | null>(null)
+  const [overviewCategory, setOverviewCategory] = useState<string | null>(
+    null,
+  )
   const [sidebarResetKey, setSidebarResetKey] = useState(0)
   const [options, setOptions] = useState<CustomizeOptions>(DEFAULT_OPTIONS)
   const [packageManager, setPackageManager] = useState<PackageManager>("bun")
@@ -317,6 +325,7 @@ export default function App() {
   }
 
   function selectBlockCategory(name: string | null) {
+    setOverviewCategory(name)
     const first = name ? blocksInCategory(name)[0] : BLOCKS[0]
     if (first) {
       setSection("blocks")
@@ -324,7 +333,19 @@ export default function App() {
       setActiveFile(null)
       window.history.replaceState(null, "", `#${first.id}`)
     }
-    setOverview({ kind: "block", name })
+    setOverview({ kind: "block", name: blockGroup })
+    setSidebarOpen(false)
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0 })
+      document.querySelector("main")?.scrollTo({ top: 0 })
+    })
+  }
+
+  function changeBlockGroup(group: string | null) {
+    setBlockGroup(group)
+    setOverviewCategory(null)
+    setSection("blocks")
+    setOverview({ kind: "block", name: group })
     setSidebarOpen(false)
     requestAnimationFrame(() => {
       window.scrollTo({ top: 0 })
@@ -419,8 +440,9 @@ export default function App() {
       favorites={favorites}
       onSelect={(entry) => selectBlock(entry.id)}
       onSelectGroup={selectGroup}
-      onSelectAllBlocks={() => selectBlockCategory(null)}
       onSelectBlockCategory={selectBlockCategory}
+      blockGroup={blockGroup}
+      onBlockGroupChange={changeBlockGroup}
       expanded={expanded}
       onToggleCategory={toggleCategory}
       resetKey={sidebarResetKey}
@@ -488,10 +510,9 @@ export default function App() {
           {overview?.kind === "block" ? (
             <main className="flex-1 overflow-y-auto">
               <BlocksOverview
-                category={overview.name}
-                onCategoryChange={(name) =>
-                  setOverview({ kind: "block", name })
-                }
+                group={overview.name}
+                category={overviewCategory}
+                onGroupChange={changeBlockGroup}
                 packageManager={packageManager}
                 onPackageManagerChange={setPackageManager}
                 theme={theme}
@@ -530,7 +551,9 @@ export default function App() {
             >
               <div
                 className={cn(
-                  "bg-background w-full",
+                  // contain: paint makes the block's fixed Sidebar position
+                  // itself inside this preview instead of over the app shell.
+                  "bg-background relative w-full [contain:paint]",
                   device !== "desktop" && "overflow-x-auto border-x shadow-sm",
                 )}
                 style={{ maxWidth: deviceWidth }}
