@@ -89,7 +89,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-1",
-    installTarget: "@reui-unbound/app-shell-1",
+    installTarget: "@reui-unbound/app-shell-icon-rail-dashboard",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","breadcrumb","collapsible","dropdown-menu","sidebar"],
       packages: ["cn","lucide-react"],
@@ -104,7 +104,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-2",
-    installTarget: "@reui-unbound/app-shell-2",
+    installTarget: "@reui-unbound/app-shell-floating-sidebar-admin",
     dependencies: {
       registry: ["breadcrumb","collapsible","dialog","dropdown-menu","kbd","sidebar"],
       packages: ["lucide-react"],
@@ -119,7 +119,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-3",
-    installTarget: "@reui-unbound/app-shell-3",
+    installTarget: "@reui-unbound/app-shell-project-tracker-sidebar",
     dependencies: {
       registry: ["@reui-unbound/badge","breadcrumb","collapsible","dropdown-menu","kbd","sidebar"],
       packages: ["cn","lucide-react"],
@@ -134,7 +134,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-4",
-    installTarget: "@reui-unbound/app-shell-4",
+    installTarget: "@reui-unbound/app-shell-mail-inbox",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","dropdown-menu","input","separator","tabs"],
       packages: ["cn","lucide-react"],
@@ -149,7 +149,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-5",
-    installTarget: "@reui-unbound/app-shell-5",
+    installTarget: "@reui-unbound/app-shell-calendar-contacts-hub",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","calendar","collapsible","dropdown-menu","input","sidebar"],
       packages: ["cn","lucide-react"],
@@ -164,7 +164,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-6",
-    installTarget: "@reui-unbound/app-shell-6",
+    installTarget: "@reui-unbound/app-shell-team-calendar-panel",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","calendar","collapsible","dropdown-menu","popover","sidebar"],
       packages: ["cn","lucide-react"],
@@ -179,9 +179,9 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-7",
-    installTarget: "@reui-unbound/app-shell-7",
+    installTarget: "@reui-unbound/app-shell-environment-switcher",
     dependencies: {
-      registry: ["@reui-unbound/badge","breadcrumb","button","collapsible","dropdown-menu","popover","progress","sidebar"],
+      registry: ["@reui-unbound/badge","breadcrumb","collapsible","dropdown-menu","popover","progress","sidebar"],
       packages: ["cn","lucide-react"],
     },
     Component: AppShell7Block,
@@ -194,7 +194,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-8",
-    installTarget: "@reui-unbound/app-shell-8",
+    installTarget: "@reui-unbound/app-shell-inventory-admin",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","breadcrumb","button","dropdown-menu","popover","sidebar"],
       packages: ["cn","lucide-react"],
@@ -209,7 +209,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-9",
-    installTarget: "@reui-unbound/app-shell-9",
+    installTarget: "@reui-unbound/app-shell-team-presence-workspace",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dropdown-menu","popover","sidebar"],
       packages: ["lucide-react"],
@@ -224,10 +224,10 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-10",
-    installTarget: "@reui-unbound/app-shell-10",
+    installTarget: "@reui-unbound/app-shell-ai-agents-console",
     dependencies: {
-      registry: ["@reui-unbound/badge","avatar","breadcrumb","button","collapsible","dropdown-menu","label","popover","progress","sidebar","switch","tooltip"],
-      packages: ["cn","lucide-react"],
+      registry: ["@reui-unbound/badge","avatar","button","collapsible","dropdown-menu","label","popover","sidebar","switch"],
+      packages: ["lucide-react"],
     },
     Component: AppShell10Block,
     files: [file("index.tsx", AppShell10BlockSource, "tsx")],
@@ -239,9 +239,9 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-11",
-    installTarget: "@reui-unbound/app-shell-11",
+    installTarget: "@reui-unbound/app-shell-operations-workbench",
     dependencies: {
-      registry: ["@reui-unbound/badge","avatar","button","calendar","checkbox","collapsible","dropdown-menu","resizable","separator","sidebar","tabs"],
+      registry: ["@reui-unbound/badge","button","calendar","collapsible","popover","resizable","sidebar","tabs"],
       packages: ["cn","lucide-react"],
     },
     Component: AppShell11Block,
@@ -254,9 +254,9 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-12",
-    installTarget: "@reui-unbound/app-shell-12",
+    installTarget: "@reui-unbound/app-shell-apps-grid-header",
     dependencies: {
-      registry: ["@reui-unbound/badge","avatar","breadcrumb","button","collapsible","dropdown-menu","popover","sidebar"],
+      registry: ["@reui-unbound/badge","avatar","breadcrumb","button","collapsible","dialog","dropdown-menu","popover","sidebar"],
       packages: ["cn","lucide-react"],
     },
     Component: AppShell12Block,
@@ -269,7 +269,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-13",
-    installTarget: "@reui-unbound/app-shell-13",
+    installTarget: "@reui-unbound/app-shell-community-feed-app",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","dropdown-menu","input","sidebar"],
       packages: ["lucide-react"],
@@ -284,7 +284,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-14",
-    installTarget: "@reui-unbound/app-shell-14",
+    installTarget: "@reui-unbound/app-shell-view-toolbar-workspace",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","dropdown-menu","input","tabs"],
       packages: ["cn","lucide-react"],
@@ -299,7 +299,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-15",
-    installTarget: "@reui-unbound/app-shell-15",
+    installTarget: "@reui-unbound/app-shell-pinnable-favorites-nav",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dropdown-menu","sidebar"],
       packages: ["cn","lucide-react"],
@@ -314,7 +314,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-16",
-    installTarget: "@reui-unbound/app-shell-16",
+    installTarget: "@reui-unbound/app-shell-dual-sidebar-dashboard",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dropdown-menu","input"],
       packages: ["cn","lucide-react"],
@@ -329,7 +329,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-17",
-    installTarget: "@reui-unbound/app-shell-17",
+    installTarget: "@reui-unbound/app-shell-model-picker-chat",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","dropdown-menu","sidebar"],
       packages: ["cn","lucide-react"],
@@ -344,7 +344,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-18",
-    installTarget: "@reui-unbound/app-shell-18",
+    installTarget: "@reui-unbound/app-shell-to-do-ai-assistant",
     dependencies: {
       registry: ["avatar","button","dialog","dropdown-menu","input","kbd","label","progress","sheet","sidebar","textarea"],
       packages: ["cn","lucide-react"],
@@ -359,7 +359,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-19",
-    installTarget: "@reui-unbound/app-shell-19",
+    installTarget: "@reui-unbound/app-shell-scheduling-planner",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","calendar","dropdown-menu","sidebar"],
       packages: ["cn","lucide-react"],
@@ -374,7 +374,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-20",
-    installTarget: "@reui-unbound/app-shell-20",
+    installTarget: "@reui-unbound/app-shell-webmail-client",
     dependencies: {
       registry: ["avatar","button","dialog","dropdown-menu","empty","input","label","sidebar","textarea"],
       packages: ["lucide-react"],
@@ -389,7 +389,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-21",
-    installTarget: "@reui-unbound/app-shell-21",
+    installTarget: "@reui-unbound/app-shell-resizable-ai-chat",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dialog","dropdown-menu","resizable","tabs"],
       packages: ["cn","lucide-react","react-resizable-panels"],
@@ -404,7 +404,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-22",
-    installTarget: "@reui-unbound/app-shell-22",
+    installTarget: "@reui-unbound/app-shell-fleet-operator-console",
     dependencies: {
       registry: ["avatar","button","dropdown-menu"],
       packages: ["cn","lucide-react"],
@@ -419,7 +419,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-23",
-    installTarget: "@reui-unbound/app-shell-23",
+    installTarget: "@reui-unbound/app-shell-team-project-switcher",
     dependencies: {
       registry: ["@reui-unbound/badge","@reui-unbound/rating","avatar","button","dropdown-menu","sheet"],
       packages: ["cn","lucide-react"],
@@ -434,7 +434,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-24",
-    installTarget: "@reui-unbound/app-shell-24",
+    installTarget: "@reui-unbound/app-shell-ops-presence-console",
     dependencies: {
       registry: ["@reui-unbound/badge","@reui-unbound/rating","avatar","button","dialog","dropdown-menu","sheet"],
       packages: ["cn","lucide-react"],
@@ -449,7 +449,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-25",
-    installTarget: "@reui-unbound/app-shell-25",
+    installTarget: "@reui-unbound/app-shell-mission-control",
     dependencies: {
       registry: ["@reui-unbound/badge","@reui-unbound/frame","avatar","button","collapsible","dropdown-menu","input-group","separator","tabs"],
       packages: ["cn","lucide-react"],
@@ -464,7 +464,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-26",
-    installTarget: "@reui-unbound/app-shell-26",
+    installTarget: "@reui-unbound/app-shell-security-scope-console",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dialog","dropdown-menu","spinner"],
       packages: ["cn","lucide-react"],
@@ -479,7 +479,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-27",
-    installTarget: "@reui-unbound/app-shell-27",
+    installTarget: "@reui-unbound/app-shell-route-search-sidebar",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dropdown-menu","kbd","tabs"],
       packages: ["cn","lucide-react"],
@@ -494,7 +494,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-28",
-    installTarget: "@reui-unbound/app-shell-28",
+    installTarget: "@reui-unbound/app-shell-section-tabs-admin",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","dialog","dropdown-menu"],
       packages: ["cn","lucide-react"],
@@ -509,7 +509,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-29",
-    installTarget: "@reui-unbound/app-shell-29",
+    installTarget: "@reui-unbound/app-shell-section-tile-rail",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","collapsible","dropdown-menu","input","kbd","sidebar","skeleton","tabs"],
       packages: ["cn","lucide-react"],
@@ -524,7 +524,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-30",
-    installTarget: "@reui-unbound/app-shell-30",
+    installTarget: "@reui-unbound/app-shell-top-navbar-admin",
     dependencies: {
       registry: ["@reui-unbound/badge","@reui-unbound/rating","avatar","button","dialog","dropdown-menu","input","sheet","skeleton","tabs"],
       packages: ["cn","lucide-react"],
@@ -539,7 +539,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-31",
-    installTarget: "@reui-unbound/app-shell-31",
+    installTarget: "@reui-unbound/app-shell-folder-tab-workspace",
     dependencies: {
       registry: ["avatar","button","dropdown-menu","skeleton","tabs","tooltip"],
       packages: ["cn","lucide-react"],
@@ -554,7 +554,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-32",
-    installTarget: "@reui-unbound/app-shell-32",
+    installTarget: "@reui-unbound/app-shell-endpoint-protection",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dialog","dropdown-menu","input","label","skeleton","tabs","textarea","toggle-group","tooltip"],
       packages: ["cn","lucide-react"],
@@ -569,7 +569,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-33",
-    installTarget: "@reui-unbound/app-shell-33",
+    installTarget: "@reui-unbound/app-shell-fleet-center",
     dependencies: {
       registry: ["avatar","collapsible","dropdown-menu","input","skeleton"],
       packages: ["cn","lucide-react"],
@@ -584,7 +584,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-34",
-    installTarget: "@reui-unbound/app-shell-34",
+    installTarget: "@reui-unbound/app-shell-invoice-matching",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","button","collapsible","dropdown-menu","input","skeleton","tabs","textarea","tooltip"],
       packages: ["cn","lucide-react"],
@@ -599,7 +599,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-35",
-    installTarget: "@reui-unbound/app-shell-35",
+    installTarget: "@reui-unbound/app-shell-whiteboard-workspace",
     dependencies: {
       registry: ["alert-dialog","avatar","breadcrumb","button","drawer","dropdown-menu","sheet","skeleton","tabs"],
       packages: ["cn","lucide-react"],
@@ -614,7 +614,7 @@ export const APP_SHELL_BLOCKS: BlockEntry[] = [
     stage: "Application",
     group: "application",
     href: "https://reui.io/blocks/application/app-shell/app-shell-36",
-    installTarget: "@reui-unbound/app-shell-36",
+    installTarget: "@reui-unbound/app-shell-observability-console",
     dependencies: {
       registry: ["@reui-unbound/badge","avatar","breadcrumb","button","collapsible","dropdown-menu","input","kbd","sidebar","skeleton"],
       packages: ["cn","lucide-react"],

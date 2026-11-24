@@ -2827,7 +2827,7 @@
       ]
     },
     {
-      "name": "app-shell-1",
+      "name": "app-shell-icon-rail-dashboard",
       "type": "registry:block",
       "title": "Icon Rail Dashboard",
       "description": "Icon Rail Dashboard app-shell block.",
@@ -2851,12 +2851,12 @@
         {
           "path": "application/app-shell/app-shell-1/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-1/index.tsx"
+          "target": "@components/blocks/app-shell-icon-rail-dashboard/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-10",
+      "name": "app-shell-ai-agents-console",
       "type": "registry:block",
       "title": "AI Agents Console",
       "description": "AI Agents Console app-shell block.",
@@ -2882,12 +2882,12 @@
         {
           "path": "application/app-shell/app-shell-10/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-10/index.tsx"
+          "target": "@components/blocks/app-shell-ai-agents-console/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-11",
+      "name": "app-shell-operations-workbench",
       "type": "registry:block",
       "title": "Operations Workbench",
       "description": "Operations Workbench app-shell block.",
@@ -2913,12 +2913,12 @@
         {
           "path": "application/app-shell/app-shell-11/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-11/index.tsx"
+          "target": "@components/blocks/app-shell-operations-workbench/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-12",
+      "name": "app-shell-apps-grid-header",
       "type": "registry:block",
       "title": "Apps Grid Header",
       "description": "Apps Grid Header app-shell block.",
@@ -2945,12 +2945,12 @@
         {
           "path": "application/app-shell/app-shell-12/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-12/index.tsx"
+          "target": "@components/blocks/app-shell-apps-grid-header/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-13",
+      "name": "app-shell-community-feed-app",
       "type": "registry:block",
       "title": "Community Feed App",
       "description": "Community Feed App app-shell block.",
@@ -2973,12 +2973,12 @@
         {
           "path": "application/app-shell/app-shell-13/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-13/index.tsx"
+          "target": "@components/blocks/app-shell-community-feed-app/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-14",
+      "name": "app-shell-view-toolbar-workspace",
       "type": "registry:block",
       "title": "View Toolbar Workspace",
       "description": "View Toolbar Workspace app-shell block.",
@@ -3002,12 +3002,12 @@
         {
           "path": "application/app-shell/app-shell-14/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-14/index.tsx"
+          "target": "@components/blocks/app-shell-view-toolbar-workspace/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-15",
+      "name": "app-shell-pinnable-favorites-nav",
       "type": "registry:block",
       "title": "Pinnable Favorites Nav",
       "description": "Pinnable Favorites Nav app-shell block.",
@@ -3031,12 +3031,12 @@
         {
           "path": "application/app-shell/app-shell-15/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-15/index.tsx"
+          "target": "@components/blocks/app-shell-pinnable-favorites-nav/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-16",
+      "name": "app-shell-dual-sidebar-dashboard",
       "type": "registry:block",
       "title": "Dual Sidebar Dashboard",
       "description": "Dual Sidebar Dashboard app-shell block.",
@@ -3060,12 +3060,12 @@
         {
           "path": "application/app-shell/app-shell-16/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-16/index.tsx"
+          "target": "@components/blocks/app-shell-dual-sidebar-dashboard/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-17",
+      "name": "app-shell-model-picker-chat",
       "type": "registry:block",
       "title": "Model Picker Chat",
       "description": "Model Picker Chat app-shell block.",
@@ -3088,12 +3088,12 @@
         {
           "path": "application/app-shell/app-shell-17/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-17/index.tsx"
+          "target": "@components/blocks/app-shell-model-picker-chat/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-18",
+      "name": "app-shell-to-do-ai-assistant",
       "type": "registry:block",
       "title": "To-Do AI Assistant",
       "description": "To-Do AI Assistant app-shell block.",
@@ -3122,12 +3122,12 @@
         {
           "path": "application/app-shell/app-shell-18/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-18/index.tsx"
+          "target": "@components/blocks/app-shell-to-do-ai-assistant/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-19",
+      "name": "app-shell-scheduling-planner",
       "type": "registry:block",
       "title": "Scheduling Planner",
       "description": "Scheduling Planner app-shell block.",
@@ -3151,12 +3151,12 @@
         {
           "path": "application/app-shell/app-shell-19/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-19/index.tsx"
+          "target": "@components/blocks/app-shell-scheduling-planner/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-2",
+      "name": "app-shell-floating-sidebar-admin",
       "type": "registry:block",
       "title": "Floating Sidebar Admin",
       "description": "Floating Sidebar Admin app-shell block.",
@@ -3179,12 +3179,12 @@
         {
           "path": "application/app-shell/app-shell-2/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-2/index.tsx"
+          "target": "@components/blocks/app-shell-floating-sidebar-admin/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-20",
+      "name": "app-shell-webmail-client",
       "type": "registry:block",
       "title": "Webmail Client",
       "description": "Webmail Client app-shell block.",
@@ -3210,12 +3210,12 @@
         {
           "path": "application/app-shell/app-shell-20/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-20/index.tsx"
+          "target": "@components/blocks/app-shell-webmail-client/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-21",
+      "name": "app-shell-resizable-ai-chat",
       "type": "registry:block",
       "title": "Resizable AI Chat",
       "description": "Resizable AI Chat app-shell block.",
@@ -3242,12 +3242,12 @@
         {
           "path": "application/app-shell/app-shell-21/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-21/index.tsx"
+          "target": "@components/blocks/app-shell-resizable-ai-chat/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-22",
+      "name": "app-shell-fleet-operator-console",
       "type": "registry:block",
       "title": "Fleet Operator Console",
       "description": "Fleet Operator Console app-shell block.",
@@ -3268,12 +3268,12 @@
         {
           "path": "application/app-shell/app-shell-22/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-22/index.tsx"
+          "target": "@components/blocks/app-shell-fleet-operator-console/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-23",
+      "name": "app-shell-team-project-switcher",
       "type": "registry:block",
       "title": "Team Project Switcher",
       "description": "Team Project Switcher app-shell block.",
@@ -3297,12 +3297,12 @@
         {
           "path": "application/app-shell/app-shell-23/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-23/index.tsx"
+          "target": "@components/blocks/app-shell-team-project-switcher/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-24",
+      "name": "app-shell-ops-presence-console",
       "type": "registry:block",
       "title": "Ops Presence Console",
       "description": "Ops Presence Console app-shell block.",
@@ -3327,12 +3327,12 @@
         {
           "path": "application/app-shell/app-shell-24/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-24/index.tsx"
+          "target": "@components/blocks/app-shell-ops-presence-console/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-25",
+      "name": "app-shell-mission-control",
       "type": "registry:block",
       "title": "Mission Control",
       "description": "Mission Control app-shell block.",
@@ -3359,12 +3359,12 @@
         {
           "path": "application/app-shell/app-shell-25/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-25/index.tsx"
+          "target": "@components/blocks/app-shell-mission-control/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-26",
+      "name": "app-shell-security-scope-console",
       "type": "registry:block",
       "title": "Security Scope Console",
       "description": "Security Scope Console app-shell block.",
@@ -3389,12 +3389,12 @@
         {
           "path": "application/app-shell/app-shell-26/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-26/index.tsx"
+          "target": "@components/blocks/app-shell-security-scope-console/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-27",
+      "name": "app-shell-route-search-sidebar",
       "type": "registry:block",
       "title": "Route Search Sidebar",
       "description": "Route Search Sidebar app-shell block.",
@@ -3419,12 +3419,12 @@
         {
           "path": "application/app-shell/app-shell-27/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-27/index.tsx"
+          "target": "@components/blocks/app-shell-route-search-sidebar/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-28",
+      "name": "app-shell-section-tabs-admin",
       "type": "registry:block",
       "title": "Section Tabs Admin",
       "description": "Section Tabs Admin app-shell block.",
@@ -3447,12 +3447,12 @@
         {
           "path": "application/app-shell/app-shell-28/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-28/index.tsx"
+          "target": "@components/blocks/app-shell-section-tabs-admin/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-29",
+      "name": "app-shell-section-tile-rail",
       "type": "registry:block",
       "title": "Section Tile Rail",
       "description": "Section Tile Rail app-shell block.",
@@ -3479,12 +3479,12 @@
         {
           "path": "application/app-shell/app-shell-29/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-29/index.tsx"
+          "target": "@components/blocks/app-shell-section-tile-rail/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-3",
+      "name": "app-shell-project-tracker-sidebar",
       "type": "registry:block",
       "title": "Project Tracker Sidebar",
       "description": "Project Tracker Sidebar app-shell block.",
@@ -3508,12 +3508,12 @@
         {
           "path": "application/app-shell/app-shell-3/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-3/index.tsx"
+          "target": "@components/blocks/app-shell-project-tracker-sidebar/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-30",
+      "name": "app-shell-top-navbar-admin",
       "type": "registry:block",
       "title": "Top Navbar Admin",
       "description": "Top Navbar Admin app-shell block.",
@@ -3541,12 +3541,12 @@
         {
           "path": "application/app-shell/app-shell-30/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-30/index.tsx"
+          "target": "@components/blocks/app-shell-top-navbar-admin/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-31",
+      "name": "app-shell-folder-tab-workspace",
       "type": "registry:block",
       "title": "Folder Tab Workspace",
       "description": "Folder Tab Workspace app-shell block.",
@@ -3570,12 +3570,12 @@
         {
           "path": "application/app-shell/app-shell-31/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-31/index.tsx"
+          "target": "@components/blocks/app-shell-folder-tab-workspace/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-32",
+      "name": "app-shell-endpoint-protection",
       "type": "registry:block",
       "title": "Endpoint Protection",
       "description": "Endpoint Protection app-shell block.",
@@ -3606,12 +3606,12 @@
         {
           "path": "application/app-shell/app-shell-32/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-32/index.tsx"
+          "target": "@components/blocks/app-shell-endpoint-protection/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-33",
+      "name": "app-shell-fleet-center",
       "type": "registry:block",
       "title": "Fleet Center",
       "description": "Fleet Center app-shell block.",
@@ -3634,12 +3634,12 @@
         {
           "path": "application/app-shell/app-shell-33/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-33/index.tsx"
+          "target": "@components/blocks/app-shell-fleet-center/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-34",
+      "name": "app-shell-invoice-matching",
       "type": "registry:block",
       "title": "Invoice Matching",
       "description": "Invoice Matching app-shell block.",
@@ -3667,12 +3667,12 @@
         {
           "path": "application/app-shell/app-shell-34/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-34/index.tsx"
+          "target": "@components/blocks/app-shell-invoice-matching/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-35",
+      "name": "app-shell-whiteboard-workspace",
       "type": "registry:block",
       "title": "Whiteboard Workspace",
       "description": "Whiteboard Workspace app-shell block.",
@@ -3699,12 +3699,12 @@
         {
           "path": "application/app-shell/app-shell-35/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-35/index.tsx"
+          "target": "@components/blocks/app-shell-whiteboard-workspace/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-36",
+      "name": "app-shell-observability-console",
       "type": "registry:block",
       "title": "Observability Console",
       "description": "Observability Console app-shell block.",
@@ -3732,12 +3732,12 @@
         {
           "path": "application/app-shell/app-shell-36/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-36/index.tsx"
+          "target": "@components/blocks/app-shell-observability-console/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-4",
+      "name": "app-shell-mail-inbox",
       "type": "registry:block",
       "title": "Mail Inbox",
       "description": "Mail Inbox app-shell block.",
@@ -3762,12 +3762,12 @@
         {
           "path": "application/app-shell/app-shell-4/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-4/index.tsx"
+          "target": "@components/blocks/app-shell-mail-inbox/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-5",
+      "name": "app-shell-calendar-contacts-hub",
       "type": "registry:block",
       "title": "Calendar Contacts Hub",
       "description": "Calendar Contacts Hub app-shell block.",
@@ -3793,12 +3793,12 @@
         {
           "path": "application/app-shell/app-shell-5/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-5/index.tsx"
+          "target": "@components/blocks/app-shell-calendar-contacts-hub/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-6",
+      "name": "app-shell-team-calendar-panel",
       "type": "registry:block",
       "title": "Team Calendar Panel",
       "description": "Team Calendar Panel app-shell block.",
@@ -3824,12 +3824,12 @@
         {
           "path": "application/app-shell/app-shell-6/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-6/index.tsx"
+          "target": "@components/blocks/app-shell-team-calendar-panel/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-7",
+      "name": "app-shell-environment-switcher",
       "type": "registry:block",
       "title": "Environment Switcher",
       "description": "Environment Switcher app-shell block.",
@@ -3854,12 +3854,12 @@
         {
           "path": "application/app-shell/app-shell-7/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-7/index.tsx"
+          "target": "@components/blocks/app-shell-environment-switcher/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-8",
+      "name": "app-shell-inventory-admin",
       "type": "registry:block",
       "title": "Inventory Admin",
       "description": "Inventory Admin app-shell block.",
@@ -3884,12 +3884,12 @@
         {
           "path": "application/app-shell/app-shell-8/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-8/index.tsx"
+          "target": "@components/blocks/app-shell-inventory-admin/index.tsx"
         }
       ]
     },
     {
-      "name": "app-shell-9",
+      "name": "app-shell-team-presence-workspace",
       "type": "registry:block",
       "title": "Team Presence Workspace",
       "description": "Team Presence Workspace app-shell block.",
@@ -3913,7 +3913,7 @@
         {
           "path": "application/app-shell/app-shell-9/index.tsx",
           "type": "registry:component",
-          "target": "@components/blocks/app-shell-9/index.tsx"
+          "target": "@components/blocks/app-shell-team-presence-workspace/index.tsx"
         }
       ]
     }

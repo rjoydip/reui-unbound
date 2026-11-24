@@ -205,9 +205,15 @@ for (const categoryEntry of fs.readdirSync(path.join(root, appRoot), {
       continue
     }
     const scanned = scanSource([file], blockEntry.name)
-    const relative = path.posix.join(categoryEntry.name, blockEntry.name, "index.tsx")
+    const registryName =
+      categoryEntry.name +
+      "-" +
+      meta.title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, "")
     blockItems.push({
-      name: blockEntry.name,
+      name: registryName,
       type: "registry:block",
       title: meta.title,
       description: `${meta.title} ${categoryEntry.name.toLowerCase()} block.`,
@@ -218,7 +224,7 @@ for (const categoryEntry of fs.readdirSync(path.join(root, appRoot), {
         {
           path: `application/${categoryEntry.name}/${blockEntry.name}/index.tsx`,
           type: "registry:component",
-          target: `@components/blocks/${blockEntry.name}/index.tsx`,
+          target: `@components/blocks/${registryName}/index.tsx`,
         },
       ],
     })

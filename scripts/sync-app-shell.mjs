@@ -79,7 +79,13 @@ for (const slug of slugs) {
     if (dep) registry.add(dep)
   }
   const exportName = `AppShell${slug.split("-").pop()}Block`
-  entries.push({ slug, meta, registry: [...registry].sort(), packages: [...packages].sort(), exportName })
+  const registryName =
+    "app-shell-" +
+    meta.title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "")
+  entries.push({ slug, meta, registry: [...registry].sort(), packages: [...packages].sort(), exportName, registryName })
 }
 
 const imports = entries
@@ -104,7 +110,7 @@ const items = entries
     stage: "Application",
     group: "application",
     href: ${JSON.stringify(entry.meta.url)},
-    installTarget: "@reui-unbound/${entry.slug}",
+    installTarget: "@reui-unbound/${entry.registryName}",
     dependencies: {
       registry: ${JSON.stringify(entry.registry)},
       packages: ${JSON.stringify(entry.packages)},

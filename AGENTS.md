@@ -93,7 +93,10 @@ ports are clean-room implementations from the captured previews.
    export named `<PascalSlug>Block` (e.g. `AppShell7Block`), reusing
    `src/components/ui` and `src/components/kit` components and design tokens.
 3. Run `bun run blocks:sync` for the App Shell category (regenerates
-   `~blocks.tsx`), then `bun run registry:generate`.
+   `~blocks.tsx`), then `bun run registry:generate`. Registry item names and
+   install targets use the block title, e.g.
+   `bunx --bun shadcn@latest add @reui-unbound/app-shell-icon-rail-dashboard`;
+   folder slugs and preview ids stay `app-shell-<n>`.
 4. Run `bun run docs:generate` to refresh docs and the tracker, and confirm
    `bun run typecheck && bun run lint && bun run build`.
 
