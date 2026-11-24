@@ -3916,6 +3916,573 @@
           "target": "@components/blocks/app-shell-team-presence-workspace/index.tsx"
         }
       ]
+    },
+    {
+      "name": "auth-photo-split-login",
+      "type": "registry:block",
+      "title": "Photo Split Login",
+      "description": "Photo Split Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-1"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-photo-split-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-magic-link-logos",
+      "type": "registry:block",
+      "title": "Magic Link Logos",
+      "description": "Magic Link Logos auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-10"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "avatar",
+        "button",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-magic-link-logos/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-split-testimonial-login",
+      "type": "registry:block",
+      "title": "Split Testimonial Login",
+      "description": "Split Testimonial Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-11"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "field",
+        "input",
+        "input-group",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-split-testimonial-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-split-method-picker",
+      "type": "registry:block",
+      "title": "Split Method Picker",
+      "description": "Split Method Picker auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-12"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "field",
+        "input",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-split-method-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-photo-magic-link",
+      "type": "registry:block",
+      "title": "Photo Magic Link",
+      "description": "Photo Magic Link auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-13"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-photo-magic-link/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-workspace-sign-in",
+      "type": "registry:block",
+      "title": "Workspace Sign-In",
+      "description": "Workspace Sign-In auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-14"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-workspace-sign-in/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-centered-magic-link",
+      "type": "registry:block",
+      "title": "Centered Magic Link",
+      "description": "Centered Magic Link auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-15"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-15/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-centered-magic-link/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-work-email-continue",
+      "type": "registry:block",
+      "title": "Work Email Continue",
+      "description": "Work Email Continue auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-16"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-16/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-work-email-continue/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-centered-method-picker",
+      "type": "registry:block",
+      "title": "Centered Method Picker",
+      "description": "Centered Method Picker auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-17"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "alert",
+        "button",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-17/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-centered-method-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-social-proof-login",
+      "type": "registry:block",
+      "title": "Social Proof Login",
+      "description": "Social Proof Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-18"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "field",
+        "input",
+        "input-group",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-18/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-social-proof-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-invite-only-sign-in",
+      "type": "registry:block",
+      "title": "Invite-Only Sign-In",
+      "description": "Invite-Only Sign-In auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-19"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "card",
+        "field",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-19/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-invite-only-sign-in/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-customer-quotes-login",
+      "type": "registry:block",
+      "title": "Customer Quotes Login",
+      "description": "Customer Quotes Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-2"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-customer-quotes-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-centered-password-login",
+      "type": "registry:block",
+      "title": "Centered Password Login",
+      "description": "Centered Password Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-20"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "card",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-20/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-centered-password-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-magic-link-reviews",
+      "type": "registry:block",
+      "title": "Magic Link Reviews",
+      "description": "Magic Link Reviews auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-3"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "field",
+        "input",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-magic-link-reviews/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-framed-password-login",
+      "type": "registry:block",
+      "title": "Framed Password Login",
+      "description": "Framed Password Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-4"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-framed-password-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-free-trial-signup",
+      "type": "registry:block",
+      "title": "Free Trial Signup",
+      "description": "Free Trial Signup auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-5"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-free-trial-signup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-founder-story-login",
+      "type": "registry:block",
+      "title": "Founder Story Login",
+      "description": "Founder Story Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-6"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input",
+        "input-group",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-founder-story-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-magic-link-card",
+      "type": "registry:block",
+      "title": "Magic Link Card",
+      "description": "Magic Link Card auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-7"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "field",
+        "input-group",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-magic-link-card/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-photo-backdrop-login",
+      "type": "registry:block",
+      "title": "Photo Backdrop Login",
+      "description": "Photo Backdrop Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-8"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-photo-backdrop-login/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "auth-rotating-quotes-login",
+      "type": "registry:block",
+      "title": "Rotating Quotes Login",
+      "description": "Rotating Quotes Login auth block.",
+      "meta": {
+        "category": "Auth",
+        "id": "auth-9"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "field",
+        "input",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/auth/auth-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/auth-rotating-quotes-login/index.tsx"
+        }
+      ]
     }
   ]
 }

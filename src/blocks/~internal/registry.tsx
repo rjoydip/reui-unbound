@@ -77,6 +77,7 @@ import JobScheduleBlock from "@/blocks/data-grid/advanced/job-schedule"
 import ProspectDatabaseBlock from "@/blocks/data-grid/advanced/prospects"
 import ProjectBudgetBlock from "@/blocks/data-grid/advanced/project-budget"
 import { APP_SHELL_BLOCKS } from "@/blocks/application/app-shell/~blocks"
+import { AUTH_BLOCKS } from "@/blocks/application/auth/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
 
@@ -1838,6 +1839,7 @@ export const BLOCKS: BlockEntry[] = [
     ],
   },
   ...APP_SHELL_BLOCKS,
+  ...AUTH_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {

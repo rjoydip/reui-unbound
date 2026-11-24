@@ -12,12 +12,12 @@ Open-source, AI-assisted implementations of advanced UI components and blocks in
 - **Copy-Paste Ready:** Designed to drop directly into existing Next.js or Vite + React projects.
 - **Type-Safe:** Strict TypeScript definitions with composable prop interfaces.
 - **Accessible:** Keyboard navigation, ARIA attributes, and focus management baked in.
-- **61 Data Grid Blocks + 36 Application Shells:** Data-grid demos plus the complete reui.io App Shell category (icon rails, floating sidebars, mail, chat, operations consoles, whiteboards and more).
+- **61 Data Grid Blocks + 56 Application Blocks:** The complete reui.io App Shell (36) and Auth (20) categories, plus the data-grid demos.
 - **305 Captured Application Blocks:** Every block at <https://reui.io/blocks/application> captured (light, dark, interaction) under `captures/application`.
 - **Catalogue-Style Navigation:** `/blocks` renders the blocks page with the 687-block group selector (Application, Data Grid, Charts, Solutions, AI & Agents, eCommerce, Marketing).
 - **87 Component Categories:** 1,365 Radix/Base and shadcn/ui previews with searchable navigation and flavor filtering.
 - **Composable Components:** Radix (shadcn) and Base UI flavors share one canonical implementation per module.
-- **shadcn Registry:** 97 block items plus 1,265 component items — 1,438+ items / 1,650+ install targets served at `/r/*.json`.
+- **shadcn Registry:** 117 block items plus 1,265 component items — 1,458+ items / 1,680+ install targets served at `/r/*.json`.
 - **npm Packages:** Per-component (radix/base) and per-block-category packages under `packages/registry`.
 - **Markdown Docs:** Generated docs for every block and component, also rendered in-app under **Docs**.
 - **Tested:** Bun unit tests and Playwright E2E coverage for every block and component.
@@ -85,7 +85,7 @@ bun add lucide-react
 
 Generated documentation lives in `docs/`:
 
-- [Blocks](docs/blocks/README.md) — 97 blocks: 61 data grid blocks across 9 categories and all 36 application shells.
+- [Blocks](docs/blocks/README.md) — 117 blocks: 61 data grid, all 36 application shells and 20 auth blocks.
 - [Components](docs/components/README.md) — 87 categories, 1,365 previews, Radix and Base flavors.
 - [Application blocks tracker](docs/application-blocks.md) — capture and port status for all 305 application blocks.
 
@@ -105,12 +105,13 @@ bun run docs:generate
 
 All 305 blocks from <https://reui.io/blocks/application> are catalogued with light,
 dark and interaction screenshots in `captures/application`. Implementations land
-in batches; all 36 App Shell blocks are live.
+in batches; all 36 App Shell and 20 Auth blocks are live.
 
 | Category | Blocks | Implemented |
 | :--- | :---: | :--- |
 | App Shell | 36 | All 36 implemented (icon rails, floating sidebars, mail, chat, scheduling, operations, whiteboard, observability) |
-| Auth, Card, Dashboard, Dialog, Empty State, Event Calendar, Flow, Form, Gantt, Kanban Board, List, Navbar, Onboarding, Profile, Rich Text Editor, Schedule, Settings, Sheet, Stats, Timeline, Whiteboard, Wizard | 269 | Queued |
+| Auth | 20 | All 20 implemented (sign in, sign up, OTP, password reset, social auth, split layouts) |
+| Card, Dashboard, Dialog, Empty State, Event Calendar, Flow, Form, Gantt, Kanban Board, List, Navbar, Onboarding, Profile, Rich Text Editor, Schedule, Settings, Sheet, Stats, Timeline, Whiteboard, Wizard | 249 | Queued |
 
 ### Data Grid blocks — 61
 
@@ -141,7 +142,7 @@ Highlights: Customer Balances (`data-grid-base-1`), Invoice Manager (`data-grid-
 `captures/application` is the clean-room reference set for the application blocks:
 
 - `screenshots/<slug>-light.png`, `<slug>-dark.png`, `<slug>-interaction.png` — 915 images.
-- `app-shell/<slug>/*.png` — deep interaction captures for all 36 App Shell blocks (menus, popovers, panels, tabs).
+- `app-shell/<slug>/*.png` and `auth/<slug>/*.png` — deep interaction captures (filled forms, password reveal, submitted states, menus, popovers, panels, tabs).
 - `sources/<slug>.md` — the agent-facing block page from reui.io.
 - `index.json` — title, category, source URL and interaction target per block.
 - `README.md` — index table across all 23 categories.
@@ -154,7 +155,8 @@ Re-capture with:
 
 ```bash
 node scripts/capture-preview.mjs     # all application blocks, resumable
-node scripts/capture-app-shell.mjs   # App Shell interaction states
+node scripts/capture-category.mjs app-shell   # App Shell interaction states
+node scripts/capture-category.mjs auth        # Auth interaction states
 ```
 
 ---
@@ -203,7 +205,7 @@ cross-flavor modules have one canonical copy; base files import it.
 The project exposes its blocks and components as a [shadcn registry](https://ui.shadcn.com/docs/registry).
 
 - `registry.json` is the registry entry point. It composes the source registries with `include`:
-  - `src/blocks/registry.json` — 97 `registry:block` items (61 data grid + 36 application)
+  - `src/blocks/registry.json` — 117 `registry:block` items (61 data grid + 36 app shell + 20 auth)
   - `src/blocks/components/registry.json` — 1,265 component preview items
   - `src/components/kit/registry.json` — ReUI components and the shared icon placeholder
   - `src/components/kit/base/registry.json` — Base-flavor ReUI components and primitives

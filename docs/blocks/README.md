@@ -1,6 +1,6 @@
 # Blocks
 
-97 demo blocks, grouped by category.
+117 demo blocks, grouped by category.
 
 | Block | ID | Category | Preview |
 | --- | --- | --- | --- |
@@ -13,10 +13,14 @@
 | [Calendar Contacts Hub](./app-shell-calendar-contacts-hub.md) | `app-shell-5` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-5) |
 | [Campaign Performance](./data-grid-advanced-campaign-performance.md) | `data-grid-advanced-1` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-1) |
 | [Campaign Targets](./data-grid-advanced-campaign-targets.md) | `data-grid-advanced-3` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-3) |
+| [Centered Magic Link](./auth-centered-magic-link.md) | `auth-15` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-15) |
+| [Centered Method Picker](./auth-centered-method-picker.md) | `auth-17` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-17) |
+| [Centered Password Login](./auth-centered-password-login.md) | `auth-20` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-20) |
 | [Community Feed App](./app-shell-community-feed-app.md) | `app-shell-13` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-13) |
 | [Companies](./data-grid-columns-companies.md) | `data-grid-columns-5` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-5) |
 | [Contacts](./data-grid-base-contacts.md) | `data-grid-base-2` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-2) |
 | [Course Catalog](./data-grid-columns-course-catalog.md) | `data-grid-columns-2` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-2) |
+| [Customer Quotes Login](./auth-customer-quotes-login.md) | `auth-2` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-2) |
 | [Customers](./data-grid-base-customers.md) | `data-grid-base-1` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-1) |
 | [Delivery Board](./data-grid-grouping-delivery-board.md) | `data-grid-grouping-7` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-7) |
 | [Dispatch Layout](./data-grid-drag-drop-dispatch-layout.md) | `data-grid-drag-drop-3` | Drag & Drop | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-3) |
@@ -29,16 +33,23 @@
 | [Fleet Operator Console](./app-shell-fleet-operator-console.md) | `app-shell-22` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-22) |
 | [Floating Sidebar Admin](./app-shell-floating-sidebar-admin.md) | `app-shell-2` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-2) |
 | [Folder Tab Workspace](./app-shell-folder-tab-workspace.md) | `app-shell-31` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-31) |
+| [Founder Story Login](./auth-founder-story-login.md) | `auth-6` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-6) |
 | [Fourplex Pro Forma](./data-grid-advanced-fourplex-pro-forma.md) | `data-grid-advanced-7` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-7) |
+| [Framed Password Login](./auth-framed-password-login.md) | `auth-4` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-4) |
+| [Free Trial Signup](./auth-free-trial-signup.md) | `auth-5` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-5) |
 | [Freight & Cargo Services](./data-grid-advanced-freight-cargo-services.md) | `data-grid-advanced-12` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-12) |
 | [HR Scorecard](./data-grid-advanced-hr-scorecard.md) | `data-grid-advanced-13` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-13) |
 | [Icon Rail Dashboard](./app-shell-icon-rail-dashboard.md) | `app-shell-1` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-1) |
 | [Inventory Admin](./app-shell-inventory-admin.md) | `app-shell-8` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-8) |
+| [Invite-Only Sign-In](./auth-invite-only-sign-in.md) | `auth-19` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-19) |
 | [Invoice Matching](./app-shell-invoice-matching.md) | `app-shell-34` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-34) |
 | [Invoices](./data-grid-advanced-invoices.md) | `data-grid-advanced-21` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-21) |
 | [Job Schedule](./data-grid-advanced-job-schedule.md) | `data-grid-advanced-18` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-18) |
 | [Labels](./data-grid-editing-labels.md) | `data-grid-editing-1` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-1) |
 | [Launch Runbook](./data-grid-editing-launch-runbook.md) | `data-grid-editing-5` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-5) |
+| [Magic Link Card](./auth-magic-link-card.md) | `auth-7` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-7) |
+| [Magic Link Logos](./auth-magic-link-logos.md) | `auth-10` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-10) |
+| [Magic Link Reviews](./auth-magic-link-reviews.md) | `auth-3` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-3) |
 | [Mail Inbox](./app-shell-mail-inbox.md) | `app-shell-4` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-4) |
 | [Members](./data-grid-base-members.md) | `data-grid-base-6` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-6) |
 | [Members](./data-grid-columns-members.md) | `data-grid-columns-4` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-4) |
@@ -50,6 +61,9 @@
 | [Opportunities](./data-grid-base-opportunities.md) | `data-grid-base-3` | Base | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-base-3) |
 | [Ops Presence Console](./app-shell-ops-presence-console.md) | `app-shell-24` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-24) |
 | [P&L Outlook](./data-grid-advanced-p-l-outlook.md) | `data-grid-advanced-15` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-15) |
+| [Photo Backdrop Login](./auth-photo-backdrop-login.md) | `auth-8` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-8) |
+| [Photo Magic Link](./auth-photo-magic-link.md) | `auth-13` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-13) |
+| [Photo Split Login](./auth-photo-split-login.md) | `auth-1` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-1) |
 | [Pinnable Favorites Nav](./app-shell-pinnable-favorites-nav.md) | `app-shell-15` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-15) |
 | [Plans](./data-grid-editing-plans.md) | `data-grid-editing-4` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-4) |
 | [Product Inventory](./data-grid-editing-product-inventory.md) | `data-grid-editing-2` | Editing | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-2) |
@@ -69,6 +83,7 @@
 | [Resizable AI Chat](./app-shell-resizable-ai-chat.md) | `app-shell-21` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-21) |
 | [Revenue By Region](./data-grid-grouping-revenue-by-region.md) | `data-grid-grouping-2` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-2) |
 | [Roadmap Queue](./data-grid-grouping-roadmap-queue.md) | `data-grid-grouping-1` | Grouping | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-1) |
+| [Rotating Quotes Login](./auth-rotating-quotes-login.md) | `auth-9` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-9) |
 | [Route Search Sidebar](./app-shell-route-search-sidebar.md) | `app-shell-27` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-27) |
 | [Routing Rules](./data-grid-drag-drop-routing-rules.md) | `data-grid-drag-drop-2` | Drag & Drop | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-2) |
 | [Scheduling Planner](./app-shell-scheduling-planner.md) | `app-shell-19` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-19) |
@@ -77,6 +92,9 @@
 | [Security Scope Console](./app-shell-security-scope-console.md) | `app-shell-26` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-26) |
 | [Service Visits](./data-grid-advanced-service-visits.md) | `data-grid-advanced-9` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-9) |
 | [Shared Drive](./data-grid-drag-drop-shared-drive.md) | `data-grid-drag-drop-4` | Drag & Drop | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-4) |
+| [Social Proof Login](./auth-social-proof-login.md) | `auth-18` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-18) |
+| [Split Method Picker](./auth-split-method-picker.md) | `auth-12` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-12) |
+| [Split Testimonial Login](./auth-split-testimonial-login.md) | `auth-11` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-11) |
 | [Sprint Backlog](./data-grid-drag-drop-sprint-backlog.md) | `data-grid-drag-drop-1` | Drag & Drop | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-1) |
 | [Stock Mix](./data-grid-advanced-stock-mix.md) | `data-grid-advanced-6` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-6) |
 | [Store KPIs](./data-grid-advanced-store-kpis.md) | `data-grid-advanced-16` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-16) |
@@ -99,5 +117,7 @@
 | [Webmail Client](./app-shell-webmail-client.md) | `app-shell-20` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-20) |
 | [Whiteboard Workspace](./app-shell-whiteboard-workspace.md) | `app-shell-35` | App Shell | [Preview](https://reui-unbound.pages.dev/?preview=app-shell-35) |
 | [Wholesale Applications](./data-grid-advanced-wholesale-applications.md) | `data-grid-advanced-5` | Advanced | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-5) |
+| [Work Email Continue](./auth-work-email-continue.md) | `auth-16` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-16) |
 | [Work Queue](./data-grid-columns-work-queue.md) | `data-grid-columns-3` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-3) |
 | [Workspace Access Review](./data-grid-columns-workspace-access-review.md) | `data-grid-columns-1` | Columns | [Preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-1) |
+| [Workspace Sign-In](./auth-workspace-sign-in.md) | `auth-14` | Auth | [Preview](https://reui-unbound.pages.dev/?preview=auth-14) |

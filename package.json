@@ -24,7 +24,7 @@
     "packages:publish": "bun scripts/publish-npm-packages.mjs",
     "packages:publish:dry": "bun scripts/publish-npm-packages.mjs --dry-run",
     "docs:generate": "bun run registry:generate && bun scripts/generate-docs.mjs && bun scripts/generate-tracker.mjs",
-    "blocks:sync": "bun scripts/sync-app-shell.mjs",
+    "blocks:sync": "bun scripts/sync-application-blocks.mjs",
     "tracker:generate": "bun scripts/generate-tracker.mjs"
   },
   "dependencies": {
