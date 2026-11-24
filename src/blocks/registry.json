@@ -6222,6 +6222,367 @@
           "target": "@components/blocks/dialog-project-with-cover/index.tsx"
         }
       ]
+    },
+    {
+      "name": "empty-state-data-import-start",
+      "type": "registry:block",
+      "title": "Data Import Start",
+      "description": "Data Import Start empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-1"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "empty",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-data-import-start/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-blueprint-library",
+      "type": "registry:block",
+      "title": "Blueprint Library",
+      "description": "Blueprint Library empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-10"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-stack",
+        "button",
+        "card",
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-blueprint-library/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-section-add-prompt",
+      "type": "registry:block",
+      "title": "Section Add Prompt",
+      "description": "Section Add Prompt empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-11"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-stack",
+        "button",
+        "card",
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-section-add-prompt/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-export-filters",
+      "type": "registry:block",
+      "title": "Export Filters",
+      "description": "Export Filters empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-12"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-stack",
+        "button",
+        "button-group",
+        "dropdown-menu",
+        "empty",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-export-filters/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-cloud-storage-connect",
+      "type": "registry:block",
+      "title": "Cloud Storage Connect",
+      "description": "Cloud Storage Connect empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-13"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-stack",
+        "empty",
+        "separator",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-cloud-storage-connect/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-enable-organizations",
+      "type": "registry:block",
+      "title": "Enable Organizations",
+      "description": "Enable Organizations empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-14"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "@reui-unbound/icon-stack",
+        "button",
+        "empty",
+        "separator",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-enable-organizations/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-no-search-results",
+      "type": "registry:block",
+      "title": "No Search Results",
+      "description": "No Search Results empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-2"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "button-group",
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-no-search-results/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-first-project",
+      "type": "registry:block",
+      "title": "First Project",
+      "description": "First Project empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "empty",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-first-project/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-reports-workspace",
+      "type": "registry:block",
+      "title": "Reports Workspace",
+      "description": "Reports Workspace empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "card",
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-reports-workspace/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-empty-report-brief",
+      "type": "registry:block",
+      "title": "Empty Report Brief",
+      "description": "Empty Report Brief empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-5"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/frame",
+        "button",
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-empty-report-brief/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-team-launch-steps",
+      "type": "registry:block",
+      "title": "Team Launch Steps",
+      "description": "Team Launch Steps empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "empty",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-team-launch-steps/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-invite-first-member",
+      "type": "registry:block",
+      "title": "Invite First Member",
+      "description": "Invite First Member empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-invite-first-member/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-settings-setup-tabs",
+      "type": "registry:block",
+      "title": "Settings Setup Tabs",
+      "description": "Settings Setup Tabs empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-8"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-stack",
+        "button",
+        "empty",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-settings-setup-tabs/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "empty-state-invite-members-prompt",
+      "type": "registry:block",
+      "title": "Invite Members Prompt",
+      "description": "Invite Members Prompt empty-state block.",
+      "meta": {
+        "category": "Empty State",
+        "id": "empty-state-9"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/icon-stack",
+        "button",
+        "empty"
+      ],
+      "files": [
+        {
+          "path": "application/empty-state/empty-state-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/empty-state-invite-members-prompt/index.tsx"
+        }
+      ]
     }
   ]
 }

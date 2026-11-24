@@ -20,6 +20,7 @@ const categoryNames = {
   card: "Card",
   dashboard: "Dashboard",
   dialog: "Dialog",
+  "empty-state": "Empty State",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",
