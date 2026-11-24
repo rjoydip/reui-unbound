@@ -15,7 +15,7 @@ Captured previews live in `captures/application`:
 ## Progress
 
 - Captured: 305 / 305
-- Implemented: 107 / 305
+- Implemented: 122 / 305
 
 | Category | Blocks | Implemented | Status |
 | --- | ---: | ---: | --- |
@@ -23,7 +23,7 @@ Captured previews live in `captures/application`:
 | Auth | 20 | 20 | Done |
 | Card | 43 | 43 | Done |
 | Dashboard | 8 | 8 | Done |
-| Dialog | 15 | 0 | Pending |
+| Dialog | 15 | 15 | Done |
 | Empty State | 14 | 0 | Pending |
 | Event Calendar | 6 | 0 | Pending |
 | Flow | 4 | 0 | Pending |

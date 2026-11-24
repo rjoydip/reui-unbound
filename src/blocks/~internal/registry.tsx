@@ -80,6 +80,7 @@ import { APP_SHELL_BLOCKS } from "@/blocks/application/app-shell/~blocks"
 import { AUTH_BLOCKS } from "@/blocks/application/auth/~blocks"
 import { CARD_BLOCKS } from "@/blocks/application/card/~blocks"
 import { DASHBOARD_BLOCKS } from "@/blocks/application/dashboard/~blocks"
+import { DIALOG_BLOCKS } from "@/blocks/application/dialog/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
 
@@ -1844,6 +1845,7 @@ export const BLOCKS: BlockEntry[] = [
   ...AUTH_BLOCKS,
   ...CARD_BLOCKS,
   ...DASHBOARD_BLOCKS,
+  ...DIALOG_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {

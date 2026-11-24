@@ -5780,6 +5780,448 @@
           "target": "@components/blocks/dashboard-royalty-payouts/index.tsx"
         }
       ]
+    },
+    {
+      "name": "dialog-duration-picker",
+      "type": "registry:block",
+      "title": "Duration Picker",
+      "description": "Duration Picker dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-1"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dialog",
+        "label",
+        "select",
+        "toggle-group"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-duration-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-account-settings-modal",
+      "type": "registry:block",
+      "title": "Account Settings Modal",
+      "description": "Account Settings Modal dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-10"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dialog",
+        "field",
+        "input",
+        "input-group",
+        "select",
+        "switch",
+        "tabs",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-account-settings-modal/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-finance-account-setup",
+      "type": "registry:block",
+      "title": "Finance Account Setup",
+      "description": "Finance Account Setup dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-11"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dialog",
+        "field",
+        "input",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-finance-account-setup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-quick-create-entry",
+      "type": "registry:block",
+      "title": "Quick Create Entry",
+      "description": "Quick Create Entry dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-12"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "field",
+        "input-group",
+        "popover",
+        "select",
+        "tabs",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-quick-create-entry/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-project-templates",
+      "type": "registry:block",
+      "title": "Project Templates",
+      "description": "Project Templates dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-13"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "dropdown-menu",
+        "field",
+        "input",
+        "input-group",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-project-templates/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-oauth-consent",
+      "type": "registry:block",
+      "title": "OAuth Consent",
+      "description": "OAuth Consent dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-14"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dialog",
+        "field",
+        "radio-group",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-oauth-consent/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-duplicate-check",
+      "type": "registry:block",
+      "title": "Duplicate Check",
+      "description": "Duplicate Check dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-16"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dialog"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-16/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-duplicate-check/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-bulk-email-invite",
+      "type": "registry:block",
+      "title": "Bulk Email Invite",
+      "description": "Bulk Email Invite dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-2"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "dialog",
+        "input",
+        "label",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-bulk-email-invite/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-cancel-plan-survey",
+      "type": "registry:block",
+      "title": "Cancel Plan Survey",
+      "description": "Cancel Plan Survey dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "dialog",
+        "label",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-cancel-plan-survey/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-launch-checklist",
+      "type": "registry:block",
+      "title": "Launch Checklist",
+      "description": "Launch Checklist dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-4"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "accordion",
+        "button",
+        "dialog",
+        "input",
+        "input-group",
+        "item",
+        "svgs",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-launch-checklist/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-template-library",
+      "type": "registry:block",
+      "title": "Template Library",
+      "description": "Template Library dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "dialog",
+        "empty",
+        "input-group",
+        "radio-group"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-template-library/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-connect-app-picker",
+      "type": "registry:block",
+      "title": "Connect App Picker",
+      "description": "Connect App Picker dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-6"
+      },
+      "dependencies": [
+        "@remixicon/react",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "dialog",
+        "empty",
+        "input-group",
+        "kbd",
+        "svgs"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-connect-app-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-support-hub",
+      "type": "registry:block",
+      "title": "Support Hub",
+      "description": "Support Hub dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dialog"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-support-hub/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-per-person-invite",
+      "type": "registry:block",
+      "title": "Per-Person Invite",
+      "description": "Per-Person Invite dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-8"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dialog",
+        "input",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-per-person-invite/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "dialog-project-with-cover",
+      "type": "registry:block",
+      "title": "Project With Cover",
+      "description": "Project With Cover dialog block.",
+      "meta": {
+        "category": "Dialog",
+        "id": "dialog-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "checkbox",
+        "dialog",
+        "field",
+        "input",
+        "popover",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/dialog/dialog-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/dialog-project-with-cover/index.tsx"
+        }
+      ]
     }
   ]
 }

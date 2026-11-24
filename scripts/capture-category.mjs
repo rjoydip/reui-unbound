@@ -19,6 +19,7 @@ const categoryNames = {
   auth: "Auth",
   card: "Card",
   dashboard: "Dashboard",
+  dialog: "Dialog",
   "app-shell": "App Shell",
   "data-grid": "Data Grid",
   charts: "Charts",

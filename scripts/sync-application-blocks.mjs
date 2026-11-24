@@ -13,6 +13,7 @@ const CATEGORIES = [
   { folder: "auth", name: "Auth", constName: "AUTH_BLOCKS" },
   { folder: "card", name: "Card", constName: "CARD_BLOCKS" },
   { folder: "dashboard", name: "Dashboard", constName: "DASHBOARD_BLOCKS" },
+  { folder: "dialog", name: "Dialog", constName: "DIALOG_BLOCKS" },
 ]
 
 function packageName(specifier) {
