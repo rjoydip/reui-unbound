@@ -63,489 +63,489 @@ Captured previews live in `captures/application`:
 
 ## App Shell (36)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | AI Agents Console | `app-shell-ai-agents-console` | [docs](./blocks/app-shell-ai-agents-console.md) | 6 |
-| ✅ | Apps Grid Header | `app-shell-apps-grid-header` | [docs](./blocks/app-shell-apps-grid-header.md) | 6 |
-| ✅ | Calendar Contacts Hub | `app-shell-calendar-contacts-hub` | [docs](./blocks/app-shell-calendar-contacts-hub.md) | 6 |
-| ✅ | Community Feed App | `app-shell-community-feed-app` | [docs](./blocks/app-shell-community-feed-app.md) | 3 |
-| ✅ | Dual Sidebar Dashboard | `app-shell-dual-sidebar-dashboard` | [docs](./blocks/app-shell-dual-sidebar-dashboard.md) | 5 |
-| ✅ | Endpoint Protection | `app-shell-endpoint-protection` | [docs](./blocks/app-shell-endpoint-protection.md) | 6 |
-| ✅ | Environment Switcher | `app-shell-environment-switcher` | [docs](./blocks/app-shell-environment-switcher.md) | 1 |
-| ✅ | Fleet Center | `app-shell-fleet-center` | [docs](./blocks/app-shell-fleet-center.md) | 6 |
-| ✅ | Fleet Operator Console | `app-shell-fleet-operator-console` | [docs](./blocks/app-shell-fleet-operator-console.md) | 4 |
-| ✅ | Floating Sidebar Admin | `app-shell-floating-sidebar-admin` | [docs](./blocks/app-shell-floating-sidebar-admin.md) | 2 |
-| ✅ | Folder Tab Workspace | `app-shell-folder-tab-workspace` | [docs](./blocks/app-shell-folder-tab-workspace.md) | 5 |
-| ✅ | Icon Rail Dashboard | `app-shell-icon-rail-dashboard` | [docs](./blocks/app-shell-icon-rail-dashboard.md) | 6 |
-| ✅ | Inventory Admin | `app-shell-inventory-admin` | [docs](./blocks/app-shell-inventory-admin.md) | 6 |
-| ✅ | Invoice Matching | `app-shell-invoice-matching` | [docs](./blocks/app-shell-invoice-matching.md) | 6 |
-| ✅ | Mail Inbox | `app-shell-mail-inbox` | [docs](./blocks/app-shell-mail-inbox.md) | 6 |
-| ✅ | Mission Control | `app-shell-mission-control` | [docs](./blocks/app-shell-mission-control.md) | 6 |
-| ✅ | Model Picker Chat | `app-shell-model-picker-chat` | [docs](./blocks/app-shell-model-picker-chat.md) | 6 |
-| ✅ | Observability Console | `app-shell-observability-console` | [docs](./blocks/app-shell-observability-console.md) | 3 |
-| ✅ | Operations Workbench | `app-shell-operations-workbench` | [docs](./blocks/app-shell-operations-workbench.md) | 6 |
-| ✅ | Ops Presence Console | `app-shell-ops-presence-console` | [docs](./blocks/app-shell-ops-presence-console.md) | 5 |
-| ✅ | Pinnable Favorites Nav | `app-shell-pinnable-favorites-nav` | [docs](./blocks/app-shell-pinnable-favorites-nav.md) | 6 |
-| ✅ | Project Tracker Sidebar | `app-shell-project-tracker-sidebar` | [docs](./blocks/app-shell-project-tracker-sidebar.md) | 6 |
-| ✅ | Resizable AI Chat | `app-shell-resizable-ai-chat` | [docs](./blocks/app-shell-resizable-ai-chat.md) | 4 |
-| ✅ | Route Search Sidebar | `app-shell-route-search-sidebar` | [docs](./blocks/app-shell-route-search-sidebar.md) | 5 |
-| ✅ | Scheduling Planner | `app-shell-scheduling-planner` | [docs](./blocks/app-shell-scheduling-planner.md) | 3 |
-| ✅ | Section Tabs Admin | `app-shell-section-tabs-admin` | [docs](./blocks/app-shell-section-tabs-admin.md) | 4 |
-| ✅ | Section Tile Rail | `app-shell-section-tile-rail` | [docs](./blocks/app-shell-section-tile-rail.md) | 6 |
-| ✅ | Security Scope Console | `app-shell-security-scope-console` | [docs](./blocks/app-shell-security-scope-console.md) | 5 |
-| ✅ | Team Calendar Panel | `app-shell-team-calendar-panel` | [docs](./blocks/app-shell-team-calendar-panel.md) | 6 |
-| ✅ | Team Presence Workspace | `app-shell-team-presence-workspace` | [docs](./blocks/app-shell-team-presence-workspace.md) | 6 |
-| ✅ | Team Project Switcher | `app-shell-team-project-switcher` | [docs](./blocks/app-shell-team-project-switcher.md) | 6 |
-| ✅ | To-Do AI Assistant | `app-shell-to-do-ai-assistant` | [docs](./blocks/app-shell-to-do-ai-assistant.md) | 3 |
-| ✅ | Top Navbar Admin | `app-shell-top-navbar-admin` | [docs](./blocks/app-shell-top-navbar-admin.md) | 4 |
-| ✅ | View Toolbar Workspace | `app-shell-view-toolbar-workspace` | [docs](./blocks/app-shell-view-toolbar-workspace.md) | 5 |
-| ✅ | Webmail Client | `app-shell-webmail-client` | [docs](./blocks/app-shell-webmail-client.md) | 5 |
-| ✅ | Whiteboard Workspace | `app-shell-whiteboard-workspace` | [docs](./blocks/app-shell-whiteboard-workspace.md) | 4 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | AI Agents Console | `app-shell-ai-agents-console` | [docs](./blocks/app-shell-ai-agents-console.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-ai-agents-console) | 6 |
+| ✅ | Apps Grid Header | `app-shell-apps-grid-header` | [docs](./blocks/app-shell-apps-grid-header.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-apps-grid-header) | 6 |
+| ✅ | Calendar Contacts Hub | `app-shell-calendar-contacts-hub` | [docs](./blocks/app-shell-calendar-contacts-hub.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-calendar-contacts-hub) | 6 |
+| ✅ | Community Feed App | `app-shell-community-feed-app` | [docs](./blocks/app-shell-community-feed-app.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-community-feed-app) | 3 |
+| ✅ | Dual Sidebar Dashboard | `app-shell-dual-sidebar-dashboard` | [docs](./blocks/app-shell-dual-sidebar-dashboard.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-dual-sidebar-dashboard) | 5 |
+| ✅ | Endpoint Protection | `app-shell-endpoint-protection` | [docs](./blocks/app-shell-endpoint-protection.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-endpoint-protection) | 6 |
+| ✅ | Environment Switcher | `app-shell-environment-switcher` | [docs](./blocks/app-shell-environment-switcher.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-environment-switcher) | 1 |
+| ✅ | Fleet Center | `app-shell-fleet-center` | [docs](./blocks/app-shell-fleet-center.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-fleet-center) | 6 |
+| ✅ | Fleet Operator Console | `app-shell-fleet-operator-console` | [docs](./blocks/app-shell-fleet-operator-console.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-fleet-operator-console) | 4 |
+| ✅ | Floating Sidebar Admin | `app-shell-floating-sidebar-admin` | [docs](./blocks/app-shell-floating-sidebar-admin.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-floating-sidebar-admin) | 2 |
+| ✅ | Folder Tab Workspace | `app-shell-folder-tab-workspace` | [docs](./blocks/app-shell-folder-tab-workspace.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-folder-tab-workspace) | 5 |
+| ✅ | Icon Rail Dashboard | `app-shell-icon-rail-dashboard` | [docs](./blocks/app-shell-icon-rail-dashboard.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-icon-rail-dashboard) | 6 |
+| ✅ | Inventory Admin | `app-shell-inventory-admin` | [docs](./blocks/app-shell-inventory-admin.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-inventory-admin) | 6 |
+| ✅ | Invoice Matching | `app-shell-invoice-matching` | [docs](./blocks/app-shell-invoice-matching.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-invoice-matching) | 6 |
+| ✅ | Mail Inbox | `app-shell-mail-inbox` | [docs](./blocks/app-shell-mail-inbox.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-mail-inbox) | 6 |
+| ✅ | Mission Control | `app-shell-mission-control` | [docs](./blocks/app-shell-mission-control.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-mission-control) | 6 |
+| ✅ | Model Picker Chat | `app-shell-model-picker-chat` | [docs](./blocks/app-shell-model-picker-chat.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-model-picker-chat) | 6 |
+| ✅ | Observability Console | `app-shell-observability-console` | [docs](./blocks/app-shell-observability-console.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-observability-console) | 3 |
+| ✅ | Operations Workbench | `app-shell-operations-workbench` | [docs](./blocks/app-shell-operations-workbench.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-operations-workbench) | 6 |
+| ✅ | Ops Presence Console | `app-shell-ops-presence-console` | [docs](./blocks/app-shell-ops-presence-console.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-ops-presence-console) | 5 |
+| ✅ | Pinnable Favorites Nav | `app-shell-pinnable-favorites-nav` | [docs](./blocks/app-shell-pinnable-favorites-nav.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-pinnable-favorites-nav) | 6 |
+| ✅ | Project Tracker Sidebar | `app-shell-project-tracker-sidebar` | [docs](./blocks/app-shell-project-tracker-sidebar.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-project-tracker-sidebar) | 6 |
+| ✅ | Resizable AI Chat | `app-shell-resizable-ai-chat` | [docs](./blocks/app-shell-resizable-ai-chat.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-resizable-ai-chat) | 4 |
+| ✅ | Route Search Sidebar | `app-shell-route-search-sidebar` | [docs](./blocks/app-shell-route-search-sidebar.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-route-search-sidebar) | 5 |
+| ✅ | Scheduling Planner | `app-shell-scheduling-planner` | [docs](./blocks/app-shell-scheduling-planner.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-scheduling-planner) | 3 |
+| ✅ | Section Tabs Admin | `app-shell-section-tabs-admin` | [docs](./blocks/app-shell-section-tabs-admin.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-section-tabs-admin) | 4 |
+| ✅ | Section Tile Rail | `app-shell-section-tile-rail` | [docs](./blocks/app-shell-section-tile-rail.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-section-tile-rail) | 6 |
+| ✅ | Security Scope Console | `app-shell-security-scope-console` | [docs](./blocks/app-shell-security-scope-console.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-security-scope-console) | 5 |
+| ✅ | Team Calendar Panel | `app-shell-team-calendar-panel` | [docs](./blocks/app-shell-team-calendar-panel.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-team-calendar-panel) | 6 |
+| ✅ | Team Presence Workspace | `app-shell-team-presence-workspace` | [docs](./blocks/app-shell-team-presence-workspace.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-team-presence-workspace) | 6 |
+| ✅ | Team Project Switcher | `app-shell-team-project-switcher` | [docs](./blocks/app-shell-team-project-switcher.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-team-project-switcher) | 6 |
+| ✅ | To-Do AI Assistant | `app-shell-to-do-ai-assistant` | [docs](./blocks/app-shell-to-do-ai-assistant.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-to-do-ai-assistant) | 3 |
+| ✅ | Top Navbar Admin | `app-shell-top-navbar-admin` | [docs](./blocks/app-shell-top-navbar-admin.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-top-navbar-admin) | 4 |
+| ✅ | View Toolbar Workspace | `app-shell-view-toolbar-workspace` | [docs](./blocks/app-shell-view-toolbar-workspace.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-view-toolbar-workspace) | 5 |
+| ✅ | Webmail Client | `app-shell-webmail-client` | [docs](./blocks/app-shell-webmail-client.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-webmail-client) | 5 |
+| ✅ | Whiteboard Workspace | `app-shell-whiteboard-workspace` | [docs](./blocks/app-shell-whiteboard-workspace.md) | [preview](https://reui-unbound.pages.dev/?preview=app-shell-whiteboard-workspace) | 4 |
 
 ## Auth (20)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Centered Magic Link | `auth-centered-magic-link` | [docs](./blocks/auth-centered-magic-link.md) | 3 |
-| ✅ | Centered Method Picker | `auth-centered-method-picker` | [docs](./blocks/auth-centered-method-picker.md) | 1 |
-| ✅ | Centered Password Login | `auth-centered-password-login` | [docs](./blocks/auth-centered-password-login.md) | 4 |
-| ✅ | Customer Quotes Login | `auth-customer-quotes-login` | [docs](./blocks/auth-customer-quotes-login.md) | 4 |
-| ✅ | Founder Story Login | `auth-founder-story-login` | [docs](./blocks/auth-founder-story-login.md) | 4 |
-| ✅ | Framed Password Login | `auth-framed-password-login` | [docs](./blocks/auth-framed-password-login.md) | 4 |
-| ✅ | Free Trial Signup | `auth-free-trial-signup` | [docs](./blocks/auth-free-trial-signup.md) | 4 |
-| ✅ | Invite-Only Sign-In | `auth-invite-only-sign-in` | [docs](./blocks/auth-invite-only-sign-in.md) | 3 |
-| ✅ | Magic Link Card | `auth-magic-link-card` | [docs](./blocks/auth-magic-link-card.md) | 3 |
-| ✅ | Magic Link Logos | `auth-magic-link-logos` | [docs](./blocks/auth-magic-link-logos.md) | 3 |
-| ✅ | Magic Link Reviews | `auth-magic-link-reviews` | [docs](./blocks/auth-magic-link-reviews.md) | 3 |
-| ✅ | Photo Backdrop Login | `auth-photo-backdrop-login` | [docs](./blocks/auth-photo-backdrop-login.md) | 4 |
-| ✅ | Photo Magic Link | `auth-photo-magic-link` | [docs](./blocks/auth-photo-magic-link.md) | 3 |
-| ✅ | Photo Split Login | `auth-photo-split-login` | [docs](./blocks/auth-photo-split-login.md) | 4 |
-| ✅ | Rotating Quotes Login | `auth-rotating-quotes-login` | [docs](./blocks/auth-rotating-quotes-login.md) | 3 |
-| ✅ | Social Proof Login | `auth-social-proof-login` | [docs](./blocks/auth-social-proof-login.md) | 4 |
-| ✅ | Split Method Picker | `auth-split-method-picker` | [docs](./blocks/auth-split-method-picker.md) | 1 |
-| ✅ | Split Testimonial Login | `auth-split-testimonial-login` | [docs](./blocks/auth-split-testimonial-login.md) | 4 |
-| ✅ | Work Email Continue | `auth-work-email-continue` | [docs](./blocks/auth-work-email-continue.md) | 3 |
-| ✅ | Workspace Sign-In | `auth-workspace-sign-in` | [docs](./blocks/auth-workspace-sign-in.md) | 4 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Centered Magic Link | `auth-centered-magic-link` | [docs](./blocks/auth-centered-magic-link.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-centered-magic-link) | 3 |
+| ✅ | Centered Method Picker | `auth-centered-method-picker` | [docs](./blocks/auth-centered-method-picker.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-centered-method-picker) | 1 |
+| ✅ | Centered Password Login | `auth-centered-password-login` | [docs](./blocks/auth-centered-password-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-centered-password-login) | 4 |
+| ✅ | Customer Quotes Login | `auth-customer-quotes-login` | [docs](./blocks/auth-customer-quotes-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-customer-quotes-login) | 4 |
+| ✅ | Founder Story Login | `auth-founder-story-login` | [docs](./blocks/auth-founder-story-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-founder-story-login) | 4 |
+| ✅ | Framed Password Login | `auth-framed-password-login` | [docs](./blocks/auth-framed-password-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-framed-password-login) | 4 |
+| ✅ | Free Trial Signup | `auth-free-trial-signup` | [docs](./blocks/auth-free-trial-signup.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-free-trial-signup) | 4 |
+| ✅ | Invite-Only Sign-In | `auth-invite-only-sign-in` | [docs](./blocks/auth-invite-only-sign-in.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-invite-only-sign-in) | 3 |
+| ✅ | Magic Link Card | `auth-magic-link-card` | [docs](./blocks/auth-magic-link-card.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-magic-link-card) | 3 |
+| ✅ | Magic Link Logos | `auth-magic-link-logos` | [docs](./blocks/auth-magic-link-logos.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-magic-link-logos) | 3 |
+| ✅ | Magic Link Reviews | `auth-magic-link-reviews` | [docs](./blocks/auth-magic-link-reviews.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-magic-link-reviews) | 3 |
+| ✅ | Photo Backdrop Login | `auth-photo-backdrop-login` | [docs](./blocks/auth-photo-backdrop-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-photo-backdrop-login) | 4 |
+| ✅ | Photo Magic Link | `auth-photo-magic-link` | [docs](./blocks/auth-photo-magic-link.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-photo-magic-link) | 3 |
+| ✅ | Photo Split Login | `auth-photo-split-login` | [docs](./blocks/auth-photo-split-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-photo-split-login) | 4 |
+| ✅ | Rotating Quotes Login | `auth-rotating-quotes-login` | [docs](./blocks/auth-rotating-quotes-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-rotating-quotes-login) | 3 |
+| ✅ | Social Proof Login | `auth-social-proof-login` | [docs](./blocks/auth-social-proof-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-social-proof-login) | 4 |
+| ✅ | Split Method Picker | `auth-split-method-picker` | [docs](./blocks/auth-split-method-picker.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-split-method-picker) | 1 |
+| ✅ | Split Testimonial Login | `auth-split-testimonial-login` | [docs](./blocks/auth-split-testimonial-login.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-split-testimonial-login) | 4 |
+| ✅ | Work Email Continue | `auth-work-email-continue` | [docs](./blocks/auth-work-email-continue.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-work-email-continue) | 3 |
+| ✅ | Workspace Sign-In | `auth-workspace-sign-in` | [docs](./blocks/auth-workspace-sign-in.md) | [preview](https://reui-unbound.pages.dev/?preview=auth-workspace-sign-in) | 4 |
 
 ## Card (43)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Account Balances | `card-account-balances` | [docs](./blocks/card-account-balances.md) | 1 |
-| ✅ | Applicant Record | `card-applicant-record` | [docs](./blocks/card-applicant-record.md) | 1 |
-| ✅ | Application Summary | `card-application-summary` | [docs](./blocks/card-application-summary.md) | 1 |
-| ✅ | Audience Reach Stats | `card-audience-reach-stats` | [docs](./blocks/card-audience-reach-stats.md) | 1 |
-| ✅ | Brand Logo Grid | `card-brand-logo-grid` | [docs](./blocks/card-brand-logo-grid.md) | 1 |
-| ✅ | Company Snapshot | `card-company-snapshot` | [docs](./blocks/card-company-snapshot.md) | 1 |
-| ✅ | Compliance Strip | `card-compliance-strip` | [docs](./blocks/card-compliance-strip.md) | 1 |
-| ✅ | Contributor Portfolio | `card-contributor-portfolio` | [docs](./blocks/card-contributor-portfolio.md) | 1 |
-| ✅ | Crypto Price Quote | `card-crypto-price-quote` | [docs](./blocks/card-crypto-price-quote.md) | 1 |
-| ✅ | Customer Profile | `card-customer-profile` | [docs](./blocks/card-customer-profile.md) | 1 |
-| ✅ | Deal Invoice Tiles | `card-deal-invoice-tiles` | [docs](./blocks/card-deal-invoice-tiles.md) | 1 |
-| ✅ | Delivery Tracking | `card-delivery-tracking` | [docs](./blocks/card-delivery-tracking.md) | 2 |
-| ✅ | Detail Fact Tiles | `card-detail-fact-tiles` | [docs](./blocks/card-detail-fact-tiles.md) | 1 |
-| ✅ | Feature Highlights | `card-feature-highlights` | [docs](./blocks/card-feature-highlights.md) | 1 |
-| ✅ | Fitness Stats | `card-fitness-stats` | [docs](./blocks/card-fitness-stats.md) | 1 |
-| ✅ | Help Center Guides | `card-help-center-guides` | [docs](./blocks/card-help-center-guides.md) | 1 |
-| ✅ | Installed Integration | `card-installed-integration` | [docs](./blocks/card-installed-integration.md) | 2 |
-| ✅ | Integration Connector | `card-integration-connector` | [docs](./blocks/card-integration-connector.md) | 1 |
-| ✅ | Inventory Counters | `card-inventory-counters` | [docs](./blocks/card-inventory-counters.md) | 5 |
-| ✅ | Investor Profile | `card-investor-profile` | [docs](./blocks/card-investor-profile.md) | 1 |
-| ✅ | Job Recommendation | `card-job-recommendation` | [docs](./blocks/card-job-recommendation.md) | 1 |
-| ✅ | KPI Area Charts | `card-kpi-area-charts` | [docs](./blocks/card-kpi-area-charts.md) | 1 |
-| ✅ | KPI Report Links | `card-kpi-report-links` | [docs](./blocks/card-kpi-report-links.md) | 1 |
-| ✅ | Linked Metric Tiles | `card-linked-metric-tiles` | [docs](./blocks/card-linked-metric-tiles.md) | 1 |
-| ✅ | Logistics KPI Tiles | `card-logistics-kpi-tiles` | [docs](./blocks/card-logistics-kpi-tiles.md) | 5 |
-| ✅ | Meeting Agenda Cards | `card-meeting-agenda-cards` | [docs](./blocks/card-meeting-agenda-cards.md) | 3 |
-| ✅ | Notice Cards | `card-notice-cards` | [docs](./blocks/card-notice-cards.md) | 1 |
-| ✅ | Numbered Setup Steps | `card-numbered-setup-steps` | [docs](./blocks/card-numbered-setup-steps.md) | 1 |
-| ✅ | Partner Showcase | `card-partner-showcase` | [docs](./blocks/card-partner-showcase.md) | 1 |
-| ✅ | Period Trend KPIs | `card-period-trend-kpis` | [docs](./blocks/card-period-trend-kpis.md) | 1 |
-| ✅ | Profile Stat Strip | `card-profile-stat-strip` | [docs](./blocks/card-profile-stat-strip.md) | 1 |
-| ✅ | Project Deadline Cards | `card-project-deadline-cards` | [docs](./blocks/card-project-deadline-cards.md) | 1 |
-| ✅ | Quick Link Tiles | `card-quick-link-tiles` | [docs](./blocks/card-quick-link-tiles.md) | 1 |
-| ✅ | Report Updates | `card-report-updates` | [docs](./blocks/card-report-updates.md) | 4 |
-| ✅ | Resource Hub Cards | `card-resource-hub-cards` | [docs](./blocks/card-resource-hub-cards.md) | 1 |
-| ✅ | Sales Outreach Counters | `card-sales-outreach-counters` | [docs](./blocks/card-sales-outreach-counters.md) | 1 |
-| ✅ | Service Status Tiles | `card-service-status-tiles` | [docs](./blocks/card-service-status-tiles.md) | 1 |
-| ✅ | Shared KPI Panels | `card-shared-kpi-panels` | [docs](./blocks/card-shared-kpi-panels.md) | 1 |
-| ✅ | Shortcut Launcher | `card-shortcut-launcher` | [docs](./blocks/card-shortcut-launcher.md) | 1 |
-| ✅ | Source Link Cards | `card-source-link-cards` | [docs](./blocks/card-source-link-cards.md) | 1 |
-| ✅ | Topic Shortcuts | `card-topic-shortcuts` | [docs](./blocks/card-topic-shortcuts.md) | 1 |
-| ✅ | Upsell Promo | `card-upsell-promo` | [docs](./blocks/card-upsell-promo.md) | 1 |
-| ✅ | Uptime Monitoring Promo | `card-uptime-monitoring-promo` | [docs](./blocks/card-uptime-monitoring-promo.md) | 1 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Account Balances | `card-account-balances` | [docs](./blocks/card-account-balances.md) | [preview](https://reui-unbound.pages.dev/?preview=card-account-balances) | 1 |
+| ✅ | Applicant Record | `card-applicant-record` | [docs](./blocks/card-applicant-record.md) | [preview](https://reui-unbound.pages.dev/?preview=card-applicant-record) | 1 |
+| ✅ | Application Summary | `card-application-summary` | [docs](./blocks/card-application-summary.md) | [preview](https://reui-unbound.pages.dev/?preview=card-application-summary) | 1 |
+| ✅ | Audience Reach Stats | `card-audience-reach-stats` | [docs](./blocks/card-audience-reach-stats.md) | [preview](https://reui-unbound.pages.dev/?preview=card-audience-reach-stats) | 1 |
+| ✅ | Brand Logo Grid | `card-brand-logo-grid` | [docs](./blocks/card-brand-logo-grid.md) | [preview](https://reui-unbound.pages.dev/?preview=card-brand-logo-grid) | 1 |
+| ✅ | Company Snapshot | `card-company-snapshot` | [docs](./blocks/card-company-snapshot.md) | [preview](https://reui-unbound.pages.dev/?preview=card-company-snapshot) | 1 |
+| ✅ | Compliance Strip | `card-compliance-strip` | [docs](./blocks/card-compliance-strip.md) | [preview](https://reui-unbound.pages.dev/?preview=card-compliance-strip) | 1 |
+| ✅ | Contributor Portfolio | `card-contributor-portfolio` | [docs](./blocks/card-contributor-portfolio.md) | [preview](https://reui-unbound.pages.dev/?preview=card-contributor-portfolio) | 1 |
+| ✅ | Crypto Price Quote | `card-crypto-price-quote` | [docs](./blocks/card-crypto-price-quote.md) | [preview](https://reui-unbound.pages.dev/?preview=card-crypto-price-quote) | 1 |
+| ✅ | Customer Profile | `card-customer-profile` | [docs](./blocks/card-customer-profile.md) | [preview](https://reui-unbound.pages.dev/?preview=card-customer-profile) | 1 |
+| ✅ | Deal Invoice Tiles | `card-deal-invoice-tiles` | [docs](./blocks/card-deal-invoice-tiles.md) | [preview](https://reui-unbound.pages.dev/?preview=card-deal-invoice-tiles) | 1 |
+| ✅ | Delivery Tracking | `card-delivery-tracking` | [docs](./blocks/card-delivery-tracking.md) | [preview](https://reui-unbound.pages.dev/?preview=card-delivery-tracking) | 2 |
+| ✅ | Detail Fact Tiles | `card-detail-fact-tiles` | [docs](./blocks/card-detail-fact-tiles.md) | [preview](https://reui-unbound.pages.dev/?preview=card-detail-fact-tiles) | 1 |
+| ✅ | Feature Highlights | `card-feature-highlights` | [docs](./blocks/card-feature-highlights.md) | [preview](https://reui-unbound.pages.dev/?preview=card-feature-highlights) | 1 |
+| ✅ | Fitness Stats | `card-fitness-stats` | [docs](./blocks/card-fitness-stats.md) | [preview](https://reui-unbound.pages.dev/?preview=card-fitness-stats) | 1 |
+| ✅ | Help Center Guides | `card-help-center-guides` | [docs](./blocks/card-help-center-guides.md) | [preview](https://reui-unbound.pages.dev/?preview=card-help-center-guides) | 1 |
+| ✅ | Installed Integration | `card-installed-integration` | [docs](./blocks/card-installed-integration.md) | [preview](https://reui-unbound.pages.dev/?preview=card-installed-integration) | 2 |
+| ✅ | Integration Connector | `card-integration-connector` | [docs](./blocks/card-integration-connector.md) | [preview](https://reui-unbound.pages.dev/?preview=card-integration-connector) | 1 |
+| ✅ | Inventory Counters | `card-inventory-counters` | [docs](./blocks/card-inventory-counters.md) | [preview](https://reui-unbound.pages.dev/?preview=card-inventory-counters) | 5 |
+| ✅ | Investor Profile | `card-investor-profile` | [docs](./blocks/card-investor-profile.md) | [preview](https://reui-unbound.pages.dev/?preview=card-investor-profile) | 1 |
+| ✅ | Job Recommendation | `card-job-recommendation` | [docs](./blocks/card-job-recommendation.md) | [preview](https://reui-unbound.pages.dev/?preview=card-job-recommendation) | 1 |
+| ✅ | KPI Area Charts | `card-kpi-area-charts` | [docs](./blocks/card-kpi-area-charts.md) | [preview](https://reui-unbound.pages.dev/?preview=card-kpi-area-charts) | 1 |
+| ✅ | KPI Report Links | `card-kpi-report-links` | [docs](./blocks/card-kpi-report-links.md) | [preview](https://reui-unbound.pages.dev/?preview=card-kpi-report-links) | 1 |
+| ✅ | Linked Metric Tiles | `card-linked-metric-tiles` | [docs](./blocks/card-linked-metric-tiles.md) | [preview](https://reui-unbound.pages.dev/?preview=card-linked-metric-tiles) | 1 |
+| ✅ | Logistics KPI Tiles | `card-logistics-kpi-tiles` | [docs](./blocks/card-logistics-kpi-tiles.md) | [preview](https://reui-unbound.pages.dev/?preview=card-logistics-kpi-tiles) | 5 |
+| ✅ | Meeting Agenda Cards | `card-meeting-agenda-cards` | [docs](./blocks/card-meeting-agenda-cards.md) | [preview](https://reui-unbound.pages.dev/?preview=card-meeting-agenda-cards) | 3 |
+| ✅ | Notice Cards | `card-notice-cards` | [docs](./blocks/card-notice-cards.md) | [preview](https://reui-unbound.pages.dev/?preview=card-notice-cards) | 1 |
+| ✅ | Numbered Setup Steps | `card-numbered-setup-steps` | [docs](./blocks/card-numbered-setup-steps.md) | [preview](https://reui-unbound.pages.dev/?preview=card-numbered-setup-steps) | 1 |
+| ✅ | Partner Showcase | `card-partner-showcase` | [docs](./blocks/card-partner-showcase.md) | [preview](https://reui-unbound.pages.dev/?preview=card-partner-showcase) | 1 |
+| ✅ | Period Trend KPIs | `card-period-trend-kpis` | [docs](./blocks/card-period-trend-kpis.md) | [preview](https://reui-unbound.pages.dev/?preview=card-period-trend-kpis) | 1 |
+| ✅ | Profile Stat Strip | `card-profile-stat-strip` | [docs](./blocks/card-profile-stat-strip.md) | [preview](https://reui-unbound.pages.dev/?preview=card-profile-stat-strip) | 1 |
+| ✅ | Project Deadline Cards | `card-project-deadline-cards` | [docs](./blocks/card-project-deadline-cards.md) | [preview](https://reui-unbound.pages.dev/?preview=card-project-deadline-cards) | 1 |
+| ✅ | Quick Link Tiles | `card-quick-link-tiles` | [docs](./blocks/card-quick-link-tiles.md) | [preview](https://reui-unbound.pages.dev/?preview=card-quick-link-tiles) | 1 |
+| ✅ | Report Updates | `card-report-updates` | [docs](./blocks/card-report-updates.md) | [preview](https://reui-unbound.pages.dev/?preview=card-report-updates) | 4 |
+| ✅ | Resource Hub Cards | `card-resource-hub-cards` | [docs](./blocks/card-resource-hub-cards.md) | [preview](https://reui-unbound.pages.dev/?preview=card-resource-hub-cards) | 1 |
+| ✅ | Sales Outreach Counters | `card-sales-outreach-counters` | [docs](./blocks/card-sales-outreach-counters.md) | [preview](https://reui-unbound.pages.dev/?preview=card-sales-outreach-counters) | 1 |
+| ✅ | Service Status Tiles | `card-service-status-tiles` | [docs](./blocks/card-service-status-tiles.md) | [preview](https://reui-unbound.pages.dev/?preview=card-service-status-tiles) | 1 |
+| ✅ | Shared KPI Panels | `card-shared-kpi-panels` | [docs](./blocks/card-shared-kpi-panels.md) | [preview](https://reui-unbound.pages.dev/?preview=card-shared-kpi-panels) | 1 |
+| ✅ | Shortcut Launcher | `card-shortcut-launcher` | [docs](./blocks/card-shortcut-launcher.md) | [preview](https://reui-unbound.pages.dev/?preview=card-shortcut-launcher) | 1 |
+| ✅ | Source Link Cards | `card-source-link-cards` | [docs](./blocks/card-source-link-cards.md) | [preview](https://reui-unbound.pages.dev/?preview=card-source-link-cards) | 1 |
+| ✅ | Topic Shortcuts | `card-topic-shortcuts` | [docs](./blocks/card-topic-shortcuts.md) | [preview](https://reui-unbound.pages.dev/?preview=card-topic-shortcuts) | 1 |
+| ✅ | Upsell Promo | `card-upsell-promo` | [docs](./blocks/card-upsell-promo.md) | [preview](https://reui-unbound.pages.dev/?preview=card-upsell-promo) | 1 |
+| ✅ | Uptime Monitoring Promo | `card-uptime-monitoring-promo` | [docs](./blocks/card-uptime-monitoring-promo.md) | [preview](https://reui-unbound.pages.dev/?preview=card-uptime-monitoring-promo) | 1 |
 
 ## Dashboard (8)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Edge Security Telemetry | `dashboard-edge-security-telemetry` | [docs](./blocks/dashboard-edge-security-telemetry.md) | 2 |
-| ✅ | Fulfillment Exceptions | `dashboard-fulfillment-exceptions` | [docs](./blocks/dashboard-fulfillment-exceptions.md) | 8 |
-| ✅ | Module Tracker | `dashboard-module-tracker` | [docs](./blocks/dashboard-module-tracker.md) | 8 |
-| ✅ | Retail Revenue | `dashboard-retail-revenue` | [docs](./blocks/dashboard-retail-revenue.md) | 8 |
-| ✅ | Royalty Payouts | `dashboard-royalty-payouts` | [docs](./blocks/dashboard-royalty-payouts.md) | 8 |
-| ✅ | Voice Agent Calls | `dashboard-voice-agent-calls` | [docs](./blocks/dashboard-voice-agent-calls.md) | 8 |
-| ✅ | Workforce Coverage | `dashboard-workforce-coverage` | [docs](./blocks/dashboard-workforce-coverage.md) | 3 |
-| ✅ | Worklog Timesheet | `dashboard-worklog-timesheet` | [docs](./blocks/dashboard-worklog-timesheet.md) | 6 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Edge Security Telemetry | `dashboard-edge-security-telemetry` | [docs](./blocks/dashboard-edge-security-telemetry.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-edge-security-telemetry) | 2 |
+| ✅ | Fulfillment Exceptions | `dashboard-fulfillment-exceptions` | [docs](./blocks/dashboard-fulfillment-exceptions.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-fulfillment-exceptions) | 8 |
+| ✅ | Module Tracker | `dashboard-module-tracker` | [docs](./blocks/dashboard-module-tracker.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-module-tracker) | 8 |
+| ✅ | Retail Revenue | `dashboard-retail-revenue` | [docs](./blocks/dashboard-retail-revenue.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-retail-revenue) | 8 |
+| ✅ | Royalty Payouts | `dashboard-royalty-payouts` | [docs](./blocks/dashboard-royalty-payouts.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-royalty-payouts) | 8 |
+| ✅ | Voice Agent Calls | `dashboard-voice-agent-calls` | [docs](./blocks/dashboard-voice-agent-calls.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-voice-agent-calls) | 8 |
+| ✅ | Workforce Coverage | `dashboard-workforce-coverage` | [docs](./blocks/dashboard-workforce-coverage.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-workforce-coverage) | 3 |
+| ✅ | Worklog Timesheet | `dashboard-worklog-timesheet` | [docs](./blocks/dashboard-worklog-timesheet.md) | [preview](https://reui-unbound.pages.dev/?preview=dashboard-worklog-timesheet) | 6 |
 
 ## Dialog (15)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Account Settings Modal | `dialog-account-settings-modal` | [docs](./blocks/dialog-account-settings-modal.md) | 2 |
-| ✅ | Bulk Email Invite | `dialog-bulk-email-invite` | [docs](./blocks/dialog-bulk-email-invite.md) | 3 |
-| ✅ | Cancel Plan Survey | `dialog-cancel-plan-survey` | [docs](./blocks/dialog-cancel-plan-survey.md) | 2 |
-| ✅ | Connect App Picker | `dialog-connect-app-picker` | [docs](./blocks/dialog-connect-app-picker.md) | 2 |
-| ✅ | Duplicate Check | `dialog-duplicate-check` | [docs](./blocks/dialog-duplicate-check.md) | 1 |
-| ✅ | Duration Picker | `dialog-duration-picker` | [docs](./blocks/dialog-duration-picker.md) | 5 |
-| ✅ | Finance Account Setup | `dialog-finance-account-setup` | [docs](./blocks/dialog-finance-account-setup.md) | 3 |
-| ✅ | Launch Checklist | `dialog-launch-checklist` | [docs](./blocks/dialog-launch-checklist.md) | 2 |
-| ✅ | OAuth Consent | `dialog-oauth-consent` | [docs](./blocks/dialog-oauth-consent.md) | 3 |
-| ✅ | Per-Person Invite | `dialog-per-person-invite` | [docs](./blocks/dialog-per-person-invite.md) | 4 |
-| ✅ | Project Templates | `dialog-project-templates` | [docs](./blocks/dialog-project-templates.md) | 8 |
-| ✅ | Project With Cover | `dialog-project-with-cover` | [docs](./blocks/dialog-project-with-cover.md) | 6 |
-| ✅ | Quick Create Entry | `dialog-quick-create-entry` | [docs](./blocks/dialog-quick-create-entry.md) | 2 |
-| ✅ | Support Hub | `dialog-support-hub` | [docs](./blocks/dialog-support-hub.md) | 1 |
-| ✅ | Template Library | `dialog-template-library` | [docs](./blocks/dialog-template-library.md) | 2 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Account Settings Modal | `dialog-account-settings-modal` | [docs](./blocks/dialog-account-settings-modal.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-account-settings-modal) | 2 |
+| ✅ | Bulk Email Invite | `dialog-bulk-email-invite` | [docs](./blocks/dialog-bulk-email-invite.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-bulk-email-invite) | 3 |
+| ✅ | Cancel Plan Survey | `dialog-cancel-plan-survey` | [docs](./blocks/dialog-cancel-plan-survey.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-cancel-plan-survey) | 2 |
+| ✅ | Connect App Picker | `dialog-connect-app-picker` | [docs](./blocks/dialog-connect-app-picker.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-connect-app-picker) | 2 |
+| ✅ | Duplicate Check | `dialog-duplicate-check` | [docs](./blocks/dialog-duplicate-check.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-duplicate-check) | 1 |
+| ✅ | Duration Picker | `dialog-duration-picker` | [docs](./blocks/dialog-duration-picker.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-duration-picker) | 5 |
+| ✅ | Finance Account Setup | `dialog-finance-account-setup` | [docs](./blocks/dialog-finance-account-setup.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-finance-account-setup) | 3 |
+| ✅ | Launch Checklist | `dialog-launch-checklist` | [docs](./blocks/dialog-launch-checklist.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-launch-checklist) | 2 |
+| ✅ | OAuth Consent | `dialog-oauth-consent` | [docs](./blocks/dialog-oauth-consent.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-oauth-consent) | 3 |
+| ✅ | Per-Person Invite | `dialog-per-person-invite` | [docs](./blocks/dialog-per-person-invite.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-per-person-invite) | 4 |
+| ✅ | Project Templates | `dialog-project-templates` | [docs](./blocks/dialog-project-templates.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-project-templates) | 8 |
+| ✅ | Project With Cover | `dialog-project-with-cover` | [docs](./blocks/dialog-project-with-cover.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-project-with-cover) | 6 |
+| ✅ | Quick Create Entry | `dialog-quick-create-entry` | [docs](./blocks/dialog-quick-create-entry.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-quick-create-entry) | 2 |
+| ✅ | Support Hub | `dialog-support-hub` | [docs](./blocks/dialog-support-hub.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-support-hub) | 1 |
+| ✅ | Template Library | `dialog-template-library` | [docs](./blocks/dialog-template-library.md) | [preview](https://reui-unbound.pages.dev/?preview=dialog-template-library) | 2 |
 
 ## Empty State (14)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Blueprint Library | `empty-state-blueprint-library` | [docs](./blocks/empty-state-blueprint-library.md) | 1 |
-| ✅ | Cloud Storage Connect | `empty-state-cloud-storage-connect` | [docs](./blocks/empty-state-cloud-storage-connect.md) | 1 |
-| ✅ | Data Import Start | `empty-state-data-import-start` | [docs](./blocks/empty-state-data-import-start.md) | 1 |
-| ✅ | Empty Report Brief | `empty-state-empty-report-brief` | [docs](./blocks/empty-state-empty-report-brief.md) | 1 |
-| ✅ | Enable Organizations | `empty-state-enable-organizations` | [docs](./blocks/empty-state-enable-organizations.md) | 1 |
-| ✅ | Export Filters | `empty-state-export-filters` | [docs](./blocks/empty-state-export-filters.md) | 5 |
-| ✅ | First Project | `empty-state-first-project` | [docs](./blocks/empty-state-first-project.md) | 1 |
-| ✅ | Invite First Member | `empty-state-invite-first-member` | [docs](./blocks/empty-state-invite-first-member.md) | 1 |
-| ✅ | Invite Members Prompt | `empty-state-invite-members-prompt` | [docs](./blocks/empty-state-invite-members-prompt.md) | 1 |
-| ✅ | No Search Results | `empty-state-no-search-results` | [docs](./blocks/empty-state-no-search-results.md) | 1 |
-| ✅ | Reports Workspace | `empty-state-reports-workspace` | [docs](./blocks/empty-state-reports-workspace.md) | 1 |
-| ✅ | Section Add Prompt | `empty-state-section-add-prompt` | [docs](./blocks/empty-state-section-add-prompt.md) | 1 |
-| ✅ | Settings Setup Tabs | `empty-state-settings-setup-tabs` | [docs](./blocks/empty-state-settings-setup-tabs.md) | 3 |
-| ✅ | Team Launch Steps | `empty-state-team-launch-steps` | [docs](./blocks/empty-state-team-launch-steps.md) | 1 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Blueprint Library | `empty-state-blueprint-library` | [docs](./blocks/empty-state-blueprint-library.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-blueprint-library) | 1 |
+| ✅ | Cloud Storage Connect | `empty-state-cloud-storage-connect` | [docs](./blocks/empty-state-cloud-storage-connect.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-cloud-storage-connect) | 1 |
+| ✅ | Data Import Start | `empty-state-data-import-start` | [docs](./blocks/empty-state-data-import-start.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-data-import-start) | 1 |
+| ✅ | Empty Report Brief | `empty-state-empty-report-brief` | [docs](./blocks/empty-state-empty-report-brief.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-empty-report-brief) | 1 |
+| ✅ | Enable Organizations | `empty-state-enable-organizations` | [docs](./blocks/empty-state-enable-organizations.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-enable-organizations) | 1 |
+| ✅ | Export Filters | `empty-state-export-filters` | [docs](./blocks/empty-state-export-filters.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-export-filters) | 5 |
+| ✅ | First Project | `empty-state-first-project` | [docs](./blocks/empty-state-first-project.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-first-project) | 1 |
+| ✅ | Invite First Member | `empty-state-invite-first-member` | [docs](./blocks/empty-state-invite-first-member.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-invite-first-member) | 1 |
+| ✅ | Invite Members Prompt | `empty-state-invite-members-prompt` | [docs](./blocks/empty-state-invite-members-prompt.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-invite-members-prompt) | 1 |
+| ✅ | No Search Results | `empty-state-no-search-results` | [docs](./blocks/empty-state-no-search-results.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-no-search-results) | 1 |
+| ✅ | Reports Workspace | `empty-state-reports-workspace` | [docs](./blocks/empty-state-reports-workspace.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-reports-workspace) | 1 |
+| ✅ | Section Add Prompt | `empty-state-section-add-prompt` | [docs](./blocks/empty-state-section-add-prompt.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-section-add-prompt) | 1 |
+| ✅ | Settings Setup Tabs | `empty-state-settings-setup-tabs` | [docs](./blocks/empty-state-settings-setup-tabs.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-settings-setup-tabs) | 3 |
+| ✅ | Team Launch Steps | `empty-state-team-launch-steps` | [docs](./blocks/empty-state-team-launch-steps.md) | [preview](https://reui-unbound.pages.dev/?preview=empty-state-team-launch-steps) | 1 |
 
 ## Event Calendar (6)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Clinic Chair Board | `event-calendar-clinic-chair-board` | [docs](./blocks/event-calendar-clinic-chair-board.md) | 3 |
-| ✅ | Hotel Front Desk | `event-calendar-hotel-front-desk` | [docs](./blocks/event-calendar-hotel-front-desk.md) | 2 |
-| ✅ | Lending Deal Calendar | `event-calendar-lending-deal-calendar` | [docs](./blocks/event-calendar-lending-deal-calendar.md) | 4 |
-| ✅ | Mini Month Calendar | `event-calendar-mini-month-calendar` | [docs](./blocks/event-calendar-mini-month-calendar.md) | 8 |
-| ✅ | Personal Calendar | `event-calendar-personal-calendar` | [docs](./blocks/event-calendar-personal-calendar.md) | 3 |
-| ✅ | Shift Roster | `event-calendar-shift-roster` | [docs](./blocks/event-calendar-shift-roster.md) | 4 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Clinic Chair Board | `event-calendar-clinic-chair-board` | [docs](./blocks/event-calendar-clinic-chair-board.md) | [preview](https://reui-unbound.pages.dev/?preview=event-calendar-clinic-chair-board) | 3 |
+| ✅ | Hotel Front Desk | `event-calendar-hotel-front-desk` | [docs](./blocks/event-calendar-hotel-front-desk.md) | [preview](https://reui-unbound.pages.dev/?preview=event-calendar-hotel-front-desk) | 2 |
+| ✅ | Lending Deal Calendar | `event-calendar-lending-deal-calendar` | [docs](./blocks/event-calendar-lending-deal-calendar.md) | [preview](https://reui-unbound.pages.dev/?preview=event-calendar-lending-deal-calendar) | 4 |
+| ✅ | Mini Month Calendar | `event-calendar-mini-month-calendar` | [docs](./blocks/event-calendar-mini-month-calendar.md) | [preview](https://reui-unbound.pages.dev/?preview=event-calendar-mini-month-calendar) | 8 |
+| ✅ | Personal Calendar | `event-calendar-personal-calendar` | [docs](./blocks/event-calendar-personal-calendar.md) | [preview](https://reui-unbound.pages.dev/?preview=event-calendar-personal-calendar) | 3 |
+| ✅ | Shift Roster | `event-calendar-shift-roster` | [docs](./blocks/event-calendar-shift-roster.md) | [preview](https://reui-unbound.pages.dev/?preview=event-calendar-shift-roster) | 4 |
 
 ## Flow (4)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | AI Agent Builder | `flow-ai-agent-builder` | [docs](./blocks/flow-ai-agent-builder.md) | 8 |
-| ✅ | Automation Builder | `flow-automation-builder` | [docs](./blocks/flow-automation-builder.md) | 4 |
-| ✅ | Growth Impact Map | `flow-growth-impact-map` | [docs](./blocks/flow-growth-impact-map.md) | 8 |
-| ✅ | Pipeline Run Monitor | `flow-pipeline-run-monitor` | [docs](./blocks/flow-pipeline-run-monitor.md) | 8 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | AI Agent Builder | `flow-ai-agent-builder` | [docs](./blocks/flow-ai-agent-builder.md) | [preview](https://reui-unbound.pages.dev/?preview=flow-ai-agent-builder) | 8 |
+| ✅ | Automation Builder | `flow-automation-builder` | [docs](./blocks/flow-automation-builder.md) | [preview](https://reui-unbound.pages.dev/?preview=flow-automation-builder) | 4 |
+| ✅ | Growth Impact Map | `flow-growth-impact-map` | [docs](./blocks/flow-growth-impact-map.md) | [preview](https://reui-unbound.pages.dev/?preview=flow-growth-impact-map) | 8 |
+| ✅ | Pipeline Run Monitor | `flow-pipeline-run-monitor` | [docs](./blocks/flow-pipeline-run-monitor.md) | [preview](https://reui-unbound.pages.dev/?preview=flow-pipeline-run-monitor) | 8 |
 
 ## Form (12)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | API Keys Manager | `form-api-keys-manager` | [docs](./blocks/form-api-keys-manager.md) | 3 |
-| ✅ | Auth Method Settings | `form-auth-method-settings` | [docs](./blocks/form-auth-method-settings.md) | 9 |
-| ✅ | Business Verification | `form-business-verification` | [docs](./blocks/form-business-verification.md) | 1 |
-| ✅ | Checkout Setup | `form-checkout-setup` | [docs](./blocks/form-checkout-setup.md) | 5 |
-| ✅ | Customer Onboarding | `form-customer-onboarding` | [docs](./blocks/form-customer-onboarding.md) | 7 |
-| ✅ | Deploy App Setup | `form-deploy-app-setup` | [docs](./blocks/form-deploy-app-setup.md) | 7 |
-| ✅ | Invoice Creator | `form-invoice-creator` | [docs](./blocks/form-invoice-creator.md) | 7 |
-| ✅ | Member Profile Admin | `form-member-profile-admin` | [docs](./blocks/form-member-profile-admin.md) | 9 |
-| ✅ | New Product Form | `form-new-product-form` | [docs](./blocks/form-new-product-form.md) | 6 |
-| ✅ | Profile Settings | `form-profile-settings` | [docs](./blocks/form-profile-settings.md) | 6 |
-| ✅ | Role Permission Invite | `form-role-permission-invite` | [docs](./blocks/form-role-permission-invite.md) | 7 |
-| ✅ | Ticket Properties | `form-ticket-properties` | [docs](./blocks/form-ticket-properties.md) | 2 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | API Keys Manager | `form-api-keys-manager` | [docs](./blocks/form-api-keys-manager.md) | [preview](https://reui-unbound.pages.dev/?preview=form-api-keys-manager) | 3 |
+| ✅ | Auth Method Settings | `form-auth-method-settings` | [docs](./blocks/form-auth-method-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=form-auth-method-settings) | 9 |
+| ✅ | Business Verification | `form-business-verification` | [docs](./blocks/form-business-verification.md) | [preview](https://reui-unbound.pages.dev/?preview=form-business-verification) | 1 |
+| ✅ | Checkout Setup | `form-checkout-setup` | [docs](./blocks/form-checkout-setup.md) | [preview](https://reui-unbound.pages.dev/?preview=form-checkout-setup) | 5 |
+| ✅ | Customer Onboarding | `form-customer-onboarding` | [docs](./blocks/form-customer-onboarding.md) | [preview](https://reui-unbound.pages.dev/?preview=form-customer-onboarding) | 7 |
+| ✅ | Deploy App Setup | `form-deploy-app-setup` | [docs](./blocks/form-deploy-app-setup.md) | [preview](https://reui-unbound.pages.dev/?preview=form-deploy-app-setup) | 7 |
+| ✅ | Invoice Creator | `form-invoice-creator` | [docs](./blocks/form-invoice-creator.md) | [preview](https://reui-unbound.pages.dev/?preview=form-invoice-creator) | 7 |
+| ✅ | Member Profile Admin | `form-member-profile-admin` | [docs](./blocks/form-member-profile-admin.md) | [preview](https://reui-unbound.pages.dev/?preview=form-member-profile-admin) | 9 |
+| ✅ | New Product Form | `form-new-product-form` | [docs](./blocks/form-new-product-form.md) | [preview](https://reui-unbound.pages.dev/?preview=form-new-product-form) | 6 |
+| ✅ | Profile Settings | `form-profile-settings` | [docs](./blocks/form-profile-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=form-profile-settings) | 6 |
+| ✅ | Role Permission Invite | `form-role-permission-invite` | [docs](./blocks/form-role-permission-invite.md) | [preview](https://reui-unbound.pages.dev/?preview=form-role-permission-invite) | 7 |
+| ✅ | Ticket Properties | `form-ticket-properties` | [docs](./blocks/form-ticket-properties.md) | [preview](https://reui-unbound.pages.dev/?preview=form-ticket-properties) | 2 |
 
 ## Gantt (4)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Agent Playbook | `gantt-agent-playbook` | [docs](./blocks/gantt-agent-playbook.md) | 7 |
-| ✅ | Project Timeline | `gantt-project-timeline` | [docs](./blocks/gantt-project-timeline.md) | 8 |
-| ✅ | Resource Capacity | `gantt-resource-capacity` | [docs](./blocks/gantt-resource-capacity.md) | 4 |
-| ✅ | Technician Dispatch | `gantt-technician-dispatch` | [docs](./blocks/gantt-technician-dispatch.md) | 8 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Agent Playbook | `gantt-agent-playbook` | [docs](./blocks/gantt-agent-playbook.md) | [preview](https://reui-unbound.pages.dev/?preview=gantt-agent-playbook) | 7 |
+| ✅ | Project Timeline | `gantt-project-timeline` | [docs](./blocks/gantt-project-timeline.md) | [preview](https://reui-unbound.pages.dev/?preview=gantt-project-timeline) | 8 |
+| ✅ | Resource Capacity | `gantt-resource-capacity` | [docs](./blocks/gantt-resource-capacity.md) | [preview](https://reui-unbound.pages.dev/?preview=gantt-resource-capacity) | 4 |
+| ✅ | Technician Dispatch | `gantt-technician-dispatch` | [docs](./blocks/gantt-technician-dispatch.md) | [preview](https://reui-unbound.pages.dev/?preview=gantt-technician-dispatch) | 8 |
 
 ## Kanban Board (10)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Access Review | `kanban-board-access-review` | [docs](./blocks/kanban-board-access-review.md) | 1 |
-| ✅ | Bug Triage | `kanban-board-bug-triage` | [docs](./blocks/kanban-board-bug-triage.md) | 1 |
-| ✅ | Collapsible Columns | `kanban-board-collapsible-columns` | [docs](./blocks/kanban-board-collapsible-columns.md) | 4 |
-| ✅ | Feature Roadmap Votes | `kanban-board-feature-roadmap-votes` | [docs](./blocks/kanban-board-feature-roadmap-votes.md) | 1 |
-| ✅ | Progress Ring Workflow | `kanban-board-progress-ring-workflow` | [docs](./blocks/kanban-board-progress-ring-workflow.md) | 3 |
-| ✅ | Recruiting Pipeline | `kanban-board-recruiting-pipeline` | [docs](./blocks/kanban-board-recruiting-pipeline.md) | 1 |
-| ✅ | Release Readiness | `kanban-board-release-readiness` | [docs](./blocks/kanban-board-release-readiness.md) | 1 |
-| ✅ | Renewals Risk | `kanban-board-renewals-risk` | [docs](./blocks/kanban-board-renewals-risk.md) | 1 |
-| ✅ | Sales Pipeline | `kanban-board-sales-pipeline` | [docs](./blocks/kanban-board-sales-pipeline.md) | 1 |
-| ✅ | Support Escalations | `kanban-board-support-escalations` | [docs](./blocks/kanban-board-support-escalations.md) | 1 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Access Review | `kanban-board-access-review` | [docs](./blocks/kanban-board-access-review.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-access-review) | 1 |
+| ✅ | Bug Triage | `kanban-board-bug-triage` | [docs](./blocks/kanban-board-bug-triage.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-bug-triage) | 1 |
+| ✅ | Collapsible Columns | `kanban-board-collapsible-columns` | [docs](./blocks/kanban-board-collapsible-columns.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-collapsible-columns) | 4 |
+| ✅ | Feature Roadmap Votes | `kanban-board-feature-roadmap-votes` | [docs](./blocks/kanban-board-feature-roadmap-votes.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-feature-roadmap-votes) | 1 |
+| ✅ | Progress Ring Workflow | `kanban-board-progress-ring-workflow` | [docs](./blocks/kanban-board-progress-ring-workflow.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-progress-ring-workflow) | 3 |
+| ✅ | Recruiting Pipeline | `kanban-board-recruiting-pipeline` | [docs](./blocks/kanban-board-recruiting-pipeline.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-recruiting-pipeline) | 1 |
+| ✅ | Release Readiness | `kanban-board-release-readiness` | [docs](./blocks/kanban-board-release-readiness.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-release-readiness) | 1 |
+| ✅ | Renewals Risk | `kanban-board-renewals-risk` | [docs](./blocks/kanban-board-renewals-risk.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-renewals-risk) | 1 |
+| ✅ | Sales Pipeline | `kanban-board-sales-pipeline` | [docs](./blocks/kanban-board-sales-pipeline.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-sales-pipeline) | 1 |
+| ✅ | Support Escalations | `kanban-board-support-escalations` | [docs](./blocks/kanban-board-support-escalations.md) | [preview](https://reui-unbound.pages.dev/?preview=kanban-board-support-escalations) | 1 |
 
 ## List (11)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Capability Modules | `list-capability-modules` | [docs](./blocks/list-capability-modules.md) | 1 |
-| ✅ | Capital Inflows | `list-capital-inflows` | [docs](./blocks/list-capital-inflows.md) | 3 |
-| ✅ | Crypto Activity Feed | `list-crypto-activity-feed` | [docs](./blocks/list-crypto-activity-feed.md) | 1 |
-| ✅ | Crypto Portfolio | `list-crypto-portfolio` | [docs](./blocks/list-crypto-portfolio.md) | 3 |
-| ✅ | Fund Leaderboard | `list-fund-leaderboard` | [docs](./blocks/list-fund-leaderboard.md) | 4 |
-| ✅ | Integrations Directory | `list-integrations-directory` | [docs](./blocks/list-integrations-directory.md) | 1 |
-| ✅ | Order KPI List | `list-order-kpi-list` | [docs](./blocks/list-order-kpi-list.md) | 1 |
-| ✅ | Recent Investments | `list-recent-investments` | [docs](./blocks/list-recent-investments.md) | 2 |
-| ✅ | Spending Feed | `list-spending-feed` | [docs](./blocks/list-spending-feed.md) | 3 |
-| ✅ | Top Movers | `list-top-movers` | [docs](./blocks/list-top-movers.md) | 2 |
-| ✅ | Wallet Transfers | `list-wallet-transfers` | [docs](./blocks/list-wallet-transfers.md) | 3 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Capability Modules | `list-capability-modules` | [docs](./blocks/list-capability-modules.md) | [preview](https://reui-unbound.pages.dev/?preview=list-capability-modules) | 1 |
+| ✅ | Capital Inflows | `list-capital-inflows` | [docs](./blocks/list-capital-inflows.md) | [preview](https://reui-unbound.pages.dev/?preview=list-capital-inflows) | 3 |
+| ✅ | Crypto Activity Feed | `list-crypto-activity-feed` | [docs](./blocks/list-crypto-activity-feed.md) | [preview](https://reui-unbound.pages.dev/?preview=list-crypto-activity-feed) | 1 |
+| ✅ | Crypto Portfolio | `list-crypto-portfolio` | [docs](./blocks/list-crypto-portfolio.md) | [preview](https://reui-unbound.pages.dev/?preview=list-crypto-portfolio) | 3 |
+| ✅ | Fund Leaderboard | `list-fund-leaderboard` | [docs](./blocks/list-fund-leaderboard.md) | [preview](https://reui-unbound.pages.dev/?preview=list-fund-leaderboard) | 4 |
+| ✅ | Integrations Directory | `list-integrations-directory` | [docs](./blocks/list-integrations-directory.md) | [preview](https://reui-unbound.pages.dev/?preview=list-integrations-directory) | 1 |
+| ✅ | Order KPI List | `list-order-kpi-list` | [docs](./blocks/list-order-kpi-list.md) | [preview](https://reui-unbound.pages.dev/?preview=list-order-kpi-list) | 1 |
+| ✅ | Recent Investments | `list-recent-investments` | [docs](./blocks/list-recent-investments.md) | [preview](https://reui-unbound.pages.dev/?preview=list-recent-investments) | 2 |
+| ✅ | Spending Feed | `list-spending-feed` | [docs](./blocks/list-spending-feed.md) | [preview](https://reui-unbound.pages.dev/?preview=list-spending-feed) | 3 |
+| ✅ | Top Movers | `list-top-movers` | [docs](./blocks/list-top-movers.md) | [preview](https://reui-unbound.pages.dev/?preview=list-top-movers) | 2 |
+| ✅ | Wallet Transfers | `list-wallet-transfers` | [docs](./blocks/list-wallet-transfers.md) | [preview](https://reui-unbound.pages.dev/?preview=list-wallet-transfers) | 3 |
 
 ## Navbar (13)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Admin Command Search | `navbar-admin-command-search` | [docs](./blocks/navbar-admin-command-search.md) | 3 |
-| ✅ | Agent Marketplace | `navbar-agent-marketplace` | [docs](./blocks/navbar-agent-marketplace.md) | 3 |
-| ✅ | Analytics Toolbar | `navbar-analytics-toolbar` | [docs](./blocks/navbar-analytics-toolbar.md) | 5 |
-| ✅ | API Developer Portal | `navbar-api-developer-portal` | [docs](./blocks/navbar-api-developer-portal.md) | 5 |
-| ✅ | CMS Publish Bar | `navbar-cms-publish-bar` | [docs](./blocks/navbar-cms-publish-bar.md) | 3 |
-| ✅ | Design System Manager | `navbar-design-system-manager` | [docs](./blocks/navbar-design-system-manager.md) | 7 |
-| ✅ | Editor Action Bar | `navbar-editor-action-bar` | [docs](./blocks/navbar-editor-action-bar.md) | 1 |
-| ✅ | Marketing Mega Menu | `navbar-marketing-mega-menu` | [docs](./blocks/navbar-marketing-mega-menu.md) | 3 |
-| ✅ | Org & Environment Switcher | `navbar-org-environment-switcher` | [docs](./blocks/navbar-org-environment-switcher.md) | 7 |
-| ✅ | Project Workspace | `navbar-project-workspace` | [docs](./blocks/navbar-project-workspace.md) | 7 |
-| ✅ | Repo Branch Picker | `navbar-repo-branch-picker` | [docs](./blocks/navbar-repo-branch-picker.md) | 2 |
-| ✅ | Team Presence | `navbar-team-presence` | [docs](./blocks/navbar-team-presence.md) | 5 |
-| ✅ | Workflow Editor | `navbar-workflow-editor` | [docs](./blocks/navbar-workflow-editor.md) | 3 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Admin Command Search | `navbar-admin-command-search` | [docs](./blocks/navbar-admin-command-search.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-admin-command-search) | 3 |
+| ✅ | Agent Marketplace | `navbar-agent-marketplace` | [docs](./blocks/navbar-agent-marketplace.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-agent-marketplace) | 3 |
+| ✅ | Analytics Toolbar | `navbar-analytics-toolbar` | [docs](./blocks/navbar-analytics-toolbar.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-analytics-toolbar) | 5 |
+| ✅ | API Developer Portal | `navbar-api-developer-portal` | [docs](./blocks/navbar-api-developer-portal.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-api-developer-portal) | 5 |
+| ✅ | CMS Publish Bar | `navbar-cms-publish-bar` | [docs](./blocks/navbar-cms-publish-bar.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-cms-publish-bar) | 3 |
+| ✅ | Design System Manager | `navbar-design-system-manager` | [docs](./blocks/navbar-design-system-manager.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-design-system-manager) | 7 |
+| ✅ | Editor Action Bar | `navbar-editor-action-bar` | [docs](./blocks/navbar-editor-action-bar.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-editor-action-bar) | 1 |
+| ✅ | Marketing Mega Menu | `navbar-marketing-mega-menu` | [docs](./blocks/navbar-marketing-mega-menu.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-marketing-mega-menu) | 3 |
+| ✅ | Org & Environment Switcher | `navbar-org-environment-switcher` | [docs](./blocks/navbar-org-environment-switcher.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-org-environment-switcher) | 7 |
+| ✅ | Project Workspace | `navbar-project-workspace` | [docs](./blocks/navbar-project-workspace.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-project-workspace) | 7 |
+| ✅ | Repo Branch Picker | `navbar-repo-branch-picker` | [docs](./blocks/navbar-repo-branch-picker.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-repo-branch-picker) | 2 |
+| ✅ | Team Presence | `navbar-team-presence` | [docs](./blocks/navbar-team-presence.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-team-presence) | 5 |
+| ✅ | Workflow Editor | `navbar-workflow-editor` | [docs](./blocks/navbar-workflow-editor.md) | [preview](https://reui-unbound.pages.dev/?preview=navbar-workflow-editor) | 3 |
 
 ## Onboarding (9)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Agent & API Setup | `onboarding-agent-api-setup` | [docs](./blocks/onboarding-agent-api-setup.md) | 8 |
-| ✅ | Centered Setup Flow | `onboarding-centered-setup-flow` | [docs](./blocks/onboarding-centered-setup-flow.md) | 9 |
-| ✅ | CLI Agent Setup | `onboarding-cli-agent-setup` | [docs](./blocks/onboarding-cli-agent-setup.md) | 9 |
-| ✅ | Live Preview Wizard | `onboarding-live-preview-wizard` | [docs](./blocks/onboarding-live-preview-wizard.md) | 9 |
-| ✅ | Marketing Hero Signup | `onboarding-marketing-hero-signup` | [docs](./blocks/onboarding-marketing-hero-signup.md) | 8 |
-| ✅ | Onboarding Dialog | `onboarding-onboarding-dialog` | [docs](./blocks/onboarding-onboarding-dialog.md) | 2 |
-| ✅ | Screenshot Carousel Setup | `onboarding-screenshot-carousel-setup` | [docs](./blocks/onboarding-screenshot-carousel-setup.md) | 9 |
-| ✅ | Sidebar Stepper Wizard | `onboarding-sidebar-stepper-wizard` | [docs](./blocks/onboarding-sidebar-stepper-wizard.md) | 3 |
-| ✅ | Split-Screen Signup | `onboarding-split-screen-signup` | [docs](./blocks/onboarding-split-screen-signup.md) | 3 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Agent & API Setup | `onboarding-agent-api-setup` | [docs](./blocks/onboarding-agent-api-setup.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-agent-api-setup) | 8 |
+| ✅ | Centered Setup Flow | `onboarding-centered-setup-flow` | [docs](./blocks/onboarding-centered-setup-flow.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-centered-setup-flow) | 9 |
+| ✅ | CLI Agent Setup | `onboarding-cli-agent-setup` | [docs](./blocks/onboarding-cli-agent-setup.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-cli-agent-setup) | 9 |
+| ✅ | Live Preview Wizard | `onboarding-live-preview-wizard` | [docs](./blocks/onboarding-live-preview-wizard.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-live-preview-wizard) | 9 |
+| ✅ | Marketing Hero Signup | `onboarding-marketing-hero-signup` | [docs](./blocks/onboarding-marketing-hero-signup.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-marketing-hero-signup) | 8 |
+| ✅ | Onboarding Dialog | `onboarding-onboarding-dialog` | [docs](./blocks/onboarding-onboarding-dialog.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-onboarding-dialog) | 2 |
+| ✅ | Screenshot Carousel Setup | `onboarding-screenshot-carousel-setup` | [docs](./blocks/onboarding-screenshot-carousel-setup.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-screenshot-carousel-setup) | 9 |
+| ✅ | Sidebar Stepper Wizard | `onboarding-sidebar-stepper-wizard` | [docs](./blocks/onboarding-sidebar-stepper-wizard.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-sidebar-stepper-wizard) | 3 |
+| ✅ | Split-Screen Signup | `onboarding-split-screen-signup` | [docs](./blocks/onboarding-split-screen-signup.md) | [preview](https://reui-unbound.pages.dev/?preview=onboarding-split-screen-signup) | 3 |
 
 ## Profile (10)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Account & Team Settings | `profile-account-team-settings` | [docs](./blocks/profile-account-team-settings.md) | 7 |
-| ✅ | Account Settings Hub | `profile-account-settings-hub` | [docs](./blocks/profile-account-settings-hub.md) | 5 |
-| ✅ | Admin Permissions | `profile-admin-permissions` | [docs](./blocks/profile-admin-permissions.md) | 8 |
-| ✅ | Billing Settings | `profile-billing-settings` | [docs](./blocks/profile-billing-settings.md) | 1 |
-| ✅ | Developer API Keys | `profile-developer-api-keys` | [docs](./blocks/profile-developer-api-keys.md) | 7 |
-| ✅ | Mailbox Accounts | `profile-mailbox-accounts` | [docs](./blocks/profile-mailbox-accounts.md) | 7 |
-| ✅ | Meeting Capture | `profile-meeting-capture` | [docs](./blocks/profile-meeting-capture.md) | 6 |
-| ✅ | Notification Digest | `profile-notification-digest` | [docs](./blocks/profile-notification-digest.md) | 2 |
-| ✅ | Personal Profile | `profile-personal-profile` | [docs](./blocks/profile-personal-profile.md) | 9 |
-| ✅ | Referral Rewards | `profile-referral-rewards` | [docs](./blocks/profile-referral-rewards.md) | 2 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Account & Team Settings | `profile-account-team-settings` | [docs](./blocks/profile-account-team-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-account-team-settings) | 7 |
+| ✅ | Account Settings Hub | `profile-account-settings-hub` | [docs](./blocks/profile-account-settings-hub.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-account-settings-hub) | 5 |
+| ✅ | Admin Permissions | `profile-admin-permissions` | [docs](./blocks/profile-admin-permissions.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-admin-permissions) | 8 |
+| ✅ | Billing Settings | `profile-billing-settings` | [docs](./blocks/profile-billing-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-billing-settings) | 1 |
+| ✅ | Developer API Keys | `profile-developer-api-keys` | [docs](./blocks/profile-developer-api-keys.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-developer-api-keys) | 7 |
+| ✅ | Mailbox Accounts | `profile-mailbox-accounts` | [docs](./blocks/profile-mailbox-accounts.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-mailbox-accounts) | 7 |
+| ✅ | Meeting Capture | `profile-meeting-capture` | [docs](./blocks/profile-meeting-capture.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-meeting-capture) | 6 |
+| ✅ | Notification Digest | `profile-notification-digest` | [docs](./blocks/profile-notification-digest.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-notification-digest) | 2 |
+| ✅ | Personal Profile | `profile-personal-profile` | [docs](./blocks/profile-personal-profile.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-personal-profile) | 9 |
+| ✅ | Referral Rewards | `profile-referral-rewards` | [docs](./blocks/profile-referral-rewards.md) | [preview](https://reui-unbound.pages.dev/?preview=profile-referral-rewards) | 2 |
 
 ## Rich Text Editor (5)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | AI Writing Assistant | `rich-text-editor-ai-writing-assistant` | [docs](./blocks/rich-text-editor-ai-writing-assistant.md) | 8 |
-| ✅ | Collaborative Editor | `rich-text-editor-collaborative-editor` | [docs](./blocks/rich-text-editor-collaborative-editor.md) | 5 |
-| ✅ | Contract Redlines | `rich-text-editor-contract-redlines` | [docs](./blocks/rich-text-editor-contract-redlines.md) | 8 |
-| ✅ | Document Editor | `rich-text-editor-document-editor` | [docs](./blocks/rich-text-editor-document-editor.md) | 8 |
-| ✅ | Wiki Page Editor | `rich-text-editor-wiki-page-editor` | [docs](./blocks/rich-text-editor-wiki-page-editor.md) | 3 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | AI Writing Assistant | `rich-text-editor-ai-writing-assistant` | [docs](./blocks/rich-text-editor-ai-writing-assistant.md) | [preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-ai-writing-assistant) | 8 |
+| ✅ | Collaborative Editor | `rich-text-editor-collaborative-editor` | [docs](./blocks/rich-text-editor-collaborative-editor.md) | [preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-collaborative-editor) | 5 |
+| ✅ | Contract Redlines | `rich-text-editor-contract-redlines` | [docs](./blocks/rich-text-editor-contract-redlines.md) | [preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-contract-redlines) | 8 |
+| ✅ | Document Editor | `rich-text-editor-document-editor` | [docs](./blocks/rich-text-editor-document-editor.md) | [preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-document-editor) | 8 |
+| ✅ | Wiki Page Editor | `rich-text-editor-wiki-page-editor` | [docs](./blocks/rich-text-editor-wiki-page-editor.md) | [preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-wiki-page-editor) | 3 |
 
 ## Schedule (10)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Appointment Planner | `schedule-appointment-planner` | [docs](./blocks/schedule-appointment-planner.md) | 8 |
-| ✅ | Booking Page | `schedule-booking-page` | [docs](./blocks/schedule-booking-page.md) | 4 |
-| ✅ | Create Schedule | `schedule-create-schedule` | [docs](./blocks/schedule-create-schedule.md) | 5 |
-| ✅ | Due Date Picker | `schedule-due-date-picker` | [docs](./blocks/schedule-due-date-picker.md) | 4 |
-| ✅ | Meeting Scheduler | `schedule-meeting-scheduler` | [docs](./blocks/schedule-meeting-scheduler.md) | 6 |
-| ✅ | Session Booking | `schedule-session-booking` | [docs](./blocks/schedule-session-booking.md) | 4 |
-| ✅ | Team Agenda | `schedule-team-agenda` | [docs](./blocks/schedule-team-agenda.md) | 6 |
-| ✅ | Team Attendance | `schedule-team-attendance` | [docs](./blocks/schedule-team-attendance.md) | 5 |
-| ✅ | Time Range Picker | `schedule-time-range-picker` | [docs](./blocks/schedule-time-range-picker.md) | 5 |
-| ✅ | Webinar RSVP | `schedule-webinar-rsvp` | [docs](./blocks/schedule-webinar-rsvp.md) | 2 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Appointment Planner | `schedule-appointment-planner` | [docs](./blocks/schedule-appointment-planner.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-appointment-planner) | 8 |
+| ✅ | Booking Page | `schedule-booking-page` | [docs](./blocks/schedule-booking-page.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-booking-page) | 4 |
+| ✅ | Create Schedule | `schedule-create-schedule` | [docs](./blocks/schedule-create-schedule.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-create-schedule) | 5 |
+| ✅ | Due Date Picker | `schedule-due-date-picker` | [docs](./blocks/schedule-due-date-picker.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-due-date-picker) | 4 |
+| ✅ | Meeting Scheduler | `schedule-meeting-scheduler` | [docs](./blocks/schedule-meeting-scheduler.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-meeting-scheduler) | 6 |
+| ✅ | Session Booking | `schedule-session-booking` | [docs](./blocks/schedule-session-booking.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-session-booking) | 4 |
+| ✅ | Team Agenda | `schedule-team-agenda` | [docs](./blocks/schedule-team-agenda.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-team-agenda) | 6 |
+| ✅ | Team Attendance | `schedule-team-attendance` | [docs](./blocks/schedule-team-attendance.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-team-attendance) | 5 |
+| ✅ | Time Range Picker | `schedule-time-range-picker` | [docs](./blocks/schedule-time-range-picker.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-time-range-picker) | 5 |
+| ✅ | Webinar RSVP | `schedule-webinar-rsvp` | [docs](./blocks/schedule-webinar-rsvp.md) | [preview](https://reui-unbound.pages.dev/?preview=schedule-webinar-rsvp) | 2 |
 
 ## Settings (16)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Account Settings | `settings-account-settings` | [docs](./blocks/settings-account-settings.md) | 7 |
-| ✅ | API Integrations | `settings-api-integrations` | [docs](./blocks/settings-api-integrations.md) | 7 |
-| ✅ | App Connections | `settings-app-connections` | [docs](./blocks/settings-app-connections.md) | 7 |
-| ✅ | Connected Apps | `settings-connected-apps` | [docs](./blocks/settings-connected-apps.md) | 1 |
-| ✅ | General & Display | `settings-general-display` | [docs](./blocks/settings-general-display.md) | 7 |
-| ✅ | General Settings | `settings-general-settings` | [docs](./blocks/settings-general-settings.md) | 6 |
-| ✅ | Import Sources | `settings-import-sources` | [docs](./blocks/settings-import-sources.md) | 2 |
-| ✅ | Integration Events | `settings-integration-events` | [docs](./blocks/settings-integration-events.md) | 2 |
-| ✅ | Integrations Gallery | `settings-integrations-gallery` | [docs](./blocks/settings-integrations-gallery.md) | 2 |
-| ✅ | Notification Channels | `settings-notification-channels` | [docs](./blocks/settings-notification-channels.md) | 6 |
-| ✅ | Notification Delivery | `settings-notification-delivery` | [docs](./blocks/settings-notification-delivery.md) | 5 |
-| ✅ | Privacy Controls | `settings-privacy-controls` | [docs](./blocks/settings-privacy-controls.md) | 2 |
-| ✅ | Role Capabilities | `settings-role-capabilities` | [docs](./blocks/settings-role-capabilities.md) | 2 |
-| ✅ | Security Settings | `settings-security-settings` | [docs](./blocks/settings-security-settings.md) | 3 |
-| ✅ | Webhook Endpoints | `settings-webhook-endpoints` | [docs](./blocks/settings-webhook-endpoints.md) | 7 |
-| ✅ | Workspace Preferences | `settings-workspace-preferences` | [docs](./blocks/settings-workspace-preferences.md) | 3 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Account Settings | `settings-account-settings` | [docs](./blocks/settings-account-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-account-settings) | 7 |
+| ✅ | API Integrations | `settings-api-integrations` | [docs](./blocks/settings-api-integrations.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-api-integrations) | 7 |
+| ✅ | App Connections | `settings-app-connections` | [docs](./blocks/settings-app-connections.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-app-connections) | 7 |
+| ✅ | Connected Apps | `settings-connected-apps` | [docs](./blocks/settings-connected-apps.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-connected-apps) | 1 |
+| ✅ | General & Display | `settings-general-display` | [docs](./blocks/settings-general-display.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-general-display) | 7 |
+| ✅ | General Settings | `settings-general-settings` | [docs](./blocks/settings-general-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-general-settings) | 6 |
+| ✅ | Import Sources | `settings-import-sources` | [docs](./blocks/settings-import-sources.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-import-sources) | 2 |
+| ✅ | Integration Events | `settings-integration-events` | [docs](./blocks/settings-integration-events.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-integration-events) | 2 |
+| ✅ | Integrations Gallery | `settings-integrations-gallery` | [docs](./blocks/settings-integrations-gallery.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-integrations-gallery) | 2 |
+| ✅ | Notification Channels | `settings-notification-channels` | [docs](./blocks/settings-notification-channels.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-notification-channels) | 6 |
+| ✅ | Notification Delivery | `settings-notification-delivery` | [docs](./blocks/settings-notification-delivery.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-notification-delivery) | 5 |
+| ✅ | Privacy Controls | `settings-privacy-controls` | [docs](./blocks/settings-privacy-controls.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-privacy-controls) | 2 |
+| ✅ | Role Capabilities | `settings-role-capabilities` | [docs](./blocks/settings-role-capabilities.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-role-capabilities) | 2 |
+| ✅ | Security Settings | `settings-security-settings` | [docs](./blocks/settings-security-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-security-settings) | 3 |
+| ✅ | Webhook Endpoints | `settings-webhook-endpoints` | [docs](./blocks/settings-webhook-endpoints.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-webhook-endpoints) | 7 |
+| ✅ | Workspace Preferences | `settings-workspace-preferences` | [docs](./blocks/settings-workspace-preferences.md) | [preview](https://reui-unbound.pages.dev/?preview=settings-workspace-preferences) | 3 |
 
 ## Sheet (24)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | AI Model Chat | `sheet-ai-model-chat` | [docs](./blocks/sheet-ai-model-chat.md) | 4 |
-| ✅ | Audit Event Detail | `sheet-audit-event-detail` | [docs](./blocks/sheet-audit-event-detail.md) | 2 |
-| ✅ | Canary Rollout | `sheet-canary-rollout` | [docs](./blocks/sheet-canary-rollout.md) | 2 |
-| ✅ | Comment Thread | `sheet-comment-thread` | [docs](./blocks/sheet-comment-thread.md) | 6 |
-| ✅ | Copilot Chat | `sheet-copilot-chat` | [docs](./blocks/sheet-copilot-chat.md) | 2 |
-| ✅ | Create Project | `sheet-create-project` | [docs](./blocks/sheet-create-project.md) | 7 |
-| ✅ | Cron Job Detail | `sheet-cron-job-detail` | [docs](./blocks/sheet-cron-job-detail.md) | 3 |
-| ✅ | Data Connection | `sheet-data-connection` | [docs](./blocks/sheet-data-connection.md) | 3 |
-| ✅ | Dataset Preview | `sheet-dataset-preview` | [docs](./blocks/sheet-dataset-preview.md) | 3 |
-| ✅ | Edit Firewall Rule | `sheet-edit-firewall-rule` | [docs](./blocks/sheet-edit-firewall-rule.md) | 2 |
-| ✅ | Failed Deploy | `sheet-failed-deploy` | [docs](./blocks/sheet-failed-deploy.md) | 2 |
-| ✅ | Firewall Request | `sheet-firewall-request` | [docs](./blocks/sheet-firewall-request.md) | 2 |
-| ✅ | Help Center | `sheet-help-center` | [docs](./blocks/sheet-help-center.md) | 2 |
-| ✅ | Keyboard Shortcuts | `sheet-keyboard-shortcuts` | [docs](./blocks/sheet-keyboard-shortcuts.md) | 2 |
-| ✅ | Metric Detail Sheet | `sheet-metric-detail-sheet` | [docs](./blocks/sheet-metric-detail-sheet.md) | 1 |
-| ✅ | New Connection | `sheet-new-connection` | [docs](./blocks/sheet-new-connection.md) | 2 |
-| ✅ | New Cron Job | `sheet-new-cron-job` | [docs](./blocks/sheet-new-cron-job.md) | 7 |
-| ✅ | New Firewall Rule | `sheet-new-firewall-rule` | [docs](./blocks/sheet-new-firewall-rule.md) | 4 |
-| ✅ | New SLO | `sheet-new-slo` | [docs](./blocks/sheet-new-slo.md) | 6 |
-| ✅ | Notifications Feed | `sheet-notifications-feed` | [docs](./blocks/sheet-notifications-feed.md) | 1 |
-| ✅ | Relay Settings | `sheet-relay-settings` | [docs](./blocks/sheet-relay-settings.md) | 8 |
-| ✅ | SLO Error Budget | `sheet-slo-error-budget` | [docs](./blocks/sheet-slo-error-budget.md) | 3 |
-| ✅ | Ticket Edit Sheet | `sheet-ticket-edit-sheet` | [docs](./blocks/sheet-ticket-edit-sheet.md) | 3 |
-| ✅ | View Customizer | `sheet-view-customizer` | [docs](./blocks/sheet-view-customizer.md) | 3 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | AI Model Chat | `sheet-ai-model-chat` | [docs](./blocks/sheet-ai-model-chat.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-ai-model-chat) | 4 |
+| ✅ | Audit Event Detail | `sheet-audit-event-detail` | [docs](./blocks/sheet-audit-event-detail.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-audit-event-detail) | 2 |
+| ✅ | Canary Rollout | `sheet-canary-rollout` | [docs](./blocks/sheet-canary-rollout.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-canary-rollout) | 2 |
+| ✅ | Comment Thread | `sheet-comment-thread` | [docs](./blocks/sheet-comment-thread.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-comment-thread) | 6 |
+| ✅ | Copilot Chat | `sheet-copilot-chat` | [docs](./blocks/sheet-copilot-chat.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-copilot-chat) | 2 |
+| ✅ | Create Project | `sheet-create-project` | [docs](./blocks/sheet-create-project.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-create-project) | 7 |
+| ✅ | Cron Job Detail | `sheet-cron-job-detail` | [docs](./blocks/sheet-cron-job-detail.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-cron-job-detail) | 3 |
+| ✅ | Data Connection | `sheet-data-connection` | [docs](./blocks/sheet-data-connection.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-data-connection) | 3 |
+| ✅ | Dataset Preview | `sheet-dataset-preview` | [docs](./blocks/sheet-dataset-preview.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-dataset-preview) | 3 |
+| ✅ | Edit Firewall Rule | `sheet-edit-firewall-rule` | [docs](./blocks/sheet-edit-firewall-rule.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-edit-firewall-rule) | 2 |
+| ✅ | Failed Deploy | `sheet-failed-deploy` | [docs](./blocks/sheet-failed-deploy.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-failed-deploy) | 2 |
+| ✅ | Firewall Request | `sheet-firewall-request` | [docs](./blocks/sheet-firewall-request.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-firewall-request) | 2 |
+| ✅ | Help Center | `sheet-help-center` | [docs](./blocks/sheet-help-center.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-help-center) | 2 |
+| ✅ | Keyboard Shortcuts | `sheet-keyboard-shortcuts` | [docs](./blocks/sheet-keyboard-shortcuts.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-keyboard-shortcuts) | 2 |
+| ✅ | Metric Detail Sheet | `sheet-metric-detail-sheet` | [docs](./blocks/sheet-metric-detail-sheet.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-metric-detail-sheet) | 1 |
+| ✅ | New Connection | `sheet-new-connection` | [docs](./blocks/sheet-new-connection.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-new-connection) | 2 |
+| ✅ | New Cron Job | `sheet-new-cron-job` | [docs](./blocks/sheet-new-cron-job.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-new-cron-job) | 7 |
+| ✅ | New Firewall Rule | `sheet-new-firewall-rule` | [docs](./blocks/sheet-new-firewall-rule.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-new-firewall-rule) | 4 |
+| ✅ | New SLO | `sheet-new-slo` | [docs](./blocks/sheet-new-slo.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-new-slo) | 6 |
+| ✅ | Notifications Feed | `sheet-notifications-feed` | [docs](./blocks/sheet-notifications-feed.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-notifications-feed) | 1 |
+| ✅ | Relay Settings | `sheet-relay-settings` | [docs](./blocks/sheet-relay-settings.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-relay-settings) | 8 |
+| ✅ | SLO Error Budget | `sheet-slo-error-budget` | [docs](./blocks/sheet-slo-error-budget.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-slo-error-budget) | 3 |
+| ✅ | Ticket Edit Sheet | `sheet-ticket-edit-sheet` | [docs](./blocks/sheet-ticket-edit-sheet.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-ticket-edit-sheet) | 3 |
+| ✅ | View Customizer | `sheet-view-customizer` | [docs](./blocks/sheet-view-customizer.md) | [preview](https://reui-unbound.pages.dev/?preview=sheet-view-customizer) | 3 |
 
 ## Stats (17)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Adoption Rate | `stats-adoption-rate` | [docs](./blocks/stats-adoption-rate.md) | 2 |
-| ✅ | Analytics Overview | `stats-analytics-overview` | [docs](./blocks/stats-analytics-overview.md) | 1 |
-| ✅ | API Quota Usage | `stats-api-quota-usage` | [docs](./blocks/stats-api-quota-usage.md) | 1 |
-| ✅ | Capacity Usage | `stats-capacity-usage` | [docs](./blocks/stats-capacity-usage.md) | 4 |
-| ✅ | Compliance Checks | `stats-compliance-checks` | [docs](./blocks/stats-compliance-checks.md) | 2 |
-| ✅ | KPI Callouts | `stats-kpi-callouts` | [docs](./blocks/stats-kpi-callouts.md) | 1 |
-| ✅ | KPI Scorecard | `stats-kpi-scorecard` | [docs](./blocks/stats-kpi-scorecard.md) | 5 |
-| ✅ | Leads Overview | `stats-leads-overview` | [docs](./blocks/stats-leads-overview.md) | 3 |
-| ✅ | Portfolio Allocation | `stats-portfolio-allocation` | [docs](./blocks/stats-portfolio-allocation.md) | 7 |
-| ✅ | Rep Performance | `stats-rep-performance` | [docs](./blocks/stats-rep-performance.md) | 4 |
-| ✅ | Sales & Churn Metrics | `stats-sales-churn-metrics` | [docs](./blocks/stats-sales-churn-metrics.md) | 1 |
-| ✅ | Stats Overview | `stats-stats-overview` | [docs](./blocks/stats-stats-overview.md) | 5 |
-| ✅ | Subscription Renewals | `stats-subscription-renewals` | [docs](./blocks/stats-subscription-renewals.md) | 3 |
-| ✅ | Support Metrics | `stats-support-metrics` | [docs](./blocks/stats-support-metrics.md) | 1 |
-| ✅ | Task Progress | `stats-task-progress` | [docs](./blocks/stats-task-progress.md) | 3 |
-| ✅ | Total Revenue | `stats-total-revenue` | [docs](./blocks/stats-total-revenue.md) | 2 |
-| ✅ | Wallet Balance | `stats-wallet-balance` | [docs](./blocks/stats-wallet-balance.md) | 1 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Adoption Rate | `stats-adoption-rate` | [docs](./blocks/stats-adoption-rate.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-adoption-rate) | 2 |
+| ✅ | Analytics Overview | `stats-analytics-overview` | [docs](./blocks/stats-analytics-overview.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-analytics-overview) | 1 |
+| ✅ | API Quota Usage | `stats-api-quota-usage` | [docs](./blocks/stats-api-quota-usage.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-api-quota-usage) | 1 |
+| ✅ | Capacity Usage | `stats-capacity-usage` | [docs](./blocks/stats-capacity-usage.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-capacity-usage) | 4 |
+| ✅ | Compliance Checks | `stats-compliance-checks` | [docs](./blocks/stats-compliance-checks.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-compliance-checks) | 2 |
+| ✅ | KPI Callouts | `stats-kpi-callouts` | [docs](./blocks/stats-kpi-callouts.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-kpi-callouts) | 1 |
+| ✅ | KPI Scorecard | `stats-kpi-scorecard` | [docs](./blocks/stats-kpi-scorecard.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-kpi-scorecard) | 5 |
+| ✅ | Leads Overview | `stats-leads-overview` | [docs](./blocks/stats-leads-overview.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-leads-overview) | 3 |
+| ✅ | Portfolio Allocation | `stats-portfolio-allocation` | [docs](./blocks/stats-portfolio-allocation.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-portfolio-allocation) | 7 |
+| ✅ | Rep Performance | `stats-rep-performance` | [docs](./blocks/stats-rep-performance.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-rep-performance) | 4 |
+| ✅ | Sales & Churn Metrics | `stats-sales-churn-metrics` | [docs](./blocks/stats-sales-churn-metrics.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-sales-churn-metrics) | 1 |
+| ✅ | Stats Overview | `stats-stats-overview` | [docs](./blocks/stats-stats-overview.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-stats-overview) | 5 |
+| ✅ | Subscription Renewals | `stats-subscription-renewals` | [docs](./blocks/stats-subscription-renewals.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-subscription-renewals) | 3 |
+| ✅ | Support Metrics | `stats-support-metrics` | [docs](./blocks/stats-support-metrics.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-support-metrics) | 1 |
+| ✅ | Task Progress | `stats-task-progress` | [docs](./blocks/stats-task-progress.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-task-progress) | 3 |
+| ✅ | Total Revenue | `stats-total-revenue` | [docs](./blocks/stats-total-revenue.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-total-revenue) | 2 |
+| ✅ | Wallet Balance | `stats-wallet-balance` | [docs](./blocks/stats-wallet-balance.md) | [preview](https://reui-unbound.pages.dev/?preview=stats-wallet-balance) | 1 |
 
 ## Timeline (9)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Account Rollout | `timeline-account-rollout` | [docs](./blocks/timeline-account-rollout.md) | 1 |
-| ✅ | Activity Dropdown | `timeline-activity-dropdown` | [docs](./blocks/timeline-activity-dropdown.md) | 2 |
-| ✅ | Approval Workflow | `timeline-approval-workflow` | [docs](./blocks/timeline-approval-workflow.md) | 1 |
-| ✅ | Customer Activation | `timeline-customer-activation` | [docs](./blocks/timeline-customer-activation.md) | 2 |
-| ✅ | Finance Activity | `timeline-finance-activity` | [docs](./blocks/timeline-finance-activity.md) | 2 |
-| ✅ | Finance Activity Sheet | `timeline-finance-activity-sheet` | [docs](./blocks/timeline-finance-activity-sheet.md) | 1 |
-| ✅ | Release Changelog | `timeline-release-changelog` | [docs](./blocks/timeline-release-changelog.md) | 1 |
-| ✅ | Team Activity Feed | `timeline-team-activity-feed` | [docs](./blocks/timeline-team-activity-feed.md) | 7 |
-| ✅ | Team Activity Sheet | `timeline-team-activity-sheet` | [docs](./blocks/timeline-team-activity-sheet.md) | 6 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Account Rollout | `timeline-account-rollout` | [docs](./blocks/timeline-account-rollout.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-account-rollout) | 1 |
+| ✅ | Activity Dropdown | `timeline-activity-dropdown` | [docs](./blocks/timeline-activity-dropdown.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-activity-dropdown) | 2 |
+| ✅ | Approval Workflow | `timeline-approval-workflow` | [docs](./blocks/timeline-approval-workflow.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-approval-workflow) | 1 |
+| ✅ | Customer Activation | `timeline-customer-activation` | [docs](./blocks/timeline-customer-activation.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-customer-activation) | 2 |
+| ✅ | Finance Activity | `timeline-finance-activity` | [docs](./blocks/timeline-finance-activity.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-finance-activity) | 2 |
+| ✅ | Finance Activity Sheet | `timeline-finance-activity-sheet` | [docs](./blocks/timeline-finance-activity-sheet.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-finance-activity-sheet) | 1 |
+| ✅ | Release Changelog | `timeline-release-changelog` | [docs](./blocks/timeline-release-changelog.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-release-changelog) | 1 |
+| ✅ | Team Activity Feed | `timeline-team-activity-feed` | [docs](./blocks/timeline-team-activity-feed.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-team-activity-feed) | 7 |
+| ✅ | Team Activity Sheet | `timeline-team-activity-sheet` | [docs](./blocks/timeline-team-activity-sheet.md) | [preview](https://reui-unbound.pages.dev/?preview=timeline-team-activity-sheet) | 6 |
 
 ## Whiteboard (2)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Design Review Board | `whiteboard-design-review-board` | [docs](./blocks/whiteboard-design-review-board.md) | 8 |
-| ✅ | Sprint Planning Board | `whiteboard-sprint-planning-board` | [docs](./blocks/whiteboard-sprint-planning-board.md) | 7 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Design Review Board | `whiteboard-design-review-board` | [docs](./blocks/whiteboard-design-review-board.md) | [preview](https://reui-unbound.pages.dev/?preview=whiteboard-design-review-board) | 8 |
+| ✅ | Sprint Planning Board | `whiteboard-sprint-planning-board` | [docs](./blocks/whiteboard-sprint-planning-board.md) | [preview](https://reui-unbound.pages.dev/?preview=whiteboard-sprint-planning-board) | 7 |
 
 ## Wizard (7)
 
-| Status | Block name | Slug | Docs | Interaction captures |
-| :---: | --- | --- | --- | ---: |
-| ✅ | Billing Setup | `wizard-billing-setup` | [docs](./blocks/wizard-billing-setup.md) | 6 |
-| ✅ | Fund Transfer | `wizard-fund-transfer` | [docs](./blocks/wizard-fund-transfer.md) | 3 |
-| ✅ | Plan Upgrade | `wizard-plan-upgrade` | [docs](./blocks/wizard-plan-upgrade.md) | 5 |
-| ✅ | Product Setup Wizard | `wizard-product-setup-wizard` | [docs](./blocks/wizard-product-setup-wizard.md) | 8 |
-| ✅ | Send Invoice | `wizard-send-invoice` | [docs](./blocks/wizard-send-invoice.md) | 7 |
-| ✅ | Team Invitations | `wizard-team-invitations` | [docs](./blocks/wizard-team-invitations.md) | 7 |
-| ✅ | Vendor Onboarding | `wizard-vendor-onboarding` | [docs](./blocks/wizard-vendor-onboarding.md) | 6 |
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+| ✅ | Billing Setup | `wizard-billing-setup` | [docs](./blocks/wizard-billing-setup.md) | [preview](https://reui-unbound.pages.dev/?preview=wizard-billing-setup) | 6 |
+| ✅ | Fund Transfer | `wizard-fund-transfer` | [docs](./blocks/wizard-fund-transfer.md) | [preview](https://reui-unbound.pages.dev/?preview=wizard-fund-transfer) | 3 |
+| ✅ | Plan Upgrade | `wizard-plan-upgrade` | [docs](./blocks/wizard-plan-upgrade.md) | [preview](https://reui-unbound.pages.dev/?preview=wizard-plan-upgrade) | 5 |
+| ✅ | Product Setup Wizard | `wizard-product-setup-wizard` | [docs](./blocks/wizard-product-setup-wizard.md) | [preview](https://reui-unbound.pages.dev/?preview=wizard-product-setup-wizard) | 8 |
+| ✅ | Send Invoice | `wizard-send-invoice` | [docs](./blocks/wizard-send-invoice.md) | [preview](https://reui-unbound.pages.dev/?preview=wizard-send-invoice) | 7 |
+| ✅ | Team Invitations | `wizard-team-invitations` | [docs](./blocks/wizard-team-invitations.md) | [preview](https://reui-unbound.pages.dev/?preview=wizard-team-invitations) | 7 |
+| ✅ | Vendor Onboarding | `wizard-vendor-onboarding` | [docs](./blocks/wizard-vendor-onboarding.md) | [preview](https://reui-unbound.pages.dev/?preview=wizard-vendor-onboarding) | 6 |
 
 ## Data Grid (61)
 
-| Status | Block name | Id | Docs | Category |
-| :---: | --- | --- | --- | --- |
-| ✅ | Campaign Performance | `data-grid-advanced-1` | [docs](./blocks/data-grid-advanced-campaign-performance.md) | Advanced |
-| ✅ | Store P&L | `data-grid-advanced-2` | [docs](./blocks/data-grid-advanced-store-p-l.md) | Advanced |
-| ✅ | Campaign Targets | `data-grid-advanced-3` | [docs](./blocks/data-grid-advanced-campaign-targets.md) | Advanced |
-| ✅ | Reliability Index | `data-grid-advanced-4` | [docs](./blocks/data-grid-advanced-reliability-index.md) | Advanced |
-| ✅ | Wholesale Applications | `data-grid-advanced-5` | [docs](./blocks/data-grid-advanced-wholesale-applications.md) | Advanced |
-| ✅ | Stock Mix | `data-grid-advanced-6` | [docs](./blocks/data-grid-advanced-stock-mix.md) | Advanced |
-| ✅ | Fourplex Pro Forma | `data-grid-advanced-7` | [docs](./blocks/data-grid-advanced-fourplex-pro-forma.md) | Advanced |
-| ✅ | Product KPIs | `data-grid-advanced-8` | [docs](./blocks/data-grid-advanced-product-kpis.md) | Advanced |
-| ✅ | Service Visits | `data-grid-advanced-9` | [docs](./blocks/data-grid-advanced-service-visits.md) | Advanced |
-| ✅ | Technician Capacity | `data-grid-advanced-10` | [docs](./blocks/data-grid-advanced-technician-capacity.md) | Advanced |
-| ✅ | Factory Scorecard | `data-grid-advanced-11` | [docs](./blocks/data-grid-advanced-factory-scorecard.md) | Advanced |
-| ✅ | Freight & Cargo Services | `data-grid-advanced-12` | [docs](./blocks/data-grid-advanced-freight-cargo-services.md) | Advanced |
-| ✅ | HR Scorecard | `data-grid-advanced-13` | [docs](./blocks/data-grid-advanced-hr-scorecard.md) | Advanced |
-| ✅ | Strategy Scorecard | `data-grid-advanced-14` | [docs](./blocks/data-grid-advanced-strategy-scorecard.md) | Advanced |
-| ✅ | P&L Outlook | `data-grid-advanced-15` | [docs](./blocks/data-grid-advanced-p-l-outlook.md) | Advanced |
-| ✅ | Store KPIs | `data-grid-advanced-16` | [docs](./blocks/data-grid-advanced-store-kpis.md) | Advanced |
-| ✅ | Support Scorecard | `data-grid-advanced-17` | [docs](./blocks/data-grid-advanced-support-scorecard.md) | Advanced |
-| ✅ | Job Schedule | `data-grid-advanced-18` | [docs](./blocks/data-grid-advanced-job-schedule.md) | Advanced |
-| ✅ | Prospects | `data-grid-advanced-19` | [docs](./blocks/data-grid-advanced-prospects.md) | Advanced |
-| ✅ | Project Budget | `data-grid-advanced-20` | [docs](./blocks/data-grid-advanced-project-budget.md) | Advanced |
-| ✅ | Invoices | `data-grid-advanced-21` | [docs](./blocks/data-grid-advanced-invoices.md) | Advanced |
-| ✅ | Customers | `data-grid-base-1` | [docs](./blocks/data-grid-base-customers.md) | Base |
-| ✅ | Contacts | `data-grid-base-2` | [docs](./blocks/data-grid-base-contacts.md) | Base |
-| ✅ | Opportunities | `data-grid-base-3` | [docs](./blocks/data-grid-base-opportunities.md) | Base |
-| ✅ | Timesheets | `data-grid-base-4` | [docs](./blocks/data-grid-base-timesheets.md) | Base |
-| ✅ | Support Queue | `data-grid-base-5` | [docs](./blocks/data-grid-base-support-queue.md) | Base |
-| ✅ | Members | `data-grid-base-6` | [docs](./blocks/data-grid-base-members.md) | Base |
-| ✅ | Modules | `data-grid-base-7` | [docs](./blocks/data-grid-base-modules.md) | Base |
-| ✅ | Rate Card | `data-grid-base-8` | [docs](./blocks/data-grid-base-rate-card.md) | Base |
-| ✅ | API Requests | `data-grid-base-9` | [docs](./blocks/data-grid-base-api-requests.md) | Base |
-| ✅ | Workspace Access Review | `data-grid-columns-1` | [docs](./blocks/data-grid-columns-workspace-access-review.md) | Columns |
-| ✅ | Course Catalog | `data-grid-columns-2` | [docs](./blocks/data-grid-columns-course-catalog.md) | Columns |
-| ✅ | Work Queue | `data-grid-columns-3` | [docs](./blocks/data-grid-columns-work-queue.md) | Columns |
-| ✅ | Members | `data-grid-columns-4` | [docs](./blocks/data-grid-columns-members.md) | Columns |
-| ✅ | Companies | `data-grid-columns-5` | [docs](./blocks/data-grid-columns-companies.md) | Columns |
-| ✅ | Sprint Backlog | `data-grid-drag-drop-1` | [docs](./blocks/data-grid-drag-drop-sprint-backlog.md) | Drag & Drop |
-| ✅ | Routing Rules | `data-grid-drag-drop-2` | [docs](./blocks/data-grid-drag-drop-routing-rules.md) | Drag & Drop |
-| ✅ | Dispatch Layout | `data-grid-drag-drop-3` | [docs](./blocks/data-grid-drag-drop-dispatch-layout.md) | Drag & Drop |
-| ✅ | Shared Drive | `data-grid-drag-drop-4` | [docs](./blocks/data-grid-drag-drop-shared-drive.md) | Drag & Drop |
-| ✅ | Labels | `data-grid-editing-1` | [docs](./blocks/data-grid-editing-labels.md) | Editing |
-| ✅ | Product Inventory | `data-grid-editing-2` | [docs](./blocks/data-grid-editing-product-inventory.md) | Editing |
-| ✅ | Project Intake | `data-grid-editing-3` | [docs](./blocks/data-grid-editing-project-intake.md) | Editing |
-| ✅ | Plans | `data-grid-editing-4` | [docs](./blocks/data-grid-editing-plans.md) | Editing |
-| ✅ | Launch Runbook | `data-grid-editing-5` | [docs](./blocks/data-grid-editing-launch-runbook.md) | Editing |
-| ✅ | Reorder Plan | `data-grid-editing-6` | [docs](./blocks/data-grid-editing-reorder-plan.md) | Editing |
-| ✅ | Task Delivery | `data-grid-expansion-1` | [docs](./blocks/data-grid-expansion-task-delivery.md) | Expansion |
-| ✅ | Treasury Waterfall | `data-grid-expansion-2` | [docs](./blocks/data-grid-expansion-treasury-waterfall.md) | Expansion |
-| ✅ | Release Reviews | `data-grid-expansion-3` | [docs](./blocks/data-grid-expansion-release-reviews.md) | Expansion |
-| ✅ | Transactions | `data-grid-filtering-1` | [docs](./blocks/data-grid-filtering-transactions.md) | Filtering |
-| ✅ | Automation Library | `data-grid-filtering-2` | [docs](./blocks/data-grid-filtering-automation-library.md) | Filtering |
-| ✅ | Renewals Review | `data-grid-filtering-3` | [docs](./blocks/data-grid-filtering-renewals-review.md) | Filtering |
-| ✅ | Renewals Risk | `data-grid-filtering-4` | [docs](./blocks/data-grid-filtering-renewals-risk.md) | Filtering |
-| ✅ | Roadmap Queue | `data-grid-grouping-1` | [docs](./blocks/data-grid-grouping-roadmap-queue.md) | Grouping |
-| ✅ | Revenue By Region | `data-grid-grouping-2` | [docs](./blocks/data-grid-grouping-revenue-by-region.md) | Grouping |
-| ✅ | Access Cohort | `data-grid-grouping-3` | [docs](./blocks/data-grid-grouping-access-cohort.md) | Grouping |
-| ✅ | Bill Of Materials | `data-grid-grouping-4` | [docs](./blocks/data-grid-grouping-bill-of-materials.md) | Grouping |
-| ✅ | Reporting Lines | `data-grid-grouping-5` | [docs](./blocks/data-grid-grouping-reporting-lines.md) | Grouping |
-| ✅ | Production Desk | `data-grid-grouping-6` | [docs](./blocks/data-grid-grouping-production-desk.md) | Grouping |
-| ✅ | Delivery Board | `data-grid-grouping-7` | [docs](./blocks/data-grid-grouping-delivery-board.md) | Grouping |
-| ✅ | Transactions | `data-grid-virtualization-1` | [docs](./blocks/data-grid-virtualization-transactions.md) | Virtualization |
-| ✅ | Exception Queue | `data-grid-virtualization-2` | [docs](./blocks/data-grid-virtualization-exception-queue.md) | Virtualization |
+| Status | Block name | Id | Docs | Preview | Category |
+| :---: | --- | --- | --- | --- | --- |
+| ✅ | Campaign Performance | `data-grid-advanced-1` | [docs](./blocks/data-grid-advanced-campaign-performance.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-1) | Advanced |
+| ✅ | Store P&L | `data-grid-advanced-2` | [docs](./blocks/data-grid-advanced-store-p-l.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-2) | Advanced |
+| ✅ | Campaign Targets | `data-grid-advanced-3` | [docs](./blocks/data-grid-advanced-campaign-targets.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-3) | Advanced |
+| ✅ | Reliability Index | `data-grid-advanced-4` | [docs](./blocks/data-grid-advanced-reliability-index.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-4) | Advanced |
+| ✅ | Wholesale Applications | `data-grid-advanced-5` | [docs](./blocks/data-grid-advanced-wholesale-applications.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-5) | Advanced |
+| ✅ | Stock Mix | `data-grid-advanced-6` | [docs](./blocks/data-grid-advanced-stock-mix.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-6) | Advanced |
+| ✅ | Fourplex Pro Forma | `data-grid-advanced-7` | [docs](./blocks/data-grid-advanced-fourplex-pro-forma.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-7) | Advanced |
+| ✅ | Product KPIs | `data-grid-advanced-8` | [docs](./blocks/data-grid-advanced-product-kpis.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-8) | Advanced |
+| ✅ | Service Visits | `data-grid-advanced-9` | [docs](./blocks/data-grid-advanced-service-visits.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-9) | Advanced |
+| ✅ | Technician Capacity | `data-grid-advanced-10` | [docs](./blocks/data-grid-advanced-technician-capacity.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-10) | Advanced |
+| ✅ | Factory Scorecard | `data-grid-advanced-11` | [docs](./blocks/data-grid-advanced-factory-scorecard.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-11) | Advanced |
+| ✅ | Freight & Cargo Services | `data-grid-advanced-12` | [docs](./blocks/data-grid-advanced-freight-cargo-services.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-12) | Advanced |
+| ✅ | HR Scorecard | `data-grid-advanced-13` | [docs](./blocks/data-grid-advanced-hr-scorecard.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-13) | Advanced |
+| ✅ | Strategy Scorecard | `data-grid-advanced-14` | [docs](./blocks/data-grid-advanced-strategy-scorecard.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-14) | Advanced |
+| ✅ | P&L Outlook | `data-grid-advanced-15` | [docs](./blocks/data-grid-advanced-p-l-outlook.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-15) | Advanced |
+| ✅ | Store KPIs | `data-grid-advanced-16` | [docs](./blocks/data-grid-advanced-store-kpis.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-16) | Advanced |
+| ✅ | Support Scorecard | `data-grid-advanced-17` | [docs](./blocks/data-grid-advanced-support-scorecard.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-17) | Advanced |
+| ✅ | Job Schedule | `data-grid-advanced-18` | [docs](./blocks/data-grid-advanced-job-schedule.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-18) | Advanced |
+| ✅ | Prospects | `data-grid-advanced-19` | [docs](./blocks/data-grid-advanced-prospects.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-19) | Advanced |
+| ✅ | Project Budget | `data-grid-advanced-20` | [docs](./blocks/data-grid-advanced-project-budget.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-20) | Advanced |
+| ✅ | Invoices | `data-grid-advanced-21` | [docs](./blocks/data-grid-advanced-invoices.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-21) | Advanced |
+| ✅ | Customers | `data-grid-base-1` | [docs](./blocks/data-grid-base-customers.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-1) | Base |
+| ✅ | Contacts | `data-grid-base-2` | [docs](./blocks/data-grid-base-contacts.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-2) | Base |
+| ✅ | Opportunities | `data-grid-base-3` | [docs](./blocks/data-grid-base-opportunities.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-3) | Base |
+| ✅ | Timesheets | `data-grid-base-4` | [docs](./blocks/data-grid-base-timesheets.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-4) | Base |
+| ✅ | Support Queue | `data-grid-base-5` | [docs](./blocks/data-grid-base-support-queue.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-5) | Base |
+| ✅ | Members | `data-grid-base-6` | [docs](./blocks/data-grid-base-members.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-6) | Base |
+| ✅ | Modules | `data-grid-base-7` | [docs](./blocks/data-grid-base-modules.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-7) | Base |
+| ✅ | Rate Card | `data-grid-base-8` | [docs](./blocks/data-grid-base-rate-card.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-8) | Base |
+| ✅ | API Requests | `data-grid-base-9` | [docs](./blocks/data-grid-base-api-requests.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-base-9) | Base |
+| ✅ | Workspace Access Review | `data-grid-columns-1` | [docs](./blocks/data-grid-columns-workspace-access-review.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-1) | Columns |
+| ✅ | Course Catalog | `data-grid-columns-2` | [docs](./blocks/data-grid-columns-course-catalog.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-2) | Columns |
+| ✅ | Work Queue | `data-grid-columns-3` | [docs](./blocks/data-grid-columns-work-queue.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-3) | Columns |
+| ✅ | Members | `data-grid-columns-4` | [docs](./blocks/data-grid-columns-members.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-4) | Columns |
+| ✅ | Companies | `data-grid-columns-5` | [docs](./blocks/data-grid-columns-companies.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-5) | Columns |
+| ✅ | Sprint Backlog | `data-grid-drag-drop-1` | [docs](./blocks/data-grid-drag-drop-sprint-backlog.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-1) | Drag & Drop |
+| ✅ | Routing Rules | `data-grid-drag-drop-2` | [docs](./blocks/data-grid-drag-drop-routing-rules.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-2) | Drag & Drop |
+| ✅ | Dispatch Layout | `data-grid-drag-drop-3` | [docs](./blocks/data-grid-drag-drop-dispatch-layout.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-3) | Drag & Drop |
+| ✅ | Shared Drive | `data-grid-drag-drop-4` | [docs](./blocks/data-grid-drag-drop-shared-drive.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-4) | Drag & Drop |
+| ✅ | Labels | `data-grid-editing-1` | [docs](./blocks/data-grid-editing-labels.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-1) | Editing |
+| ✅ | Product Inventory | `data-grid-editing-2` | [docs](./blocks/data-grid-editing-product-inventory.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-2) | Editing |
+| ✅ | Project Intake | `data-grid-editing-3` | [docs](./blocks/data-grid-editing-project-intake.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-3) | Editing |
+| ✅ | Plans | `data-grid-editing-4` | [docs](./blocks/data-grid-editing-plans.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-4) | Editing |
+| ✅ | Launch Runbook | `data-grid-editing-5` | [docs](./blocks/data-grid-editing-launch-runbook.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-5) | Editing |
+| ✅ | Reorder Plan | `data-grid-editing-6` | [docs](./blocks/data-grid-editing-reorder-plan.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-6) | Editing |
+| ✅ | Task Delivery | `data-grid-expansion-1` | [docs](./blocks/data-grid-expansion-task-delivery.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-expansion-1) | Expansion |
+| ✅ | Treasury Waterfall | `data-grid-expansion-2` | [docs](./blocks/data-grid-expansion-treasury-waterfall.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-expansion-2) | Expansion |
+| ✅ | Release Reviews | `data-grid-expansion-3` | [docs](./blocks/data-grid-expansion-release-reviews.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-expansion-3) | Expansion |
+| ✅ | Transactions | `data-grid-filtering-1` | [docs](./blocks/data-grid-filtering-transactions.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-1) | Filtering |
+| ✅ | Automation Library | `data-grid-filtering-2` | [docs](./blocks/data-grid-filtering-automation-library.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-2) | Filtering |
+| ✅ | Renewals Review | `data-grid-filtering-3` | [docs](./blocks/data-grid-filtering-renewals-review.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-3) | Filtering |
+| ✅ | Renewals Risk | `data-grid-filtering-4` | [docs](./blocks/data-grid-filtering-renewals-risk.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-4) | Filtering |
+| ✅ | Roadmap Queue | `data-grid-grouping-1` | [docs](./blocks/data-grid-grouping-roadmap-queue.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-1) | Grouping |
+| ✅ | Revenue By Region | `data-grid-grouping-2` | [docs](./blocks/data-grid-grouping-revenue-by-region.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-2) | Grouping |
+| ✅ | Access Cohort | `data-grid-grouping-3` | [docs](./blocks/data-grid-grouping-access-cohort.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-3) | Grouping |
+| ✅ | Bill Of Materials | `data-grid-grouping-4` | [docs](./blocks/data-grid-grouping-bill-of-materials.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-4) | Grouping |
+| ✅ | Reporting Lines | `data-grid-grouping-5` | [docs](./blocks/data-grid-grouping-reporting-lines.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-5) | Grouping |
+| ✅ | Production Desk | `data-grid-grouping-6` | [docs](./blocks/data-grid-grouping-production-desk.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-6) | Grouping |
+| ✅ | Delivery Board | `data-grid-grouping-7` | [docs](./blocks/data-grid-grouping-delivery-board.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-7) | Grouping |
+| ✅ | Transactions | `data-grid-virtualization-1` | [docs](./blocks/data-grid-virtualization-transactions.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-virtualization-1) | Virtualization |
+| ✅ | Exception Queue | `data-grid-virtualization-2` | [docs](./blocks/data-grid-virtualization-exception-queue.md) | [preview](https://reui-unbound.pages.dev/?preview=data-grid-virtualization-2) | Virtualization |
 
 ## Components
 
