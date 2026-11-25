@@ -31,18 +31,11 @@ const readCapture = (category) =>
     ? JSON.parse(fs.readFileSync(deepCapturePath(category), "utf8"))
     : []
 
-const deepCapture = readCapture("app-shell")
-const navbarCapture = readCapture("navbar")
-const onboardingCapture = readCapture("onboarding")
-const profileCapture = readCapture("profile")
-const rteCapture = readCapture("rich-text-editor")
-const scheduleCapture = readCapture("schedule")
-const settingsCapture = readCapture("settings")
-const sheetCapture = readCapture("sheet")
-const statsCapture = readCapture("stats")
-const timelineCapture = readCapture("timeline")
-const whiteboardCapture = readCapture("whiteboard")
-const wizardCapture = readCapture("wizard")
+const kebab = (value) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
 
 const STATUS = {
   supported: "✅",
@@ -72,7 +65,7 @@ const dataGridBlocks = (blockRegistry.items ?? [])
   })
 const dataGridRows = dataGridBlocks.map(
   (item) =>
-    `| ${STATUS.supported} | ${item.title} | \`${item.meta?.id}\` | ${item.meta?.category} |`,
+    `| ${STATUS.supported} | ${item.title} | \`${item.meta?.id}\` | [docs](./blocks/${item.name}.md) | ${item.meta?.category} |`,
 )
 
 const componentRegistryPath = path.join(root, "src/blocks/components/registry.json")
@@ -105,101 +98,24 @@ const rows = categories.map((category) => {
   return `| ${statusFor(done, items.length)} | ${category} | ${items.length} | ${done} |`
 })
 
-const appShell = manifest
-  .filter((item) => item.category === "App Shell")
-  .sort((a, b) => a.title.localeCompare(b.title))
-const appShellRows = appShell.map((item) => {
-  const shots = deepCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-  return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-})
+const categorySections = categories
+  .map((category) => {
+    const items = manifest
+      .filter((item) => item.category === category)
+      .sort((a, b) => a.title.localeCompare(b.title))
+    const capture = readCapture(kebab(category))
+    const tableRows = items.map((item) => {
+      const shots =
+        capture.find((entry) => entry.slug === item.slug)?.shots?.length ?? 0
+      return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | [docs](./blocks/${item.slug}.md) | ${shots} |`
+    })
+    return `## ${category} (${items.length})
 
-const navbar = manifest
-  .filter((item) => item.category === "Navbar")
-  .sort((a, b) => a.title.localeCompare(b.title))
-const navbarRows = navbar.map((item) => {
-  const shots = navbarCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-  return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-})
-
-const onboardingRows = manifest
-  .filter((item) => item.category === "Onboarding")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = onboardingCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
+| Status | Block name | Slug | Docs | Interaction captures |
+| :---: | --- | --- | --- | ---: |
+${tableRows.join("\n")}`
   })
-
-const profileRows = manifest
-  .filter((item) => item.category === "Profile")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = profileCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const rteRows = manifest
-  .filter((item) => item.category === "Rich Text Editor")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = rteCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const scheduleRows = manifest
-  .filter((item) => item.category === "Schedule")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = scheduleCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const settingsRows = manifest
-  .filter((item) => item.category === "Settings")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = settingsCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const sheetRows = manifest
-  .filter((item) => item.category === "Sheet")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = sheetCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const statsRows = manifest
-  .filter((item) => item.category === "Stats")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = statsCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const timelineRows = manifest
-  .filter((item) => item.category === "Timeline")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = timelineCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const whiteboardRows = manifest
-  .filter((item) => item.category === "Whiteboard")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = whiteboardCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
-
-const wizardRows = manifest
-  .filter((item) => item.category === "Wizard")
-  .sort((a, b) => a.title.localeCompare(b.title))
-  .map((item) => {
-    const shots = wizardCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
-  })
+  .join("\n\n")
 
 const total = manifest.length
 const doneTotal = [...implemented].length
@@ -245,82 +161,12 @@ Captured previews live in \`captures/application\`:
 | :---: | --- | ---: | ---: |
 ${rows.join("\n")}
 
-## App Shell (36)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${appShellRows.join("\n")}
-
-## Navbar (13)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${navbarRows.join("\n")}
-
-## Onboarding (9)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${onboardingRows.join("\n")}
-
-## Profile (10)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${profileRows.join("\n")}
-
-## Rich Text Editor (5)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${rteRows.join("\n")}
-
-## Schedule (10)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${scheduleRows.join("\n")}
-
-## Settings (16)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${settingsRows.join("\n")}
-
-## Sheet (24)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${sheetRows.join("\n")}
-
-## Stats (17)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${statsRows.join("\n")}
-
-## Timeline (9)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${timelineRows.join("\n")}
-
-## Whiteboard (2)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${whiteboardRows.join("\n")}
-
-## Wizard (7)
-
-| Status | Block name | Slug | Interaction captures |
-| :---: | --- | --- | ---: |
-${wizardRows.join("\n")}
+${categorySections}
 
 ## Data Grid (${dataGridBlocks.length})
 
-| Status | Block name | Id | Category |
-| :---: | --- | --- | --- |
+| Status | Block name | Id | Docs | Category |
+| :---: | --- | --- | --- | --- |
 ${dataGridRows.join("\n")}
 
 ## Components
