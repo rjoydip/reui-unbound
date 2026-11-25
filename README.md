@@ -87,7 +87,10 @@ Generated documentation lives in `docs/`:
 
 - [Blocks](docs/blocks/README.md) — 366 blocks: 61 data grid, 36 app shells, 20 auth, 43 cards, 8 dashboards, 15 dialogs, 14 empty states, 6 event calendars, 4 flows, 12 forms, 4 gantts, 10 kanban boards, 11 lists, 13 navbars, 9 onboarding flows, 10 profile settings pages, 5 rich text editors, 10 schedule widgets, 16 settings panels, 24 sheets, 17 stats cards, 9 timelines, 2 whiteboards and 7 wizards.
 - [Components](docs/components/README.md) — 87 categories, 1,365 previews, Radix and Base flavors.
-- [Application blocks tracker](docs/application-blocks.md) — capture and port status for all 305 application blocks.
+- [Block coverage](docs/block-coverage.md) — ✅/⏳/❌ status for all 305 application blocks and 61 data grid blocks.
+- [Component coverage](docs/component-coverage.md) — ✅ status for 87 component categories and 1,365 previews.
+
+Coverage uses ✅ supported, ⏳ pending and ❌ not supported.
 
 Each page includes the live preview link, install command, source files, dependencies and usage.
 The same Markdown files are rendered inside the app under **Docs**, using
@@ -168,7 +171,7 @@ Highlights: Customer Balances (`data-grid-base-1`), Invoice Manager (`data-grid-
 
 ReUI Pro block source is license-gated ("Unlock the source"), so implementations
 are clean-room ports from these previews. Port progress is tracked in
-[docs/application-blocks.md](docs/application-blocks.md).
+[docs/block-coverage.md](docs/block-coverage.md).
 
 Re-capture with:
 

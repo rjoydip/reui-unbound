@@ -44,12 +44,65 @@ const timelineCapture = readCapture("timeline")
 const whiteboardCapture = readCapture("whiteboard")
 const wizardCapture = readCapture("wizard")
 
+const STATUS = {
+  supported: "✅",
+  pending: "⏳",
+  unsupported: "❌",
+}
+const statusFor = (done, total) =>
+  done === total ? STATUS.supported : STATUS.pending
+
+const blockRegistryPath = path.join(root, "src/blocks/registry.json")
+const blockRegistry = fs.existsSync(blockRegistryPath)
+  ? JSON.parse(fs.readFileSync(blockRegistryPath, "utf8"))
+  : { items: [] }
+const dataGridBlocks = (blockRegistry.items ?? [])
+  .filter(
+    (item) =>
+      item.type === "registry:block" &&
+      (item.meta?.id ?? "").startsWith("data-grid-"),
+  )
+  .sort((a, b) => {
+    const category = (a.meta?.category ?? "").localeCompare(b.meta?.category ?? "")
+    if (category !== 0) return category
+    return (
+      Number((a.meta?.id ?? "").split("-").pop()) -
+      Number((b.meta?.id ?? "").split("-").pop())
+    )
+  })
+const dataGridRows = dataGridBlocks.map(
+  (item) =>
+    `| ${STATUS.supported} | ${item.title} | \`${item.meta?.id}\` | ${item.meta?.category} |`,
+)
+
+const componentRegistryPath = path.join(root, "src/blocks/components/registry.json")
+const componentRegistry = fs.existsSync(componentRegistryPath)
+  ? JSON.parse(fs.readFileSync(componentRegistryPath, "utf8"))
+  : { items: [] }
+const componentCounts = new Map()
+for (const item of componentRegistry.items ?? []) {
+  const filePath = item.files?.[0]?.path ?? ""
+  const component = filePath.split("/")[1]
+  if (!component) continue
+  componentCounts.set(component, (componentCounts.get(component) ?? 0) + 1)
+}
+const componentName = (slug) =>
+  slug
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ")
+const componentRows = [...componentCounts.entries()]
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(
+    ([slug, count]) =>
+      `| ${STATUS.supported} | ${componentName(slug)} | ${count} | [docs](./components/${slug}.md) |`,
+  )
+
 const categories = [...new Set(manifest.map((item) => item.category))]
 const rows = categories.map((category) => {
   const items = manifest.filter((item) => item.category === category)
   const done = items.filter((item) => implemented.has(item.slug)).length
-  const status = done === 0 ? "Pending" : done === items.length ? "Done" : "In progress"
-  return `| ${category} | ${items.length} | ${done} | ${status} |`
+  return `| ${statusFor(done, items.length)} | ${category} | ${items.length} | ${done} |`
 })
 
 const appShell = manifest
@@ -57,7 +110,7 @@ const appShell = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
 const appShellRows = appShell.map((item) => {
   const shots = deepCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-  return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+  return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
 })
 
 const navbar = manifest
@@ -65,7 +118,7 @@ const navbar = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
 const navbarRows = navbar.map((item) => {
   const shots = navbarCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-  return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+  return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
 })
 
 const onboardingRows = manifest
@@ -73,7 +126,7 @@ const onboardingRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = onboardingCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const profileRows = manifest
@@ -81,7 +134,7 @@ const profileRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = profileCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const rteRows = manifest
@@ -89,7 +142,7 @@ const rteRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = rteCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const scheduleRows = manifest
@@ -97,7 +150,7 @@ const scheduleRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = scheduleCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const settingsRows = manifest
@@ -105,7 +158,7 @@ const settingsRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = settingsCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const sheetRows = manifest
@@ -113,7 +166,7 @@ const sheetRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = sheetCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const statsRows = manifest
@@ -121,7 +174,7 @@ const statsRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = statsCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const timelineRows = manifest
@@ -129,7 +182,7 @@ const timelineRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = timelineCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const whiteboardRows = manifest
@@ -137,7 +190,7 @@ const whiteboardRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = whiteboardCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const wizardRows = manifest
@@ -145,16 +198,21 @@ const wizardRows = manifest
   .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
   .map((item) => {
     const shots = wizardCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-    return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
+    return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
   })
 
 const total = manifest.length
 const doneTotal = [...implemented].length
 
-const content = `# Application blocks tracker
+const content = `# Block coverage
 
-Port status for the 305 blocks at <https://reui.io/blocks/application>.
+Coverage status for every block in the catalogue: 305 application blocks from
+<https://reui.io/blocks/application> and 61 data grid blocks, plus a summary of
+the component examples.
+
 Generated by \`bun run tracker:generate\`; update block folders, then rerun it.
+
+**Legend:** ${STATUS.supported} Supported · ${STATUS.pending} Pending · ${STATUS.unsupported} Not supported
 
 Captured previews live in \`captures/application\`:
 
@@ -178,84 +236,96 @@ Captured previews live in \`captures/application\`:
 
 ## Progress
 
-- Captured: ${total} / ${total}
-- Implemented: ${doneTotal} / ${total}
+- Captured: ${STATUS.supported} ${total} / ${total}
+- Implemented: ${statusFor(doneTotal, total)} ${doneTotal} / ${total}
+- Data grid blocks: ${STATUS.supported} ${dataGridBlocks.length} / ${dataGridBlocks.length}
+- Component categories: ${STATUS.supported} ${componentCounts.size} / ${componentCounts.size} (${[...componentCounts.values()].reduce((sum, count) => sum + count, 0)} previews)
 
-| Category | Blocks | Implemented | Status |
-| --- | ---: | ---: | --- |
+| Status | Category | Blocks | Implemented |
+| :---: | --- | ---: | ---: |
 ${rows.join("\n")}
 
 ## App Shell (36)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${appShellRows.join("\n")}
 
 ## Navbar (13)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${navbarRows.join("\n")}
 
 ## Onboarding (9)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${onboardingRows.join("\n")}
 
 ## Profile (10)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${profileRows.join("\n")}
 
 ## Rich Text Editor (5)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${rteRows.join("\n")}
 
 ## Schedule (10)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${scheduleRows.join("\n")}
 
 ## Settings (16)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${settingsRows.join("\n")}
 
 ## Sheet (24)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${sheetRows.join("\n")}
 
 ## Stats (17)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${statsRows.join("\n")}
 
 ## Timeline (9)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${timelineRows.join("\n")}
 
 ## Whiteboard (2)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${whiteboardRows.join("\n")}
 
 ## Wizard (7)
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
+| Status | Block name | Slug | Interaction captures |
+| :---: | --- | --- | ---: |
 ${wizardRows.join("\n")}
+
+## Data Grid (${dataGridBlocks.length})
+
+| Status | Block name | Id | Category |
+| :---: | --- | --- | --- |
+${dataGridRows.join("\n")}
+
+## Components
+
+${STATUS.supported} ${componentCounts.size} categories · ${[...componentCounts.values()].reduce((sum, count) => sum + count, 0)} previews. Full breakdown: [component coverage](./component-coverage.md).
 
 ## Workflow
 
@@ -267,6 +337,26 @@ ${wizardRows.join("\n")}
 5. Validate: \`bun run typecheck && bun run lint && bun run build\`.
 `
 
+const componentContent = `# Component coverage
+
+Coverage status for the component examples in the registry. Every category has
+a generated docs page and installable previews.
+
+Generated by \`bun run tracker:generate\`; update component catalogs, then rerun it.
+
+**Legend:** ${STATUS.supported} Supported · ${STATUS.pending} Pending · ${STATUS.unsupported} Not supported
+
+- Categories: ${STATUS.supported} ${componentCounts.size} / ${componentCounts.size}
+- Previews: ${STATUS.supported} ${[...componentCounts.values()].reduce((sum, count) => sum + count, 0)}
+
+| Status | Component | Previews | Docs |
+| :---: | --- | ---: | --- |
+${componentRows.join("\n")}
+`
+
 fs.mkdirSync(path.join(root, "docs"), { recursive: true })
-fs.writeFileSync(path.join(root, "docs/application-blocks.md"), content)
+fs.writeFileSync(path.join(root, "docs/block-coverage.md"), content)
+fs.writeFileSync(path.join(root, "docs/component-coverage.md"), componentContent)
+const legacyTracker = path.join(root, "docs/application-blocks.md")
+if (fs.existsSync(legacyTracker)) fs.rmSync(legacyTracker)
 console.log(`tracker: ${doneTotal}/${total} implemented, ${categories.length} categories`)

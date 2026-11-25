@@ -27,7 +27,7 @@ bun run registry:verify
 bun run registry:build
 
 bun run blocks:sync      # regenerate ~blocks.tsx for implemented application categories
-bun run tracker:generate # regenerate docs/application-blocks.md
+bun run tracker:generate # regenerate docs/block-coverage.md and docs/component-coverage.md
 bun run docs:generate    # regenerate docs/ (includes the tracker)
 
 # captures (reui.io reference material, gitignored)
@@ -54,7 +54,8 @@ node scripts/capture-category.mjs wizard       # Wizard category interaction cap
 - `src/blocks/application/~manifest.json` — all 305 application blocks (slug, category, title, description, URL) from the capture catalogue.
 - `src/blocks/application/<category>/~blocks.tsx` — generated block entries (`APP_SHELL_BLOCKS`, `AUTH_BLOCKS`, …); run `bun run blocks:sync` after adding or removing folders. Never hand-edit.
 - `src/blocks/~internal/registry.tsx` — runtime catalog: metadata, dependencies, raw source imports.
-- `docs/application-blocks.md` — generated port tracker (captured vs implemented) for the 305 application blocks.
+- `docs/block-coverage.md` — generated ✅/⏳/❌ coverage tracker for all 305 application blocks and 61 data grid blocks.
+- `docs/component-coverage.md` — generated ✅ coverage tracker for the 87 component categories.
 - `src/blocks/components/radix/<component>/<variant>.tsx` and `src/blocks/components/base/<component>/default.tsx` — one preview per component variant.
 - `src/blocks/components/~catalog/{catalog,ui-catalog}.tsx` — component catalogs (`kind: "component"`).
 - `src/blocks/registry.json` — generated shadcn block items. Do not hand-edit.
