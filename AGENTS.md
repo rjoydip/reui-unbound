@@ -34,6 +34,17 @@ bun run docs:generate    # regenerate docs/ (includes the tracker)
 node scripts/capture-preview.mjs     # all application blocks (light/dark/interaction)
 node scripts/capture-category.mjs app-shell   # App Shell category interaction captures
 node scripts/capture-category.mjs auth        # Auth category interaction captures
+node scripts/capture-category.mjs navbar      # Navbar category interaction captures
+node scripts/capture-category.mjs onboarding  # Onboarding category interaction captures
+node scripts/capture-category.mjs profile     # Profile category interaction captures
+node scripts/capture-category.mjs rich-text-editor  # Rich Text Editor interaction captures
+node scripts/capture-category.mjs schedule     # Schedule category interaction captures
+node scripts/capture-category.mjs settings     # Settings category interaction captures
+node scripts/capture-category.mjs sheet        # Sheet category interaction captures
+node scripts/capture-category.mjs stats        # Stats category interaction captures
+node scripts/capture-category.mjs timeline     # Timeline category interaction captures
+node scripts/capture-category.mjs whiteboard   # Whiteboard category interaction captures
+node scripts/capture-category.mjs wizard       # Wizard category interaction captures
 ```
 
 ## Structure
@@ -88,7 +99,7 @@ Reui.io Application block source is licence-gated ("Unlock the source"), so
 ports are clean-room implementations from the captured previews.
 
 1. Capture: `node scripts/capture-preview.mjs` (all 305) and
-   `node scripts/capture-category.mjs <category>` (deep interaction states per block, e.g. `app-shell`, `auth`).
+   `node scripts/capture-category.mjs <category>` (deep interaction states per block, e.g. `app-shell`, `auth`, `navbar`, `onboarding`, `profile`, `rich-text-editor`, `schedule`, `settings`, `sheet`, `stats`, `timeline`, `whiteboard`, `wizard`).
    Screenshots and `sources/<slug>.md` land in `captures/application` (gitignored).
 2. Implement `src/blocks/application/<category>/<slug>/index.tsx` with a default
    export named `<PascalSlug>Block` (e.g. `AppShell7Block`), reusing

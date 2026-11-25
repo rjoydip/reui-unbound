@@ -8053,6 +8053,3232 @@
           "target": "@components/blocks/list-capability-modules/index.tsx"
         }
       ]
+    },
+    {
+      "name": "navbar-project-workspace",
+      "type": "registry:block",
+      "title": "Project Workspace",
+      "description": "Project Workspace navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-1"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-project-workspace/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-api-developer-portal",
+      "type": "registry:block",
+      "title": "API Developer Portal",
+      "description": "API Developer Portal navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-10"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "button-group",
+        "dropdown-menu",
+        "input",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-api-developer-portal/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-design-system-manager",
+      "type": "registry:block",
+      "title": "Design System Manager",
+      "description": "Design System Manager navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-11"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-design-system-manager/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-marketing-mega-menu",
+      "type": "registry:block",
+      "title": "Marketing Mega Menu",
+      "description": "Marketing Mega Menu navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-12"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "navigation-menu"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-marketing-mega-menu/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-editor-action-bar",
+      "type": "registry:block",
+      "title": "Editor Action Bar",
+      "description": "Editor Action Bar navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-13"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-editor-action-bar/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-team-presence",
+      "type": "registry:block",
+      "title": "Team Presence",
+      "description": "Team Presence navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-2"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-team-presence/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-org-environment-switcher",
+      "type": "registry:block",
+      "title": "Org & Environment Switcher",
+      "description": "Org & Environment Switcher navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-org-environment-switcher/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-admin-command-search",
+      "type": "registry:block",
+      "title": "Admin Command Search",
+      "description": "Admin Command Search navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/rating",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "kbd",
+        "popover",
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-admin-command-search/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-workflow-editor",
+      "type": "registry:block",
+      "title": "Workflow Editor",
+      "description": "Workflow Editor navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-5"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-workflow-editor/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-analytics-toolbar",
+      "type": "registry:block",
+      "title": "Analytics Toolbar",
+      "description": "Analytics Toolbar navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "calendar",
+        "dropdown-menu",
+        "kbd",
+        "popover",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-analytics-toolbar/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-cms-publish-bar",
+      "type": "registry:block",
+      "title": "CMS Publish Bar",
+      "description": "CMS Publish Bar navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "button-group",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-cms-publish-bar/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-agent-marketplace",
+      "type": "registry:block",
+      "title": "Agent Marketplace",
+      "description": "Agent Marketplace navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-8"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/rating",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "popover",
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-agent-marketplace/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "navbar-repo-branch-picker",
+      "type": "registry:block",
+      "title": "Repo Branch Picker",
+      "description": "Repo Branch Picker navbar block.",
+      "meta": {
+        "category": "Navbar",
+        "id": "navbar-9"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/navbar/navbar-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/navbar-repo-branch-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-live-preview-wizard",
+      "type": "registry:block",
+      "title": "Live Preview Wizard",
+      "description": "Live Preview Wizard onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "checkbox",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-live-preview-wizard/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-sidebar-stepper-wizard",
+      "type": "registry:block",
+      "title": "Sidebar Stepper Wizard",
+      "description": "Sidebar Stepper Wizard onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/stepper",
+        "avatar",
+        "button",
+        "checkbox",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-sidebar-stepper-wizard/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-split-screen-signup",
+      "type": "registry:block",
+      "title": "Split-Screen Signup",
+      "description": "Split-Screen Signup onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/stepper",
+        "avatar",
+        "button",
+        "checkbox",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-split-screen-signup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-centered-setup-flow",
+      "type": "registry:block",
+      "title": "Centered Setup Flow",
+      "description": "Centered Setup Flow onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "checkbox",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-centered-setup-flow/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-onboarding-dialog",
+      "type": "registry:block",
+      "title": "Onboarding Dialog",
+      "description": "Onboarding Dialog onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "checkbox",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-onboarding-dialog/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-agent-api-setup",
+      "type": "registry:block",
+      "title": "Agent & API Setup",
+      "description": "Agent & API Setup onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "checkbox",
+        "collapsible",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-agent-api-setup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-screenshot-carousel-setup",
+      "type": "registry:block",
+      "title": "Screenshot Carousel Setup",
+      "description": "Screenshot Carousel Setup onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-7"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "checkbox",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-screenshot-carousel-setup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-cli-agent-setup",
+      "type": "registry:block",
+      "title": "CLI Agent Setup",
+      "description": "CLI Agent Setup onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-8"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "checkbox",
+        "collapsible",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-cli-agent-setup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "onboarding-marketing-hero-signup",
+      "type": "registry:block",
+      "title": "Marketing Hero Signup",
+      "description": "Marketing Hero Signup onboarding block.",
+      "meta": {
+        "category": "Onboarding",
+        "id": "onboarding-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "checkbox",
+        "input",
+        "radio-group",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/onboarding/onboarding-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/onboarding-marketing-hero-signup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-account-team-settings",
+      "type": "registry:block",
+      "title": "Account & Team Settings",
+      "description": "Account & Team Settings profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "input",
+        "select",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-account-team-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-developer-api-keys",
+      "type": "registry:block",
+      "title": "Developer API Keys",
+      "description": "Developer API Keys profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-10"
+      },
+      "dependencies": [
+        "@northstar/sdk",
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dialog",
+        "dropdown-menu",
+        "input",
+        "radio-group",
+        "select",
+        "table",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-developer-api-keys/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-admin-permissions",
+      "type": "registry:block",
+      "title": "Admin Permissions",
+      "description": "Admin Permissions profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "checkbox",
+        "input",
+        "select",
+        "switch",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-admin-permissions/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-personal-profile",
+      "type": "registry:block",
+      "title": "Personal Profile",
+      "description": "Personal Profile profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "input",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-personal-profile/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-mailbox-accounts",
+      "type": "registry:block",
+      "title": "Mailbox Accounts",
+      "description": "Mailbox Accounts profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-mailbox-accounts/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-notification-digest",
+      "type": "registry:block",
+      "title": "Notification Digest",
+      "description": "Notification Digest profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-notification-digest/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-referral-rewards",
+      "type": "registry:block",
+      "title": "Referral Rewards",
+      "description": "Referral Rewards profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-referral-rewards/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-meeting-capture",
+      "type": "registry:block",
+      "title": "Meeting Capture",
+      "description": "Meeting Capture profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "select",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-meeting-capture/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-billing-settings",
+      "type": "registry:block",
+      "title": "Billing Settings",
+      "description": "Billing Settings profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-8"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-billing-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "profile-account-settings-hub",
+      "type": "registry:block",
+      "title": "Account Settings Hub",
+      "description": "Account Settings Hub profile block.",
+      "meta": {
+        "category": "Profile",
+        "id": "profile-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "input",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/profile/profile-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/profile-account-settings-hub/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "rich-text-editor-document-editor",
+      "type": "registry:block",
+      "title": "Document Editor",
+      "description": "Document Editor rich-text-editor block.",
+      "meta": {
+        "category": "Rich Text Editor",
+        "id": "rich-text-editor-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "kbd",
+        "popover",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "application/rich-text-editor/rich-text-editor-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/rich-text-editor-document-editor/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "rich-text-editor-wiki-page-editor",
+      "type": "registry:block",
+      "title": "Wiki Page Editor",
+      "description": "Wiki Page Editor rich-text-editor block.",
+      "meta": {
+        "category": "Rich Text Editor",
+        "id": "rich-text-editor-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/rich-text-editor/rich-text-editor-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/rich-text-editor-wiki-page-editor/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "rich-text-editor-contract-redlines",
+      "type": "registry:block",
+      "title": "Contract Redlines",
+      "description": "Contract Redlines rich-text-editor block.",
+      "meta": {
+        "category": "Rich Text Editor",
+        "id": "rich-text-editor-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/rich-text-editor/rich-text-editor-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/rich-text-editor-contract-redlines/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "rich-text-editor-collaborative-editor",
+      "type": "registry:block",
+      "title": "Collaborative Editor",
+      "description": "Collaborative Editor rich-text-editor block.",
+      "meta": {
+        "category": "Rich Text Editor",
+        "id": "rich-text-editor-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/rich-text-editor/rich-text-editor-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/rich-text-editor-collaborative-editor/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "rich-text-editor-ai-writing-assistant",
+      "type": "registry:block",
+      "title": "AI Writing Assistant",
+      "description": "AI Writing Assistant rich-text-editor block.",
+      "meta": {
+        "category": "Rich Text Editor",
+        "id": "rich-text-editor-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/rich-text-editor/rich-text-editor-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/rich-text-editor-ai-writing-assistant/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-appointment-planner",
+      "type": "registry:block",
+      "title": "Appointment Planner",
+      "description": "Appointment Planner schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-1"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "calendar",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-appointment-planner/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-due-date-picker",
+      "type": "registry:block",
+      "title": "Due Date Picker",
+      "description": "Due Date Picker schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-10"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "calendar",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-due-date-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-time-range-picker",
+      "type": "registry:block",
+      "title": "Time Range Picker",
+      "description": "Time Range Picker schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-time-range-picker/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-meeting-scheduler",
+      "type": "registry:block",
+      "title": "Meeting Scheduler",
+      "description": "Meeting Scheduler schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "calendar",
+        "input",
+        "select",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-meeting-scheduler/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-booking-page",
+      "type": "registry:block",
+      "title": "Booking Page",
+      "description": "Booking Page schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "calendar",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-booking-page/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-team-attendance",
+      "type": "registry:block",
+      "title": "Team Attendance",
+      "description": "Team Attendance schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-5"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "calendar",
+        "dropdown-menu",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-team-attendance/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-create-schedule",
+      "type": "registry:block",
+      "title": "Create Schedule",
+      "description": "Create Schedule schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-6"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "calendar",
+        "input",
+        "popover",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-create-schedule/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-webinar-rsvp",
+      "type": "registry:block",
+      "title": "Webinar RSVP",
+      "description": "Webinar RSVP schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-7"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "collapsible",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-webinar-rsvp/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-team-agenda",
+      "type": "registry:block",
+      "title": "Team Agenda",
+      "description": "Team Agenda schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-8"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "calendar",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-team-agenda/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "schedule-session-booking",
+      "type": "registry:block",
+      "title": "Session Booking",
+      "description": "Session Booking schedule block.",
+      "meta": {
+        "category": "Schedule",
+        "id": "schedule-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "calendar",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/schedule/schedule-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/schedule-session-booking/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-import-sources",
+      "type": "registry:block",
+      "title": "Import Sources",
+      "description": "Import Sources settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-import-sources/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-security-settings",
+      "type": "registry:block",
+      "title": "Security Settings",
+      "description": "Security Settings settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-10"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-security-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-notification-channels",
+      "type": "registry:block",
+      "title": "Notification Channels",
+      "description": "Notification Channels settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-11"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "checkbox",
+        "table",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-notification-channels/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-notification-delivery",
+      "type": "registry:block",
+      "title": "Notification Delivery",
+      "description": "Notification Delivery settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-12"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "collapsible",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-notification-delivery/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-integrations-gallery",
+      "type": "registry:block",
+      "title": "Integrations Gallery",
+      "description": "Integrations Gallery settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-13"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-integrations-gallery/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-api-integrations",
+      "type": "registry:block",
+      "title": "API Integrations",
+      "description": "API Integrations settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-14"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "checkbox",
+        "select",
+        "switch",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-api-integrations/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-workspace-preferences",
+      "type": "registry:block",
+      "title": "Workspace Preferences",
+      "description": "Workspace Preferences settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-15"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-15/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-workspace-preferences/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-connected-apps",
+      "type": "registry:block",
+      "title": "Connected Apps",
+      "description": "Connected Apps settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-16"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-16/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-connected-apps/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-privacy-controls",
+      "type": "registry:block",
+      "title": "Privacy Controls",
+      "description": "Privacy Controls settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-2"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-privacy-controls/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-general-settings",
+      "type": "registry:block",
+      "title": "General Settings",
+      "description": "General Settings settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-3"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "input",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-general-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-app-connections",
+      "type": "registry:block",
+      "title": "App Connections",
+      "description": "App Connections settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-app-connections/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-role-capabilities",
+      "type": "registry:block",
+      "title": "Role Capabilities",
+      "description": "Role Capabilities settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-5"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-role-capabilities/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-integration-events",
+      "type": "registry:block",
+      "title": "Integration Events",
+      "description": "Integration Events settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-integration-events/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-account-settings",
+      "type": "registry:block",
+      "title": "Account Settings",
+      "description": "Account Settings settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-7"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "input",
+        "select",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-account-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-webhook-endpoints",
+      "type": "registry:block",
+      "title": "Webhook Endpoints",
+      "description": "Webhook Endpoints settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-8"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "dropdown-menu",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-webhook-endpoints/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "settings-general-display",
+      "type": "registry:block",
+      "title": "General & Display",
+      "description": "General & Display settings block.",
+      "meta": {
+        "category": "Settings",
+        "id": "settings-9"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "collapsible",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/settings/settings-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/settings-general-display/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-create-project",
+      "type": "registry:block",
+      "title": "Create Project",
+      "description": "Create Project sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-create-project/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-copilot-chat",
+      "type": "registry:block",
+      "title": "Copilot Chat",
+      "description": "Copilot Chat sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-10"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-copilot-chat/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-metric-detail-sheet",
+      "type": "registry:block",
+      "title": "Metric Detail Sheet",
+      "description": "Metric Detail Sheet sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-11"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-metric-detail-sheet/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-cron-job-detail",
+      "type": "registry:block",
+      "title": "Cron Job Detail",
+      "description": "Cron Job Detail sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-12"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-cron-job-detail/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-new-cron-job",
+      "type": "registry:block",
+      "title": "New Cron Job",
+      "description": "New Cron Job sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-13"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "input",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-new-cron-job/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-audit-event-detail",
+      "type": "registry:block",
+      "title": "Audit Event Detail",
+      "description": "Audit Event Detail sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-14"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-audit-event-detail/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-canary-rollout",
+      "type": "registry:block",
+      "title": "Canary Rollout",
+      "description": "Canary Rollout sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-15"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-15/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-canary-rollout/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-failed-deploy",
+      "type": "registry:block",
+      "title": "Failed Deploy",
+      "description": "Failed Deploy sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-16"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "switch",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-16/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-failed-deploy/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-new-firewall-rule",
+      "type": "registry:block",
+      "title": "New Firewall Rule",
+      "description": "New Firewall Rule sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-17"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "radio-group"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-17/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-new-firewall-rule/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-edit-firewall-rule",
+      "type": "registry:block",
+      "title": "Edit Firewall Rule",
+      "description": "Edit Firewall Rule sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-18"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "input",
+        "select",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-18/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-edit-firewall-rule/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-firewall-request",
+      "type": "registry:block",
+      "title": "Firewall Request",
+      "description": "Firewall Request sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-19"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-19/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-firewall-request/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-help-center",
+      "type": "registry:block",
+      "title": "Help Center",
+      "description": "Help Center sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-2"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-help-center/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-slo-error-budget",
+      "type": "registry:block",
+      "title": "SLO Error Budget",
+      "description": "SLO Error Budget sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-20"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-20/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-slo-error-budget/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-new-slo",
+      "type": "registry:block",
+      "title": "New SLO",
+      "description": "New SLO sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-21"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-21/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-new-slo/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-data-connection",
+      "type": "registry:block",
+      "title": "Data Connection",
+      "description": "Data Connection sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-22"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-22/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-data-connection/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-new-connection",
+      "type": "registry:block",
+      "title": "New Connection",
+      "description": "New Connection sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-23"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-23/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-new-connection/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-dataset-preview",
+      "type": "registry:block",
+      "title": "Dataset Preview",
+      "description": "Dataset Preview sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-24"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "select",
+        "switch",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-24/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-dataset-preview/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-keyboard-shortcuts",
+      "type": "registry:block",
+      "title": "Keyboard Shortcuts",
+      "description": "Keyboard Shortcuts sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "kbd"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-keyboard-shortcuts/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-ai-model-chat",
+      "type": "registry:block",
+      "title": "AI Model Chat",
+      "description": "AI Model Chat sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-ai-model-chat/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-comment-thread",
+      "type": "registry:block",
+      "title": "Comment Thread",
+      "description": "Comment Thread sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-5"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-comment-thread/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-view-customizer",
+      "type": "registry:block",
+      "title": "View Customizer",
+      "description": "View Customizer sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-6"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-view-customizer/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-notifications-feed",
+      "type": "registry:block",
+      "title": "Notifications Feed",
+      "description": "Notifications Feed sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-notifications-feed/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-relay-settings",
+      "type": "registry:block",
+      "title": "Relay Settings",
+      "description": "Relay Settings sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-8"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-relay-settings/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "sheet-ticket-edit-sheet",
+      "type": "registry:block",
+      "title": "Ticket Edit Sheet",
+      "description": "Ticket Edit Sheet sheet block.",
+      "meta": {
+        "category": "Sheet",
+        "id": "sheet-9"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/sheet/sheet-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/sheet-ticket-edit-sheet/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-stats-overview",
+      "type": "registry:block",
+      "title": "Stats Overview",
+      "description": "Stats Overview stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-1"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-stats-overview/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-total-revenue",
+      "type": "registry:block",
+      "title": "Total Revenue",
+      "description": "Total Revenue stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-10"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-10/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-total-revenue/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-api-quota-usage",
+      "type": "registry:block",
+      "title": "API Quota Usage",
+      "description": "API Quota Usage stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-11"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-11/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-api-quota-usage/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-support-metrics",
+      "type": "registry:block",
+      "title": "Support Metrics",
+      "description": "Support Metrics stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-12"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-12/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-support-metrics/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-compliance-checks",
+      "type": "registry:block",
+      "title": "Compliance Checks",
+      "description": "Compliance Checks stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-13"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-13/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-compliance-checks/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-adoption-rate",
+      "type": "registry:block",
+      "title": "Adoption Rate",
+      "description": "Adoption Rate stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-14"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-14/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-adoption-rate/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-kpi-callouts",
+      "type": "registry:block",
+      "title": "KPI Callouts",
+      "description": "KPI Callouts stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-15"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "application/stats/stats-15/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-kpi-callouts/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-portfolio-allocation",
+      "type": "registry:block",
+      "title": "Portfolio Allocation",
+      "description": "Portfolio Allocation stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-17"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-17/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-portfolio-allocation/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-capacity-usage",
+      "type": "registry:block",
+      "title": "Capacity Usage",
+      "description": "Capacity Usage stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-18"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-18/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-capacity-usage/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-kpi-scorecard",
+      "type": "registry:block",
+      "title": "KPI Scorecard",
+      "description": "KPI Scorecard stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-2"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-kpi-scorecard/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-subscription-renewals",
+      "type": "registry:block",
+      "title": "Subscription Renewals",
+      "description": "Subscription Renewals stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-subscription-renewals/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-leads-overview",
+      "type": "registry:block",
+      "title": "Leads Overview",
+      "description": "Leads Overview stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-leads-overview/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-wallet-balance",
+      "type": "registry:block",
+      "title": "Wallet Balance",
+      "description": "Wallet Balance stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-5"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-wallet-balance/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-rep-performance",
+      "type": "registry:block",
+      "title": "Rep Performance",
+      "description": "Rep Performance stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-6"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-rep-performance/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-sales-churn-metrics",
+      "type": "registry:block",
+      "title": "Sales & Churn Metrics",
+      "description": "Sales & Churn Metrics stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-sales-churn-metrics/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-analytics-overview",
+      "type": "registry:block",
+      "title": "Analytics Overview",
+      "description": "Analytics Overview stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-8"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-analytics-overview/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "stats-task-progress",
+      "type": "registry:block",
+      "title": "Task Progress",
+      "description": "Task Progress stats block.",
+      "meta": {
+        "category": "Stats",
+        "id": "stats-9"
+      },
+      "dependencies": [],
+      "registryDependencies": [
+        "select"
+      ],
+      "files": [
+        {
+          "path": "application/stats/stats-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/stats-task-progress/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-customer-activation",
+      "type": "registry:block",
+      "title": "Customer Activation",
+      "description": "Customer Activation timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "collapsible"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-customer-activation/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-account-rollout",
+      "type": "registry:block",
+      "title": "Account Rollout",
+      "description": "Account Rollout timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-2"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-account-rollout/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-finance-activity",
+      "type": "registry:block",
+      "title": "Finance Activity",
+      "description": "Finance Activity timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-finance-activity/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-team-activity-feed",
+      "type": "registry:block",
+      "title": "Team Activity Feed",
+      "description": "Team Activity Feed timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-4"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-team-activity-feed/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-release-changelog",
+      "type": "registry:block",
+      "title": "Release Changelog",
+      "description": "Release Changelog timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-5"
+      },
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "application/timeline/timeline-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-release-changelog/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-approval-workflow",
+      "type": "registry:block",
+      "title": "Approval Workflow",
+      "description": "Approval Workflow timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-6"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-approval-workflow/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-activity-dropdown",
+      "type": "registry:block",
+      "title": "Activity Dropdown",
+      "description": "Activity Dropdown timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-7"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-activity-dropdown/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-team-activity-sheet",
+      "type": "registry:block",
+      "title": "Team Activity Sheet",
+      "description": "Team Activity Sheet timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-8"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-8/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-team-activity-sheet/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "timeline-finance-activity-sheet",
+      "type": "registry:block",
+      "title": "Finance Activity Sheet",
+      "description": "Finance Activity Sheet timeline block.",
+      "meta": {
+        "category": "Timeline",
+        "id": "timeline-9"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "application/timeline/timeline-9/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/timeline-finance-activity-sheet/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "whiteboard-design-review-board",
+      "type": "registry:block",
+      "title": "Design Review Board",
+      "description": "Design Review Board whiteboard block.",
+      "meta": {
+        "category": "Whiteboard",
+        "id": "whiteboard-1"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input",
+        "popover",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/whiteboard/whiteboard-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/whiteboard-design-review-board/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "whiteboard-sprint-planning-board",
+      "type": "registry:block",
+      "title": "Sprint Planning Board",
+      "description": "Sprint Planning Board whiteboard block.",
+      "meta": {
+        "category": "Whiteboard",
+        "id": "whiteboard-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "application/whiteboard/whiteboard-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/whiteboard-sprint-planning-board/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "wizard-billing-setup",
+      "type": "registry:block",
+      "title": "Billing Setup",
+      "description": "Billing Setup wizard block.",
+      "meta": {
+        "category": "Wizard",
+        "id": "wizard-1"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/stepper",
+        "button",
+        "input",
+        "label",
+        "select",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "application/wizard/wizard-1/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/wizard-billing-setup/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "wizard-vendor-onboarding",
+      "type": "registry:block",
+      "title": "Vendor Onboarding",
+      "description": "Vendor Onboarding wizard block.",
+      "meta": {
+        "category": "Wizard",
+        "id": "wizard-2"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/stepper",
+        "button",
+        "checkbox",
+        "input",
+        "label",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/wizard/wizard-2/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/wizard-vendor-onboarding/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "wizard-send-invoice",
+      "type": "registry:block",
+      "title": "Send Invoice",
+      "description": "Send Invoice wizard block.",
+      "meta": {
+        "category": "Wizard",
+        "id": "wizard-3"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "button",
+        "input",
+        "label",
+        "select",
+        "separator",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/wizard/wizard-3/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/wizard-send-invoice/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "wizard-plan-upgrade",
+      "type": "registry:block",
+      "title": "Plan Upgrade",
+      "description": "Plan Upgrade wizard block.",
+      "meta": {
+        "category": "Wizard",
+        "id": "wizard-4"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/stepper",
+        "alert",
+        "button",
+        "input",
+        "radio-group",
+        "select",
+        "slider"
+      ],
+      "files": [
+        {
+          "path": "application/wizard/wizard-4/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/wizard-plan-upgrade/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "wizard-team-invitations",
+      "type": "registry:block",
+      "title": "Team Invitations",
+      "description": "Team Invitations wizard block.",
+      "meta": {
+        "category": "Wizard",
+        "id": "wizard-5"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/stepper",
+        "button",
+        "input",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/wizard/wizard-5/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/wizard-team-invitations/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "wizard-product-setup-wizard",
+      "type": "registry:block",
+      "title": "Product Setup Wizard",
+      "description": "Product Setup Wizard wizard block.",
+      "meta": {
+        "category": "Wizard",
+        "id": "wizard-6"
+      },
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/badge",
+        "@reui-unbound/stepper",
+        "button",
+        "collapsible",
+        "input",
+        "label",
+        "radio-group",
+        "select",
+        "separator",
+        "switch",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/wizard/wizard-6/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/wizard-product-setup-wizard/index.tsx"
+        }
+      ]
+    },
+    {
+      "name": "wizard-fund-transfer",
+      "type": "registry:block",
+      "title": "Fund Transfer",
+      "description": "Fund Transfer wizard block.",
+      "meta": {
+        "category": "Wizard",
+        "id": "wizard-7"
+      },
+      "dependencies": [
+        "cn",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@reui-unbound/stepper",
+        "avatar",
+        "button",
+        "input",
+        "label",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "application/wizard/wizard-7/index.tsx",
+          "type": "registry:component",
+          "target": "@components/blocks/wizard-fund-transfer/index.tsx"
+        }
+      ]
     }
   ]
 }

@@ -21,6 +21,17 @@ const CATEGORIES = [
   { folder: "gantt", name: "Gantt", constName: "GANTT_BLOCKS" },
   { folder: "kanban-board", name: "Kanban Board", constName: "KANBAN_BOARD_BLOCKS" },
   { folder: "list", name: "List", constName: "LIST_BLOCKS" },
+  { folder: "navbar", name: "Navbar", constName: "NAVBAR_BLOCKS" },
+  { folder: "onboarding", name: "Onboarding", constName: "ONBOARDING_BLOCKS" },
+  { folder: "profile", name: "Profile", constName: "PROFILE_BLOCKS" },
+  { folder: "rich-text-editor", name: "Rich Text Editor", constName: "RICH_TEXT_EDITOR_BLOCKS" },
+  { folder: "schedule", name: "Schedule", constName: "SCHEDULE_BLOCKS" },
+  { folder: "settings", name: "Settings", constName: "SETTINGS_BLOCKS" },
+  { folder: "sheet", name: "Sheet", constName: "SHEET_BLOCKS" },
+  { folder: "stats", name: "Stats", constName: "STATS_BLOCKS" },
+  { folder: "timeline", name: "Timeline", constName: "TIMELINE_BLOCKS" },
+  { folder: "whiteboard", name: "Whiteboard", constName: "WHITEBOARD_BLOCKS" },
+  { folder: "wizard", name: "Wizard", constName: "WIZARD_BLOCKS" },
 ]
 
 function packageName(specifier) {
