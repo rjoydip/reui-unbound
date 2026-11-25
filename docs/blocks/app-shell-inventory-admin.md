@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-inventory-admin` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-inventory-admin)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-inventory-admin
 ## Usage
 
 ```tsx
-import { AppShell8Block } from "@/blocks/app-shell-inventory-admin"
+import { AppShellInventoryAdminBlock } from "@/blocks/app-shell-inventory-admin"
 
 export default function Page() {
-  return <AppShell8Block />
+  return <AppShellInventoryAdminBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-8/index.tsx`
+- `src/blocks/application/app-shell/app-shell-inventory-admin/index.tsx`
 
 ## Dependencies
 

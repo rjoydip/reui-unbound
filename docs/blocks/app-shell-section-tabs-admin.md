@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-section-tabs-admin` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-28)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-section-tabs-admin)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-28/index.tsx`
+- `src/blocks/application/app-shell/app-shell-section-tabs-admin/index.tsx`
 
 ## Dependencies
 

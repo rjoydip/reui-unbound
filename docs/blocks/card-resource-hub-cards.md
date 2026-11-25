@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-resource-hub-cards` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-39)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-resource-hub-cards)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-resource-hub-cards
 ## Usage
 
 ```tsx
-import { Card39Block } from "@/blocks/card-resource-hub-cards"
+import { CardResourceHubCardsBlock } from "@/blocks/card-resource-hub-cards"
 
 export default function Page() {
-  return <Card39Block />
+  return <CardResourceHubCardsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-39/index.tsx`
+- `src/blocks/application/card/card-resource-hub-cards/index.tsx`
 
 ## Dependencies
 

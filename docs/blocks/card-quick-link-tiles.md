@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-quick-link-tiles` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-quick-link-tiles)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-quick-link-tiles
 ## Usage
 
 ```tsx
-import { Card12Block } from "@/blocks/card-quick-link-tiles"
+import { CardQuickLinkTilesBlock } from "@/blocks/card-quick-link-tiles"
 
 export default function Page() {
-  return <Card12Block />
+  return <CardQuickLinkTilesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-12/index.tsx`
+- `src/blocks/application/card/card-quick-link-tiles/index.tsx`
 
 ## Dependencies
 

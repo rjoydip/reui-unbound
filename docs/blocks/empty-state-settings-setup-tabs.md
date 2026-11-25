@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-settings-setup-tabs` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-settings-setup-tabs)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-settings-setup-tabs
 ## Usage
 
 ```tsx
-import { EmptyState8Block } from "@/blocks/empty-state-settings-setup-tabs"
+import { EmptyStateSettingsSetupTabsBlock } from "@/blocks/empty-state-settings-setup-tabs"
 
 export default function Page() {
-  return <EmptyState8Block />
+  return <EmptyStateSettingsSetupTabsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-8/index.tsx`
+- `src/blocks/application/empty-state/empty-state-settings-setup-tabs/index.tsx`
 
 ## Dependencies
 

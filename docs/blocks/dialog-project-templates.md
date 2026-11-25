@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-project-templates` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-project-templates)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-project-templates
 ## Usage
 
 ```tsx
-import { Dialog13Block } from "@/blocks/dialog-project-templates"
+import { DialogProjectTemplatesBlock } from "@/blocks/dialog-project-templates"
 
 export default function Page() {
-  return <Dialog13Block />
+  return <DialogProjectTemplatesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-13/index.tsx`
+- `src/blocks/application/dialog/dialog-project-templates/index.tsx`
 
 ## Dependencies
 

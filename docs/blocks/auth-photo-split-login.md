@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-photo-split-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-photo-split-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-photo-split-login
 ## Usage
 
 ```tsx
-import { Auth1Block } from "@/blocks/auth-photo-split-login"
+import { AuthPhotoSplitLoginBlock } from "@/blocks/auth-photo-split-login"
 
 export default function Page() {
-  return <Auth1Block />
+  return <AuthPhotoSplitLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-1/index.tsx`
+- `src/blocks/application/auth/auth-photo-split-login/index.tsx`
 
 ## Dependencies
 

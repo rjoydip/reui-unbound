@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-cancel-plan-survey` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-cancel-plan-survey)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-cancel-plan-survey
 ## Usage
 
 ```tsx
-import { Dialog3Block } from "@/blocks/dialog-cancel-plan-survey"
+import { DialogCancelPlanSurveyBlock } from "@/blocks/dialog-cancel-plan-survey"
 
 export default function Page() {
-  return <Dialog3Block />
+  return <DialogCancelPlanSurveyBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-3/index.tsx`
+- `src/blocks/application/dialog/dialog-cancel-plan-survey/index.tsx`
 
 ## Dependencies
 

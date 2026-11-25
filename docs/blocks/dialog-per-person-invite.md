@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-per-person-invite` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-per-person-invite)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-per-person-invite
 ## Usage
 
 ```tsx
-import { Dialog8Block } from "@/blocks/dialog-per-person-invite"
+import { DialogPerPersonInviteBlock } from "@/blocks/dialog-per-person-invite"
 
 export default function Page() {
-  return <Dialog8Block />
+  return <DialogPerPersonInviteBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-8/index.tsx`
+- `src/blocks/application/dialog/dialog-per-person-invite/index.tsx`
 
 ## Dependencies
 

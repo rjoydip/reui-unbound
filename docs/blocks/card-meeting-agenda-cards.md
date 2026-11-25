@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-meeting-agenda-cards` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-15)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-meeting-agenda-cards)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-meeting-agenda-cards
 ## Usage
 
 ```tsx
-import { Card15Block } from "@/blocks/card-meeting-agenda-cards"
+import { CardMeetingAgendaCardsBlock } from "@/blocks/card-meeting-agenda-cards"
 
 export default function Page() {
-  return <Card15Block />
+  return <CardMeetingAgendaCardsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-15/index.tsx`
+- `src/blocks/application/card/card-meeting-agenda-cards/index.tsx`
 
 ## Dependencies
 

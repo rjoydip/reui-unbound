@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-invite-members-prompt` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-invite-members-prompt)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-invite-members-prompt
 ## Usage
 
 ```tsx
-import { EmptyState9Block } from "@/blocks/empty-state-invite-members-prompt"
+import { EmptyStateInviteMembersPromptBlock } from "@/blocks/empty-state-invite-members-prompt"
 
 export default function Page() {
-  return <EmptyState9Block />
+  return <EmptyStateInviteMembersPromptBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-9/index.tsx`
+- `src/blocks/application/empty-state/empty-state-invite-members-prompt/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-duplicate-check` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-16)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-duplicate-check)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-duplicate-check
 ## Usage
 
 ```tsx
-import { Dialog16Block } from "@/blocks/dialog-duplicate-check"
+import { DialogDuplicateCheckBlock } from "@/blocks/dialog-duplicate-check"
 
 export default function Page() {
-  return <Dialog16Block />
+  return <DialogDuplicateCheckBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-16/index.tsx`
+- `src/blocks/application/dialog/dialog-duplicate-check/index.tsx`
 
 ## Dependencies
 

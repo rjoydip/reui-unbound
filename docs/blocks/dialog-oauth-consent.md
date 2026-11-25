@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-oauth-consent` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-14)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-oauth-consent)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-oauth-consent
 ## Usage
 
 ```tsx
-import { Dialog14Block } from "@/blocks/dialog-oauth-consent"
+import { DialogOauthConsentBlock } from "@/blocks/dialog-oauth-consent"
 
 export default function Page() {
-  return <Dialog14Block />
+  return <DialogOauthConsentBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-14/index.tsx`
+- `src/blocks/application/dialog/dialog-oauth-consent/index.tsx`
 
 ## Dependencies
 

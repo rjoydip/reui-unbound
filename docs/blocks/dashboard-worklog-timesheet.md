@@ -8,7 +8,7 @@ category: Dashboard
 
 **Block:** `dashboard-worklog-timesheet` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-worklog-timesheet)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dashboard-worklog-timesheet
 ## Usage
 
 ```tsx
-import { Dashboard3Block } from "@/blocks/dashboard-worklog-timesheet"
+import { DashboardWorklogTimesheetBlock } from "@/blocks/dashboard-worklog-timesheet"
 
 export default function Page() {
-  return <Dashboard3Block />
+  return <DashboardWorklogTimesheetBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dashboard/dashboard-3/index.tsx`
+- `src/blocks/application/dashboard/dashboard-worklog-timesheet/index.tsx`
 
 ## Dependencies
 

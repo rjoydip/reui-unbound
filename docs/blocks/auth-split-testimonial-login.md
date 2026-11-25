@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-split-testimonial-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-split-testimonial-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-split-testimonial-login
 ## Usage
 
 ```tsx
-import { Auth11Block } from "@/blocks/auth-split-testimonial-login"
+import { AuthSplitTestimonialLoginBlock } from "@/blocks/auth-split-testimonial-login"
 
 export default function Page() {
-  return <Auth11Block />
+  return <AuthSplitTestimonialLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-11/index.tsx`
+- `src/blocks/application/auth/auth-split-testimonial-login/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-social-proof-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-18)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-social-proof-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-social-proof-login
 ## Usage
 
 ```tsx
-import { Auth18Block } from "@/blocks/auth-social-proof-login"
+import { AuthSocialProofLoginBlock } from "@/blocks/auth-social-proof-login"
 
 export default function Page() {
-  return <Auth18Block />
+  return <AuthSocialProofLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-18/index.tsx`
+- `src/blocks/application/auth/auth-social-proof-login/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-team-project-switcher` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-23)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-team-project-switcher)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-23/index.tsx`
+- `src/blocks/application/app-shell/app-shell-team-project-switcher/index.tsx`
 
 ## Dependencies
 

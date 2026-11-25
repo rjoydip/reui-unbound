@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-profile-settings` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-profile-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-profile-settings
 ## Usage
 
 ```tsx
-import { Form1Block } from "@/blocks/form-profile-settings"
+import { FormProfileSettingsBlock } from "@/blocks/form-profile-settings"
 
 export default function Page() {
-  return <Form1Block />
+  return <FormProfileSettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-1/index.tsx`
+- `src/blocks/application/form/form-profile-settings/index.tsx`
 
 ## Dependencies
 

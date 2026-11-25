@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-launch-checklist` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-launch-checklist)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-launch-checklist
 ## Usage
 
 ```tsx
-import { Dialog4Block } from "@/blocks/dialog-launch-checklist"
+import { DialogLaunchChecklistBlock } from "@/blocks/dialog-launch-checklist"
 
 export default function Page() {
-  return <Dialog4Block />
+  return <DialogLaunchChecklistBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-4/index.tsx`
+- `src/blocks/application/dialog/dialog-launch-checklist/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-invoice-creator` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-invoice-creator)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-invoice-creator
 ## Usage
 
 ```tsx
-import { Form3Block } from "@/blocks/form-invoice-creator"
+import { FormInvoiceCreatorBlock } from "@/blocks/form-invoice-creator"
 
 export default function Page() {
-  return <Form3Block />
+  return <FormInvoiceCreatorBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-3/index.tsx`
+- `src/blocks/application/form/form-invoice-creator/index.tsx`
 
 ## Dependencies
 

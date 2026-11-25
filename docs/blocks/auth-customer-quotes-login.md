@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-customer-quotes-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-customer-quotes-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-customer-quotes-login
 ## Usage
 
 ```tsx
-import { Auth2Block } from "@/blocks/auth-customer-quotes-login"
+import { AuthCustomerQuotesLoginBlock } from "@/blocks/auth-customer-quotes-login"
 
 export default function Page() {
-  return <Auth2Block />
+  return <AuthCustomerQuotesLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-2/index.tsx`
+- `src/blocks/application/auth/auth-customer-quotes-login/index.tsx`
 
 ## Dependencies
 

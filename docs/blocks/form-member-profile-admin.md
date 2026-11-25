@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-member-profile-admin` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-member-profile-admin)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-member-profile-admin
 ## Usage
 
 ```tsx
-import { Form5Block } from "@/blocks/form-member-profile-admin"
+import { FormMemberProfileAdminBlock } from "@/blocks/form-member-profile-admin"
 
 export default function Page() {
-  return <Form5Block />
+  return <FormMemberProfileAdminBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-5/index.tsx`
+- `src/blocks/application/form/form-member-profile-admin/index.tsx`
 
 ## Dependencies
 

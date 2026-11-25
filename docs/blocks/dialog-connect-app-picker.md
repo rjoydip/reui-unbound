@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-connect-app-picker` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-connect-app-picker)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-connect-app-picker
 ## Usage
 
 ```tsx
-import { Dialog6Block } from "@/blocks/dialog-connect-app-picker"
+import { DialogConnectAppPickerBlock } from "@/blocks/dialog-connect-app-picker"
 
 export default function Page() {
-  return <Dialog6Block />
+  return <DialogConnectAppPickerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-6/index.tsx`
+- `src/blocks/application/dialog/dialog-connect-app-picker/index.tsx`
 
 ## Dependencies
 

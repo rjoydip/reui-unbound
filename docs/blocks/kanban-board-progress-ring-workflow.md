@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-progress-ring-workflow` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-progress-ring-workflow)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-progress-ring-workflow
 ## Usage
 
 ```tsx
-import { KanbanBoard5Block } from "@/blocks/kanban-board-progress-ring-workflow"
+import { KanbanBoardProgressRingWorkflowBlock } from "@/blocks/kanban-board-progress-ring-workflow"
 
 export default function Page() {
-  return <KanbanBoard5Block />
+  return <KanbanBoardProgressRingWorkflowBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-5/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-progress-ring-workflow/index.tsx`
 
 ## Dependencies
 

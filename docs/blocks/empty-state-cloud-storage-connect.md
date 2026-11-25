@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-cloud-storage-connect` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-cloud-storage-connect)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-cloud-storage-connect
 ## Usage
 
 ```tsx
-import { EmptyState13Block } from "@/blocks/empty-state-cloud-storage-connect"
+import { EmptyStateCloudStorageConnectBlock } from "@/blocks/empty-state-cloud-storage-connect"
 
 export default function Page() {
-  return <EmptyState13Block />
+  return <EmptyStateCloudStorageConnectBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-13/index.tsx`
+- `src/blocks/application/empty-state/empty-state-cloud-storage-connect/index.tsx`
 
 ## Dependencies
 

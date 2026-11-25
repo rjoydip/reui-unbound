@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-profile-stat-strip` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-38)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-profile-stat-strip)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-profile-stat-strip
 ## Usage
 
 ```tsx
-import { Card38Block } from "@/blocks/card-profile-stat-strip"
+import { CardProfileStatStripBlock } from "@/blocks/card-profile-stat-strip"
 
 export default function Page() {
-  return <Card38Block />
+  return <CardProfileStatStripBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-38/index.tsx`
+- `src/blocks/application/card/card-profile-stat-strip/index.tsx`
 
 
 ## Registry dependencies

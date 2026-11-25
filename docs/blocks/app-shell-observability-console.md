@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-observability-console` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-36)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-observability-console)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-36/index.tsx`
+- `src/blocks/application/app-shell/app-shell-observability-console/index.tsx`
 
 ## Dependencies
 

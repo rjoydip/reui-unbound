@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-finance-account-setup` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-finance-account-setup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-finance-account-setup
 ## Usage
 
 ```tsx
-import { Dialog11Block } from "@/blocks/dialog-finance-account-setup"
+import { DialogFinanceAccountSetupBlock } from "@/blocks/dialog-finance-account-setup"
 
 export default function Page() {
-  return <Dialog11Block />
+  return <DialogFinanceAccountSetupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-11/index.tsx`
+- `src/blocks/application/dialog/dialog-finance-account-setup/index.tsx`
 
 ## Dependencies
 

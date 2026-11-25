@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-bulk-email-invite` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-bulk-email-invite)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-bulk-email-invite
 ## Usage
 
 ```tsx
-import { Dialog2Block } from "@/blocks/dialog-bulk-email-invite"
+import { DialogBulkEmailInviteBlock } from "@/blocks/dialog-bulk-email-invite"
 
 export default function Page() {
-  return <Dialog2Block />
+  return <DialogBulkEmailInviteBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-2/index.tsx`
+- `src/blocks/application/dialog/dialog-bulk-email-invite/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-founder-story-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-founder-story-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-founder-story-login
 ## Usage
 
 ```tsx
-import { Auth6Block } from "@/blocks/auth-founder-story-login"
+import { AuthFounderStoryLoginBlock } from "@/blocks/auth-founder-story-login"
 
 export default function Page() {
-  return <Auth6Block />
+  return <AuthFounderStoryLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-6/index.tsx`
+- `src/blocks/application/auth/auth-founder-story-login/index.tsx`
 
 ## Dependencies
 

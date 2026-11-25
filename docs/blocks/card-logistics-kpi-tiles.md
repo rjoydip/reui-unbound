@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-logistics-kpi-tiles` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-30)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-logistics-kpi-tiles)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-logistics-kpi-tiles
 ## Usage
 
 ```tsx
-import { Card30Block } from "@/blocks/card-logistics-kpi-tiles"
+import { CardLogisticsKpiTilesBlock } from "@/blocks/card-logistics-kpi-tiles"
 
 export default function Page() {
-  return <Card30Block />
+  return <CardLogisticsKpiTilesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-30/index.tsx`
+- `src/blocks/application/card/card-logistics-kpi-tiles/index.tsx`
 
 ## Dependencies
 

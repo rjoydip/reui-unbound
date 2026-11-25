@@ -8,7 +8,7 @@ category: Gantt
 
 **Block:** `gantt-technician-dispatch` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-technician-dispatch)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/gantt-technician-dispatch
 ## Usage
 
 ```tsx
-import { Gantt2Block } from "@/blocks/gantt-technician-dispatch"
+import { GanttTechnicianDispatchBlock } from "@/blocks/gantt-technician-dispatch"
 
 export default function Page() {
-  return <Gantt2Block />
+  return <GanttTechnicianDispatchBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/gantt/gantt-2/index.tsx`
+- `src/blocks/application/gantt/gantt-technician-dispatch/index.tsx`
 
 ## Dependencies
 

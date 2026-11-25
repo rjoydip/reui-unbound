@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-applicant-record` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-applicant-record)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-applicant-record
 ## Usage
 
 ```tsx
-import { Card9Block } from "@/blocks/card-applicant-record"
+import { CardApplicantRecordBlock } from "@/blocks/card-applicant-record"
 
 export default function Page() {
-  return <Card9Block />
+  return <CardApplicantRecordBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-9/index.tsx`
+- `src/blocks/application/card/card-applicant-record/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-renewals-risk` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-renewals-risk)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-renewals-risk
 ## Usage
 
 ```tsx
-import { KanbanBoard7Block } from "@/blocks/kanban-board-renewals-risk"
+import { KanbanBoardRenewalsRiskBlock } from "@/blocks/kanban-board-renewals-risk"
 
 export default function Page() {
-  return <KanbanBoard7Block />
+  return <KanbanBoardRenewalsRiskBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-7/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-renewals-risk/index.tsx`
 
 ## Dependencies
 

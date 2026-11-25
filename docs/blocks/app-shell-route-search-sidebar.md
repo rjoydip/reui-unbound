@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-route-search-sidebar` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-27)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-route-search-sidebar)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-27/index.tsx`
+- `src/blocks/application/app-shell/app-shell-route-search-sidebar/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-centered-password-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-20)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-centered-password-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-centered-password-login
 ## Usage
 
 ```tsx
-import { Auth20Block } from "@/blocks/auth-centered-password-login"
+import { AuthCenteredPasswordLoginBlock } from "@/blocks/auth-centered-password-login"
 
 export default function Page() {
-  return <Auth20Block />
+  return <AuthCenteredPasswordLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-20/index.tsx`
+- `src/blocks/application/auth/auth-centered-password-login/index.tsx`
 
 ## Dependencies
 

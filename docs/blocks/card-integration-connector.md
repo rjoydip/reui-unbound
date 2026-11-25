@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-integration-connector` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-integration-connector)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-integration-connector
 ## Usage
 
 ```tsx
-import { Card5Block } from "@/blocks/card-integration-connector"
+import { CardIntegrationConnectorBlock } from "@/blocks/card-integration-connector"
 
 export default function Page() {
-  return <Card5Block />
+  return <CardIntegrationConnectorBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-5/index.tsx`
+- `src/blocks/application/card/card-integration-connector/index.tsx`
 
 ## Dependencies
 

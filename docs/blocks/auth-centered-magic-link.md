@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-centered-magic-link` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-15)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-centered-magic-link)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-centered-magic-link
 ## Usage
 
 ```tsx
-import { Auth15Block } from "@/blocks/auth-centered-magic-link"
+import { AuthCenteredMagicLinkBlock } from "@/blocks/auth-centered-magic-link"
 
 export default function Page() {
-  return <Auth15Block />
+  return <AuthCenteredMagicLinkBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-15/index.tsx`
+- `src/blocks/application/auth/auth-centered-magic-link/index.tsx`
 
 ## Dependencies
 

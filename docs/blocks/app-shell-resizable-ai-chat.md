@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-resizable-ai-chat` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-21)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-resizable-ai-chat)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-21/index.tsx`
+- `src/blocks/application/app-shell/app-shell-resizable-ai-chat/index.tsx`
 
 ## Dependencies
 

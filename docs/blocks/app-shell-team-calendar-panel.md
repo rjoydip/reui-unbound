@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-team-calendar-panel` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-team-calendar-panel)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-team-calendar-panel
 ## Usage
 
 ```tsx
-import { AppShell6Block } from "@/blocks/app-shell-team-calendar-panel"
+import { AppShellTeamCalendarPanelBlock } from "@/blocks/app-shell-team-calendar-panel"
 
 export default function Page() {
-  return <AppShell6Block />
+  return <AppShellTeamCalendarPanelBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-6/index.tsx`
+- `src/blocks/application/app-shell/app-shell-team-calendar-panel/index.tsx`
 
 ## Dependencies
 

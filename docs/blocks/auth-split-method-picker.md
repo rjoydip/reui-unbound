@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-split-method-picker` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-split-method-picker)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-split-method-picker
 ## Usage
 
 ```tsx
-import { Auth12Block } from "@/blocks/auth-split-method-picker"
+import { AuthSplitMethodPickerBlock } from "@/blocks/auth-split-method-picker"
 
 export default function Page() {
-  return <Auth12Block />
+  return <AuthSplitMethodPickerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-12/index.tsx`
+- `src/blocks/application/auth/auth-split-method-picker/index.tsx`
 
 ## Dependencies
 

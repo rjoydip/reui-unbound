@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-empty-report-brief` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-empty-report-brief)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-empty-report-brief
 ## Usage
 
 ```tsx
-import { EmptyState5Block } from "@/blocks/empty-state-empty-report-brief"
+import { EmptyStateEmptyReportBriefBlock } from "@/blocks/empty-state-empty-report-brief"
 
 export default function Page() {
-  return <EmptyState5Block />
+  return <EmptyStateEmptyReportBriefBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-5/index.tsx`
+- `src/blocks/application/empty-state/empty-state-empty-report-brief/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-api-keys-manager` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-api-keys-manager)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-api-keys-manager
 ## Usage
 
 ```tsx
-import { Form8Block } from "@/blocks/form-api-keys-manager"
+import { FormApiKeysManagerBlock } from "@/blocks/form-api-keys-manager"
 
 export default function Page() {
-  return <Form8Block />
+  return <FormApiKeysManagerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-8/index.tsx`
+- `src/blocks/application/form/form-api-keys-manager/index.tsx`
 
 ## Dependencies
 

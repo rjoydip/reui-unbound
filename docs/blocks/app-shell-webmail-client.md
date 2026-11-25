@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-webmail-client` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-20)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-webmail-client)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-webmail-client
 ## Usage
 
 ```tsx
-import { AppShell20Block } from "@/blocks/app-shell-webmail-client"
+import { AppShellWebmailClientBlock } from "@/blocks/app-shell-webmail-client"
 
 export default function Page() {
-  return <AppShell20Block />
+  return <AppShellWebmailClientBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-20/index.tsx`
+- `src/blocks/application/app-shell/app-shell-webmail-client/index.tsx`
 
 ## Dependencies
 

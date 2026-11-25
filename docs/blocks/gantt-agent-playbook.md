@@ -8,7 +8,7 @@ category: Gantt
 
 **Block:** `gantt-agent-playbook` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-agent-playbook)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/gantt-agent-playbook
 ## Usage
 
 ```tsx
-import { Gantt3Block } from "@/blocks/gantt-agent-playbook"
+import { GanttAgentPlaybookBlock } from "@/blocks/gantt-agent-playbook"
 
 export default function Page() {
-  return <Gantt3Block />
+  return <GanttAgentPlaybookBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/gantt/gantt-3/index.tsx`
+- `src/blocks/application/gantt/gantt-agent-playbook/index.tsx`
 
 ## Dependencies
 

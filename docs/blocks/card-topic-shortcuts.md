@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-topic-shortcuts` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-41)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-topic-shortcuts)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-topic-shortcuts
 ## Usage
 
 ```tsx
-import { Card41Block } from "@/blocks/card-topic-shortcuts"
+import { CardTopicShortcutsBlock } from "@/blocks/card-topic-shortcuts"
 
 export default function Page() {
-  return <Card41Block />
+  return <CardTopicShortcutsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-41/index.tsx`
+- `src/blocks/application/card/card-topic-shortcuts/index.tsx`
 
 ## Dependencies
 

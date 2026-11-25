@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-crypto-activity-feed` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-crypto-activity-feed)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-crypto-activity-feed
 ## Usage
 
 ```tsx
-import { List5Block } from "@/blocks/list-crypto-activity-feed"
+import { ListCryptoActivityFeedBlock } from "@/blocks/list-crypto-activity-feed"
 
 export default function Page() {
-  return <List5Block />
+  return <ListCryptoActivityFeedBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-5/index.tsx`
+- `src/blocks/application/list/list-crypto-activity-feed/index.tsx`
 
 ## Dependencies
 

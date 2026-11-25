@@ -8,7 +8,7 @@ category: Event Calendar
 
 **Block:** `event-calendar-shift-roster` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-shift-roster)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/event-calendar-shift-roster
 ## Usage
 
 ```tsx
-import { EventCalendar4Block } from "@/blocks/event-calendar-shift-roster"
+import { EventCalendarShiftRosterBlock } from "@/blocks/event-calendar-shift-roster"
 
 export default function Page() {
-  return <EventCalendar4Block />
+  return <EventCalendarShiftRosterBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/event-calendar/event-calendar-4/index.tsx`
+- `src/blocks/application/event-calendar/event-calendar-shift-roster/index.tsx`
 
 ## Dependencies
 

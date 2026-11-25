@@ -24,45 +24,129 @@ for (const category of fs.readdirSync(appRoot, { withFileTypes: true })) {
   }
 }
 
-const deepCapture = fs.existsSync(
-  path.join(root, "captures/application/app-shell/index.json"),
-)
-  ? JSON.parse(
-      fs.readFileSync(
-        path.join(root, "captures/application/app-shell/index.json"),
-        "utf8",
-      ),
+const deepCapturePath = (category) =>
+  path.join(root, `captures/application/${category}/index.json`)
+const readCapture = (category) =>
+  fs.existsSync(deepCapturePath(category))
+    ? JSON.parse(fs.readFileSync(deepCapturePath(category), "utf8"))
+    : []
+
+const kebab = (value) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+
+const STATUS = {
+  supported: "✅",
+  pending: "⏳",
+  unsupported: "❌",
+}
+const statusFor = (done, total) =>
+  done === total ? STATUS.supported : STATUS.pending
+
+const blockRegistryPath = path.join(root, "src/blocks/registry.json")
+const blockRegistry = fs.existsSync(blockRegistryPath)
+  ? JSON.parse(fs.readFileSync(blockRegistryPath, "utf8"))
+  : { items: [] }
+const dataGridBlocks = (blockRegistry.items ?? [])
+  .filter(
+    (item) =>
+      item.type === "registry:block" &&
+      (item.meta?.id ?? "").startsWith("data-grid-"),
+  )
+  .sort((a, b) => {
+    const category = (a.meta?.category ?? "").localeCompare(b.meta?.category ?? "")
+    if (category !== 0) return category
+    return (
+      Number((a.meta?.id ?? "").split("-").pop()) -
+      Number((b.meta?.id ?? "").split("-").pop())
     )
-  : []
+  })
+const dataGridRows = dataGridBlocks.map(
+  (item) =>
+    `| ${STATUS.supported} | ${item.title} | \`${item.meta?.id}\` | [docs](./blocks/${item.name}.md) | [preview](https://reui-unbound.pages.dev/?preview=${item.meta?.id}) | ${item.meta?.category} |`,
+)
+
+const componentRegistryPath = path.join(root, "src/blocks/components/registry.json")
+const componentRegistry = fs.existsSync(componentRegistryPath)
+  ? JSON.parse(fs.readFileSync(componentRegistryPath, "utf8"))
+  : { items: [] }
+const componentCounts = new Map()
+for (const item of componentRegistry.items ?? []) {
+  const filePath = item.files?.[0]?.path ?? ""
+  const component = filePath.split("/")[1]
+  if (!component) continue
+  const entry = componentCounts.get(component)
+  if (entry) entry.count += 1
+  else componentCounts.set(component, { count: 1, preview: `${item.name}-radix` })
+}
+const componentName = (slug) =>
+  slug
+    .split("-")
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(" ")
+const componentRows = [...componentCounts.entries()]
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(
+    ([slug, count]) =>
+      `| ${STATUS.supported} | ${componentName(slug)} | ${count.count} | [docs](./components/${slug}.md) | [preview](https://reui-unbound.pages.dev/?preview=${count.preview}) |`,
+  )
 
 const categories = [...new Set(manifest.map((item) => item.category))]
 const rows = categories.map((category) => {
   const items = manifest.filter((item) => item.category === category)
   const done = items.filter((item) => implemented.has(item.slug)).length
-  const status = done === 0 ? "Pending" : done === items.length ? "Done" : "In progress"
-  return `| ${category} | ${items.length} | ${done} | ${status} |`
+  return `| ${statusFor(done, items.length)} | ${category} | ${items.length} | ${done} |`
 })
 
-const appShell = manifest
-  .filter((item) => item.category === "App Shell")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
-const appShellRows = appShell.map((item) => {
-  const shots = deepCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
-  return `| \`${item.slug}\` | ${item.title} | ${shots} | ${implemented.has(item.slug) ? "Done" : "Pending"} |`
-})
+const categorySections = categories
+  .map((category) => {
+    const items = manifest
+      .filter((item) => item.category === category)
+      .sort((a, b) => a.title.localeCompare(b.title))
+    const capture = readCapture(kebab(category))
+    const tableRows = items.map((item) => {
+      const shots =
+        capture.find((entry) => entry.slug === item.slug)?.shots?.length ?? 0
+      return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | [docs](./blocks/${item.slug}.md) | [preview](https://reui-unbound.pages.dev/?preview=${item.slug}) | ${shots} |`
+    })
+    return `## ${category} (${items.length})
+
+| Status | Block name | Slug | Docs | Preview | Interaction captures |
+| :---: | --- | --- | --- | --- | ---: |
+${tableRows.join("\n")}`
+  })
+  .join("\n\n")
 
 const total = manifest.length
 const doneTotal = [...implemented].length
 
-const content = `# Application blocks tracker
+const content = `# Block coverage
 
-Port status for the 305 blocks at <https://reui.io/blocks/application>.
+Coverage status for every block in the catalogue: 305 application blocks from
+<https://reui.io/blocks/application> and 61 data grid blocks, plus a summary of
+the component examples.
+
 Generated by \`bun run tracker:generate\`; update block folders, then rerun it.
+
+**Legend:** ${STATUS.supported} Supported · ${STATUS.pending} Pending · ${STATUS.unsupported} Not supported
 
 Captured previews live in \`captures/application\`:
 
 - \`screenshots/<slug>-light.png\`, \`<slug>-dark.png\`, \`<slug>-interaction.png\` — 305 blocks.
 - \`app-shell/<slug>/*.png\` — deep interaction captures for the App Shell category.
+- \`navbar/<slug>/*.png\` — deep interaction captures for the Navbar category.
+- \`onboarding/<slug>/*.png\` — deep interaction and per-step captures for the Onboarding category.
+- \`profile/<slug>/*.png\` — deep interaction captures for the Profile category.
+- \`rich-text-editor/<slug>/*.png\` — deep interaction captures for the Rich Text Editor category.
+- \`schedule/<slug>/*.png\` — deep interaction captures for the Schedule category.
+- \`settings/<slug>/*.png\` — deep interaction captures for the Settings category.
+- \`sheet/<slug>/*.png\` — deep interaction captures for the Sheet category.
+- \`stats/<slug>/*.png\` — deep interaction captures for the Stats category.
+- \`timeline/<slug>/*.png\` — deep interaction captures for the Timeline category.
+- \`whiteboard/<slug>/*.png\` — deep interaction captures for the Whiteboard category.
+- \`wizard/<slug>/*.png\` — deep interaction captures for the Wizard category.
 - \`sources/<slug>.md\` — agent metadata from reui.io.
 
 > Pro block source is license-gated on reui.io ("Unlock the source"), so the
@@ -70,29 +154,57 @@ Captured previews live in \`captures/application\`:
 
 ## Progress
 
-- Captured: ${total} / ${total}
-- Implemented: ${doneTotal} / ${total}
+- Captured: ${STATUS.supported} ${total} / ${total}
+- Implemented: ${statusFor(doneTotal, total)} ${doneTotal} / ${total}
+- Data grid blocks: ${STATUS.supported} ${dataGridBlocks.length} / ${dataGridBlocks.length}
+- Component categories: ${STATUS.supported} ${componentCounts.size} / ${componentCounts.size} (${[...componentCounts.values()].reduce((sum, entry) => sum + entry.count, 0)} previews)
 
-| Category | Blocks | Implemented | Status |
-| --- | ---: | ---: | --- |
+| Status | Category | Blocks | Implemented |
+| :---: | --- | ---: | ---: |
 ${rows.join("\n")}
 
-## App Shell (36)
+${categorySections}
 
-| Block | Name | Interaction captures | Status |
-| --- | --- | ---: | --- |
-${appShellRows.join("\n")}
+## Data Grid (${dataGridBlocks.length})
+
+| Status | Block name | Id | Docs | Preview | Category |
+| :---: | --- | --- | --- | --- | --- |
+${dataGridRows.join("\n")}
+
+## Components
+
+${STATUS.supported} ${componentCounts.size} categories · ${[...componentCounts.values()].reduce((sum, entry) => sum + entry.count, 0)} previews. Full breakdown: [component coverage](./component-coverage.md).
 
 ## Workflow
 
 1. Capture: \`node scripts/capture-preview.mjs\` (all application blocks) and
-   \`node scripts/capture-app-shell.mjs\` (App Shell interaction states).
+   \`node scripts/capture-category.mjs <category>\` (deep interaction states).
 2. Implement in \`src/blocks/application/<category>/<slug>/index.tsx\`.
 3. Regenerate the block entries: \`node scripts/sync-app-shell.mjs\`.
 4. Regenerate the tracker: \`bun run tracker:generate\`.
 5. Validate: \`bun run typecheck && bun run lint && bun run build\`.
 `
 
+const componentContent = `# Component coverage
+
+Coverage status for the component examples in the registry. Every category has
+a generated docs page and installable previews.
+
+Generated by \`bun run tracker:generate\`; update component catalogs, then rerun it.
+
+**Legend:** ${STATUS.supported} Supported · ${STATUS.pending} Pending · ${STATUS.unsupported} Not supported
+
+- Categories: ${STATUS.supported} ${componentCounts.size} / ${componentCounts.size}
+- Previews: ${STATUS.supported} ${[...componentCounts.values()].reduce((sum, entry) => sum + entry.count, 0)}
+
+| Status | Component | Previews | Docs | Preview |
+| :---: | --- | ---: | --- | --- |
+${componentRows.join("\n")}
+`
+
 fs.mkdirSync(path.join(root, "docs"), { recursive: true })
-fs.writeFileSync(path.join(root, "docs/application-blocks.md"), content)
+fs.writeFileSync(path.join(root, "docs/block-coverage.md"), content)
+fs.writeFileSync(path.join(root, "docs/component-coverage.md"), componentContent)
+const legacyTracker = path.join(root, "docs/application-blocks.md")
+if (fs.existsSync(legacyTracker)) fs.rmSync(legacyTracker)
 console.log(`tracker: ${doneTotal}/${total} implemented, ${categories.length} categories`)

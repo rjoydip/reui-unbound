@@ -8,7 +8,7 @@ category: Dashboard
 
 **Block:** `dashboard-module-tracker` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-module-tracker)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dashboard-module-tracker
 ## Usage
 
 ```tsx
-import { Dashboard2Block } from "@/blocks/dashboard-module-tracker"
+import { DashboardModuleTrackerBlock } from "@/blocks/dashboard-module-tracker"
 
 export default function Page() {
-  return <Dashboard2Block />
+  return <DashboardModuleTrackerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dashboard/dashboard-2/index.tsx`
+- `src/blocks/application/dashboard/dashboard-module-tracker/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-auth-method-settings` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-auth-method-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-auth-method-settings
 ## Usage
 
 ```tsx
-import { Form4Block } from "@/blocks/form-auth-method-settings"
+import { FormAuthMethodSettingsBlock } from "@/blocks/form-auth-method-settings"
 
 export default function Page() {
-  return <Form4Block />
+  return <FormAuthMethodSettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-4/index.tsx`
+- `src/blocks/application/form/form-auth-method-settings/index.tsx`
 
 ## Dependencies
 

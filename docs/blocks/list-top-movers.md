@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-top-movers` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-top-movers)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-top-movers
 ## Usage
 
 ```tsx
-import { List11Block } from "@/blocks/list-top-movers"
+import { ListTopMoversBlock } from "@/blocks/list-top-movers"
 
 export default function Page() {
-  return <List11Block />
+  return <ListTopMoversBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-11/index.tsx`
+- `src/blocks/application/list/list-top-movers/index.tsx`
 
 ## Dependencies
 

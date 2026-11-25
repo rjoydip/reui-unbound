@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-framed-password-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-framed-password-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-framed-password-login
 ## Usage
 
 ```tsx
-import { Auth4Block } from "@/blocks/auth-framed-password-login"
+import { AuthFramedPasswordLoginBlock } from "@/blocks/auth-framed-password-login"
 
 export default function Page() {
-  return <Auth4Block />
+  return <AuthFramedPasswordLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-4/index.tsx`
+- `src/blocks/application/auth/auth-framed-password-login/index.tsx`
 
 ## Dependencies
 

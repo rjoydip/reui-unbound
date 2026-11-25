@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-operations-workbench` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-operations-workbench)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-operations-workbench
 ## Usage
 
 ```tsx
-import { AppShell11Block } from "@/blocks/app-shell-operations-workbench"
+import { AppShellOperationsWorkbenchBlock } from "@/blocks/app-shell-operations-workbench"
 
 export default function Page() {
-  return <AppShell11Block />
+  return <AppShellOperationsWorkbenchBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-11/index.tsx`
+- `src/blocks/application/app-shell/app-shell-operations-workbench/index.tsx`
 
 ## Dependencies
 

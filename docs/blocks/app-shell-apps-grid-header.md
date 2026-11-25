@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-apps-grid-header` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-apps-grid-header)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-apps-grid-header
 ## Usage
 
 ```tsx
-import { AppShell12Block } from "@/blocks/app-shell-apps-grid-header"
+import { AppShellAppsGridHeaderBlock } from "@/blocks/app-shell-apps-grid-header"
 
 export default function Page() {
-  return <AppShell12Block />
+  return <AppShellAppsGridHeaderBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-12/index.tsx`
+- `src/blocks/application/app-shell/app-shell-apps-grid-header/index.tsx`
 
 ## Dependencies
 

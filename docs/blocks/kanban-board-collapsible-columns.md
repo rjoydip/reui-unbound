@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-collapsible-columns` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-collapsible-columns)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-collapsible-columns
 ## Usage
 
 ```tsx
-import { KanbanBoard2Block } from "@/blocks/kanban-board-collapsible-columns"
+import { KanbanBoardCollapsibleColumnsBlock } from "@/blocks/kanban-board-collapsible-columns"
 
 export default function Page() {
-  return <KanbanBoard2Block />
+  return <KanbanBoardCollapsibleColumnsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-2/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-collapsible-columns/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-wallet-transfers` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-wallet-transfers)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-wallet-transfers
 ## Usage
 
 ```tsx
-import { List6Block } from "@/blocks/list-wallet-transfers"
+import { ListWalletTransfersBlock } from "@/blocks/list-wallet-transfers"
 
 export default function Page() {
-  return <List6Block />
+  return <ListWalletTransfersBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-6/index.tsx`
+- `src/blocks/application/list/list-wallet-transfers/index.tsx`
 
 ## Dependencies
 

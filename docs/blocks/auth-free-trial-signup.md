@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-free-trial-signup` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-free-trial-signup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-free-trial-signup
 ## Usage
 
 ```tsx
-import { Auth5Block } from "@/blocks/auth-free-trial-signup"
+import { AuthFreeTrialSignupBlock } from "@/blocks/auth-free-trial-signup"
 
 export default function Page() {
-  return <Auth5Block />
+  return <AuthFreeTrialSignupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-5/index.tsx`
+- `src/blocks/application/auth/auth-free-trial-signup/index.tsx`
 
 ## Dependencies
 

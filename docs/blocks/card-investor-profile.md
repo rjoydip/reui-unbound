@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-investor-profile` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-investor-profile)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-investor-profile
 ## Usage
 
 ```tsx
-import { Card3Block } from "@/blocks/card-investor-profile"
+import { CardInvestorProfileBlock } from "@/blocks/card-investor-profile"
 
 export default function Page() {
-  return <Card3Block />
+  return <CardInvestorProfileBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-3/index.tsx`
+- `src/blocks/application/card/card-investor-profile/index.tsx`
 
 ## Dependencies
 

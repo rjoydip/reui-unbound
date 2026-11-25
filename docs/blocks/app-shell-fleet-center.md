@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-fleet-center` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-33)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-fleet-center)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-33/index.tsx`
+- `src/blocks/application/app-shell/app-shell-fleet-center/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-order-kpi-list` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-order-kpi-list)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-order-kpi-list
 ## Usage
 
 ```tsx
-import { List1Block } from "@/blocks/list-order-kpi-list"
+import { ListOrderKpiListBlock } from "@/blocks/list-order-kpi-list"
 
 export default function Page() {
-  return <List1Block />
+  return <ListOrderKpiListBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-1/index.tsx`
+- `src/blocks/application/list/list-order-kpi-list/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-to-do-ai-assistant` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-18)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-to-do-ai-assistant)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-to-do-ai-assistant
 ## Usage
 
 ```tsx
-import { AppShell18Block } from "@/blocks/app-shell-to-do-ai-assistant"
+import { AppShellToDoAiAssistantBlock } from "@/blocks/app-shell-to-do-ai-assistant"
 
 export default function Page() {
-  return <AppShell18Block />
+  return <AppShellToDoAiAssistantBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-18/index.tsx`
+- `src/blocks/application/app-shell/app-shell-to-do-ai-assistant/index.tsx`
 
 ## Dependencies
 

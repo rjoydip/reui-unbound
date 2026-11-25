@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-enable-organizations` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-14)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-enable-organizations)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-enable-organizations
 ## Usage
 
 ```tsx
-import { EmptyState14Block } from "@/blocks/empty-state-enable-organizations"
+import { EmptyStateEnableOrganizationsBlock } from "@/blocks/empty-state-enable-organizations"
 
 export default function Page() {
-  return <EmptyState14Block />
+  return <EmptyStateEnableOrganizationsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-14/index.tsx`
+- `src/blocks/application/empty-state/empty-state-enable-organizations/index.tsx`
 
 ## Dependencies
 

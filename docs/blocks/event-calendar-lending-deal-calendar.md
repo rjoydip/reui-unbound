@@ -8,7 +8,7 @@ category: Event Calendar
 
 **Block:** `event-calendar-lending-deal-calendar` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-lending-deal-calendar)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/event-calendar-lending-deal-calendar
 ## Usage
 
 ```tsx
-import { EventCalendar6Block } from "@/blocks/event-calendar-lending-deal-calendar"
+import { EventCalendarLendingDealCalendarBlock } from "@/blocks/event-calendar-lending-deal-calendar"
 
 export default function Page() {
-  return <EventCalendar6Block />
+  return <EventCalendarLendingDealCalendarBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/event-calendar/event-calendar-6/index.tsx`
+- `src/blocks/application/event-calendar/event-calendar-lending-deal-calendar/index.tsx`
 
 ## Dependencies
 

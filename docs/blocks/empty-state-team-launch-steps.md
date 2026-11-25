@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-team-launch-steps` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-team-launch-steps)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-team-launch-steps
 ## Usage
 
 ```tsx
-import { EmptyState6Block } from "@/blocks/empty-state-team-launch-steps"
+import { EmptyStateTeamLaunchStepsBlock } from "@/blocks/empty-state-team-launch-steps"
 
 export default function Page() {
-  return <EmptyState6Block />
+  return <EmptyStateTeamLaunchStepsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-6/index.tsx`
+- `src/blocks/application/empty-state/empty-state-team-launch-steps/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-model-picker-chat` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-17)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-model-picker-chat)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-model-picker-chat
 ## Usage
 
 ```tsx
-import { AppShell17Block } from "@/blocks/app-shell-model-picker-chat"
+import { AppShellModelPickerChatBlock } from "@/blocks/app-shell-model-picker-chat"
 
 export default function Page() {
-  return <AppShell17Block />
+  return <AppShellModelPickerChatBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-17/index.tsx`
+- `src/blocks/application/app-shell/app-shell-model-picker-chat/index.tsx`
 
 ## Dependencies
 

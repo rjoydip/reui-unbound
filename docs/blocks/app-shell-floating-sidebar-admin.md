@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-floating-sidebar-admin` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-floating-sidebar-admin)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-floating-sidebar-admin
 ## Usage
 
 ```tsx
-import { AppShell2Block } from "@/blocks/app-shell-floating-sidebar-admin"
+import { AppShellFloatingSidebarAdminBlock } from "@/blocks/app-shell-floating-sidebar-admin"
 
 export default function Page() {
-  return <AppShell2Block />
+  return <AppShellFloatingSidebarAdminBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-2/index.tsx`
+- `src/blocks/application/app-shell/app-shell-floating-sidebar-admin/index.tsx`
 
 ## Dependencies
 

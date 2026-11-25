@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-calendar-contacts-hub` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-calendar-contacts-hub)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-calendar-contacts-hub
 ## Usage
 
 ```tsx
-import { AppShell5Block } from "@/blocks/app-shell-calendar-contacts-hub"
+import { AppShellCalendarContactsHubBlock } from "@/blocks/app-shell-calendar-contacts-hub"
 
 export default function Page() {
-  return <AppShell5Block />
+  return <AppShellCalendarContactsHubBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-5/index.tsx`
+- `src/blocks/application/app-shell/app-shell-calendar-contacts-hub/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-magic-link-card` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-magic-link-card)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-magic-link-card
 ## Usage
 
 ```tsx
-import { Auth7Block } from "@/blocks/auth-magic-link-card"
+import { AuthMagicLinkCardBlock } from "@/blocks/auth-magic-link-card"
 
 export default function Page() {
-  return <Auth7Block />
+  return <AuthMagicLinkCardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-7/index.tsx`
+- `src/blocks/application/auth/auth-magic-link-card/index.tsx`
 
 ## Dependencies
 

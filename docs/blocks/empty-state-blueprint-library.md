@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-blueprint-library` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-blueprint-library)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-blueprint-library
 ## Usage
 
 ```tsx
-import { EmptyState10Block } from "@/blocks/empty-state-blueprint-library"
+import { EmptyStateBlueprintLibraryBlock } from "@/blocks/empty-state-blueprint-library"
 
 export default function Page() {
-  return <EmptyState10Block />
+  return <EmptyStateBlueprintLibraryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-10/index.tsx`
+- `src/blocks/application/empty-state/empty-state-blueprint-library/index.tsx`
 
 ## Dependencies
 

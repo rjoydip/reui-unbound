@@ -8,7 +8,7 @@ category: Event Calendar
 
 **Block:** `event-calendar-mini-month-calendar` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-mini-month-calendar)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/event-calendar-mini-month-calendar
 ## Usage
 
 ```tsx
-import { EventCalendar2Block } from "@/blocks/event-calendar-mini-month-calendar"
+import { EventCalendarMiniMonthCalendarBlock } from "@/blocks/event-calendar-mini-month-calendar"
 
 export default function Page() {
-  return <EventCalendar2Block />
+  return <EventCalendarMiniMonthCalendarBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/event-calendar/event-calendar-2/index.tsx`
+- `src/blocks/application/event-calendar/event-calendar-mini-month-calendar/index.tsx`
 
 ## Dependencies
 

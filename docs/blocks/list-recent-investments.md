@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-recent-investments` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-recent-investments)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-recent-investments
 ## Usage
 
 ```tsx
-import { List10Block } from "@/blocks/list-recent-investments"
+import { ListRecentInvestmentsBlock } from "@/blocks/list-recent-investments"
 
 export default function Page() {
-  return <List10Block />
+  return <ListRecentInvestmentsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-10/index.tsx`
+- `src/blocks/application/list/list-recent-investments/index.tsx`
 
 ## Dependencies
 

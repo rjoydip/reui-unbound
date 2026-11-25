@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-project-deadline-cards` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-21)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-project-deadline-cards)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-project-deadline-cards
 ## Usage
 
 ```tsx
-import { Card21Block } from "@/blocks/card-project-deadline-cards"
+import { CardProjectDeadlineCardsBlock } from "@/blocks/card-project-deadline-cards"
 
 export default function Page() {
-  return <Card21Block />
+  return <CardProjectDeadlineCardsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-21/index.tsx`
+- `src/blocks/application/card/card-project-deadline-cards/index.tsx`
 
 ## Dependencies
 

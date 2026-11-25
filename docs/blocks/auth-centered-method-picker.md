@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-centered-method-picker` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-17)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-centered-method-picker)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-centered-method-picker
 ## Usage
 
 ```tsx
-import { Auth17Block } from "@/blocks/auth-centered-method-picker"
+import { AuthCenteredMethodPickerBlock } from "@/blocks/auth-centered-method-picker"
 
 export default function Page() {
-  return <Auth17Block />
+  return <AuthCenteredMethodPickerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-17/index.tsx`
+- `src/blocks/application/auth/auth-centered-method-picker/index.tsx`
 
 ## Dependencies
 

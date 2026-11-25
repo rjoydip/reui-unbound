@@ -8,7 +8,7 @@ category: Gantt
 
 **Block:** `gantt-resource-capacity` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-resource-capacity)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/gantt-resource-capacity
 ## Usage
 
 ```tsx
-import { Gantt4Block } from "@/blocks/gantt-resource-capacity"
+import { GanttResourceCapacityBlock } from "@/blocks/gantt-resource-capacity"
 
 export default function Page() {
-  return <Gantt4Block />
+  return <GanttResourceCapacityBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/gantt/gantt-4/index.tsx`
+- `src/blocks/application/gantt/gantt-resource-capacity/index.tsx`
 
 ## Dependencies
 

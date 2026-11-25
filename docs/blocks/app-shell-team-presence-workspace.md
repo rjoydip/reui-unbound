@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-team-presence-workspace` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-team-presence-workspace)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-team-presence-workspace
 ## Usage
 
 ```tsx
-import { AppShell9Block } from "@/blocks/app-shell-team-presence-workspace"
+import { AppShellTeamPresenceWorkspaceBlock } from "@/blocks/app-shell-team-presence-workspace"
 
 export default function Page() {
-  return <AppShell9Block />
+  return <AppShellTeamPresenceWorkspaceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-9/index.tsx`
+- `src/blocks/application/app-shell/app-shell-team-presence-workspace/index.tsx`
 
 ## Dependencies
 

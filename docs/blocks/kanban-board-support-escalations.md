@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-support-escalations` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-support-escalations)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-support-escalations
 ## Usage
 
 ```tsx
-import { KanbanBoard6Block } from "@/blocks/kanban-board-support-escalations"
+import { KanbanBoardSupportEscalationsBlock } from "@/blocks/kanban-board-support-escalations"
 
 export default function Page() {
-  return <KanbanBoard6Block />
+  return <KanbanBoardSupportEscalationsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-6/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-support-escalations/index.tsx`
 
 ## Dependencies
 

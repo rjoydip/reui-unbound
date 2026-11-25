@@ -88,6 +88,17 @@ import { FORM_BLOCKS } from "@/blocks/application/form/~blocks"
 import { GANTT_BLOCKS } from "@/blocks/application/gantt/~blocks"
 import { KANBAN_BOARD_BLOCKS } from "@/blocks/application/kanban-board/~blocks"
 import { LIST_BLOCKS } from "@/blocks/application/list/~blocks"
+import { NAVBAR_BLOCKS } from "@/blocks/application/navbar/~blocks"
+import { ONBOARDING_BLOCKS } from "@/blocks/application/onboarding/~blocks"
+import { PROFILE_BLOCKS } from "@/blocks/application/profile/~blocks"
+import { RICH_TEXT_EDITOR_BLOCKS } from "@/blocks/application/rich-text-editor/~blocks"
+import { SCHEDULE_BLOCKS } from "@/blocks/application/schedule/~blocks"
+import { SETTINGS_BLOCKS } from "@/blocks/application/settings/~blocks"
+import { SHEET_BLOCKS } from "@/blocks/application/sheet/~blocks"
+import { STATS_BLOCKS } from "@/blocks/application/stats/~blocks"
+import { TIMELINE_BLOCKS } from "@/blocks/application/timeline/~blocks"
+import { WHITEBOARD_BLOCKS } from "@/blocks/application/whiteboard/~blocks"
+import { WIZARD_BLOCKS } from "@/blocks/application/wizard/~blocks"
 import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
 
 
@@ -1860,6 +1871,17 @@ export const BLOCKS: BlockEntry[] = [
   ...GANTT_BLOCKS,
   ...KANBAN_BOARD_BLOCKS,
   ...LIST_BLOCKS,
+  ...NAVBAR_BLOCKS,
+  ...ONBOARDING_BLOCKS,
+  ...PROFILE_BLOCKS,
+  ...RICH_TEXT_EDITOR_BLOCKS,
+  ...SCHEDULE_BLOCKS,
+  ...SETTINGS_BLOCKS,
+  ...SHEET_BLOCKS,
+  ...STATS_BLOCKS,
+  ...TIMELINE_BLOCKS,
+  ...WHITEBOARD_BLOCKS,
+  ...WIZARD_BLOCKS,
 ]
 
 export function blocksInCategory(category: string) {

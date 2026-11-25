@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-community-feed-app` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-community-feed-app)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-community-feed-app
 ## Usage
 
 ```tsx
-import { AppShell13Block } from "@/blocks/app-shell-community-feed-app"
+import { AppShellCommunityFeedAppBlock } from "@/blocks/app-shell-community-feed-app"
 
 export default function Page() {
-  return <AppShell13Block />
+  return <AppShellCommunityFeedAppBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-13/index.tsx`
+- `src/blocks/application/app-shell/app-shell-community-feed-app/index.tsx`
 
 ## Dependencies
 

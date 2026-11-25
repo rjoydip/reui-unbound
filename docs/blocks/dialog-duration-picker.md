@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-duration-picker` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-duration-picker)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-duration-picker
 ## Usage
 
 ```tsx
-import { Dialog1Block } from "@/blocks/dialog-duration-picker"
+import { DialogDurationPickerBlock } from "@/blocks/dialog-duration-picker"
 
 export default function Page() {
-  return <Dialog1Block />
+  return <DialogDurationPickerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-1/index.tsx`
+- `src/blocks/application/dialog/dialog-duration-picker/index.tsx`
 
 ## Dependencies
 

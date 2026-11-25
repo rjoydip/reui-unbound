@@ -8,7 +8,7 @@ category: Flow
 
 **Block:** `flow-growth-impact-map` · **Category:** Flow
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=flow-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=flow-growth-impact-map)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/flow-growth-impact-map
 ## Usage
 
 ```tsx
-import { Flow4Block } from "@/blocks/flow-growth-impact-map"
+import { FlowGrowthImpactMapBlock } from "@/blocks/flow-growth-impact-map"
 
 export default function Page() {
-  return <Flow4Block />
+  return <FlowGrowthImpactMapBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/flow/flow-4/index.tsx`
+- `src/blocks/application/flow/flow-growth-impact-map/index.tsx`
 
 ## Dependencies
 

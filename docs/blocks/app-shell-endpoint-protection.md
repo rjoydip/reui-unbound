@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-endpoint-protection` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-32)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-endpoint-protection)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-32/index.tsx`
+- `src/blocks/application/app-shell/app-shell-endpoint-protection/index.tsx`
 
 ## Dependencies
 

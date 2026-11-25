@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-security-scope-console` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-26)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-security-scope-console)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-26/index.tsx`
+- `src/blocks/application/app-shell/app-shell-security-scope-console/index.tsx`
 
 ## Dependencies
 

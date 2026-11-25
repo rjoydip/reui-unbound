@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-section-tile-rail` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-29)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-section-tile-rail)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-29/index.tsx`
+- `src/blocks/application/app-shell/app-shell-section-tile-rail/index.tsx`
 
 ## Dependencies
 

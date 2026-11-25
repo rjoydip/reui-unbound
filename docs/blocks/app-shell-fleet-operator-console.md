@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-fleet-operator-console` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-22)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-fleet-operator-console)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-22/index.tsx`
+- `src/blocks/application/app-shell/app-shell-fleet-operator-console/index.tsx`
 
 ## Dependencies
 

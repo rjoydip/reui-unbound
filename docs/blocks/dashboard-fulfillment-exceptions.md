@@ -8,7 +8,7 @@ category: Dashboard
 
 **Block:** `dashboard-fulfillment-exceptions` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-fulfillment-exceptions)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dashboard-fulfillment-exceptions
 ## Usage
 
 ```tsx
-import { Dashboard1Block } from "@/blocks/dashboard-fulfillment-exceptions"
+import { DashboardFulfillmentExceptionsBlock } from "@/blocks/dashboard-fulfillment-exceptions"
 
 export default function Page() {
-  return <Dashboard1Block />
+  return <DashboardFulfillmentExceptionsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dashboard/dashboard-1/index.tsx`
+- `src/blocks/application/dashboard/dashboard-fulfillment-exceptions/index.tsx`
 
 ## Dependencies
 

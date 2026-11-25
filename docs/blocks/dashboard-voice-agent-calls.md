@@ -8,7 +8,7 @@ category: Dashboard
 
 **Block:** `dashboard-voice-agent-calls` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-voice-agent-calls)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dashboard-voice-agent-calls
 ## Usage
 
 ```tsx
-import { Dashboard4Block } from "@/blocks/dashboard-voice-agent-calls"
+import { DashboardVoiceAgentCallsBlock } from "@/blocks/dashboard-voice-agent-calls"
 
 export default function Page() {
-  return <Dashboard4Block />
+  return <DashboardVoiceAgentCallsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dashboard/dashboard-4/index.tsx`
+- `src/blocks/application/dashboard/dashboard-voice-agent-calls/index.tsx`
 
 ## Dependencies
 

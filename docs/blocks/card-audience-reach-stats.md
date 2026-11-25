@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-audience-reach-stats` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-31)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-audience-reach-stats)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-audience-reach-stats
 ## Usage
 
 ```tsx
-import { Card31Block } from "@/blocks/card-audience-reach-stats"
+import { CardAudienceReachStatsBlock } from "@/blocks/card-audience-reach-stats"
 
 export default function Page() {
-  return <Card31Block />
+  return <CardAudienceReachStatsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-31/index.tsx`
+- `src/blocks/application/card/card-audience-reach-stats/index.tsx`
 
 ## Dependencies
 

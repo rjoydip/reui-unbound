@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-integrations-directory` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-integrations-directory)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-integrations-directory
 ## Usage
 
 ```tsx
-import { List8Block } from "@/blocks/list-integrations-directory"
+import { ListIntegrationsDirectoryBlock } from "@/blocks/list-integrations-directory"
 
 export default function Page() {
-  return <List8Block />
+  return <ListIntegrationsDirectoryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-8/index.tsx`
+- `src/blocks/application/list/list-integrations-directory/index.tsx`
 
 ## Dependencies
 

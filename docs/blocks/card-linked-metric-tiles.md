@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-linked-metric-tiles` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-26)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-linked-metric-tiles)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-linked-metric-tiles
 ## Usage
 
 ```tsx
-import { Card26Block } from "@/blocks/card-linked-metric-tiles"
+import { CardLinkedMetricTilesBlock } from "@/blocks/card-linked-metric-tiles"
 
 export default function Page() {
-  return <Card26Block />
+  return <CardLinkedMetricTilesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-26/index.tsx`
+- `src/blocks/application/card/card-linked-metric-tiles/index.tsx`
 
 ## Dependencies
 

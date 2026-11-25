@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-crypto-portfolio` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-crypto-portfolio)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-crypto-portfolio
 ## Usage
 
 ```tsx
-import { List4Block } from "@/blocks/list-crypto-portfolio"
+import { ListCryptoPortfolioBlock } from "@/blocks/list-crypto-portfolio"
 
 export default function Page() {
-  return <List4Block />
+  return <ListCryptoPortfolioBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-4/index.tsx`
+- `src/blocks/application/list/list-crypto-portfolio/index.tsx`
 
 ## Dependencies
 

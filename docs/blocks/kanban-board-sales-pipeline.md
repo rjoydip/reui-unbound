@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-sales-pipeline` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-sales-pipeline)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-sales-pipeline
 ## Usage
 
 ```tsx
-import { KanbanBoard3Block } from "@/blocks/kanban-board-sales-pipeline"
+import { KanbanBoardSalesPipelineBlock } from "@/blocks/kanban-board-sales-pipeline"
 
 export default function Page() {
-  return <KanbanBoard3Block />
+  return <KanbanBoardSalesPipelineBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-3/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-sales-pipeline/index.tsx`
 
 ## Dependencies
 
