@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-new-connection` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-23)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-new-connection)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-new-connection
 ## Usage
 
 ```tsx
-import { Sheet23Block } from "@/blocks/sheet-new-connection"
+import { SheetNewConnectionBlock } from "@/blocks/sheet-new-connection"
 
 export default function Page() {
-  return <Sheet23Block />
+  return <SheetNewConnectionBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-23/index.tsx`
+- `src/blocks/application/sheet/sheet-new-connection/index.tsx`
 
 ## Dependencies
 

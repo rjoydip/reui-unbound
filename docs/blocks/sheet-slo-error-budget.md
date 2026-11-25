@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-slo-error-budget` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-20)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-slo-error-budget)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-slo-error-budget
 ## Usage
 
 ```tsx
-import { Sheet20Block } from "@/blocks/sheet-slo-error-budget"
+import { SheetSloErrorBudgetBlock } from "@/blocks/sheet-slo-error-budget"
 
 export default function Page() {
-  return <Sheet20Block />
+  return <SheetSloErrorBudgetBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-20/index.tsx`
+- `src/blocks/application/sheet/sheet-slo-error-budget/index.tsx`
 
 ## Dependencies
 

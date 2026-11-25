@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-onboarding-dialog` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-onboarding-dialog)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-onboarding-dialog
 ## Usage
 
 ```tsx
-import { Onboarding5Block } from "@/blocks/onboarding-onboarding-dialog"
+import { OnboardingOnboardingDialogBlock } from "@/blocks/onboarding-onboarding-dialog"
 
 export default function Page() {
-  return <Onboarding5Block />
+  return <OnboardingOnboardingDialogBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-5/index.tsx`
+- `src/blocks/application/onboarding/onboarding-onboarding-dialog/index.tsx`
 
 ## Dependencies
 

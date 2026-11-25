@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-section-add-prompt` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-section-add-prompt)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-section-add-prompt
 ## Usage
 
 ```tsx
-import { EmptyState11Block } from "@/blocks/empty-state-section-add-prompt"
+import { EmptyStateSectionAddPromptBlock } from "@/blocks/empty-state-section-add-prompt"
 
 export default function Page() {
-  return <EmptyState11Block />
+  return <EmptyStateSectionAddPromptBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-11/index.tsx`
+- `src/blocks/application/empty-state/empty-state-section-add-prompt/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-project-workspace` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-project-workspace)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-project-workspace
 ## Usage
 
 ```tsx
-import { Navbar1Block } from "@/blocks/navbar-project-workspace"
+import { NavbarProjectWorkspaceBlock } from "@/blocks/navbar-project-workspace"
 
 export default function Page() {
-  return <Navbar1Block />
+  return <NavbarProjectWorkspaceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-1/index.tsx`
+- `src/blocks/application/navbar/navbar-project-workspace/index.tsx`
 
 ## Dependencies
 

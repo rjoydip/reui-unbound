@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-template-library` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-template-library)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-template-library
 ## Usage
 
 ```tsx
-import { Dialog5Block } from "@/blocks/dialog-template-library"
+import { DialogTemplateLibraryBlock } from "@/blocks/dialog-template-library"
 
 export default function Page() {
-  return <Dialog5Block />
+  return <DialogTemplateLibraryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-5/index.tsx`
+- `src/blocks/application/dialog/dialog-template-library/index.tsx`
 
 ## Dependencies
 

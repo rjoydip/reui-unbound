@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-canary-rollout` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-15)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-canary-rollout)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-canary-rollout
 ## Usage
 
 ```tsx
-import { Sheet15Block } from "@/blocks/sheet-canary-rollout"
+import { SheetCanaryRolloutBlock } from "@/blocks/sheet-canary-rollout"
 
 export default function Page() {
-  return <Sheet15Block />
+  return <SheetCanaryRolloutBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-15/index.tsx`
+- `src/blocks/application/sheet/sheet-canary-rollout/index.tsx`
 
 ## Dependencies
 

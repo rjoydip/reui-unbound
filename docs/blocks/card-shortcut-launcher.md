@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-shortcut-launcher` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-17)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-shortcut-launcher)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-shortcut-launcher
 ## Usage
 
 ```tsx
-import { Card17Block } from "@/blocks/card-shortcut-launcher"
+import { CardShortcutLauncherBlock } from "@/blocks/card-shortcut-launcher"
 
 export default function Page() {
-  return <Card17Block />
+  return <CardShortcutLauncherBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-17/index.tsx`
+- `src/blocks/application/card/card-shortcut-launcher/index.tsx`
 
 ## Dependencies
 

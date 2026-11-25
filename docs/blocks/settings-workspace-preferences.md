@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-workspace-preferences` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-15)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-workspace-preferences)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-workspace-preferences
 ## Usage
 
 ```tsx
-import { Settings15Block } from "@/blocks/settings-workspace-preferences"
+import { SettingsWorkspacePreferencesBlock } from "@/blocks/settings-workspace-preferences"
 
 export default function Page() {
-  return <Settings15Block />
+  return <SettingsWorkspacePreferencesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-15/index.tsx`
+- `src/blocks/application/settings/settings-workspace-preferences/index.tsx`
 
 ## Dependencies
 

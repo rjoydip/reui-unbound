@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-marketing-hero-signup` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-marketing-hero-signup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-marketing-hero-signup
 ## Usage
 
 ```tsx
-import { Onboarding9Block } from "@/blocks/onboarding-marketing-hero-signup"
+import { OnboardingMarketingHeroSignupBlock } from "@/blocks/onboarding-marketing-hero-signup"
 
 export default function Page() {
-  return <Onboarding9Block />
+  return <OnboardingMarketingHeroSignupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-9/index.tsx`
+- `src/blocks/application/onboarding/onboarding-marketing-hero-signup/index.tsx`
 
 ## Dependencies
 

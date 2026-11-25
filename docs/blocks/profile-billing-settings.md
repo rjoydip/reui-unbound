@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-billing-settings` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-billing-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-billing-settings
 ## Usage
 
 ```tsx
-import { Profile8Block } from "@/blocks/profile-billing-settings"
+import { ProfileBillingSettingsBlock } from "@/blocks/profile-billing-settings"
 
 export default function Page() {
-  return <Profile8Block />
+  return <ProfileBillingSettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-8/index.tsx`
+- `src/blocks/application/profile/profile-billing-settings/index.tsx`
 
 ## Dependencies
 

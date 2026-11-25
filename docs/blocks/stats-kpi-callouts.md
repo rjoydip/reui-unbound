@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-kpi-callouts` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-15)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-kpi-callouts)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-kpi-callouts
 ## Usage
 
 ```tsx
-import { Stats15Block } from "@/blocks/stats-kpi-callouts"
+import { StatsKpiCalloutsBlock } from "@/blocks/stats-kpi-callouts"
 
 export default function Page() {
-  return <Stats15Block />
+  return <StatsKpiCalloutsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-15/index.tsx`
+- `src/blocks/application/stats/stats-kpi-callouts/index.tsx`
 
 ## Dependencies
 

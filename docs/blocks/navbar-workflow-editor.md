@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-workflow-editor` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-workflow-editor)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-workflow-editor
 ## Usage
 
 ```tsx
-import { Navbar5Block } from "@/blocks/navbar-workflow-editor"
+import { NavbarWorkflowEditorBlock } from "@/blocks/navbar-workflow-editor"
 
 export default function Page() {
-  return <Navbar5Block />
+  return <NavbarWorkflowEditorBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-5/index.tsx`
+- `src/blocks/application/navbar/navbar-workflow-editor/index.tsx`
 
 ## Dependencies
 

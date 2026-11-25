@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-compliance-checks` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-compliance-checks)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-compliance-checks
 ## Usage
 
 ```tsx
-import { Stats13Block } from "@/blocks/stats-compliance-checks"
+import { StatsComplianceChecksBlock } from "@/blocks/stats-compliance-checks"
 
 export default function Page() {
-  return <Stats13Block />
+  return <StatsComplianceChecksBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-13/index.tsx`
+- `src/blocks/application/stats/stats-compliance-checks/index.tsx`
 
 ## Dependencies
 

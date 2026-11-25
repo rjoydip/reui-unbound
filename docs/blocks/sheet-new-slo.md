@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-new-slo` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-21)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-new-slo)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-new-slo
 ## Usage
 
 ```tsx
-import { Sheet21Block } from "@/blocks/sheet-new-slo"
+import { SheetNewSloBlock } from "@/blocks/sheet-new-slo"
 
 export default function Page() {
-  return <Sheet21Block />
+  return <SheetNewSloBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-21/index.tsx`
+- `src/blocks/application/sheet/sheet-new-slo/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Rich Text Editor
 
 **Block:** `rich-text-editor-wiki-page-editor` · **Category:** Rich Text Editor
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-wiki-page-editor)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/rich-text-editor-wiki-page-editor
 ## Usage
 
 ```tsx
-import { RichTextEditor2Block } from "@/blocks/rich-text-editor-wiki-page-editor"
+import { RichTextEditorWikiPageEditorBlock } from "@/blocks/rich-text-editor-wiki-page-editor"
 
 export default function Page() {
-  return <RichTextEditor2Block />
+  return <RichTextEditorWikiPageEditorBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/rich-text-editor/rich-text-editor-2/index.tsx`
+- `src/blocks/application/rich-text-editor/rich-text-editor-wiki-page-editor/index.tsx`
 
 ## Dependencies
 

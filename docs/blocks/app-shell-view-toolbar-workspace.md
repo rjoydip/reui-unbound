@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-view-toolbar-workspace` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-14)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-view-toolbar-workspace)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-view-toolbar-workspace
 ## Usage
 
 ```tsx
-import { AppShell14Block } from "@/blocks/app-shell-view-toolbar-workspace"
+import { AppShellViewToolbarWorkspaceBlock } from "@/blocks/app-shell-view-toolbar-workspace"
 
 export default function Page() {
-  return <AppShell14Block />
+  return <AppShellViewToolbarWorkspaceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-14/index.tsx`
+- `src/blocks/application/app-shell/app-shell-view-toolbar-workspace/index.tsx`
 
 ## Dependencies
 

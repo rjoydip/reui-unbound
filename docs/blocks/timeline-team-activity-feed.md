@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-team-activity-feed` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-team-activity-feed)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-team-activity-feed
 ## Usage
 
 ```tsx
-import { Timeline4Block } from "@/blocks/timeline-team-activity-feed"
+import { TimelineTeamActivityFeedBlock } from "@/blocks/timeline-team-activity-feed"
 
 export default function Page() {
-  return <Timeline4Block />
+  return <TimelineTeamActivityFeedBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-4/index.tsx`
+- `src/blocks/application/timeline/timeline-team-activity-feed/index.tsx`
 
 ## Dependencies
 

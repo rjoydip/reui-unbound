@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-work-email-continue` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-16)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-work-email-continue)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-work-email-continue
 ## Usage
 
 ```tsx
-import { Auth16Block } from "@/blocks/auth-work-email-continue"
+import { AuthWorkEmailContinueBlock } from "@/blocks/auth-work-email-continue"
 
 export default function Page() {
-  return <Auth16Block />
+  return <AuthWorkEmailContinueBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-16/index.tsx`
+- `src/blocks/application/auth/auth-work-email-continue/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-ai-model-chat` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-ai-model-chat)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-ai-model-chat
 ## Usage
 
 ```tsx
-import { Sheet4Block } from "@/blocks/sheet-ai-model-chat"
+import { SheetAiModelChatBlock } from "@/blocks/sheet-ai-model-chat"
 
 export default function Page() {
-  return <Sheet4Block />
+  return <SheetAiModelChatBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-4/index.tsx`
+- `src/blocks/application/sheet/sheet-ai-model-chat/index.tsx`
 
 ## Dependencies
 

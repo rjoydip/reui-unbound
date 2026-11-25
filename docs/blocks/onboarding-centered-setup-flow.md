@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-centered-setup-flow` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-centered-setup-flow)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-centered-setup-flow
 ## Usage
 
 ```tsx
-import { Onboarding4Block } from "@/blocks/onboarding-centered-setup-flow"
+import { OnboardingCenteredSetupFlowBlock } from "@/blocks/onboarding-centered-setup-flow"
 
 export default function Page() {
-  return <Onboarding4Block />
+  return <OnboardingCenteredSetupFlowBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-4/index.tsx`
+- `src/blocks/application/onboarding/onboarding-centered-setup-flow/index.tsx`
 
 ## Dependencies
 

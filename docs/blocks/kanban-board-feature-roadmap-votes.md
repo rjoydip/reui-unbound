@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-feature-roadmap-votes` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-feature-roadmap-votes)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-feature-roadmap-votes
 ## Usage
 
 ```tsx
-import { KanbanBoard4Block } from "@/blocks/kanban-board-feature-roadmap-votes"
+import { KanbanBoardFeatureRoadmapVotesBlock } from "@/blocks/kanban-board-feature-roadmap-votes"
 
 export default function Page() {
-  return <KanbanBoard4Block />
+  return <KanbanBoardFeatureRoadmapVotesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-4/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-feature-roadmap-votes/index.tsx`
 
 ## Dependencies
 

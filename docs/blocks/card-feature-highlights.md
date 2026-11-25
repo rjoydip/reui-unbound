@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-feature-highlights` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-feature-highlights)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-feature-highlights
 ## Usage
 
 ```tsx
-import { Card2Block } from "@/blocks/card-feature-highlights"
+import { CardFeatureHighlightsBlock } from "@/blocks/card-feature-highlights"
 
 export default function Page() {
-  return <Card2Block />
+  return <CardFeatureHighlightsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-2/index.tsx`
+- `src/blocks/application/card/card-feature-highlights/index.tsx`
 
 ## Dependencies
 

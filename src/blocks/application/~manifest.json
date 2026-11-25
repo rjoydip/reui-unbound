@@ -1,2134 +1,2134 @@
 [
   {
-    "slug": "app-shell-1",
+    "slug": "app-shell-icon-rail-dashboard",
     "category": "App Shell",
     "title": "Icon Rail Dashboard",
     "description": "Dashboard app shell with an icon-collapsible sidebar: workspace switcher, nested platform nav with count badges, pinned resources with row action menus, theme toggle, breadcrumb header. ReUI Badge, shadcn Sidebar, DropdownMenu, Avatar, Breadcrumb.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-1"
   },
   {
-    "slug": "app-shell-2",
+    "slug": "app-shell-floating-sidebar-admin",
     "category": "App Shell",
     "title": "Floating Sidebar Admin",
     "description": "App shell with a floating collapsible-to-icon Sidebar, command-K search Dialog, nested Platform nav with a live status pulse, workspace switcher Dropdown, and Breadcrumb header. Uses Sidebar, Breadcrumb, Avatar, Dialog, Kbd. Dashboard, admin panel.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-2"
   },
   {
-    "slug": "app-shell-3",
+    "slug": "app-shell-project-tracker-sidebar",
     "category": "App Shell",
     "title": "Project Tracker Sidebar",
     "description": "Inset collapsible sidebar dashboard shell with workspace switcher, command search, project donut progress rings, usage limit meter, and notifications popover. ReUI Frame, Badge, Rating plus shadcn Sidebar, Popover, DropdownMenu, Progress, Avatar.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-3"
   },
   {
-    "slug": "app-shell-4",
+    "slug": "app-shell-mail-inbox",
     "category": "App Shell",
     "title": "Mail Inbox",
     "description": "Mail and inbox shell: folder icon rail plus a wide 440px message list with live search, filter tabs, rich preview rows, and a selected-message action header (reply, star, delete). ReUI Badge, shadcn Sidebar, Tabs, Avatar, DropdownMenu.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-4"
   },
   {
-    "slug": "app-shell-5",
+    "slug": "app-shell-calendar-contacts-hub",
     "category": "App Shell",
     "title": "Calendar Contacts Hub",
     "description": "Calendar workspace with a dual-pane icon-rail Sidebar swapping mini-Calendar accounts, date-grouped Schedule, searchable Contacts, and Notifications. Uses ReUI Badge with shadcn Sidebar, Calendar, Avatar, DropdownMenu.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-5"
   },
   {
-    "slug": "app-shell-6",
+    "slug": "app-shell-team-calendar-panel",
     "category": "App Shell",
     "title": "Team Calendar Panel",
     "description": "Three-column workspace shell: dark collapsible nav rail with command search, team list and usage meter, breadcrumb header, and a slide-in right Calendar panel with agenda and account toggles. ReUI Frame, Badge, Rating plus shadcn Sidebar, Calendar.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-6"
   },
   {
-    "slug": "app-shell-7",
+    "slug": "app-shell-environment-switcher",
     "category": "App Shell",
     "title": "Environment Switcher",
     "description": "Header-first shell with a breadcrumb of org, app, and environment switcher dropdowns, a live system monitor popover with resource sparklines, command-palette search, and collapsible nested sidebar nav. shadcn Badge, Kbd, Sidebar, DropdownMenu.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-7"
   },
   {
-    "slug": "app-shell-8",
+    "slug": "app-shell-inventory-admin",
     "category": "App Shell",
     "title": "Inventory Admin",
     "description": "Two-level dashboard shell: icon rail plus a per-section secondary nav with live-metric/storage footers, org/app/env switchers, command-K search, and notifications drawer. ReUI Badge, Rating; shadcn Sidebar, Sheet, Dialog. Inventory, ops admin.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-8"
   },
   {
-    "slug": "app-shell-9",
+    "slug": "app-shell-team-presence-workspace",
     "category": "App Shell",
     "title": "Team Presence Workspace",
     "description": "Dark collapsible-sidebar team shell: presence member rail, notifications feed, command search, AI-credit usage card, workspace switcher. ReUI Frame, Badge; shadcn Sidebar, Avatar, DropdownMenu, Progress. For SaaS dashboards and team apps.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-9"
   },
   {
-    "slug": "app-shell-10",
+    "slug": "app-shell-ai-agents-console",
     "category": "App Shell",
     "title": "AI Agents Console",
     "description": "Inset sidebar shell for an AI agents console: command-K search, collapsible agent nav, projects with progress rings, usage-limit card, org and theme switcher, notifications popover. ReUI Frame, Badge, Rating; shadcn Sidebar, Popover, DropdownMenu.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-10"
   },
   {
-    "slug": "app-shell-11",
+    "slug": "app-shell-operations-workbench",
     "category": "App Shell",
     "title": "Operations Workbench",
     "description": "Dense operations console: collapsible nav, resizable split panes, an expandable bottom workbench sheet, and a right calendar and agenda rail. ReUI Badge, Frame, Rating with shadcn Sidebar, Resizable, Tabs, Calendar. Admin shell, SaaS dashboard.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-11"
   },
   {
-    "slug": "app-shell-12",
+    "slug": "app-shell-apps-grid-header",
     "category": "App Shell",
     "title": "Apps Grid Header",
     "description": "Dashboard shell: collapsible icon-rail sidebar with nested nav, Soon badges, and project progress rings, plus a header command-K search, rich notifications feed, apps grid, and theme account menu. ReUI Badge, Rating; shadcn Sidebar, Popover, Dialog.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-12"
   },
   {
-    "slug": "app-shell-13",
+    "slug": "app-shell-community-feed-app",
     "category": "App Shell",
     "title": "Community Feed App",
     "description": "Full-width header over a collapsible icon-rail sidebar for community feed apps. Search, Create button, avatar menu, theme toggle, grouped nav with badges, nested Manage Feeds dropdown. ReUI Badge, shadcn Sidebar, Button, Card, DropdownMenu, Avatar.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-13"
   },
   {
-    "slug": "app-shell-14",
+    "slug": "app-shell-view-toolbar-workspace",
     "category": "App Shell",
     "title": "View Toolbar Workspace",
     "description": "Three-region workspace shell: icon rail, a toggleable secondary nav that swaps per section, and a toolbar with List, Kanban, Calendar, Dashboard tabs plus Sort, View, Filter, Search. ReUI Badge, shadcn Sidebar, Tabs, DropdownMenu, Avatar.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-14"
   },
   {
-    "slug": "app-shell-15",
+    "slug": "app-shell-pinnable-favorites-nav",
     "category": "App Shell",
     "title": "Pinnable Favorites Nav",
     "description": "Dashboard shell with a fixed dark topbar over an icon-collapsible sidebar: workspace switcher, pin/unpin nav with badges, favorites group, gradient Upgrade menu, team avatars. ReUI Badge, shadcn Sidebar, DropdownMenu, Avatar, Button, Card.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-15"
   },
   {
-    "slug": "app-shell-16",
+    "slug": "app-shell-dual-sidebar-dashboard",
     "category": "App Shell",
     "title": "Dual Sidebar Dashboard",
     "description": "Two-level dashboard layout: icon rail plus a toggleable secondary nav that swaps per section, with workspace switcher, breadcrumb header, search, and account menu with theme toggle. ReUI Badge, shadcn Sidebar, DropdownMenu, Avatar.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-16"
   },
   {
-    "slug": "app-shell-17",
+    "slug": "app-shell-model-picker-chat",
     "category": "App Shell",
     "title": "Model Picker Chat",
     "description": "AI chat workspace: floating collapsible sidebar with a GPT-4/Claude/Gemini model picker, pinned and recent threads, a welcome canvas, and an InputGroup composer. shadcn Sidebar, DropdownMenu, Avatar, ReUI Badge. LLM assistant, chatbot, copilot UI.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-17"
   },
   {
-    "slug": "app-shell-18",
+    "slug": "app-shell-to-do-ai-assistant",
     "category": "App Shell",
     "title": "To-Do AI Assistant",
     "description": "Three-panel to-do shell: floating Sidebar with task lists, count Badges, color tags and a Progress focus card, plus a toggleable AI chat panel (in-flow at desktop, Sheet on mobile). Built on ReUI Badge, shadcn Sidebar, Dialog, DropdownMenu.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-18"
   },
   {
-    "slug": "app-shell-19",
+    "slug": "app-shell-scheduling-planner",
     "category": "App Shell",
     "title": "Scheduling Planner",
     "description": "Calendar app layout: inset Sidebar with a Calendar date picker, up-next agenda, calendars menu, account menu, and a header Day/Week/Month switcher. ReUI Badge, shadcn Sidebar, Calendar, DropdownMenu, Avatar. For scheduling apps and planners.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-19"
   },
   {
-    "slug": "app-shell-20",
+    "slug": "app-shell-webmail-client",
     "category": "App Shell",
     "title": "Webmail Client",
     "description": "Email workspace: inset Sidebar with account menu, compose dialog, folders, labels and contacts, a search and category-filter message list, a reading pane, and a right icon rail. shadcn Sidebar, Card, Empty, Dialog, ReUI Badge. Mail inbox, webmail UI.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-20"
   },
   {
-    "slug": "app-shell-21",
+    "slug": "app-shell-resizable-ai-chat",
     "category": "App Shell",
     "title": "Resizable AI Chat",
     "description": "AI chat workspace: resizable thread sidebar collapsing to an icon rail, pinned and grouped chats, a search palette, and a header model picker with memory toggle. shadcn Resizable, Sidebar, Dialog, ReUI Badge. Chatbot UI, AI assistant, LLM chat.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-21"
   },
   {
-    "slug": "app-shell-22",
+    "slug": "app-shell-fleet-operator-console",
     "category": "App Shell",
     "title": "Fleet Operator Console",
     "description": "Fleet operator console: sticky rail with a Robots section menu and account menu, a sonner access-request toast (host mounts Toaster), Sheet drawer below lg. shadcn Sidebar, DropdownMenu, Tooltip, ToggleGroup. Hero header dashboard, SaaS layout.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-22"
   },
   {
-    "slug": "app-shell-23",
+    "slug": "app-shell-team-project-switcher",
     "category": "App Shell",
     "title": "Team Project Switcher",
     "description": "Operations admin layout: Transport, Inspection and Recharge mission templates and a 9-row notifications Sheet with approvals and ratings. shadcn Sidebar, Breadcrumb, DropdownMenu, Sheet; ReUI Badge, Rating, Icon Tile. Robotics, IoT dashboard.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-23"
   },
   {
-    "slug": "app-shell-24",
+    "slug": "app-shell-ops-presence-console",
     "category": "App Shell",
     "title": "Ops Presence Console",
     "description": "Robotics ops shell: section nav folding into a bottom Drawer, ops toggles, presence status avatar badges and a sidebar footer account card. shadcn Sidebar, Sheet, Dialog, Drawer, DropdownMenu; ReUI Badge, Rating. Fleet admin, warehouse console.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-24"
   },
   {
-    "slug": "app-shell-25",
+    "slug": "app-shell-mission-control",
     "category": "App Shell",
     "title": "Mission Control",
     "description": "Delivery robot dispatch console: per-mission tick chart, run stats, collapsible Scheduled, Active, Paused and Failed sections, and a header search that filters robots. ReUI Frame, Badge; shadcn Sidebar, Tabs, InputGroup. Fleet ops, logistics.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-25"
   },
   {
-    "slug": "app-shell-26",
+    "slug": "app-shell-security-scope-console",
     "category": "App Shell",
     "title": "Security Scope Console",
     "description": "SOC dashboard layout: top bar with workspace picker, section pills, Cmd+K search, notifications feed and Run Scan; add or duplicate scopes. ReUI Sortable, Badge, Rating; shadcn Sidebar, Tabs, Drawer, Popover. SIEM, threat monitoring, admin UI.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-26"
   },
   {
-    "slug": "app-shell-27",
+    "slug": "app-shell-route-search-sidebar",
     "category": "App Shell",
     "title": "Route Search Sidebar",
     "description": "Robot fleet security console with no top bar: Cmd+F focuses route search, grip-handle sub-scope reordering, Add buttons that append draft rows, count and status badges. ReUI Sortable, Badge; shadcn Sidebar, Tabs, Sheet. SOC, IoT admin console.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-27"
   },
   {
-    "slug": "app-shell-28",
+    "slug": "app-shell-section-tabs-admin",
     "category": "App Shell",
     "title": "Section Tabs Admin",
     "description": "Robot admin console: section tabs collapse to a current-section dropdown and the rail to a Sheet below lg, Cmd+K search Dialog, 3-alert notifications menu. shadcn Sidebar, Sheet, DropdownMenu, ToggleGroup. Ops, logistics dashboard.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-28"
   },
   {
-    "slug": "app-shell-29",
+    "slug": "app-shell-section-tile-rail",
     "category": "App Shell",
     "title": "Section Tile Rail",
     "description": "Rail for robot, crew and event workspaces: tabs swap tile grids and trees, the rail folds to a tooltip icon strip or moves into a left Sheet under lg. ReUI Badge; shadcn Tabs, Collapsible, Sheet, DropdownMenu. Admin dashboard, device console.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-29"
   },
   {
-    "slug": "app-shell-30",
+    "slug": "app-shell-top-navbar-admin",
     "category": "App Shell",
     "title": "Top Navbar Admin",
     "description": "Robot delivery console: icon sections and view tabs fold into Sections and Workspace views dropdowns on small screens, plus Onboard Robot, New Mission and Open Chat actions. ReUI Badge, Rating; shadcn Tabs, Sheet, DropdownMenu. Top navbar admin.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-30"
   },
   {
-    "slug": "app-shell-31",
+    "slug": "app-shell-folder-tab-workspace",
     "category": "App Shell",
     "title": "Folder Tab Workspace",
     "description": "Glassmorphism dashboard: 9 icon sections with a lit active rim, 3 SVG-cut tabs (Operations, Structure, Insights), a theme toggle that keeps the account menu open. shadcn Tabs, ToggleGroup, DropdownMenu, Sheet, Skeleton. Fleet console, AI copilot.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-31"
   },
   {
-    "slug": "app-shell-32",
+    "slug": "app-shell-endpoint-protection",
     "category": "App Shell",
     "title": "Endpoint Protection",
     "description": "Endpoint security console: Security, Assets, Events scope tree with drag-to-reorder and Add drafts, and an assistant that answers from fleet runbooks and shows what it read. ReUI Sortable, Badge; shadcn Dialog, Combobox, MessageScroller. EDR, SOC.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-32"
   },
   {
-    "slug": "app-shell-33",
+    "slug": "app-shell-fleet-center",
     "category": "App Shell",
     "title": "Fleet Center",
     "description": "Robot delivery console: a searchable 4-section scope tree with reorderable sub-scopes, count and status badges, Quick Add and System menus, a skeleton body. ReUI Sortable, Badge; shadcn Collapsible, InputGroup, DropdownMenu, Sheet. Fleet ops.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-33"
   },
   {
-    "slug": "app-shell-34",
+    "slug": "app-shell-invoice-matching",
     "category": "App Shell",
     "title": "Invoice Matching",
     "description": "Accounts payable review console: order search, a Review, Ready, Overdue filter, 3 checks per PO with issue count badges, and an AI advisor that answers from AP policies. ReUI Badge, Frame; shadcn Collapsible, Tabs, MessageScroller. Procure-to-pay.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-34"
   },
   {
-    "slug": "app-shell-35",
+    "slug": "app-shell-whiteboard-workspace",
     "category": "App Shell",
     "title": "Whiteboard Workspace",
     "description": "Whiteboard workspace layout: an icon rail that becomes a left sheet below md, and 4 board views that fold into a bottom drawer below lg. Share, Export and a board menu with a Delete Board confirm. shadcn Sidebar, Drawer, Tabs, AlertDialog.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-35"
   },
   {
-    "slug": "app-shell-36",
+    "slug": "app-shell-observability-console",
     "category": "App Shell",
     "title": "Observability Console",
     "description": "Monitoring console layout on the shadcn Sidebar: workspace switcher, a Cmd+F nav filter, pinnable pages with Undo, one breadcrumb header and one skeleton card grid as every page body. Card, Empty, Sidebar. For APM and tracing apps.",
     "url": "https://reui.io/blocks/application/app-shell/app-shell-36"
   },
   {
-    "slug": "auth-1",
+    "slug": "auth-photo-split-login",
     "category": "Auth",
     "title": "Photo Split Login",
     "description": "Sign-in page pairing an email or username and password form with show/hide toggle and Google plus Apple buttons over a masked animated grid and a full-height photo. Uses shadcn Field, InputGroup, Separator, Button, Card. Login, auth, sign in screen.",
     "url": "https://reui.io/blocks/application/auth/auth-1"
   },
   {
-    "slug": "auth-2",
+    "slug": "auth-customer-quotes-login",
     "category": "Auth",
     "title": "Customer Quotes Login",
     "description": "Email or username and password sign-in with show/hide toggle and Google, Apple, GitHub buttons, beside a dark panel with an autoplay founder testimonial carousel and Trustpilot rating. shadcn Carousel, Card, Field, InputGroup. Login, social auth.",
     "url": "https://reui.io/blocks/application/auth/auth-2"
   },
   {
-    "slug": "auth-3",
+    "slug": "auth-magic-link-reviews",
     "category": "Auth",
     "title": "Magic Link Reviews",
     "description": "Passwordless magic-link sign-in with a single work-email field and Google, Apple, GitHub buttons, beside a testimonial and trust-brand sidebar on a twinkling dot canvas. shadcn Field, Input, Button, Avatar, Separator. Login, passwordless auth.",
     "url": "https://reui.io/blocks/application/auth/auth-3"
   },
   {
-    "slug": "auth-13",
+    "slug": "auth-photo-magic-link",
     "category": "Auth",
     "title": "Photo Magic Link",
     "description": "Magic-link login page: work email field sends a secure sign-in link, plus Google, Apple, and GitHub social buttons. Two-column split with a full-cover image sidebar. ReUI Frame, shadcn Field, Input, Button, Separator.",
     "url": "https://reui.io/blocks/application/auth/auth-13"
   },
   {
-    "slug": "auth-4",
+    "slug": "auth-framed-password-login",
     "category": "Auth",
     "title": "Framed Password Login",
     "description": "Login on a noise-textured background: ReUI Frame card with email-or-username and password fields, show/hide toggle, full-width submit, plus a Google/Apple/GitHub row and footer nav. shadcn Field, Input, InputGroup, Button. Sign in / log in page.",
     "url": "https://reui.io/blocks/application/auth/auth-4"
   },
   {
-    "slug": "auth-14",
+    "slug": "auth-workspace-sign-in",
     "category": "Auth",
     "title": "Workspace Sign-In",
     "description": "Two-column workspace login page: email and password with show/hide toggle, forgot-password, and Google, Apple, GitHub SSO buttons beside an auto-cycling stacked photo panel. Uses Field, Input, InputGroup, Button, Separator.",
     "url": "https://reui.io/blocks/application/auth/auth-14"
   },
   {
-    "slug": "auth-5",
+    "slug": "auth-free-trial-signup",
     "category": "Auth",
     "title": "Free Trial Signup",
     "description": "Full-page registration with a marketing hero, OAuth buttons (Google, GitHub), email and show/hide password fields, and a brand logo trust strip over drifting gradient blobs. ReUI Frame, shadcn Button, Field, InputGroup, Separator.",
     "url": "https://reui.io/blocks/application/auth/auth-5"
   },
   {
-    "slug": "auth-10",
+    "slug": "auth-magic-link-logos",
     "category": "Auth",
     "title": "Magic Link Logos",
     "description": "Split passwordless login: magic-link email field plus Google, Apple, and GitHub SSO, beside a Frame trust card with a star-rated testimonial and brand logo wall. ReUI Frame; shadcn Field, Input, Button, Avatar. Login, social auth, SaaS onboarding.",
     "url": "https://reui.io/blocks/application/auth/auth-10"
   },
   {
-    "slug": "auth-6",
+    "slug": "auth-founder-story-login",
     "category": "Auth",
     "title": "Founder Story Login",
     "description": "Two-column sign-in page: email or username, password with show/hide toggle, Forgot password, and Google/Apple/GitHub OAuth, beside a customer testimonial and brand-logo panel on an animated grid. Uses Button, Input, InputGroup, Field, Separator.",
     "url": "https://reui.io/blocks/application/auth/auth-6"
   },
   {
-    "slug": "auth-11",
+    "slug": "auth-split-testimonial-login",
     "category": "Auth",
     "title": "Split Testimonial Login",
     "description": "Two-column login: email or username plus password with show/hide toggle, Google and Apple buttons, and a sidebar with a star-rated testimonial and trust-brand wordmarks over a twinkling dot canvas. shadcn Field, InputGroup, Button, Separator, Avatar.",
     "url": "https://reui.io/blocks/application/auth/auth-11"
   },
   {
-    "slug": "auth-16",
+    "slug": "auth-work-email-continue",
     "category": "Auth",
     "title": "Work Email Continue",
     "description": "Single-column sign-in: app header with create-workspace link, centered Google, GitHub, and SSO buttons over one work-email Continue field, plus a footer customer logo wall. shadcn Button, Field, Input, Separator. Login, social auth, SaaS onboarding.",
     "url": "https://reui.io/blocks/application/auth/auth-16"
   },
   {
-    "slug": "auth-7",
+    "slug": "auth-magic-link-card",
     "category": "Auth",
     "title": "Magic Link Card",
     "description": "Centered dark magic-link sign-in: email field sends a sign-in link, with Google, Apple and GitHub OAuth, a dashed crosshair-cornered frame, and a customer logo trust strip. Uses Button, Field, InputGroup. For login and auth pages.",
     "url": "https://reui.io/blocks/application/auth/auth-7"
   },
   {
-    "slug": "auth-12",
+    "slug": "auth-split-method-picker",
     "category": "Auth",
     "title": "Split Method Picker",
     "description": "Login with Google, email, WebAuthn passkey, SAML SSO, and backup code, a two-step email reveal, and a framed sidebar with an animated brand-logo grid and rotating star testimonials. ReUI Alert; shadcn Button, Field, Input, Avatar. Sign-in, SSO.",
     "url": "https://reui.io/blocks/application/auth/auth-12"
   },
   {
-    "slug": "auth-8",
+    "slug": "auth-photo-backdrop-login",
     "category": "Auth",
     "title": "Photo Backdrop Login",
     "description": "Single-card sign-in centered on a blurred Unsplash photo with noise grain: email or username and password fields, show/hide toggle, Forgot password, and Google, Apple, GitHub buttons. ReUI Frame; shadcn Field, InputGroup, Button. Login page.",
     "url": "https://reui.io/blocks/application/auth/auth-8"
   },
   {
-    "slug": "auth-9",
+    "slug": "auth-rotating-quotes-login",
     "category": "Auth",
     "title": "Rotating Quotes Login",
     "description": "Split passwordless login: a work-email field emails a 15-minute magic link, with Google, Apple, GitHub buttons, beside a sidebar of brand logos animating in a grid under a rotating star testimonial. shadcn Field, Input, Button, Avatar. Login, auth.",
     "url": "https://reui.io/blocks/application/auth/auth-9"
   },
   {
-    "slug": "auth-19",
+    "slug": "auth-invite-only-sign-in",
     "category": "Auth",
     "title": "Invite-Only Sign-In",
     "description": "Full-page login screen that emails a secure sign-in link to an approved work address, with Google and GitHub OAuth buttons above an or divider. Built from shadcn Card, Field, InputGroup, Separator, Button. For SSO, magic link, passwordless signin.",
     "url": "https://reui.io/blocks/application/auth/auth-19"
   },
   {
-    "slug": "auth-15",
+    "slug": "auth-centered-magic-link",
     "category": "Auth",
     "title": "Centered Magic Link",
     "description": "Passwordless email login that sends a magic link, plus Google, Apple, and GitHub sign-in and a terms and copyright footer. Built with shadcn InputGroup, Field, Button, Separator. For login, SSO, passwordless auth screens.",
     "url": "https://reui.io/blocks/application/auth/auth-15"
   },
   {
-    "slug": "auth-17",
+    "slug": "auth-centered-method-picker",
     "category": "Auth",
     "title": "Centered Method Picker",
     "description": "Two-step sign-in: a centered method picker (Google, email, SAML SSO, passkey, backup code) that reveals an email field, with real WebAuthn passkey auth and toasts. Uses shadcn Button, Input, Field, Item and ReUI Alert. Login / auth page.",
     "url": "https://reui.io/blocks/application/auth/auth-17"
   },
   {
-    "slug": "auth-18",
+    "slug": "auth-social-proof-login",
     "category": "Auth",
     "title": "Social Proof Login",
     "description": "Two-column login: email or username field, password Input with show/hide toggle, Google and Apple buttons, plus a testimonial and trust-brand sidebar. Uses shadcn Field, InputGroup, Avatar, Item, Separator, Button. For login and sign-in pages.",
     "url": "https://reui.io/blocks/application/auth/auth-18"
   },
   {
-    "slug": "auth-20",
+    "slug": "auth-centered-password-login",
     "category": "Auth",
     "title": "Centered Password Login",
     "description": "Login page with social sign-in (Google, Apple), an email or username field, and a show or hide password toggle, plus forgot-password and create-account links. Built on shadcn Card, Field, Input, InputGroup, Button, and Separator.",
     "url": "https://reui.io/blocks/application/auth/auth-20"
   },
   {
-    "slug": "card-1",
+    "slug": "card-brand-logo-grid",
     "category": "Card",
     "title": "Brand Logo Grid",
     "description": "Responsive grid of compact brand cards, each centering a company logo in a bordered tile over a linked name. ReUI Frame plus shadcn Item, ItemMedia. For integrations, partners, tech stack, or logo wall.",
     "url": "https://reui.io/blocks/application/card/card-1"
   },
   {
-    "slug": "card-2",
+    "slug": "card-feature-highlights",
     "category": "Card",
     "title": "Feature Highlights",
     "description": "Container-query feature cards that scale from one to four columns, each pairing a bordered icon tile, linked title, and muted blurb over a dotted backdrop. ReUI Frame, shadcn Item. For benefits, services, capabilities sections.",
     "url": "https://reui.io/blocks/application/card/card-2"
   },
   {
-    "slug": "card-3",
+    "slug": "card-investor-profile",
     "category": "Card",
     "title": "Investor Profile",
     "description": "Investor profile card: avatar, name, status badge, three-column stats strip, and a ranked funding sources list with colored icon tiles and amounts. ReUI Frame, Badge plus shadcn Item, AspectRatio, Button. For fundraising, VC, fund directory cards.",
     "url": "https://reui.io/blocks/application/card/card-3"
   },
   {
-    "slug": "card-4",
+    "slug": "card-kpi-report-links",
     "category": "Card",
     "title": "KPI Report Links",
     "description": "Grid of dark metric cards on colored panels, each with a big value, an up-trend Badge with percent, an icon tile, and a footer report link. Built with ReUI Frame and Badge plus shadcn Item for KPI, stats, and analytics dashboards.",
     "url": "https://reui.io/blocks/application/card/card-4"
   },
   {
-    "slug": "card-5",
+    "slug": "card-integration-connector",
     "category": "Card",
     "title": "Integration Connector",
     "description": "Integration cards pairing a brand logo (Resend, PayPal, Supabase) with flanking icons on a dashed connector line over a dotted canvas, plus a title link, tier Badge, and blurb. ReUI Frame, Badge, shadcn Item. Marketplace, connectors, plugins.",
     "url": "https://reui.io/blocks/application/card/card-5"
   },
   {
-    "slug": "card-6",
+    "slug": "card-numbered-setup-steps",
     "category": "Card",
     "title": "Numbered Setup Steps",
     "description": "Onboarding or setup walkthrough showing numbered steps (0.1 to 0.4) as titled, hover-linked cards in a responsive container-query grid that flows one to four columns. Built on ReUI Frame and FramePanel. For getting-started and how-it-works sections.",
     "url": "https://reui.io/blocks/application/card/card-6"
   },
   {
-    "slug": "card-7",
+    "slug": "card-detail-fact-tiles",
     "category": "Card",
     "title": "Detail Fact Tiles",
     "description": "Responsive grid of compact detail cards, each with a labeled value plus a trailing brand logo, status Badge, or stacked Avatar group. Uses ReUI Frame, Badge and shadcn Avatar. For dashboards, company, profile, and metric cards.",
     "url": "https://reui.io/blocks/application/card/card-7"
   },
   {
-    "slug": "card-8",
+    "slug": "card-service-status-tiles",
     "category": "Card",
     "title": "Service Status Tiles",
     "description": "Three-column grid of status cards, each pairing an icon box, a linked title, a color-coded status dot and label (Online, Synced, Idle) and a timestamp on a dot-pattern panel. ReUI Frame, shadcn Item. For infrastructure and uptime monitoring.",
     "url": "https://reui.io/blocks/application/card/card-8"
   },
   {
-    "slug": "card-9",
+    "slug": "card-applicant-record",
     "category": "Card",
     "title": "Applicant Record",
     "description": "Horizontal candidate summary card: labeled columns for role, location, and contact with copy-icon buttons, plus a wrapped skill-badge row over a dot-pattern panel. ReUI Frame, Badge, shadcn Button. For ATS, recruiting, and applicant detail views.",
     "url": "https://reui.io/blocks/application/card/card-9"
   },
   {
-    "slug": "card-10",
+    "slug": "card-report-updates",
     "category": "Card",
     "title": "Report Updates",
     "description": "Responsive card grid of pastel stacked Frames, each with an uppercase date, ReUI Frame and Badge plus shadcn DropdownMenu, Button, and Separator. For reports, updates, announcements, and activity feeds.",
     "url": "https://reui.io/blocks/application/card/card-10"
   },
   {
-    "slug": "card-11",
+    "slug": "card-notice-cards",
     "category": "Card",
     "title": "Notice Cards",
     "description": "Responsive container-query grid of text-only notice cards built on the ReUI Frame, each pairing an accent-colored label with a description over a faded dotted SVG pattern. For reminders, tips, alerts, status callouts.",
     "url": "https://reui.io/blocks/application/card/card-11"
   },
   {
-    "slug": "card-12",
+    "slug": "card-quick-link-tiles",
     "category": "Card",
     "title": "Quick Link Tiles",
     "description": "Responsive grid of clickable cards, each a link with a top icon and title only and no body copy, with hover and focus-ring states. Uses ReUI Frame and FramePanel. For category tiles, quick-link menus, dashboard navigation, and feature shortcuts.",
     "url": "https://reui.io/blocks/application/card/card-12"
   },
   {
-    "slug": "card-13",
+    "slug": "card-partner-showcase",
     "category": "Card",
     "title": "Partner Showcase",
     "description": "Showcase sponsors, affiliates, or integration partners: each card pairs a hover link heading and muted description with a wrap of bordered brand logo badges. Built with ReUI Frame and shadcn Item.",
     "url": "https://reui.io/blocks/application/card/card-13"
   },
   {
-    "slug": "card-14",
+    "slug": "card-delivery-tracking",
     "category": "Card",
     "title": "Delivery Tracking",
     "description": "Single order delivery card showing address, ETA, and tracking number as icon rows with a Home badge, a notes block, and a header actions menu. Built with ReUI Frame and Badge plus shadcn Item, DropdownMenu, Button. Order tracking, shipment status.",
     "url": "https://reui.io/blocks/application/card/card-14"
   },
   {
-    "slug": "card-15",
+    "slug": "card-meeting-agenda-cards",
     "category": "Card",
     "title": "Meeting Agenda Cards",
     "description": "Two-column grid of agenda meeting cards: title, time, duration badge, attendee AvatarGroup with overflow count, kebab menu, and a Google Meet Join link. ReUI Frame, Badge with shadcn Avatar, DropdownMenu, Button. For calendars, schedules, agendas.",
     "url": "https://reui.io/blocks/application/card/card-15"
   },
   {
-    "slug": "card-16",
+    "slug": "card-installed-integration",
     "category": "Card",
     "title": "Installed Integration",
     "description": "Integration card for app marketplaces: patterned dark header with status Badge and ellipsis DropdownMenu, brand logo, title, description, user AvatarGroup and full-width outline Button. Uses ReUI Frame, Badge with shadcn Avatar, Button, DropdownMenu.",
     "url": "https://reui.io/blocks/application/card/card-16"
   },
   {
-    "slug": "card-17",
+    "slug": "card-shortcut-launcher",
     "category": "Card",
     "title": "Shortcut Launcher",
     "description": "Responsive grid of navigation shortcut cards, each with a colored rounded icon tile, a masked dot-pattern canvas background, title, description, and a chevron action link. ReUI Frame, FramePanel with shadcn Item. Quick links, hub, launcher, jump-to.",
     "url": "https://reui.io/blocks/application/card/card-17"
   },
   {
-    "slug": "card-18",
+    "slug": "card-source-link-cards",
     "category": "Card",
     "title": "Source Link Cards",
     "description": "Responsive 3-column grid of compact info cards using ReUI Frame, FrameHeader, and FramePanel. Each card pairs an icon-and-label header with a short description and an underlined source link. For stat tiles, resource lists, or dashboard cards.",
     "url": "https://reui.io/blocks/application/card/card-18"
   },
   {
-    "slug": "card-19",
+    "slug": "card-crypto-price-quote",
     "category": "Card",
     "title": "Crypto Price Quote",
     "description": "Asset overview card showing a market ticker, large price quote, green percent-change delta, last-updated time, and outline Follow plus primary Trade buttons. ReUI Frame, shadcn Button. For crypto, stock, watchlist, and trading dashboards.",
     "url": "https://reui.io/blocks/application/card/card-19"
   },
   {
-    "slug": "card-20",
+    "slug": "card-help-center-guides",
     "category": "Card",
     "title": "Help Center Guides",
     "description": "Three-up help center grid where each ReUI Frame card pairs a colored icon badge, title, and summary with a bordered list of guide links carrying arrow icons. Docs hub, knowledge base, resource directory. Built with ReUI Frame and shadcn Item.",
     "url": "https://reui.io/blocks/application/card/card-20"
   },
   {
-    "slug": "card-21",
+    "slug": "card-project-deadline-cards",
     "category": "Card",
     "title": "Project Deadline Cards",
     "description": "Three-column grid of project cards, each with an icon badge, project title link, client name, and a Due countdown. Built with ReUI Frame, shadcn Button and Item. For project lists, task boards, deadlines.",
     "url": "https://reui.io/blocks/application/card/card-21"
   },
   {
-    "slug": "card-22",
+    "slug": "card-upsell-promo",
     "category": "Card",
     "title": "Upsell Promo",
     "description": "Vertical promo card pairing two rotated, overlapping square thumbnails with an outline Badge, heading, subtext, and icon Button. For upsell, demo, feature highlight, or onboarding tiles. Built with ReUI Frame plus shadcn AspectRatio, Badge, Button.",
     "url": "https://reui.io/blocks/application/card/card-22"
   },
   {
-    "slug": "card-23",
+    "slug": "card-uptime-monitoring-promo",
     "category": "Card",
     "title": "Uptime Monitoring Promo",
     "description": "Stacked two-panel ReUI Frame promo: a large 24/7 monitoring metric over a faded grid with AI integration logo tiles, plus a headline, blurb, and shadcn Button CTA. For uptime, monitoring, and SaaS marketing cards.",
     "url": "https://reui.io/blocks/application/card/card-23"
   },
   {
-    "slug": "card-24",
+    "slug": "card-job-recommendation",
     "category": "Card",
     "title": "Job Recommendation",
     "description": "Job recommendation card with company logo tile, role title, and an icon meta row for location, work mode, and salary, plus a description and Quick Apply / View Details buttons. ReUI Frame, shadcn Button, Separator. Job board, careers, hiring.",
     "url": "https://reui.io/blocks/application/card/card-24"
   },
   {
-    "slug": "card-25",
+    "slug": "card-account-balances",
     "category": "Card",
     "title": "Account Balances",
     "description": "Multi-account balance overview: per-account cards showing balance, type label, and color-coded gain/loss delta with a colored icon tile. Built on ReUI Frame, FramePanel, and shadcn Item. For wallet, treasury, and finance dashboards.",
     "url": "https://reui.io/blocks/application/card/card-25"
   },
   {
-    "slug": "card-26",
+    "slug": "card-linked-metric-tiles",
     "category": "Card",
     "title": "Linked Metric Tiles",
     "description": "Responsive 3-up grid of compact stat cards built on the ReUI Frame, each with an icon and label header plus a panel holding a clickable title link and muted description. For dashboard metrics, KPI summaries, and overview tiles.",
     "url": "https://reui.io/blocks/application/card/card-26"
   },
   {
-    "slug": "card-27",
+    "slug": "card-application-summary",
     "category": "Card",
     "title": "Application Summary",
     "description": "Single-row record card with details in labeled columns (created, status, mobile, email, domain, team), a green status dot, info Badge, and overflow avatar group on a faded dot grid. ReUI Frame, Badge, shadcn Avatar group. Account summary row.",
     "url": "https://reui.io/blocks/application/card/card-27"
   },
   {
-    "slug": "card-28",
+    "slug": "card-shared-kpi-panels",
     "category": "Card",
     "title": "Shared KPI Panels",
     "description": "Responsive 1 to 4 column stat grid where each panel shows a large two-tone value with faint decimals, a metric label, and an up or down trend Badge with percent and period. ReUI Frame, FramePanel, Badge. Dashboard KPIs, analytics tiles.",
     "url": "https://reui.io/blocks/application/card/card-28"
   },
   {
-    "slug": "card-29",
+    "slug": "card-kpi-area-charts",
     "category": "Card",
     "title": "KPI Area Charts",
     "description": "Dashboard KPI stat grid: bordered Frame splits into metric cells, each with an icon, large value, delta Badge, and an area chart. ReUI Frame, FramePanel, Badge. Analytics overview, stats cards, metric tiles.",
     "url": "https://reui.io/blocks/application/card/card-29"
   },
   {
-    "slug": "card-30",
+    "slug": "card-logistics-kpi-tiles",
     "category": "Card",
     "title": "Logistics KPI Tiles",
     "description": "Responsive metric card grid (1 to 4 columns); each tile has an icon, large value, label, colored status badge with trend arrow, and an actions dropdown (Edit, Copy, Delete). KPI dashboard, analytics summary. ReUI Frame, Badge; shadcn DropdownMenu.",
     "url": "https://reui.io/blocks/application/card/card-30"
   },
   {
-    "slug": "card-31",
+    "slug": "card-audience-reach-stats",
     "category": "Card",
     "title": "Audience Reach Stats",
     "description": "Four-up metric cards showing a big number, label, and a colored icon tile over a masked square-mesh grid pattern. Built on ReUI Frame and FramePanel. For dashboards, analytics overviews, and KPI stat summaries.",
     "url": "https://reui.io/blocks/application/card/card-31"
   },
   {
-    "slug": "card-32",
+    "slug": "card-compliance-strip",
     "category": "Card",
     "title": "Compliance Strip",
     "description": "Single-row summary splitting metrics across divided columns, each with a colored status icon, value, and unit, plus an overflow team avatar column. Built with ReUI Frame and shadcn Avatar, AvatarGroup. For compliance, security, or KPI overview cards.",
     "url": "https://reui.io/blocks/application/card/card-32"
   },
   {
-    "slug": "card-33",
+    "slug": "card-inventory-counters",
     "category": "Card",
     "title": "Inventory Counters",
     "description": "Responsive four-up grid of inventory stat cards, each with a gradient icon badge, dotted backdrop, linked title, value, and an ellipsis menu (Edit, Copy link, Delete). Uses ReUI Frame, shadcn DropdownMenu, Item, Button. Dashboard KPIs and stats.",
     "url": "https://reui.io/blocks/application/card/card-33"
   },
   {
-    "slug": "card-34",
+    "slug": "card-period-trend-kpis",
     "category": "Card",
     "title": "Period Trend KPIs",
     "description": "Responsive grid of compact stat cards: each shows a metric label, large value with a faded decimal tail, and a colored trend Badge (up or down) with a period label. Built on ReUI Frame, FramePanel, Badge. For dashboards, analytics, KPI summaries.",
     "url": "https://reui.io/blocks/application/card/card-34"
   },
   {
-    "slug": "card-35",
+    "slug": "card-deal-invoice-tiles",
     "category": "Card",
     "title": "Deal Invoice Tiles",
     "description": "Responsive grid of compact metric cards, each pairing a muted label with a bold value over a masked halftone dot pattern. Built on the ReUI Frame and FramePanel. For dashboard KPI tiles, stats overview, and analytics summary cards.",
     "url": "https://reui.io/blocks/application/card/card-35"
   },
   {
-    "slug": "card-36",
+    "slug": "card-sales-outreach-counters",
     "category": "Card",
     "title": "Sales Outreach Counters",
     "description": "Responsive container-query grid of compact KPI stat cards, each pairing a large metric value with a muted label over a masked dot-grid pattern. Built on ReUI Frame and FramePanel for dashboards, analytics, and metrics overviews.",
     "url": "https://reui.io/blocks/application/card/card-36"
   },
   {
-    "slug": "card-37",
+    "slug": "card-company-snapshot",
     "category": "Card",
     "title": "Company Snapshot",
     "description": "Responsive 3-column grid of compact KPI tiles, each a muted label over a green icon plus bold metric value (MRR, revenue, growth). Built on ReUI Frame and FramePanel for stats summaries, metric cards, company snapshots.",
     "url": "https://reui.io/blocks/application/card/card-37"
   },
   {
-    "slug": "card-38",
+    "slug": "card-profile-stat-strip",
     "category": "Card",
     "title": "Profile Stat Strip",
     "description": "Horizontal KPI strip in a ReUI Frame: equal stat columns with bold value over muted label, hairline dividers, and a dotted-texture final cell. Profile or dashboard summary stats, metric row.",
     "url": "https://reui.io/blocks/application/card/card-38"
   },
   {
-    "slug": "card-39",
+    "slug": "card-resource-hub-cards",
     "category": "Card",
     "title": "Resource Hub Cards",
     "description": "Responsive grid of clickable resource cards, each with an icon badge, title link, and short blurb. Built on ReUI Frame and FramePanel with shadcn Item and ItemMedia. For docs hubs, help centers, onboarding, and platform overview sections.",
     "url": "https://reui.io/blocks/application/card/card-39"
   },
   {
-    "slug": "card-40",
+    "slug": "card-fitness-stats",
     "category": "Card",
     "title": "Fitness Stats",
     "description": "Two-column grid of metric tiles, each pairing a large value with a small unit and a muted label, for KPI summaries, fitness and activity stats, and dashboard quick stats. Built on ReUI Frame and FramePanel.",
     "url": "https://reui.io/blocks/application/card/card-40"
   },
   {
-    "slug": "card-41",
+    "slug": "card-topic-shortcuts",
     "category": "Card",
     "title": "Topic Shortcuts",
     "description": "Responsive grid of compact topic cards, each a colored icon tile, linked title, and one-line summary. Built on ReUI Frame with shadcn Item and ItemMedia. For help center topics, quick links, resource and feature shortcuts.",
     "url": "https://reui.io/blocks/application/card/card-41"
   },
   {
-    "slug": "card-42",
+    "slug": "card-customer-profile",
     "category": "Card",
     "title": "Customer Profile",
     "description": "Profile card with avatar, online status badge, verified name, company and email, team avatar group, 3-column stats row, and a Connected button. ReUI Frame with shadcn Avatar, AvatarGroup, Item, Separator, Button. For team, contact, or account cards.",
     "url": "https://reui.io/blocks/application/card/card-42"
   },
   {
-    "slug": "card-43",
+    "slug": "card-contributor-portfolio",
     "category": "Card",
     "title": "Contributor Portfolio",
     "description": "Profile card with a desaturated cover banner, ring avatar with status badge and verified check, and a horizontal-scrolling portfolio rail of project thumbnails. Uses ReUI Frame, shadcn Avatar, ScrollArea, Button. For team or contributor profiles.",
     "url": "https://reui.io/blocks/application/card/card-43"
   },
   {
-    "slug": "dashboard-1",
+    "slug": "dashboard-fulfillment-exceptions",
     "category": "Dashboard",
     "title": "Fulfillment Exceptions",
     "description": "Fulfillment control center: metric cards, shift performance, capacity allocation tabs, a donut flow chart, and a searchable paginated exception queue. Uses ReUI Frame, Badge, DataGrid plus Tabs, Select, Progress, breadcrumb, and a date-range picker.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-1"
   },
   {
-    "slug": "dashboard-2",
+    "slug": "dashboard-module-tracker",
     "category": "Dashboard",
     "title": "Module Tracker",
     "description": "Operations console: sticky navbar with team presence and invite, three area-chart metric cards, and a paginated module DataGrid with progress rings, search, sort, and status filters. ReUI DataGrid, Badge; shadcn Card, Avatar, Popover, DropdownMenu.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-2"
   },
   {
-    "slug": "dashboard-3",
+    "slug": "dashboard-worklog-timesheet",
     "category": "Dashboard",
     "title": "Worklog Timesheet",
     "description": "Delivery workspace: tabbed header with breadcrumb and collaborator avatars, account summary cards, a filterable weekly worklog timesheet DataGrid with week navigation, integration cards and Empty tab states. ReUI Frame, DataGrid, Badge; shadcn Tabs.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-3"
   },
   {
-    "slug": "dashboard-4",
+    "slug": "dashboard-voice-agent-calls",
     "category": "Dashboard",
     "title": "Voice Agent Calls",
     "description": "Call analytics overview for voice AI ops: six-metric tab switcher (calls, duration, cost, LLM cost) over a recharts area-line chart, ranked agent bars, and integration status list. ReUI Frame, Badge with shadcn Button, Select, Chart, Item.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-4"
   },
   {
-    "slug": "dashboard-5",
+    "slug": "dashboard-edge-security-telemetry",
     "category": "Dashboard",
     "title": "Edge Security Telemetry",
     "description": "Security ops dashboard: 4 KPI tiles with SVG sparklines, threat-vector and network-flow charts, per-node cluster load bars, active threat progress lanes, date-range picker. ReUI Badge, shadcn Card, Chart, Breadcrumb. SOC, NOC, monitoring.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-5"
   },
   {
-    "slug": "dashboard-6",
+    "slug": "dashboard-workforce-coverage",
     "category": "Dashboard",
     "title": "Workforce Coverage",
     "description": "Workforce ops dashboard for shift coverage: metric tiles, a crew Table with coverage progress bars and status, an action queue, and a stacked supply vs forecast ComposedChart. Uses ReUI Frame, Badge with shadcn Table, Avatar, Item, Chart, Breadcrumb.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-6"
   },
   {
-    "slug": "dashboard-7",
+    "slug": "dashboard-retail-revenue",
     "category": "Dashboard",
     "title": "Retail Revenue",
     "description": "Commerce revenue dashboard: 4 KPI cards with sparklines and trend deltas, a stacked area revenue chart, a channel-mix bar chart, and a searchable, paginated order queue with fulfillment bars. ReUI Frame, Badge, DataGrid; shadcn Chart and Calendar.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-7"
   },
   {
-    "slug": "dashboard-8",
+    "slug": "dashboard-royalty-payouts",
     "category": "Dashboard",
     "title": "Royalty Payouts",
     "description": "Creator finance desk to clear royalties: command band with claimable balance, receipts vs buffer area chart, payout buffer progress and sweep lanes, plus a searchable ledger. ReUI Frame, Badge, DataGrid; shadcn Calendar, Select, DropdownMenu, Chart.",
     "url": "https://reui.io/blocks/application/dashboard/dashboard-8"
   },
   {
-    "slug": "dialog-1",
+    "slug": "dialog-duration-picker",
     "category": "Dialog",
     "title": "Duration Picker",
     "description": "Modal for choosing a time span: start and end time Selects plus quick presets (30 min to 1 day) that auto-adjust the end time. Built with shadcn Dialog, Select, ToggleGroup, Field, Tooltip, Button. Time range picker, schedule, booking duration.",
     "url": "https://reui.io/blocks/application/dialog/dialog-1"
   },
   {
-    "slug": "dialog-2",
+    "slug": "dialog-bulk-email-invite",
     "category": "Dialog",
     "title": "Bulk Email Invite",
     "description": "Team invite modal that parses comma or space separated emails, dedupes them, and shows a live 'Send N invites' count. Pick a role per invite. Uses ReUI Badge with shadcn Dialog, Input, Field, Select, Button.",
     "url": "https://reui.io/blocks/application/dialog/dialog-2"
   },
   {
-    "slug": "dialog-3",
+    "slug": "dialog-cancel-plan-survey",
     "category": "Dialog",
     "title": "Cancel Plan Survey",
     "description": "Subscription offboarding dialog: warning Alert with dismiss and manage actions, a checkbox grid of reasons, a feedback Textarea, and a Cancel plan button gated until a reason is picked. ReUI Alert, shadcn Dialog, Checkbox, Tooltip. Churn flows.",
     "url": "https://reui.io/blocks/application/dialog/dialog-3"
   },
   {
-    "slug": "dialog-4",
+    "slug": "dialog-launch-checklist",
     "category": "Dialog",
     "title": "Launch Checklist",
     "description": "Setup dialog with accordion sections, status badges, click-to-edit field rows, and a searchable connected-apps list with Connect or Manage. ReUI Badge, shadcn Dialog, Accordion, Item, InputGroup. Workspace setup, launch checklist, settings wizard.",
     "url": "https://reui.io/blocks/application/dialog/dialog-4"
   },
   {
-    "slug": "dialog-5",
+    "slug": "dialog-template-library",
     "category": "Dialog",
     "title": "Template Library",
     "description": "Template gallery picker dialog: fixed category rail (radio group), live search input, and selectable cards with thumbnail and badges. Uses ReUI Badge with Dialog, Input, ScrollArea, RadioGroup, Item. Starter library, template browser, asset picker.",
     "url": "https://reui.io/blocks/application/dialog/dialog-5"
   },
   {
-    "slug": "dialog-6",
+    "slug": "dialog-connect-app-picker",
     "category": "Dialog",
     "title": "Connect App Picker",
     "description": "Modal to connect a workspace app: search-filtered grid of brand-logo cards with round single-select Checkbox and a footer add button disabled until a pick. Uses shadcn Dialog, InputGroup, Kbd, Item, Empty. Integrations picker, marketplace.",
     "url": "https://reui.io/blocks/application/dialog/dialog-6"
   },
   {
-    "slug": "dialog-7",
+    "slug": "dialog-support-hub",
     "category": "Dialog",
     "title": "Support Hub",
     "description": "Support hub modal: help routes (guides, walkthroughs, feedback) above an escalation grid pairing an advisor office-hours card with an email-support desk. Uses shadcn Dialog, Item, Card, Avatar, Button and ReUI Badge. Contact support, help center.",
     "url": "https://reui.io/blocks/application/dialog/dialog-7"
   },
   {
-    "slug": "dialog-8",
+    "slug": "dialog-per-person-invite",
     "category": "Dialog",
     "title": "Per-Person Invite",
     "description": "Invite teammates by email with a per-row role select (Member, Contributor, Reviewer, Admin), add and remove rows, and inline email validation. Uses shadcn Dialog, Input, Field, Select, Button. Team invite modal, add members, share access.",
     "url": "https://reui.io/blocks/application/dialog/dialog-8"
   },
   {
-    "slug": "dialog-9",
+    "slug": "dialog-project-with-cover",
     "category": "Dialog",
     "title": "Project With Cover",
     "description": "Modal new-project form with drag-and-drop cover upload, name, key, brief fields, single-select status and priority plus multi-select assignee and label comboboxes. Dialog, Combobox, Avatar, Tooltip, Alert. Add project, create workspace.",
     "url": "https://reui.io/blocks/application/dialog/dialog-9"
   },
   {
-    "slug": "dialog-10",
+    "slug": "dialog-account-settings-modal",
     "category": "Dialog",
     "title": "Account Settings Modal",
     "description": "Modal account settings dialog with a 5-tab sidebar (Profile, Workspace, Team, Billing, Preferences); each scrollable panel pairs labels with avatar upload, Inputs, Selects, Switches and a verified Badge. Uses Dialog, Tabs, ScrollArea, Field.",
     "url": "https://reui.io/blocks/application/dialog/dialog-10"
   },
   {
-    "slug": "dialog-11",
+    "slug": "dialog-finance-account-setup",
     "category": "Dialog",
     "title": "Finance Account Setup",
     "description": "Split dialog to create a finance account: account name, acct_ tag, and statement label fields beside a live-updating account card on a gradient panel. Uses shadcn Dialog, Card, Field, Input, InputGroup, Button. For payout, banking, onboarding setup.",
     "url": "https://reui.io/blocks/application/dialog/dialog-11"
   },
   {
-    "slug": "dialog-12",
+    "slug": "dialog-quick-create-entry",
     "category": "Dialog",
     "title": "Quick Create Entry",
     "description": "Quick-create record dialog with five entry-type tabs, each a title and notes field plus shared Status, Assignee, Due date, Priority and Labels comboboxes. Uses shadcn Combobox, Tabs, Dialog, Calendar, Avatar. For task creation and new-item modals.",
     "url": "https://reui.io/blocks/application/dialog/dialog-12"
   },
   {
-    "slug": "dialog-13",
+    "slug": "dialog-project-templates",
     "category": "Dialog",
     "title": "Project Templates",
     "description": "Full-screen create-project form: a template dropdown prefills fields, status, assignee, due date and priority Selects with avatars and dots, plus checkbox label cards with a selected count. ReUI Badge, shadcn Dialog, Select, InputGroup, Field.",
     "url": "https://reui.io/blocks/application/dialog/dialog-13"
   },
   {
-    "slug": "dialog-14",
+    "slug": "dialog-oauth-consent",
     "category": "Dialog",
     "title": "OAuth Consent",
     "description": "App integration consent modal: paired provider logos, permission notes, and a radio-group scope selector with cancel/continue. Built with shadcn Dialog, RadioGroup, Item, Field, Button. For OAuth handoff, connect-account, grant-access flows.",
     "url": "https://reui.io/blocks/application/dialog/dialog-14"
   },
   {
-    "slug": "dialog-16",
+    "slug": "dialog-duplicate-check",
     "category": "Dialog",
     "title": "Duplicate Check",
     "description": "Dedupe modal before saving a contact: candidates ranked by match score with Strong, Likely and Weak badges, matched email and company marked, a Link button per row and a Create new fallback. Dialog, Item, Avatar, Empty, ReUI Badge.",
     "url": "https://reui.io/blocks/application/dialog/dialog-16"
   },
   {
-    "slug": "empty-state-1",
+    "slug": "empty-state-data-import-start",
     "category": "Empty State",
     "title": "Data Import Start",
     "description": "First-run empty state for a records or workspace table: stacked-cards illustration, Connect source and Upload CSV buttons, plus a two-up Quick guides list. Uses shadcn Empty, Button, and Item. Use for zero-data, onboarding, or no results screens.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-1"
   },
   {
-    "slug": "empty-state-2",
+    "slug": "empty-state-no-search-results",
     "category": "Empty State",
     "title": "No Search Results",
     "description": "Workspace search zero-state: a stacked result-card illustration, paired Browse library and Refine filters actions, and a 'Try these searches' row of pill suggestion chips. Built with shadcn Empty, ButtonGroup, Button. For no-results, search hints.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-2"
   },
   {
-    "slug": "empty-state-3",
+    "slug": "empty-state-first-project",
     "category": "Empty State",
     "title": "First Project",
     "description": "No-projects empty state for a workspace: hero illustration, New project and Explore templates buttons, and a Quick starts grid of clickable template cards. Uses shadcn Empty, Button, Item. Good for onboarding, first-run, zero-data screens.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-3"
   },
   {
-    "slug": "empty-state-4",
+    "slug": "empty-state-reports-workspace",
     "category": "Empty State",
     "title": "Reports Workspace",
     "description": "Split empty state for an empty reports or analytics workspace: icon, title, helper copy, and Add report plus View sample buttons beside a blank screenshot preview panel. Uses shadcn Card and Empty with shadcn Button.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-4"
   },
   {
-    "slug": "empty-state-5",
+    "slug": "empty-state-empty-report-brief",
     "category": "Empty State",
     "title": "Empty Report Brief",
     "description": "Split empty state for a no-data briefing or report view. Left column pairs an icon, title, and description with primary and outline Buttons; right column is a preview surface. Uses ReUI Frame, shadcn Empty and Button. For blank dashboards.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-5"
   },
   {
-    "slug": "empty-state-6",
+    "slug": "empty-state-team-launch-steps",
     "category": "Empty State",
     "title": "Team Launch Steps",
     "description": "Centered team workspace onboarding empty state pairing two outline action Buttons with three colored clickable setup tiles. Uses shadcn Empty and Item primitives. For workspace setup, first-run onboarding, getting-started checklist.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-6"
   },
   {
-    "slug": "empty-state-7",
+    "slug": "empty-state-invite-first-member",
     "category": "Empty State",
     "title": "Invite First Member",
     "description": "Centered empty state prompting the first workspace invite, with a ring-framed icon, title, description, and two CTAs (Invite members, Copy invite link). Uses shadcn Empty and Button. For team onboarding, members page, no-members placeholder.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-7"
   },
   {
-    "slug": "empty-state-8",
+    "slug": "empty-state-settings-setup-tabs",
     "category": "Empty State",
     "title": "Settings Setup Tabs",
     "description": "Settings header over line-style Tabs (project states, labels); each tab shows a left-aligned Empty with icon, title and Enable button. ReUI IconStack with shadcn Tabs, ScrollArea, Empty, Button. For settings onboarding and zero-states.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-8"
   },
   {
-    "slug": "empty-state-9",
+    "slug": "empty-state-invite-members-prompt",
     "category": "Empty State",
     "title": "Invite Members Prompt",
     "description": "Centered empty state prompting the first workspace invite, with a stacked-card icon illustration, title, supporting text, and primary Invite members plus outline Copy invite link buttons. Uses ReUI IconStack, shadcn Empty, Button.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-9"
   },
   {
-    "slug": "empty-state-10",
+    "slug": "empty-state-blueprint-library",
     "category": "Empty State",
     "title": "Blueprint Library",
     "description": "Empty state inside a Card under a section heading for a template or blueprint library with no items. Horizontal media beside title, description, and two buttons. ReUI IconStack with shadcn Card, Empty, Button. For blank library or first-run views.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-10"
   },
   {
-    "slug": "empty-state-11",
+    "slug": "empty-state-section-add-prompt",
     "category": "Empty State",
     "title": "Section Add Prompt",
     "description": "Empty state for a list or feed section: heading, subtext, and Add button over a muted Card holding a layered stacked-icon illustration, title, and hint. ReUI IconStack with shadcn Empty, Card, Button. For zero-data panels and intake views.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-11"
   },
   {
-    "slug": "empty-state-12",
+    "slug": "empty-state-export-filters",
     "category": "Empty State",
     "title": "Export Filters",
     "description": "Export empty state: header, three dropdown filters (audience, workspace, date range), and a split Execute button with CSV, PDF, and scheduled delivery. Uses ReUI IconStack, shadcn Empty, ButtonGroup, DropdownMenu. For export no-results screens.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-12"
   },
   {
-    "slug": "empty-state-13",
+    "slug": "empty-state-cloud-storage-connect",
     "category": "Empty State",
     "title": "Cloud Storage Connect",
     "description": "Empty state for linking cloud storage: header, IconStack illustration, and a responsive grid of brand-logo connect buttons (Dropbox, Cloudflare R2, Google Drive, OneDrive). ReUI Frame, IconStack, shadcn Empty, Separator. For integrations screens.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-13"
   },
   {
-    "slug": "empty-state-14",
+    "slug": "empty-state-enable-organizations",
     "category": "Empty State",
     "title": "Enable Organizations",
     "description": "Organizations settings empty state to enable multi-org with team members and role-based access. Framed card with stacked building icon, enable CTA, and a tooltip help link. ReUI Frame, IconStack, shadcn Empty, Button, Tooltip, Separator.",
     "url": "https://reui.io/blocks/application/empty-state/empty-state-14"
   },
   {
-    "slug": "event-calendar-1",
+    "slug": "event-calendar-personal-calendar",
     "category": "Event Calendar",
     "title": "Personal Calendar",
     "description": "Scheduling workspace on ReUI Event Calendar: month, week, day, N-day, agenda and resource views, drag to move, resize and create events, recurrence, and an edit dialog. ReUI Event Calendar with shadcn Dialog, Select. Booking calendar, scheduler.",
     "url": "https://reui.io/blocks/application/event-calendar/event-calendar-1"
   },
   {
-    "slug": "event-calendar-2",
+    "slug": "event-calendar-mini-month-calendar",
     "category": "Event Calendar",
     "title": "Mini Month Calendar",
     "description": "Two-panel calendar workspace: a sidebar mini month picker, calendars visibility list, and up-next agenda drive a week-view event calendar with drag, resize, and full event plus calendar CRUD.",
     "url": "https://reui.io/blocks/application/event-calendar/event-calendar-2"
   },
   {
-    "slug": "event-calendar-3",
+    "slug": "event-calendar-hotel-front-desk",
     "category": "Event Calendar",
     "title": "Hotel Front Desk",
     "description": "Front-desk hotel booking board on a week time grid: a sidebar mini month picker, arrivals agenda, and colour-coded service streams drive an hourly calendar of check-ins, check-outs, housekeeping turnovers, functions, and guest services, with drag, resize, and full booking plus stream CRUD.",
     "url": "https://reui.io/blocks/application/event-calendar/event-calendar-3"
   },
   {
-    "slug": "event-calendar-4",
+    "slug": "event-calendar-shift-roster",
     "category": "Event Calendar",
     "title": "Shift Roster",
     "description": "Workforce shift scheduling board for HR and operations teams: a day, week, and month event calendar of staffing shifts grouped into color-coded departments, with per-shift coverage showing assigned staff avatars, required headcount, and open-slot warnings, plus search across shifts and staff, an open-slots filter, drag and resize with a double-booking guard, publish and unpublish locking, and full CRUD on shifts, assignments, and departments.",
     "url": "https://reui.io/blocks/application/event-calendar/event-calendar-4"
   },
   {
-    "slug": "event-calendar-5",
+    "slug": "event-calendar-clinic-chair-board",
     "category": "Event Calendar",
     "title": "Clinic Chair Board",
     "description": "Clinic day board on the event calendar resource view: one column per practitioner with avatar headers and live patient counts, status-tinted appointment chips, hatched clinic holds that reject drops, a searchable patient lookup, day and week switching, a multi-select chair picker and status filters, full appointment CRUD, and a Log History tab fed by every desk action.",
     "url": "https://reui.io/blocks/application/event-calendar/event-calendar-5"
   },
   {
-    "slug": "event-calendar-6",
+    "slug": "event-calendar-lending-deal-calendar",
     "category": "Event Calendar",
     "title": "Lending Deal Calendar",
     "description": "Commercial lending calendar in month, week, day, and agenda views. Multi-row chips carry a loan reference, category tag, counterparty, attendee avatars, and a task progress bar, stage, or join-call row. Hovering a chip opens a detail card with the covenant clause, due date, and pass or fail tallies.",
     "url": "https://reui.io/blocks/application/event-calendar/event-calendar-6"
   },
   {
-    "slug": "flow-1",
+    "slug": "flow-automation-builder",
     "category": "Flow",
     "title": "Automation Builder",
     "description": "Build trigger, condition and action flows on React Flow. Add, duplicate or delete steps from a node toolbar or right click menu, edit them in an inspector. ReUI IconTile, Badge, shadcn ContextMenu, AlertDialog. For no-code automation, lead routing.",
     "url": "https://reui.io/blocks/application/flow/flow-1"
   },
   {
-    "slug": "flow-2",
+    "slug": "flow-ai-agent-builder",
     "category": "Flow",
     "title": "AI Agent Builder",
     "description": "LLM agent editor: cards show the app called and a last test run strip with tokens or latency, a docked inspector edits each step, copy as JSON. React Flow, ReUI IconTile, Badge, shadcn Item, Select, AlertDialog. For agent builder, AI workflow.",
     "url": "https://reui.io/blocks/application/flow/flow-2"
   },
   {
-    "slug": "flow-3",
+    "slug": "flow-pipeline-run-monitor",
     "category": "Flow",
     "title": "Pipeline Run Monitor",
     "description": "ETL DAG run monitor: 6 run states, connection, test and model attachments, and retry or focus for the failed task. React Flow, ReUI IconTile, Badge, shadcn Tabs, ContextMenu, Progress. For orchestration dashboard, scheduled job status.",
     "url": "https://reui.io/blocks/application/flow/flow-3"
   },
   {
-    "slug": "flow-4",
+    "slug": "flow-growth-impact-map",
     "category": "Flow",
     "title": "Growth Impact Map",
     "description": "Ties work to results: initiative cards with progress and status, metric cards with a goal and per period value and change, an inspector to relink edges. React Flow, ReUI Frame, IconTile, Badge, shadcn Tabs, ToggleGroup. For KPI driver tree, OKR map.",
     "url": "https://reui.io/blocks/application/flow/flow-4"
   },
   {
-    "slug": "form-6",
+    "slug": "form-business-verification",
     "category": "Form",
     "title": "Business Verification",
     "description": "KYC business verification summary with read-only Frame panels for legal, public, and ownership details, each opening a Dialog edit form. ReUI Frame, Badge plus shadcn Dialog, Field, Select, Tooltip. Account review, onboarding, compliance.",
     "url": "https://reui.io/blocks/application/form/form-6"
   },
   {
-    "slug": "form-1",
+    "slug": "form-profile-settings",
     "category": "Form",
     "title": "Profile Settings",
     "description": "Profile settings Card form: avatar upload, birth date and availability date-time Calendar pickers, multi-select specialty Combobox chips, visibility Select, available-to-hire Switch, completion Badge. For account settings, edit profile, preferences.",
     "url": "https://reui.io/blocks/application/form/form-1"
   },
   {
-    "slug": "form-2",
+    "slug": "form-checkout-setup",
     "category": "Form",
     "title": "Checkout Setup",
     "description": "Configure a hosted checkout: offer type, button copy, and handoff via ReUI Frame and Badge with shadcn Field rows, Select, Checkbox groups, InputGroup, Tooltip, and Button. Settings form, payment config, store admin panel.",
     "url": "https://reui.io/blocks/application/form/form-2"
   },
   {
-    "slug": "form-3",
+    "slug": "form-invoice-creator",
     "category": "Form",
     "title": "Invoice Creator",
     "description": "Invoice builder with customer combobox, date pickers, currency and term selects, an editable line-items table, and a live subtotal, discount, tax, and total panel. ReUI Badge with shadcn Card, Table, Combobox, Calendar. For billing and invoicing.",
     "url": "https://reui.io/blocks/application/form/form-3"
   },
   {
-    "slug": "form-4",
+    "slug": "form-auth-method-settings",
     "category": "Form",
     "title": "Auth Method Settings",
     "description": "Auth method config page: line tabs switch Email, Phone, Password, Passkeys, Protection, and User Model panels of Switch, Select, RadioGroup, and Input rows with Pro/Beta badges, tooltips, alerts, and a save/discard toast footer.",
     "url": "https://reui.io/blocks/application/form/form-4"
   },
   {
-    "slug": "form-5",
+    "slug": "form-member-profile-admin",
     "category": "Form",
     "title": "Member Profile Admin",
     "description": "Admin profile editor with Profile, Organizations, Security tabs, a sticky audit rail of IDs and timestamps, completion Progress, and activity heatmap. ReUI Badge with shadcn Card, Field, Combobox, Switch. For account settings, member detail pages.",
     "url": "https://reui.io/blocks/application/form/form-5"
   },
   {
-    "slug": "form-7",
+    "slug": "form-ticket-properties",
     "category": "Form",
     "title": "Ticket Properties",
     "description": "Support ticket detail panel where each field edits inline with save, cancel, and async saving toasts. Status, priority, SLA, due-date, tag and owner chips. ReUI Frame, Badge with Select, Combobox, Calendar, Switch. For helpdesk and issue trackers.",
     "url": "https://reui.io/blocks/application/form/form-7"
   },
   {
-    "slug": "form-8",
+    "slug": "form-api-keys-manager",
     "category": "Form",
     "title": "API Keys Manager",
     "description": "API keys settings page: copy framework .env snippets, reveal, rotate, or revoke masked keys, plus a create-key dialog with scopes, owners, and expiration. ReUI Frame, Badge, Alert with Dialog, Combobox, Select, InputGroup.",
     "url": "https://reui.io/blocks/application/form/form-8"
   },
   {
-    "slug": "form-9",
+    "slug": "form-role-permission-invite",
     "category": "Form",
     "title": "Role Permission Invite",
     "description": "Invite teammates and assign scoped workspace roles: email combobox chips, workspace and expiry selects, member-type radios, SSO switches, and a searchable checkbox role tree with privileged badges. ReUI Badge and Tree, shadcn Card. For RBAC.",
     "url": "https://reui.io/blocks/application/form/form-9"
   },
   {
-    "slug": "form-10",
+    "slug": "form-customer-onboarding",
     "category": "Form",
     "title": "Customer Onboarding",
     "description": "New-workspace setup form: company, slug, intent radios, team size, launch window, template, data source, owner chips, sample-data toggle, notes. Uses ReUI Badge, shadcn Card, Combobox, RadioGroup, Select, Switch, Textarea. Account setup wizard.",
     "url": "https://reui.io/blocks/application/form/form-10"
   },
   {
-    "slug": "form-11",
+    "slug": "form-deploy-app-setup",
     "category": "Form",
     "title": "Deploy App Setup",
     "description": "App launch form in a Card with a gradient banner that live-mirrors picks. Rows pair a brief Textarea, prefixed App URL InputGroup, name Input, and starter, source, runtime, region Selects. For deploy and project setup wizards.",
     "url": "https://reui.io/blocks/application/form/form-11"
   },
   {
-    "slug": "form-12",
+    "slug": "form-new-product-form",
     "category": "Form",
     "title": "New Product Form",
     "description": "Create product form in a Card with label-control rows: multi-image thumbnail dropzone, Select status and category, currency InputGroup pricing, SKU and stock, Switch toggles, multi-select Combobox collections. Product catalog, add product, admin.",
     "url": "https://reui.io/blocks/application/form/form-12"
   },
   {
-    "slug": "gantt-1",
+    "slug": "gantt-project-timeline",
     "category": "Gantt",
     "title": "Project Timeline",
     "description": "Project timeline on ReUI Gantt: task tree in a resizable split pane beside a day-to-year timeline, drag and resize bars with live validation, progress rollups, and an edit dialog. ReUI Gantt with shadcn Dialog, Select. Roadmap, project planner.",
     "url": "https://reui.io/blocks/application/gantt/gantt-1"
   },
   {
-    "slug": "gantt-2",
+    "slug": "gantt-technician-dispatch",
     "category": "Gantt",
     "title": "Technician Dispatch",
     "description": "Hour grid day dispatch with technician rows and timed jobs",
     "url": "https://reui.io/blocks/application/gantt/gantt-2"
   },
   {
-    "slug": "gantt-3",
+    "slug": "gantt-agent-playbook",
     "category": "Gantt",
     "title": "Agent Playbook",
     "description": "Agent playbook board with enforced stage dependencies, retry lanes and critical path",
     "url": "https://reui.io/blocks/application/gantt/gantt-3"
   },
   {
-    "slug": "gantt-4",
+    "slug": "gantt-resource-capacity",
     "category": "Gantt",
     "title": "Resource Capacity",
     "description": "Capacity aware resource gantt with booking cards, drag guardrails and full CRUD",
     "url": "https://reui.io/blocks/application/gantt/gantt-4"
   },
   {
-    "slug": "kanban-board-1",
+    "slug": "kanban-board-bug-triage",
     "category": "Kanban Board",
     "title": "Bug Triage",
     "description": "Bug tracking board: drag tasks across six status columns, reorder columns, with priority, signal dots, owner avatars, due dates, and SVG completion rings. ReUI Kanban, Badge; shadcn Card, Avatar, Button. Sprint board, backlog, task tracker.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-1"
   },
   {
-    "slug": "kanban-board-2",
+    "slug": "kanban-board-collapsible-columns",
     "category": "Kanban Board",
     "title": "Collapsible Columns",
     "description": "Drag-and-drop kanban for project and CRM workflows: 8 status columns collapse to vertical rails, reorderable cards and columns, count badges, deal value and assignee avatars. Uses ReUI Kanban and Badge with shadcn Card, Button, Avatar.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-2"
   },
   {
-    "slug": "kanban-board-3",
+    "slug": "kanban-board-sales-pipeline",
     "category": "Kanban Board",
     "title": "Sales Pipeline",
     "description": "CRM sales pipeline board with drag-and-drop deals across six stages. Deal cards show company logo, value, next step, owner avatar, star rating, and attachment/comment counts. ReUI Kanban, Badge, Rating, shadcn Card, Avatar, Button.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-3"
   },
   {
-    "slug": "kanban-board-4",
+    "slug": "kanban-board-feature-roadmap-votes",
     "category": "Kanban Board",
     "title": "Feature Roadmap Votes",
     "description": "Drag-and-drop product roadmap board with six status columns and reorderable cards showing votes, vote-trend arrows, progress bars, and impact or ARR. Feature voting, planning board, backlog. ReUI Kanban, Frame, Badge with Progress, Button.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-4"
   },
   {
-    "slug": "kanban-board-5",
+    "slug": "kanban-board-progress-ring-workflow",
     "category": "Kanban Board",
     "title": "Progress Ring Workflow",
     "description": "Drag-and-drop status workflow kanban: reorder cards and columns, collapse columns to vertical rails, with progress rings, owner avatars, and status badges. ReUI Kanban, Badge plus shadcn Card, Item, Avatar. Task board, project tracker, sprint board.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-5"
   },
   {
-    "slug": "kanban-board-6",
+    "slug": "kanban-board-support-escalations",
     "category": "Kanban Board",
     "title": "Support Escalations",
     "description": "Help-desk board with six SLA-state columns. Drag-and-drop ticket cards and reorderable columns show SLA countdown chips, priority badges, and assignee avatars. ReUI Kanban, Badge; shadcn Card, Item, Avatar. For support queue and ticket triage tools.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-6"
   },
   {
-    "slug": "kanban-board-7",
+    "slug": "kanban-board-renewals-risk",
     "category": "Kanban Board",
     "title": "Renewals Risk",
     "description": "Drag-and-drop renewals board, six risk stages, account cards with ARR, renewal date, days left, color-coded health bar, owner, and Critical/Warning/Clear status. CSM pipeline, churn risk. ReUI Kanban, Badge; shadcn Card, Progress, Avatar.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-7"
   },
   {
-    "slug": "kanban-board-8",
+    "slug": "kanban-board-release-readiness",
     "category": "Kanban Board",
     "title": "Release Readiness",
     "description": "Six-column pipeline (Intake to Shipped) with draggable change cards showing risk badge, service, environment, owner avatar, launch window, and checklist progress. ReUI Kanban, Frame, Badge plus shadcn Item, Avatar, Progress. Deploy and release board.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-8"
   },
   {
-    "slug": "kanban-board-9",
+    "slug": "kanban-board-recruiting-pipeline",
     "category": "Kanban Board",
     "title": "Recruiting Pipeline",
     "description": "Applicant tracking board: six draggable pipeline stages from Sourced to Offer, candidate cards with match-score progress bars, scorecard badges, and risk flags. ReUI Kanban, Frame, Badge, shadcn Progress, Avatar, Button for ATS and hiring boards.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-9"
   },
   {
-    "slug": "kanban-board-10",
+    "slug": "kanban-board-access-review",
     "category": "Kanban Board",
     "title": "Access Review",
     "description": "IAM access certification board with draggable cards and columns across Intake, Owner Review, Risk, Exception, Removal, Certified. Risk-tiered cards show request IDs and avatars. ReUI Kanban, Badge, Rating with shadcn Card. Access governance, audit.",
     "url": "https://reui.io/blocks/application/kanban-board/kanban-board-10"
   },
   {
-    "slug": "list-1",
+    "slug": "list-order-kpi-list",
     "category": "List",
     "title": "Order KPI List",
     "description": "Compact KPI metric list: framed icon tile, large value, colored up/down trend badge, and open-details button per divided row. ReUI Frame, Badge, shadcn Item, Button, Separator. Stats summary, dashboard, finance overview.",
     "url": "https://reui.io/blocks/application/list/list-1"
   },
   {
-    "slug": "list-2",
+    "slug": "list-fund-leaderboard",
     "category": "List",
     "title": "Fund Leaderboard",
     "description": "Ranked fund inflow rows with a colored brand-logo badge, name, and Capital In amount, plus a Select to switch Top 3 / Top 5 / All. ReUI Frame, shadcn Select, Item, Separator. For leaderboards, top contributors, investor summary widgets.",
     "url": "https://reui.io/blocks/application/list/list-2"
   },
   {
-    "slug": "list-3",
+    "slug": "list-capital-inflows",
     "category": "List",
     "title": "Capital Inflows",
     "description": "Capital inflows widget switching ranked fund rows by period tabs (Weekly, All Time); each row shows logo, name, dollar amount, percentage share. ReUI Frame, shadcn Tabs, Tooltip, Separator. For finance dashboards, top contributors, leaderboards.",
     "url": "https://reui.io/blocks/application/list/list-3"
   },
   {
-    "slug": "list-4",
+    "slug": "list-crypto-portfolio",
     "category": "List",
     "title": "Crypto Portfolio",
     "description": "Crypto holdings card switching between Weekly and All Time tabs, listing coins with logo, price, up or down trend badge, value and holdings. ReUI Frame, Badge with shadcn Tabs, Button, Separator. Portfolio, watchlist, asset tracker.",
     "url": "https://reui.io/blocks/application/list/list-4"
   },
   {
-    "slug": "list-5",
+    "slug": "list-crypto-activity-feed",
     "category": "List",
     "title": "Crypto Activity Feed",
     "description": "Compact crypto transaction history list with directional credit/debit icons, title, date, and color-coded amounts. Uses ReUI Frame plus shadcn Item, Tabs, Separator. For wallet activity feeds and finance dashboards.",
     "url": "https://reui.io/blocks/application/list/list-5"
   },
   {
-    "slug": "list-6",
+    "slug": "list-wallet-transfers",
     "category": "List",
     "title": "Wallet Transfers",
     "description": "Wallet activity card listing received, sent, swapped, and failed crypto transfers with token logos, truncated addresses, and color-coded amounts. Weekly and All Time tabs plus a View All footer. Uses ReUI Frame with Tabs, Item, Separator, Button.",
     "url": "https://reui.io/blocks/application/list/list-6"
   },
   {
-    "slug": "list-7",
+    "slug": "list-spending-feed",
     "category": "List",
     "title": "Spending Feed",
     "description": "Transaction card with Weekly and All Time tabs; each row pairs a colored category icon with title, date, and a signed amount tinted green for credits or red for debits. ReUI Frame, shadcn Tabs, Item, Button. For wallet, banking, fintech feeds.",
     "url": "https://reui.io/blocks/application/list/list-7"
   },
   {
-    "slug": "list-8",
+    "slug": "list-integrations-directory",
     "category": "List",
     "title": "Integrations Directory",
     "description": "Integrations directory card listing apps with brand logos, name, description, and a per-row Connect button, plus a See All footer link. ReUI Frame with shadcn Button and Separator. App marketplace, connected accounts, settings.",
     "url": "https://reui.io/blocks/application/list/list-8"
   },
   {
-    "slug": "list-9",
+    "slug": "list-capability-modules",
     "category": "List",
     "title": "Capability Modules",
     "description": "Integrations picker list with icon tiles, name plus truncated description per row, plus-button add actions, dashed dividers, and a Browse More footer. Uses ReUI Frame with shadcn Item, Button, Separator.",
     "url": "https://reui.io/blocks/application/list/list-9"
   },
   {
-    "slug": "list-10",
+    "slug": "list-recent-investments",
     "category": "List",
     "title": "Recent Investments",
     "description": "Investments card: header with ⌘K search input, fixed table of company logo, name, date, sector, and green or red value change. ReUI Frame, FramePanel; shadcn Table, InputGroup, Item, Kbd.",
     "url": "https://reui.io/blocks/application/list/list-10"
   },
   {
-    "slug": "list-11",
+    "slug": "list-top-movers",
     "category": "List",
     "title": "Top Movers",
     "description": "Top movers leaderboard table: company rows with logo and location, status badges (Active, New, On Hold), and a trend column with gain/loss value and up/down arrow. Header search with Cmd-K hint. ReUI Frame, Badge, shadcn Table, InputGroup, Kbd.",
     "url": "https://reui.io/blocks/application/list/list-11"
   },
   {
-    "slug": "navbar-1",
+    "slug": "navbar-project-workspace",
     "category": "Navbar",
     "title": "Project Workspace",
     "description": "Project workspace header: breadcrumb trail, line tabs with a count Badge, search/star/more actions, an expanding Create New button, and a collaborator Avatar stack. Uses ReUI Badge, shadcn Tabs, Breadcrumb, Avatar, DropdownMenu, Button.",
     "url": "https://reui.io/blocks/application/navbar/navbar-1"
   },
   {
-    "slug": "navbar-2",
+    "slug": "navbar-team-presence",
     "category": "Navbar",
     "title": "Team Presence",
     "description": "Slim sticky app bar: breadcrumb trail, team avatar group with invite popover, and filter, sort, and overflow dropdown menus. shadcn Breadcrumb, AvatarGroup, Popover, DropdownMenu, Button. For workspace headers and project toolbars.",
     "url": "https://reui.io/blocks/application/navbar/navbar-2"
   },
   {
-    "slug": "navbar-3",
+    "slug": "navbar-org-environment-switcher",
     "category": "Navbar",
     "title": "Org & Environment Switcher",
     "description": "Header for dev tools and PaaS dashboards: breadcrumb of organization, project and color-dotted environment switchers, docs and settings menus, Upgrade button, avatar menu with light/dark/system theme toggle. shadcn Breadcrumb, DropdownMenu, Avatar.",
     "url": "https://reui.io/blocks/application/navbar/navbar-3"
   },
   {
-    "slug": "navbar-4",
+    "slug": "navbar-admin-command-search",
     "category": "Navbar",
     "title": "Admin Command Search",
     "description": "Admin top bar: brand, centered Cmd+K command search Dialog with Kbd hint, notifications Popover feed (avatars, actions, progress, ratings) and a user DropdownMenu with theme toggle. ReUI Badge, Rating.",
     "url": "https://reui.io/blocks/application/navbar/navbar-4"
   },
   {
-    "slug": "navbar-5",
+    "slug": "navbar-workflow-editor",
     "category": "Navbar",
     "title": "Workflow Editor",
     "description": "Slim sticky toolbar for a workflow or automation builder: back link, active/inactive Switch, run-history button, Test Run action, and a more-options DropdownMenu (Export JSON, Duplicate, Share, Delete). Uses Button, Switch, Separator, DropdownMenu.",
     "url": "https://reui.io/blocks/application/navbar/navbar-5"
   },
   {
-    "slug": "navbar-6",
+    "slug": "navbar-analytics-toolbar",
     "category": "Navbar",
     "title": "Analytics Toolbar",
     "description": "Sticky analytics toolbar with breadcrumb title, calendar date range picker, compare toggle, auto-refresh select, share, export/embed dropdown, and command-K search dialog. shadcn Breadcrumb, Popover, Calendar, Select, DropdownMenu, Dialog, Kbd.",
     "url": "https://reui.io/blocks/application/navbar/navbar-6"
   },
   {
-    "slug": "navbar-7",
+    "slug": "navbar-cms-publish-bar",
     "category": "Navbar",
     "title": "CMS Publish Bar",
     "description": "Sticky editor toolbar for content apps: back link and breadcrumb, AvatarGroup co-presence, Preview, and a ButtonGroup split Publish with Schedule and Save as draft, plus a more-actions DropdownMenu (duplicate, history, archive, delete).",
     "url": "https://reui.io/blocks/application/navbar/navbar-7"
   },
   {
-    "slug": "navbar-8",
+    "slug": "navbar-agent-marketplace",
     "category": "Navbar",
     "title": "Agent Marketplace",
     "description": "Sticky AI agent marketplace navbar: centered category filter pills, Deploy CTA, notifications popover (avatar groups, star rating, progress, actions), and avatar dropdown with theme toggle. ReUI Badge, Rating, shadcn ButtonGroup, Popover.",
     "url": "https://reui.io/blocks/application/navbar/navbar-8"
   },
   {
-    "slug": "navbar-9",
+    "slug": "navbar-repo-branch-picker",
     "category": "Navbar",
     "title": "Repo Branch Picker",
     "description": "Sticky IDE-style navbar for a code collaboration tool: brand tile, org/repo Breadcrumb path, branch-picker DropdownMenu with deploy targets, and Share plus Run Button actions. shadcn Breadcrumb, DropdownMenu, Button, Item, Separator.",
     "url": "https://reui.io/blocks/application/navbar/navbar-9"
   },
   {
-    "slug": "navbar-10",
+    "slug": "navbar-api-developer-portal",
     "category": "Navbar",
     "title": "API Developer Portal",
     "description": "Top bar for an API console or dev portal: brand, service switcher (OpenAI, Stripe, Supabase logos), an inline HTTP method Select with endpoint Input and Send button, and an avatar menu with theme toggle. Uses ButtonGroup, DropdownMenu, Avatar.",
     "url": "https://reui.io/blocks/application/navbar/navbar-10"
   },
   {
-    "slug": "navbar-11",
+    "slug": "navbar-design-system-manager",
     "category": "Navbar",
     "title": "Design System Manager",
     "description": "DesignOps app header: brand mark, version Badge, centered Tabs (Patterns, Tokens, Icons, Motion), sync-source DropdownMenu (shadcn, Cursor, Paper), and avatar menu with light/dark/system theme toggle. For design-system, tokens, and admin toolbars.",
     "url": "https://reui.io/blocks/application/navbar/navbar-11"
   },
   {
-    "slug": "navbar-12",
+    "slug": "navbar-marketing-mega-menu",
     "category": "Navbar",
     "title": "Marketing Mega Menu",
     "description": "Marketing top bar with two-column mega-menu dropdowns for Product and Company, a Pricing link, and a Get Started button with a hover slide-in arrow. Built on shadcn NavigationMenu, Item, Separator, Button. For SaaS site header or landing page nav.",
     "url": "https://reui.io/blocks/application/navbar/navbar-12"
   },
   {
-    "slug": "navbar-13",
+    "slug": "navbar-editor-action-bar",
     "category": "Navbar",
     "title": "Editor Action Bar",
     "description": "Focused-mode bar for an invoice or document editor: close (X) button, vertical Separator, truncating title, a preview collapse toggle, and a submit button that confirms after click. Uses shadcn Button and Separator. For editor toolbar, draft bar.",
     "url": "https://reui.io/blocks/application/navbar/navbar-13"
   },
   {
-    "slug": "onboarding-1",
+    "slug": "onboarding-live-preview-wizard",
     "category": "Onboarding",
     "title": "Live Preview Wizard",
     "description": "Multi-step account and workspace setup flow: profile, role, discovery source, workspace, goals, invites, then a success state, with a synced product preview. ReUI Stepper plus shadcn Card, Combobox, RadioGroup, Select, Switch, Field.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-1"
   },
   {
-    "slug": "onboarding-2",
+    "slug": "onboarding-sidebar-stepper-wizard",
     "category": "Onboarding",
     "title": "Sidebar Stepper Wizard",
     "description": "Six-step setup wizard (profile, role, source, workspace, goals, invites) with a clickable sidebar stepper, animated transitions, and a success screen. ReUI Frame and Stepper plus shadcn Field, Combobox, RadioGroup, Switch. Onboarding, signup wizard.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-2"
   },
   {
-    "slug": "onboarding-3",
+    "slug": "onboarding-split-screen-signup",
     "category": "Onboarding",
     "title": "Split-Screen Signup",
     "description": "Six-step signup: profile, role, source, workspace, goals, invites, plus success screen. Dark sidebar pairs a vertical ReUI Stepper with animated dot-sphere canvas. Field, Combobox, RadioGroup, Checkbox, Switch, Select. Setup wizard, account creation.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-3"
   },
   {
-    "slug": "onboarding-4",
+    "slug": "onboarding-centered-setup-flow",
     "category": "Onboarding",
     "title": "Centered Setup Flow",
     "description": "Multi-step flow to create a team workspace: profile with avatar upload, role and goal pickers, team size, teammate invites, animated top progress bar and ready screen. Uses ReUI Frame, Stepper, shadcn Combobox, Select, Field. Onboarding wizard.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-4"
   },
   {
-    "slug": "onboarding-5",
+    "slug": "onboarding-onboarding-dialog",
     "category": "Onboarding",
     "title": "Onboarding Dialog",
     "description": "Six-step modal wizard (profile, role, workspace, goals, teammate invites) with clickable dot stepper, animated steps, and a success screen. shadcn Dialog, Field, Combobox, Select, RadioGroup, Switch, Avatar upload, Button. For signup, get started.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-5"
   },
   {
-    "slug": "onboarding-6",
+    "slug": "onboarding-agent-api-setup",
     "category": "Onboarding",
     "title": "Agent & API Setup",
     "description": "Eight-step workspace onboarding wizard ending in AI agent selection and API key setup with copyable terminal commands. Profile, role, goals, and invite steps. ReUI Stepper, Frame plus shadcn Combobox, RadioGroup, Select. Account setup flow.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-6"
   },
   {
-    "slug": "onboarding-7",
+    "slug": "onboarding-screenshot-carousel-setup",
     "category": "Onboarding",
     "title": "Screenshot Carousel Setup",
     "description": "Multi-step signup flow: profile, role, source, workspace, goals, invites, with a top Stepper progress bar, animated stacked-screenshot rail, and a success state. ReUI Stepper, Badge; shadcn Field, Combobox, RadioGroup, Select, Switch.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-7"
   },
   {
-    "slug": "onboarding-8",
+    "slug": "onboarding-cli-agent-setup",
     "category": "Onboarding",
     "title": "CLI Agent Setup",
     "description": "Full-page dark onboarding flow: profile, role, workspace, goals, teammate invites, AI agent pick, and Codex CLI setup with a success screen. Animated progress bar, copyable commands. ReUI Stepper, Frame, Badge plus Combobox, Select, RadioGroup.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-8"
   },
   {
-    "slug": "onboarding-9",
+    "slug": "onboarding-marketing-hero-signup",
     "category": "Onboarding",
     "title": "Marketing Hero Signup",
     "description": "Profile, role, source, workspace, goals, and invite steps beside a marketing hero, with photo upload, goal pickers, timezone Combobox, success state. ReUI Stepper plus shadcn Card, Select, RadioGroup, Switch. First-run setup, getting-started flow.",
     "url": "https://reui.io/blocks/application/onboarding/onboarding-9"
   },
   {
-    "slug": "profile-1",
+    "slug": "profile-account-team-settings",
     "category": "Profile",
     "title": "Account & Team Settings",
     "description": "SaaS account settings page: a vertical Tabs sidebar switching Profile, Workspace, Team, and Billing panels on ReUI Frame and Badge, plus a searchable, filterable, paginated ReUI DataGrid of team members and shadcn Field, Input, Switch, and Combobox.",
     "url": "https://reui.io/blocks/application/profile/profile-1"
   },
   {
-    "slug": "profile-2",
+    "slug": "profile-admin-permissions",
     "category": "Profile",
     "title": "Admin Permissions",
     "description": "Tabbed workspace admin settings: profile form, member DataGrid with row actions, permission checkbox matrix, notification and integration toggles. Account settings, team admin, access control. ReUI DataGrid, Badge, Alert, shadcn Tabs, Switch, Card.",
     "url": "https://reui.io/blocks/application/profile/profile-2"
   },
   {
-    "slug": "profile-3",
+    "slug": "profile-personal-profile",
     "category": "Profile",
     "title": "Personal Profile",
     "description": "Account profile settings page: avatar upload, identity fields (name, verified email, username, role, phone), regional preferences (timezone, week start, language), dismissible sync alert. ReUI Alert, Badge, PhoneInput; shadcn Card, InputGroup.",
     "url": "https://reui.io/blocks/application/profile/profile-3"
   },
   {
-    "slug": "profile-4",
+    "slug": "profile-mailbox-accounts",
     "category": "Profile",
     "title": "Mailbox Accounts",
     "description": "Mailbox settings page: account cards with status badges, per-row dropdown actions, connect-provider buttons, and signature toggles. ReUI Badge, shadcn Card, Item, Avatar, DropdownMenu, Switch. For outreach, inbox, and email account settings.",
     "url": "https://reui.io/blocks/application/profile/profile-4"
   },
   {
-    "slug": "profile-5",
+    "slug": "profile-notification-digest",
     "category": "Profile",
     "title": "Notification Digest",
     "description": "Notification preferences page: a daily digest stat summary with Progress bars and tooltips, a Switch toggle, plus a per-alert email and in-app delivery matrix. ReUI Badge with Card, Table, Checkbox, Switch, Field, Progress.",
     "url": "https://reui.io/blocks/application/profile/profile-5"
   },
   {
-    "slug": "profile-6",
+    "slug": "profile-referral-rewards",
     "category": "Profile",
     "title": "Referral Rewards",
     "description": "Referral and partner rewards page: metric cards with progress, a copy-link InputGroup share card, an unlocked/next/locked reward ladder, next-unlock progress, and a referrals activity list. ReUI Badge, shadcn Card, Progress, Avatar, Tooltip.",
     "url": "https://reui.io/blocks/application/profile/profile-6"
   },
   {
-    "slug": "profile-7",
+    "slug": "profile-meeting-capture",
     "category": "Profile",
     "title": "Meeting Capture",
     "description": "Single-card meeting recording settings: capture mode, consent, and notes template selects, output checkbox group, prompt textarea, auto-share and transcript switches, Reset and Save with toast. ReUI Badge, shadcn Card, Select, Checkbox, Switch.",
     "url": "https://reui.io/blocks/application/profile/profile-7"
   },
   {
-    "slug": "profile-8",
+    "slug": "profile-billing-settings",
     "category": "Profile",
     "title": "Billing Settings",
     "description": "Subscription billing settings page: trial alert, plan summary with renewal facts, 3-column usage metrics, billing detail rows with tooltip hints, and an invoice history table. Built with ReUI Alert, Badge, shadcn Card, Table, Field, Tooltip, Button.",
     "url": "https://reui.io/blocks/application/profile/profile-8"
   },
   {
-    "slug": "profile-9",
+    "slug": "profile-account-settings-hub",
     "category": "Profile",
     "title": "Account Settings Hub",
     "description": "Workspace settings page where a collapsible grouped sidebar switches 11 card-based form panels: authentication, profile, billing, API keys, webhooks, audit. ReUI Badge with shadcn Sidebar, Card, Field, Input, Select, Switch, Checkbox, RadioGroup.",
     "url": "https://reui.io/blocks/application/profile/profile-9"
   },
   {
-    "slug": "profile-10",
+    "slug": "profile-developer-api-keys",
     "category": "Profile",
     "title": "Developer API Keys",
     "description": "Developer API keys page with masked tokens, roll and revoke on active keys, delete once revoked, confirm dialogs with undo toasts, and SDK samples in 5 languages. ReUI Badge and CodeBlock with shadcn Table, AlertDialog, DropdownMenu.",
     "url": "https://reui.io/blocks/application/profile/profile-10"
   },
   {
-    "slug": "rich-text-editor-1",
+    "slug": "rich-text-editor-document-editor",
     "category": "Rich Text Editor",
     "title": "Document Editor",
     "description": "Fluid rich text editor on Tiptap that fills any app shell content area: formatting toolbar with shortcuts, link popover and bubble, highlight colors, shadcn task checkboxes, edit and view modes, live word count. For docs, briefs, notes.",
     "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-1"
   },
   {
-    "slug": "rich-text-editor-2",
+    "slug": "rich-text-editor-wiki-page-editor",
     "category": "Rich Text Editor",
     "title": "Wiki Page Editor",
     "description": "Fluid block page editor on Tiptap that fills any app shell: slash command menu, @ mentions, resizable tables with a row and column bar, a live contents block and a right-edge outline rail that opens on hover. For wikis, docs, playbooks.",
     "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-2"
   },
   {
-    "slug": "rich-text-editor-3",
+    "slug": "rich-text-editor-contract-redlines",
     "category": "Rich Text Editor",
     "title": "Contract Redlines",
     "description": "Chromeless contract editor on Tiptap where edits become attributed insert, delete and replace suggestions: accept or reject each or all, step through changes, Final and Original previews, sticky toolbar header. For redlines, legal review, approvals.",
     "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-3"
   },
   {
-    "slug": "rich-text-editor-4",
+    "slug": "rich-text-editor-collaborative-editor",
     "category": "Rich Text Editor",
     "title": "Collaborative Editor",
     "description": "Real time co-editing on Tiptap and Yjs: named teammate carets and selections, a presence stack you can follow, an offline switch that queues edits and merges them with no conflicts, and comment threads that sync. For specs, docs, wikis.",
     "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-4"
   },
   {
-    "slug": "rich-text-editor-5",
+    "slug": "rich-text-editor-ai-writing-assistant",
     "category": "Rich Text Editor",
     "title": "AI Writing Assistant",
     "description": "Agentic document editor on Tiptap: a floating assistant dock runs tasks on the page or a selection, streams its edits in as tracked suggestions with a live cursor, shows each step, then steps through accept or reject. For AI writing, docs, plans.",
     "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-5"
   },
   {
-    "slug": "schedule-1",
+    "slug": "schedule-appointment-planner",
     "category": "Schedule",
     "title": "Appointment Planner",
     "description": "Two-pane schedule: a month Calendar with event dots beside a status-filterable day agenda of event cards with status Badge, attendee AvatarGroup, time and location. ReUI Frame, Badge plus shadcn Calendar, Select, Avatar. Planner, appointments.",
     "url": "https://reui.io/blocks/application/schedule/schedule-1"
   },
   {
-    "slug": "schedule-2",
+    "slug": "schedule-time-range-picker",
     "category": "Schedule",
     "title": "Time Range Picker",
     "description": "Booking card to pick a meeting or work-session time: ReUI Frame with Avatar header, Select start and end menus, quick-duration preset Buttons, Tooltip and live duration, Cancel and Apply. Schedule, time-slot, duration picker.",
     "url": "https://reui.io/blocks/application/schedule/schedule-2"
   },
   {
-    "slug": "schedule-3",
+    "slug": "schedule-meeting-scheduler",
     "category": "Schedule",
     "title": "Meeting Scheduler",
     "description": "Schedule a meeting: pick a date, choose an available time slot, set duration and recurrence, add title and notes, toggle waiting room and auto-record. Booking form using ReUI Frame, shadcn Calendar, Select, Switch, Input, Textarea, Button.",
     "url": "https://reui.io/blocks/application/schedule/schedule-3"
   },
   {
-    "slug": "schedule-4",
+    "slug": "schedule-booking-page",
     "category": "Schedule",
     "title": "Booking Page",
     "description": "Pick a date on the month calendar (available days dotted), choose a time slot, confirm. Side panel shows host, session type, platform, duration. ReUI Frame with shadcn Calendar, Select, Avatar, ScrollArea. Appointment scheduling, booking pages.",
     "url": "https://reui.io/blocks/application/schedule/schedule-4"
   },
   {
-    "slug": "schedule-5",
+    "slug": "schedule-team-attendance",
     "category": "Schedule",
     "title": "Team Attendance",
     "description": "Team attendance widget: month Select, status filter DropdownMenu, single-date Calendar with today highlight, AvatarGroup, and Attendance/Absences/Delayed rows with bar sparklines. ReUI Frame, Badge; shadcn Calendar, Avatar, Chart. Presence tracker.",
     "url": "https://reui.io/blocks/application/schedule/schedule-5"
   },
   {
-    "slug": "schedule-6",
+    "slug": "schedule-create-schedule",
     "category": "Schedule",
     "title": "Create Schedule",
     "description": "Schedule creation form: name input, member multi-select with avatars, date picker, start and end time selects, drag-drop image upload, link and description. ReUI Frame, shadcn Combobox, Avatar, Field, Calendar, Select. For meeting and booking forms.",
     "url": "https://reui.io/blocks/application/schedule/schedule-6"
   },
   {
-    "slug": "schedule-7",
+    "slug": "schedule-webinar-rsvp",
     "category": "Schedule",
     "title": "Webinar RSVP",
     "description": "Event card with three collapsible sections: overview rows with live stream and recording switches, presenters, and agenda with Yes/Skip/Maybe RSVP. ReUI Frame and Badge, shadcn Collapsible, Avatar, Switch, Button. For meeting invites and webinars.",
     "url": "https://reui.io/blocks/application/schedule/schedule-7"
   },
   {
-    "slug": "schedule-8",
+    "slug": "schedule-team-agenda",
     "category": "Schedule",
     "title": "Team Agenda",
     "description": "Month calendar card with colored category dots per day, category filter chips, and a scrollable day agenda of events with attendee avatar groups. ReUI Frame, shadcn Calendar, Select, Avatar, ScrollArea. Mini schedule, team agenda widget.",
     "url": "https://reui.io/blocks/application/schedule/schedule-8"
   },
   {
-    "slug": "schedule-9",
+    "slug": "schedule-session-booking",
     "category": "Schedule",
     "title": "Session Booking",
     "description": "Appointment booking widget for meetings and consultations. Single-date Calendar with month and year dropdowns, 15m to 90m duration toggle, scrollable time-slot picker, confirm footer. ReUI Frame, shadcn Calendar, Select, ScrollArea, Button.",
     "url": "https://reui.io/blocks/application/schedule/schedule-9"
   },
   {
-    "slug": "schedule-10",
+    "slug": "schedule-due-date-picker",
     "category": "Schedule",
     "title": "Due Date Picker",
     "description": "Schedule a date and time: quick shortcut rows (Today, Tomorrow, Next week), month and year calendar, and scrollable time-slot column with disabled slots. Uses ReUI Frame, shadcn Calendar, Item, Select, ScrollArea, Button. Due-date / deadline picker.",
     "url": "https://reui.io/blocks/application/schedule/schedule-10"
   },
   {
-    "slug": "settings-1",
+    "slug": "settings-import-sources",
     "category": "Settings",
     "title": "Import Sources",
     "description": "Wizard step to import data from third-party services. Selectable integration cards with logo, status badge, and checkbox, capped at 2 picks via a toast, with back and next. ReUI Badge, Frame; shadcn Card, Checkbox, Button. Connect integrations.",
     "url": "https://reui.io/blocks/application/settings/settings-1"
   },
   {
-    "slug": "settings-2",
+    "slug": "settings-privacy-controls",
     "category": "Settings",
     "title": "Privacy Controls",
     "description": "Privacy settings panel of icon rows whose action varies per setting: toggle switch, single button, or a paired Enable all / Disable all control, plus Pro and Beta tags. ReUI Frame, Badge; shadcn Switch, Button, Item. Account privacy, preferences.",
     "url": "https://reui.io/blocks/application/settings/settings-2"
   },
   {
-    "slug": "settings-3",
+    "slug": "settings-general-settings",
     "category": "Settings",
     "title": "General Settings",
     "description": "Stacked settings rows in a ReUI Frame, each pairing a labeled description with its own control: Input, prefixed URL InputGroup, Select, ToggleGroup, color swatches, Switch list, plus Required and Pro badges. Preferences, app config, account settings.",
     "url": "https://reui.io/blocks/application/settings/settings-3"
   },
   {
-    "slug": "settings-4",
+    "slug": "settings-app-connections",
     "category": "Settings",
     "title": "App Connections",
     "description": "Connected apps settings: integration rows grouped into labeled sections, each with brand logo, Connected or Needs review status, and a per-row menu to sync, manage, or disconnect. ReUI Frame, Badge; shadcn Item, DropdownMenu, Button.",
     "url": "https://reui.io/blocks/application/settings/settings-4"
   },
   {
-    "slug": "settings-5",
+    "slug": "settings-role-capabilities",
     "category": "Settings",
     "title": "Role Capabilities",
     "description": "Role-based access settings: a two-column grid of outlined permission cards, each with title, description, and on/off Switch, under a header with a New Permission button. ReUI Frame, Badge; shadcn Item, Switch, Button. For roles, access control, RBAC.",
     "url": "https://reui.io/blocks/application/settings/settings-5"
   },
   {
-    "slug": "settings-6",
+    "slug": "settings-integration-events",
     "category": "Settings",
     "title": "Integration Events",
     "description": "Connected apps settings page: per-integration cards with brand logo, name, and Connect/Disconnect button that reveals per-channel notification toggles. ReUI Frame plus shadcn Item, Button, Switch. App connections, integrations, webhooks.",
     "url": "https://reui.io/blocks/application/settings/settings-6"
   },
   {
-    "slug": "settings-7",
+    "slug": "settings-account-settings",
     "category": "Settings",
     "title": "Account Settings",
     "description": "Tabbed account settings shell with a side tab rail. Profile with avatar upload, two-step verification, active sessions, delete account, and billing plans. ReUI Alert and Badge with shadcn Tabs, Card, Field, Input, Select, Switch, Item, Avatar.",
     "url": "https://reui.io/blocks/application/settings/settings-7"
   },
   {
-    "slug": "settings-8",
+    "slug": "settings-webhook-endpoints",
     "category": "Settings",
     "title": "Webhook Endpoints",
     "description": "Webhook developer settings managing endpoint routes with delivery-health tooltip alerts, status badges (Delivering, Retrying, Paused), enable Switch, copy URL, rotate-secret and remove actions. ReUI Frame, Badge; shadcn Item, Switch, DropdownMenu.",
     "url": "https://reui.io/blocks/application/settings/settings-8"
   },
   {
-    "slug": "settings-9",
+    "slug": "settings-general-display",
     "category": "Settings",
     "title": "General & Display",
     "description": "Workspace settings page grouping preference rows into collapsible General and Display sections, each row mixing select dropdowns and switch toggles with status badges. ReUI Frame, Badge; shadcn Collapsible, Item, Select, Switch, Separator.",
     "url": "https://reui.io/blocks/application/settings/settings-9"
   },
   {
-    "slug": "settings-10",
+    "slug": "settings-security-settings",
     "category": "Settings",
     "title": "Security Settings",
     "description": "Security settings page grouping session policy, login methods, and access restrictions into ReUI Frame cards. Rows mix Switch toggles, a timeout Select, and plan-tier Badges (Basic, Business, Enterprise) on shadcn Item. For 2FA, SSO, access controls.",
     "url": "https://reui.io/blocks/application/settings/settings-10"
   },
   {
-    "slug": "settings-11",
+    "slug": "settings-notification-channels",
     "category": "Settings",
     "title": "Notification Channels",
     "description": "Notification settings grouping events under Projects, Messages, Reports, and System tabs, each a table with per-row Email/Slack/In-app checkboxes. Uses shadcn Tabs (line), Table, Checkbox. For alert preferences and channel opt-in.",
     "url": "https://reui.io/blocks/application/settings/settings-11"
   },
   {
-    "slug": "settings-12",
+    "slug": "settings-notification-delivery",
     "category": "Settings",
     "title": "Notification Delivery",
     "description": "Notification preferences page: per-channel delivery-mode Selects for inbox, email, browser, and mobile, Slack, Zoom, and Google Meet connect rows, plus a collapsible auto-follow section. Uses ReUI Badge with shadcn Card, Select, Switch, Collapsible.",
     "url": "https://reui.io/blocks/application/settings/settings-12"
   },
   {
-    "slug": "settings-13",
+    "slug": "settings-integrations-gallery",
     "category": "Settings",
     "title": "Integrations Gallery",
     "description": "Integrations settings page: responsive grid of app cards with brand logo, description, connect/disconnect button and a toggle switch. Connected apps marketplace, integration directory. ReUI Frame with shadcn Item, Button, Switch.",
     "url": "https://reui.io/blocks/application/settings/settings-13"
   },
   {
-    "slug": "settings-14",
+    "slug": "settings-api-integrations",
     "category": "Settings",
     "title": "API Integrations",
     "description": "Sortable, paginated table of connected API integrations: brand logos, copy-to-clipboard API key badges, daily call counts, per-row enable switches, and a pause-all toggle. ReUI DataGrid, Frame, Badge; shadcn Switch. Connected apps, API keys settings.",
     "url": "https://reui.io/blocks/application/settings/settings-14"
   },
   {
-    "slug": "settings-15",
+    "slug": "settings-workspace-preferences",
     "category": "Settings",
     "title": "Workspace Preferences",
     "description": "Workspace preferences page grouping AI, publishing, collaboration, and notification settings into Frame cards with Switch toggles, status Badges, action Buttons, and an AvatarGroup team row.",
     "url": "https://reui.io/blocks/application/settings/settings-15"
   },
   {
-    "slug": "settings-16",
+    "slug": "settings-connected-apps",
     "category": "Settings",
     "title": "Connected Apps",
     "description": "Connected apps panel listing integrations as rows with logo, name, status badge (Connected, Available, Preview), and Configure or Install action. Uses ReUI Frame, Badge, shadcn Item, Button. For integrations, connectors, app directory.",
     "url": "https://reui.io/blocks/application/settings/settings-16"
   },
   {
-    "slug": "sheet-1",
+    "slug": "sheet-create-project",
     "category": "Sheet",
     "title": "Create Project",
     "description": "Create-project side drawer: name Input and description Textarea over inline Combobox pickers for status, priority, lead, members, milestone, target date, labels. Uses shadcn Sheet, Combobox, Calendar, Dialog, AvatarGroup. New project or issue form.",
     "url": "https://reui.io/blocks/application/sheet/sheet-1"
   },
   {
-    "slug": "sheet-2",
+    "slug": "sheet-help-center",
     "category": "Sheet",
     "title": "Help Center",
     "description": "Help center side panel: searchable InputGroup, grouped guide Items with status Badges and Tooltips, scrollable body, footer support links. For in-app help, docs drawers, support menus. ReUI Badge, shadcn Sheet, InputGroup, Item, ScrollArea, Tooltip.",
     "url": "https://reui.io/blocks/application/sheet/sheet-2"
   },
   {
-    "slug": "sheet-3",
+    "slug": "sheet-keyboard-shortcuts",
     "category": "Sheet",
     "title": "Keyboard Shortcuts",
     "description": "Right-side inset Sheet listing app keyboard shortcuts grouped into sections with Kbd key chords, a live search InputGroup, ScrollArea, and empty state. For a shortcuts panel, cheat sheet, or hotkeys help. Sheet, Kbd, InputGroup, ScrollArea, Empty.",
     "url": "https://reui.io/blocks/application/sheet/sheet-3"
   },
   {
-    "slug": "sheet-4",
+    "slug": "sheet-ai-model-chat",
     "category": "Sheet",
     "title": "AI Model Chat",
     "description": "Floating right-side AI chat panel with a header model-switch Select, user and assistant message bubbles, suggestion chips, and an InputGroup composer toolbar. Uses shadcn Sheet, InputGroup, ScrollArea, Tooltip. AI copilot drawer, chatbot panel.",
     "url": "https://reui.io/blocks/application/sheet/sheet-4"
   },
   {
-    "slug": "sheet-5",
+    "slug": "sheet-comment-thread",
     "category": "Sheet",
     "title": "Comment Thread",
     "description": "Client discussion sheet for collaboration and review apps. Comments with reply, emoji react, resolve and reopen, open-versus-all filter and a composer. ReUI Badge, shadcn Sheet, Item, Avatar, InputGroup, DropdownMenu, ScrollArea, Tooltip.",
     "url": "https://reui.io/blocks/application/sheet/sheet-5"
   },
   {
-    "slug": "sheet-6",
+    "slug": "sheet-view-customizer",
     "category": "Sheet",
     "title": "View Customizer",
     "description": "Floating right sheet to customize a workspace view: Switch toggles plus a RadioGroup of layout cards with SVG skeleton previews and a hint Tooltip. shadcn Sheet, Field, Switch, RadioGroup, ScrollArea. Settings panel, preferences drawer.",
     "url": "https://reui.io/blocks/application/sheet/sheet-6"
   },
   {
-    "slug": "sheet-7",
+    "slug": "sheet-notifications-feed",
     "category": "Sheet",
     "title": "Notifications Feed",
     "description": "Floating right-anchored notification panel for in-app activity. Scrollable feed with unread count, mark-all-as-read, approvals, attachments, avatar groups, ratings, and progress. ReUI Badge, Rating; Sheet, Avatar, Button, ScrollArea.",
     "url": "https://reui.io/blocks/application/sheet/sheet-7"
   },
   {
-    "slug": "sheet-8",
+    "slug": "sheet-relay-settings",
     "category": "Sheet",
     "title": "Relay Settings",
     "description": "Floating inset right Sheet for relay settings, with scrollable Delivery and Routing sections, Input, Select, and Switch fields, tooltip hints, and a sticky Reset / Save footer. shadcn Sheet, Field, Select, Switch. Settings panel, preferences drawer.",
     "url": "https://reui.io/blocks/application/sheet/sheet-8"
   },
   {
-    "slug": "sheet-9",
+    "slug": "sheet-ticket-edit-sheet",
     "category": "Sheet",
     "title": "Ticket Edit Sheet",
     "description": "Right-side ticket panel where each field edits in place via Select, Combobox, Calendar, Switch, or InputGroup, with Badge status, avatar chips, and async save toast. ReUI Badge, shadcn Sheet, Combobox. Ticket detail, issue properties, record drawer.",
     "url": "https://reui.io/blocks/application/sheet/sheet-9"
   },
   {
-    "slug": "sheet-10",
+    "slug": "sheet-copilot-chat",
     "category": "Sheet",
     "title": "Copilot Chat",
     "description": "Floating right-side AI chat panel with scrollable history, prompt suggestion chips, and a pinned InputGroup composer (attach, voice, send) plus header new-chat and refresh actions. Uses Sheet, ScrollArea, DropdownMenu. Copilot, assistant drawer.",
     "url": "https://reui.io/blocks/application/sheet/sheet-10"
   },
   {
-    "slug": "sheet-11",
+    "slug": "sheet-metric-detail-sheet",
     "category": "Sheet",
     "title": "Metric Detail Sheet",
     "description": "Right drawer for one KPI: current value with delta badge, target progress bar, definition facts, owner avatars, alert rule, and a recent-changes timeline. ReUI Badge, Timeline; shadcn Sheet, Progress, AvatarGroup. Metric detail, analytics drilldown.",
     "url": "https://reui.io/blocks/application/sheet/sheet-11"
   },
   {
-    "slug": "sheet-12",
+    "slug": "sheet-cron-job-detail",
     "category": "Sheet",
     "title": "Cron Job Detail",
     "description": "Scheduled task drawer with a failure alert, a cron field breakdown with the next 5 runs, per-run logs with Retry, and Run Now and Pause. ReUI Badge, Alert, CodeBlock, NumberField; shadcn Sheet, Tabs, Chart. Cron monitor, job scheduler.",
     "url": "https://reui.io/blocks/application/sheet/sheet-12"
   },
   {
-    "slug": "sheet-13",
+    "slug": "sheet-new-cron-job",
     "category": "Sheet",
     "title": "New Cron Job",
     "description": "Create form for a scheduled command: preset chips, a cron input read back in plain words, owner, service and cluster pickers, and a first run time. ReUI Badge; shadcn Sheet, ToggleGroup, InputGroup, Select, Switch. Cron job form, task scheduler.",
     "url": "https://reui.io/blocks/application/sheet/sheet-13"
   },
   {
-    "slug": "sheet-14",
+    "slug": "sheet-audit-event-detail",
     "category": "Sheet",
     "title": "Audit Event Detail",
     "description": "Security audit log inspector with actor, target and request facts, a denied or failed alert, J and K stepping and Mark reviewed with Undo. ReUI Timeline, CodeBlock, Alert, Badge; shadcn Sheet, Tabs, Kbd. Compliance review, activity log drawer.",
     "url": "https://reui.io/blocks/application/sheet/sheet-14"
   },
   {
-    "slug": "sheet-15",
+    "slug": "sheet-canary-rollout",
     "category": "Sheet",
     "title": "Canary Rollout",
     "description": "Release drawer for a canary in flight: Promote, Roll back and Pause controls, error rate and latency against the baseline, and the release's commits. ReUI CodeBlock, Frame, Alert, Badge; shadcn Sheet, Tabs, Chart, AlertDialog. Progressive delivery.",
     "url": "https://reui.io/blocks/application/sheet/sheet-15"
   },
   {
-    "slug": "sheet-16",
+    "slug": "sheet-failed-deploy",
     "category": "Sheet",
     "title": "Failed Deploy",
     "description": "CI/CD post-mortem drawer that opens on the failed run's log with wrap, download and copy, plus pipeline, health and changes tabs and J and K stepping. ReUI CodeBlock, Frame, Alert, Badge; shadcn Sheet, Tabs, Chart. Build failure, pipeline debug.",
     "url": "https://reui.io/blocks/application/sheet/sheet-16"
   },
   {
-    "slug": "sheet-17",
+    "slug": "sheet-new-firewall-rule",
     "category": "Sheet",
     "title": "New Firewall Rule",
     "description": "WAF and edge rule create form: IP, country, ASN, path, bot score and rate conditions, a live expression, and Block, Challenge, Allow or Log actions. ReUI Filters, CodeBlock, Frame; shadcn Sheet, RadioGroup, Select. Security rules, access control.",
     "url": "https://reui.io/blocks/application/sheet/sheet-17"
   },
   {
-    "slug": "sheet-18",
+    "slug": "sheet-edit-firewall-rule",
     "category": "Sheet",
     "title": "Edit Firewall Rule",
     "description": "Edit an existing WAF or access rule: conditions, action and an Enabled switch, with 24 hour hits, last hit, sampled log events, and Delete with Undo. ReUI Filters, CodeBlock, Frame, Badge; shadcn Sheet, Tabs, AlertDialog. Security rule editor.",
     "url": "https://reui.io/blocks/application/sheet/sheet-18"
   },
   {
-    "slug": "sheet-19",
+    "slug": "sheet-firewall-request",
     "category": "Sheet",
     "title": "Firewall Request",
     "description": "Inspect one logged WAF request: a verdict alert, IP, ASN, bot score and rate facts, J and K stepping, and Block IP, Allow IP or Create Rule actions. ReUI Alert, CodeBlock, Badge; shadcn Sheet, Tabs, Kbd. Firewall event log, edge security.",
     "url": "https://reui.io/blocks/application/sheet/sheet-19"
   },
   {
-    "slug": "sheet-20",
+    "slug": "sheet-slo-error-budget",
     "category": "Sheet",
     "title": "SLO Error Budget",
     "description": "Service level objective drawer for SRE teams: fast and slow burn alerts, hourly burn on a log axis, 5 burn windows, alert rules and Copy as OpenSLO. ReUI Alert, Badge, Frame, NumberField; shadcn Sheet, Tabs, Chart. Uptime, reliability.",
     "url": "https://reui.io/blocks/application/sheet/sheet-20"
   },
   {
-    "slug": "sheet-21",
+    "slug": "sheet-new-slo",
     "category": "Sheet",
     "title": "New SLO",
     "description": "Create form for a service level objective: an availability, latency, freshness or correctness indicator, a 99% to 99.99% target and a rolling window. ReUI NumberField; shadcn Sheet, ToggleGroup, Select, Switch, Textarea. SRE, uptime target.",
     "url": "https://reui.io/blocks/application/sheet/sheet-21"
   },
   {
-    "slug": "sheet-22",
+    "slug": "sheet-data-connection",
     "category": "Sheet",
     "title": "Data Connection",
     "description": "Data source drawer with auth and token alerts, Sync Now and Pause, schema drift on linked datasets, and a connection test in settings. ReUI Frame, Alert, Badge; shadcn Sheet, Tabs, Table, Chart. ETL, data pipeline, integration.",
     "url": "https://reui.io/blocks/application/sheet/sheet-22"
   },
   {
-    "slug": "sheet-23",
+    "slug": "sheet-new-connection",
     "category": "Sheet",
     "title": "New Connection",
     "description": "3 step data source setup: search integrations, paste a secret or authorize OAuth, pass a connection test, then check the datasets to sync. ReUI Stepper, Frame, IconTile, Badge; shadcn Sheet, InputGroup, Checkbox. ETL, integration onboarding.",
     "url": "https://reui.io/blocks/application/sheet/sheet-23"
   },
   {
-    "slug": "sheet-24",
+    "slug": "sheet-dataset-preview",
     "category": "Sheet",
     "title": "Dataset Preview",
     "description": "Sample one connected table as rows or schema, with a Mask PII switch, an audit warning on unmask, copy query, resample and Accept for new columns. ReUI Frame, Alert, Badge; shadcn Sheet, Table, ToggleGroup, Select. Data catalog, table explorer.",
     "url": "https://reui.io/blocks/application/sheet/sheet-24"
   },
   {
-    "slug": "stats-1",
+    "slug": "stats-stats-overview",
     "category": "Stats",
     "title": "Stats Overview",
     "description": "Responsive four-column KPI cards: large formatted metric, colored up or down delta badge, vs-last-month line, plus a per-card overflow menu. Uses ReUI Frame and Badge with shadcn DropdownMenu, Button, Separator. Stats overview, metrics, analytics.",
     "url": "https://reui.io/blocks/application/stats/stats-1"
   },
   {
-    "slug": "stats-2",
+    "slug": "stats-kpi-scorecard",
     "category": "Stats",
     "title": "KPI Scorecard",
     "description": "Four KPI metric cards on solid color backgrounds with delta arrow badge, vs-last-month comparison, and per-card overflow menu. Built with ReUI Badge, shadcn Card, Button, DropdownMenu. Dashboard stats, KPI tiles, scorecard.",
     "url": "https://reui.io/blocks/application/stats/stats-2"
   },
   {
-    "slug": "stats-3",
+    "slug": "stats-subscription-renewals",
     "category": "Stats",
     "title": "Subscription Renewals",
     "description": "Subscription metrics card: revenue and subscriber counts, a stacked Free/Pro/Enterprise tier bar with legend, and an Expiring Soon list with plan badges, days left, and renew links. ReUI Badge, shadcn Card, Select, Tooltip. For SaaS billing.",
     "url": "https://reui.io/blocks/application/stats/stats-3"
   },
   {
-    "slug": "stats-4",
+    "slug": "stats-leads-overview",
     "category": "Stats",
     "title": "Leads Overview",
     "description": "Lead summary card with a time-range Select, new vs returning counts, percent Badge, Progress bar and a 30-segment meter, plus top source and conversion rate Tooltip. ReUI Frame, Badge; shadcn Progress, Select, Tooltip. For CRM, marketing dashboards.",
     "url": "https://reui.io/blocks/application/stats/stats-4"
   },
   {
-    "slug": "stats-5",
+    "slug": "stats-wallet-balance",
     "category": "Stats",
     "title": "Wallet Balance",
     "description": "Wallet balance card with total amount, positive percent change, and a color-coded segmented bar splitting holdings by currency (USD, GBP, EUR) plus a Topup button. Uses shadcn Card and Button. For finance dashboards, crypto and banking apps.",
     "url": "https://reui.io/blocks/application/stats/stats-5"
   },
   {
-    "slug": "stats-6",
+    "slug": "stats-rep-performance",
     "category": "Stats",
     "title": "Rep Performance",
     "description": "Sales rep performance summary: a 3-up KPI grid with up/down trend deltas, a pipeline progress bar, a recent activity list, and a quarter filter. ReUI Frame, Badge with shadcn Progress, Select, DropdownMenu, Button. For dashboards and scorecards.",
     "url": "https://reui.io/blocks/application/stats/stats-6"
   },
   {
-    "slug": "stats-7",
+    "slug": "stats-sales-churn-metrics",
     "category": "Stats",
     "title": "Sales & Churn Metrics",
     "description": "Bordered ReUI Frame panel split into three divided cells, each with a title, large metric value, colored trend Badge and period comparison subtext. KPI overview, dashboard stats, sales and churn metrics row.",
     "url": "https://reui.io/blocks/application/stats/stats-7"
   },
   {
-    "slug": "stats-8",
+    "slug": "stats-analytics-overview",
     "category": "Stats",
     "title": "Analytics Overview",
     "description": "Responsive 1 to 3 column metric grid; each card pairs a colored icon tile with a value, label, up/down trend Badge, and reporting date range. ReUI Frame, Badge, shadcn Item. For dashboards, analytics overview, KPI summary.",
     "url": "https://reui.io/blocks/application/stats/stats-8"
   },
   {
-    "slug": "stats-9",
+    "slug": "stats-task-progress",
     "category": "Stats",
     "title": "Task Progress",
     "description": "Task summary card: animated Tasks Done Progress bar, range Select filter, 3-column Backlog/In Progress/In Review buckets with colored counts, and AI prediction footer. ReUI Frame, shadcn Progress, Select. Project dashboard, productivity stats widget.",
     "url": "https://reui.io/blocks/application/stats/stats-9"
   },
   {
-    "slug": "stats-10",
+    "slug": "stats-total-revenue",
     "category": "Stats",
     "title": "Total Revenue",
     "description": "Single KPI revenue card: large currency figure, USD label, red trend Badge for quarter-over-quarter change, and stacked metric rows. Built on ReUI Frame and Badge with shadcn Button and DropdownMenu actions. For dashboards, analytics, finance.",
     "url": "https://reui.io/blocks/application/stats/stats-10"
   },
   {
-    "slug": "stats-11",
+    "slug": "stats-api-quota-usage",
     "category": "Stats",
     "title": "API Quota Usage",
     "description": "Single-stat usage card tracking API calls against a monthly quota: Progress bar for used vs total, dollar cost, remaining free calls, and a renewal-date footer. ReUI Frame, shadcn Progress and Button. Usage meter, billing, plan limit.",
     "url": "https://reui.io/blocks/application/stats/stats-11"
   },
   {
-    "slug": "stats-12",
+    "slug": "stats-support-metrics",
     "category": "Stats",
     "title": "Support Metrics",
     "description": "Three-column support KPI grid: each Frame card pairs a colored bordered icon tile with a bold value, label, and status Badge (tickets, resolved rate, satisfaction). ReUI Frame, Badge, shadcn Item. For support dashboards and service overview stats.",
     "url": "https://reui.io/blocks/application/stats/stats-12"
   },
   {
-    "slug": "stats-13",
+    "slug": "stats-compliance-checks",
     "category": "Stats",
     "title": "Compliance Checks",
     "description": "Single-metric card tracking compliance checks passing with a segmented filled-block gauge, percentage readout, and actions dropdown. Built on ReUI Frame plus shadcn Button and DropdownMenu. For security, audit, and status dashboard widgets.",
     "url": "https://reui.io/blocks/application/stats/stats-13"
   },
   {
-    "slug": "stats-14",
+    "slug": "stats-adoption-rate",
     "category": "Stats",
     "title": "Adoption Rate",
     "description": "Single metric card showing a large 84% adoption rate over a segmented bar chart of graduated indigo blocks, plus a header actions menu. ReUI Frame with shadcn Button and DropdownMenu. For KPI, analytics, and feature usage dashboards.",
     "url": "https://reui.io/blocks/application/stats/stats-14"
   },
   {
-    "slug": "stats-15",
+    "slug": "stats-kpi-callouts",
     "category": "Stats",
     "title": "KPI Callouts",
     "description": "Three full-bleed colored metric cards, each with an icon, large KPI value, title, summary line, and a dark bottom CTA bar with a sliding arrow. Built on shadcn Card. For dashboards, KPI highlights, and stats callouts.",
     "url": "https://reui.io/blocks/application/stats/stats-15"
   },
   {
-    "slug": "stats-17",
+    "slug": "stats-portfolio-allocation",
     "category": "Stats",
     "title": "Portfolio Allocation",
     "description": "Equities, fixed income and alternatives cards, each on its own 1W, 1M, 3M and 1Y tabs with an allocation share, a signed delta, a 40 bar meter, exposure and managers. ReUI Frame, Badge; shadcn Tabs, Tooltip, Avatar. Asset management, fund dashboards.",
     "url": "https://reui.io/blocks/application/stats/stats-17"
   },
   {
-    "slug": "stats-18",
+    "slug": "stats-capacity-usage",
     "category": "Stats",
     "title": "Capacity Usage",
     "description": "Operational capacity panel for invoices, stock and budget: each cell pairs an icon tile and caption with value of total, a derived percent, a 40 bar meter and an actions menu. ReUI Frame, IconTile; shadcn DropdownMenu, Button. Ops dashboards.",
     "url": "https://reui.io/blocks/application/stats/stats-18"
   },
   {
-    "slug": "timeline-1",
+    "slug": "timeline-customer-activation",
     "category": "Timeline",
     "title": "Customer Activation",
     "description": "Customer onboarding timeline where each activation milestone is a collapsible card with owner, priority and status badges, assignee avatars and due date. ReUI Timeline, Frame, Badge plus shadcn Avatar, Collapsible, Spinner. Onboarding tracker.",
     "url": "https://reui.io/blocks/application/timeline/timeline-1"
   },
   {
-    "slug": "timeline-2",
+    "slug": "timeline-account-rollout",
     "category": "Timeline",
     "title": "Account Rollout",
     "description": "Vertical activity timeline of onboarding milestones, each with date, action title, owner, colored status and risk badges, optional star rating and downloadable attachment. ReUI Timeline, Badge, Rating. Customer success, audit log, milestone feed.",
     "url": "https://reui.io/blocks/application/timeline/timeline-2"
   },
   {
-    "slug": "timeline-3",
+    "slug": "timeline-finance-activity",
     "category": "Timeline",
     "title": "Finance Activity",
     "description": "Vertical finance feed of payouts, risk flags, invoices, ledger updates. Avatar nodes, dot plus colored status Badges, attachments, participant AvatarGroup, inline action Buttons. ReUI Timeline, Badge, shadcn Avatar, Button. Audit log, activity feed.",
     "url": "https://reui.io/blocks/application/timeline/timeline-3"
   },
   {
-    "slug": "timeline-4",
+    "slug": "timeline-team-activity-feed",
     "category": "Timeline",
     "title": "Team Activity Feed",
     "description": "Vertical activity stream mixing actor avatars, attachment downloads, participant avatar groups, status badges, progress bars, star ratings, and a per-event action menu. Uses ReUI Timeline, Badge, Rating, shadcn Avatar, Progress, DropdownMenu.",
     "url": "https://reui.io/blocks/application/timeline/timeline-4"
   },
   {
-    "slug": "timeline-5",
+    "slug": "timeline-release-changelog",
     "category": "Timeline",
     "title": "Release Changelog",
     "description": "Vertical changelog feed: each release shows a version title, summary, and tagged badges for type (New, Fixed), impact, and changes, with a left date rail. ReUI Timeline, Badge. Release notes, product updates, version history.",
     "url": "https://reui.io/blocks/application/timeline/timeline-5"
   },
   {
-    "slug": "timeline-6",
+    "slug": "timeline-approval-workflow",
     "category": "Timeline",
     "title": "Approval Workflow",
     "description": "Horizontal scrollable timeline tracking approval steps, each with a phase status badge, attachment download, star rating, action button, and owner avatar. ReUI Timeline, Badge, Rating with shadcn Avatar, Button, ButtonGroup. For approval flows.",
     "url": "https://reui.io/blocks/application/timeline/timeline-6"
   },
   {
-    "slug": "timeline-7",
+    "slug": "timeline-activity-dropdown",
     "category": "Timeline",
     "title": "Activity Dropdown",
     "description": "Dropdown holding a scrollable vertical timeline of rollout steps, each with date, owner, status badge, dot-meta badge, attachment and star rating. ReUI Timeline, Badge, Rating with shadcn DropdownMenu, ScrollArea. Activity feed, audit log.",
     "url": "https://reui.io/blocks/application/timeline/timeline-7"
   },
   {
-    "slug": "timeline-8",
+    "slug": "timeline-team-activity-sheet",
     "category": "Timeline",
     "title": "Team Activity Sheet",
     "description": "Right-side activity feed panel listing team events as timeline entries with avatars, status badges, progress bars, attachments, ratings, and a per-item action menu. ReUI Timeline, Badge, Rating with shadcn Sheet, Avatar, DropdownMenu, ScrollArea.",
     "url": "https://reui.io/blocks/application/timeline/timeline-8"
   },
   {
-    "slug": "timeline-9",
+    "slug": "timeline-finance-activity-sheet",
     "category": "Timeline",
     "title": "Finance Activity Sheet",
     "description": "Floating right sheet with a scrollable activity feed of payouts, risk reviews, and ledger entries with avatar indicators, status badges, attachment downloads, and inline actions. ReUI Timeline, Badge; shadcn Sheet, Avatar. Audit log, notifications.",
     "url": "https://reui.io/blocks/application/timeline/timeline-9"
   },
   {
-    "slug": "whiteboard-1",
+    "slug": "whiteboard-design-review-board",
     "category": "Whiteboard",
     "title": "Design Review Board",
     "description": "Embeddable Excalidraw whiteboard for shadcn/ui that fills any app content area and follows your tokens in light and dark: frames navigator, presence, templates, a shape library, PNG and SVG export, view only sharing and version restore.",
     "url": "https://reui.io/blocks/application/whiteboard/whiteboard-1"
   },
   {
-    "slug": "whiteboard-2",
+    "slug": "whiteboard-sprint-planning-board",
     "category": "Whiteboard",
     "title": "Sprint Planning Board",
     "description": "Excalidraw sprint planning room for shadcn/ui: lane frames that total story points against capacity as you drag cards, owner portraits, presence outlines with name tags, follow and present modes, and a decision log linked to the canvas.",
     "url": "https://reui.io/blocks/application/whiteboard/whiteboard-2"
   },
   {
-    "slug": "wizard-1",
+    "slug": "wizard-billing-setup",
     "category": "Wizard",
     "title": "Billing Setup",
     "description": "Multi-step account and payment onboarding wizard in a Card: ReUI Stepper nav gates locked steps, validates each step, then shows a review summary with Badge. Uses Field, Input, InputGroup, Select, Switch, Button. For billing, checkout, onboarding.",
     "url": "https://reui.io/blocks/application/wizard/wizard-1"
   },
   {
-    "slug": "wizard-2",
+    "slug": "wizard-vendor-onboarding",
     "category": "Wizard",
     "title": "Vendor Onboarding",
     "description": "Multi-step vendor KYC intake: company details, compliance with repeatable beneficial owners and tax ID, then a document checklist and review summary. Per-step validation. ReUI Stepper, Frame, Badge plus shadcn Field, Input, Select, Checkbox, Tooltip.",
     "url": "https://reui.io/blocks/application/wizard/wizard-2"
   },
   {
-    "slug": "wizard-3",
+    "slug": "wizard-send-invoice",
     "category": "Wizard",
     "title": "Send Invoice",
     "description": "Four-step invoice send flow with progress Stepper, editable line-item Table, and live subtotal, tax, discount, and total. ReUI Stepper, Badge, shadcn Combobox, Card, Select, Calendar, Table, Tooltip. For billing, checkout, invoicing wizards.",
     "url": "https://reui.io/blocks/application/wizard/wizard-3"
   },
   {
-    "slug": "wizard-4",
+    "slug": "wizard-plan-upgrade",
     "category": "Wizard",
     "title": "Plan Upgrade",
     "description": "Plan, seats, payment, and review flow that recalculates seat subtotal, annual discount, and support fee into a draft invoice. Uses ReUI Stepper, Badge, Alert plus Card, RadioGroup, Slider, Select, and Calendar. For checkout and seat upgrade screens.",
     "url": "https://reui.io/blocks/application/wizard/wizard-4"
   },
   {
-    "slug": "wizard-5",
+    "slug": "wizard-team-invitations",
     "category": "Wizard",
     "title": "Team Invitations",
     "description": "Add member emails with inline validation and per-row roles, set sender and expiry, then review a recipients table and send-readiness checks before queuing. ReUI Stepper, Frame, Badge plus shadcn Table, Select, Avatar. For onboarding and seat invites.",
     "url": "https://reui.io/blocks/application/wizard/wizard-5"
   },
   {
-    "slug": "wizard-6",
+    "slug": "wizard-product-setup-wizard",
     "category": "Wizard",
     "title": "Product Setup Wizard",
     "description": "Add-product flow across details, image gallery, variant option groups, pricing, and a per-variant SKU matrix table. ReUI Stepper, Badge, Alert with shadcn Card, Select, Switch, Table, Dialog. Product setup wizard, multi-step form.",
     "url": "https://reui.io/blocks/application/wizard/wizard-6"
   },
   {
-    "slug": "wizard-7",
+    "slug": "wizard-fund-transfer",
     "category": "Wizard",
     "title": "Fund Transfer",
     "description": "Money transfer flow over a 4-step Stepper: pick payee, set amount and funding source, review, authorize with a 6-digit code. Recent-payee grid, searchable saved accounts, multi-currency Combobox, low-balance Alert. ReUI Stepper plus shadcn Combobox.",

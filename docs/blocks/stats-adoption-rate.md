@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-adoption-rate` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-14)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-adoption-rate)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-adoption-rate
 ## Usage
 
 ```tsx
-import { Stats14Block } from "@/blocks/stats-adoption-rate"
+import { StatsAdoptionRateBlock } from "@/blocks/stats-adoption-rate"
 
 export default function Page() {
-  return <Stats14Block />
+  return <StatsAdoptionRateBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-14/index.tsx`
+- `src/blocks/application/stats/stats-adoption-rate/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Wizard
 
 **Block:** `wizard-vendor-onboarding` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-vendor-onboarding)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/wizard-vendor-onboarding
 ## Usage
 
 ```tsx
-import { Wizard2Block } from "@/blocks/wizard-vendor-onboarding"
+import { WizardVendorOnboardingBlock } from "@/blocks/wizard-vendor-onboarding"
 
 export default function Page() {
-  return <Wizard2Block />
+  return <WizardVendorOnboardingBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/wizard/wizard-2/index.tsx`
+- `src/blocks/application/wizard/wizard-vendor-onboarding/index.tsx`
 
 ## Dependencies
 

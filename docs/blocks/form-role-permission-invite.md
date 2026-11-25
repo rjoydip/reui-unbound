@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-role-permission-invite` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-role-permission-invite)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-role-permission-invite
 ## Usage
 
 ```tsx
-import { Form9Block } from "@/blocks/form-role-permission-invite"
+import { FormRolePermissionInviteBlock } from "@/blocks/form-role-permission-invite"
 
 export default function Page() {
-  return <Form9Block />
+  return <FormRolePermissionInviteBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-9/index.tsx`
+- `src/blocks/application/form/form-role-permission-invite/index.tsx`
 
 ## Dependencies
 

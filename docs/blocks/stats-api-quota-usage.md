@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-api-quota-usage` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-api-quota-usage)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-api-quota-usage
 ## Usage
 
 ```tsx
-import { Stats11Block } from "@/blocks/stats-api-quota-usage"
+import { StatsApiQuotaUsageBlock } from "@/blocks/stats-api-quota-usage"
 
 export default function Page() {
-  return <Stats11Block />
+  return <StatsApiQuotaUsageBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-11/index.tsx`
+- `src/blocks/application/stats/stats-api-quota-usage/index.tsx`
 
 
 ## Registry dependencies

@@ -65,219 +65,219 @@ Captured previews live in `captures/application`:
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Icon Rail Dashboard | `app-shell-1` | 6 |
-| ✅ | Floating Sidebar Admin | `app-shell-2` | 2 |
-| ✅ | Project Tracker Sidebar | `app-shell-3` | 6 |
-| ✅ | Mail Inbox | `app-shell-4` | 6 |
-| ✅ | Calendar Contacts Hub | `app-shell-5` | 6 |
-| ✅ | Team Calendar Panel | `app-shell-6` | 6 |
-| ✅ | Environment Switcher | `app-shell-7` | 1 |
-| ✅ | Inventory Admin | `app-shell-8` | 6 |
-| ✅ | Team Presence Workspace | `app-shell-9` | 6 |
-| ✅ | AI Agents Console | `app-shell-10` | 6 |
-| ✅ | Operations Workbench | `app-shell-11` | 6 |
-| ✅ | Apps Grid Header | `app-shell-12` | 6 |
-| ✅ | Community Feed App | `app-shell-13` | 3 |
-| ✅ | View Toolbar Workspace | `app-shell-14` | 5 |
-| ✅ | Pinnable Favorites Nav | `app-shell-15` | 6 |
-| ✅ | Dual Sidebar Dashboard | `app-shell-16` | 5 |
-| ✅ | Model Picker Chat | `app-shell-17` | 6 |
-| ✅ | To-Do AI Assistant | `app-shell-18` | 3 |
-| ✅ | Scheduling Planner | `app-shell-19` | 3 |
-| ✅ | Webmail Client | `app-shell-20` | 5 |
-| ✅ | Resizable AI Chat | `app-shell-21` | 4 |
-| ✅ | Fleet Operator Console | `app-shell-22` | 4 |
-| ✅ | Team Project Switcher | `app-shell-23` | 6 |
-| ✅ | Ops Presence Console | `app-shell-24` | 5 |
-| ✅ | Mission Control | `app-shell-25` | 6 |
-| ✅ | Security Scope Console | `app-shell-26` | 5 |
-| ✅ | Route Search Sidebar | `app-shell-27` | 5 |
-| ✅ | Section Tabs Admin | `app-shell-28` | 4 |
-| ✅ | Section Tile Rail | `app-shell-29` | 6 |
-| ✅ | Top Navbar Admin | `app-shell-30` | 4 |
-| ✅ | Folder Tab Workspace | `app-shell-31` | 5 |
-| ✅ | Endpoint Protection | `app-shell-32` | 6 |
-| ✅ | Fleet Center | `app-shell-33` | 6 |
-| ✅ | Invoice Matching | `app-shell-34` | 6 |
-| ✅ | Whiteboard Workspace | `app-shell-35` | 4 |
-| ✅ | Observability Console | `app-shell-36` | 3 |
+| ✅ | AI Agents Console | `app-shell-ai-agents-console` | 6 |
+| ✅ | Apps Grid Header | `app-shell-apps-grid-header` | 6 |
+| ✅ | Calendar Contacts Hub | `app-shell-calendar-contacts-hub` | 6 |
+| ✅ | Community Feed App | `app-shell-community-feed-app` | 3 |
+| ✅ | Dual Sidebar Dashboard | `app-shell-dual-sidebar-dashboard` | 5 |
+| ✅ | Endpoint Protection | `app-shell-endpoint-protection` | 6 |
+| ✅ | Environment Switcher | `app-shell-environment-switcher` | 1 |
+| ✅ | Fleet Center | `app-shell-fleet-center` | 6 |
+| ✅ | Fleet Operator Console | `app-shell-fleet-operator-console` | 4 |
+| ✅ | Floating Sidebar Admin | `app-shell-floating-sidebar-admin` | 2 |
+| ✅ | Folder Tab Workspace | `app-shell-folder-tab-workspace` | 5 |
+| ✅ | Icon Rail Dashboard | `app-shell-icon-rail-dashboard` | 6 |
+| ✅ | Inventory Admin | `app-shell-inventory-admin` | 6 |
+| ✅ | Invoice Matching | `app-shell-invoice-matching` | 6 |
+| ✅ | Mail Inbox | `app-shell-mail-inbox` | 6 |
+| ✅ | Mission Control | `app-shell-mission-control` | 6 |
+| ✅ | Model Picker Chat | `app-shell-model-picker-chat` | 6 |
+| ✅ | Observability Console | `app-shell-observability-console` | 3 |
+| ✅ | Operations Workbench | `app-shell-operations-workbench` | 6 |
+| ✅ | Ops Presence Console | `app-shell-ops-presence-console` | 5 |
+| ✅ | Pinnable Favorites Nav | `app-shell-pinnable-favorites-nav` | 6 |
+| ✅ | Project Tracker Sidebar | `app-shell-project-tracker-sidebar` | 6 |
+| ✅ | Resizable AI Chat | `app-shell-resizable-ai-chat` | 4 |
+| ✅ | Route Search Sidebar | `app-shell-route-search-sidebar` | 5 |
+| ✅ | Scheduling Planner | `app-shell-scheduling-planner` | 3 |
+| ✅ | Section Tabs Admin | `app-shell-section-tabs-admin` | 4 |
+| ✅ | Section Tile Rail | `app-shell-section-tile-rail` | 6 |
+| ✅ | Security Scope Console | `app-shell-security-scope-console` | 5 |
+| ✅ | Team Calendar Panel | `app-shell-team-calendar-panel` | 6 |
+| ✅ | Team Presence Workspace | `app-shell-team-presence-workspace` | 6 |
+| ✅ | Team Project Switcher | `app-shell-team-project-switcher` | 6 |
+| ✅ | To-Do AI Assistant | `app-shell-to-do-ai-assistant` | 3 |
+| ✅ | Top Navbar Admin | `app-shell-top-navbar-admin` | 4 |
+| ✅ | View Toolbar Workspace | `app-shell-view-toolbar-workspace` | 5 |
+| ✅ | Webmail Client | `app-shell-webmail-client` | 5 |
+| ✅ | Whiteboard Workspace | `app-shell-whiteboard-workspace` | 4 |
 
 ## Navbar (13)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Project Workspace | `navbar-1` | 7 |
-| ✅ | Team Presence | `navbar-2` | 5 |
-| ✅ | Org & Environment Switcher | `navbar-3` | 7 |
-| ✅ | Admin Command Search | `navbar-4` | 3 |
-| ✅ | Workflow Editor | `navbar-5` | 3 |
-| ✅ | Analytics Toolbar | `navbar-6` | 5 |
-| ✅ | CMS Publish Bar | `navbar-7` | 3 |
-| ✅ | Agent Marketplace | `navbar-8` | 3 |
-| ✅ | Repo Branch Picker | `navbar-9` | 2 |
-| ✅ | API Developer Portal | `navbar-10` | 5 |
-| ✅ | Design System Manager | `navbar-11` | 7 |
-| ✅ | Marketing Mega Menu | `navbar-12` | 3 |
-| ✅ | Editor Action Bar | `navbar-13` | 1 |
+| ✅ | Admin Command Search | `navbar-admin-command-search` | 3 |
+| ✅ | Agent Marketplace | `navbar-agent-marketplace` | 3 |
+| ✅ | Analytics Toolbar | `navbar-analytics-toolbar` | 5 |
+| ✅ | API Developer Portal | `navbar-api-developer-portal` | 5 |
+| ✅ | CMS Publish Bar | `navbar-cms-publish-bar` | 3 |
+| ✅ | Design System Manager | `navbar-design-system-manager` | 7 |
+| ✅ | Editor Action Bar | `navbar-editor-action-bar` | 1 |
+| ✅ | Marketing Mega Menu | `navbar-marketing-mega-menu` | 3 |
+| ✅ | Org & Environment Switcher | `navbar-org-environment-switcher` | 7 |
+| ✅ | Project Workspace | `navbar-project-workspace` | 7 |
+| ✅ | Repo Branch Picker | `navbar-repo-branch-picker` | 2 |
+| ✅ | Team Presence | `navbar-team-presence` | 5 |
+| ✅ | Workflow Editor | `navbar-workflow-editor` | 3 |
 
 ## Onboarding (9)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Live Preview Wizard | `onboarding-1` | 9 |
-| ✅ | Sidebar Stepper Wizard | `onboarding-2` | 3 |
-| ✅ | Split-Screen Signup | `onboarding-3` | 3 |
-| ✅ | Centered Setup Flow | `onboarding-4` | 9 |
-| ✅ | Onboarding Dialog | `onboarding-5` | 2 |
-| ✅ | Agent & API Setup | `onboarding-6` | 8 |
-| ✅ | Screenshot Carousel Setup | `onboarding-7` | 9 |
-| ✅ | CLI Agent Setup | `onboarding-8` | 9 |
-| ✅ | Marketing Hero Signup | `onboarding-9` | 8 |
+| ✅ | Agent & API Setup | `onboarding-agent-api-setup` | 8 |
+| ✅ | Centered Setup Flow | `onboarding-centered-setup-flow` | 9 |
+| ✅ | CLI Agent Setup | `onboarding-cli-agent-setup` | 9 |
+| ✅ | Live Preview Wizard | `onboarding-live-preview-wizard` | 9 |
+| ✅ | Marketing Hero Signup | `onboarding-marketing-hero-signup` | 8 |
+| ✅ | Onboarding Dialog | `onboarding-onboarding-dialog` | 2 |
+| ✅ | Screenshot Carousel Setup | `onboarding-screenshot-carousel-setup` | 9 |
+| ✅ | Sidebar Stepper Wizard | `onboarding-sidebar-stepper-wizard` | 3 |
+| ✅ | Split-Screen Signup | `onboarding-split-screen-signup` | 3 |
 
 ## Profile (10)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Account & Team Settings | `profile-1` | 7 |
-| ✅ | Admin Permissions | `profile-2` | 8 |
-| ✅ | Personal Profile | `profile-3` | 9 |
-| ✅ | Mailbox Accounts | `profile-4` | 7 |
-| ✅ | Notification Digest | `profile-5` | 2 |
-| ✅ | Referral Rewards | `profile-6` | 2 |
-| ✅ | Meeting Capture | `profile-7` | 6 |
-| ✅ | Billing Settings | `profile-8` | 1 |
-| ✅ | Account Settings Hub | `profile-9` | 5 |
-| ✅ | Developer API Keys | `profile-10` | 7 |
+| ✅ | Account & Team Settings | `profile-account-team-settings` | 7 |
+| ✅ | Account Settings Hub | `profile-account-settings-hub` | 5 |
+| ✅ | Admin Permissions | `profile-admin-permissions` | 8 |
+| ✅ | Billing Settings | `profile-billing-settings` | 1 |
+| ✅ | Developer API Keys | `profile-developer-api-keys` | 7 |
+| ✅ | Mailbox Accounts | `profile-mailbox-accounts` | 7 |
+| ✅ | Meeting Capture | `profile-meeting-capture` | 6 |
+| ✅ | Notification Digest | `profile-notification-digest` | 2 |
+| ✅ | Personal Profile | `profile-personal-profile` | 9 |
+| ✅ | Referral Rewards | `profile-referral-rewards` | 2 |
 
 ## Rich Text Editor (5)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Document Editor | `rich-text-editor-1` | 8 |
-| ✅ | Wiki Page Editor | `rich-text-editor-2` | 3 |
-| ✅ | Contract Redlines | `rich-text-editor-3` | 8 |
-| ✅ | Collaborative Editor | `rich-text-editor-4` | 5 |
-| ✅ | AI Writing Assistant | `rich-text-editor-5` | 8 |
+| ✅ | AI Writing Assistant | `rich-text-editor-ai-writing-assistant` | 8 |
+| ✅ | Collaborative Editor | `rich-text-editor-collaborative-editor` | 5 |
+| ✅ | Contract Redlines | `rich-text-editor-contract-redlines` | 8 |
+| ✅ | Document Editor | `rich-text-editor-document-editor` | 8 |
+| ✅ | Wiki Page Editor | `rich-text-editor-wiki-page-editor` | 3 |
 
 ## Schedule (10)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Appointment Planner | `schedule-1` | 8 |
-| ✅ | Time Range Picker | `schedule-2` | 5 |
-| ✅ | Meeting Scheduler | `schedule-3` | 6 |
-| ✅ | Booking Page | `schedule-4` | 4 |
-| ✅ | Team Attendance | `schedule-5` | 5 |
-| ✅ | Create Schedule | `schedule-6` | 5 |
-| ✅ | Webinar RSVP | `schedule-7` | 2 |
-| ✅ | Team Agenda | `schedule-8` | 6 |
-| ✅ | Session Booking | `schedule-9` | 4 |
-| ✅ | Due Date Picker | `schedule-10` | 4 |
+| ✅ | Appointment Planner | `schedule-appointment-planner` | 8 |
+| ✅ | Booking Page | `schedule-booking-page` | 4 |
+| ✅ | Create Schedule | `schedule-create-schedule` | 5 |
+| ✅ | Due Date Picker | `schedule-due-date-picker` | 4 |
+| ✅ | Meeting Scheduler | `schedule-meeting-scheduler` | 6 |
+| ✅ | Session Booking | `schedule-session-booking` | 4 |
+| ✅ | Team Agenda | `schedule-team-agenda` | 6 |
+| ✅ | Team Attendance | `schedule-team-attendance` | 5 |
+| ✅ | Time Range Picker | `schedule-time-range-picker` | 5 |
+| ✅ | Webinar RSVP | `schedule-webinar-rsvp` | 2 |
 
 ## Settings (16)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Import Sources | `settings-1` | 2 |
-| ✅ | Privacy Controls | `settings-2` | 2 |
-| ✅ | General Settings | `settings-3` | 6 |
-| ✅ | App Connections | `settings-4` | 7 |
-| ✅ | Role Capabilities | `settings-5` | 2 |
-| ✅ | Integration Events | `settings-6` | 2 |
-| ✅ | Account Settings | `settings-7` | 7 |
-| ✅ | Webhook Endpoints | `settings-8` | 7 |
-| ✅ | General & Display | `settings-9` | 7 |
-| ✅ | Security Settings | `settings-10` | 3 |
-| ✅ | Notification Channels | `settings-11` | 6 |
-| ✅ | Notification Delivery | `settings-12` | 5 |
-| ✅ | Integrations Gallery | `settings-13` | 2 |
-| ✅ | API Integrations | `settings-14` | 7 |
-| ✅ | Workspace Preferences | `settings-15` | 3 |
-| ✅ | Connected Apps | `settings-16` | 1 |
+| ✅ | Account Settings | `settings-account-settings` | 7 |
+| ✅ | API Integrations | `settings-api-integrations` | 7 |
+| ✅ | App Connections | `settings-app-connections` | 7 |
+| ✅ | Connected Apps | `settings-connected-apps` | 1 |
+| ✅ | General & Display | `settings-general-display` | 7 |
+| ✅ | General Settings | `settings-general-settings` | 6 |
+| ✅ | Import Sources | `settings-import-sources` | 2 |
+| ✅ | Integration Events | `settings-integration-events` | 2 |
+| ✅ | Integrations Gallery | `settings-integrations-gallery` | 2 |
+| ✅ | Notification Channels | `settings-notification-channels` | 6 |
+| ✅ | Notification Delivery | `settings-notification-delivery` | 5 |
+| ✅ | Privacy Controls | `settings-privacy-controls` | 2 |
+| ✅ | Role Capabilities | `settings-role-capabilities` | 2 |
+| ✅ | Security Settings | `settings-security-settings` | 3 |
+| ✅ | Webhook Endpoints | `settings-webhook-endpoints` | 7 |
+| ✅ | Workspace Preferences | `settings-workspace-preferences` | 3 |
 
 ## Sheet (24)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Create Project | `sheet-1` | 7 |
-| ✅ | Help Center | `sheet-2` | 2 |
-| ✅ | Keyboard Shortcuts | `sheet-3` | 2 |
-| ✅ | AI Model Chat | `sheet-4` | 4 |
-| ✅ | Comment Thread | `sheet-5` | 6 |
-| ✅ | View Customizer | `sheet-6` | 3 |
-| ✅ | Notifications Feed | `sheet-7` | 1 |
-| ✅ | Relay Settings | `sheet-8` | 8 |
-| ✅ | Ticket Edit Sheet | `sheet-9` | 3 |
-| ✅ | Copilot Chat | `sheet-10` | 2 |
-| ✅ | Metric Detail Sheet | `sheet-11` | 1 |
-| ✅ | Cron Job Detail | `sheet-12` | 3 |
-| ✅ | New Cron Job | `sheet-13` | 7 |
-| ✅ | Audit Event Detail | `sheet-14` | 2 |
-| ✅ | Canary Rollout | `sheet-15` | 2 |
-| ✅ | Failed Deploy | `sheet-16` | 2 |
-| ✅ | New Firewall Rule | `sheet-17` | 4 |
-| ✅ | Edit Firewall Rule | `sheet-18` | 2 |
-| ✅ | Firewall Request | `sheet-19` | 2 |
-| ✅ | SLO Error Budget | `sheet-20` | 3 |
-| ✅ | New SLO | `sheet-21` | 6 |
-| ✅ | Data Connection | `sheet-22` | 3 |
-| ✅ | New Connection | `sheet-23` | 2 |
-| ✅ | Dataset Preview | `sheet-24` | 3 |
+| ✅ | AI Model Chat | `sheet-ai-model-chat` | 4 |
+| ✅ | Audit Event Detail | `sheet-audit-event-detail` | 2 |
+| ✅ | Canary Rollout | `sheet-canary-rollout` | 2 |
+| ✅ | Comment Thread | `sheet-comment-thread` | 6 |
+| ✅ | Copilot Chat | `sheet-copilot-chat` | 2 |
+| ✅ | Create Project | `sheet-create-project` | 7 |
+| ✅ | Cron Job Detail | `sheet-cron-job-detail` | 3 |
+| ✅ | Data Connection | `sheet-data-connection` | 3 |
+| ✅ | Dataset Preview | `sheet-dataset-preview` | 3 |
+| ✅ | Edit Firewall Rule | `sheet-edit-firewall-rule` | 2 |
+| ✅ | Failed Deploy | `sheet-failed-deploy` | 2 |
+| ✅ | Firewall Request | `sheet-firewall-request` | 2 |
+| ✅ | Help Center | `sheet-help-center` | 2 |
+| ✅ | Keyboard Shortcuts | `sheet-keyboard-shortcuts` | 2 |
+| ✅ | Metric Detail Sheet | `sheet-metric-detail-sheet` | 1 |
+| ✅ | New Connection | `sheet-new-connection` | 2 |
+| ✅ | New Cron Job | `sheet-new-cron-job` | 7 |
+| ✅ | New Firewall Rule | `sheet-new-firewall-rule` | 4 |
+| ✅ | New SLO | `sheet-new-slo` | 6 |
+| ✅ | Notifications Feed | `sheet-notifications-feed` | 1 |
+| ✅ | Relay Settings | `sheet-relay-settings` | 8 |
+| ✅ | SLO Error Budget | `sheet-slo-error-budget` | 3 |
+| ✅ | Ticket Edit Sheet | `sheet-ticket-edit-sheet` | 3 |
+| ✅ | View Customizer | `sheet-view-customizer` | 3 |
 
 ## Stats (17)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Stats Overview | `stats-1` | 5 |
-| ✅ | KPI Scorecard | `stats-2` | 5 |
-| ✅ | Subscription Renewals | `stats-3` | 3 |
-| ✅ | Leads Overview | `stats-4` | 3 |
-| ✅ | Wallet Balance | `stats-5` | 1 |
-| ✅ | Rep Performance | `stats-6` | 4 |
-| ✅ | Sales & Churn Metrics | `stats-7` | 1 |
-| ✅ | Analytics Overview | `stats-8` | 1 |
-| ✅ | Task Progress | `stats-9` | 3 |
-| ✅ | Total Revenue | `stats-10` | 2 |
-| ✅ | API Quota Usage | `stats-11` | 1 |
-| ✅ | Support Metrics | `stats-12` | 1 |
-| ✅ | Compliance Checks | `stats-13` | 2 |
-| ✅ | Adoption Rate | `stats-14` | 2 |
-| ✅ | KPI Callouts | `stats-15` | 1 |
-| ✅ | Portfolio Allocation | `stats-17` | 7 |
-| ✅ | Capacity Usage | `stats-18` | 4 |
+| ✅ | Adoption Rate | `stats-adoption-rate` | 2 |
+| ✅ | Analytics Overview | `stats-analytics-overview` | 1 |
+| ✅ | API Quota Usage | `stats-api-quota-usage` | 1 |
+| ✅ | Capacity Usage | `stats-capacity-usage` | 4 |
+| ✅ | Compliance Checks | `stats-compliance-checks` | 2 |
+| ✅ | KPI Callouts | `stats-kpi-callouts` | 1 |
+| ✅ | KPI Scorecard | `stats-kpi-scorecard` | 5 |
+| ✅ | Leads Overview | `stats-leads-overview` | 3 |
+| ✅ | Portfolio Allocation | `stats-portfolio-allocation` | 7 |
+| ✅ | Rep Performance | `stats-rep-performance` | 4 |
+| ✅ | Sales & Churn Metrics | `stats-sales-churn-metrics` | 1 |
+| ✅ | Stats Overview | `stats-stats-overview` | 5 |
+| ✅ | Subscription Renewals | `stats-subscription-renewals` | 3 |
+| ✅ | Support Metrics | `stats-support-metrics` | 1 |
+| ✅ | Task Progress | `stats-task-progress` | 3 |
+| ✅ | Total Revenue | `stats-total-revenue` | 2 |
+| ✅ | Wallet Balance | `stats-wallet-balance` | 1 |
 
 ## Timeline (9)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Customer Activation | `timeline-1` | 2 |
-| ✅ | Account Rollout | `timeline-2` | 1 |
-| ✅ | Finance Activity | `timeline-3` | 2 |
-| ✅ | Team Activity Feed | `timeline-4` | 7 |
-| ✅ | Release Changelog | `timeline-5` | 1 |
-| ✅ | Approval Workflow | `timeline-6` | 1 |
-| ✅ | Activity Dropdown | `timeline-7` | 2 |
-| ✅ | Team Activity Sheet | `timeline-8` | 6 |
-| ✅ | Finance Activity Sheet | `timeline-9` | 1 |
+| ✅ | Account Rollout | `timeline-account-rollout` | 1 |
+| ✅ | Activity Dropdown | `timeline-activity-dropdown` | 2 |
+| ✅ | Approval Workflow | `timeline-approval-workflow` | 1 |
+| ✅ | Customer Activation | `timeline-customer-activation` | 2 |
+| ✅ | Finance Activity | `timeline-finance-activity` | 2 |
+| ✅ | Finance Activity Sheet | `timeline-finance-activity-sheet` | 1 |
+| ✅ | Release Changelog | `timeline-release-changelog` | 1 |
+| ✅ | Team Activity Feed | `timeline-team-activity-feed` | 7 |
+| ✅ | Team Activity Sheet | `timeline-team-activity-sheet` | 6 |
 
 ## Whiteboard (2)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Design Review Board | `whiteboard-1` | 8 |
-| ✅ | Sprint Planning Board | `whiteboard-2` | 7 |
+| ✅ | Design Review Board | `whiteboard-design-review-board` | 8 |
+| ✅ | Sprint Planning Board | `whiteboard-sprint-planning-board` | 7 |
 
 ## Wizard (7)
 
 | Status | Block name | Slug | Interaction captures |
 | :---: | --- | --- | ---: |
-| ✅ | Billing Setup | `wizard-1` | 6 |
-| ✅ | Vendor Onboarding | `wizard-2` | 6 |
-| ✅ | Send Invoice | `wizard-3` | 7 |
-| ✅ | Plan Upgrade | `wizard-4` | 5 |
-| ✅ | Team Invitations | `wizard-5` | 7 |
-| ✅ | Product Setup Wizard | `wizard-6` | 8 |
-| ✅ | Fund Transfer | `wizard-7` | 3 |
+| ✅ | Billing Setup | `wizard-billing-setup` | 6 |
+| ✅ | Fund Transfer | `wizard-fund-transfer` | 3 |
+| ✅ | Plan Upgrade | `wizard-plan-upgrade` | 5 |
+| ✅ | Product Setup Wizard | `wizard-product-setup-wizard` | 8 |
+| ✅ | Send Invoice | `wizard-send-invoice` | 7 |
+| ✅ | Team Invitations | `wizard-team-invitations` | 7 |
+| ✅ | Vendor Onboarding | `wizard-vendor-onboarding` | 6 |
 
 ## Data Grid (61)
 

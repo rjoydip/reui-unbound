@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-approval-workflow` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-approval-workflow)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-approval-workflow
 ## Usage
 
 ```tsx
-import { Timeline6Block } from "@/blocks/timeline-approval-workflow"
+import { TimelineApprovalWorkflowBlock } from "@/blocks/timeline-approval-workflow"
 
 export default function Page() {
-  return <Timeline6Block />
+  return <TimelineApprovalWorkflowBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-6/index.tsx`
+- `src/blocks/application/timeline/timeline-approval-workflow/index.tsx`
 
 ## Dependencies
 

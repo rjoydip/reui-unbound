@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-cli-agent-setup` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-cli-agent-setup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-cli-agent-setup
 ## Usage
 
 ```tsx
-import { Onboarding8Block } from "@/blocks/onboarding-cli-agent-setup"
+import { OnboardingCliAgentSetupBlock } from "@/blocks/onboarding-cli-agent-setup"
 
 export default function Page() {
-  return <Onboarding8Block />
+  return <OnboardingCliAgentSetupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-8/index.tsx`
+- `src/blocks/application/onboarding/onboarding-cli-agent-setup/index.tsx`
 
 ## Dependencies
 

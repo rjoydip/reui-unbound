@@ -8,7 +8,7 @@ category: Flow
 
 **Block:** `flow-automation-builder` · **Category:** Flow
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=flow-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=flow-automation-builder)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/flow-automation-builder
 ## Usage
 
 ```tsx
-import { Flow1Block } from "@/blocks/flow-automation-builder"
+import { FlowAutomationBuilderBlock } from "@/blocks/flow-automation-builder"
 
 export default function Page() {
-  return <Flow1Block />
+  return <FlowAutomationBuilderBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/flow/flow-1/index.tsx`
+- `src/blocks/application/flow/flow-automation-builder/index.tsx`
 
 ## Dependencies
 

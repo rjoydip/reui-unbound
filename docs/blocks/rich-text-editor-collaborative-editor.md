@@ -8,7 +8,7 @@ category: Rich Text Editor
 
 **Block:** `rich-text-editor-collaborative-editor` · **Category:** Rich Text Editor
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-collaborative-editor)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/rich-text-editor-collaborative-editor
 ## Usage
 
 ```tsx
-import { RichTextEditor4Block } from "@/blocks/rich-text-editor-collaborative-editor"
+import { RichTextEditorCollaborativeEditorBlock } from "@/blocks/rich-text-editor-collaborative-editor"
 
 export default function Page() {
-  return <RichTextEditor4Block />
+  return <RichTextEditorCollaborativeEditorBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/rich-text-editor/rich-text-editor-4/index.tsx`
+- `src/blocks/application/rich-text-editor/rich-text-editor-collaborative-editor/index.tsx`
 
 ## Dependencies
 

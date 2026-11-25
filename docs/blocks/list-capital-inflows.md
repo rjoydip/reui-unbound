@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-capital-inflows` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-capital-inflows)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-capital-inflows
 ## Usage
 
 ```tsx
-import { List3Block } from "@/blocks/list-capital-inflows"
+import { ListCapitalInflowsBlock } from "@/blocks/list-capital-inflows"
 
 export default function Page() {
-  return <List3Block />
+  return <ListCapitalInflowsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-3/index.tsx`
+- `src/blocks/application/list/list-capital-inflows/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-deploy-app-setup` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-deploy-app-setup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-deploy-app-setup
 ## Usage
 
 ```tsx
-import { Form11Block } from "@/blocks/form-deploy-app-setup"
+import { FormDeployAppSetupBlock } from "@/blocks/form-deploy-app-setup"
 
 export default function Page() {
-  return <Form11Block />
+  return <FormDeployAppSetupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-11/index.tsx`
+- `src/blocks/application/form/form-deploy-app-setup/index.tsx`
 
 ## Dependencies
 

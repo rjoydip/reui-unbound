@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-team-attendance` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-team-attendance)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-team-attendance
 ## Usage
 
 ```tsx
-import { Schedule5Block } from "@/blocks/schedule-team-attendance"
+import { ScheduleTeamAttendanceBlock } from "@/blocks/schedule-team-attendance"
 
 export default function Page() {
-  return <Schedule5Block />
+  return <ScheduleTeamAttendanceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-5/index.tsx`
+- `src/blocks/application/schedule/schedule-team-attendance/index.tsx`
 
 ## Dependencies
 

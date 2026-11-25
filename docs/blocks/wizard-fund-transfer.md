@@ -8,7 +8,7 @@ category: Wizard
 
 **Block:** `wizard-fund-transfer` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-fund-transfer)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/wizard-fund-transfer
 ## Usage
 
 ```tsx
-import { Wizard7Block } from "@/blocks/wizard-fund-transfer"
+import { WizardFundTransferBlock } from "@/blocks/wizard-fund-transfer"
 
 export default function Page() {
-  return <Wizard7Block />
+  return <WizardFundTransferBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/wizard/wizard-7/index.tsx`
+- `src/blocks/application/wizard/wizard-fund-transfer/index.tsx`
 
 ## Dependencies
 

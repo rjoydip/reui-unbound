@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-time-range-picker` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-time-range-picker)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-time-range-picker
 ## Usage
 
 ```tsx
-import { Schedule2Block } from "@/blocks/schedule-time-range-picker"
+import { ScheduleTimeRangePickerBlock } from "@/blocks/schedule-time-range-picker"
 
 export default function Page() {
-  return <Schedule2Block />
+  return <ScheduleTimeRangePickerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-2/index.tsx`
+- `src/blocks/application/schedule/schedule-time-range-picker/index.tsx`
 
 ## Dependencies
 

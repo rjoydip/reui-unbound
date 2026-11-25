@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-magic-link-reviews` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-magic-link-reviews)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-magic-link-reviews
 ## Usage
 
 ```tsx
-import { Auth3Block } from "@/blocks/auth-magic-link-reviews"
+import { AuthMagicLinkReviewsBlock } from "@/blocks/auth-magic-link-reviews"
 
 export default function Page() {
-  return <Auth3Block />
+  return <AuthMagicLinkReviewsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-3/index.tsx`
+- `src/blocks/application/auth/auth-magic-link-reviews/index.tsx`
 
 ## Dependencies
 

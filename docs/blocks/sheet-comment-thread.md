@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-comment-thread` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-comment-thread)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-comment-thread
 ## Usage
 
 ```tsx
-import { Sheet5Block } from "@/blocks/sheet-comment-thread"
+import { SheetCommentThreadBlock } from "@/blocks/sheet-comment-thread"
 
 export default function Page() {
-  return <Sheet5Block />
+  return <SheetCommentThreadBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-5/index.tsx`
+- `src/blocks/application/sheet/sheet-comment-thread/index.tsx`
 
 ## Dependencies
 

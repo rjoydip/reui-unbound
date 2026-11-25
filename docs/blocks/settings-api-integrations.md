@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-api-integrations` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-14)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-api-integrations)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-api-integrations
 ## Usage
 
 ```tsx
-import { Settings14Block } from "@/blocks/settings-api-integrations"
+import { SettingsApiIntegrationsBlock } from "@/blocks/settings-api-integrations"
 
 export default function Page() {
-  return <Settings14Block />
+  return <SettingsApiIntegrationsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-14/index.tsx`
+- `src/blocks/application/settings/settings-api-integrations/index.tsx`
 
 ## Dependencies
 

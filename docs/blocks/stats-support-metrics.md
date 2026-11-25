@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-support-metrics` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-support-metrics)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-support-metrics
 ## Usage
 
 ```tsx
-import { Stats12Block } from "@/blocks/stats-support-metrics"
+import { StatsSupportMetricsBlock } from "@/blocks/stats-support-metrics"
 
 export default function Page() {
-  return <Stats12Block />
+  return <StatsSupportMetricsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-12/index.tsx`
+- `src/blocks/application/stats/stats-support-metrics/index.tsx`
 
 ## Dependencies
 

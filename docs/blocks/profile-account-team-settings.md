@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-account-team-settings` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-account-team-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-account-team-settings
 ## Usage
 
 ```tsx
-import { Profile1Block } from "@/blocks/profile-account-team-settings"
+import { ProfileAccountTeamSettingsBlock } from "@/blocks/profile-account-team-settings"
 
 export default function Page() {
-  return <Profile1Block />
+  return <ProfileAccountTeamSettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-1/index.tsx`
+- `src/blocks/application/profile/profile-account-team-settings/index.tsx`
 
 ## Dependencies
 

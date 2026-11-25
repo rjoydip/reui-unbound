@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-notification-digest` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-notification-digest)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-notification-digest
 ## Usage
 
 ```tsx
-import { Profile5Block } from "@/blocks/profile-notification-digest"
+import { ProfileNotificationDigestBlock } from "@/blocks/profile-notification-digest"
 
 export default function Page() {
-  return <Profile5Block />
+  return <ProfileNotificationDigestBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-5/index.tsx`
+- `src/blocks/application/profile/profile-notification-digest/index.tsx`
 
 ## Dependencies
 

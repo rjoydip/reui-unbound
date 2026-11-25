@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-mail-inbox` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-mail-inbox)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-mail-inbox
 ## Usage
 
 ```tsx
-import { AppShell4Block } from "@/blocks/app-shell-mail-inbox"
+import { AppShellMailInboxBlock } from "@/blocks/app-shell-mail-inbox"
 
 export default function Page() {
-  return <AppShell4Block />
+  return <AppShellMailInboxBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-4/index.tsx`
+- `src/blocks/application/app-shell/app-shell-mail-inbox/index.tsx`
 
 ## Dependencies
 

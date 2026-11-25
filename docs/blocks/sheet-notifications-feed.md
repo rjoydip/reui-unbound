@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-notifications-feed` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-notifications-feed)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-notifications-feed
 ## Usage
 
 ```tsx
-import { Sheet7Block } from "@/blocks/sheet-notifications-feed"
+import { SheetNotificationsFeedBlock } from "@/blocks/sheet-notifications-feed"
 
 export default function Page() {
-  return <Sheet7Block />
+  return <SheetNotificationsFeedBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-7/index.tsx`
+- `src/blocks/application/sheet/sheet-notifications-feed/index.tsx`
 
 ## Dependencies
 

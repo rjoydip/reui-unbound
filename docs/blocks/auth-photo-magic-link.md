@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-photo-magic-link` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-photo-magic-link)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-photo-magic-link
 ## Usage
 
 ```tsx
-import { Auth13Block } from "@/blocks/auth-photo-magic-link"
+import { AuthPhotoMagicLinkBlock } from "@/blocks/auth-photo-magic-link"
 
 export default function Page() {
-  return <Auth13Block />
+  return <AuthPhotoMagicLinkBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-13/index.tsx`
+- `src/blocks/application/auth/auth-photo-magic-link/index.tsx`
 
 ## Dependencies
 

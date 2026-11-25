@@ -8,7 +8,7 @@ category: Wizard
 
 **Block:** `wizard-team-invitations` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-team-invitations)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/wizard-team-invitations
 ## Usage
 
 ```tsx
-import { Wizard5Block } from "@/blocks/wizard-team-invitations"
+import { WizardTeamInvitationsBlock } from "@/blocks/wizard-team-invitations"
 
 export default function Page() {
-  return <Wizard5Block />
+  return <WizardTeamInvitationsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/wizard/wizard-5/index.tsx`
+- `src/blocks/application/wizard/wizard-team-invitations/index.tsx`
 
 ## Dependencies
 

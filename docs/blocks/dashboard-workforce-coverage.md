@@ -8,7 +8,7 @@ category: Dashboard
 
 **Block:** `dashboard-workforce-coverage` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-workforce-coverage)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dashboard-workforce-coverage
 ## Usage
 
 ```tsx
-import { Dashboard6Block } from "@/blocks/dashboard-workforce-coverage"
+import { DashboardWorkforceCoverageBlock } from "@/blocks/dashboard-workforce-coverage"
 
 export default function Page() {
-  return <Dashboard6Block />
+  return <DashboardWorkforceCoverageBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dashboard/dashboard-6/index.tsx`
+- `src/blocks/application/dashboard/dashboard-workforce-coverage/index.tsx`
 
 ## Dependencies
 

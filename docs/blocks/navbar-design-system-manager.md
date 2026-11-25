@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-design-system-manager` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-design-system-manager)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-design-system-manager
 ## Usage
 
 ```tsx
-import { Navbar11Block } from "@/blocks/navbar-design-system-manager"
+import { NavbarDesignSystemManagerBlock } from "@/blocks/navbar-design-system-manager"
 
 export default function Page() {
-  return <Navbar11Block />
+  return <NavbarDesignSystemManagerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-11/index.tsx`
+- `src/blocks/application/navbar/navbar-design-system-manager/index.tsx`
 
 ## Dependencies
 

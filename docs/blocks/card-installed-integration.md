@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-installed-integration` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-16)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-installed-integration)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-installed-integration
 ## Usage
 
 ```tsx
-import { Card16Block } from "@/blocks/card-installed-integration"
+import { CardInstalledIntegrationBlock } from "@/blocks/card-installed-integration"
 
 export default function Page() {
-  return <Card16Block />
+  return <CardInstalledIntegrationBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-16/index.tsx`
+- `src/blocks/application/card/card-installed-integration/index.tsx`
 
 ## Dependencies
 

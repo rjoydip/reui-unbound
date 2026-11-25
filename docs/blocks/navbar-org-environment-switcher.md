@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-org-environment-switcher` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-org-environment-switcher)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-org-environment-switcher
 ## Usage
 
 ```tsx
-import { Navbar3Block } from "@/blocks/navbar-org-environment-switcher"
+import { NavbarOrgEnvironmentSwitcherBlock } from "@/blocks/navbar-org-environment-switcher"
 
 export default function Page() {
-  return <Navbar3Block />
+  return <NavbarOrgEnvironmentSwitcherBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-3/index.tsx`
+- `src/blocks/application/navbar/navbar-org-environment-switcher/index.tsx`
 
 ## Dependencies
 

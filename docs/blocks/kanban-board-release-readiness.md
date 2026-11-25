@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-release-readiness` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-release-readiness)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-release-readiness
 ## Usage
 
 ```tsx
-import { KanbanBoard8Block } from "@/blocks/kanban-board-release-readiness"
+import { KanbanBoardReleaseReadinessBlock } from "@/blocks/kanban-board-release-readiness"
 
 export default function Page() {
-  return <KanbanBoard8Block />
+  return <KanbanBoardReleaseReadinessBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-8/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-release-readiness/index.tsx`
 
 ## Dependencies
 

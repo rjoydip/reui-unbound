@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-spending-feed` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-spending-feed)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-spending-feed
 ## Usage
 
 ```tsx
-import { List7Block } from "@/blocks/list-spending-feed"
+import { ListSpendingFeedBlock } from "@/blocks/list-spending-feed"
 
 export default function Page() {
-  return <List7Block />
+  return <ListSpendingFeedBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-7/index.tsx`
+- `src/blocks/application/list/list-spending-feed/index.tsx`
 
 ## Dependencies
 

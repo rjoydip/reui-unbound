@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-account-rollout` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-account-rollout)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-account-rollout
 ## Usage
 
 ```tsx
-import { Timeline2Block } from "@/blocks/timeline-account-rollout"
+import { TimelineAccountRolloutBlock } from "@/blocks/timeline-account-rollout"
 
 export default function Page() {
-  return <Timeline2Block />
+  return <TimelineAccountRolloutBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-2/index.tsx`
+- `src/blocks/application/timeline/timeline-account-rollout/index.tsx`
 
 ## Dependencies
 

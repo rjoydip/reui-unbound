@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-metric-detail-sheet` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-metric-detail-sheet)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-metric-detail-sheet
 ## Usage
 
 ```tsx
-import { Sheet11Block } from "@/blocks/sheet-metric-detail-sheet"
+import { SheetMetricDetailSheetBlock } from "@/blocks/sheet-metric-detail-sheet"
 
 export default function Page() {
-  return <Sheet11Block />
+  return <SheetMetricDetailSheetBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-11/index.tsx`
+- `src/blocks/application/sheet/sheet-metric-detail-sheet/index.tsx`
 
 ## Dependencies
 

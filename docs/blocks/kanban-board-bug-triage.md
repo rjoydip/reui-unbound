@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-bug-triage` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-bug-triage)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-bug-triage
 ## Usage
 
 ```tsx
-import { KanbanBoard1Block } from "@/blocks/kanban-board-bug-triage"
+import { KanbanBoardBugTriageBlock } from "@/blocks/kanban-board-bug-triage"
 
 export default function Page() {
-  return <KanbanBoard1Block />
+  return <KanbanBoardBugTriageBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-1/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-bug-triage/index.tsx`
 
 ## Dependencies
 

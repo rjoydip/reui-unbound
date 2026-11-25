@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-cms-publish-bar` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-cms-publish-bar)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-cms-publish-bar
 ## Usage
 
 ```tsx
-import { Navbar7Block } from "@/blocks/navbar-cms-publish-bar"
+import { NavbarCmsPublishBarBlock } from "@/blocks/navbar-cms-publish-bar"
 
 export default function Page() {
-  return <Navbar7Block />
+  return <NavbarCmsPublishBarBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-7/index.tsx`
+- `src/blocks/application/navbar/navbar-cms-publish-bar/index.tsx`
 
 ## Dependencies
 

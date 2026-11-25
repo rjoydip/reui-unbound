@@ -8,7 +8,7 @@ category: Wizard
 
 **Block:** `wizard-plan-upgrade` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-plan-upgrade)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/wizard-plan-upgrade
 ## Usage
 
 ```tsx
-import { Wizard4Block } from "@/blocks/wizard-plan-upgrade"
+import { WizardPlanUpgradeBlock } from "@/blocks/wizard-plan-upgrade"
 
 export default function Page() {
-  return <Wizard4Block />
+  return <WizardPlanUpgradeBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/wizard/wizard-4/index.tsx`
+- `src/blocks/application/wizard/wizard-plan-upgrade/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-developer-api-keys` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-developer-api-keys)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-developer-api-keys
 ## Usage
 
 ```tsx
-import { Profile10Block } from "@/blocks/profile-developer-api-keys"
+import { ProfileDeveloperApiKeysBlock } from "@/blocks/profile-developer-api-keys"
 
 export default function Page() {
-  return <Profile10Block />
+  return <ProfileDeveloperApiKeysBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-10/index.tsx`
+- `src/blocks/application/profile/profile-developer-api-keys/index.tsx`
 
 ## Dependencies
 

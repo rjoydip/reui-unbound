@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-sales-churn-metrics` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-sales-churn-metrics)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-sales-churn-metrics
 ## Usage
 
 ```tsx
-import { Stats7Block } from "@/blocks/stats-sales-churn-metrics"
+import { StatsSalesChurnMetricsBlock } from "@/blocks/stats-sales-churn-metrics"
 
 export default function Page() {
-  return <Stats7Block />
+  return <StatsSalesChurnMetricsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-7/index.tsx`
+- `src/blocks/application/stats/stats-sales-churn-metrics/index.tsx`
 
 ## Dependencies
 

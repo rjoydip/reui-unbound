@@ -8,7 +8,7 @@ category: Wizard
 
 **Block:** `wizard-billing-setup` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-billing-setup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/wizard-billing-setup
 ## Usage
 
 ```tsx
-import { Wizard1Block } from "@/blocks/wizard-billing-setup"
+import { WizardBillingSetupBlock } from "@/blocks/wizard-billing-setup"
 
 export default function Page() {
-  return <Wizard1Block />
+  return <WizardBillingSetupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/wizard/wizard-1/index.tsx`
+- `src/blocks/application/wizard/wizard-billing-setup/index.tsx`
 
 ## Dependencies
 

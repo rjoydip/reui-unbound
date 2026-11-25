@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-account-settings-modal` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-account-settings-modal)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-account-settings-modal
 ## Usage
 
 ```tsx
-import { Dialog10Block } from "@/blocks/dialog-account-settings-modal"
+import { DialogAccountSettingsModalBlock } from "@/blocks/dialog-account-settings-modal"
 
 export default function Page() {
-  return <Dialog10Block />
+  return <DialogAccountSettingsModalBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-10/index.tsx`
+- `src/blocks/application/dialog/dialog-account-settings-modal/index.tsx`
 
 ## Dependencies
 

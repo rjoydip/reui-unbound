@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-editor-action-bar` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-editor-action-bar)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-editor-action-bar
 ## Usage
 
 ```tsx
-import { Navbar13Block } from "@/blocks/navbar-editor-action-bar"
+import { NavbarEditorActionBarBlock } from "@/blocks/navbar-editor-action-bar"
 
 export default function Page() {
-  return <Navbar13Block />
+  return <NavbarEditorActionBarBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-13/index.tsx`
+- `src/blocks/application/navbar/navbar-editor-action-bar/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-notice-cards` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-notice-cards)
 
 ## Install
 
@@ -19,13 +19,13 @@ bunx --bun shadcn@latest add @reui-unbound/card-notice-cards
 ## Usage
 
 ```tsx
-import { Card11Block } from "@/blocks/card-notice-cards"
+import { CardNoticeCardsBlock } from "@/blocks/card-notice-cards"
 
 export default function Page() {
-  return <Card11Block />
+  return <CardNoticeCardsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-11/index.tsx`
+- `src/blocks/application/card/card-notice-cards/index.tsx`

@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-capability-modules` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-capability-modules)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-capability-modules
 ## Usage
 
 ```tsx
-import { List9Block } from "@/blocks/list-capability-modules"
+import { ListCapabilityModulesBlock } from "@/blocks/list-capability-modules"
 
 export default function Page() {
-  return <List9Block />
+  return <ListCapabilityModulesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-9/index.tsx`
+- `src/blocks/application/list/list-capability-modules/index.tsx`
 
 ## Dependencies
 

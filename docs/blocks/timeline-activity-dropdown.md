@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-activity-dropdown` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-activity-dropdown)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-activity-dropdown
 ## Usage
 
 ```tsx
-import { Timeline7Block } from "@/blocks/timeline-activity-dropdown"
+import { TimelineActivityDropdownBlock } from "@/blocks/timeline-activity-dropdown"
 
 export default function Page() {
-  return <Timeline7Block />
+  return <TimelineActivityDropdownBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-7/index.tsx`
+- `src/blocks/application/timeline/timeline-activity-dropdown/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-integration-events` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-integration-events)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-integration-events
 ## Usage
 
 ```tsx
-import { Settings6Block } from "@/blocks/settings-integration-events"
+import { SettingsIntegrationEventsBlock } from "@/blocks/settings-integration-events"
 
 export default function Page() {
-  return <Settings6Block />
+  return <SettingsIntegrationEventsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-6/index.tsx`
+- `src/blocks/application/settings/settings-integration-events/index.tsx`
 
 ## Dependencies
 

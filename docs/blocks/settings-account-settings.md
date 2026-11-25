@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-account-settings` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-account-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-account-settings
 ## Usage
 
 ```tsx
-import { Settings7Block } from "@/blocks/settings-account-settings"
+import { SettingsAccountSettingsBlock } from "@/blocks/settings-account-settings"
 
 export default function Page() {
-  return <Settings7Block />
+  return <SettingsAccountSettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-7/index.tsx`
+- `src/blocks/application/settings/settings-account-settings/index.tsx`
 
 ## Dependencies
 

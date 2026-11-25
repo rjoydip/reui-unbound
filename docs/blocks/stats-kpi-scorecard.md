@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-kpi-scorecard` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-kpi-scorecard)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-kpi-scorecard
 ## Usage
 
 ```tsx
-import { Stats2Block } from "@/blocks/stats-kpi-scorecard"
+import { StatsKpiScorecardBlock } from "@/blocks/stats-kpi-scorecard"
 
 export default function Page() {
-  return <Stats2Block />
+  return <StatsKpiScorecardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-2/index.tsx`
+- `src/blocks/application/stats/stats-kpi-scorecard/index.tsx`
 
 ## Dependencies
 

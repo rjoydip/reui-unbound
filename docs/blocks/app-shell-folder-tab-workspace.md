@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-folder-tab-workspace` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-31)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-folder-tab-workspace)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-31/index.tsx`
+- `src/blocks/application/app-shell/app-shell-folder-tab-workspace/index.tsx`
 
 ## Dependencies
 

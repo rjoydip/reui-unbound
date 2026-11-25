@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-inventory-counters` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-33)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-inventory-counters)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-inventory-counters
 ## Usage
 
 ```tsx
-import { Card33Block } from "@/blocks/card-inventory-counters"
+import { CardInventoryCountersBlock } from "@/blocks/card-inventory-counters"
 
 export default function Page() {
-  return <Card33Block />
+  return <CardInventoryCountersBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-33/index.tsx`
+- `src/blocks/application/card/card-inventory-counters/index.tsx`
 
 ## Dependencies
 

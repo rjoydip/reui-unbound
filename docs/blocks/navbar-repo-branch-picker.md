@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-repo-branch-picker` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-repo-branch-picker)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-repo-branch-picker
 ## Usage
 
 ```tsx
-import { Navbar9Block } from "@/blocks/navbar-repo-branch-picker"
+import { NavbarRepoBranchPickerBlock } from "@/blocks/navbar-repo-branch-picker"
 
 export default function Page() {
-  return <Navbar9Block />
+  return <NavbarRepoBranchPickerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-9/index.tsx`
+- `src/blocks/application/navbar/navbar-repo-branch-picker/index.tsx`
 
 ## Dependencies
 

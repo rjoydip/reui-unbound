@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-notification-channels` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-11)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-notification-channels)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-notification-channels
 ## Usage
 
 ```tsx
-import { Settings11Block } from "@/blocks/settings-notification-channels"
+import { SettingsNotificationChannelsBlock } from "@/blocks/settings-notification-channels"
 
 export default function Page() {
-  return <Settings11Block />
+  return <SettingsNotificationChannelsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-11/index.tsx`
+- `src/blocks/application/settings/settings-notification-channels/index.tsx`
 
 
 ## Registry dependencies

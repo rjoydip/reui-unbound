@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-project-tracker-sidebar` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-project-tracker-sidebar)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-project-tracker-sidebar
 ## Usage
 
 ```tsx
-import { AppShell3Block } from "@/blocks/app-shell-project-tracker-sidebar"
+import { AppShellProjectTrackerSidebarBlock } from "@/blocks/app-shell-project-tracker-sidebar"
 
 export default function Page() {
-  return <AppShell3Block />
+  return <AppShellProjectTrackerSidebarBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-3/index.tsx`
+- `src/blocks/application/app-shell/app-shell-project-tracker-sidebar/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Dashboard
 
 **Block:** `dashboard-edge-security-telemetry` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-edge-security-telemetry)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dashboard-edge-security-telemetry
 ## Usage
 
 ```tsx
-import { Dashboard5Block } from "@/blocks/dashboard-edge-security-telemetry"
+import { DashboardEdgeSecurityTelemetryBlock } from "@/blocks/dashboard-edge-security-telemetry"
 
 export default function Page() {
-  return <Dashboard5Block />
+  return <DashboardEdgeSecurityTelemetryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dashboard/dashboard-5/index.tsx`
+- `src/blocks/application/dashboard/dashboard-edge-security-telemetry/index.tsx`
 
 ## Dependencies
 

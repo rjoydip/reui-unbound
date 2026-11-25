@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-contributor-portfolio` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-43)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-contributor-portfolio)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-contributor-portfolio
 ## Usage
 
 ```tsx
-import { Card43Block } from "@/blocks/card-contributor-portfolio"
+import { CardContributorPortfolioBlock } from "@/blocks/card-contributor-portfolio"
 
 export default function Page() {
-  return <Card43Block />
+  return <CardContributorPortfolioBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-43/index.tsx`
+- `src/blocks/application/card/card-contributor-portfolio/index.tsx`
 
 ## Dependencies
 

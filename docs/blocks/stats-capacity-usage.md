@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-capacity-usage` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-18)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-capacity-usage)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-capacity-usage
 ## Usage
 
 ```tsx
-import { Stats18Block } from "@/blocks/stats-capacity-usage"
+import { StatsCapacityUsageBlock } from "@/blocks/stats-capacity-usage"
 
 export default function Page() {
-  return <Stats18Block />
+  return <StatsCapacityUsageBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-18/index.tsx`
+- `src/blocks/application/stats/stats-capacity-usage/index.tsx`
 
 ## Dependencies
 

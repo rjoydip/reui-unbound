@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-personal-profile` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-personal-profile)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-personal-profile
 ## Usage
 
 ```tsx
-import { Profile3Block } from "@/blocks/profile-personal-profile"
+import { ProfilePersonalProfileBlock } from "@/blocks/profile-personal-profile"
 
 export default function Page() {
-  return <Profile3Block />
+  return <ProfilePersonalProfileBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-3/index.tsx`
+- `src/blocks/application/profile/profile-personal-profile/index.tsx`
 
 ## Dependencies
 

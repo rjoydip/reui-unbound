@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-invite-first-member` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-invite-first-member)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-invite-first-member
 ## Usage
 
 ```tsx
-import { EmptyState7Block } from "@/blocks/empty-state-invite-first-member"
+import { EmptyStateInviteFirstMemberBlock } from "@/blocks/empty-state-invite-first-member"
 
 export default function Page() {
-  return <EmptyState7Block />
+  return <EmptyStateInviteFirstMemberBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-7/index.tsx`
+- `src/blocks/application/empty-state/empty-state-invite-first-member/index.tsx`
 
 ## Dependencies
 

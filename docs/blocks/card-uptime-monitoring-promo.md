@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-uptime-monitoring-promo` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-23)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-uptime-monitoring-promo)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-uptime-monitoring-promo
 ## Usage
 
 ```tsx
-import { Card23Block } from "@/blocks/card-uptime-monitoring-promo"
+import { CardUptimeMonitoringPromoBlock } from "@/blocks/card-uptime-monitoring-promo"
 
 export default function Page() {
-  return <Card23Block />
+  return <CardUptimeMonitoringPromoBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-23/index.tsx`
+- `src/blocks/application/card/card-uptime-monitoring-promo/index.tsx`
 
 ## Dependencies
 

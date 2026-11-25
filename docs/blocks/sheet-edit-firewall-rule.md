@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-edit-firewall-rule` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-18)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-edit-firewall-rule)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-edit-firewall-rule
 ## Usage
 
 ```tsx
-import { Sheet18Block } from "@/blocks/sheet-edit-firewall-rule"
+import { SheetEditFirewallRuleBlock } from "@/blocks/sheet-edit-firewall-rule"
 
 export default function Page() {
-  return <Sheet18Block />
+  return <SheetEditFirewallRuleBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-18/index.tsx`
+- `src/blocks/application/sheet/sheet-edit-firewall-rule/index.tsx`
 
 ## Dependencies
 

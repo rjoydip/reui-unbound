@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-delivery-tracking` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-14)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-delivery-tracking)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-delivery-tracking
 ## Usage
 
 ```tsx
-import { Card14Block } from "@/blocks/card-delivery-tracking"
+import { CardDeliveryTrackingBlock } from "@/blocks/card-delivery-tracking"
 
 export default function Page() {
-  return <Card14Block />
+  return <CardDeliveryTrackingBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-14/index.tsx`
+- `src/blocks/application/card/card-delivery-tracking/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-new-firewall-rule` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-17)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-new-firewall-rule)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-new-firewall-rule
 ## Usage
 
 ```tsx
-import { Sheet17Block } from "@/blocks/sheet-new-firewall-rule"
+import { SheetNewFirewallRuleBlock } from "@/blocks/sheet-new-firewall-rule"
 
 export default function Page() {
-  return <Sheet17Block />
+  return <SheetNewFirewallRuleBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-17/index.tsx`
+- `src/blocks/application/sheet/sheet-new-firewall-rule/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-sidebar-stepper-wizard` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-sidebar-stepper-wizard)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-sidebar-stepper-wizard
 ## Usage
 
 ```tsx
-import { Onboarding2Block } from "@/blocks/onboarding-sidebar-stepper-wizard"
+import { OnboardingSidebarStepperWizardBlock } from "@/blocks/onboarding-sidebar-stepper-wizard"
 
 export default function Page() {
-  return <Onboarding2Block />
+  return <OnboardingSidebarStepperWizardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-2/index.tsx`
+- `src/blocks/application/onboarding/onboarding-sidebar-stepper-wizard/index.tsx`
 
 ## Dependencies
 

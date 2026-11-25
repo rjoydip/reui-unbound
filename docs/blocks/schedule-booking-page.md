@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-booking-page` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-booking-page)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-booking-page
 ## Usage
 
 ```tsx
-import { Schedule4Block } from "@/blocks/schedule-booking-page"
+import { ScheduleBookingPageBlock } from "@/blocks/schedule-booking-page"
 
 export default function Page() {
-  return <Schedule4Block />
+  return <ScheduleBookingPageBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-4/index.tsx`
+- `src/blocks/application/schedule/schedule-booking-page/index.tsx`
 
 ## Dependencies
 

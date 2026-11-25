@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-ops-presence-console` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-24)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-ops-presence-console)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-24/index.tsx`
+- `src/blocks/application/app-shell/app-shell-ops-presence-console/index.tsx`
 
 ## Dependencies
 

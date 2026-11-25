@@ -8,7 +8,7 @@ category: Wizard
 
 **Block:** `wizard-send-invoice` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-send-invoice)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/wizard-send-invoice
 ## Usage
 
 ```tsx
-import { Wizard3Block } from "@/blocks/wizard-send-invoice"
+import { WizardSendInvoiceBlock } from "@/blocks/wizard-send-invoice"
 
 export default function Page() {
-  return <Wizard3Block />
+  return <WizardSendInvoiceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/wizard/wizard-3/index.tsx`
+- `src/blocks/application/wizard/wizard-send-invoice/index.tsx`
 
 ## Dependencies
 

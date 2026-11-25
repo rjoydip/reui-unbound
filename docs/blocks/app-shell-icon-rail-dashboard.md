@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-icon-rail-dashboard` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-icon-rail-dashboard)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-icon-rail-dashboard
 ## Usage
 
 ```tsx
-import { AppShell1Block } from "@/blocks/app-shell-icon-rail-dashboard"
+import { AppShellIconRailDashboardBlock } from "@/blocks/app-shell-icon-rail-dashboard"
 
 export default function Page() {
-  return <AppShell1Block />
+  return <AppShellIconRailDashboardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-1/index.tsx`
+- `src/blocks/application/app-shell/app-shell-icon-rail-dashboard/index.tsx`
 
 ## Dependencies
 

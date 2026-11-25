@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-access-review` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-access-review)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-access-review
 ## Usage
 
 ```tsx
-import { KanbanBoard10Block } from "@/blocks/kanban-board-access-review"
+import { KanbanBoardAccessReviewBlock } from "@/blocks/kanban-board-access-review"
 
 export default function Page() {
-  return <KanbanBoard10Block />
+  return <KanbanBoardAccessReviewBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-10/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-access-review/index.tsx`
 
 ## Dependencies
 

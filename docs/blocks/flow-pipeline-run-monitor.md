@@ -8,7 +8,7 @@ category: Flow
 
 **Block:** `flow-pipeline-run-monitor` · **Category:** Flow
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=flow-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=flow-pipeline-run-monitor)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/flow-pipeline-run-monitor
 ## Usage
 
 ```tsx
-import { Flow3Block } from "@/blocks/flow-pipeline-run-monitor"
+import { FlowPipelineRunMonitorBlock } from "@/blocks/flow-pipeline-run-monitor"
 
 export default function Page() {
-  return <Flow3Block />
+  return <FlowPipelineRunMonitorBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/flow/flow-3/index.tsx`
+- `src/blocks/application/flow/flow-pipeline-run-monitor/index.tsx`
 
 ## Dependencies
 

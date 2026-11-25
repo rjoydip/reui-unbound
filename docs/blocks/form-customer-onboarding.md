@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-customer-onboarding` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-customer-onboarding)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-customer-onboarding
 ## Usage
 
 ```tsx
-import { Form10Block } from "@/blocks/form-customer-onboarding"
+import { FormCustomerOnboardingBlock } from "@/blocks/form-customer-onboarding"
 
 export default function Page() {
-  return <Form10Block />
+  return <FormCustomerOnboardingBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-10/index.tsx`
+- `src/blocks/application/form/form-customer-onboarding/index.tsx`
 
 ## Dependencies
 

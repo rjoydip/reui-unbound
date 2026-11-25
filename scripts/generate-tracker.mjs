@@ -107,7 +107,7 @@ const rows = categories.map((category) => {
 
 const appShell = manifest
   .filter((item) => item.category === "App Shell")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
 const appShellRows = appShell.map((item) => {
   const shots = deepCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
   return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -115,7 +115,7 @@ const appShellRows = appShell.map((item) => {
 
 const navbar = manifest
   .filter((item) => item.category === "Navbar")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
 const navbarRows = navbar.map((item) => {
   const shots = navbarCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
   return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -123,7 +123,7 @@ const navbarRows = navbar.map((item) => {
 
 const onboardingRows = manifest
   .filter((item) => item.category === "Onboarding")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = onboardingCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -131,7 +131,7 @@ const onboardingRows = manifest
 
 const profileRows = manifest
   .filter((item) => item.category === "Profile")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = profileCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -139,7 +139,7 @@ const profileRows = manifest
 
 const rteRows = manifest
   .filter((item) => item.category === "Rich Text Editor")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = rteCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -147,7 +147,7 @@ const rteRows = manifest
 
 const scheduleRows = manifest
   .filter((item) => item.category === "Schedule")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = scheduleCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -155,7 +155,7 @@ const scheduleRows = manifest
 
 const settingsRows = manifest
   .filter((item) => item.category === "Settings")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = settingsCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -163,7 +163,7 @@ const settingsRows = manifest
 
 const sheetRows = manifest
   .filter((item) => item.category === "Sheet")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = sheetCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -171,7 +171,7 @@ const sheetRows = manifest
 
 const statsRows = manifest
   .filter((item) => item.category === "Stats")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = statsCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -179,7 +179,7 @@ const statsRows = manifest
 
 const timelineRows = manifest
   .filter((item) => item.category === "Timeline")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = timelineCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -187,7 +187,7 @@ const timelineRows = manifest
 
 const whiteboardRows = manifest
   .filter((item) => item.category === "Whiteboard")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = whiteboardCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`
@@ -195,7 +195,7 @@ const whiteboardRows = manifest
 
 const wizardRows = manifest
   .filter((item) => item.category === "Wizard")
-  .sort((a, b) => Number(a.slug.split("-").pop()) - Number(b.slug.split("-").pop()))
+  .sort((a, b) => a.title.localeCompare(b.title))
   .map((item) => {
     const shots = wizardCapture.find((capture) => capture.slug === item.slug)?.shots?.length ?? 0
     return `| ${implemented.has(item.slug) ? STATUS.supported : STATUS.pending} | ${item.title} | \`${item.slug}\` | ${shots} |`

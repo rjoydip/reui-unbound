@@ -8,7 +8,7 @@ category: Rich Text Editor
 
 **Block:** `rich-text-editor-ai-writing-assistant` · **Category:** Rich Text Editor
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-ai-writing-assistant)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/rich-text-editor-ai-writing-assistant
 ## Usage
 
 ```tsx
-import { RichTextEditor5Block } from "@/blocks/rich-text-editor-ai-writing-assistant"
+import { RichTextEditorAiWritingAssistantBlock } from "@/blocks/rich-text-editor-ai-writing-assistant"
 
 export default function Page() {
-  return <RichTextEditor5Block />
+  return <RichTextEditorAiWritingAssistantBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/rich-text-editor/rich-text-editor-5/index.tsx`
+- `src/blocks/application/rich-text-editor/rich-text-editor-ai-writing-assistant/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Rich Text Editor
 
 **Block:** `rich-text-editor-document-editor` · **Category:** Rich Text Editor
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-document-editor)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/rich-text-editor-document-editor
 ## Usage
 
 ```tsx
-import { RichTextEditor1Block } from "@/blocks/rich-text-editor-document-editor"
+import { RichTextEditorDocumentEditorBlock } from "@/blocks/rich-text-editor-document-editor"
 
 export default function Page() {
-  return <RichTextEditor1Block />
+  return <RichTextEditorDocumentEditorBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/rich-text-editor/rich-text-editor-1/index.tsx`
+- `src/blocks/application/rich-text-editor/rich-text-editor-document-editor/index.tsx`
 
 ## Dependencies
 

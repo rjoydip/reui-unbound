@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-relay-settings` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-relay-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-relay-settings
 ## Usage
 
 ```tsx
-import { Sheet8Block } from "@/blocks/sheet-relay-settings"
+import { SheetRelaySettingsBlock } from "@/blocks/sheet-relay-settings"
 
 export default function Page() {
-  return <Sheet8Block />
+  return <SheetRelaySettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-8/index.tsx`
+- `src/blocks/application/sheet/sheet-relay-settings/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-meeting-capture` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-meeting-capture)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-meeting-capture
 ## Usage
 
 ```tsx
-import { Profile7Block } from "@/blocks/profile-meeting-capture"
+import { ProfileMeetingCaptureBlock } from "@/blocks/profile-meeting-capture"
 
 export default function Page() {
-  return <Profile7Block />
+  return <ProfileMeetingCaptureBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-7/index.tsx`
+- `src/blocks/application/profile/profile-meeting-capture/index.tsx`
 
 ## Dependencies
 

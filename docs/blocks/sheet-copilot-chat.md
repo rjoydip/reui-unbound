@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-copilot-chat` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-copilot-chat)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-copilot-chat
 ## Usage
 
 ```tsx
-import { Sheet10Block } from "@/blocks/sheet-copilot-chat"
+import { SheetCopilotChatBlock } from "@/blocks/sheet-copilot-chat"
 
 export default function Page() {
-  return <Sheet10Block />
+  return <SheetCopilotChatBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-10/index.tsx`
+- `src/blocks/application/sheet/sheet-copilot-chat/index.tsx`
 
 ## Dependencies
 

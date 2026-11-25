@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-source-link-cards` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-18)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-source-link-cards)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-source-link-cards
 ## Usage
 
 ```tsx
-import { Card18Block } from "@/blocks/card-source-link-cards"
+import { CardSourceLinkCardsBlock } from "@/blocks/card-source-link-cards"
 
 export default function Page() {
-  return <Card18Block />
+  return <CardSourceLinkCardsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-18/index.tsx`
+- `src/blocks/application/card/card-source-link-cards/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Flow
 
 **Block:** `flow-ai-agent-builder` · **Category:** Flow
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=flow-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=flow-ai-agent-builder)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/flow-ai-agent-builder
 ## Usage
 
 ```tsx
-import { Flow2Block } from "@/blocks/flow-ai-agent-builder"
+import { FlowAiAgentBuilderBlock } from "@/blocks/flow-ai-agent-builder"
 
 export default function Page() {
-  return <Flow2Block />
+  return <FlowAiAgentBuilderBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/flow/flow-2/index.tsx`
+- `src/blocks/application/flow/flow-ai-agent-builder/index.tsx`
 
 ## Dependencies
 

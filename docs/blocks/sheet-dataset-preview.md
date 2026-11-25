@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-dataset-preview` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-24)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-dataset-preview)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-dataset-preview
 ## Usage
 
 ```tsx
-import { Sheet24Block } from "@/blocks/sheet-dataset-preview"
+import { SheetDatasetPreviewBlock } from "@/blocks/sheet-dataset-preview"
 
 export default function Page() {
-  return <Sheet24Block />
+  return <SheetDatasetPreviewBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-24/index.tsx`
+- `src/blocks/application/sheet/sheet-dataset-preview/index.tsx`
 
 ## Dependencies
 

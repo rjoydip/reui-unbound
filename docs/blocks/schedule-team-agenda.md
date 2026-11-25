@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-team-agenda` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-team-agenda)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-team-agenda
 ## Usage
 
 ```tsx
-import { Schedule8Block } from "@/blocks/schedule-team-agenda"
+import { ScheduleTeamAgendaBlock } from "@/blocks/schedule-team-agenda"
 
 export default function Page() {
-  return <Schedule8Block />
+  return <ScheduleTeamAgendaBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-8/index.tsx`
+- `src/blocks/application/schedule/schedule-team-agenda/index.tsx`
 
 ## Dependencies
 

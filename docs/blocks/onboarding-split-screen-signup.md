@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-split-screen-signup` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-split-screen-signup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-split-screen-signup
 ## Usage
 
 ```tsx
-import { Onboarding3Block } from "@/blocks/onboarding-split-screen-signup"
+import { OnboardingSplitScreenSignupBlock } from "@/blocks/onboarding-split-screen-signup"
 
 export default function Page() {
-  return <Onboarding3Block />
+  return <OnboardingSplitScreenSignupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-3/index.tsx`
+- `src/blocks/application/onboarding/onboarding-split-screen-signup/index.tsx`
 
 ## Dependencies
 

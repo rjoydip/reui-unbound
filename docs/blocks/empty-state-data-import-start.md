@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-data-import-start` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-data-import-start)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-data-import-start
 ## Usage
 
 ```tsx
-import { EmptyState1Block } from "@/blocks/empty-state-data-import-start"
+import { EmptyStateDataImportStartBlock } from "@/blocks/empty-state-data-import-start"
 
 export default function Page() {
-  return <EmptyState1Block />
+  return <EmptyStateDataImportStartBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-1/index.tsx`
+- `src/blocks/application/empty-state/empty-state-data-import-start/index.tsx`
 
 ## Dependencies
 

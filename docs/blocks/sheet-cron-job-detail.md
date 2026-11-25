@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-cron-job-detail` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-cron-job-detail)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-cron-job-detail
 ## Usage
 
 ```tsx
-import { Sheet12Block } from "@/blocks/sheet-cron-job-detail"
+import { SheetCronJobDetailBlock } from "@/blocks/sheet-cron-job-detail"
 
 export default function Page() {
-  return <Sheet12Block />
+  return <SheetCronJobDetailBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-12/index.tsx`
+- `src/blocks/application/sheet/sheet-cron-job-detail/index.tsx`
 
 ## Dependencies
 

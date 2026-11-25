@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-meeting-scheduler` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-meeting-scheduler)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-meeting-scheduler
 ## Usage
 
 ```tsx
-import { Schedule3Block } from "@/blocks/schedule-meeting-scheduler"
+import { ScheduleMeetingSchedulerBlock } from "@/blocks/schedule-meeting-scheduler"
 
 export default function Page() {
-  return <Schedule3Block />
+  return <ScheduleMeetingSchedulerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-3/index.tsx`
+- `src/blocks/application/schedule/schedule-meeting-scheduler/index.tsx`
 
 ## Dependencies
 

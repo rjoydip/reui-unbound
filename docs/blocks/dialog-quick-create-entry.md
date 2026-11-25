@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-quick-create-entry` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-quick-create-entry)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-quick-create-entry
 ## Usage
 
 ```tsx
-import { Dialog12Block } from "@/blocks/dialog-quick-create-entry"
+import { DialogQuickCreateEntryBlock } from "@/blocks/dialog-quick-create-entry"
 
 export default function Page() {
-  return <Dialog12Block />
+  return <DialogQuickCreateEntryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-12/index.tsx`
+- `src/blocks/application/dialog/dialog-quick-create-entry/index.tsx`
 
 ## Dependencies
 

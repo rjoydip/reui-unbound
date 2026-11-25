@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-service-status-tiles` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-service-status-tiles)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-service-status-tiles
 ## Usage
 
 ```tsx
-import { Card8Block } from "@/blocks/card-service-status-tiles"
+import { CardServiceStatusTilesBlock } from "@/blocks/card-service-status-tiles"
 
 export default function Page() {
-  return <Card8Block />
+  return <CardServiceStatusTilesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-8/index.tsx`
+- `src/blocks/application/card/card-service-status-tiles/index.tsx`
 
 ## Dependencies
 

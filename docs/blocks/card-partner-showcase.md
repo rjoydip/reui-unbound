@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-partner-showcase` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-partner-showcase)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-partner-showcase
 ## Usage
 
 ```tsx
-import { Card13Block } from "@/blocks/card-partner-showcase"
+import { CardPartnerShowcaseBlock } from "@/blocks/card-partner-showcase"
 
 export default function Page() {
-  return <Card13Block />
+  return <CardPartnerShowcaseBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-13/index.tsx`
+- `src/blocks/application/card/card-partner-showcase/index.tsx`
 
 ## Dependencies
 

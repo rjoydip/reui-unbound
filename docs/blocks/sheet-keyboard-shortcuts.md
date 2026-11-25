@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-keyboard-shortcuts` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-keyboard-shortcuts)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-keyboard-shortcuts
 ## Usage
 
 ```tsx
-import { Sheet3Block } from "@/blocks/sheet-keyboard-shortcuts"
+import { SheetKeyboardShortcutsBlock } from "@/blocks/sheet-keyboard-shortcuts"
 
 export default function Page() {
-  return <Sheet3Block />
+  return <SheetKeyboardShortcutsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-3/index.tsx`
+- `src/blocks/application/sheet/sheet-keyboard-shortcuts/index.tsx`
 
 ## Dependencies
 

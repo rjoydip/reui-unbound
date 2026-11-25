@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-general-display` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-general-display)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-general-display
 ## Usage
 
 ```tsx
-import { Settings9Block } from "@/blocks/settings-general-display"
+import { SettingsGeneralDisplayBlock } from "@/blocks/settings-general-display"
 
 export default function Page() {
-  return <Settings9Block />
+  return <SettingsGeneralDisplayBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-9/index.tsx`
+- `src/blocks/application/settings/settings-general-display/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-business-verification` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-business-verification)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-business-verification
 ## Usage
 
 ```tsx
-import { Form6Block } from "@/blocks/form-business-verification"
+import { FormBusinessVerificationBlock } from "@/blocks/form-business-verification"
 
 export default function Page() {
-  return <Form6Block />
+  return <FormBusinessVerificationBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-6/index.tsx`
+- `src/blocks/application/form/form-business-verification/index.tsx`
 
 ## Dependencies
 

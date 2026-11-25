@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-team-activity-sheet` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-team-activity-sheet)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-team-activity-sheet
 ## Usage
 
 ```tsx
-import { Timeline8Block } from "@/blocks/timeline-team-activity-sheet"
+import { TimelineTeamActivitySheetBlock } from "@/blocks/timeline-team-activity-sheet"
 
 export default function Page() {
-  return <Timeline8Block />
+  return <TimelineTeamActivitySheetBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-8/index.tsx`
+- `src/blocks/application/timeline/timeline-team-activity-sheet/index.tsx`
 
 ## Dependencies
 

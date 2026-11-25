@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-checkout-setup` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-checkout-setup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-checkout-setup
 ## Usage
 
 ```tsx
-import { Form2Block } from "@/blocks/form-checkout-setup"
+import { FormCheckoutSetupBlock } from "@/blocks/form-checkout-setup"
 
 export default function Page() {
-  return <Form2Block />
+  return <FormCheckoutSetupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-2/index.tsx`
+- `src/blocks/application/form/form-checkout-setup/index.tsx`
 
 ## Dependencies
 

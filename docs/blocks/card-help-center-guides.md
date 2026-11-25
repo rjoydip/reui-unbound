@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-help-center-guides` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-20)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-help-center-guides)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-help-center-guides
 ## Usage
 
 ```tsx
-import { Card20Block } from "@/blocks/card-help-center-guides"
+import { CardHelpCenterGuidesBlock } from "@/blocks/card-help-center-guides"
 
 export default function Page() {
-  return <Card20Block />
+  return <CardHelpCenterGuidesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-20/index.tsx`
+- `src/blocks/application/card/card-help-center-guides/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Gantt
 
 **Block:** `gantt-project-timeline` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-project-timeline)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/gantt-project-timeline
 ## Usage
 
 ```tsx
-import { Gantt1Block } from "@/blocks/gantt-project-timeline"
+import { GanttProjectTimelineBlock } from "@/blocks/gantt-project-timeline"
 
 export default function Page() {
-  return <Gantt1Block />
+  return <GanttProjectTimelineBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/gantt/gantt-1/index.tsx`
+- `src/blocks/application/gantt/gantt-project-timeline/index.tsx`
 
 ## Dependencies
 

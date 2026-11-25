@@ -8,7 +8,7 @@ category: Rich Text Editor
 
 **Block:** `rich-text-editor-contract-redlines` · **Category:** Rich Text Editor
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-contract-redlines)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/rich-text-editor-contract-redlines
 ## Usage
 
 ```tsx
-import { RichTextEditor3Block } from "@/blocks/rich-text-editor-contract-redlines"
+import { RichTextEditorContractRedlinesBlock } from "@/blocks/rich-text-editor-contract-redlines"
 
 export default function Page() {
-  return <RichTextEditor3Block />
+  return <RichTextEditorContractRedlinesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/rich-text-editor/rich-text-editor-3/index.tsx`
+- `src/blocks/application/rich-text-editor/rich-text-editor-contract-redlines/index.tsx`
 
 ## Dependencies
 

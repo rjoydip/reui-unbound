@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-webinar-rsvp` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-webinar-rsvp)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-webinar-rsvp
 ## Usage
 
 ```tsx
-import { Schedule7Block } from "@/blocks/schedule-webinar-rsvp"
+import { ScheduleWebinarRsvpBlock } from "@/blocks/schedule-webinar-rsvp"
 
 export default function Page() {
-  return <Schedule7Block />
+  return <ScheduleWebinarRsvpBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-7/index.tsx`
+- `src/blocks/application/schedule/schedule-webinar-rsvp/index.tsx`
 
 ## Dependencies
 

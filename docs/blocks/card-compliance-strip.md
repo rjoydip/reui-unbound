@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-compliance-strip` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-32)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-compliance-strip)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-compliance-strip
 ## Usage
 
 ```tsx
-import { Card32Block } from "@/blocks/card-compliance-strip"
+import { CardComplianceStripBlock } from "@/blocks/card-compliance-strip"
 
 export default function Page() {
-  return <Card32Block />
+  return <CardComplianceStripBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-32/index.tsx`
+- `src/blocks/application/card/card-compliance-strip/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-top-navbar-admin` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-30)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-top-navbar-admin)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-30/index.tsx`
+- `src/blocks/application/app-shell/app-shell-top-navbar-admin/index.tsx`
 
 ## Dependencies
 

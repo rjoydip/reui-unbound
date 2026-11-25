@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-project-with-cover` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-project-with-cover)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-project-with-cover
 ## Usage
 
 ```tsx
-import { Dialog9Block } from "@/blocks/dialog-project-with-cover"
+import { DialogProjectWithCoverBlock } from "@/blocks/dialog-project-with-cover"
 
 export default function Page() {
-  return <Dialog9Block />
+  return <DialogProjectWithCoverBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-9/index.tsx`
+- `src/blocks/application/dialog/dialog-project-with-cover/index.tsx`
 
 ## Dependencies
 

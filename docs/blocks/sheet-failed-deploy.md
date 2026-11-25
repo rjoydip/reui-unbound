@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-failed-deploy` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-16)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-failed-deploy)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-failed-deploy
 ## Usage
 
 ```tsx
-import { Sheet16Block } from "@/blocks/sheet-failed-deploy"
+import { SheetFailedDeployBlock } from "@/blocks/sheet-failed-deploy"
 
 export default function Page() {
-  return <Sheet16Block />
+  return <SheetFailedDeployBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-16/index.tsx`
+- `src/blocks/application/sheet/sheet-failed-deploy/index.tsx`
 
 ## Dependencies
 

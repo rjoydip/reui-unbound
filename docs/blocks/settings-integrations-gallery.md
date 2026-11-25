@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-integrations-gallery` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-13)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-integrations-gallery)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-integrations-gallery
 ## Usage
 
 ```tsx
-import { Settings13Block } from "@/blocks/settings-integrations-gallery"
+import { SettingsIntegrationsGalleryBlock } from "@/blocks/settings-integrations-gallery"
 
 export default function Page() {
-  return <Settings13Block />
+  return <SettingsIntegrationsGalleryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-13/index.tsx`
+- `src/blocks/application/settings/settings-integrations-gallery/index.tsx`
 
 ## Dependencies
 

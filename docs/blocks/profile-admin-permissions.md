@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-admin-permissions` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-admin-permissions)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-admin-permissions
 ## Usage
 
 ```tsx
-import { Profile2Block } from "@/blocks/profile-admin-permissions"
+import { ProfileAdminPermissionsBlock } from "@/blocks/profile-admin-permissions"
 
 export default function Page() {
-  return <Profile2Block />
+  return <ProfileAdminPermissionsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-2/index.tsx`
+- `src/blocks/application/profile/profile-admin-permissions/index.tsx`
 
 ## Dependencies
 

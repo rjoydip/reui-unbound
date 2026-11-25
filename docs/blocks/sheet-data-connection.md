@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-data-connection` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-22)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-data-connection)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-data-connection
 ## Usage
 
 ```tsx
-import { Sheet22Block } from "@/blocks/sheet-data-connection"
+import { SheetDataConnectionBlock } from "@/blocks/sheet-data-connection"
 
 export default function Page() {
-  return <Sheet22Block />
+  return <SheetDataConnectionBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-22/index.tsx`
+- `src/blocks/application/sheet/sheet-data-connection/index.tsx`
 
 ## Dependencies
 

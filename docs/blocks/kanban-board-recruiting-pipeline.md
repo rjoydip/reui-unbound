@@ -8,7 +8,7 @@ category: Kanban Board
 
 **Block:** `kanban-board-recruiting-pipeline` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-recruiting-pipeline)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/kanban-board-recruiting-pipeline
 ## Usage
 
 ```tsx
-import { KanbanBoard9Block } from "@/blocks/kanban-board-recruiting-pipeline"
+import { KanbanBoardRecruitingPipelineBlock } from "@/blocks/kanban-board-recruiting-pipeline"
 
 export default function Page() {
-  return <KanbanBoard9Block />
+  return <KanbanBoardRecruitingPipelineBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/kanban-board/kanban-board-9/index.tsx`
+- `src/blocks/application/kanban-board/kanban-board-recruiting-pipeline/index.tsx`
 
 ## Dependencies
 

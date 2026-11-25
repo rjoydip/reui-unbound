@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-mission-control` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-25)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-mission-control)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-25/index.tsx`
+- `src/blocks/application/app-shell/app-shell-mission-control/index.tsx`
 
 ## Dependencies
 

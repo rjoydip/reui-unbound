@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-api-developer-portal` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-api-developer-portal)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-api-developer-portal
 ## Usage
 
 ```tsx
-import { Navbar10Block } from "@/blocks/navbar-api-developer-portal"
+import { NavbarApiDeveloperPortalBlock } from "@/blocks/navbar-api-developer-portal"
 
 export default function Page() {
-  return <Navbar10Block />
+  return <NavbarApiDeveloperPortalBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-10/index.tsx`
+- `src/blocks/application/navbar/navbar-api-developer-portal/index.tsx`
 
 ## Dependencies
 

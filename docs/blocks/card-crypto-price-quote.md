@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-crypto-price-quote` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-19)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-crypto-price-quote)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-crypto-price-quote
 ## Usage
 
 ```tsx
-import { Card19Block } from "@/blocks/card-crypto-price-quote"
+import { CardCryptoPriceQuoteBlock } from "@/blocks/card-crypto-price-quote"
 
 export default function Page() {
-  return <Card19Block />
+  return <CardCryptoPriceQuoteBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-19/index.tsx`
+- `src/blocks/application/card/card-crypto-price-quote/index.tsx`
 
 ## Dependencies
 

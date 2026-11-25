@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-help-center` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-help-center)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-help-center
 ## Usage
 
 ```tsx
-import { Sheet2Block } from "@/blocks/sheet-help-center"
+import { SheetHelpCenterBlock } from "@/blocks/sheet-help-center"
 
 export default function Page() {
-  return <Sheet2Block />
+  return <SheetHelpCenterBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-2/index.tsx`
+- `src/blocks/application/sheet/sheet-help-center/index.tsx`
 
 ## Dependencies
 

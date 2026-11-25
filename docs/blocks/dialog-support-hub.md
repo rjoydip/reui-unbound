@@ -8,7 +8,7 @@ category: Dialog
 
 **Block:** `dialog-support-hub` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-support-hub)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/dialog-support-hub
 ## Usage
 
 ```tsx
-import { Dialog7Block } from "@/blocks/dialog-support-hub"
+import { DialogSupportHubBlock } from "@/blocks/dialog-support-hub"
 
 export default function Page() {
-  return <Dialog7Block />
+  return <DialogSupportHubBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/dialog/dialog-7/index.tsx`
+- `src/blocks/application/dialog/dialog-support-hub/index.tsx`
 
 ## Dependencies
 

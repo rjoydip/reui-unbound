@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-deal-invoice-tiles` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-35)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-deal-invoice-tiles)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-deal-invoice-tiles
 ## Usage
 
 ```tsx
-import { Card35Block } from "@/blocks/card-deal-invoice-tiles"
+import { CardDealInvoiceTilesBlock } from "@/blocks/card-deal-invoice-tiles"
 
 export default function Page() {
-  return <Card35Block />
+  return <CardDealInvoiceTilesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-35/index.tsx`
+- `src/blocks/application/card/card-deal-invoice-tiles/index.tsx`
 
 
 ## Registry dependencies

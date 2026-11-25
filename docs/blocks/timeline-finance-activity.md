@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-finance-activity` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-finance-activity)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-finance-activity
 ## Usage
 
 ```tsx
-import { Timeline3Block } from "@/blocks/timeline-finance-activity"
+import { TimelineFinanceActivityBlock } from "@/blocks/timeline-finance-activity"
 
 export default function Page() {
-  return <Timeline3Block />
+  return <TimelineFinanceActivityBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-3/index.tsx`
+- `src/blocks/application/timeline/timeline-finance-activity/index.tsx`
 
 ## Dependencies
 

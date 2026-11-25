@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-job-recommendation` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-24)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-job-recommendation)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-job-recommendation
 ## Usage
 
 ```tsx
-import { Card24Block } from "@/blocks/card-job-recommendation"
+import { CardJobRecommendationBlock } from "@/blocks/card-job-recommendation"
 
 export default function Page() {
-  return <Card24Block />
+  return <CardJobRecommendationBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-24/index.tsx`
+- `src/blocks/application/card/card-job-recommendation/index.tsx`
 
 ## Dependencies
 

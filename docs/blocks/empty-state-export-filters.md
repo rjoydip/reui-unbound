@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-export-filters` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-export-filters)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-export-filters
 ## Usage
 
 ```tsx
-import { EmptyState12Block } from "@/blocks/empty-state-export-filters"
+import { EmptyStateExportFiltersBlock } from "@/blocks/empty-state-export-filters"
 
 export default function Page() {
-  return <EmptyState12Block />
+  return <EmptyStateExportFiltersBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-12/index.tsx`
+- `src/blocks/application/empty-state/empty-state-export-filters/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-no-search-results` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-no-search-results)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-no-search-results
 ## Usage
 
 ```tsx
-import { EmptyState2Block } from "@/blocks/empty-state-no-search-results"
+import { EmptyStateNoSearchResultsBlock } from "@/blocks/empty-state-no-search-results"
 
 export default function Page() {
-  return <EmptyState2Block />
+  return <EmptyStateNoSearchResultsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-2/index.tsx`
+- `src/blocks/application/empty-state/empty-state-no-search-results/index.tsx`
 
 ## Dependencies
 

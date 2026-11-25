@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-marketing-mega-menu` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-marketing-mega-menu)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-marketing-mega-menu
 ## Usage
 
 ```tsx
-import { Navbar12Block } from "@/blocks/navbar-marketing-mega-menu"
+import { NavbarMarketingMegaMenuBlock } from "@/blocks/navbar-marketing-mega-menu"
 
 export default function Page() {
-  return <Navbar12Block />
+  return <NavbarMarketingMegaMenuBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-12/index.tsx`
+- `src/blocks/application/navbar/navbar-marketing-mega-menu/index.tsx`
 
 ## Dependencies
 

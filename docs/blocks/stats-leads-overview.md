@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-leads-overview` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-leads-overview)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-leads-overview
 ## Usage
 
 ```tsx
-import { Stats4Block } from "@/blocks/stats-leads-overview"
+import { StatsLeadsOverviewBlock } from "@/blocks/stats-leads-overview"
 
 export default function Page() {
-  return <Stats4Block />
+  return <StatsLeadsOverviewBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-4/index.tsx`
+- `src/blocks/application/stats/stats-leads-overview/index.tsx`
 
 ## Dependencies
 

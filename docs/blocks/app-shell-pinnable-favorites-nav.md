@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-pinnable-favorites-nav` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-15)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-pinnable-favorites-nav)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-pinnable-favorites-nav
 ## Usage
 
 ```tsx
-import { AppShell15Block } from "@/blocks/app-shell-pinnable-favorites-nav"
+import { AppShellPinnableFavoritesNavBlock } from "@/blocks/app-shell-pinnable-favorites-nav"
 
 export default function Page() {
-  return <AppShell15Block />
+  return <AppShellPinnableFavoritesNavBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-15/index.tsx`
+- `src/blocks/application/app-shell/app-shell-pinnable-favorites-nav/index.tsx`
 
 ## Dependencies
 

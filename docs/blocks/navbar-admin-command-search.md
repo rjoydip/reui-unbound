@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-admin-command-search` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-admin-command-search)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-admin-command-search
 ## Usage
 
 ```tsx
-import { Navbar4Block } from "@/blocks/navbar-admin-command-search"
+import { NavbarAdminCommandSearchBlock } from "@/blocks/navbar-admin-command-search"
 
 export default function Page() {
-  return <Navbar4Block />
+  return <NavbarAdminCommandSearchBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-4/index.tsx`
+- `src/blocks/application/navbar/navbar-admin-command-search/index.tsx`
 
 ## Dependencies
 

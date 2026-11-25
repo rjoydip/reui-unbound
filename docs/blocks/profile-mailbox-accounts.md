@@ -8,7 +8,7 @@ category: Profile
 
 **Block:** `profile-mailbox-accounts` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=profile-mailbox-accounts)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/profile-mailbox-accounts
 ## Usage
 
 ```tsx
-import { Profile4Block } from "@/blocks/profile-mailbox-accounts"
+import { ProfileMailboxAccountsBlock } from "@/blocks/profile-mailbox-accounts"
 
 export default function Page() {
-  return <Profile4Block />
+  return <ProfileMailboxAccountsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/profile/profile-4/index.tsx`
+- `src/blocks/application/profile/profile-mailbox-accounts/index.tsx`
 
 ## Dependencies
 

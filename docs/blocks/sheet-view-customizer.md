@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-view-customizer` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-view-customizer)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-view-customizer
 ## Usage
 
 ```tsx
-import { Sheet6Block } from "@/blocks/sheet-view-customizer"
+import { SheetViewCustomizerBlock } from "@/blocks/sheet-view-customizer"
 
 export default function Page() {
-  return <Sheet6Block />
+  return <SheetViewCustomizerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-6/index.tsx`
+- `src/blocks/application/sheet/sheet-view-customizer/index.tsx`
 
 ## Dependencies
 

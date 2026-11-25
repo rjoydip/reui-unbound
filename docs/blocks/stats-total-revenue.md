@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-total-revenue` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-total-revenue)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-total-revenue
 ## Usage
 
 ```tsx
-import { Stats10Block } from "@/blocks/stats-total-revenue"
+import { StatsTotalRevenueBlock } from "@/blocks/stats-total-revenue"
 
 export default function Page() {
-  return <Stats10Block />
+  return <StatsTotalRevenueBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-10/index.tsx`
+- `src/blocks/application/stats/stats-total-revenue/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-general-settings` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-general-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-general-settings
 ## Usage
 
 ```tsx
-import { Settings3Block } from "@/blocks/settings-general-settings"
+import { SettingsGeneralSettingsBlock } from "@/blocks/settings-general-settings"
 
 export default function Page() {
-  return <Settings3Block />
+  return <SettingsGeneralSettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-3/index.tsx`
+- `src/blocks/application/settings/settings-general-settings/index.tsx`
 
 ## Dependencies
 

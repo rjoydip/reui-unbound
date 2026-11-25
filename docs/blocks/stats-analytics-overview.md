@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-analytics-overview` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-analytics-overview)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-analytics-overview
 ## Usage
 
 ```tsx
-import { Stats8Block } from "@/blocks/stats-analytics-overview"
+import { StatsAnalyticsOverviewBlock } from "@/blocks/stats-analytics-overview"
 
 export default function Page() {
-  return <Stats8Block />
+  return <StatsAnalyticsOverviewBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-8/index.tsx`
+- `src/blocks/application/stats/stats-analytics-overview/index.tsx`
 
 ## Dependencies
 

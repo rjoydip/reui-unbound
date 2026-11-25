@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-screenshot-carousel-setup` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-screenshot-carousel-setup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-screenshot-carousel-setup
 ## Usage
 
 ```tsx
-import { Onboarding7Block } from "@/blocks/onboarding-screenshot-carousel-setup"
+import { OnboardingScreenshotCarouselSetupBlock } from "@/blocks/onboarding-screenshot-carousel-setup"
 
 export default function Page() {
-  return <Onboarding7Block />
+  return <OnboardingScreenshotCarouselSetupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-7/index.tsx`
+- `src/blocks/application/onboarding/onboarding-screenshot-carousel-setup/index.tsx`
 
 ## Dependencies
 

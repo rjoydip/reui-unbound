@@ -8,7 +8,7 @@ category: Wizard
 
 **Block:** `wizard-product-setup-wizard` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-product-setup-wizard)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/wizard-product-setup-wizard
 ## Usage
 
 ```tsx
-import { Wizard6Block } from "@/blocks/wizard-product-setup-wizard"
+import { WizardProductSetupWizardBlock } from "@/blocks/wizard-product-setup-wizard"
 
 export default function Page() {
-  return <Wizard6Block />
+  return <WizardProductSetupWizardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/wizard/wizard-6/index.tsx`
+- `src/blocks/application/wizard/wizard-product-setup-wizard/index.tsx`
 
 ## Dependencies
 

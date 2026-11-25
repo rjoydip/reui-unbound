@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-photo-backdrop-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-photo-backdrop-login)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-photo-backdrop-login
 ## Usage
 
 ```tsx
-import { Auth8Block } from "@/blocks/auth-photo-backdrop-login"
+import { AuthPhotoBackdropLoginBlock } from "@/blocks/auth-photo-backdrop-login"
 
 export default function Page() {
-  return <Auth8Block />
+  return <AuthPhotoBackdropLoginBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-8/index.tsx`
+- `src/blocks/application/auth/auth-photo-backdrop-login/index.tsx`
 
 ## Dependencies
 

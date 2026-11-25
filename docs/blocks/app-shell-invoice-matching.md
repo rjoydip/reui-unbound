@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-invoice-matching` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-34)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-invoice-matching)
 
 ## Install
 
@@ -28,7 +28,7 @@ export default function Page() {
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-34/index.tsx`
+- `src/blocks/application/app-shell/app-shell-invoice-matching/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-agent-api-setup` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-agent-api-setup)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-agent-api-setup
 ## Usage
 
 ```tsx
-import { Onboarding6Block } from "@/blocks/onboarding-agent-api-setup"
+import { OnboardingAgentApiSetupBlock } from "@/blocks/onboarding-agent-api-setup"
 
 export default function Page() {
-  return <Onboarding6Block />
+  return <OnboardingAgentApiSetupBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-6/index.tsx`
+- `src/blocks/application/onboarding/onboarding-agent-api-setup/index.tsx`
 
 ## Dependencies
 

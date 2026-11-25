@@ -8,7 +8,7 @@ category: List
 
 **Block:** `list-fund-leaderboard` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=list-fund-leaderboard)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/list-fund-leaderboard
 ## Usage
 
 ```tsx
-import { List2Block } from "@/blocks/list-fund-leaderboard"
+import { ListFundLeaderboardBlock } from "@/blocks/list-fund-leaderboard"
 
 export default function Page() {
-  return <List2Block />
+  return <ListFundLeaderboardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/list/list-2/index.tsx`
+- `src/blocks/application/list/list-fund-leaderboard/index.tsx`
 
 ## Dependencies
 

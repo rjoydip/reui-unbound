@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-firewall-request` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-19)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-firewall-request)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-firewall-request
 ## Usage
 
 ```tsx
-import { Sheet19Block } from "@/blocks/sheet-firewall-request"
+import { SheetFirewallRequestBlock } from "@/blocks/sheet-firewall-request"
 
 export default function Page() {
-  return <Sheet19Block />
+  return <SheetFirewallRequestBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-19/index.tsx`
+- `src/blocks/application/sheet/sheet-firewall-request/index.tsx`
 
 ## Dependencies
 

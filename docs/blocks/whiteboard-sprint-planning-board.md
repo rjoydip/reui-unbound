@@ -8,7 +8,7 @@ category: Whiteboard
 
 **Block:** `whiteboard-sprint-planning-board` · **Category:** Whiteboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=whiteboard-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=whiteboard-sprint-planning-board)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/whiteboard-sprint-planning-board
 ## Usage
 
 ```tsx
-import { Whiteboard2Block } from "@/blocks/whiteboard-sprint-planning-board"
+import { WhiteboardSprintPlanningBoardBlock } from "@/blocks/whiteboard-sprint-planning-board"
 
 export default function Page() {
-  return <Whiteboard2Block />
+  return <WhiteboardSprintPlanningBoardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/whiteboard/whiteboard-2/index.tsx`
+- `src/blocks/application/whiteboard/whiteboard-sprint-planning-board/index.tsx`
 
 ## Dependencies
 

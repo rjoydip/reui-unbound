@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-account-balances` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-25)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-account-balances)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-account-balances
 ## Usage
 
 ```tsx
-import { Card25Block } from "@/blocks/card-account-balances"
+import { CardAccountBalancesBlock } from "@/blocks/card-account-balances"
 
 export default function Page() {
-  return <Card25Block />
+  return <CardAccountBalancesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-25/index.tsx`
+- `src/blocks/application/card/card-account-balances/index.tsx`
 
 ## Dependencies
 

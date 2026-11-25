@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-new-product-form` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-new-product-form)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-new-product-form
 ## Usage
 
 ```tsx
-import { Form12Block } from "@/blocks/form-new-product-form"
+import { FormNewProductFormBlock } from "@/blocks/form-new-product-form"
 
 export default function Page() {
-  return <Form12Block />
+  return <FormNewProductFormBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-12/index.tsx`
+- `src/blocks/application/form/form-new-product-form/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-reports-workspace` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-4)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-reports-workspace)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-reports-workspace
 ## Usage
 
 ```tsx
-import { EmptyState4Block } from "@/blocks/empty-state-reports-workspace"
+import { EmptyStateReportsWorkspaceBlock } from "@/blocks/empty-state-reports-workspace"
 
 export default function Page() {
-  return <EmptyState4Block />
+  return <EmptyStateReportsWorkspaceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-4/index.tsx`
+- `src/blocks/application/empty-state/empty-state-reports-workspace/index.tsx`
 
 ## Dependencies
 

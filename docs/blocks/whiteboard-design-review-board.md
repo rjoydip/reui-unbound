@@ -8,7 +8,7 @@ category: Whiteboard
 
 **Block:** `whiteboard-design-review-board` · **Category:** Whiteboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=whiteboard-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=whiteboard-design-review-board)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/whiteboard-design-review-board
 ## Usage
 
 ```tsx
-import { Whiteboard1Block } from "@/blocks/whiteboard-design-review-board"
+import { WhiteboardDesignReviewBoardBlock } from "@/blocks/whiteboard-design-review-board"
 
 export default function Page() {
-  return <Whiteboard1Block />
+  return <WhiteboardDesignReviewBoardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/whiteboard/whiteboard-1/index.tsx`
+- `src/blocks/application/whiteboard/whiteboard-design-review-board/index.tsx`
 
 ## Dependencies
 

@@ -88,7 +88,7 @@ for (const category of CATEGORIES) {
     .readdirSync(path.join(root, dir), { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && entry.name.startsWith(`${prefix}-`))
     .map((entry) => entry.name)
-    .sort((a, b) => Number(a.split("-").pop()) - Number(b.split("-").pop()))
+    .sort((a, b) => a.localeCompare(b))
 
   const entries = []
   for (const slug of slugs) {
@@ -107,19 +107,12 @@ for (const category of CATEGORIES) {
       const dep = registryDep(match[1])
       if (dep) registry.add(dep)
     }
-    const number = slug.split("-").pop()
     const exportName =
-      category.folder
+      slug
         .split("-")
         .map((part) => part[0].toUpperCase() + part.slice(1))
-        .join("") + `${number}Block`
-    const registryName =
-      prefix +
-      "-" +
-      meta.title
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "")
+        .join("") + "Block"
+    const registryName = slug
     entries.push({
       slug,
       meta,

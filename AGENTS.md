@@ -50,7 +50,7 @@ node scripts/capture-category.mjs wizard       # Wizard category interaction cap
 ## Structure
 
 - `src/blocks/data-grid/<category>/<name>/` — one folder per demo block (`index.tsx`, `data.ts`, optional `parts.tsx`, sheets, etc.).
-- `src/blocks/application/<category>/<slug>/index.tsx` — clean-room ports of reui.io application blocks (`app-shell-1`, `auth-3`, …), one folder per block, default export `<PascalSlug>Block`.
+- `src/blocks/application/<category>/<slug>/index.tsx` — clean-room ports of reui.io application blocks (`app-shell-icon-rail-dashboard`, `auth-workspace-sign-in`, …), one folder per block, default export `<PascalSlug>Block`.
 - `src/blocks/application/~manifest.json` — all 305 application blocks (slug, category, title, description, URL) from the capture catalogue.
 - `src/blocks/application/<category>/~blocks.tsx` — generated block entries (`APP_SHELL_BLOCKS`, `AUTH_BLOCKS`, …); run `bun run blocks:sync` after adding or removing folders. Never hand-edit.
 - `src/blocks/~internal/registry.tsx` — runtime catalog: metadata, dependencies, raw source imports.
@@ -103,13 +103,13 @@ ports are clean-room implementations from the captured previews.
    `node scripts/capture-category.mjs <category>` (deep interaction states per block, e.g. `app-shell`, `auth`, `navbar`, `onboarding`, `profile`, `rich-text-editor`, `schedule`, `settings`, `sheet`, `stats`, `timeline`, `whiteboard`, `wizard`).
    Screenshots and `sources/<slug>.md` land in `captures/application` (gitignored).
 2. Implement `src/blocks/application/<category>/<slug>/index.tsx` with a default
-   export named `<PascalSlug>Block` (e.g. `AppShell7Block`), reusing
+   export named `<PascalSlug>Block` (e.g. `AppShellIconRailDashboardBlock`), reusing
    `src/components/ui` and `src/components/kit` components and design tokens.
 3. Run `bun run blocks:sync` (regenerates each category `~blocks.tsx`), then
    `bun run registry:generate`. Registry item names and
    install targets use the block title, e.g.
    `bunx --bun shadcn@latest add @reui-unbound/app-shell-icon-rail-dashboard`;
-   folder slugs and preview ids stay `app-shell-<n>`.
+   folder slugs and preview ids use the same name-based slug, e.g. `app-shell-icon-rail-dashboard`.
 4. Run `bun run docs:generate` to refresh docs and the tracker, and confirm
    `bun run typecheck && bun run lint && bun run build`.
 

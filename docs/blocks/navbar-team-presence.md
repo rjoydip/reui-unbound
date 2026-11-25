@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-team-presence` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-team-presence)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-team-presence
 ## Usage
 
 ```tsx
-import { Navbar2Block } from "@/blocks/navbar-team-presence"
+import { NavbarTeamPresenceBlock } from "@/blocks/navbar-team-presence"
 
 export default function Page() {
-  return <Navbar2Block />
+  return <NavbarTeamPresenceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-2/index.tsx`
+- `src/blocks/application/navbar/navbar-team-presence/index.tsx`
 
 ## Dependencies
 

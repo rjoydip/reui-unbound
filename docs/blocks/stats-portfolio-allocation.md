@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-portfolio-allocation` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-17)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-portfolio-allocation)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-portfolio-allocation
 ## Usage
 
 ```tsx
-import { Stats17Block } from "@/blocks/stats-portfolio-allocation"
+import { StatsPortfolioAllocationBlock } from "@/blocks/stats-portfolio-allocation"
 
 export default function Page() {
-  return <Stats17Block />
+  return <StatsPortfolioAllocationBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-17/index.tsx`
+- `src/blocks/application/stats/stats-portfolio-allocation/index.tsx`
 
 ## Dependencies
 

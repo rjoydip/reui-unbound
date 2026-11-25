@@ -8,7 +8,7 @@ category: Empty State
 
 **Block:** `empty-state-first-project` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-first-project)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/empty-state-first-project
 ## Usage
 
 ```tsx
-import { EmptyState3Block } from "@/blocks/empty-state-first-project"
+import { EmptyStateFirstProjectBlock } from "@/blocks/empty-state-first-project"
 
 export default function Page() {
-  return <EmptyState3Block />
+  return <EmptyStateFirstProjectBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/empty-state/empty-state-3/index.tsx`
+- `src/blocks/application/empty-state/empty-state-first-project/index.tsx`
 
 ## Dependencies
 

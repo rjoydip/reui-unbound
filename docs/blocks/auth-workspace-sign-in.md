@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-workspace-sign-in` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-14)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-workspace-sign-in)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-workspace-sign-in
 ## Usage
 
 ```tsx
-import { Auth14Block } from "@/blocks/auth-workspace-sign-in"
+import { AuthWorkspaceSignInBlock } from "@/blocks/auth-workspace-sign-in"
 
 export default function Page() {
-  return <Auth14Block />
+  return <AuthWorkspaceSignInBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-14/index.tsx`
+- `src/blocks/application/auth/auth-workspace-sign-in/index.tsx`
 
 ## Dependencies
 

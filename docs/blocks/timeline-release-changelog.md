@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-release-changelog` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-release-changelog)
 
 ## Install
 
@@ -19,13 +19,13 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-release-changelog
 ## Usage
 
 ```tsx
-import { Timeline5Block } from "@/blocks/timeline-release-changelog"
+import { TimelineReleaseChangelogBlock } from "@/blocks/timeline-release-changelog"
 
 export default function Page() {
-  return <Timeline5Block />
+  return <TimelineReleaseChangelogBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-5/index.tsx`
+- `src/blocks/application/timeline/timeline-release-changelog/index.tsx`

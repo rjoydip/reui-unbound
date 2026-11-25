@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-appointment-planner` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-appointment-planner)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-appointment-planner
 ## Usage
 
 ```tsx
-import { Schedule1Block } from "@/blocks/schedule-appointment-planner"
+import { ScheduleAppointmentPlannerBlock } from "@/blocks/schedule-appointment-planner"
 
 export default function Page() {
-  return <Schedule1Block />
+  return <ScheduleAppointmentPlannerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-1/index.tsx`
+- `src/blocks/application/schedule/schedule-appointment-planner/index.tsx`
 
 ## Dependencies
 

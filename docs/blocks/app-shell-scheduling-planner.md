@@ -8,7 +8,7 @@ category: App Shell
 
 **Block:** `app-shell-scheduling-planner` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-19)
+[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-scheduling-planner)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/app-shell-scheduling-planner
 ## Usage
 
 ```tsx
-import { AppShell19Block } from "@/blocks/app-shell-scheduling-planner"
+import { AppShellSchedulingPlannerBlock } from "@/blocks/app-shell-scheduling-planner"
 
 export default function Page() {
-  return <AppShell19Block />
+  return <AppShellSchedulingPlannerBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/app-shell/app-shell-19/index.tsx`
+- `src/blocks/application/app-shell/app-shell-scheduling-planner/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Schedule
 
 **Block:** `schedule-session-booking` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-9)
+[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-session-booking)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/schedule-session-booking
 ## Usage
 
 ```tsx
-import { Schedule9Block } from "@/blocks/schedule-session-booking"
+import { ScheduleSessionBookingBlock } from "@/blocks/schedule-session-booking"
 
 export default function Page() {
-  return <Schedule9Block />
+  return <ScheduleSessionBookingBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/schedule/schedule-9/index.tsx`
+- `src/blocks/application/schedule/schedule-session-booking/index.tsx`
 
 ## Dependencies
 

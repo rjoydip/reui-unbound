@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-import-sources` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-import-sources)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-import-sources
 ## Usage
 
 ```tsx
-import { Settings1Block } from "@/blocks/settings-import-sources"
+import { SettingsImportSourcesBlock } from "@/blocks/settings-import-sources"
 
 export default function Page() {
-  return <Settings1Block />
+  return <SettingsImportSourcesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-1/index.tsx`
+- `src/blocks/application/settings/settings-import-sources/index.tsx`
 
 ## Dependencies
 

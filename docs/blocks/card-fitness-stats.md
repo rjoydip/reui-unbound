@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-fitness-stats` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-40)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-fitness-stats)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-fitness-stats
 ## Usage
 
 ```tsx
-import { Card40Block } from "@/blocks/card-fitness-stats"
+import { CardFitnessStatsBlock } from "@/blocks/card-fitness-stats"
 
 export default function Page() {
-  return <Card40Block />
+  return <CardFitnessStatsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-40/index.tsx`
+- `src/blocks/application/card/card-fitness-stats/index.tsx`
 
 
 ## Registry dependencies

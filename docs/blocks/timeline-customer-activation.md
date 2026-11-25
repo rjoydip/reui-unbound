@@ -8,7 +8,7 @@ category: Timeline
 
 **Block:** `timeline-customer-activation` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-customer-activation)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/timeline-customer-activation
 ## Usage
 
 ```tsx
-import { Timeline1Block } from "@/blocks/timeline-customer-activation"
+import { TimelineCustomerActivationBlock } from "@/blocks/timeline-customer-activation"
 
 export default function Page() {
-  return <Timeline1Block />
+  return <TimelineCustomerActivationBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/timeline/timeline-1/index.tsx`
+- `src/blocks/application/timeline/timeline-customer-activation/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-security-settings` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-10)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-security-settings)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-security-settings
 ## Usage
 
 ```tsx
-import { Settings10Block } from "@/blocks/settings-security-settings"
+import { SettingsSecuritySettingsBlock } from "@/blocks/settings-security-settings"
 
 export default function Page() {
-  return <Settings10Block />
+  return <SettingsSecuritySettingsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-10/index.tsx`
+- `src/blocks/application/settings/settings-security-settings/index.tsx`
 
 
 ## Registry dependencies

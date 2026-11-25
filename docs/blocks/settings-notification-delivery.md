@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-notification-delivery` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-12)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-notification-delivery)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-notification-delivery
 ## Usage
 
 ```tsx
-import { Settings12Block } from "@/blocks/settings-notification-delivery"
+import { SettingsNotificationDeliveryBlock } from "@/blocks/settings-notification-delivery"
 
 export default function Page() {
-  return <Settings12Block />
+  return <SettingsNotificationDeliveryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-12/index.tsx`
+- `src/blocks/application/settings/settings-notification-delivery/index.tsx`
 
 ## Dependencies
 

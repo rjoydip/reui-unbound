@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-privacy-controls` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-2)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-privacy-controls)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-privacy-controls
 ## Usage
 
 ```tsx
-import { Settings2Block } from "@/blocks/settings-privacy-controls"
+import { SettingsPrivacyControlsBlock } from "@/blocks/settings-privacy-controls"
 
 export default function Page() {
-  return <Settings2Block />
+  return <SettingsPrivacyControlsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-2/index.tsx`
+- `src/blocks/application/settings/settings-privacy-controls/index.tsx`
 
 ## Dependencies
 

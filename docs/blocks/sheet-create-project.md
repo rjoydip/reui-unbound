@@ -8,7 +8,7 @@ category: Sheet
 
 **Block:** `sheet-create-project` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-create-project)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/sheet-create-project
 ## Usage
 
 ```tsx
-import { Sheet1Block } from "@/blocks/sheet-create-project"
+import { SheetCreateProjectBlock } from "@/blocks/sheet-create-project"
 
 export default function Page() {
-  return <Sheet1Block />
+  return <SheetCreateProjectBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/sheet/sheet-1/index.tsx`
+- `src/blocks/application/sheet/sheet-create-project/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Form
 
 **Block:** `form-ticket-properties` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=form-ticket-properties)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/form-ticket-properties
 ## Usage
 
 ```tsx
-import { Form7Block } from "@/blocks/form-ticket-properties"
+import { FormTicketPropertiesBlock } from "@/blocks/form-ticket-properties"
 
 export default function Page() {
-  return <Form7Block />
+  return <FormTicketPropertiesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/form/form-7/index.tsx`
+- `src/blocks/application/form/form-ticket-properties/index.tsx`
 
 ## Dependencies
 

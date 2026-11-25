@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-period-trend-kpis` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-34)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-period-trend-kpis)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-period-trend-kpis
 ## Usage
 
 ```tsx
-import { Card34Block } from "@/blocks/card-period-trend-kpis"
+import { CardPeriodTrendKpisBlock } from "@/blocks/card-period-trend-kpis"
 
 export default function Page() {
-  return <Card34Block />
+  return <CardPeriodTrendKpisBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-34/index.tsx`
+- `src/blocks/application/card/card-period-trend-kpis/index.tsx`
 
 ## Dependencies
 

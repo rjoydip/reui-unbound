@@ -8,7 +8,7 @@ category: Onboarding
 
 **Block:** `onboarding-live-preview-wizard` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-1)
+[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-live-preview-wizard)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/onboarding-live-preview-wizard
 ## Usage
 
 ```tsx
-import { Onboarding1Block } from "@/blocks/onboarding-live-preview-wizard"
+import { OnboardingLivePreviewWizardBlock } from "@/blocks/onboarding-live-preview-wizard"
 
 export default function Page() {
-  return <Onboarding1Block />
+  return <OnboardingLivePreviewWizardBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/onboarding/onboarding-1/index.tsx`
+- `src/blocks/application/onboarding/onboarding-live-preview-wizard/index.tsx`
 
 ## Dependencies
 

@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-agent-marketplace` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-8)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-agent-marketplace)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-agent-marketplace
 ## Usage
 
 ```tsx
-import { Navbar8Block } from "@/blocks/navbar-agent-marketplace"
+import { NavbarAgentMarketplaceBlock } from "@/blocks/navbar-agent-marketplace"
 
 export default function Page() {
-  return <Navbar8Block />
+  return <NavbarAgentMarketplaceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-8/index.tsx`
+- `src/blocks/application/navbar/navbar-agent-marketplace/index.tsx`
 
 ## Dependencies
 

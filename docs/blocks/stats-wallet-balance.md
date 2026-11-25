@@ -8,7 +8,7 @@ category: Stats
 
 **Block:** `stats-wallet-balance` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-5)
+[Open live preview](https://reui-unbound.pages.dev/?preview=stats-wallet-balance)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/stats-wallet-balance
 ## Usage
 
 ```tsx
-import { Stats5Block } from "@/blocks/stats-wallet-balance"
+import { StatsWalletBalanceBlock } from "@/blocks/stats-wallet-balance"
 
 export default function Page() {
-  return <Stats5Block />
+  return <StatsWalletBalanceBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/stats/stats-5/index.tsx`
+- `src/blocks/application/stats/stats-wallet-balance/index.tsx`
 
 ## Dependencies
 

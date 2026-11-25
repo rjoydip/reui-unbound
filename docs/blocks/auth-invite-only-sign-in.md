@@ -8,7 +8,7 @@ category: Auth
 
 **Block:** `auth-invite-only-sign-in` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-19)
+[Open live preview](https://reui-unbound.pages.dev/?preview=auth-invite-only-sign-in)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/auth-invite-only-sign-in
 ## Usage
 
 ```tsx
-import { Auth19Block } from "@/blocks/auth-invite-only-sign-in"
+import { AuthInviteOnlySignInBlock } from "@/blocks/auth-invite-only-sign-in"
 
 export default function Page() {
-  return <Auth19Block />
+  return <AuthInviteOnlySignInBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/auth/auth-19/index.tsx`
+- `src/blocks/application/auth/auth-invite-only-sign-in/index.tsx`
 
 ## Dependencies
 

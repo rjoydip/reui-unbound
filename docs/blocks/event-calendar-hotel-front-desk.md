@@ -8,7 +8,7 @@ category: Event Calendar
 
 **Block:** `event-calendar-hotel-front-desk` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-3)
+[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-hotel-front-desk)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/event-calendar-hotel-front-desk
 ## Usage
 
 ```tsx
-import { EventCalendar3Block } from "@/blocks/event-calendar-hotel-front-desk"
+import { EventCalendarHotelFrontDeskBlock } from "@/blocks/event-calendar-hotel-front-desk"
 
 export default function Page() {
-  return <EventCalendar3Block />
+  return <EventCalendarHotelFrontDeskBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/event-calendar/event-calendar-3/index.tsx`
+- `src/blocks/application/event-calendar/event-calendar-hotel-front-desk/index.tsx`
 
 ## Dependencies
 

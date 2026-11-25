@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-detail-fact-tiles` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-7)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-detail-fact-tiles)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-detail-fact-tiles
 ## Usage
 
 ```tsx
-import { Card7Block } from "@/blocks/card-detail-fact-tiles"
+import { CardDetailFactTilesBlock } from "@/blocks/card-detail-fact-tiles"
 
 export default function Page() {
-  return <Card7Block />
+  return <CardDetailFactTilesBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-7/index.tsx`
+- `src/blocks/application/card/card-detail-fact-tiles/index.tsx`
 
 ## Dependencies
 

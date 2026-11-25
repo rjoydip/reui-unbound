@@ -8,7 +8,7 @@ category: Card
 
 **Block:** `card-application-summary` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-27)
+[Open live preview](https://reui-unbound.pages.dev/?preview=card-application-summary)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/card-application-summary
 ## Usage
 
 ```tsx
-import { Card27Block } from "@/blocks/card-application-summary"
+import { CardApplicationSummaryBlock } from "@/blocks/card-application-summary"
 
 export default function Page() {
-  return <Card27Block />
+  return <CardApplicationSummaryBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/card/card-27/index.tsx`
+- `src/blocks/application/card/card-application-summary/index.tsx`
 
 ## Dependencies
 

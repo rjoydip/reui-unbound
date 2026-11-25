@@ -8,7 +8,7 @@ category: Settings
 
 **Block:** `settings-connected-apps` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-16)
+[Open live preview](https://reui-unbound.pages.dev/?preview=settings-connected-apps)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/settings-connected-apps
 ## Usage
 
 ```tsx
-import { Settings16Block } from "@/blocks/settings-connected-apps"
+import { SettingsConnectedAppsBlock } from "@/blocks/settings-connected-apps"
 
 export default function Page() {
-  return <Settings16Block />
+  return <SettingsConnectedAppsBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/settings/settings-16/index.tsx`
+- `src/blocks/application/settings/settings-connected-apps/index.tsx`
 
 ## Dependencies
 

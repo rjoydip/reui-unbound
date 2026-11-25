@@ -8,7 +8,7 @@ category: Navbar
 
 **Block:** `navbar-analytics-toolbar` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-6)
+[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-analytics-toolbar)
 
 ## Install
 
@@ -19,16 +19,16 @@ bunx --bun shadcn@latest add @reui-unbound/navbar-analytics-toolbar
 ## Usage
 
 ```tsx
-import { Navbar6Block } from "@/blocks/navbar-analytics-toolbar"
+import { NavbarAnalyticsToolbarBlock } from "@/blocks/navbar-analytics-toolbar"
 
 export default function Page() {
-  return <Navbar6Block />
+  return <NavbarAnalyticsToolbarBlock />
 }
 ```
 
 ## Files
 
-- `src/blocks/application/navbar/navbar-6/index.tsx`
+- `src/blocks/application/navbar/navbar-analytics-toolbar/index.tsx`
 
 ## Dependencies
 
