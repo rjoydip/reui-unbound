@@ -7,19 +7,25 @@ description: Collapsible component with live previews.
 
 Collapsible component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`collapsible-radix`](https://reui-unbound.pages.dev/?preview=collapsible-radix)
-- **Radix** — [`collapsible-standard-radix`](https://reui-unbound.pages.dev/?preview=collapsible-standard-radix)
-- **Radix** — [`collapsible-checkbox-settings-radix`](https://reui-unbound.pages.dev/?preview=collapsible-checkbox-settings-radix)
-- **Radix** — [`collapsible-animated-card-radix`](https://reui-unbound.pages.dev/?preview=collapsible-animated-card-radix)
-- **Radix** — [`collapsible-bottom-trigger-radix`](https://reui-unbound.pages.dev/?preview=collapsible-bottom-trigger-radix)
-- **Radix** — [`collapsible-form-fields-radix`](https://reui-unbound.pages.dev/?preview=collapsible-form-fields-radix)
-- **Radix** — [`collapsible-in-frame-radix`](https://reui-unbound.pages.dev/?preview=collapsible-in-frame-radix)
-- **Radix** — [`collapsible-nested-list-radix`](https://reui-unbound.pages.dev/?preview=collapsible-nested-list-radix)
-- **Radix** — [`collapsible-user-profile-radix`](https://reui-unbound.pages.dev/?preview=collapsible-user-profile-radix)
-- **Radix** — [`collapsible-multi-level-menu-radix`](https://reui-unbound.pages.dev/?preview=collapsible-multi-level-menu-radix)
-- **Radix** — [`collapsible-file-tree-radix`](https://reui-unbound.pages.dev/?preview=collapsible-file-tree-radix)
+### Radix (11)
+
+- [`collapsible-radix`](https://reui-unbound.pages.dev/?preview=collapsible-radix)
+- [`collapsible-standard-radix`](https://reui-unbound.pages.dev/?preview=collapsible-standard-radix)
+- [`collapsible-checkbox-settings-radix`](https://reui-unbound.pages.dev/?preview=collapsible-checkbox-settings-radix)
+- [`collapsible-animated-card-radix`](https://reui-unbound.pages.dev/?preview=collapsible-animated-card-radix)
+- [`collapsible-bottom-trigger-radix`](https://reui-unbound.pages.dev/?preview=collapsible-bottom-trigger-radix)
+- [`collapsible-form-fields-radix`](https://reui-unbound.pages.dev/?preview=collapsible-form-fields-radix)
+- [`collapsible-in-frame-radix`](https://reui-unbound.pages.dev/?preview=collapsible-in-frame-radix)
+- [`collapsible-nested-list-radix`](https://reui-unbound.pages.dev/?preview=collapsible-nested-list-radix)
+- [`collapsible-user-profile-radix`](https://reui-unbound.pages.dev/?preview=collapsible-user-profile-radix)
+- [`collapsible-multi-level-menu-radix`](https://reui-unbound.pages.dev/?preview=collapsible-multi-level-menu-radix)
+- [`collapsible-file-tree-radix`](https://reui-unbound.pages.dev/?preview=collapsible-file-tree-radix)
+
+
 
 ## Install
 

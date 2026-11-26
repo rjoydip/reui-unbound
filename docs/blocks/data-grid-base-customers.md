@@ -6,9 +6,11 @@ category: Base
 
 # Customers
 
+Customers data grid block.
+
 **Block:** `data-grid-base-customers` · **Category:** Base
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-1)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-1)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CustomerBalancesBlock />
 }
 ```
+
+## More in Base
+
+- [API Requests](./data-grid-base-api-requests.md)
+- [Contacts](./data-grid-base-contacts.md)
+- [Members](./data-grid-base-members.md)
+- [Modules](./data-grid-base-modules.md)
+- [Opportunities](./data-grid-base-opportunities.md)
+- [Rate Card](./data-grid-base-rate-card.md)
 
 ## Files
 

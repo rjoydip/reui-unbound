@@ -6,9 +6,11 @@ category: Schedule
 
 # Booking Page
 
+Booking Page schedule block.
+
 **Block:** `schedule-booking-page` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-booking-page)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=schedule-booking-page)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ScheduleBookingPageBlock />
 }
 ```
+
+## More in Schedule
+
+- [Appointment Planner](./schedule-appointment-planner.md)
+- [Create Schedule](./schedule-create-schedule.md)
+- [Due Date Picker](./schedule-due-date-picker.md)
+- [Meeting Scheduler](./schedule-meeting-scheduler.md)
+- [Session Booking](./schedule-session-booking.md)
+- [Team Agenda](./schedule-team-agenda.md)
 
 ## Files
 

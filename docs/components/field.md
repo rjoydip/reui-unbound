@@ -7,20 +7,26 @@ description: Field component with live previews.
 
 Field component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`field-radix`](https://reui-unbound.pages.dev/?preview=field-radix)
-- **Radix** — [`field-standard-radix`](https://reui-unbound.pages.dev/?preview=field-standard-radix)
-- **Radix** — [`field-input-textarea-radix`](https://reui-unbound.pages.dev/?preview=field-input-textarea-radix)
-- **Radix** — [`field-select-controls-radix`](https://reui-unbound.pages.dev/?preview=field-select-controls-radix)
-- **Radix** — [`field-radio-checkboxes-radix`](https://reui-unbound.pages.dev/?preview=field-radio-checkboxes-radix)
-- **Radix** — [`field-slider-switch-radix`](https://reui-unbound.pages.dev/?preview=field-slider-switch-radix)
-- **Radix** — [`field-otp-input-radix`](https://reui-unbound.pages.dev/?preview=field-otp-input-radix)
-- **Radix** — [`field-settings-form-radix`](https://reui-unbound.pages.dev/?preview=field-settings-form-radix)
-- **Radix** — [`field-permissions-radix`](https://reui-unbound.pages.dev/?preview=field-permissions-radix)
-- **Radix** — [`field-responsive-layout-radix`](https://reui-unbound.pages.dev/?preview=field-responsive-layout-radix)
-- **Radix** — [`field-notification-preferences-radix`](https://reui-unbound.pages.dev/?preview=field-notification-preferences-radix)
-- **Radix** — [`field-validation-errors-radix`](https://reui-unbound.pages.dev/?preview=field-validation-errors-radix)
+### Radix (12)
+
+- [`field-radix`](https://reui-unbound.pages.dev/?preview=field-radix)
+- [`field-standard-radix`](https://reui-unbound.pages.dev/?preview=field-standard-radix)
+- [`field-input-textarea-radix`](https://reui-unbound.pages.dev/?preview=field-input-textarea-radix)
+- [`field-select-controls-radix`](https://reui-unbound.pages.dev/?preview=field-select-controls-radix)
+- [`field-radio-checkboxes-radix`](https://reui-unbound.pages.dev/?preview=field-radio-checkboxes-radix)
+- [`field-slider-switch-radix`](https://reui-unbound.pages.dev/?preview=field-slider-switch-radix)
+- [`field-otp-input-radix`](https://reui-unbound.pages.dev/?preview=field-otp-input-radix)
+- [`field-settings-form-radix`](https://reui-unbound.pages.dev/?preview=field-settings-form-radix)
+- [`field-permissions-radix`](https://reui-unbound.pages.dev/?preview=field-permissions-radix)
+- [`field-responsive-layout-radix`](https://reui-unbound.pages.dev/?preview=field-responsive-layout-radix)
+- [`field-notification-preferences-radix`](https://reui-unbound.pages.dev/?preview=field-notification-preferences-radix)
+- [`field-validation-errors-radix`](https://reui-unbound.pages.dev/?preview=field-validation-errors-radix)
+
+
 
 ## Install
 

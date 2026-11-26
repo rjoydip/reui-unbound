@@ -6,9 +6,11 @@ category: Base
 
 # Support Queue
 
+Support Queue data grid block.
+
 **Block:** `data-grid-base-support-queue` · **Category:** Base
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-5)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-5)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SupportTicketsBlock />
 }
 ```
+
+## More in Base
+
+- [API Requests](./data-grid-base-api-requests.md)
+- [Contacts](./data-grid-base-contacts.md)
+- [Customers](./data-grid-base-customers.md)
+- [Members](./data-grid-base-members.md)
+- [Modules](./data-grid-base-modules.md)
+- [Opportunities](./data-grid-base-opportunities.md)
 
 ## Files
 

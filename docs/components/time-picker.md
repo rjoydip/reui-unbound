@@ -7,23 +7,30 @@ description: Time selection with scrollable columns and formatting.
 
 Time selection with scrollable columns and formatting.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`time-picker-radix`](https://reui-unbound.pages.dev/?preview=time-picker-radix)
-- **Radix** — [`time-picker-inline-panel-radix`](https://reui-unbound.pages.dev/?preview=time-picker-inline-panel-radix)
-- **Radix** — [`time-picker-popover-radix`](https://reui-unbound.pages.dev/?preview=time-picker-popover-radix)
-- **Radix** — [`time-picker-typable-input-radix`](https://reui-unbound.pages.dev/?preview=time-picker-typable-input-radix)
-- **Radix** — [`time-picker-12-hour-seconds-radix`](https://reui-unbound.pages.dev/?preview=time-picker-12-hour-seconds-radix)
-- **Radix** — [`time-picker-hour-only-radix`](https://reui-unbound.pages.dev/?preview=time-picker-hour-only-radix)
-- **Radix** — [`time-picker-opening-hours-radix`](https://reui-unbound.pages.dev/?preview=time-picker-opening-hours-radix)
-- **Radix** — [`time-picker-unavailable-slots-radix`](https://reui-unbound.pages.dev/?preview=time-picker-unavailable-slots-radix)
-- **Radix** — [`time-picker-start-end-radix`](https://reui-unbound.pages.dev/?preview=time-picker-start-end-radix)
-- **Radix** — [`time-picker-time-zone-radix`](https://reui-unbound.pages.dev/?preview=time-picker-time-zone-radix)
-- **Radix** — [`time-picker-confirm-before-apply-radix`](https://reui-unbound.pages.dev/?preview=time-picker-confirm-before-apply-radix)
-- **Radix** — [`time-picker-localized-radix`](https://reui-unbound.pages.dev/?preview=time-picker-localized-radix)
-- **Radix** — [`time-picker-form-validation-radix`](https://reui-unbound.pages.dev/?preview=time-picker-form-validation-radix)
-- **Radix** — [`time-picker-date-time-radix`](https://reui-unbound.pages.dev/?preview=time-picker-date-time-radix)
-- **Base** — [`time-picker-base`](https://reui-unbound.pages.dev/?preview=time-picker-base)
+### Radix (14)
+
+- [`time-picker-radix`](https://reui-unbound.pages.dev/?preview=time-picker-radix)
+- [`time-picker-inline-panel-radix`](https://reui-unbound.pages.dev/?preview=time-picker-inline-panel-radix)
+- [`time-picker-popover-radix`](https://reui-unbound.pages.dev/?preview=time-picker-popover-radix)
+- [`time-picker-typable-input-radix`](https://reui-unbound.pages.dev/?preview=time-picker-typable-input-radix)
+- [`time-picker-12-hour-seconds-radix`](https://reui-unbound.pages.dev/?preview=time-picker-12-hour-seconds-radix)
+- [`time-picker-hour-only-radix`](https://reui-unbound.pages.dev/?preview=time-picker-hour-only-radix)
+- [`time-picker-opening-hours-radix`](https://reui-unbound.pages.dev/?preview=time-picker-opening-hours-radix)
+- [`time-picker-unavailable-slots-radix`](https://reui-unbound.pages.dev/?preview=time-picker-unavailable-slots-radix)
+- [`time-picker-start-end-radix`](https://reui-unbound.pages.dev/?preview=time-picker-start-end-radix)
+- [`time-picker-time-zone-radix`](https://reui-unbound.pages.dev/?preview=time-picker-time-zone-radix)
+- [`time-picker-confirm-before-apply-radix`](https://reui-unbound.pages.dev/?preview=time-picker-confirm-before-apply-radix)
+- [`time-picker-localized-radix`](https://reui-unbound.pages.dev/?preview=time-picker-localized-radix)
+- [`time-picker-form-validation-radix`](https://reui-unbound.pages.dev/?preview=time-picker-form-validation-radix)
+- [`time-picker-date-time-radix`](https://reui-unbound.pages.dev/?preview=time-picker-date-time-radix)
+
+### Base (1)
+
+- [`time-picker-base`](https://reui-unbound.pages.dev/?preview=time-picker-base)
 
 ## Install
 

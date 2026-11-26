@@ -6,9 +6,11 @@ category: Stats
 
 # API Quota Usage
 
+API Quota Usage stats block.
+
 **Block:** `stats-api-quota-usage` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-api-quota-usage)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=stats-api-quota-usage)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <StatsApiQuotaUsageBlock />
 }
 ```
+
+## More in Stats
+
+- [Adoption Rate](./stats-adoption-rate.md)
+- [Analytics Overview](./stats-analytics-overview.md)
+- [Capacity Usage](./stats-capacity-usage.md)
+- [Compliance Checks](./stats-compliance-checks.md)
+- [KPI Callouts](./stats-kpi-callouts.md)
+- [KPI Scorecard](./stats-kpi-scorecard.md)
 
 ## Files
 

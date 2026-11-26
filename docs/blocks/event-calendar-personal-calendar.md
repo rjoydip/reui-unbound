@@ -6,9 +6,11 @@ category: Event Calendar
 
 # Personal Calendar
 
+Personal Calendar event-calendar block.
+
 **Block:** `event-calendar-personal-calendar` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-personal-calendar)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-personal-calendar)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <EventCalendarPersonalCalendarBlock />
 }
 ```
+
+## More in Event Calendar
+
+- [Clinic Chair Board](./event-calendar-clinic-chair-board.md)
+- [Hotel Front Desk](./event-calendar-hotel-front-desk.md)
+- [Lending Deal Calendar](./event-calendar-lending-deal-calendar.md)
+- [Mini Month Calendar](./event-calendar-mini-month-calendar.md)
+- [Shift Roster](./event-calendar-shift-roster.md)
 
 ## Files
 

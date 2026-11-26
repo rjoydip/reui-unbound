@@ -7,22 +7,29 @@ description: Draw, preview, clear and save handwritten signatures.
 
 Draw, preview, clear and save handwritten signatures.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`signature-pad-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-radix)
-- **Radix** — [`signature-pad-pinned-actions-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-pinned-actions-radix)
-- **Radix** — [`signature-pad-undo-redo-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-undo-redo-radix)
-- **Radix** — [`signature-pad-form-validation-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-form-validation-radix)
-- **Radix** — [`signature-pad-signing-workspace-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-signing-workspace-radix)
-- **Radix** — [`signature-pad-export-formats-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-export-formats-radix)
-- **Radix** — [`signature-pad-draw-or-type-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-draw-or-type-radix)
-- **Radix** — [`signature-pad-agreement-card-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-agreement-card-radix)
-- **Radix** — [`signature-pad-in-dialog-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-in-dialog-radix)
-- **Radix** — [`signature-pad-stylus-mode-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-stylus-mode-radix)
-- **Radix** — [`signature-pad-clause-initials-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-clause-initials-radix)
-- **Radix** — [`signature-pad-proof-of-delivery-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-proof-of-delivery-radix)
-- **Radix** — [`signature-pad-file-upload-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-file-upload-radix)
-- **Base** — [`signature-pad-base`](https://reui-unbound.pages.dev/?preview=signature-pad-base)
+### Radix (13)
+
+- [`signature-pad-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-radix)
+- [`signature-pad-pinned-actions-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-pinned-actions-radix)
+- [`signature-pad-undo-redo-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-undo-redo-radix)
+- [`signature-pad-form-validation-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-form-validation-radix)
+- [`signature-pad-signing-workspace-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-signing-workspace-radix)
+- [`signature-pad-export-formats-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-export-formats-radix)
+- [`signature-pad-draw-or-type-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-draw-or-type-radix)
+- [`signature-pad-agreement-card-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-agreement-card-radix)
+- [`signature-pad-in-dialog-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-in-dialog-radix)
+- [`signature-pad-stylus-mode-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-stylus-mode-radix)
+- [`signature-pad-clause-initials-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-clause-initials-radix)
+- [`signature-pad-proof-of-delivery-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-proof-of-delivery-radix)
+- [`signature-pad-file-upload-radix`](https://reui-unbound.pages.dev/?preview=signature-pad-file-upload-radix)
+
+### Base (1)
+
+- [`signature-pad-base`](https://reui-unbound.pages.dev/?preview=signature-pad-base)
 
 ## Install
 

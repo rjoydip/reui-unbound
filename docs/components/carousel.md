@@ -7,20 +7,26 @@ description: Carousel component with live previews.
 
 Carousel component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`carousel-radix`](https://reui-unbound.pages.dev/?preview=carousel-radix)
-- **Radix** — [`carousel-standard-radix`](https://reui-unbound.pages.dev/?preview=carousel-standard-radix)
-- **Radix** — [`carousel-vertical-radix`](https://reui-unbound.pages.dev/?preview=carousel-vertical-radix)
-- **Radix** — [`carousel-multiple-items-radix`](https://reui-unbound.pages.dev/?preview=carousel-multiple-items-radix)
-- **Radix** — [`carousel-responsive-basis-radix`](https://reui-unbound.pages.dev/?preview=carousel-responsive-basis-radix)
-- **Radix** — [`carousel-autoplay-radix`](https://reui-unbound.pages.dev/?preview=carousel-autoplay-radix)
-- **Radix** — [`carousel-centered-alignment-radix`](https://reui-unbound.pages.dev/?preview=carousel-centered-alignment-radix)
-- **Radix** — [`carousel-custom-spacing-radix`](https://reui-unbound.pages.dev/?preview=carousel-custom-spacing-radix)
-- **Radix** — [`carousel-image-overlays-radix`](https://reui-unbound.pages.dev/?preview=carousel-image-overlays-radix)
-- **Radix** — [`carousel-thumbnail-strip-radix`](https://reui-unbound.pages.dev/?preview=carousel-thumbnail-strip-radix)
-- **Radix** — [`carousel-overlay-thumbnails-radix`](https://reui-unbound.pages.dev/?preview=carousel-overlay-thumbnails-radix)
-- **Radix** — [`carousel-dots-navigation-radix`](https://reui-unbound.pages.dev/?preview=carousel-dots-navigation-radix)
+### Radix (12)
+
+- [`carousel-radix`](https://reui-unbound.pages.dev/?preview=carousel-radix)
+- [`carousel-standard-radix`](https://reui-unbound.pages.dev/?preview=carousel-standard-radix)
+- [`carousel-vertical-radix`](https://reui-unbound.pages.dev/?preview=carousel-vertical-radix)
+- [`carousel-multiple-items-radix`](https://reui-unbound.pages.dev/?preview=carousel-multiple-items-radix)
+- [`carousel-responsive-basis-radix`](https://reui-unbound.pages.dev/?preview=carousel-responsive-basis-radix)
+- [`carousel-autoplay-radix`](https://reui-unbound.pages.dev/?preview=carousel-autoplay-radix)
+- [`carousel-centered-alignment-radix`](https://reui-unbound.pages.dev/?preview=carousel-centered-alignment-radix)
+- [`carousel-custom-spacing-radix`](https://reui-unbound.pages.dev/?preview=carousel-custom-spacing-radix)
+- [`carousel-image-overlays-radix`](https://reui-unbound.pages.dev/?preview=carousel-image-overlays-radix)
+- [`carousel-thumbnail-strip-radix`](https://reui-unbound.pages.dev/?preview=carousel-thumbnail-strip-radix)
+- [`carousel-overlay-thumbnails-radix`](https://reui-unbound.pages.dev/?preview=carousel-overlay-thumbnails-radix)
+- [`carousel-dots-navigation-radix`](https://reui-unbound.pages.dev/?preview=carousel-dots-navigation-radix)
+
+
 
 ## Install
 

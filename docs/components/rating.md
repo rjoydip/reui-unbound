@@ -7,18 +7,24 @@ description: Star rating input with keyboard and pointer support.
 
 Star rating input with keyboard and pointer support.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`rating-radix`](https://reui-unbound.pages.dev/?preview=rating-radix)
-- **Radix** — [`rating-standard-radix`](https://reui-unbound.pages.dev/?preview=rating-standard-radix)
-- **Radix** — [`rating-decimal-value-radix`](https://reui-unbound.pages.dev/?preview=rating-decimal-value-radix)
-- **Radix** — [`rating-show-value-radix`](https://reui-unbound.pages.dev/?preview=rating-show-value-radix)
-- **Radix** — [`rating-editable-radix`](https://reui-unbound.pages.dev/?preview=rating-editable-radix)
-- **Radix** — [`rating-sizes-radix`](https://reui-unbound.pages.dev/?preview=rating-sizes-radix)
-- **Radix** — [`rating-review-summary-radix`](https://reui-unbound.pages.dev/?preview=rating-review-summary-radix)
-- **Radix** — [`rating-half-star-input-radix`](https://reui-unbound.pages.dev/?preview=rating-half-star-input-radix)
-- **Radix** — [`rating-emoji-reactions-radix`](https://reui-unbound.pages.dev/?preview=rating-emoji-reactions-radix)
-- **Radix** — [`rating-review-text-radix`](https://reui-unbound.pages.dev/?preview=rating-review-text-radix)
+### Radix (10)
+
+- [`rating-radix`](https://reui-unbound.pages.dev/?preview=rating-radix)
+- [`rating-standard-radix`](https://reui-unbound.pages.dev/?preview=rating-standard-radix)
+- [`rating-decimal-value-radix`](https://reui-unbound.pages.dev/?preview=rating-decimal-value-radix)
+- [`rating-show-value-radix`](https://reui-unbound.pages.dev/?preview=rating-show-value-radix)
+- [`rating-editable-radix`](https://reui-unbound.pages.dev/?preview=rating-editable-radix)
+- [`rating-sizes-radix`](https://reui-unbound.pages.dev/?preview=rating-sizes-radix)
+- [`rating-review-summary-radix`](https://reui-unbound.pages.dev/?preview=rating-review-summary-radix)
+- [`rating-half-star-input-radix`](https://reui-unbound.pages.dev/?preview=rating-half-star-input-radix)
+- [`rating-emoji-reactions-radix`](https://reui-unbound.pages.dev/?preview=rating-emoji-reactions-radix)
+- [`rating-review-text-radix`](https://reui-unbound.pages.dev/?preview=rating-review-text-radix)
+
+
 
 ## Install
 

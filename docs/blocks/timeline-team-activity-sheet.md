@@ -6,9 +6,11 @@ category: Timeline
 
 # Team Activity Sheet
 
+Team Activity Sheet timeline block.
+
 **Block:** `timeline-team-activity-sheet` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-team-activity-sheet)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=timeline-team-activity-sheet)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <TimelineTeamActivitySheetBlock />
 }
 ```
+
+## More in Timeline
+
+- [Account Rollout](./timeline-account-rollout.md)
+- [Activity Dropdown](./timeline-activity-dropdown.md)
+- [Approval Workflow](./timeline-approval-workflow.md)
+- [Customer Activation](./timeline-customer-activation.md)
+- [Finance Activity](./timeline-finance-activity.md)
+- [Finance Activity Sheet](./timeline-finance-activity-sheet.md)
 
 ## Files
 

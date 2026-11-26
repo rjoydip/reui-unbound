@@ -6,9 +6,11 @@ category: Onboarding
 
 # Onboarding Dialog
 
+Onboarding Dialog onboarding block.
+
 **Block:** `onboarding-onboarding-dialog` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-onboarding-dialog)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-onboarding-dialog)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <OnboardingOnboardingDialogBlock />
 }
 ```
+
+## More in Onboarding
+
+- [Agent & API Setup](./onboarding-agent-api-setup.md)
+- [Centered Setup Flow](./onboarding-centered-setup-flow.md)
+- [CLI Agent Setup](./onboarding-cli-agent-setup.md)
+- [Live Preview Wizard](./onboarding-live-preview-wizard.md)
+- [Marketing Hero Signup](./onboarding-marketing-hero-signup.md)
+- [Screenshot Carousel Setup](./onboarding-screenshot-carousel-setup.md)
 
 ## Files
 

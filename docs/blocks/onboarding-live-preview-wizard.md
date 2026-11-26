@@ -6,9 +6,11 @@ category: Onboarding
 
 # Live Preview Wizard
 
+Live Preview Wizard onboarding block.
+
 **Block:** `onboarding-live-preview-wizard` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-live-preview-wizard)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-live-preview-wizard)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <OnboardingLivePreviewWizardBlock />
 }
 ```
+
+## More in Onboarding
+
+- [Agent & API Setup](./onboarding-agent-api-setup.md)
+- [Centered Setup Flow](./onboarding-centered-setup-flow.md)
+- [CLI Agent Setup](./onboarding-cli-agent-setup.md)
+- [Marketing Hero Signup](./onboarding-marketing-hero-signup.md)
+- [Onboarding Dialog](./onboarding-onboarding-dialog.md)
+- [Screenshot Carousel Setup](./onboarding-screenshot-carousel-setup.md)
 
 ## Files
 

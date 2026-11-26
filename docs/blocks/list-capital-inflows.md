@@ -6,9 +6,11 @@ category: List
 
 # Capital Inflows
 
+Capital Inflows list block.
+
 **Block:** `list-capital-inflows` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-capital-inflows)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=list-capital-inflows)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ListCapitalInflowsBlock />
 }
 ```
+
+## More in List
+
+- [Capability Modules](./list-capability-modules.md)
+- [Crypto Activity Feed](./list-crypto-activity-feed.md)
+- [Crypto Portfolio](./list-crypto-portfolio.md)
+- [Fund Leaderboard](./list-fund-leaderboard.md)
+- [Integrations Directory](./list-integrations-directory.md)
+- [Order KPI List](./list-order-kpi-list.md)
 
 ## Files
 

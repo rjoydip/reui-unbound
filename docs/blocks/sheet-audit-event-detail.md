@@ -6,9 +6,11 @@ category: Sheet
 
 # Audit Event Detail
 
+Audit Event Detail sheet block.
+
 **Block:** `sheet-audit-event-detail` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-audit-event-detail)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=sheet-audit-event-detail)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SheetAuditEventDetailBlock />
 }
 ```
+
+## More in Sheet
+
+- [AI Model Chat](./sheet-ai-model-chat.md)
+- [Canary Rollout](./sheet-canary-rollout.md)
+- [Comment Thread](./sheet-comment-thread.md)
+- [Copilot Chat](./sheet-copilot-chat.md)
+- [Create Project](./sheet-create-project.md)
+- [Cron Job Detail](./sheet-cron-job-detail.md)
 
 ## Files
 

@@ -6,9 +6,11 @@ category: Editing
 
 # Project Intake
 
+Project Intake data grid block.
+
 **Block:** `data-grid-editing-project-intake` · **Category:** Editing
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-3)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-3)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <ProjectIntakeBlock />
 }
 ```
+
+## More in Editing
+
+- [Labels](./data-grid-editing-labels.md)
+- [Launch Runbook](./data-grid-editing-launch-runbook.md)
+- [Plans](./data-grid-editing-plans.md)
+- [Product Inventory](./data-grid-editing-product-inventory.md)
+- [Reorder Plan](./data-grid-editing-reorder-plan.md)
 
 ## Files
 

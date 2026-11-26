@@ -6,9 +6,11 @@ category: Editing
 
 # Product Inventory
 
+Product Inventory data grid block.
+
 **Block:** `data-grid-editing-product-inventory` · **Category:** Editing
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-2)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-2)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <ProductInventoryBlock />
 }
 ```
+
+## More in Editing
+
+- [Labels](./data-grid-editing-labels.md)
+- [Launch Runbook](./data-grid-editing-launch-runbook.md)
+- [Plans](./data-grid-editing-plans.md)
+- [Project Intake](./data-grid-editing-project-intake.md)
+- [Reorder Plan](./data-grid-editing-reorder-plan.md)
 
 ## Files
 

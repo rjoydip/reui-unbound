@@ -6,9 +6,11 @@ category: Columns
 
 # Members
 
+Members data grid block.
+
 **Block:** `data-grid-columns-members` · **Category:** Columns
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-4)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-4)
 
 ## Install
 
@@ -25,6 +27,13 @@ export default function Page() {
   return <MemberColumnsBlock />
 }
 ```
+
+## More in Columns
+
+- [Companies](./data-grid-columns-companies.md)
+- [Course Catalog](./data-grid-columns-course-catalog.md)
+- [Work Queue](./data-grid-columns-work-queue.md)
+- [Workspace Access Review](./data-grid-columns-workspace-access-review.md)
 
 ## Files
 

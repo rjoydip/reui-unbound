@@ -6,9 +6,11 @@ category: Event Calendar
 
 # Lending Deal Calendar
 
+Lending Deal Calendar event-calendar block.
+
 **Block:** `event-calendar-lending-deal-calendar` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-lending-deal-calendar)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-lending-deal-calendar)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <EventCalendarLendingDealCalendarBlock />
 }
 ```
+
+## More in Event Calendar
+
+- [Clinic Chair Board](./event-calendar-clinic-chair-board.md)
+- [Hotel Front Desk](./event-calendar-hotel-front-desk.md)
+- [Mini Month Calendar](./event-calendar-mini-month-calendar.md)
+- [Personal Calendar](./event-calendar-personal-calendar.md)
+- [Shift Roster](./event-calendar-shift-roster.md)
 
 ## Files
 

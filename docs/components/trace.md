@@ -7,31 +7,37 @@ description: Trace component with live previews.
 
 Trace component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`trace-radix`](https://reui-unbound.pages.dev/?preview=trace-radix)
-- **Radix** — [`trace-agent-steps-radix`](https://reui-unbound.pages.dev/?preview=trace-agent-steps-radix)
-- **Radix** — [`trace-streaming-run-radix`](https://reui-unbound.pages.dev/?preview=trace-streaming-run-radix)
-- **Radix** — [`trace-chat-turn-radix`](https://reui-unbound.pages.dev/?preview=trace-chat-turn-radix)
-- **Radix** — [`trace-subagents-radix`](https://reui-unbound.pages.dev/?preview=trace-subagents-radix)
-- **Radix** — [`trace-change-approval-radix`](https://reui-unbound.pages.dev/?preview=trace-change-approval-radix)
-- **Radix** — [`trace-cited-sources-radix`](https://reui-unbound.pages.dev/?preview=trace-cited-sources-radix)
-- **Radix** — [`trace-support-copilot-radix`](https://reui-unbound.pages.dev/?preview=trace-support-copilot-radix)
-- **Radix** — [`trace-install-summary-radix`](https://reui-unbound.pages.dev/?preview=trace-install-summary-radix)
-- **Radix** — [`trace-ci-pipeline-radix`](https://reui-unbound.pages.dev/?preview=trace-ci-pipeline-radix)
-- **Radix** — [`trace-request-spans-radix`](https://reui-unbound.pages.dev/?preview=trace-request-spans-radix)
-- **Radix** — [`trace-error-breadcrumbs-radix`](https://reui-unbound.pages.dev/?preview=trace-error-breadcrumbs-radix)
-- **Radix** — [`trace-query-plan-radix`](https://reui-unbound.pages.dev/?preview=trace-query-plan-radix)
-- **Radix** — [`trace-data-pipeline-radix`](https://reui-unbound.pages.dev/?preview=trace-data-pipeline-radix)
-- **Radix** — [`trace-webhook-retries-radix`](https://reui-unbound.pages.dev/?preview=trace-webhook-retries-radix)
-- **Radix** — [`trace-csv-import-radix`](https://reui-unbound.pages.dev/?preview=trace-csv-import-radix)
-- **Radix** — [`trace-security-audit-radix`](https://reui-unbound.pages.dev/?preview=trace-security-audit-radix)
-- **Radix** — [`trace-review-findings-radix`](https://reui-unbound.pages.dev/?preview=trace-review-findings-radix)
-- **Radix** — [`trace-eval-results-radix`](https://reui-unbound.pages.dev/?preview=trace-eval-results-radix)
-- **Radix** — [`trace-access-decision-radix`](https://reui-unbound.pages.dev/?preview=trace-access-decision-radix)
-- **Radix** — [`trace-identity-review-radix`](https://reui-unbound.pages.dev/?preview=trace-identity-review-radix)
-- **Radix** — [`trace-domain-setup-radix`](https://reui-unbound.pages.dev/?preview=trace-domain-setup-radix)
-- **Radix** — [`trace-transcode-radix`](https://reui-unbound.pages.dev/?preview=trace-transcode-radix)
+### Radix (23)
+
+- [`trace-radix`](https://reui-unbound.pages.dev/?preview=trace-radix)
+- [`trace-agent-steps-radix`](https://reui-unbound.pages.dev/?preview=trace-agent-steps-radix)
+- [`trace-streaming-run-radix`](https://reui-unbound.pages.dev/?preview=trace-streaming-run-radix)
+- [`trace-chat-turn-radix`](https://reui-unbound.pages.dev/?preview=trace-chat-turn-radix)
+- [`trace-subagents-radix`](https://reui-unbound.pages.dev/?preview=trace-subagents-radix)
+- [`trace-change-approval-radix`](https://reui-unbound.pages.dev/?preview=trace-change-approval-radix)
+- [`trace-cited-sources-radix`](https://reui-unbound.pages.dev/?preview=trace-cited-sources-radix)
+- [`trace-support-copilot-radix`](https://reui-unbound.pages.dev/?preview=trace-support-copilot-radix)
+- [`trace-install-summary-radix`](https://reui-unbound.pages.dev/?preview=trace-install-summary-radix)
+- [`trace-ci-pipeline-radix`](https://reui-unbound.pages.dev/?preview=trace-ci-pipeline-radix)
+- [`trace-request-spans-radix`](https://reui-unbound.pages.dev/?preview=trace-request-spans-radix)
+- [`trace-error-breadcrumbs-radix`](https://reui-unbound.pages.dev/?preview=trace-error-breadcrumbs-radix)
+- [`trace-query-plan-radix`](https://reui-unbound.pages.dev/?preview=trace-query-plan-radix)
+- [`trace-data-pipeline-radix`](https://reui-unbound.pages.dev/?preview=trace-data-pipeline-radix)
+- [`trace-webhook-retries-radix`](https://reui-unbound.pages.dev/?preview=trace-webhook-retries-radix)
+- [`trace-csv-import-radix`](https://reui-unbound.pages.dev/?preview=trace-csv-import-radix)
+- [`trace-security-audit-radix`](https://reui-unbound.pages.dev/?preview=trace-security-audit-radix)
+- [`trace-review-findings-radix`](https://reui-unbound.pages.dev/?preview=trace-review-findings-radix)
+- [`trace-eval-results-radix`](https://reui-unbound.pages.dev/?preview=trace-eval-results-radix)
+- [`trace-access-decision-radix`](https://reui-unbound.pages.dev/?preview=trace-access-decision-radix)
+- [`trace-identity-review-radix`](https://reui-unbound.pages.dev/?preview=trace-identity-review-radix)
+- [`trace-domain-setup-radix`](https://reui-unbound.pages.dev/?preview=trace-domain-setup-radix)
+- [`trace-transcode-radix`](https://reui-unbound.pages.dev/?preview=trace-transcode-radix)
+
+
 
 ## Install
 

@@ -6,9 +6,11 @@ category: Drag & Drop
 
 # Sprint Backlog
 
+Sprint Backlog data grid block.
+
 **Block:** `data-grid-drag-drop-sprint-backlog` · **Category:** Drag & Drop
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-1)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-1)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <SprintBacklogBlock />
 }
 ```
+
+## More in Drag & Drop
+
+- [Dispatch Layout](./data-grid-drag-drop-dispatch-layout.md)
+- [Routing Rules](./data-grid-drag-drop-routing-rules.md)
+- [Shared Drive](./data-grid-drag-drop-shared-drive.md)
 
 ## Files
 

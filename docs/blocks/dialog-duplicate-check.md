@@ -6,9 +6,11 @@ category: Dialog
 
 # Duplicate Check
 
+Duplicate Check dialog block.
+
 **Block:** `dialog-duplicate-check` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-duplicate-check)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dialog-duplicate-check)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DialogDuplicateCheckBlock />
 }
 ```
+
+## More in Dialog
+
+- [Account Settings Modal](./dialog-account-settings-modal.md)
+- [Bulk Email Invite](./dialog-bulk-email-invite.md)
+- [Cancel Plan Survey](./dialog-cancel-plan-survey.md)
+- [Connect App Picker](./dialog-connect-app-picker.md)
+- [Duration Picker](./dialog-duration-picker.md)
+- [Finance Account Setup](./dialog-finance-account-setup.md)
 
 ## Files
 

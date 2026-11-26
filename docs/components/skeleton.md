@@ -7,19 +7,25 @@ description: Skeleton component with live previews.
 
 Skeleton component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`skeleton-radix`](https://reui-unbound.pages.dev/?preview=skeleton-radix)
-- **Radix** — [`skeleton-avatar-info-radix`](https://reui-unbound.pages.dev/?preview=skeleton-avatar-info-radix)
-- **Radix** — [`skeleton-card-radix`](https://reui-unbound.pages.dev/?preview=skeleton-card-radix)
-- **Radix** — [`skeleton-text-paragraphs-radix`](https://reui-unbound.pages.dev/?preview=skeleton-text-paragraphs-radix)
-- **Radix** — [`skeleton-form-radix`](https://reui-unbound.pages.dev/?preview=skeleton-form-radix)
-- **Radix** — [`skeleton-data-table-radix`](https://reui-unbound.pages.dev/?preview=skeleton-data-table-radix)
-- **Radix** — [`skeleton-stats-row-radix`](https://reui-unbound.pages.dev/?preview=skeleton-stats-row-radix)
-- **Radix** — [`skeleton-list-with-actions-radix`](https://reui-unbound.pages.dev/?preview=skeleton-list-with-actions-radix)
-- **Radix** — [`skeleton-card-grid-radix`](https://reui-unbound.pages.dev/?preview=skeleton-card-grid-radix)
-- **Radix** — [`skeleton-profile-page-radix`](https://reui-unbound.pages.dev/?preview=skeleton-profile-page-radix)
-- **Radix** — [`skeleton-chat-messages-radix`](https://reui-unbound.pages.dev/?preview=skeleton-chat-messages-radix)
+### Radix (11)
+
+- [`skeleton-radix`](https://reui-unbound.pages.dev/?preview=skeleton-radix)
+- [`skeleton-avatar-info-radix`](https://reui-unbound.pages.dev/?preview=skeleton-avatar-info-radix)
+- [`skeleton-card-radix`](https://reui-unbound.pages.dev/?preview=skeleton-card-radix)
+- [`skeleton-text-paragraphs-radix`](https://reui-unbound.pages.dev/?preview=skeleton-text-paragraphs-radix)
+- [`skeleton-form-radix`](https://reui-unbound.pages.dev/?preview=skeleton-form-radix)
+- [`skeleton-data-table-radix`](https://reui-unbound.pages.dev/?preview=skeleton-data-table-radix)
+- [`skeleton-stats-row-radix`](https://reui-unbound.pages.dev/?preview=skeleton-stats-row-radix)
+- [`skeleton-list-with-actions-radix`](https://reui-unbound.pages.dev/?preview=skeleton-list-with-actions-radix)
+- [`skeleton-card-grid-radix`](https://reui-unbound.pages.dev/?preview=skeleton-card-grid-radix)
+- [`skeleton-profile-page-radix`](https://reui-unbound.pages.dev/?preview=skeleton-profile-page-radix)
+- [`skeleton-chat-messages-radix`](https://reui-unbound.pages.dev/?preview=skeleton-chat-messages-radix)
+
+
 
 ## Install
 

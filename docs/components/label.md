@@ -7,22 +7,28 @@ description: Label component with live previews.
 
 Label component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`label-radix`](https://reui-unbound.pages.dev/?preview=label-radix)
-- **Radix** — [`label-standard-radix`](https://reui-unbound.pages.dev/?preview=label-standard-radix)
-- **Radix** — [`label-checkbox-radix`](https://reui-unbound.pages.dev/?preview=label-checkbox-radix)
-- **Radix** — [`label-textarea-radix`](https://reui-unbound.pages.dev/?preview=label-textarea-radix)
-- **Radix** — [`label-disabled-radix`](https://reui-unbound.pages.dev/?preview=label-disabled-radix)
-- **Radix** — [`label-required-radix`](https://reui-unbound.pages.dev/?preview=label-required-radix)
-- **Radix** — [`label-optional-radix`](https://reui-unbound.pages.dev/?preview=label-optional-radix)
-- **Radix** — [`label-tooltip-info-radix`](https://reui-unbound.pages.dev/?preview=label-tooltip-info-radix)
-- **Radix** — [`label-badge-radix`](https://reui-unbound.pages.dev/?preview=label-badge-radix)
-- **Radix** — [`label-character-counter-radix`](https://reui-unbound.pages.dev/?preview=label-character-counter-radix)
-- **Radix** — [`label-helper-text-radix`](https://reui-unbound.pages.dev/?preview=label-helper-text-radix)
-- **Radix** — [`label-error-state-radix`](https://reui-unbound.pages.dev/?preview=label-error-state-radix)
-- **Radix** — [`label-inline-edit-radix`](https://reui-unbound.pages.dev/?preview=label-inline-edit-radix)
-- **Radix** — [`label-status-dot-radix`](https://reui-unbound.pages.dev/?preview=label-status-dot-radix)
+### Radix (14)
+
+- [`label-radix`](https://reui-unbound.pages.dev/?preview=label-radix)
+- [`label-standard-radix`](https://reui-unbound.pages.dev/?preview=label-standard-radix)
+- [`label-checkbox-radix`](https://reui-unbound.pages.dev/?preview=label-checkbox-radix)
+- [`label-textarea-radix`](https://reui-unbound.pages.dev/?preview=label-textarea-radix)
+- [`label-disabled-radix`](https://reui-unbound.pages.dev/?preview=label-disabled-radix)
+- [`label-required-radix`](https://reui-unbound.pages.dev/?preview=label-required-radix)
+- [`label-optional-radix`](https://reui-unbound.pages.dev/?preview=label-optional-radix)
+- [`label-tooltip-info-radix`](https://reui-unbound.pages.dev/?preview=label-tooltip-info-radix)
+- [`label-badge-radix`](https://reui-unbound.pages.dev/?preview=label-badge-radix)
+- [`label-character-counter-radix`](https://reui-unbound.pages.dev/?preview=label-character-counter-radix)
+- [`label-helper-text-radix`](https://reui-unbound.pages.dev/?preview=label-helper-text-radix)
+- [`label-error-state-radix`](https://reui-unbound.pages.dev/?preview=label-error-state-radix)
+- [`label-inline-edit-radix`](https://reui-unbound.pages.dev/?preview=label-inline-edit-radix)
+- [`label-status-dot-radix`](https://reui-unbound.pages.dev/?preview=label-status-dot-radix)
+
+
 
 ## Install
 

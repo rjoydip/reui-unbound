@@ -7,14 +7,20 @@ description: Drawer component with live previews.
 
 Drawer component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`drawer-radix`](https://reui-unbound.pages.dev/?preview=drawer-radix)
-- **Radix** — [`drawer-scrollable-content-radix`](https://reui-unbound.pages.dev/?preview=drawer-scrollable-content-radix)
-- **Radix** — [`drawer-right-side-radix`](https://reui-unbound.pages.dev/?preview=drawer-right-side-radix)
-- **Radix** — [`drawer-left-side-radix`](https://reui-unbound.pages.dev/?preview=drawer-left-side-radix)
-- **Radix** — [`drawer-top-side-radix`](https://reui-unbound.pages.dev/?preview=drawer-top-side-radix)
-- **Radix** — [`drawer-all-sides-radix`](https://reui-unbound.pages.dev/?preview=drawer-all-sides-radix)
+### Radix (6)
+
+- [`drawer-radix`](https://reui-unbound.pages.dev/?preview=drawer-radix)
+- [`drawer-scrollable-content-radix`](https://reui-unbound.pages.dev/?preview=drawer-scrollable-content-radix)
+- [`drawer-right-side-radix`](https://reui-unbound.pages.dev/?preview=drawer-right-side-radix)
+- [`drawer-left-side-radix`](https://reui-unbound.pages.dev/?preview=drawer-left-side-radix)
+- [`drawer-top-side-radix`](https://reui-unbound.pages.dev/?preview=drawer-top-side-radix)
+- [`drawer-all-sides-radix`](https://reui-unbound.pages.dev/?preview=drawer-all-sides-radix)
+
+
 
 ## Install
 

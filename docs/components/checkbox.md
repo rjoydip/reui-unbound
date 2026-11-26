@@ -7,31 +7,37 @@ description: Checkbox component with live previews.
 
 Checkbox component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`checkbox-radix`](https://reui-unbound.pages.dev/?preview=checkbox-radix)
-- **Radix** — [`checkbox-standard-radix`](https://reui-unbound.pages.dev/?preview=checkbox-standard-radix)
-- **Radix** — [`checkbox-disabled-radix`](https://reui-unbound.pages.dev/?preview=checkbox-disabled-radix)
-- **Radix** — [`checkbox-invalid-radix`](https://reui-unbound.pages.dev/?preview=checkbox-invalid-radix)
-- **Radix** — [`checkbox-indeterminate-radix`](https://reui-unbound.pages.dev/?preview=checkbox-indeterminate-radix)
-- **Radix** — [`checkbox-label-description-radix`](https://reui-unbound.pages.dev/?preview=checkbox-label-description-radix)
-- **Radix** — [`checkbox-colored-radix`](https://reui-unbound.pages.dev/?preview=checkbox-colored-radix)
-- **Radix** — [`checkbox-circle-todo-radix`](https://reui-unbound.pages.dev/?preview=checkbox-circle-todo-radix)
-- **Radix** — [`checkbox-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-group-radix)
-- **Radix** — [`checkbox-setting-card-radix`](https://reui-unbound.pages.dev/?preview=checkbox-setting-card-radix)
-- **Radix** — [`checkbox-frame-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-frame-group-radix)
-- **Radix** — [`checkbox-card-rows-radix`](https://reui-unbound.pages.dev/?preview=checkbox-card-rows-radix)
-- **Radix** — [`checkbox-icon-card-rows-radix`](https://reui-unbound.pages.dev/?preview=checkbox-icon-card-rows-radix)
-- **Radix** — [`checkbox-corner-check-tiles-radix`](https://reui-unbound.pages.dev/?preview=checkbox-corner-check-tiles-radix)
-- **Radix** — [`checkbox-module-tiles-radix`](https://reui-unbound.pages.dev/?preview=checkbox-module-tiles-radix)
-- **Radix** — [`checkbox-avatar-card-radix`](https://reui-unbound.pages.dev/?preview=checkbox-avatar-card-radix)
-- **Radix** — [`checkbox-nested-permissions-radix`](https://reui-unbound.pages.dev/?preview=checkbox-nested-permissions-radix)
-- **Radix** — [`checkbox-payment-method-radix`](https://reui-unbound.pages.dev/?preview=checkbox-payment-method-radix)
-- **Radix** — [`checkbox-help-icon-tooltip-radix`](https://reui-unbound.pages.dev/?preview=checkbox-help-icon-tooltip-radix)
-- **Radix** — [`checkbox-badge-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-badge-group-radix)
-- **Radix** — [`checkbox-right-side-tooltip-radix`](https://reui-unbound.pages.dev/?preview=checkbox-right-side-tooltip-radix)
-- **Radix** — [`checkbox-inline-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-inline-group-radix)
-- **Radix** — [`checkbox-uppercase-badges-radix`](https://reui-unbound.pages.dev/?preview=checkbox-uppercase-badges-radix)
+### Radix (23)
+
+- [`checkbox-radix`](https://reui-unbound.pages.dev/?preview=checkbox-radix)
+- [`checkbox-standard-radix`](https://reui-unbound.pages.dev/?preview=checkbox-standard-radix)
+- [`checkbox-disabled-radix`](https://reui-unbound.pages.dev/?preview=checkbox-disabled-radix)
+- [`checkbox-invalid-radix`](https://reui-unbound.pages.dev/?preview=checkbox-invalid-radix)
+- [`checkbox-indeterminate-radix`](https://reui-unbound.pages.dev/?preview=checkbox-indeterminate-radix)
+- [`checkbox-label-description-radix`](https://reui-unbound.pages.dev/?preview=checkbox-label-description-radix)
+- [`checkbox-colored-radix`](https://reui-unbound.pages.dev/?preview=checkbox-colored-radix)
+- [`checkbox-circle-todo-radix`](https://reui-unbound.pages.dev/?preview=checkbox-circle-todo-radix)
+- [`checkbox-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-group-radix)
+- [`checkbox-setting-card-radix`](https://reui-unbound.pages.dev/?preview=checkbox-setting-card-radix)
+- [`checkbox-frame-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-frame-group-radix)
+- [`checkbox-card-rows-radix`](https://reui-unbound.pages.dev/?preview=checkbox-card-rows-radix)
+- [`checkbox-icon-card-rows-radix`](https://reui-unbound.pages.dev/?preview=checkbox-icon-card-rows-radix)
+- [`checkbox-corner-check-tiles-radix`](https://reui-unbound.pages.dev/?preview=checkbox-corner-check-tiles-radix)
+- [`checkbox-module-tiles-radix`](https://reui-unbound.pages.dev/?preview=checkbox-module-tiles-radix)
+- [`checkbox-avatar-card-radix`](https://reui-unbound.pages.dev/?preview=checkbox-avatar-card-radix)
+- [`checkbox-nested-permissions-radix`](https://reui-unbound.pages.dev/?preview=checkbox-nested-permissions-radix)
+- [`checkbox-payment-method-radix`](https://reui-unbound.pages.dev/?preview=checkbox-payment-method-radix)
+- [`checkbox-help-icon-tooltip-radix`](https://reui-unbound.pages.dev/?preview=checkbox-help-icon-tooltip-radix)
+- [`checkbox-badge-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-badge-group-radix)
+- [`checkbox-right-side-tooltip-radix`](https://reui-unbound.pages.dev/?preview=checkbox-right-side-tooltip-radix)
+- [`checkbox-inline-group-radix`](https://reui-unbound.pages.dev/?preview=checkbox-inline-group-radix)
+- [`checkbox-uppercase-badges-radix`](https://reui-unbound.pages.dev/?preview=checkbox-uppercase-badges-radix)
+
+
 
 ## Install
 

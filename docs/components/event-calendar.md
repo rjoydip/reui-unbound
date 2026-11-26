@@ -7,15 +7,22 @@ description: Month, week and agenda views with drag-and-drop events.
 
 Month, week and agenda views with drag-and-drop events.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`event-calendar-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-radix)
-- **Radix** — [`event-calendar-all-views-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-all-views-radix)
-- **Radix** — [`event-calendar-room-bookings-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-room-bookings-radix)
-- **Radix** — [`event-calendar-event-form-dialog-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-event-form-dialog-radix)
-- **Radix** — [`event-calendar-custom-event-chips-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-custom-event-chips-radix)
-- **Radix** — [`event-calendar-drag-to-book-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-drag-to-book-radix)
-- **Base** — [`event-calendar-base`](https://reui-unbound.pages.dev/?preview=event-calendar-base)
+### Radix (6)
+
+- [`event-calendar-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-radix)
+- [`event-calendar-all-views-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-all-views-radix)
+- [`event-calendar-room-bookings-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-room-bookings-radix)
+- [`event-calendar-event-form-dialog-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-event-form-dialog-radix)
+- [`event-calendar-custom-event-chips-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-custom-event-chips-radix)
+- [`event-calendar-drag-to-book-radix`](https://reui-unbound.pages.dev/?preview=event-calendar-drag-to-book-radix)
+
+### Base (1)
+
+- [`event-calendar-base`](https://reui-unbound.pages.dev/?preview=event-calendar-base)
 
 ## Install
 

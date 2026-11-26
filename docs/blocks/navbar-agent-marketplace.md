@@ -6,9 +6,11 @@ category: Navbar
 
 # Agent Marketplace
 
+Agent Marketplace navbar block.
+
 **Block:** `navbar-agent-marketplace` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-agent-marketplace)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=navbar-agent-marketplace)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <NavbarAgentMarketplaceBlock />
 }
 ```
+
+## More in Navbar
+
+- [Admin Command Search](./navbar-admin-command-search.md)
+- [Analytics Toolbar](./navbar-analytics-toolbar.md)
+- [API Developer Portal](./navbar-api-developer-portal.md)
+- [CMS Publish Bar](./navbar-cms-publish-bar.md)
+- [Design System Manager](./navbar-design-system-manager.md)
+- [Editor Action Bar](./navbar-editor-action-bar.md)
 
 ## Files
 

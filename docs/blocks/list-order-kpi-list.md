@@ -6,9 +6,11 @@ category: List
 
 # Order KPI List
 
+Order KPI List list block.
+
 **Block:** `list-order-kpi-list` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-order-kpi-list)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=list-order-kpi-list)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ListOrderKpiListBlock />
 }
 ```
+
+## More in List
+
+- [Capability Modules](./list-capability-modules.md)
+- [Capital Inflows](./list-capital-inflows.md)
+- [Crypto Activity Feed](./list-crypto-activity-feed.md)
+- [Crypto Portfolio](./list-crypto-portfolio.md)
+- [Fund Leaderboard](./list-fund-leaderboard.md)
+- [Integrations Directory](./list-integrations-directory.md)
 
 ## Files
 

@@ -6,9 +6,11 @@ category: Card
 
 # Fitness Stats
 
+Fitness Stats card block.
+
 **Block:** `card-fitness-stats` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-fitness-stats)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-fitness-stats)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardFitnessStatsBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
 
 ## Files
 

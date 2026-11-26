@@ -7,17 +7,24 @@ description: Accessible expandable tree with keyboard navigation.
 
 Accessible expandable tree with keyboard navigation.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`tree-radix`](https://reui-unbound.pages.dev/?preview=tree-radix)
-- **Radix** — [`tree-standard-radix`](https://reui-unbound.pages.dev/?preview=tree-standard-radix)
-- **Radix** — [`tree-indent-lines-radix`](https://reui-unbound.pages.dev/?preview=tree-indent-lines-radix)
-- **Radix** — [`tree-folder-file-icons-radix`](https://reui-unbound.pages.dev/?preview=tree-folder-file-icons-radix)
-- **Radix** — [`tree-plus-minus-toggles-radix`](https://reui-unbound.pages.dev/?preview=tree-plus-minus-toggles-radix)
-- **Radix** — [`tree-file-explorer-radix`](https://reui-unbound.pages.dev/?preview=tree-file-explorer-radix)
-- **Radix** — [`tree-org-chart-radix`](https://reui-unbound.pages.dev/?preview=tree-org-chart-radix)
-- **Radix** — [`tree-permissions-radix`](https://reui-unbound.pages.dev/?preview=tree-permissions-radix)
-- **Base** — [`tree-base`](https://reui-unbound.pages.dev/?preview=tree-base)
+### Radix (8)
+
+- [`tree-radix`](https://reui-unbound.pages.dev/?preview=tree-radix)
+- [`tree-standard-radix`](https://reui-unbound.pages.dev/?preview=tree-standard-radix)
+- [`tree-indent-lines-radix`](https://reui-unbound.pages.dev/?preview=tree-indent-lines-radix)
+- [`tree-folder-file-icons-radix`](https://reui-unbound.pages.dev/?preview=tree-folder-file-icons-radix)
+- [`tree-plus-minus-toggles-radix`](https://reui-unbound.pages.dev/?preview=tree-plus-minus-toggles-radix)
+- [`tree-file-explorer-radix`](https://reui-unbound.pages.dev/?preview=tree-file-explorer-radix)
+- [`tree-org-chart-radix`](https://reui-unbound.pages.dev/?preview=tree-org-chart-radix)
+- [`tree-permissions-radix`](https://reui-unbound.pages.dev/?preview=tree-permissions-radix)
+
+### Base (1)
+
+- [`tree-base`](https://reui-unbound.pages.dev/?preview=tree-base)
 
 ## Install
 

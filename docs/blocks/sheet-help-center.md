@@ -6,9 +6,11 @@ category: Sheet
 
 # Help Center
 
+Help Center sheet block.
+
 **Block:** `sheet-help-center` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-help-center)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=sheet-help-center)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SheetHelpCenterBlock />
 }
 ```
+
+## More in Sheet
+
+- [AI Model Chat](./sheet-ai-model-chat.md)
+- [Audit Event Detail](./sheet-audit-event-detail.md)
+- [Canary Rollout](./sheet-canary-rollout.md)
+- [Comment Thread](./sheet-comment-thread.md)
+- [Copilot Chat](./sheet-copilot-chat.md)
+- [Create Project](./sheet-create-project.md)
 
 ## Files
 

@@ -6,9 +6,11 @@ category: Kanban Board
 
 # Bug Triage
 
+Bug Triage kanban-board block.
+
 **Block:** `kanban-board-bug-triage` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-bug-triage)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-bug-triage)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <KanbanBoardBugTriageBlock />
 }
 ```
+
+## More in Kanban Board
+
+- [Access Review](./kanban-board-access-review.md)
+- [Collapsible Columns](./kanban-board-collapsible-columns.md)
+- [Feature Roadmap Votes](./kanban-board-feature-roadmap-votes.md)
+- [Progress Ring Workflow](./kanban-board-progress-ring-workflow.md)
+- [Recruiting Pipeline](./kanban-board-recruiting-pipeline.md)
+- [Release Readiness](./kanban-board-release-readiness.md)
 
 ## Files
 

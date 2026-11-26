@@ -1,6 +1,6 @@
 # Components
 
-87 component categories with 1365 live previews.
+87 component categories with 1365 live previews, in Radix and Base UI flavors.
 
 | Component | Previews | Install | Live |
 | --- | --- | --- | --- |

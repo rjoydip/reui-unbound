@@ -6,9 +6,11 @@ category: Dialog
 
 # OAuth Consent
 
+OAuth Consent dialog block.
+
 **Block:** `dialog-oauth-consent` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-oauth-consent)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dialog-oauth-consent)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DialogOauthConsentBlock />
 }
 ```
+
+## More in Dialog
+
+- [Account Settings Modal](./dialog-account-settings-modal.md)
+- [Bulk Email Invite](./dialog-bulk-email-invite.md)
+- [Cancel Plan Survey](./dialog-cancel-plan-survey.md)
+- [Connect App Picker](./dialog-connect-app-picker.md)
+- [Duplicate Check](./dialog-duplicate-check.md)
+- [Duration Picker](./dialog-duration-picker.md)
 
 ## Files
 

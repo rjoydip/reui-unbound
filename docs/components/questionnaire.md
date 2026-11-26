@@ -7,16 +7,22 @@ description: Questionnaire component with live previews.
 
 Questionnaire component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`questionnaire-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-radix)
-- **Radix** — [`questionnaire-guided-setup-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-guided-setup-radix)
-- **Radix** — [`questionnaire-multi-select-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-multi-select-radix)
-- **Radix** — [`questionnaire-write-in-answer-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-write-in-answer-radix)
-- **Radix** — [`questionnaire-segmented-progress-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-segmented-progress-radix)
-- **Radix** — [`questionnaire-optional-skip-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-optional-skip-radix)
-- **Radix** — [`questionnaire-cross-question-rule-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-cross-question-rule-radix)
-- **Radix** — [`questionnaire-conditional-branch-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-conditional-branch-radix)
+### Radix (8)
+
+- [`questionnaire-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-radix)
+- [`questionnaire-guided-setup-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-guided-setup-radix)
+- [`questionnaire-multi-select-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-multi-select-radix)
+- [`questionnaire-write-in-answer-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-write-in-answer-radix)
+- [`questionnaire-segmented-progress-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-segmented-progress-radix)
+- [`questionnaire-optional-skip-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-optional-skip-radix)
+- [`questionnaire-cross-question-rule-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-cross-question-rule-radix)
+- [`questionnaire-conditional-branch-radix`](https://reui-unbound.pages.dev/?preview=questionnaire-conditional-branch-radix)
+
+
 
 ## Install
 

@@ -6,9 +6,11 @@ category: Sheet
 
 # Edit Firewall Rule
 
+Edit Firewall Rule sheet block.
+
 **Block:** `sheet-edit-firewall-rule` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-edit-firewall-rule)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=sheet-edit-firewall-rule)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SheetEditFirewallRuleBlock />
 }
 ```
+
+## More in Sheet
+
+- [AI Model Chat](./sheet-ai-model-chat.md)
+- [Audit Event Detail](./sheet-audit-event-detail.md)
+- [Canary Rollout](./sheet-canary-rollout.md)
+- [Comment Thread](./sheet-comment-thread.md)
+- [Copilot Chat](./sheet-copilot-chat.md)
+- [Create Project](./sheet-create-project.md)
 
 ## Files
 

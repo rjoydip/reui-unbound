@@ -7,16 +7,22 @@ description: Aspect Ratio component with live previews.
 
 Aspect Ratio component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`aspect-ratio-widescreen-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-widescreen-radix)
-- **Radix** — [`aspect-ratio-standard-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-standard-radix)
-- **Radix** — [`aspect-ratio-square-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-square-radix)
-- **Radix** — [`aspect-ratio-ultrawide-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-ultrawide-radix)
-- **Radix** — [`aspect-ratio-tall-portrait-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-tall-portrait-radix)
-- **Radix** — [`aspect-ratio-classic-photo-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-classic-photo-radix)
-- **Radix** — [`aspect-ratio-social-portrait-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-social-portrait-radix)
-- **Radix** — [`aspect-ratio-monitor-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-monitor-radix)
+### Radix (8)
+
+- [`aspect-ratio-widescreen-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-widescreen-radix)
+- [`aspect-ratio-standard-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-standard-radix)
+- [`aspect-ratio-square-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-square-radix)
+- [`aspect-ratio-ultrawide-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-ultrawide-radix)
+- [`aspect-ratio-tall-portrait-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-tall-portrait-radix)
+- [`aspect-ratio-classic-photo-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-classic-photo-radix)
+- [`aspect-ratio-social-portrait-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-social-portrait-radix)
+- [`aspect-ratio-monitor-radix`](https://reui-unbound.pages.dev/?preview=aspect-ratio-monitor-radix)
+
+
 
 ## Install
 

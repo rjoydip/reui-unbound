@@ -6,9 +6,11 @@ category: Settings
 
 # Notification Delivery
 
+Notification Delivery settings block.
+
 **Block:** `settings-notification-delivery` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-notification-delivery)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=settings-notification-delivery)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SettingsNotificationDeliveryBlock />
 }
 ```
+
+## More in Settings
+
+- [Account Settings](./settings-account-settings.md)
+- [API Integrations](./settings-api-integrations.md)
+- [App Connections](./settings-app-connections.md)
+- [Connected Apps](./settings-connected-apps.md)
+- [General & Display](./settings-general-display.md)
+- [General Settings](./settings-general-settings.md)
 
 ## Files
 

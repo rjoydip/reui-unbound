@@ -7,34 +7,40 @@ description: Chart component with live previews.
 
 Chart component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`chart-radix`](https://reui-unbound.pages.dev/?preview=chart-radix)
-- **Radix** — [`chart-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-bars-radix)
-- **Radix** — [`chart-multi-dataset-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-multi-dataset-bars-radix)
-- **Radix** — [`chart-diagonal-stripe-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-diagonal-stripe-bars-radix)
-- **Radix** — [`chart-dotted-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-dotted-bars-radix)
-- **Radix** — [`chart-striped-solid-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-striped-solid-bars-radix)
-- **Radix** — [`chart-3d-gradient-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-3d-gradient-bars-radix)
-- **Radix** — [`chart-gradient-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-gradient-bars-radix)
-- **Radix** — [`chart-isometric-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-isometric-bars-radix)
-- **Radix** — [`chart-dotted-solid-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-dotted-solid-bars-radix)
-- **Radix** — [`chart-duotone-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-duotone-bars-radix)
-- **Radix** — [`chart-animated-monochrome-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-animated-monochrome-bars-radix)
-- **Radix** — [`chart-horizontal-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-horizontal-bars-radix)
-- **Radix** — [`chart-gradient-area-radix`](https://reui-unbound.pages.dev/?preview=chart-gradient-area-radix)
-- **Radix** — [`chart-stacked-dashed-area-radix`](https://reui-unbound.pages.dev/?preview=chart-stacked-dashed-area-radix)
-- **Radix** — [`chart-dotted-step-area-radix`](https://reui-unbound.pages.dev/?preview=chart-dotted-step-area-radix)
-- **Radix** — [`chart-glowing-dot-area-radix`](https://reui-unbound.pages.dev/?preview=chart-glowing-dot-area-radix)
-- **Radix** — [`chart-forecast-line-radix`](https://reui-unbound.pages.dev/?preview=chart-forecast-line-radix)
-- **Radix** — [`chart-crosshatch-area-radix`](https://reui-unbound.pages.dev/?preview=chart-crosshatch-area-radix)
-- **Radix** — [`chart-donut-center-total-radix`](https://reui-unbound.pages.dev/?preview=chart-donut-center-total-radix)
-- **Radix** — [`chart-donut-center-stats-radix`](https://reui-unbound.pages.dev/?preview=chart-donut-center-stats-radix)
-- **Radix** — [`chart-striped-pie-radix`](https://reui-unbound.pages.dev/?preview=chart-striped-pie-radix)
-- **Radix** — [`chart-active-segment-donut-radix`](https://reui-unbound.pages.dev/?preview=chart-active-segment-donut-radix)
-- **Radix** — [`chart-gradient-radar-radix`](https://reui-unbound.pages.dev/?preview=chart-gradient-radar-radix)
-- **Radix** — [`chart-glowing-stroke-radar-radix`](https://reui-unbound.pages.dev/?preview=chart-glowing-stroke-radar-radix)
-- **Radix** — [`chart-radial-scores-radix`](https://reui-unbound.pages.dev/?preview=chart-radial-scores-radix)
+### Radix (26)
+
+- [`chart-radix`](https://reui-unbound.pages.dev/?preview=chart-radix)
+- [`chart-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-bars-radix)
+- [`chart-multi-dataset-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-multi-dataset-bars-radix)
+- [`chart-diagonal-stripe-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-diagonal-stripe-bars-radix)
+- [`chart-dotted-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-dotted-bars-radix)
+- [`chart-striped-solid-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-striped-solid-bars-radix)
+- [`chart-3d-gradient-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-3d-gradient-bars-radix)
+- [`chart-gradient-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-gradient-bars-radix)
+- [`chart-isometric-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-isometric-bars-radix)
+- [`chart-dotted-solid-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-dotted-solid-bars-radix)
+- [`chart-duotone-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-duotone-bars-radix)
+- [`chart-animated-monochrome-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-animated-monochrome-bars-radix)
+- [`chart-horizontal-bars-radix`](https://reui-unbound.pages.dev/?preview=chart-horizontal-bars-radix)
+- [`chart-gradient-area-radix`](https://reui-unbound.pages.dev/?preview=chart-gradient-area-radix)
+- [`chart-stacked-dashed-area-radix`](https://reui-unbound.pages.dev/?preview=chart-stacked-dashed-area-radix)
+- [`chart-dotted-step-area-radix`](https://reui-unbound.pages.dev/?preview=chart-dotted-step-area-radix)
+- [`chart-glowing-dot-area-radix`](https://reui-unbound.pages.dev/?preview=chart-glowing-dot-area-radix)
+- [`chart-forecast-line-radix`](https://reui-unbound.pages.dev/?preview=chart-forecast-line-radix)
+- [`chart-crosshatch-area-radix`](https://reui-unbound.pages.dev/?preview=chart-crosshatch-area-radix)
+- [`chart-donut-center-total-radix`](https://reui-unbound.pages.dev/?preview=chart-donut-center-total-radix)
+- [`chart-donut-center-stats-radix`](https://reui-unbound.pages.dev/?preview=chart-donut-center-stats-radix)
+- [`chart-striped-pie-radix`](https://reui-unbound.pages.dev/?preview=chart-striped-pie-radix)
+- [`chart-active-segment-donut-radix`](https://reui-unbound.pages.dev/?preview=chart-active-segment-donut-radix)
+- [`chart-gradient-radar-radix`](https://reui-unbound.pages.dev/?preview=chart-gradient-radar-radix)
+- [`chart-glowing-stroke-radar-radix`](https://reui-unbound.pages.dev/?preview=chart-glowing-stroke-radar-radix)
+- [`chart-radial-scores-radix`](https://reui-unbound.pages.dev/?preview=chart-radial-scores-radix)
+
+
 
 ## Install
 

@@ -7,25 +7,32 @@ description: Color selection with formats, presets and a picker area.
 
 Color selection with formats, presets and a picker area.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`color-picker-radix`](https://reui-unbound.pages.dev/?preview=color-picker-radix)
-- **Radix** — [`color-picker-inline-panel-radix`](https://reui-unbound.pages.dev/?preview=color-picker-inline-panel-radix)
-- **Radix** — [`color-picker-popover-radix`](https://reui-unbound.pages.dev/?preview=color-picker-popover-radix)
-- **Radix** — [`color-picker-color-input-radix`](https://reui-unbound.pages.dev/?preview=color-picker-color-input-radix)
-- **Radix** — [`color-picker-opacity-radix`](https://reui-unbound.pages.dev/?preview=color-picker-opacity-radix)
-- **Radix** — [`color-picker-preset-swatches-radix`](https://reui-unbound.pages.dev/?preview=color-picker-preset-swatches-radix)
-- **Radix** — [`color-picker-oklch-token-radix`](https://reui-unbound.pages.dev/?preview=color-picker-oklch-token-radix)
-- **Radix** — [`color-picker-format-converter-radix`](https://reui-unbound.pages.dev/?preview=color-picker-format-converter-radix)
-- **Radix** — [`color-picker-hue-wheel-radix`](https://reui-unbound.pages.dev/?preview=color-picker-hue-wheel-radix)
-- **Radix** — [`color-picker-recent-colors-radix`](https://reui-unbound.pages.dev/?preview=color-picker-recent-colors-radix)
-- **Radix** — [`color-picker-text-highlight-radix`](https://reui-unbound.pages.dev/?preview=color-picker-text-highlight-radix)
-- **Radix** — [`color-picker-channel-sliders-radix`](https://reui-unbound.pages.dev/?preview=color-picker-channel-sliders-radix)
-- **Radix** — [`color-picker-design-inspector-radix`](https://reui-unbound.pages.dev/?preview=color-picker-design-inspector-radix)
-- **Radix** — [`color-picker-contrast-checker-radix`](https://reui-unbound.pages.dev/?preview=color-picker-contrast-checker-radix)
-- **Radix** — [`color-picker-brand-scale-radix`](https://reui-unbound.pages.dev/?preview=color-picker-brand-scale-radix)
-- **Radix** — [`color-picker-form-validation-radix`](https://reui-unbound.pages.dev/?preview=color-picker-form-validation-radix)
-- **Base** — [`color-picker-base`](https://reui-unbound.pages.dev/?preview=color-picker-base)
+### Radix (16)
+
+- [`color-picker-radix`](https://reui-unbound.pages.dev/?preview=color-picker-radix)
+- [`color-picker-inline-panel-radix`](https://reui-unbound.pages.dev/?preview=color-picker-inline-panel-radix)
+- [`color-picker-popover-radix`](https://reui-unbound.pages.dev/?preview=color-picker-popover-radix)
+- [`color-picker-color-input-radix`](https://reui-unbound.pages.dev/?preview=color-picker-color-input-radix)
+- [`color-picker-opacity-radix`](https://reui-unbound.pages.dev/?preview=color-picker-opacity-radix)
+- [`color-picker-preset-swatches-radix`](https://reui-unbound.pages.dev/?preview=color-picker-preset-swatches-radix)
+- [`color-picker-oklch-token-radix`](https://reui-unbound.pages.dev/?preview=color-picker-oklch-token-radix)
+- [`color-picker-format-converter-radix`](https://reui-unbound.pages.dev/?preview=color-picker-format-converter-radix)
+- [`color-picker-hue-wheel-radix`](https://reui-unbound.pages.dev/?preview=color-picker-hue-wheel-radix)
+- [`color-picker-recent-colors-radix`](https://reui-unbound.pages.dev/?preview=color-picker-recent-colors-radix)
+- [`color-picker-text-highlight-radix`](https://reui-unbound.pages.dev/?preview=color-picker-text-highlight-radix)
+- [`color-picker-channel-sliders-radix`](https://reui-unbound.pages.dev/?preview=color-picker-channel-sliders-radix)
+- [`color-picker-design-inspector-radix`](https://reui-unbound.pages.dev/?preview=color-picker-design-inspector-radix)
+- [`color-picker-contrast-checker-radix`](https://reui-unbound.pages.dev/?preview=color-picker-contrast-checker-radix)
+- [`color-picker-brand-scale-radix`](https://reui-unbound.pages.dev/?preview=color-picker-brand-scale-radix)
+- [`color-picker-form-validation-radix`](https://reui-unbound.pages.dev/?preview=color-picker-form-validation-radix)
+
+### Base (1)
+
+- [`color-picker-base`](https://reui-unbound.pages.dev/?preview=color-picker-base)
 
 ## Install
 

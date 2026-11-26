@@ -7,21 +7,27 @@ description: Slider component with live previews.
 
 Slider component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`slider-radix`](https://reui-unbound.pages.dev/?preview=slider-radix)
-- **Radix** — [`slider-standard-radix`](https://reui-unbound.pages.dev/?preview=slider-standard-radix)
-- **Radix** — [`slider-disabled-radix`](https://reui-unbound.pages.dev/?preview=slider-disabled-radix)
-- **Radix** — [`slider-multiple-thumbs-radix`](https://reui-unbound.pages.dev/?preview=slider-multiple-thumbs-radix)
-- **Radix** — [`slider-vertical-radix`](https://reui-unbound.pages.dev/?preview=slider-vertical-radix)
-- **Radix** — [`slider-controlled-value-radix`](https://reui-unbound.pages.dev/?preview=slider-controlled-value-radix)
-- **Radix** — [`slider-range-radix`](https://reui-unbound.pages.dev/?preview=slider-range-radix)
-- **Radix** — [`slider-number-input-radix`](https://reui-unbound.pages.dev/?preview=slider-number-input-radix)
-- **Radix** — [`slider-color-temperature-radix`](https://reui-unbound.pages.dev/?preview=slider-color-temperature-radix)
-- **Radix** — [`slider-reference-labels-radix`](https://reui-unbound.pages.dev/?preview=slider-reference-labels-radix)
-- **Radix** — [`slider-tick-marks-radix`](https://reui-unbound.pages.dev/?preview=slider-tick-marks-radix)
-- **Radix** — [`slider-value-tooltip-radix`](https://reui-unbound.pages.dev/?preview=slider-value-tooltip-radix)
-- **Radix** — [`slider-emoji-rating-radix`](https://reui-unbound.pages.dev/?preview=slider-emoji-rating-radix)
+### Radix (13)
+
+- [`slider-radix`](https://reui-unbound.pages.dev/?preview=slider-radix)
+- [`slider-standard-radix`](https://reui-unbound.pages.dev/?preview=slider-standard-radix)
+- [`slider-disabled-radix`](https://reui-unbound.pages.dev/?preview=slider-disabled-radix)
+- [`slider-multiple-thumbs-radix`](https://reui-unbound.pages.dev/?preview=slider-multiple-thumbs-radix)
+- [`slider-vertical-radix`](https://reui-unbound.pages.dev/?preview=slider-vertical-radix)
+- [`slider-controlled-value-radix`](https://reui-unbound.pages.dev/?preview=slider-controlled-value-radix)
+- [`slider-range-radix`](https://reui-unbound.pages.dev/?preview=slider-range-radix)
+- [`slider-number-input-radix`](https://reui-unbound.pages.dev/?preview=slider-number-input-radix)
+- [`slider-color-temperature-radix`](https://reui-unbound.pages.dev/?preview=slider-color-temperature-radix)
+- [`slider-reference-labels-radix`](https://reui-unbound.pages.dev/?preview=slider-reference-labels-radix)
+- [`slider-tick-marks-radix`](https://reui-unbound.pages.dev/?preview=slider-tick-marks-radix)
+- [`slider-value-tooltip-radix`](https://reui-unbound.pages.dev/?preview=slider-value-tooltip-radix)
+- [`slider-emoji-rating-radix`](https://reui-unbound.pages.dev/?preview=slider-emoji-rating-radix)
+
+
 
 ## Install
 

@@ -6,9 +6,11 @@ category: App Shell
 
 # Project Tracker Sidebar
 
+Project Tracker Sidebar app-shell block.
+
 **Block:** `app-shell-project-tracker-sidebar` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-project-tracker-sidebar)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-project-tracker-sidebar)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AppShellProjectTrackerSidebarBlock />
 }
 ```
+
+## More in App Shell
+
+- [AI Agents Console](./app-shell-ai-agents-console.md)
+- [Apps Grid Header](./app-shell-apps-grid-header.md)
+- [Calendar Contacts Hub](./app-shell-calendar-contacts-hub.md)
+- [Community Feed App](./app-shell-community-feed-app.md)
+- [Dual Sidebar Dashboard](./app-shell-dual-sidebar-dashboard.md)
+- [Endpoint Protection](./app-shell-endpoint-protection.md)
 
 ## Files
 

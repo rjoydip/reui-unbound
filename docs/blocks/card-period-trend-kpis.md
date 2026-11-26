@@ -6,9 +6,11 @@ category: Card
 
 # Period Trend KPIs
 
+Period Trend KPIs card block.
+
 **Block:** `card-period-trend-kpis` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-period-trend-kpis)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-period-trend-kpis)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardPeriodTrendKpisBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
 
 ## Files
 

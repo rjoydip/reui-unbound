@@ -6,9 +6,11 @@ category: Columns
 
 # Workspace Access Review
 
+Workspace Access Review data grid block.
+
 **Block:** `data-grid-columns-workspace-access-review` · **Category:** Columns
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-1)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-1)
 
 ## Install
 
@@ -25,6 +27,13 @@ export default function Page() {
   return <AccessPermissionsBlock />
 }
 ```
+
+## More in Columns
+
+- [Companies](./data-grid-columns-companies.md)
+- [Course Catalog](./data-grid-columns-course-catalog.md)
+- [Members](./data-grid-columns-members.md)
+- [Work Queue](./data-grid-columns-work-queue.md)
 
 ## Files
 

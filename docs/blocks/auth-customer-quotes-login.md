@@ -6,9 +6,11 @@ category: Auth
 
 # Customer Quotes Login
 
+Customer Quotes Login auth block.
+
 **Block:** `auth-customer-quotes-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-customer-quotes-login)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=auth-customer-quotes-login)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AuthCustomerQuotesLoginBlock />
 }
 ```
+
+## More in Auth
+
+- [Centered Magic Link](./auth-centered-magic-link.md)
+- [Centered Method Picker](./auth-centered-method-picker.md)
+- [Centered Password Login](./auth-centered-password-login.md)
+- [Founder Story Login](./auth-founder-story-login.md)
+- [Framed Password Login](./auth-framed-password-login.md)
+- [Free Trial Signup](./auth-free-trial-signup.md)
 
 ## Files
 

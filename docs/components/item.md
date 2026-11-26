@@ -7,21 +7,27 @@ description: Item component with live previews.
 
 Item component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`item-radix`](https://reui-unbound.pages.dev/?preview=item-radix)
-- **Radix** — [`item-variants-radix`](https://reui-unbound.pages.dev/?preview=item-variants-radix)
-- **Radix** — [`item-icon-actions-radix`](https://reui-unbound.pages.dev/?preview=item-icon-actions-radix)
-- **Radix** — [`item-user-follow-radix`](https://reui-unbound.pages.dev/?preview=item-user-follow-radix)
-- **Radix** — [`item-navigation-links-radix`](https://reui-unbound.pages.dev/?preview=item-navigation-links-radix)
-- **Radix** — [`item-status-badges-radix`](https://reui-unbound.pages.dev/?preview=item-status-badges-radix)
-- **Radix** — [`item-file-rows-radix`](https://reui-unbound.pages.dev/?preview=item-file-rows-radix)
-- **Radix** — [`item-keyboard-shortcuts-radix`](https://reui-unbound.pages.dev/?preview=item-keyboard-shortcuts-radix)
-- **Radix** — [`item-small-count-badges-radix`](https://reui-unbound.pages.dev/?preview=item-small-count-badges-radix)
-- **Radix** — [`item-team-roles-radix`](https://reui-unbound.pages.dev/?preview=item-team-roles-radix)
-- **Radix** — [`item-header-footer-radix`](https://reui-unbound.pages.dev/?preview=item-header-footer-radix)
-- **Radix** — [`item-integrations-radix`](https://reui-unbound.pages.dev/?preview=item-integrations-radix)
-- **Radix** — [`item-activity-feed-radix`](https://reui-unbound.pages.dev/?preview=item-activity-feed-radix)
+### Radix (13)
+
+- [`item-radix`](https://reui-unbound.pages.dev/?preview=item-radix)
+- [`item-variants-radix`](https://reui-unbound.pages.dev/?preview=item-variants-radix)
+- [`item-icon-actions-radix`](https://reui-unbound.pages.dev/?preview=item-icon-actions-radix)
+- [`item-user-follow-radix`](https://reui-unbound.pages.dev/?preview=item-user-follow-radix)
+- [`item-navigation-links-radix`](https://reui-unbound.pages.dev/?preview=item-navigation-links-radix)
+- [`item-status-badges-radix`](https://reui-unbound.pages.dev/?preview=item-status-badges-radix)
+- [`item-file-rows-radix`](https://reui-unbound.pages.dev/?preview=item-file-rows-radix)
+- [`item-keyboard-shortcuts-radix`](https://reui-unbound.pages.dev/?preview=item-keyboard-shortcuts-radix)
+- [`item-small-count-badges-radix`](https://reui-unbound.pages.dev/?preview=item-small-count-badges-radix)
+- [`item-team-roles-radix`](https://reui-unbound.pages.dev/?preview=item-team-roles-radix)
+- [`item-header-footer-radix`](https://reui-unbound.pages.dev/?preview=item-header-footer-radix)
+- [`item-integrations-radix`](https://reui-unbound.pages.dev/?preview=item-integrations-radix)
+- [`item-activity-feed-radix`](https://reui-unbound.pages.dev/?preview=item-activity-feed-radix)
+
+
 
 ## Install
 

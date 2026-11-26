@@ -6,9 +6,11 @@ category: Dialog
 
 # Support Hub
 
+Support Hub dialog block.
+
 **Block:** `dialog-support-hub` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-support-hub)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dialog-support-hub)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DialogSupportHubBlock />
 }
 ```
+
+## More in Dialog
+
+- [Account Settings Modal](./dialog-account-settings-modal.md)
+- [Bulk Email Invite](./dialog-bulk-email-invite.md)
+- [Cancel Plan Survey](./dialog-cancel-plan-survey.md)
+- [Connect App Picker](./dialog-connect-app-picker.md)
+- [Duplicate Check](./dialog-duplicate-check.md)
+- [Duration Picker](./dialog-duration-picker.md)
 
 ## Files
 

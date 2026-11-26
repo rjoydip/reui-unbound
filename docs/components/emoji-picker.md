@@ -7,18 +7,25 @@ description: Searchable emoji picker with categories and recent items.
 
 Searchable emoji picker with categories and recent items.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`emoji-picker-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-radix)
-- **Radix** — [`emoji-picker-inline-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-inline-radix)
-- **Radix** — [`emoji-picker-chat-composer-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-chat-composer-radix)
-- **Radix** — [`emoji-picker-message-reactions-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-message-reactions-radix)
-- **Radix** — [`emoji-picker-page-icon-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-page-icon-radix)
-- **Radix** — [`emoji-picker-custom-team-emoji-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-custom-team-emoji-radix)
-- **Radix** — [`emoji-picker-shortcode-suggestions-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-shortcode-suggestions-radix)
-- **Radix** — [`emoji-picker-workplace-safe-set-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-workplace-safe-set-radix)
-- **Radix** — [`emoji-picker-localized-labels-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-localized-labels-radix)
-- **Base** — [`emoji-picker-base`](https://reui-unbound.pages.dev/?preview=emoji-picker-base)
+### Radix (9)
+
+- [`emoji-picker-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-radix)
+- [`emoji-picker-inline-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-inline-radix)
+- [`emoji-picker-chat-composer-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-chat-composer-radix)
+- [`emoji-picker-message-reactions-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-message-reactions-radix)
+- [`emoji-picker-page-icon-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-page-icon-radix)
+- [`emoji-picker-custom-team-emoji-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-custom-team-emoji-radix)
+- [`emoji-picker-shortcode-suggestions-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-shortcode-suggestions-radix)
+- [`emoji-picker-workplace-safe-set-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-workplace-safe-set-radix)
+- [`emoji-picker-localized-labels-radix`](https://reui-unbound.pages.dev/?preview=emoji-picker-localized-labels-radix)
+
+### Base (1)
+
+- [`emoji-picker-base`](https://reui-unbound.pages.dev/?preview=emoji-picker-base)
 
 ## Install
 

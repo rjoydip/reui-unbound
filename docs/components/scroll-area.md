@@ -7,14 +7,20 @@ description: Scroll Area component with live previews.
 
 Scroll Area component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`scroll-area-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-radix)
-- **Radix** — [`scroll-area-standard-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-standard-radix)
-- **Radix** — [`scroll-area-horizontal-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-horizontal-radix)
-- **Radix** — [`scroll-area-both-scrollbars-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-both-scrollbars-radix)
-- **Radix** — [`scroll-area-fade-edges-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-fade-edges-radix)
-- **Radix** — [`scroll-area-scrollbar-gutter-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-scrollbar-gutter-radix)
+### Radix (6)
+
+- [`scroll-area-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-radix)
+- [`scroll-area-standard-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-standard-radix)
+- [`scroll-area-horizontal-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-horizontal-radix)
+- [`scroll-area-both-scrollbars-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-both-scrollbars-radix)
+- [`scroll-area-fade-edges-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-fade-edges-radix)
+- [`scroll-area-scrollbar-gutter-radix`](https://reui-unbound.pages.dev/?preview=scroll-area-scrollbar-gutter-radix)
+
+
 
 ## Install
 

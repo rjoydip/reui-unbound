@@ -7,19 +7,25 @@ description: Dialog component with live previews.
 
 Dialog component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`dialog-radix`](https://reui-unbound.pages.dev/?preview=dialog-radix)
-- **Radix** — [`dialog-standard-radix`](https://reui-unbound.pages.dev/?preview=dialog-standard-radix)
-- **Radix** — [`dialog-scrollable-content-radix`](https://reui-unbound.pages.dev/?preview=dialog-scrollable-content-radix)
-- **Radix** — [`dialog-sticky-footer-radix`](https://reui-unbound.pages.dev/?preview=dialog-sticky-footer-radix)
-- **Radix** — [`dialog-no-close-button-radix`](https://reui-unbound.pages.dev/?preview=dialog-no-close-button-radix)
-- **Radix** — [`dialog-custom-close-button-radix`](https://reui-unbound.pages.dev/?preview=dialog-custom-close-button-radix)
-- **Radix** — [`dialog-full-screen-radix`](https://reui-unbound.pages.dev/?preview=dialog-full-screen-radix)
-- **Radix** — [`dialog-destructive-confirmation-radix`](https://reui-unbound.pages.dev/?preview=dialog-destructive-confirmation-radix)
-- **Radix** — [`dialog-cookie-consent-radix`](https://reui-unbound.pages.dev/?preview=dialog-cookie-consent-radix)
-- **Radix** — [`dialog-keyboard-shortcuts-radix`](https://reui-unbound.pages.dev/?preview=dialog-keyboard-shortcuts-radix)
-- **Radix** — [`dialog-full-width-button-radix`](https://reui-unbound.pages.dev/?preview=dialog-full-width-button-radix)
+### Radix (11)
+
+- [`dialog-radix`](https://reui-unbound.pages.dev/?preview=dialog-radix)
+- [`dialog-standard-radix`](https://reui-unbound.pages.dev/?preview=dialog-standard-radix)
+- [`dialog-scrollable-content-radix`](https://reui-unbound.pages.dev/?preview=dialog-scrollable-content-radix)
+- [`dialog-sticky-footer-radix`](https://reui-unbound.pages.dev/?preview=dialog-sticky-footer-radix)
+- [`dialog-no-close-button-radix`](https://reui-unbound.pages.dev/?preview=dialog-no-close-button-radix)
+- [`dialog-custom-close-button-radix`](https://reui-unbound.pages.dev/?preview=dialog-custom-close-button-radix)
+- [`dialog-full-screen-radix`](https://reui-unbound.pages.dev/?preview=dialog-full-screen-radix)
+- [`dialog-destructive-confirmation-radix`](https://reui-unbound.pages.dev/?preview=dialog-destructive-confirmation-radix)
+- [`dialog-cookie-consent-radix`](https://reui-unbound.pages.dev/?preview=dialog-cookie-consent-radix)
+- [`dialog-keyboard-shortcuts-radix`](https://reui-unbound.pages.dev/?preview=dialog-keyboard-shortcuts-radix)
+- [`dialog-full-width-button-radix`](https://reui-unbound.pages.dev/?preview=dialog-full-width-button-radix)
+
+
 
 ## Install
 

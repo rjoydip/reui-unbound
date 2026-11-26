@@ -7,15 +7,21 @@ description: Separator component with live previews.
 
 Separator component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`separator-radix`](https://reui-unbound.pages.dev/?preview=separator-radix)
-- **Radix** — [`separator-horizontal-radix`](https://reui-unbound.pages.dev/?preview=separator-horizontal-radix)
-- **Radix** — [`separator-vertical-radix`](https://reui-unbound.pages.dev/?preview=separator-vertical-radix)
-- **Radix** — [`separator-grouped-menu-items-radix`](https://reui-unbound.pages.dev/?preview=separator-grouped-menu-items-radix)
-- **Radix** — [`separator-list-rows-radix`](https://reui-unbound.pages.dev/?preview=separator-list-rows-radix)
-- **Radix** — [`separator-centered-label-radix`](https://reui-unbound.pages.dev/?preview=separator-centered-label-radix)
-- **Radix** — [`separator-order-summary-radix`](https://reui-unbound.pages.dev/?preview=separator-order-summary-radix)
+### Radix (7)
+
+- [`separator-radix`](https://reui-unbound.pages.dev/?preview=separator-radix)
+- [`separator-horizontal-radix`](https://reui-unbound.pages.dev/?preview=separator-horizontal-radix)
+- [`separator-vertical-radix`](https://reui-unbound.pages.dev/?preview=separator-vertical-radix)
+- [`separator-grouped-menu-items-radix`](https://reui-unbound.pages.dev/?preview=separator-grouped-menu-items-radix)
+- [`separator-list-rows-radix`](https://reui-unbound.pages.dev/?preview=separator-list-rows-radix)
+- [`separator-centered-label-radix`](https://reui-unbound.pages.dev/?preview=separator-centered-label-radix)
+- [`separator-order-summary-radix`](https://reui-unbound.pages.dev/?preview=separator-order-summary-radix)
+
+
 
 ## Install
 

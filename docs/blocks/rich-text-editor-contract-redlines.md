@@ -6,9 +6,11 @@ category: Rich Text Editor
 
 # Contract Redlines
 
+Contract Redlines rich-text-editor block.
+
 **Block:** `rich-text-editor-contract-redlines` · **Category:** Rich Text Editor
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-contract-redlines)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-contract-redlines)
 
 ## Install
 
@@ -25,6 +27,13 @@ export default function Page() {
   return <RichTextEditorContractRedlinesBlock />
 }
 ```
+
+## More in Rich Text Editor
+
+- [AI Writing Assistant](./rich-text-editor-ai-writing-assistant.md)
+- [Collaborative Editor](./rich-text-editor-collaborative-editor.md)
+- [Document Editor](./rich-text-editor-document-editor.md)
+- [Wiki Page Editor](./rich-text-editor-wiki-page-editor.md)
 
 ## Files
 

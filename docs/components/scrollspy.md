@@ -7,11 +7,17 @@ description: Section navigation that tracks the active scroll position.
 
 Section navigation that tracks the active scroll position.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`scrollspy-radix`](https://reui-unbound.pages.dev/?preview=scrollspy-radix)
-- **Radix** — [`scrollspy-vertical-nav-radix`](https://reui-unbound.pages.dev/?preview=scrollspy-vertical-nav-radix)
-- **Radix** — [`scrollspy-horizontal-nav-radix`](https://reui-unbound.pages.dev/?preview=scrollspy-horizontal-nav-radix)
+### Radix (3)
+
+- [`scrollspy-radix`](https://reui-unbound.pages.dev/?preview=scrollspy-radix)
+- [`scrollspy-vertical-nav-radix`](https://reui-unbound.pages.dev/?preview=scrollspy-vertical-nav-radix)
+- [`scrollspy-horizontal-nav-radix`](https://reui-unbound.pages.dev/?preview=scrollspy-horizontal-nav-radix)
+
+
 
 ## Install
 

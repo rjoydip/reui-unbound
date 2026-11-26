@@ -6,9 +6,11 @@ category: Card
 
 # Account Balances
 
+Account Balances card block.
+
 **Block:** `card-account-balances` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-account-balances)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-account-balances)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardAccountBalancesBlock />
 }
 ```
+
+## More in Card
+
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
+- [Compliance Strip](./card-compliance-strip.md)
 
 ## Files
 

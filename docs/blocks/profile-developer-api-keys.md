@@ -6,9 +6,11 @@ category: Profile
 
 # Developer API Keys
 
+Developer API Keys profile block.
+
 **Block:** `profile-developer-api-keys` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-developer-api-keys)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=profile-developer-api-keys)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ProfileDeveloperApiKeysBlock />
 }
 ```
+
+## More in Profile
+
+- [Account & Team Settings](./profile-account-team-settings.md)
+- [Account Settings Hub](./profile-account-settings-hub.md)
+- [Admin Permissions](./profile-admin-permissions.md)
+- [Billing Settings](./profile-billing-settings.md)
+- [Mailbox Accounts](./profile-mailbox-accounts.md)
+- [Meeting Capture](./profile-meeting-capture.md)
 
 ## Files
 

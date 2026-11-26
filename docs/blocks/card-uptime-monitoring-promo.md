@@ -6,9 +6,11 @@ category: Card
 
 # Uptime Monitoring Promo
 
+Uptime Monitoring Promo card block.
+
 **Block:** `card-uptime-monitoring-promo` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-uptime-monitoring-promo)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-uptime-monitoring-promo)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardUptimeMonitoringPromoBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
 
 ## Files
 

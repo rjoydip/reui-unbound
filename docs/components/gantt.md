@@ -7,18 +7,25 @@ description: Timeline scheduling with resources, drag interactions and progress.
 
 Timeline scheduling with resources, drag interactions and progress.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`gantt-radix`](https://reui-unbound.pages.dev/?preview=gantt-radix)
-- **Radix** — [`gantt-settings-menu-radix`](https://reui-unbound.pages.dev/?preview=gantt-settings-menu-radix)
-- **Radix** — [`gantt-drag-reorder-radix`](https://reui-unbound.pages.dev/?preview=gantt-drag-reorder-radix)
-- **Radix** — [`gantt-quarter-roadmap-radix`](https://reui-unbound.pages.dev/?preview=gantt-quarter-roadmap-radix)
-- **Radix** — [`gantt-capacity-board-radix`](https://reui-unbound.pages.dev/?preview=gantt-capacity-board-radix)
-- **Radix** — [`gantt-task-table-radix`](https://reui-unbound.pages.dev/?preview=gantt-task-table-radix)
-- **Radix** — [`gantt-baseline-tracking-radix`](https://reui-unbound.pages.dev/?preview=gantt-baseline-tracking-radix)
-- **Radix** — [`gantt-dependencies-milestones-radix`](https://reui-unbound.pages.dev/?preview=gantt-dependencies-milestones-radix)
-- **Radix** — [`gantt-working-days-radix`](https://reui-unbound.pages.dev/?preview=gantt-working-days-radix)
-- **Base** — [`gantt-base`](https://reui-unbound.pages.dev/?preview=gantt-base)
+### Radix (9)
+
+- [`gantt-radix`](https://reui-unbound.pages.dev/?preview=gantt-radix)
+- [`gantt-settings-menu-radix`](https://reui-unbound.pages.dev/?preview=gantt-settings-menu-radix)
+- [`gantt-drag-reorder-radix`](https://reui-unbound.pages.dev/?preview=gantt-drag-reorder-radix)
+- [`gantt-quarter-roadmap-radix`](https://reui-unbound.pages.dev/?preview=gantt-quarter-roadmap-radix)
+- [`gantt-capacity-board-radix`](https://reui-unbound.pages.dev/?preview=gantt-capacity-board-radix)
+- [`gantt-task-table-radix`](https://reui-unbound.pages.dev/?preview=gantt-task-table-radix)
+- [`gantt-baseline-tracking-radix`](https://reui-unbound.pages.dev/?preview=gantt-baseline-tracking-radix)
+- [`gantt-dependencies-milestones-radix`](https://reui-unbound.pages.dev/?preview=gantt-dependencies-milestones-radix)
+- [`gantt-working-days-radix`](https://reui-unbound.pages.dev/?preview=gantt-working-days-radix)
+
+### Base (1)
+
+- [`gantt-base`](https://reui-unbound.pages.dev/?preview=gantt-base)
 
 ## Install
 

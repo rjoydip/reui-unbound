@@ -6,9 +6,11 @@ category: Stats
 
 # Total Revenue
 
+Total Revenue stats block.
+
 **Block:** `stats-total-revenue` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-total-revenue)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=stats-total-revenue)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <StatsTotalRevenueBlock />
 }
 ```
+
+## More in Stats
+
+- [Adoption Rate](./stats-adoption-rate.md)
+- [Analytics Overview](./stats-analytics-overview.md)
+- [API Quota Usage](./stats-api-quota-usage.md)
+- [Capacity Usage](./stats-capacity-usage.md)
+- [Compliance Checks](./stats-compliance-checks.md)
+- [KPI Callouts](./stats-kpi-callouts.md)
 
 ## Files
 

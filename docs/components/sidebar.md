@@ -7,14 +7,20 @@ description: Sidebar component with live previews.
 
 Sidebar component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`sidebar-radix`](https://reui-unbound.pages.dev/?preview=sidebar-radix)
-- **Radix** — [`sidebar-workspace-switcher-radix`](https://reui-unbound.pages.dev/?preview=sidebar-workspace-switcher-radix)
-- **Radix** — [`sidebar-icon-rail-radix`](https://reui-unbound.pages.dev/?preview=sidebar-icon-rail-radix)
-- **Radix** — [`sidebar-docs-navigation-radix`](https://reui-unbound.pages.dev/?preview=sidebar-docs-navigation-radix)
-- **Radix** — [`sidebar-inspector-panel-radix`](https://reui-unbound.pages.dev/?preview=sidebar-inspector-panel-radix)
-- **Radix** — [`sidebar-filter-loading-radix`](https://reui-unbound.pages.dev/?preview=sidebar-filter-loading-radix)
+### Radix (6)
+
+- [`sidebar-radix`](https://reui-unbound.pages.dev/?preview=sidebar-radix)
+- [`sidebar-workspace-switcher-radix`](https://reui-unbound.pages.dev/?preview=sidebar-workspace-switcher-radix)
+- [`sidebar-icon-rail-radix`](https://reui-unbound.pages.dev/?preview=sidebar-icon-rail-radix)
+- [`sidebar-docs-navigation-radix`](https://reui-unbound.pages.dev/?preview=sidebar-docs-navigation-radix)
+- [`sidebar-inspector-panel-radix`](https://reui-unbound.pages.dev/?preview=sidebar-inspector-panel-radix)
+- [`sidebar-filter-loading-radix`](https://reui-unbound.pages.dev/?preview=sidebar-filter-loading-radix)
+
+
 
 ## Install
 

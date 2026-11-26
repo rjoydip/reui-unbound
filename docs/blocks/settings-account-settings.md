@@ -6,9 +6,11 @@ category: Settings
 
 # Account Settings
 
+Account Settings settings block.
+
 **Block:** `settings-account-settings` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-account-settings)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=settings-account-settings)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SettingsAccountSettingsBlock />
 }
 ```
+
+## More in Settings
+
+- [API Integrations](./settings-api-integrations.md)
+- [App Connections](./settings-app-connections.md)
+- [Connected Apps](./settings-connected-apps.md)
+- [General & Display](./settings-general-display.md)
+- [General Settings](./settings-general-settings.md)
+- [Import Sources](./settings-import-sources.md)
 
 ## Files
 

@@ -7,20 +7,26 @@ description: Popover component with live previews.
 
 Popover component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`popover-radix`](https://reui-unbound.pages.dev/?preview=popover-radix)
-- **Radix** — [`popover-standard-radix`](https://reui-unbound.pages.dev/?preview=popover-standard-radix)
-- **Radix** — [`popover-opening-sides-radix`](https://reui-unbound.pages.dev/?preview=popover-opening-sides-radix)
-- **Radix** — [`popover-inline-form-radix`](https://reui-unbound.pages.dev/?preview=popover-inline-form-radix)
-- **Radix** — [`popover-alignment-radix`](https://reui-unbound.pages.dev/?preview=popover-alignment-radix)
-- **Radix** — [`popover-in-dialog-radix`](https://reui-unbound.pages.dev/?preview=popover-in-dialog-radix)
-- **Radix** — [`popover-profile-card-radix`](https://reui-unbound.pages.dev/?preview=popover-profile-card-radix)
-- **Radix** — [`popover-feature-pitch-radix`](https://reui-unbound.pages.dev/?preview=popover-feature-pitch-radix)
-- **Radix** — [`popover-media-preview-radix`](https://reui-unbound.pages.dev/?preview=popover-media-preview-radix)
-- **Radix** — [`popover-relative-time-radix`](https://reui-unbound.pages.dev/?preview=popover-relative-time-radix)
-- **Radix** — [`popover-controls-radix`](https://reui-unbound.pages.dev/?preview=popover-controls-radix)
-- **Radix** — [`popover-step-tour-radix`](https://reui-unbound.pages.dev/?preview=popover-step-tour-radix)
+### Radix (12)
+
+- [`popover-radix`](https://reui-unbound.pages.dev/?preview=popover-radix)
+- [`popover-standard-radix`](https://reui-unbound.pages.dev/?preview=popover-standard-radix)
+- [`popover-opening-sides-radix`](https://reui-unbound.pages.dev/?preview=popover-opening-sides-radix)
+- [`popover-inline-form-radix`](https://reui-unbound.pages.dev/?preview=popover-inline-form-radix)
+- [`popover-alignment-radix`](https://reui-unbound.pages.dev/?preview=popover-alignment-radix)
+- [`popover-in-dialog-radix`](https://reui-unbound.pages.dev/?preview=popover-in-dialog-radix)
+- [`popover-profile-card-radix`](https://reui-unbound.pages.dev/?preview=popover-profile-card-radix)
+- [`popover-feature-pitch-radix`](https://reui-unbound.pages.dev/?preview=popover-feature-pitch-radix)
+- [`popover-media-preview-radix`](https://reui-unbound.pages.dev/?preview=popover-media-preview-radix)
+- [`popover-relative-time-radix`](https://reui-unbound.pages.dev/?preview=popover-relative-time-radix)
+- [`popover-controls-radix`](https://reui-unbound.pages.dev/?preview=popover-controls-radix)
+- [`popover-step-tour-radix`](https://reui-unbound.pages.dev/?preview=popover-step-tour-radix)
+
+
 
 ## Install
 

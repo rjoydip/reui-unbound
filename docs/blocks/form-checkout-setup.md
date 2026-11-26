@@ -6,9 +6,11 @@ category: Form
 
 # Checkout Setup
 
+Checkout Setup form block.
+
 **Block:** `form-checkout-setup` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-checkout-setup)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=form-checkout-setup)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <FormCheckoutSetupBlock />
 }
 ```
+
+## More in Form
+
+- [API Keys Manager](./form-api-keys-manager.md)
+- [Auth Method Settings](./form-auth-method-settings.md)
+- [Business Verification](./form-business-verification.md)
+- [Customer Onboarding](./form-customer-onboarding.md)
+- [Deploy App Setup](./form-deploy-app-setup.md)
+- [Invoice Creator](./form-invoice-creator.md)
 
 ## Files
 

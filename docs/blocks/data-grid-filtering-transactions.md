@@ -6,9 +6,11 @@ category: Filtering
 
 # Transactions
 
+Transactions data grid block.
+
 **Block:** `data-grid-filtering-transactions` · **Category:** Filtering
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-1)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-1)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <BillingTransactionsBlock />
 }
 ```
+
+## More in Filtering
+
+- [Automation Library](./data-grid-filtering-automation-library.md)
+- [Renewals Review](./data-grid-filtering-renewals-review.md)
+- [Renewals Risk](./data-grid-filtering-renewals-risk.md)
 
 ## Files
 

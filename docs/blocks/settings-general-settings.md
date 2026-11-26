@@ -6,9 +6,11 @@ category: Settings
 
 # General Settings
 
+General Settings settings block.
+
 **Block:** `settings-general-settings` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-general-settings)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=settings-general-settings)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SettingsGeneralSettingsBlock />
 }
 ```
+
+## More in Settings
+
+- [Account Settings](./settings-account-settings.md)
+- [API Integrations](./settings-api-integrations.md)
+- [App Connections](./settings-app-connections.md)
+- [Connected Apps](./settings-connected-apps.md)
+- [General & Display](./settings-general-display.md)
+- [Import Sources](./settings-import-sources.md)
 
 ## Files
 

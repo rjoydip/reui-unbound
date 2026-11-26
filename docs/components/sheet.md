@@ -7,13 +7,19 @@ description: Sheet component with live previews.
 
 Sheet component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`sheet-radix`](https://reui-unbound.pages.dev/?preview=sheet-radix)
-- **Radix** — [`sheet-profile-editor-radix`](https://reui-unbound.pages.dev/?preview=sheet-profile-editor-radix)
-- **Radix** — [`sheet-no-close-button-radix`](https://reui-unbound.pages.dev/?preview=sheet-no-close-button-radix)
-- **Radix** — [`sheet-any-side-radix`](https://reui-unbound.pages.dev/?preview=sheet-any-side-radix)
-- **Radix** — [`sheet-scrollable-content-radix`](https://reui-unbound.pages.dev/?preview=sheet-scrollable-content-radix)
+### Radix (5)
+
+- [`sheet-radix`](https://reui-unbound.pages.dev/?preview=sheet-radix)
+- [`sheet-profile-editor-radix`](https://reui-unbound.pages.dev/?preview=sheet-profile-editor-radix)
+- [`sheet-no-close-button-radix`](https://reui-unbound.pages.dev/?preview=sheet-no-close-button-radix)
+- [`sheet-any-side-radix`](https://reui-unbound.pages.dev/?preview=sheet-any-side-radix)
+- [`sheet-scrollable-content-radix`](https://reui-unbound.pages.dev/?preview=sheet-scrollable-content-radix)
+
+
 
 ## Install
 

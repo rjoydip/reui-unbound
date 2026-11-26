@@ -6,9 +6,11 @@ category: Columns
 
 # Companies
 
+Companies data grid block.
+
 **Block:** `data-grid-columns-companies` · **Category:** Columns
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-5)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-5)
 
 ## Install
 
@@ -25,6 +27,13 @@ export default function Page() {
   return <CompanyAttributesBlock />
 }
 ```
+
+## More in Columns
+
+- [Course Catalog](./data-grid-columns-course-catalog.md)
+- [Members](./data-grid-columns-members.md)
+- [Work Queue](./data-grid-columns-work-queue.md)
+- [Workspace Access Review](./data-grid-columns-workspace-access-review.md)
 
 ## Files
 

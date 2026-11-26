@@ -7,19 +7,25 @@ description: Accordion component with live previews.
 
 Accordion component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`accordion-single-expand-radix`](https://reui-unbound.pages.dev/?preview=accordion-single-expand-radix)
-- **Radix** — [`accordion-plus-minus-radix`](https://reui-unbound.pages.dev/?preview=accordion-plus-minus-radix)
-- **Radix** — [`accordion-bordered-radix`](https://reui-unbound.pages.dev/?preview=accordion-bordered-radix)
-- **Radix** — [`accordion-in-card-radix`](https://reui-unbound.pages.dev/?preview=accordion-in-card-radix)
-- **Radix** — [`accordion-disabled-items-radix`](https://reui-unbound.pages.dev/?preview=accordion-disabled-items-radix)
-- **Radix** — [`accordion-icons-badges-radix`](https://reui-unbound.pages.dev/?preview=accordion-icons-badges-radix)
-- **Radix** — [`accordion-in-frame-radix`](https://reui-unbound.pages.dev/?preview=accordion-in-frame-radix)
-- **Radix** — [`accordion-nested-radix`](https://reui-unbound.pages.dev/?preview=accordion-nested-radix)
-- **Radix** — [`accordion-user-list-radix`](https://reui-unbound.pages.dev/?preview=accordion-user-list-radix)
-- **Radix** — [`accordion-rotating-arrow-radix`](https://reui-unbound.pages.dev/?preview=accordion-rotating-arrow-radix)
-- **Radix** — [`accordion-setup-steps-radix`](https://reui-unbound.pages.dev/?preview=accordion-setup-steps-radix)
+### Radix (11)
+
+- [`accordion-single-expand-radix`](https://reui-unbound.pages.dev/?preview=accordion-single-expand-radix)
+- [`accordion-plus-minus-radix`](https://reui-unbound.pages.dev/?preview=accordion-plus-minus-radix)
+- [`accordion-bordered-radix`](https://reui-unbound.pages.dev/?preview=accordion-bordered-radix)
+- [`accordion-in-card-radix`](https://reui-unbound.pages.dev/?preview=accordion-in-card-radix)
+- [`accordion-disabled-items-radix`](https://reui-unbound.pages.dev/?preview=accordion-disabled-items-radix)
+- [`accordion-icons-badges-radix`](https://reui-unbound.pages.dev/?preview=accordion-icons-badges-radix)
+- [`accordion-in-frame-radix`](https://reui-unbound.pages.dev/?preview=accordion-in-frame-radix)
+- [`accordion-nested-radix`](https://reui-unbound.pages.dev/?preview=accordion-nested-radix)
+- [`accordion-user-list-radix`](https://reui-unbound.pages.dev/?preview=accordion-user-list-radix)
+- [`accordion-rotating-arrow-radix`](https://reui-unbound.pages.dev/?preview=accordion-rotating-arrow-radix)
+- [`accordion-setup-steps-radix`](https://reui-unbound.pages.dev/?preview=accordion-setup-steps-radix)
+
+
 
 ## Install
 

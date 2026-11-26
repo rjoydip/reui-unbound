@@ -6,9 +6,11 @@ category: Profile
 
 # Referral Rewards
 
+Referral Rewards profile block.
+
 **Block:** `profile-referral-rewards` · **Category:** Profile
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=profile-referral-rewards)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=profile-referral-rewards)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ProfileReferralRewardsBlock />
 }
 ```
+
+## More in Profile
+
+- [Account & Team Settings](./profile-account-team-settings.md)
+- [Account Settings Hub](./profile-account-settings-hub.md)
+- [Admin Permissions](./profile-admin-permissions.md)
+- [Billing Settings](./profile-billing-settings.md)
+- [Developer API Keys](./profile-developer-api-keys.md)
+- [Mailbox Accounts](./profile-mailbox-accounts.md)
 
 ## Files
 

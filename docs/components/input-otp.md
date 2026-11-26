@@ -7,15 +7,21 @@ description: Input Otp component with live previews.
 
 Input Otp component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`input-otp-radix`](https://reui-unbound.pages.dev/?preview=input-otp-radix)
-- **Radix** — [`input-otp-standard-radix`](https://reui-unbound.pages.dev/?preview=input-otp-standard-radix)
-- **Radix** — [`input-otp-digits-only-radix`](https://reui-unbound.pages.dev/?preview=input-otp-digits-only-radix)
-- **Radix** — [`input-otp-multiple-separators-radix`](https://reui-unbound.pages.dev/?preview=input-otp-multiple-separators-radix)
-- **Radix** — [`input-otp-letters-numbers-radix`](https://reui-unbound.pages.dev/?preview=input-otp-letters-numbers-radix)
-- **Radix** — [`input-otp-pin-code-radix`](https://reui-unbound.pages.dev/?preview=input-otp-pin-code-radix)
-- **Radix** — [`input-otp-verification-card-radix`](https://reui-unbound.pages.dev/?preview=input-otp-verification-card-radix)
+### Radix (7)
+
+- [`input-otp-radix`](https://reui-unbound.pages.dev/?preview=input-otp-radix)
+- [`input-otp-standard-radix`](https://reui-unbound.pages.dev/?preview=input-otp-standard-radix)
+- [`input-otp-digits-only-radix`](https://reui-unbound.pages.dev/?preview=input-otp-digits-only-radix)
+- [`input-otp-multiple-separators-radix`](https://reui-unbound.pages.dev/?preview=input-otp-multiple-separators-radix)
+- [`input-otp-letters-numbers-radix`](https://reui-unbound.pages.dev/?preview=input-otp-letters-numbers-radix)
+- [`input-otp-pin-code-radix`](https://reui-unbound.pages.dev/?preview=input-otp-pin-code-radix)
+- [`input-otp-verification-card-radix`](https://reui-unbound.pages.dev/?preview=input-otp-verification-card-radix)
+
+
 
 ## Install
 

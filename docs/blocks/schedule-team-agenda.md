@@ -6,9 +6,11 @@ category: Schedule
 
 # Team Agenda
 
+Team Agenda schedule block.
+
 **Block:** `schedule-team-agenda` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-team-agenda)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=schedule-team-agenda)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ScheduleTeamAgendaBlock />
 }
 ```
+
+## More in Schedule
+
+- [Appointment Planner](./schedule-appointment-planner.md)
+- [Booking Page](./schedule-booking-page.md)
+- [Create Schedule](./schedule-create-schedule.md)
+- [Due Date Picker](./schedule-due-date-picker.md)
+- [Meeting Scheduler](./schedule-meeting-scheduler.md)
+- [Session Booking](./schedule-session-booking.md)
 
 ## Files
 

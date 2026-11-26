@@ -7,14 +7,21 @@ description: Date and range selection built on a calendar popover.
 
 Date and range selection built on a calendar popover.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`date-selector-radix`](https://reui-unbound.pages.dev/?preview=date-selector-radix)
-- **Radix** — [`date-selector-standard-inline-radix`](https://reui-unbound.pages.dev/?preview=date-selector-standard-inline-radix)
-- **Radix** — [`date-selector-popover-radix`](https://reui-unbound.pages.dev/?preview=date-selector-popover-radix)
-- **Radix** — [`date-selector-dialog-radix`](https://reui-unbound.pages.dev/?preview=date-selector-dialog-radix)
-- **Radix** — [`date-selector-language-menu-radix`](https://reui-unbound.pages.dev/?preview=date-selector-language-menu-radix)
-- **Base** — [`date-selector-base`](https://reui-unbound.pages.dev/?preview=date-selector-base)
+### Radix (5)
+
+- [`date-selector-radix`](https://reui-unbound.pages.dev/?preview=date-selector-radix)
+- [`date-selector-standard-inline-radix`](https://reui-unbound.pages.dev/?preview=date-selector-standard-inline-radix)
+- [`date-selector-popover-radix`](https://reui-unbound.pages.dev/?preview=date-selector-popover-radix)
+- [`date-selector-dialog-radix`](https://reui-unbound.pages.dev/?preview=date-selector-dialog-radix)
+- [`date-selector-language-menu-radix`](https://reui-unbound.pages.dev/?preview=date-selector-language-menu-radix)
+
+### Base (1)
+
+- [`date-selector-base`](https://reui-unbound.pages.dev/?preview=date-selector-base)
 
 ## Install
 

@@ -6,9 +6,11 @@ category: List
 
 # Recent Investments
 
+Recent Investments list block.
+
 **Block:** `list-recent-investments` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-recent-investments)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=list-recent-investments)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ListRecentInvestmentsBlock />
 }
 ```
+
+## More in List
+
+- [Capability Modules](./list-capability-modules.md)
+- [Capital Inflows](./list-capital-inflows.md)
+- [Crypto Activity Feed](./list-crypto-activity-feed.md)
+- [Crypto Portfolio](./list-crypto-portfolio.md)
+- [Fund Leaderboard](./list-fund-leaderboard.md)
+- [Integrations Directory](./list-integrations-directory.md)
 
 ## Files
 

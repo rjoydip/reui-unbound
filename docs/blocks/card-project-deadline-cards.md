@@ -6,9 +6,11 @@ category: Card
 
 # Project Deadline Cards
 
+Project Deadline Cards card block.
+
 **Block:** `card-project-deadline-cards` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-project-deadline-cards)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-project-deadline-cards)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardProjectDeadlineCardsBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
 
 ## Files
 

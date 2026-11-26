@@ -6,9 +6,11 @@ category: Columns
 
 # Work Queue
 
+Work Queue data grid block.
+
 **Block:** `data-grid-columns-work-queue` · **Category:** Columns
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-3)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-3)
 
 ## Install
 
@@ -25,6 +27,13 @@ export default function Page() {
   return <WorkQueueBlock />
 }
 ```
+
+## More in Columns
+
+- [Companies](./data-grid-columns-companies.md)
+- [Course Catalog](./data-grid-columns-course-catalog.md)
+- [Members](./data-grid-columns-members.md)
+- [Workspace Access Review](./data-grid-columns-workspace-access-review.md)
 
 ## Files
 

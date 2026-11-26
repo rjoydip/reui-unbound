@@ -7,23 +7,29 @@ description: Toggle component with live previews.
 
 Toggle component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`toggle-radix`](https://reui-unbound.pages.dev/?preview=toggle-radix)
-- **Radix** — [`toggle-standard-radix`](https://reui-unbound.pages.dev/?preview=toggle-standard-radix)
-- **Radix** — [`toggle-outline-radix`](https://reui-unbound.pages.dev/?preview=toggle-outline-radix)
-- **Radix** — [`toggle-text-sizes-radix`](https://reui-unbound.pages.dev/?preview=toggle-text-sizes-radix)
-- **Radix** — [`toggle-button-comparison-radix`](https://reui-unbound.pages.dev/?preview=toggle-button-comparison-radix)
-- **Radix** — [`toggle-disabled-text-radix`](https://reui-unbound.pages.dev/?preview=toggle-disabled-text-radix)
-- **Radix** — [`toggle-icon-label-radix`](https://reui-unbound.pages.dev/?preview=toggle-icon-label-radix)
-- **Radix** — [`toggle-count-badge-radix`](https://reui-unbound.pages.dev/?preview=toggle-count-badge-radix)
-- **Radix** — [`toggle-icon-sizes-radix`](https://reui-unbound.pages.dev/?preview=toggle-icon-sizes-radix)
-- **Radix** — [`toggle-icon-swap-radix`](https://reui-unbound.pages.dev/?preview=toggle-icon-swap-radix)
-- **Radix** — [`toggle-label-swap-radix`](https://reui-unbound.pages.dev/?preview=toggle-label-swap-radix)
-- **Radix** — [`toggle-reactions-radix`](https://reui-unbound.pages.dev/?preview=toggle-reactions-radix)
-- **Radix** — [`toggle-tooltip-radix`](https://reui-unbound.pages.dev/?preview=toggle-tooltip-radix)
-- **Radix** — [`toggle-disabled-icons-radix`](https://reui-unbound.pages.dev/?preview=toggle-disabled-icons-radix)
-- **Radix** — [`toggle-mute-button-radix`](https://reui-unbound.pages.dev/?preview=toggle-mute-button-radix)
+### Radix (15)
+
+- [`toggle-radix`](https://reui-unbound.pages.dev/?preview=toggle-radix)
+- [`toggle-standard-radix`](https://reui-unbound.pages.dev/?preview=toggle-standard-radix)
+- [`toggle-outline-radix`](https://reui-unbound.pages.dev/?preview=toggle-outline-radix)
+- [`toggle-text-sizes-radix`](https://reui-unbound.pages.dev/?preview=toggle-text-sizes-radix)
+- [`toggle-button-comparison-radix`](https://reui-unbound.pages.dev/?preview=toggle-button-comparison-radix)
+- [`toggle-disabled-text-radix`](https://reui-unbound.pages.dev/?preview=toggle-disabled-text-radix)
+- [`toggle-icon-label-radix`](https://reui-unbound.pages.dev/?preview=toggle-icon-label-radix)
+- [`toggle-count-badge-radix`](https://reui-unbound.pages.dev/?preview=toggle-count-badge-radix)
+- [`toggle-icon-sizes-radix`](https://reui-unbound.pages.dev/?preview=toggle-icon-sizes-radix)
+- [`toggle-icon-swap-radix`](https://reui-unbound.pages.dev/?preview=toggle-icon-swap-radix)
+- [`toggle-label-swap-radix`](https://reui-unbound.pages.dev/?preview=toggle-label-swap-radix)
+- [`toggle-reactions-radix`](https://reui-unbound.pages.dev/?preview=toggle-reactions-radix)
+- [`toggle-tooltip-radix`](https://reui-unbound.pages.dev/?preview=toggle-tooltip-radix)
+- [`toggle-disabled-icons-radix`](https://reui-unbound.pages.dev/?preview=toggle-disabled-icons-radix)
+- [`toggle-mute-button-radix`](https://reui-unbound.pages.dev/?preview=toggle-mute-button-radix)
+
+
 
 ## Install
 

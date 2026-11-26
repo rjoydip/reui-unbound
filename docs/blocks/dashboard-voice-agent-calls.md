@@ -6,9 +6,11 @@ category: Dashboard
 
 # Voice Agent Calls
 
+Voice Agent Calls dashboard block.
+
 **Block:** `dashboard-voice-agent-calls` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-voice-agent-calls)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-voice-agent-calls)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DashboardVoiceAgentCallsBlock />
 }
 ```
+
+## More in Dashboard
+
+- [Edge Security Telemetry](./dashboard-edge-security-telemetry.md)
+- [Fulfillment Exceptions](./dashboard-fulfillment-exceptions.md)
+- [Module Tracker](./dashboard-module-tracker.md)
+- [Retail Revenue](./dashboard-retail-revenue.md)
+- [Royalty Payouts](./dashboard-royalty-payouts.md)
+- [Workforce Coverage](./dashboard-workforce-coverage.md)
 
 ## Files
 

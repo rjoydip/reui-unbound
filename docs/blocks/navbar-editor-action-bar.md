@@ -6,9 +6,11 @@ category: Navbar
 
 # Editor Action Bar
 
+Editor Action Bar navbar block.
+
 **Block:** `navbar-editor-action-bar` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-editor-action-bar)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=navbar-editor-action-bar)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <NavbarEditorActionBarBlock />
 }
 ```
+
+## More in Navbar
+
+- [Admin Command Search](./navbar-admin-command-search.md)
+- [Agent Marketplace](./navbar-agent-marketplace.md)
+- [Analytics Toolbar](./navbar-analytics-toolbar.md)
+- [API Developer Portal](./navbar-api-developer-portal.md)
+- [CMS Publish Bar](./navbar-cms-publish-bar.md)
+- [Design System Manager](./navbar-design-system-manager.md)
 
 ## Files
 

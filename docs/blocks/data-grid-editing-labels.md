@@ -6,9 +6,11 @@ category: Editing
 
 # Labels
 
+Labels data grid block.
+
 **Block:** `data-grid-editing-labels` · **Category:** Editing
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-1)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-1)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <LabelManagerBlock />
 }
 ```
+
+## More in Editing
+
+- [Launch Runbook](./data-grid-editing-launch-runbook.md)
+- [Plans](./data-grid-editing-plans.md)
+- [Product Inventory](./data-grid-editing-product-inventory.md)
+- [Project Intake](./data-grid-editing-project-intake.md)
+- [Reorder Plan](./data-grid-editing-reorder-plan.md)
 
 ## Files
 

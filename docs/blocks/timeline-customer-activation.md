@@ -6,9 +6,11 @@ category: Timeline
 
 # Customer Activation
 
+Customer Activation timeline block.
+
 **Block:** `timeline-customer-activation` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-customer-activation)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=timeline-customer-activation)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <TimelineCustomerActivationBlock />
 }
 ```
+
+## More in Timeline
+
+- [Account Rollout](./timeline-account-rollout.md)
+- [Activity Dropdown](./timeline-activity-dropdown.md)
+- [Approval Workflow](./timeline-approval-workflow.md)
+- [Finance Activity](./timeline-finance-activity.md)
+- [Finance Activity Sheet](./timeline-finance-activity-sheet.md)
+- [Release Changelog](./timeline-release-changelog.md)
 
 ## Files
 

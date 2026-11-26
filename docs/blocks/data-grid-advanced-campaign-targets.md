@@ -6,9 +6,11 @@ category: Advanced
 
 # Campaign Targets
 
+Campaign Targets data grid block.
+
 **Block:** `data-grid-advanced-campaign-targets` · **Category:** Advanced
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-3)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-3)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CampaignTargetReviewBlock />
 }
 ```
+
+## More in Advanced
+
+- [Campaign Performance](./data-grid-advanced-campaign-performance.md)
+- [Factory Scorecard](./data-grid-advanced-factory-scorecard.md)
+- [Fourplex Pro Forma](./data-grid-advanced-fourplex-pro-forma.md)
+- [Freight & Cargo Services](./data-grid-advanced-freight-cargo-services.md)
+- [HR Scorecard](./data-grid-advanced-hr-scorecard.md)
+- [Invoices](./data-grid-advanced-invoices.md)
 
 ## Files
 

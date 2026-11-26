@@ -6,9 +6,11 @@ category: Virtualization
 
 # Transactions
 
+Transactions data grid block.
+
 **Block:** `data-grid-virtualization-transactions` · **Category:** Virtualization
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-virtualization-1)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-virtualization-1)
 
 ## Install
 
@@ -25,6 +27,10 @@ export default function Page() {
   return <TransactionsVirtualizedBlock />
 }
 ```
+
+## More in Virtualization
+
+- [Exception Queue](./data-grid-virtualization-exception-queue.md)
 
 ## Files
 

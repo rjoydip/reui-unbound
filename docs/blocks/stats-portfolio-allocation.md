@@ -6,9 +6,11 @@ category: Stats
 
 # Portfolio Allocation
 
+Portfolio Allocation stats block.
+
 **Block:** `stats-portfolio-allocation` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-portfolio-allocation)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=stats-portfolio-allocation)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <StatsPortfolioAllocationBlock />
 }
 ```
+
+## More in Stats
+
+- [Adoption Rate](./stats-adoption-rate.md)
+- [Analytics Overview](./stats-analytics-overview.md)
+- [API Quota Usage](./stats-api-quota-usage.md)
+- [Capacity Usage](./stats-capacity-usage.md)
+- [Compliance Checks](./stats-compliance-checks.md)
+- [KPI Callouts](./stats-kpi-callouts.md)
 
 ## Files
 

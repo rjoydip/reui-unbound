@@ -6,9 +6,11 @@ category: Gantt
 
 # Project Timeline
 
+Project Timeline gantt block.
+
 **Block:** `gantt-project-timeline` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-project-timeline)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=gantt-project-timeline)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <GanttProjectTimelineBlock />
 }
 ```
+
+## More in Gantt
+
+- [Agent Playbook](./gantt-agent-playbook.md)
+- [Resource Capacity](./gantt-resource-capacity.md)
+- [Technician Dispatch](./gantt-technician-dispatch.md)
 
 ## Files
 

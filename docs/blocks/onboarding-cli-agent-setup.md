@@ -6,9 +6,11 @@ category: Onboarding
 
 # CLI Agent Setup
 
+CLI Agent Setup onboarding block.
+
 **Block:** `onboarding-cli-agent-setup` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-cli-agent-setup)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-cli-agent-setup)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <OnboardingCliAgentSetupBlock />
 }
 ```
+
+## More in Onboarding
+
+- [Agent & API Setup](./onboarding-agent-api-setup.md)
+- [Centered Setup Flow](./onboarding-centered-setup-flow.md)
+- [Live Preview Wizard](./onboarding-live-preview-wizard.md)
+- [Marketing Hero Signup](./onboarding-marketing-hero-signup.md)
+- [Onboarding Dialog](./onboarding-onboarding-dialog.md)
+- [Screenshot Carousel Setup](./onboarding-screenshot-carousel-setup.md)
 
 ## Files
 

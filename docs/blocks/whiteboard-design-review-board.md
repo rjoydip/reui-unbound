@@ -6,9 +6,11 @@ category: Whiteboard
 
 # Design Review Board
 
+Design Review Board whiteboard block.
+
 **Block:** `whiteboard-design-review-board` · **Category:** Whiteboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=whiteboard-design-review-board)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=whiteboard-design-review-board)
 
 ## Install
 
@@ -25,6 +27,10 @@ export default function Page() {
   return <WhiteboardDesignReviewBoardBlock />
 }
 ```
+
+## More in Whiteboard
+
+- [Sprint Planning Board](./whiteboard-sprint-planning-board.md)
 
 ## Files
 

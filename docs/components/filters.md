@@ -7,22 +7,29 @@ description: Filter builder with fields, operators, chips and query serializatio
 
 Filter builder with fields, operators, chips and query serialization.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`filters-radix`](https://reui-unbound.pages.dev/?preview=filters-radix)
-- **Radix** — [`filters-full-filter-bar-radix`](https://reui-unbound.pages.dev/?preview=filters-full-filter-bar-radix)
-- **Radix** — [`filters-nested-attributes-radix`](https://reui-unbound.pages.dev/?preview=filters-nested-attributes-radix)
-- **Radix** — [`filters-status-badges-radix`](https://reui-unbound.pages.dev/?preview=filters-status-badges-radix)
-- **Radix** — [`filters-avatars-paging-radix`](https://reui-unbound.pages.dev/?preview=filters-avatars-paging-radix)
-- **Radix** — [`filters-date-editors-radix`](https://reui-unbound.pages.dev/?preview=filters-date-editors-radix)
-- **Radix** — [`filters-slider-editor-radix`](https://reui-unbound.pages.dev/?preview=filters-slider-editor-radix)
-- **Radix** — [`filters-table-filtering-radix`](https://reui-unbound.pages.dev/?preview=filters-table-filtering-radix)
-- **Radix** — [`filters-choice-controls-radix`](https://reui-unbound.pages.dev/?preview=filters-choice-controls-radix)
-- **Radix** — [`filters-typed-inputs-radix`](https://reui-unbound.pages.dev/?preview=filters-typed-inputs-radix)
-- **Radix** — [`filters-popover-builder-radix`](https://reui-unbound.pages.dev/?preview=filters-popover-builder-radix)
-- **Radix** — [`filters-inline-builder-radix`](https://reui-unbound.pages.dev/?preview=filters-inline-builder-radix)
-- **Radix** — [`filters-controlled-translated-radix`](https://reui-unbound.pages.dev/?preview=filters-controlled-translated-radix)
-- **Base** — [`filters-base`](https://reui-unbound.pages.dev/?preview=filters-base)
+### Radix (13)
+
+- [`filters-radix`](https://reui-unbound.pages.dev/?preview=filters-radix)
+- [`filters-full-filter-bar-radix`](https://reui-unbound.pages.dev/?preview=filters-full-filter-bar-radix)
+- [`filters-nested-attributes-radix`](https://reui-unbound.pages.dev/?preview=filters-nested-attributes-radix)
+- [`filters-status-badges-radix`](https://reui-unbound.pages.dev/?preview=filters-status-badges-radix)
+- [`filters-avatars-paging-radix`](https://reui-unbound.pages.dev/?preview=filters-avatars-paging-radix)
+- [`filters-date-editors-radix`](https://reui-unbound.pages.dev/?preview=filters-date-editors-radix)
+- [`filters-slider-editor-radix`](https://reui-unbound.pages.dev/?preview=filters-slider-editor-radix)
+- [`filters-table-filtering-radix`](https://reui-unbound.pages.dev/?preview=filters-table-filtering-radix)
+- [`filters-choice-controls-radix`](https://reui-unbound.pages.dev/?preview=filters-choice-controls-radix)
+- [`filters-typed-inputs-radix`](https://reui-unbound.pages.dev/?preview=filters-typed-inputs-radix)
+- [`filters-popover-builder-radix`](https://reui-unbound.pages.dev/?preview=filters-popover-builder-radix)
+- [`filters-inline-builder-radix`](https://reui-unbound.pages.dev/?preview=filters-inline-builder-radix)
+- [`filters-controlled-translated-radix`](https://reui-unbound.pages.dev/?preview=filters-controlled-translated-radix)
+
+### Base (1)
+
+- [`filters-base`](https://reui-unbound.pages.dev/?preview=filters-base)
 
 ## Install
 

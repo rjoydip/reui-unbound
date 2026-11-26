@@ -6,9 +6,11 @@ category: Gantt
 
 # Agent Playbook
 
+Agent Playbook gantt block.
+
 **Block:** `gantt-agent-playbook` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-agent-playbook)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=gantt-agent-playbook)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <GanttAgentPlaybookBlock />
 }
 ```
+
+## More in Gantt
+
+- [Project Timeline](./gantt-project-timeline.md)
+- [Resource Capacity](./gantt-resource-capacity.md)
+- [Technician Dispatch](./gantt-technician-dispatch.md)
 
 ## Files
 

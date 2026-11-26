@@ -6,9 +6,11 @@ category: Flow
 
 # Automation Builder
 
+Automation Builder flow block.
+
 **Block:** `flow-automation-builder` · **Category:** Flow
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=flow-automation-builder)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=flow-automation-builder)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <FlowAutomationBuilderBlock />
 }
 ```
+
+## More in Flow
+
+- [AI Agent Builder](./flow-ai-agent-builder.md)
+- [Growth Impact Map](./flow-growth-impact-map.md)
+- [Pipeline Run Monitor](./flow-pipeline-run-monitor.md)
 
 ## Files
 

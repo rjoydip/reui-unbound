@@ -6,9 +6,11 @@ category: Kanban Board
 
 # Progress Ring Workflow
 
+Progress Ring Workflow kanban-board block.
+
 **Block:** `kanban-board-progress-ring-workflow` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-progress-ring-workflow)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-progress-ring-workflow)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <KanbanBoardProgressRingWorkflowBlock />
 }
 ```
+
+## More in Kanban Board
+
+- [Access Review](./kanban-board-access-review.md)
+- [Bug Triage](./kanban-board-bug-triage.md)
+- [Collapsible Columns](./kanban-board-collapsible-columns.md)
+- [Feature Roadmap Votes](./kanban-board-feature-roadmap-votes.md)
+- [Recruiting Pipeline](./kanban-board-recruiting-pipeline.md)
+- [Release Readiness](./kanban-board-release-readiness.md)
 
 ## Files
 

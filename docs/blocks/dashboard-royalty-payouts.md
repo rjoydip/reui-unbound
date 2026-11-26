@@ -6,9 +6,11 @@ category: Dashboard
 
 # Royalty Payouts
 
+Royalty Payouts dashboard block.
+
 **Block:** `dashboard-royalty-payouts` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-royalty-payouts)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-royalty-payouts)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DashboardRoyaltyPayoutsBlock />
 }
 ```
+
+## More in Dashboard
+
+- [Edge Security Telemetry](./dashboard-edge-security-telemetry.md)
+- [Fulfillment Exceptions](./dashboard-fulfillment-exceptions.md)
+- [Module Tracker](./dashboard-module-tracker.md)
+- [Retail Revenue](./dashboard-retail-revenue.md)
+- [Voice Agent Calls](./dashboard-voice-agent-calls.md)
+- [Workforce Coverage](./dashboard-workforce-coverage.md)
 
 ## Files
 

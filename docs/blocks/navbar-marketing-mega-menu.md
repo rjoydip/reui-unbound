@@ -6,9 +6,11 @@ category: Navbar
 
 # Marketing Mega Menu
 
+Marketing Mega Menu navbar block.
+
 **Block:** `navbar-marketing-mega-menu` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-marketing-mega-menu)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=navbar-marketing-mega-menu)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <NavbarMarketingMegaMenuBlock />
 }
 ```
+
+## More in Navbar
+
+- [Admin Command Search](./navbar-admin-command-search.md)
+- [Agent Marketplace](./navbar-agent-marketplace.md)
+- [Analytics Toolbar](./navbar-analytics-toolbar.md)
+- [API Developer Portal](./navbar-api-developer-portal.md)
+- [CMS Publish Bar](./navbar-cms-publish-bar.md)
+- [Design System Manager](./navbar-design-system-manager.md)
 
 ## Files
 

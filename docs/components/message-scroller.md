@@ -7,15 +7,21 @@ description: Message Scroller component with live previews.
 
 Message Scroller component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`message-scroller-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-radix)
-- **Radix** — [`message-scroller-jump-to-latest-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-jump-to-latest-radix)
-- **Radix** — [`message-scroller-streaming-reply-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-streaming-reply-radix)
-- **Radix** — [`message-scroller-anchored-turn-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-anchored-turn-radix)
-- **Radix** — [`message-scroller-opening-position-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-opening-position-radix)
-- **Radix** — [`message-scroller-load-earlier-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-load-earlier-radix)
-- **Radix** — [`message-scroller-thread-navigator-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-thread-navigator-radix)
+### Radix (7)
+
+- [`message-scroller-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-radix)
+- [`message-scroller-jump-to-latest-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-jump-to-latest-radix)
+- [`message-scroller-streaming-reply-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-streaming-reply-radix)
+- [`message-scroller-anchored-turn-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-anchored-turn-radix)
+- [`message-scroller-opening-position-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-opening-position-radix)
+- [`message-scroller-load-earlier-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-load-earlier-radix)
+- [`message-scroller-thread-navigator-radix`](https://reui-unbound.pages.dev/?preview=message-scroller-thread-navigator-radix)
+
+
 
 ## Install
 

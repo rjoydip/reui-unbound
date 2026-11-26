@@ -6,9 +6,11 @@ category: Timeline
 
 # Release Changelog
 
+Release Changelog timeline block.
+
 **Block:** `timeline-release-changelog` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-release-changelog)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=timeline-release-changelog)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <TimelineReleaseChangelogBlock />
 }
 ```
+
+## More in Timeline
+
+- [Account Rollout](./timeline-account-rollout.md)
+- [Activity Dropdown](./timeline-activity-dropdown.md)
+- [Approval Workflow](./timeline-approval-workflow.md)
+- [Customer Activation](./timeline-customer-activation.md)
+- [Finance Activity](./timeline-finance-activity.md)
+- [Finance Activity Sheet](./timeline-finance-activity-sheet.md)
 
 ## Files
 

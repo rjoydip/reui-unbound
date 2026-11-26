@@ -6,9 +6,11 @@ category: Columns
 
 # Course Catalog
 
+Course Catalog data grid block.
+
 **Block:** `data-grid-columns-course-catalog` · **Category:** Columns
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-2)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-columns-2)
 
 ## Install
 
@@ -25,6 +27,13 @@ export default function Page() {
   return <CourseCatalogBlock />
 }
 ```
+
+## More in Columns
+
+- [Companies](./data-grid-columns-companies.md)
+- [Members](./data-grid-columns-members.md)
+- [Work Queue](./data-grid-columns-work-queue.md)
+- [Workspace Access Review](./data-grid-columns-workspace-access-review.md)
 
 ## Files
 
