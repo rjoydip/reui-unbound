@@ -24,7 +24,7 @@ Captured previews (gitignored) live in `captures/application`:
 - Captured: ✅ 305 / 305
 - Implemented: ✅ 305 / 305
 - Data grid blocks: ✅ 61 / 61
-- Component categories: ✅ 87 / 87 (1265 previews)
+- Component categories: ✅ 87 / 87 (1365 previews)
 
 | Status | Category | Blocks | Implemented |
 | :---: | --- | ---: | ---: |
@@ -540,7 +540,7 @@ Captured previews (gitignored) live in `captures/application`:
 
 ## Components
 
-✅ 87 categories · 1265 previews. Full breakdown: [component coverage](./component-coverage.md).
+✅ 87 categories · 1365 previews. Full breakdown: [component coverage](./component-coverage.md).
 
 ## Workflow
 

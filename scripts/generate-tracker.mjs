@@ -3,6 +3,8 @@
 import fs from "node:fs"
 import path from "node:path"
 
+import { componentCatalog } from "./lib/component-catalog.mjs"
+
 const root = process.cwd()
 const manifest = JSON.parse(
   fs.readFileSync(path.join(root, "src/blocks/application/~manifest.json"), "utf8"),
@@ -68,18 +70,19 @@ const dataGridRows = dataGridBlocks.map(
     `| ${STATUS.supported} | ${item.title} | \`${item.meta?.id}\` | [docs](./blocks/${item.name}.md) | [preview](https://reui-unbound.pages.dev/?preview=${item.meta?.id}) | ${item.meta?.category} |`,
 )
 
-const componentRegistryPath = path.join(root, "src/blocks/components/registry.json")
-const componentRegistry = fs.existsSync(componentRegistryPath)
-  ? JSON.parse(fs.readFileSync(componentRegistryPath, "utf8"))
-  : { items: [] }
+const catalog = componentCatalog(root)
 const componentCounts = new Map()
-for (const item of componentRegistry.items ?? []) {
-  const filePath = item.files?.[0]?.path ?? ""
-  const component = filePath.split("/")[1]
-  if (!component) continue
-  const entry = componentCounts.get(component)
-  if (entry) entry.count += 1
-  else componentCounts.set(component, { count: 1, preview: `${item.name}-radix` })
+for (const entry of catalog) {
+  const label = entry.label ?? entry.name
+  if (!label) continue
+  const slug = kebab(label)
+  const current = componentCounts.get(slug)
+  if (current) current.count += 1
+  else
+    componentCounts.set(slug, {
+      count: 1,
+      preview: entry.id ?? `${entry.name}-radix`,
+    })
 }
 const componentName = (slug) =>
   slug

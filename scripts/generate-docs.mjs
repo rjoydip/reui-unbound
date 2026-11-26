@@ -1,6 +1,8 @@
 import fs from "node:fs"
 import path from "node:path"
 
+import { componentCatalog, quotedFields } from "./lib/component-catalog.mjs"
+
 const root = process.cwd()
 const read = (file) => fs.readFileSync(path.join(root, file), "utf8")
 const exists = (file) => fs.existsSync(path.join(root, file))
@@ -17,24 +19,9 @@ const catalogSource = read("src/blocks/components/~catalog/catalog.tsx").replace
 const uiCatalogSource = read("src/blocks/components/~catalog/ui-catalog.tsx").replace(/\r\n/g, "\n")
 const sidebarSource = read("src/components/~app/catalog-sidebar.tsx")
 
-function quotedFields(block) {
-  return Object.fromEntries(
-    [...block.matchAll(/(\w+):\s*"([^"]*)"/g)].map((match) => [
-      match[1],
-      match[2],
-    ]),
-  )
-}
-
-const reuiEntries = [
-  ...catalogSource.matchAll(
-    /componentEntry\(\{\n    flavor: "[\s\S]*?\n  \}\),/g,
-  ),
-].map((match) => quotedFields(match[0]))
-
-const uiEntries = [
-  ...uiCatalogSource.matchAll(/uiEntry\(\{\n    name: "[\s\S]*?\n  \}\),/g),
-].map((match) => quotedFields(match[0]))
+const catalogEntries = componentCatalog(root)
+const reuiEntries = catalogEntries.filter((entry) => entry.kind === "reui")
+const uiEntries = catalogEntries.filter((entry) => entry.kind === "ui")
 
 function previewSources(catalogSource) {
   const raw = new Map()
