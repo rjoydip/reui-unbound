@@ -127,7 +127,7 @@ function listFiles(dir) {
 const blocksSource = read("src/blocks/~internal/registry.tsx").replace(/\r\n/g, "\n")
 const rawImports = new Map()
 for (const match of blocksSource.matchAll(
-  /import\s+(\w+)\s+from\s+"(@\/blocks\/[^"?]+)\?raw"/g,
+  /const\s+(\w+)\s+=\s+sourceLoader\(\(\)\s+=>\s+import\("(@\/blocks\/[^"?]+)\?raw"\)\)/g,
 )) {
   rawImports.set(match[1], match[2].replace("@/blocks/", ""))
 }
@@ -258,7 +258,7 @@ for (const catalogFile of [
   const catalogSource = read(catalogFile).replace(/\r\n/g, "\n")
   const rawImports = new Map()
   for (const match of catalogSource.matchAll(
-    /import\s+(\w+)\s+from\s+"\.\.?\/(?:radix|base)\/([^"?]+)\?raw"/g,
+    /const\s+(\w+)\s+=\s+sourceLoader\(\(\)\s+=>\s+import\("\.\.?\/(?:radix|base)\/([^"?]+)\?raw"\)\)/g,
   )) {
     rawImports.set(match[1], match[2])
   }

@@ -1,860 +1,856 @@
+import { blockFile as file, lazyComponent, sourceLoader } from "@/blocks/~internal/lazy"
+import type { SourceLoader } from "@/blocks/~internal/lazy"
 import { BLOCKS } from "@/blocks/~internal/registry"
 import { UI_COMPONENT_ENTRIES } from "./ui-catalog"
 import type { BlockEntry, BlockFile } from "@/blocks/~internal/registry"
 import baseRegistry from "@/components/kit/base/registry.json"
 import reuiRegistry from "@/components/kit/registry.json"
 
-import RadixAlertTitleDescriptionPreview from "../radix/alert/title-description"
-import RadixAlertLeadingIconPreview from "../radix/alert/leading-icon"
-import RadixAlertIconActionsPreview from "../radix/alert/icon-actions"
-import RadixAlertPaymentFailurePreview from "../radix/alert/payment-failure"
-import RadixAlertInfoVariantPreview from "../radix/alert/info-variant"
-import RadixAlertSuccessVariantPreview from "../radix/alert/success-variant"
-import RadixAlertWarningVariantPreview from "../radix/alert/warning-variant"
-import RadixAlertErrorVariantPreview from "../radix/alert/error-variant"
-import RadixAlertInvertVariantPreview from "../radix/alert/invert-variant"
-import RadixAlertTitleActionsPreview from "../radix/alert/title-actions"
-import RadixAlertDescriptionActionsPreview from "../radix/alert/description-actions"
-import RadixAlertFrameResetBordersPreview from "../radix/alert/frame-reset-borders"
-import RadixAlertStackedInFramePreview from "../radix/alert/stacked-in-frame"
-import RadixAlertFrameWithActionsPreview from "../radix/alert/frame-with-actions"
-import RadixAlertProUpsellPreview from "../radix/alert/pro-upsell"
-import RadixAlertUrgentBillingPreview from "../radix/alert/urgent-billing"
-import RadixAlertServiceStatusPreview from "../radix/alert/service-status"
-import RadixAlertFeatureDiscoveryPreview from "../radix/alert/feature-discovery"
-import RadixAlertDirectMessagePreview from "../radix/alert/direct-message"
-import RadixAlertCommentMentionPreview from "../radix/alert/comment-mention"
-import RadixAutocompleteStandardPreview from "../radix/autocomplete/standard"
-import RadixAutocompleteDisabledPreview from "../radix/autocomplete/disabled"
-import RadixAutocompleteAutoHighlightPreview from "../radix/autocomplete/auto-highlight"
-import RadixAutocompleteLabeledPreview from "../radix/autocomplete/labeled"
-import RadixAutocompleteClearButtonPreview from "../radix/autocomplete/clear-button"
-import RadixAutocompleteTriggerButtonPreview from "../radix/autocomplete/trigger-button"
-import RadixAutocompleteClearTriggerPreview from "../radix/autocomplete/clear-trigger"
-import RadixAutocompleteGroupsLabelsPreview from "../radix/autocomplete/groups-labels"
-import RadixAutocompleteSearchResultsPreview from "../radix/autocomplete/search-results"
-import RadixAutocompleteSmallPreview from "../radix/autocomplete/small"
-import RadixAutocompleteLargePreview from "../radix/autocomplete/large"
-import RadixAutocompleteFormIntegrationPreview from "../radix/autocomplete/form-integration"
-import RadixBadgePrimaryPreview from "../radix/badge/primary"
-import RadixBadgeSecondaryPreview from "../radix/badge/secondary"
-import RadixBadgeDestructivePreview from "../radix/badge/destructive"
-import RadixBadgeSuccessPreview from "../radix/badge/success"
-import RadixBadgeInfoPreview from "../radix/badge/info"
-import RadixBadgeWarningPreview from "../radix/badge/warning"
-import RadixBadgeOutlinePreview from "../radix/badge/outline"
-import RadixBadgePrimaryOutlinePreview from "../radix/badge/primary-outline"
-import RadixBadgeDestructiveOutlinePreview from "../radix/badge/destructive-outline"
-import RadixBadgeInfoOutlinePreview from "../radix/badge/info-outline"
-import RadixBadgeSuccessOutlinePreview from "../radix/badge/success-outline"
-import RadixBadgeWarningOutlinePreview from "../radix/badge/warning-outline"
-import RadixBadgePrimaryLightPreview from "../radix/badge/primary-light"
-import RadixBadgeDestructiveLightPreview from "../radix/badge/destructive-light"
-import RadixBadgeSuccessLightPreview from "../radix/badge/success-light"
-import RadixBadgeInfoLightPreview from "../radix/badge/info-light"
-import RadixBadgeWarningLightPreview from "../radix/badge/warning-light"
-import RadixBadgeSizesPreview from "../radix/badge/sizes"
-import RadixBadgeFullRadiusPreview from "../radix/badge/full-radius"
-import RadixBadgeWithIconPreview from "../radix/badge/with-icon"
-import RadixBadgeDismissButtonPreview from "../radix/badge/dismiss-button"
-import RadixBadgeStatusDotPreview from "../radix/badge/status-dot"
-import RadixBadgeAsLinkPreview from "../radix/badge/as-link"
-import RadixBadgeWithAvatarPreview from "../radix/badge/with-avatar"
-import RadixBadgeWithFlagPreview from "../radix/badge/with-flag"
-import RadixCascaderPreview from "../radix/cascader/default"
-import RadixCascaderAttributePickerPreview from "../radix/cascader/attribute-picker"
-import RadixCascaderMultiSelectCapPreview from "../radix/cascader/multi-select-cap"
-import RadixCascaderDeepSearchPreview from "../radix/cascader/deep-search"
-import RadixCascaderFooterFlyoutPreview from "../radix/cascader/footer-flyout"
-import RadixCascaderAvatarRowsPreview from "../radix/cascader/avatar-rows"
-import RadixCascaderPathFormattingPreview from "../radix/cascader/path-formatting"
-import RadixCascaderEmbeddedPanelPreview from "../radix/cascader/embedded-panel"
-import RadixCascaderFlatDataPreview from "../radix/cascader/flat-data"
-import RadixCascaderControlledStatePreview from "../radix/cascader/controlled-state"
-import RadixCascaderTranslatedLabelsPreview from "../radix/cascader/translated-labels"
-import RadixCascaderTwoLineRowsPreview from "../radix/cascader/two-line-rows"
-import RadixCascaderNativeFormFieldPreview from "../radix/cascader/native-form-field"
-import RadixCascaderColumnsModePreview from "../radix/cascader/columns-mode"
-import RadixCascaderTreeModePreview from "../radix/cascader/tree-mode"
-import RadixCascaderAsyncLoadingPreview from "../radix/cascader/async-loading"
-import RadixCascaderVirtualizedListPreview from "../radix/cascader/virtualized-list"
-import RadixCascaderRemovableChipsPreview from "../radix/cascader/removable-chips"
-import RadixCascaderTreeMultiSelectPreview from "../radix/cascader/tree-multi-select"
-import RadixCascaderColorDotsPreview from "../radix/cascader/color-dots"
-import RadixCascaderInheritedColorsPreview from "../radix/cascader/inherited-colors"
-import RadixCascaderGlobalSearchPreview from "../radix/cascader/global-search"
-import RadixCodeBlockPreview from "../radix/code-block/default"
-import CodeBlockStandardPreview from "../radix/code-block/standard"
-import CodeBlockPinnedCopyPreview from "../radix/code-block/pinned-copy"
-import CodeBlockStreamingAgentPreview from "../radix/code-block/streaming-agent"
-import CodeBlockAiChatPreview from "../radix/code-block/ai-chat"
-import CodeBlockDiffSummaryPreview from "../radix/code-block/diff-summary"
-import CodeBlockTransformerDiffPreview from "../radix/code-block/transformer-diff"
-import CodeBlockHighlightsPreview from "../radix/code-block/highlights"
-import CodeBlockFocusWalkthroughPreview from "../radix/code-block/focus-walkthrough"
-import CodeBlockTerminalOutputPreview from "../radix/code-block/terminal-output"
-import CodeBlockLongFilePreview from "../radix/code-block/long-file"
-import CodeBlockDiagnosticsActionsPreview from "../radix/code-block/diagnostics-actions"
-import CodeBlockLineSelectionPreview from "../radix/code-block/line-selection"
-import CodeBlockSearchInFilePreview from "../radix/code-block/search-in-file"
-import CodeBlockFileTabsPreview from "../radix/code-block/file-tabs"
-import CodeBlockPreHighlightedLinesPreview from "../radix/code-block/pre-highlighted-lines"
-import CodeBlockBeforeAfterPreview from "../radix/code-block/before-after"
-import CodeBlockSoftWrapPreview from "../radix/code-block/soft-wrap"
-import CodeBlockUnifiedPatchPreview from "../radix/code-block/unified-patch"
-import CodeBlockDesignTokenThemePreview from "../radix/code-block/design-token-theme"
-import CodeBlockAlwaysDarkPreview from "../radix/code-block/always-dark"
-import CodeBlockDarkTerminalPreview from "../radix/code-block/dark-terminal"
-import CodeBlockAcceptRejectPreview from "../radix/code-block/accept-reject"
-import CodeBlockCodeFoldingPreview from "../radix/code-block/code-folding"
-import CodeBlockFixWithAiPreview from "../radix/code-block/fix-with-ai"
-import CodeBlockReferenceLinesPreview from "../radix/code-block/reference-lines"
-import CodeBlockExternalScrollPreview from "../radix/code-block/external-scroll"
-import CodeBlockAnsiTerminalPreview from "../radix/code-block/ansi-terminal"
-import RadixColorPickerPreview from "../radix/color-picker/default"
-import RadixColorPickerInlinePanelPreview from "../radix/color-picker/inline-panel"
-import RadixColorPickerPopoverPreview from "../radix/color-picker/popover"
-import RadixColorPickerColorInputPreview from "../radix/color-picker/color-input"
-import RadixColorPickerOpacityPreview from "../radix/color-picker/opacity"
-import RadixColorPickerPresetSwatchesPreview from "../radix/color-picker/preset-swatches"
-import RadixColorPickerOklchTokenPreview from "../radix/color-picker/oklch-token"
-import RadixColorPickerFormatConverterPreview from "../radix/color-picker/format-converter"
-import RadixColorPickerHueWheelPreview from "../radix/color-picker/hue-wheel"
-import RadixColorPickerRecentColorsPreview from "../radix/color-picker/recent-colors"
-import RadixColorPickerTextHighlightPreview from "../radix/color-picker/text-highlight"
-import RadixColorPickerChannelSlidersPreview from "../radix/color-picker/channel-sliders"
-import RadixColorPickerDesignInspectorPreview from "../radix/color-picker/design-inspector"
-import RadixColorPickerContrastCheckerPreview from "../radix/color-picker/contrast-checker"
-import RadixColorPickerBrandScalePreview from "../radix/color-picker/brand-scale"
-import RadixColorPickerFormValidationPreview from "../radix/color-picker/form-validation"
-import RadixDataGridPreview from "../radix/data-grid/default"
-import RadixDataGridPaginationPreview from "../radix/data-grid/pagination"
-import RadixDataGridCellBordersPreview from "../radix/data-grid/cell-borders"
-import RadixDataGridDenseLayoutPreview from "../radix/data-grid/dense-layout"
-import RadixDataGridBorderlessPreview from "../radix/data-grid/borderless"
-import RadixDataGridStripedRowsPreview from "../radix/data-grid/striped-rows"
-import RadixDataGridAutoWidthPreview from "../radix/data-grid/auto-width"
-import RadixDataGridRowSelectionPreview from "../radix/data-grid/row-selection"
-import RadixDataGridExpandableRowsPreview from "../radix/data-grid/expandable-rows"
-import RadixDataGridSubTablePreview from "../radix/data-grid/sub-table"
-import RadixDataGridColumnIconsPreview from "../radix/data-grid/column-icons"
-import RadixDataGridSortableColumnsPreview from "../radix/data-grid/sortable-columns"
-import RadixDataGridMovableColumnsPreview from "../radix/data-grid/movable-columns"
-import RadixDataGridDraggableColumnsPreview from "../radix/data-grid/draggable-columns"
-import RadixDataGridDraggableRowsPreview from "../radix/data-grid/draggable-rows"
-import RadixDataGridColumnResizingPreview from "../radix/data-grid/column-resizing"
-import RadixDataGridPinnableColumnsPreview from "../radix/data-grid/pinnable-columns"
-import RadixDataGridStickyHeaderPreview from "../radix/data-grid/sticky-header"
-import RadixDataGridColumnControlsPreview from "../radix/data-grid/column-controls"
-import RadixDataGridCardContainerPreview from "../radix/data-grid/card-container"
-import RadixDataGridColumnVisibilityPreview from "../radix/data-grid/column-visibility"
-import RadixDataGridLoadingSkeletonPreview from "../radix/data-grid/loading-skeleton"
-import RadixDataGridCrudAdminPreview from "../radix/data-grid/crud-admin"
-import RadixDataGridCrudInFramePreview from "../radix/data-grid/crud-in-frame"
-import RadixDataGridTotalsFooterPreview from "../radix/data-grid/totals-footer"
-import RadixDataGridSummaryStatsFooterPreview from "../radix/data-grid/summary-stats-footer"
-import RadixDataGridAggregateFooterPreview from "../radix/data-grid/aggregate-footer"
-import RadixDataGridLocalInfiniteScrollPreview from "../radix/data-grid/local-infinite-scroll"
-import RadixDataGridRemoteInfiniteScrollPreview from "../radix/data-grid/remote-infinite-scroll"
-import RadixDataGridRowPinningPreview from "../radix/data-grid/row-pinning"
-import RadixDataGridTreeRowsPreview from "../radix/data-grid/tree-rows"
-import RadixDataGridSpreadsheetEditingPreview from "../radix/data-grid/spreadsheet-editing"
-import RadixDataGridColumnVirtualizationPreview from "../radix/data-grid/column-virtualization"
-import RadixDataGridLocalizedLabelsPreview from "../radix/data-grid/localized-labels"
-import RadixDataGridServerSidePaginationPreview from "../radix/data-grid/server-side-pagination"
-import RadixDateSelectorPreview from "../radix/date-selector/default"
-import RadixDateSelectorStandardInlinePreview from "../radix/date-selector/standard-inline"
-import RadixDateSelectorPopoverPreview from "../radix/date-selector/popover"
-import RadixDateSelectorDialogPreview from "../radix/date-selector/dialog"
-import RadixDateSelectorLanguageMenuPreview from "../radix/date-selector/language-menu"
-import RadixEmojiPickerPreview from "../radix/emoji-picker/default"
-import RadixEmojiPickerInlinePreview from "../radix/emoji-picker/inline"
-import RadixEmojiPickerChatComposerPreview from "../radix/emoji-picker/chat-composer"
-import RadixEmojiPickerMessageReactionsPreview from "../radix/emoji-picker/message-reactions"
-import RadixEmojiPickerPageIconPreview from "../radix/emoji-picker/page-icon"
-import RadixEmojiPickerCustomTeamEmojiPreview from "../radix/emoji-picker/custom-team-emoji"
-import RadixEmojiPickerShortcodeSuggestionsPreview from "../radix/emoji-picker/shortcode-suggestions"
-import RadixEmojiPickerWorkplaceSafeSetPreview from "../radix/emoji-picker/workplace-safe-set"
-import RadixEmojiPickerLocalizedLabelsPreview from "../radix/emoji-picker/localized-labels"
-import RadixEventCalendarPreview from "../radix/event-calendar/default"
-import RadixEventCalendarAllViewsPreview from "../radix/event-calendar/all-views"
-import RadixEventCalendarRoomBookingsPreview from "../radix/event-calendar/room-bookings"
-import RadixEventCalendarEventFormDialogPreview from "../radix/event-calendar/event-form-dialog"
-import RadixEventCalendarCustomEventChipsPreview from "../radix/event-calendar/custom-event-chips"
-import RadixEventCalendarDragToBookPreview from "../radix/event-calendar/drag-to-book"
-import RadixFileTypePreview from "../radix/file-type/default"
-import RadixFileTypeCommonFormatsPreview from "../radix/file-type/common-formats"
-import RadixFileTypeVariantsPreview from "../radix/file-type/variants"
-import RadixFileTypeSizesPreview from "../radix/file-type/sizes"
-import RadixFileTypeFamilyGlyphsPreview from "../radix/file-type/family-glyphs"
-import RadixFileTypeAllFormatsPreview from "../radix/file-type/all-formats"
-import RadixFileTypeFileBrowserPreview from "../radix/file-type/file-browser"
-import RadixFileTypeAttachmentListPreview from "../radix/file-type/attachment-list"
-import RadixFileTypeUploadQueuePreview from "../radix/file-type/upload-queue"
-import RadixFileTypeResolveFromNamePreview from "../radix/file-type/resolve-from-name"
-import RadixFileTypeCustomLabelsPreview from "../radix/file-type/custom-labels"
-import RadixFileTypeCustomColorsPreview from "../radix/file-type/custom-colors"
-import RadixFileTypeFormatPickerPreview from "../radix/file-type/format-picker"
-import RadixFileTypeLockedStarredPreview from "../radix/file-type/locked-starred"
-import RadixFileTypeRestyledLabelsPreview from "../radix/file-type/restyled-labels"
-import RadixFileTypeDotfilesBuildNamesPreview from "../radix/file-type/dotfiles-build-names"
-import RadixFiltersPreview from "../radix/filters/default"
-import RadixFiltersFullFilterBarPreview from "../radix/filters/full-filter-bar"
-import RadixFiltersNestedAttributesPreview from "../radix/filters/nested-attributes"
-import RadixFiltersStatusBadgesPreview from "../radix/filters/status-badges"
-import RadixFiltersAvatarsPagingPreview from "../radix/filters/avatars-paging"
-import RadixFiltersDateEditorsPreview from "../radix/filters/date-editors"
-import RadixFiltersSliderEditorPreview from "../radix/filters/slider-editor"
-import RadixFiltersTableFilteringPreview from "../radix/filters/table-filtering"
-import RadixFiltersChoiceControlsPreview from "../radix/filters/choice-controls"
-import RadixFiltersTypedInputsPreview from "../radix/filters/typed-inputs"
-import RadixFiltersPopoverBuilderPreview from "../radix/filters/popover-builder"
-import RadixFiltersInlineBuilderPreview from "../radix/filters/inline-builder"
-import RadixFiltersControlledTranslatedPreview from "../radix/filters/controlled-translated"
-import RadixFramePreview from "../radix/frame/default"
-import RadixFrameStandardPreview from "../radix/frame/standard"
-import RadixFrameSeparatedPanelsPreview from "../radix/frame/separated-panels"
-import RadixFrameStackedPanelsPreview from "../radix/frame/stacked-panels"
-import RadixFrameStackedDensePreview from "../radix/frame/stacked-dense"
-import RadixFrameCollapsiblePanelsPreview from "../radix/frame/collapsible-panels"
-import RadixFrameGhostVariantPreview from "../radix/frame/ghost-variant"
-import RadixFrameDenseLayoutPreview from "../radix/frame/dense-layout"
-import RadixFrameStackedRowsPreview from "../radix/frame/stacked-rows"
-import RadixFrameExtraSmallSpacingPreview from "../radix/frame/extra-small-spacing"
-import RadixFrameSmallSpacingPreview from "../radix/frame/small-spacing"
-import RadixFrameDefaultSpacingPreview from "../radix/frame/default-spacing"
-import RadixFrameLargeSpacingPreview from "../radix/frame/large-spacing"
-import RadixFrameSmallRadiusPreview from "../radix/frame/small-radius"
-import RadixFrameMediumRadiusPreview from "../radix/frame/medium-radius"
-import RadixFrameLargeRadiusPreview from "../radix/frame/large-radius"
-import RadixFrameDefaultRadiusPreview from "../radix/frame/default-radius"
-import RadixFrameExtraLargeRadiusPreview from "../radix/frame/extra-large-radius"
-import RadixFrameContentOnlyPanelsPreview from "../radix/frame/content-only-panels"
-import RadixFrameStackedContentOnlyPreview from "../radix/frame/stacked-content-only"
-import RadixGanttPreview from "../radix/gantt/default"
-import RadixGanttSettingsMenuPreview from "../radix/gantt/settings-menu"
-import RadixGanttDragReorderPreview from "../radix/gantt/drag-reorder"
-import RadixGanttQuarterRoadmapPreview from "../radix/gantt/quarter-roadmap"
-import RadixGanttCapacityBoardPreview from "../radix/gantt/capacity-board"
-import RadixGanttTaskTablePreview from "../radix/gantt/task-table"
-import RadixGanttBaselineTrackingPreview from "../radix/gantt/baseline-tracking"
-import RadixGanttDependenciesMilestonesPreview from "../radix/gantt/dependencies-milestones"
-import RadixGanttWorkingDaysPreview from "../radix/gantt/working-days"
-import RadixIconStackPreview from "../radix/icon-stack/default"
-import RadixIconStackIsometricPreview from "../radix/icon-stack/isometric"
-import RadixIconStackSizesPreview from "../radix/icon-stack/sizes"
-import RadixIconStackColorsPreview from "../radix/icon-stack/colors"
-import RadixIconStackBadgeOverlayPreview from "../radix/icon-stack/badge-overlay"
-import RadixIconStackEmptyStatePreview from "../radix/icon-stack/empty-state"
-import RadixIconStackItemMediaPreview from "../radix/icon-stack/item-media"
-import RadixIconTilePreview from "../radix/icon-tile/default"
-import RadixIconTileDefaultPreview from "../radix/icon-tile/default"
-import RadixIconTileElevatedPreview from "../radix/icon-tile/elevated"
-import RadixIconTileFramedPreview from "../radix/icon-tile/framed"
-import RadixIconTileAllVariantsPreview from "../radix/icon-tile/all-variants"
-import RadixIconTileSizesPreview from "../radix/icon-tile/sizes"
-import RadixIconTileCircularPreview from "../radix/icon-tile/circular"
-import RadixIconTileCustomSizingPreview from "../radix/icon-tile/custom-sizing"
-import RadixIconTileColorTonesPreview from "../radix/icon-tile/color-tones"
-import RadixIconTileTextContentPreview from "../radix/icon-tile/text-content"
-import RadixIconTileListRowPreview from "../radix/icon-tile/list-row"
-import RadixIconTileFeatureCardPreview from "../radix/icon-tile/feature-card"
-import RadixIconTileEmptyStatePreview from "../radix/icon-tile/empty-state"
-import RadixIconTileInteractivePreview from "../radix/icon-tile/interactive"
-import RadixIconTileStatusOverlayPreview from "../radix/icon-tile/status-overlay"
-import RadixIconTileSoftTonesPreview from "../radix/icon-tile/soft-tones"
-import RadixIconTileSolidTonesPreview from "../radix/icon-tile/solid-tones"
-import RadixIconTileBrandColorsPreview from "../radix/icon-tile/brand-colors"
-import RadixKanbanPreview from "../radix/kanban/default"
-import RadixKanbanPlaceholderOverlayPreview from "../radix/kanban/placeholder-overlay"
-import RadixKanbanDynamicOverlayPreview from "../radix/kanban/dynamic-overlay"
-import RadixKanbanFrameColumnsPreview from "../radix/kanban/frame-columns"
-import RadixKanbanStackedFramePreview from "../radix/kanban/stacked-frame"
-import RadixKanbanFeatureRoadmapPreview from "../radix/kanban/feature-roadmap"
-import RadixKanbanPersistedMovesPreview from "../radix/kanban/persisted-moves"
-import RadixNumberFieldPreview from "../radix/number-field/default"
-import RadixNumberFieldDefaultSizePreview from "../radix/number-field/default-size"
-import RadixNumberFieldSmallSizePreview from "../radix/number-field/small-size"
-import RadixNumberFieldLargeSizePreview from "../radix/number-field/large-size"
-import RadixNumberFieldButtonsOnRightPreview from "../radix/number-field/buttons-on-right"
-import RadixNumberFieldSpinnerButtonsPreview from "../radix/number-field/spinner-buttons"
-import RadixNumberFieldFormValidationPreview from "../radix/number-field/form-validation"
-import RadixPhoneInputPreview from "../radix/phone-input/default"
-import RadixPhoneInputStandardPreview from "../radix/phone-input/standard"
-import RadixPhoneInputSmallPreview from "../radix/phone-input/small"
-import RadixPhoneInputLargePreview from "../radix/phone-input/large"
-import RadixPhoneInputDisabledPreview from "../radix/phone-input/disabled"
-import RadixPhoneInputPresetValuePreview from "../radix/phone-input/preset-value"
-import RadixPhoneInputErrorStatePreview from "../radix/phone-input/error-state"
-import RadixPhoneInputDefaultCountryPreview from "../radix/phone-input/default-country"
-import RadixPhoneInputReadOnlyPreview from "../radix/phone-input/read-only"
-import RadixRatingPreview from "../radix/rating/default"
-import RadixRatingStandardPreview from "../radix/rating/standard"
-import RadixRatingDecimalValuePreview from "../radix/rating/decimal-value"
-import RadixRatingShowValuePreview from "../radix/rating/show-value"
-import RadixRatingEditablePreview from "../radix/rating/editable"
-import RadixRatingSizesPreview from "../radix/rating/sizes"
-import RadixRatingReviewSummaryPreview from "../radix/rating/review-summary"
-import RadixRatingHalfStarInputPreview from "../radix/rating/half-star-input"
-import RadixRatingEmojiReactionsPreview from "../radix/rating/emoji-reactions"
-import RadixRatingReviewTextPreview from "../radix/rating/review-text"
-import RadixScrollspyPreview from "../radix/scrollspy/default"
-import RadixScrollspyVerticalNavPreview from "../radix/scrollspy/vertical-nav"
-import RadixScrollspyHorizontalNavPreview from "../radix/scrollspy/horizontal-nav"
-import RadixSignaturePadPreview from "../radix/signature-pad/default"
-import RadixSignaturePadPinnedActionsPreview from "../radix/signature-pad/pinned-actions"
-import RadixSignaturePadUndoRedoPreview from "../radix/signature-pad/undo-redo"
-import RadixSignaturePadFormValidationPreview from "../radix/signature-pad/form-validation"
-import RadixSignaturePadSigningWorkspacePreview from "../radix/signature-pad/signing-workspace"
-import RadixSignaturePadExportFormatsPreview from "../radix/signature-pad/export-formats"
-import RadixSignaturePadDrawOrTypePreview from "../radix/signature-pad/draw-or-type"
-import RadixSignaturePadAgreementCardPreview from "../radix/signature-pad/agreement-card"
-import RadixSignaturePadInDialogPreview from "../radix/signature-pad/in-dialog"
-import RadixSignaturePadStylusModePreview from "../radix/signature-pad/stylus-mode"
-import RadixSignaturePadClauseInitialsPreview from "../radix/signature-pad/clause-initials"
-import RadixSignaturePadProofOfDeliveryPreview from "../radix/signature-pad/proof-of-delivery"
-import RadixSignaturePadFileUploadPreview from "../radix/signature-pad/file-upload"
-import RadixSortablePreview from "../radix/sortable/default"
-import RadixSortableFileListPreview from "../radix/sortable/file-list"
-import RadixSortableGridLayoutPreview from "../radix/sortable/grid-layout"
-import RadixSortableNestedLayoutPreview from "../radix/sortable/nested-layout"
-import RadixSortablePlaylistPreview from "../radix/sortable/playlist"
-import RadixSortableSettingsPriorityPreview from "../radix/sortable/settings-priority"
-import RadixSortableSidebarNavigationPreview from "../radix/sortable/sidebar-navigation"
-import RadixSortableImageGalleryPreview from "../radix/sortable/image-gallery"
-import RadixSortablePersistedOrderPreview from "../radix/sortable/persisted-order"
-import RadixStepperPreview from "../radix/stepper/default"
-import RadixStepperStandardPreview from "../radix/stepper/standard"
-import RadixStepperCompletedStatePreview from "../radix/stepper/completed-state"
-import RadixStepperLoadingStatePreview from "../radix/stepper/loading-state"
-import RadixStepperControlledPreview from "../radix/stepper/controlled"
-import RadixStepperLabelsBelowPreview from "../radix/stepper/labels-below"
-import RadixStepperLeftAlignedTitlesPreview from "../radix/stepper/left-aligned-titles"
-import RadixStepperIconsBadgesPreview from "../radix/stepper/icons-badges"
-import RadixStepperDescriptionsPreview from "../radix/stepper/descriptions"
-import RadixStepperInlineTitlesPreview from "../radix/stepper/inline-titles"
-import RadixStepperTitleCaptionPreview from "../radix/stepper/title-caption"
-import RadixStepperBarWithTitlesPreview from "../radix/stepper/bar-with-titles"
-import RadixStepperSegmentedBarPreview from "../radix/stepper/segmented-bar"
-import RadixStepperVerticalDescriptionsPreview from "../radix/stepper/vertical-descriptions"
-import RadixStepperVerticalPreview from "../radix/stepper/vertical"
-import RadixStepperVerticalTitlesPreview from "../radix/stepper/vertical-titles"
-import RadixStepperDeliveryStopsPreview from "../radix/stepper/delivery-stops"
-import RadixStepperDottedProgressPreview from "../radix/stepper/dotted-progress"
-import RadixStepperStageDetailsPreview from "../radix/stepper/stage-details"
-import RadixStepperFrameIconTilesPreview from "../radix/stepper/frame-icon-tiles"
-import RadixStepperPurchaseOrdersPreview from "../radix/stepper/purchase-orders"
-import RadixStepperSecurityChecksPreview from "../radix/stepper/security-checks"
-import RadixStepperBottomColorBarsPreview from "../radix/stepper/bottom-color-bars"
-import RadixStepperTopColorBarsPreview from "../radix/stepper/top-color-bars"
-import RadixStepperIconTileRowsPreview from "../radix/stepper/icon-tile-rows"
-import RadixStepperPhaseTrackPreview from "../radix/stepper/phase-track"
-import RadixStepperTimestampedCheckpointsPreview from "../radix/stepper/timestamped-checkpoints"
-import RadixStepperTransitArrowPreview from "../radix/stepper/transit-arrow"
-import RadixStepperBreadcrumbStepsPreview from "../radix/stepper/breadcrumb-steps"
-import RadixStepperCompactInlinePreview from "../radix/stepper/compact-inline"
-import RadixStepperTruckRoutePreview from "../radix/stepper/truck-route"
-import RadixStepperChevronIconTilesPreview from "../radix/stepper/chevron-icon-tiles"
-import RadixStepperNumberedChevronsPreview from "../radix/stepper/numbered-chevrons"
-import RadixStepperFilledChevronsPreview from "../radix/stepper/filled-chevrons"
-import RadixStepperOutlinedChevronsPreview from "../radix/stepper/outlined-chevrons"
-import RadixStepperFlatChevronsPreview from "../radix/stepper/flat-chevrons"
-import RadixStepperShippingRoutePreview from "../radix/stepper/shipping-route"
-import RadixStepperHorizontalStepCardsPreview from "../radix/stepper/horizontal-step-cards"
-import RadixStepperShipmentProgressPreview from "../radix/stepper/shipment-progress"
-import RadixStepperVerticalStepCardsPreview from "../radix/stepper/vertical-step-cards"
-import RadixStepperSideRailIconsPreview from "../radix/stepper/side-rail-icons"
-import RadixStepperStatusListPreview from "../radix/stepper/status-list"
-import RadixStepperVerticalStatusBarsPreview from "../radix/stepper/vertical-status-bars"
-import RadixStepperCollapsibleSubStepsPreview from "../radix/stepper/collapsible-sub-steps"
-import RadixStepperRightAlignedSubStepsPreview from "../radix/stepper/right-aligned-sub-steps"
-import RadixTimePickerPreview from "../radix/time-picker/default"
-import RadixTimePickerInlinePanelPreview from "../radix/time-picker/inline-panel"
-import RadixTimePickerPopoverPreview from "../radix/time-picker/popover"
-import RadixTimePickerTypableInputPreview from "../radix/time-picker/typable-input"
-import RadixTimePicker12HourSecondsPreview from "../radix/time-picker/12-hour-seconds"
-import RadixTimePickerHourOnlyPreview from "../radix/time-picker/hour-only"
-import RadixTimePickerOpeningHoursPreview from "../radix/time-picker/opening-hours"
-import RadixTimePickerUnavailableSlotsPreview from "../radix/time-picker/unavailable-slots"
-import RadixTimePickerStartEndPreview from "../radix/time-picker/start-end"
-import RadixTimePickerTimeZonePreview from "../radix/time-picker/time-zone"
-import RadixTimePickerConfirmBeforeApplyPreview from "../radix/time-picker/confirm-before-apply"
-import RadixTimePickerLocalizedPreview from "../radix/time-picker/localized"
-import RadixTimePickerFormValidationPreview from "../radix/time-picker/form-validation"
-import RadixTimePickerDateTimePreview from "../radix/time-picker/date-time"
-import RadixTimelinePreview from "../radix/timeline/default"
-import RadixTimelineStandardPreview from "../radix/timeline/standard"
-import RadixTimelineRoadmapPreview from "../radix/timeline/roadmap"
-import RadixTimelineOrderStatusPreview from "../radix/timeline/order-status"
-import RadixTimelineGitActivityPreview from "../radix/timeline/git-activity"
-import RadixTimelineMilestonesPreview from "../radix/timeline/milestones"
-import RadixTimelinePipelineStepsPreview from "../radix/timeline/pipeline-steps"
-import RadixTimelineRoadmapItemsPreview from "../radix/timeline/roadmap-items"
-import RadixTimelineHorizontalPreview from "../radix/timeline/horizontal"
-import RadixTimelineLeadingLabelsPreview from "../radix/timeline/leading-labels"
-import RadixTimelineDeploymentLogPreview from "../radix/timeline/deployment-log"
-import RadixTimelineAvatarActivityPreview from "../radix/timeline/avatar-activity"
-import RadixTimelineCompactMilestonesPreview from "../radix/timeline/compact-milestones"
-import RadixTreePreview from "../radix/tree/default"
-import RadixTreeStandardPreview from "../radix/tree/standard"
-import RadixTreeIndentLinesPreview from "../radix/tree/indent-lines"
-import RadixTreeFolderFileIconsPreview from "../radix/tree/folder-file-icons"
-import RadixTreePlusMinusTogglesPreview from "../radix/tree/plus-minus-toggles"
-import RadixTreeFileExplorerPreview from "../radix/tree/file-explorer"
-import RadixTreeOrgChartPreview from "../radix/tree/org-chart"
-import RadixTreePermissionsPreview from "../radix/tree/permissions"
-import BaseAutocompletePreview from "../base/autocomplete/default"
-import BaseBadgePreview from "../base/badge/default"
-import BaseCascaderPreview from "../base/cascader/default"
-import BaseCodeBlockPreview from "../base/code-block/default"
-import BaseColorPickerPreview from "../base/color-picker/default"
-import BaseDataGridPreview from "../base/data-grid/default"
-import BaseDateSelectorPreview from "../base/date-selector/default"
-import BaseEmojiPickerPreview from "../base/emoji-picker/default"
-import BaseEventCalendarPreview from "../base/event-calendar/default"
-import BaseFiltersPreview from "../base/filters/default"
-import BaseFramePreview from "../base/frame/default"
-import BaseGanttPreview from "../base/gantt/default"
-import BaseIconStackPreview from "../base/icon-stack/default"
-import BaseIconTilePreview from "../base/icon-tile/default"
-import BaseKanbanPreview from "../base/kanban/default"
-import BaseNumberFieldPreview from "../base/number-field/default"
-import BasePhoneInputPreview from "../base/phone-input/default"
-import BaseSignaturePadPreview from "../base/signature-pad/default"
-import BaseSortablePreview from "../base/sortable/default"
-import BaseStepperPreview from "../base/stepper/default"
-import BaseTimePickerPreview from "../base/time-picker/default"
-import BaseTimelinePreview from "../base/timeline/default"
-import BaseTreePreview from "../base/tree/default"
+const RadixAlertTitleDescriptionPreview = lazyComponent(() => import("../radix/alert/title-description"))
+const RadixAlertLeadingIconPreview = lazyComponent(() => import("../radix/alert/leading-icon"))
+const RadixAlertIconActionsPreview = lazyComponent(() => import("../radix/alert/icon-actions"))
+const RadixAlertPaymentFailurePreview = lazyComponent(() => import("../radix/alert/payment-failure"))
+const RadixAlertInfoVariantPreview = lazyComponent(() => import("../radix/alert/info-variant"))
+const RadixAlertSuccessVariantPreview = lazyComponent(() => import("../radix/alert/success-variant"))
+const RadixAlertWarningVariantPreview = lazyComponent(() => import("../radix/alert/warning-variant"))
+const RadixAlertErrorVariantPreview = lazyComponent(() => import("../radix/alert/error-variant"))
+const RadixAlertInvertVariantPreview = lazyComponent(() => import("../radix/alert/invert-variant"))
+const RadixAlertTitleActionsPreview = lazyComponent(() => import("../radix/alert/title-actions"))
+const RadixAlertDescriptionActionsPreview = lazyComponent(() => import("../radix/alert/description-actions"))
+const RadixAlertFrameResetBordersPreview = lazyComponent(() => import("../radix/alert/frame-reset-borders"))
+const RadixAlertStackedInFramePreview = lazyComponent(() => import("../radix/alert/stacked-in-frame"))
+const RadixAlertFrameWithActionsPreview = lazyComponent(() => import("../radix/alert/frame-with-actions"))
+const RadixAlertProUpsellPreview = lazyComponent(() => import("../radix/alert/pro-upsell"))
+const RadixAlertUrgentBillingPreview = lazyComponent(() => import("../radix/alert/urgent-billing"))
+const RadixAlertServiceStatusPreview = lazyComponent(() => import("../radix/alert/service-status"))
+const RadixAlertFeatureDiscoveryPreview = lazyComponent(() => import("../radix/alert/feature-discovery"))
+const RadixAlertDirectMessagePreview = lazyComponent(() => import("../radix/alert/direct-message"))
+const RadixAlertCommentMentionPreview = lazyComponent(() => import("../radix/alert/comment-mention"))
+const RadixAutocompleteStandardPreview = lazyComponent(() => import("../radix/autocomplete/standard"))
+const RadixAutocompleteDisabledPreview = lazyComponent(() => import("../radix/autocomplete/disabled"))
+const RadixAutocompleteAutoHighlightPreview = lazyComponent(() => import("../radix/autocomplete/auto-highlight"))
+const RadixAutocompleteLabeledPreview = lazyComponent(() => import("../radix/autocomplete/labeled"))
+const RadixAutocompleteClearButtonPreview = lazyComponent(() => import("../radix/autocomplete/clear-button"))
+const RadixAutocompleteTriggerButtonPreview = lazyComponent(() => import("../radix/autocomplete/trigger-button"))
+const RadixAutocompleteClearTriggerPreview = lazyComponent(() => import("../radix/autocomplete/clear-trigger"))
+const RadixAutocompleteGroupsLabelsPreview = lazyComponent(() => import("../radix/autocomplete/groups-labels"))
+const RadixAutocompleteSearchResultsPreview = lazyComponent(() => import("../radix/autocomplete/search-results"))
+const RadixAutocompleteSmallPreview = lazyComponent(() => import("../radix/autocomplete/small"))
+const RadixAutocompleteLargePreview = lazyComponent(() => import("../radix/autocomplete/large"))
+const RadixAutocompleteFormIntegrationPreview = lazyComponent(() => import("../radix/autocomplete/form-integration"))
+const RadixBadgePrimaryPreview = lazyComponent(() => import("../radix/badge/primary"))
+const RadixBadgeSecondaryPreview = lazyComponent(() => import("../radix/badge/secondary"))
+const RadixBadgeDestructivePreview = lazyComponent(() => import("../radix/badge/destructive"))
+const RadixBadgeSuccessPreview = lazyComponent(() => import("../radix/badge/success"))
+const RadixBadgeInfoPreview = lazyComponent(() => import("../radix/badge/info"))
+const RadixBadgeWarningPreview = lazyComponent(() => import("../radix/badge/warning"))
+const RadixBadgeOutlinePreview = lazyComponent(() => import("../radix/badge/outline"))
+const RadixBadgePrimaryOutlinePreview = lazyComponent(() => import("../radix/badge/primary-outline"))
+const RadixBadgeDestructiveOutlinePreview = lazyComponent(() => import("../radix/badge/destructive-outline"))
+const RadixBadgeInfoOutlinePreview = lazyComponent(() => import("../radix/badge/info-outline"))
+const RadixBadgeSuccessOutlinePreview = lazyComponent(() => import("../radix/badge/success-outline"))
+const RadixBadgeWarningOutlinePreview = lazyComponent(() => import("../radix/badge/warning-outline"))
+const RadixBadgePrimaryLightPreview = lazyComponent(() => import("../radix/badge/primary-light"))
+const RadixBadgeDestructiveLightPreview = lazyComponent(() => import("../radix/badge/destructive-light"))
+const RadixBadgeSuccessLightPreview = lazyComponent(() => import("../radix/badge/success-light"))
+const RadixBadgeInfoLightPreview = lazyComponent(() => import("../radix/badge/info-light"))
+const RadixBadgeWarningLightPreview = lazyComponent(() => import("../radix/badge/warning-light"))
+const RadixBadgeSizesPreview = lazyComponent(() => import("../radix/badge/sizes"))
+const RadixBadgeFullRadiusPreview = lazyComponent(() => import("../radix/badge/full-radius"))
+const RadixBadgeWithIconPreview = lazyComponent(() => import("../radix/badge/with-icon"))
+const RadixBadgeDismissButtonPreview = lazyComponent(() => import("../radix/badge/dismiss-button"))
+const RadixBadgeStatusDotPreview = lazyComponent(() => import("../radix/badge/status-dot"))
+const RadixBadgeAsLinkPreview = lazyComponent(() => import("../radix/badge/as-link"))
+const RadixBadgeWithAvatarPreview = lazyComponent(() => import("../radix/badge/with-avatar"))
+const RadixBadgeWithFlagPreview = lazyComponent(() => import("../radix/badge/with-flag"))
+const RadixCascaderPreview = lazyComponent(() => import("../radix/cascader/default"))
+const RadixCascaderAttributePickerPreview = lazyComponent(() => import("../radix/cascader/attribute-picker"))
+const RadixCascaderMultiSelectCapPreview = lazyComponent(() => import("../radix/cascader/multi-select-cap"))
+const RadixCascaderDeepSearchPreview = lazyComponent(() => import("../radix/cascader/deep-search"))
+const RadixCascaderFooterFlyoutPreview = lazyComponent(() => import("../radix/cascader/footer-flyout"))
+const RadixCascaderAvatarRowsPreview = lazyComponent(() => import("../radix/cascader/avatar-rows"))
+const RadixCascaderPathFormattingPreview = lazyComponent(() => import("../radix/cascader/path-formatting"))
+const RadixCascaderEmbeddedPanelPreview = lazyComponent(() => import("../radix/cascader/embedded-panel"))
+const RadixCascaderFlatDataPreview = lazyComponent(() => import("../radix/cascader/flat-data"))
+const RadixCascaderControlledStatePreview = lazyComponent(() => import("../radix/cascader/controlled-state"))
+const RadixCascaderTranslatedLabelsPreview = lazyComponent(() => import("../radix/cascader/translated-labels"))
+const RadixCascaderTwoLineRowsPreview = lazyComponent(() => import("../radix/cascader/two-line-rows"))
+const RadixCascaderNativeFormFieldPreview = lazyComponent(() => import("../radix/cascader/native-form-field"))
+const RadixCascaderColumnsModePreview = lazyComponent(() => import("../radix/cascader/columns-mode"))
+const RadixCascaderTreeModePreview = lazyComponent(() => import("../radix/cascader/tree-mode"))
+const RadixCascaderAsyncLoadingPreview = lazyComponent(() => import("../radix/cascader/async-loading"))
+const RadixCascaderVirtualizedListPreview = lazyComponent(() => import("../radix/cascader/virtualized-list"))
+const RadixCascaderRemovableChipsPreview = lazyComponent(() => import("../radix/cascader/removable-chips"))
+const RadixCascaderTreeMultiSelectPreview = lazyComponent(() => import("../radix/cascader/tree-multi-select"))
+const RadixCascaderColorDotsPreview = lazyComponent(() => import("../radix/cascader/color-dots"))
+const RadixCascaderInheritedColorsPreview = lazyComponent(() => import("../radix/cascader/inherited-colors"))
+const RadixCascaderGlobalSearchPreview = lazyComponent(() => import("../radix/cascader/global-search"))
+const RadixCodeBlockPreview = lazyComponent(() => import("../radix/code-block/default"))
+const CodeBlockStandardPreview = lazyComponent(() => import("../radix/code-block/standard"))
+const CodeBlockPinnedCopyPreview = lazyComponent(() => import("../radix/code-block/pinned-copy"))
+const CodeBlockStreamingAgentPreview = lazyComponent(() => import("../radix/code-block/streaming-agent"))
+const CodeBlockAiChatPreview = lazyComponent(() => import("../radix/code-block/ai-chat"))
+const CodeBlockDiffSummaryPreview = lazyComponent(() => import("../radix/code-block/diff-summary"))
+const CodeBlockTransformerDiffPreview = lazyComponent(() => import("../radix/code-block/transformer-diff"))
+const CodeBlockHighlightsPreview = lazyComponent(() => import("../radix/code-block/highlights"))
+const CodeBlockFocusWalkthroughPreview = lazyComponent(() => import("../radix/code-block/focus-walkthrough"))
+const CodeBlockTerminalOutputPreview = lazyComponent(() => import("../radix/code-block/terminal-output"))
+const CodeBlockLongFilePreview = lazyComponent(() => import("../radix/code-block/long-file"))
+const CodeBlockDiagnosticsActionsPreview = lazyComponent(() => import("../radix/code-block/diagnostics-actions"))
+const CodeBlockLineSelectionPreview = lazyComponent(() => import("../radix/code-block/line-selection"))
+const CodeBlockSearchInFilePreview = lazyComponent(() => import("../radix/code-block/search-in-file"))
+const CodeBlockFileTabsPreview = lazyComponent(() => import("../radix/code-block/file-tabs"))
+const CodeBlockPreHighlightedLinesPreview = lazyComponent(() => import("../radix/code-block/pre-highlighted-lines"))
+const CodeBlockBeforeAfterPreview = lazyComponent(() => import("../radix/code-block/before-after"))
+const CodeBlockSoftWrapPreview = lazyComponent(() => import("../radix/code-block/soft-wrap"))
+const CodeBlockUnifiedPatchPreview = lazyComponent(() => import("../radix/code-block/unified-patch"))
+const CodeBlockDesignTokenThemePreview = lazyComponent(() => import("../radix/code-block/design-token-theme"))
+const CodeBlockAlwaysDarkPreview = lazyComponent(() => import("../radix/code-block/always-dark"))
+const CodeBlockDarkTerminalPreview = lazyComponent(() => import("../radix/code-block/dark-terminal"))
+const CodeBlockAcceptRejectPreview = lazyComponent(() => import("../radix/code-block/accept-reject"))
+const CodeBlockCodeFoldingPreview = lazyComponent(() => import("../radix/code-block/code-folding"))
+const CodeBlockFixWithAiPreview = lazyComponent(() => import("../radix/code-block/fix-with-ai"))
+const CodeBlockReferenceLinesPreview = lazyComponent(() => import("../radix/code-block/reference-lines"))
+const CodeBlockExternalScrollPreview = lazyComponent(() => import("../radix/code-block/external-scroll"))
+const CodeBlockAnsiTerminalPreview = lazyComponent(() => import("../radix/code-block/ansi-terminal"))
+const RadixColorPickerPreview = lazyComponent(() => import("../radix/color-picker/default"))
+const RadixColorPickerInlinePanelPreview = lazyComponent(() => import("../radix/color-picker/inline-panel"))
+const RadixColorPickerPopoverPreview = lazyComponent(() => import("../radix/color-picker/popover"))
+const RadixColorPickerColorInputPreview = lazyComponent(() => import("../radix/color-picker/color-input"))
+const RadixColorPickerOpacityPreview = lazyComponent(() => import("../radix/color-picker/opacity"))
+const RadixColorPickerPresetSwatchesPreview = lazyComponent(() => import("../radix/color-picker/preset-swatches"))
+const RadixColorPickerOklchTokenPreview = lazyComponent(() => import("../radix/color-picker/oklch-token"))
+const RadixColorPickerFormatConverterPreview = lazyComponent(() => import("../radix/color-picker/format-converter"))
+const RadixColorPickerHueWheelPreview = lazyComponent(() => import("../radix/color-picker/hue-wheel"))
+const RadixColorPickerRecentColorsPreview = lazyComponent(() => import("../radix/color-picker/recent-colors"))
+const RadixColorPickerTextHighlightPreview = lazyComponent(() => import("../radix/color-picker/text-highlight"))
+const RadixColorPickerChannelSlidersPreview = lazyComponent(() => import("../radix/color-picker/channel-sliders"))
+const RadixColorPickerDesignInspectorPreview = lazyComponent(() => import("../radix/color-picker/design-inspector"))
+const RadixColorPickerContrastCheckerPreview = lazyComponent(() => import("../radix/color-picker/contrast-checker"))
+const RadixColorPickerBrandScalePreview = lazyComponent(() => import("../radix/color-picker/brand-scale"))
+const RadixColorPickerFormValidationPreview = lazyComponent(() => import("../radix/color-picker/form-validation"))
+const RadixDataGridPreview = lazyComponent(() => import("../radix/data-grid/default"))
+const RadixDataGridPaginationPreview = lazyComponent(() => import("../radix/data-grid/pagination"))
+const RadixDataGridCellBordersPreview = lazyComponent(() => import("../radix/data-grid/cell-borders"))
+const RadixDataGridDenseLayoutPreview = lazyComponent(() => import("../radix/data-grid/dense-layout"))
+const RadixDataGridBorderlessPreview = lazyComponent(() => import("../radix/data-grid/borderless"))
+const RadixDataGridStripedRowsPreview = lazyComponent(() => import("../radix/data-grid/striped-rows"))
+const RadixDataGridAutoWidthPreview = lazyComponent(() => import("../radix/data-grid/auto-width"))
+const RadixDataGridRowSelectionPreview = lazyComponent(() => import("../radix/data-grid/row-selection"))
+const RadixDataGridExpandableRowsPreview = lazyComponent(() => import("../radix/data-grid/expandable-rows"))
+const RadixDataGridSubTablePreview = lazyComponent(() => import("../radix/data-grid/sub-table"))
+const RadixDataGridColumnIconsPreview = lazyComponent(() => import("../radix/data-grid/column-icons"))
+const RadixDataGridSortableColumnsPreview = lazyComponent(() => import("../radix/data-grid/sortable-columns"))
+const RadixDataGridMovableColumnsPreview = lazyComponent(() => import("../radix/data-grid/movable-columns"))
+const RadixDataGridDraggableColumnsPreview = lazyComponent(() => import("../radix/data-grid/draggable-columns"))
+const RadixDataGridDraggableRowsPreview = lazyComponent(() => import("../radix/data-grid/draggable-rows"))
+const RadixDataGridColumnResizingPreview = lazyComponent(() => import("../radix/data-grid/column-resizing"))
+const RadixDataGridPinnableColumnsPreview = lazyComponent(() => import("../radix/data-grid/pinnable-columns"))
+const RadixDataGridStickyHeaderPreview = lazyComponent(() => import("../radix/data-grid/sticky-header"))
+const RadixDataGridColumnControlsPreview = lazyComponent(() => import("../radix/data-grid/column-controls"))
+const RadixDataGridCardContainerPreview = lazyComponent(() => import("../radix/data-grid/card-container"))
+const RadixDataGridColumnVisibilityPreview = lazyComponent(() => import("../radix/data-grid/column-visibility"))
+const RadixDataGridLoadingSkeletonPreview = lazyComponent(() => import("../radix/data-grid/loading-skeleton"))
+const RadixDataGridCrudAdminPreview = lazyComponent(() => import("../radix/data-grid/crud-admin"))
+const RadixDataGridCrudInFramePreview = lazyComponent(() => import("../radix/data-grid/crud-in-frame"))
+const RadixDataGridTotalsFooterPreview = lazyComponent(() => import("../radix/data-grid/totals-footer"))
+const RadixDataGridSummaryStatsFooterPreview = lazyComponent(() => import("../radix/data-grid/summary-stats-footer"))
+const RadixDataGridAggregateFooterPreview = lazyComponent(() => import("../radix/data-grid/aggregate-footer"))
+const RadixDataGridLocalInfiniteScrollPreview = lazyComponent(() => import("../radix/data-grid/local-infinite-scroll"))
+const RadixDataGridRemoteInfiniteScrollPreview = lazyComponent(() => import("../radix/data-grid/remote-infinite-scroll"))
+const RadixDataGridRowPinningPreview = lazyComponent(() => import("../radix/data-grid/row-pinning"))
+const RadixDataGridTreeRowsPreview = lazyComponent(() => import("../radix/data-grid/tree-rows"))
+const RadixDataGridSpreadsheetEditingPreview = lazyComponent(() => import("../radix/data-grid/spreadsheet-editing"))
+const RadixDataGridColumnVirtualizationPreview = lazyComponent(() => import("../radix/data-grid/column-virtualization"))
+const RadixDataGridLocalizedLabelsPreview = lazyComponent(() => import("../radix/data-grid/localized-labels"))
+const RadixDataGridServerSidePaginationPreview = lazyComponent(() => import("../radix/data-grid/server-side-pagination"))
+const RadixDateSelectorPreview = lazyComponent(() => import("../radix/date-selector/default"))
+const RadixDateSelectorStandardInlinePreview = lazyComponent(() => import("../radix/date-selector/standard-inline"))
+const RadixDateSelectorPopoverPreview = lazyComponent(() => import("../radix/date-selector/popover"))
+const RadixDateSelectorDialogPreview = lazyComponent(() => import("../radix/date-selector/dialog"))
+const RadixDateSelectorLanguageMenuPreview = lazyComponent(() => import("../radix/date-selector/language-menu"))
+const RadixEmojiPickerPreview = lazyComponent(() => import("../radix/emoji-picker/default"))
+const RadixEmojiPickerInlinePreview = lazyComponent(() => import("../radix/emoji-picker/inline"))
+const RadixEmojiPickerChatComposerPreview = lazyComponent(() => import("../radix/emoji-picker/chat-composer"))
+const RadixEmojiPickerMessageReactionsPreview = lazyComponent(() => import("../radix/emoji-picker/message-reactions"))
+const RadixEmojiPickerPageIconPreview = lazyComponent(() => import("../radix/emoji-picker/page-icon"))
+const RadixEmojiPickerCustomTeamEmojiPreview = lazyComponent(() => import("../radix/emoji-picker/custom-team-emoji"))
+const RadixEmojiPickerShortcodeSuggestionsPreview = lazyComponent(() => import("../radix/emoji-picker/shortcode-suggestions"))
+const RadixEmojiPickerWorkplaceSafeSetPreview = lazyComponent(() => import("../radix/emoji-picker/workplace-safe-set"))
+const RadixEmojiPickerLocalizedLabelsPreview = lazyComponent(() => import("../radix/emoji-picker/localized-labels"))
+const RadixEventCalendarPreview = lazyComponent(() => import("../radix/event-calendar/default"))
+const RadixEventCalendarAllViewsPreview = lazyComponent(() => import("../radix/event-calendar/all-views"))
+const RadixEventCalendarRoomBookingsPreview = lazyComponent(() => import("../radix/event-calendar/room-bookings"))
+const RadixEventCalendarEventFormDialogPreview = lazyComponent(() => import("../radix/event-calendar/event-form-dialog"))
+const RadixEventCalendarCustomEventChipsPreview = lazyComponent(() => import("../radix/event-calendar/custom-event-chips"))
+const RadixEventCalendarDragToBookPreview = lazyComponent(() => import("../radix/event-calendar/drag-to-book"))
+const RadixFileTypePreview = lazyComponent(() => import("../radix/file-type/default"))
+const RadixFileTypeCommonFormatsPreview = lazyComponent(() => import("../radix/file-type/common-formats"))
+const RadixFileTypeVariantsPreview = lazyComponent(() => import("../radix/file-type/variants"))
+const RadixFileTypeSizesPreview = lazyComponent(() => import("../radix/file-type/sizes"))
+const RadixFileTypeFamilyGlyphsPreview = lazyComponent(() => import("../radix/file-type/family-glyphs"))
+const RadixFileTypeAllFormatsPreview = lazyComponent(() => import("../radix/file-type/all-formats"))
+const RadixFileTypeFileBrowserPreview = lazyComponent(() => import("../radix/file-type/file-browser"))
+const RadixFileTypeAttachmentListPreview = lazyComponent(() => import("../radix/file-type/attachment-list"))
+const RadixFileTypeUploadQueuePreview = lazyComponent(() => import("../radix/file-type/upload-queue"))
+const RadixFileTypeResolveFromNamePreview = lazyComponent(() => import("../radix/file-type/resolve-from-name"))
+const RadixFileTypeCustomLabelsPreview = lazyComponent(() => import("../radix/file-type/custom-labels"))
+const RadixFileTypeCustomColorsPreview = lazyComponent(() => import("../radix/file-type/custom-colors"))
+const RadixFileTypeFormatPickerPreview = lazyComponent(() => import("../radix/file-type/format-picker"))
+const RadixFileTypeLockedStarredPreview = lazyComponent(() => import("../radix/file-type/locked-starred"))
+const RadixFileTypeRestyledLabelsPreview = lazyComponent(() => import("../radix/file-type/restyled-labels"))
+const RadixFileTypeDotfilesBuildNamesPreview = lazyComponent(() => import("../radix/file-type/dotfiles-build-names"))
+const RadixFiltersPreview = lazyComponent(() => import("../radix/filters/default"))
+const RadixFiltersFullFilterBarPreview = lazyComponent(() => import("../radix/filters/full-filter-bar"))
+const RadixFiltersNestedAttributesPreview = lazyComponent(() => import("../radix/filters/nested-attributes"))
+const RadixFiltersStatusBadgesPreview = lazyComponent(() => import("../radix/filters/status-badges"))
+const RadixFiltersAvatarsPagingPreview = lazyComponent(() => import("../radix/filters/avatars-paging"))
+const RadixFiltersDateEditorsPreview = lazyComponent(() => import("../radix/filters/date-editors"))
+const RadixFiltersSliderEditorPreview = lazyComponent(() => import("../radix/filters/slider-editor"))
+const RadixFiltersTableFilteringPreview = lazyComponent(() => import("../radix/filters/table-filtering"))
+const RadixFiltersChoiceControlsPreview = lazyComponent(() => import("../radix/filters/choice-controls"))
+const RadixFiltersTypedInputsPreview = lazyComponent(() => import("../radix/filters/typed-inputs"))
+const RadixFiltersPopoverBuilderPreview = lazyComponent(() => import("../radix/filters/popover-builder"))
+const RadixFiltersInlineBuilderPreview = lazyComponent(() => import("../radix/filters/inline-builder"))
+const RadixFiltersControlledTranslatedPreview = lazyComponent(() => import("../radix/filters/controlled-translated"))
+const RadixFramePreview = lazyComponent(() => import("../radix/frame/default"))
+const RadixFrameStandardPreview = lazyComponent(() => import("../radix/frame/standard"))
+const RadixFrameSeparatedPanelsPreview = lazyComponent(() => import("../radix/frame/separated-panels"))
+const RadixFrameStackedPanelsPreview = lazyComponent(() => import("../radix/frame/stacked-panels"))
+const RadixFrameStackedDensePreview = lazyComponent(() => import("../radix/frame/stacked-dense"))
+const RadixFrameCollapsiblePanelsPreview = lazyComponent(() => import("../radix/frame/collapsible-panels"))
+const RadixFrameGhostVariantPreview = lazyComponent(() => import("../radix/frame/ghost-variant"))
+const RadixFrameDenseLayoutPreview = lazyComponent(() => import("../radix/frame/dense-layout"))
+const RadixFrameStackedRowsPreview = lazyComponent(() => import("../radix/frame/stacked-rows"))
+const RadixFrameExtraSmallSpacingPreview = lazyComponent(() => import("../radix/frame/extra-small-spacing"))
+const RadixFrameSmallSpacingPreview = lazyComponent(() => import("../radix/frame/small-spacing"))
+const RadixFrameDefaultSpacingPreview = lazyComponent(() => import("../radix/frame/default-spacing"))
+const RadixFrameLargeSpacingPreview = lazyComponent(() => import("../radix/frame/large-spacing"))
+const RadixFrameSmallRadiusPreview = lazyComponent(() => import("../radix/frame/small-radius"))
+const RadixFrameMediumRadiusPreview = lazyComponent(() => import("../radix/frame/medium-radius"))
+const RadixFrameLargeRadiusPreview = lazyComponent(() => import("../radix/frame/large-radius"))
+const RadixFrameDefaultRadiusPreview = lazyComponent(() => import("../radix/frame/default-radius"))
+const RadixFrameExtraLargeRadiusPreview = lazyComponent(() => import("../radix/frame/extra-large-radius"))
+const RadixFrameContentOnlyPanelsPreview = lazyComponent(() => import("../radix/frame/content-only-panels"))
+const RadixFrameStackedContentOnlyPreview = lazyComponent(() => import("../radix/frame/stacked-content-only"))
+const RadixGanttPreview = lazyComponent(() => import("../radix/gantt/default"))
+const RadixGanttSettingsMenuPreview = lazyComponent(() => import("../radix/gantt/settings-menu"))
+const RadixGanttDragReorderPreview = lazyComponent(() => import("../radix/gantt/drag-reorder"))
+const RadixGanttQuarterRoadmapPreview = lazyComponent(() => import("../radix/gantt/quarter-roadmap"))
+const RadixGanttCapacityBoardPreview = lazyComponent(() => import("../radix/gantt/capacity-board"))
+const RadixGanttTaskTablePreview = lazyComponent(() => import("../radix/gantt/task-table"))
+const RadixGanttBaselineTrackingPreview = lazyComponent(() => import("../radix/gantt/baseline-tracking"))
+const RadixGanttDependenciesMilestonesPreview = lazyComponent(() => import("../radix/gantt/dependencies-milestones"))
+const RadixGanttWorkingDaysPreview = lazyComponent(() => import("../radix/gantt/working-days"))
+const RadixIconStackPreview = lazyComponent(() => import("../radix/icon-stack/default"))
+const RadixIconStackIsometricPreview = lazyComponent(() => import("../radix/icon-stack/isometric"))
+const RadixIconStackSizesPreview = lazyComponent(() => import("../radix/icon-stack/sizes"))
+const RadixIconStackColorsPreview = lazyComponent(() => import("../radix/icon-stack/colors"))
+const RadixIconStackBadgeOverlayPreview = lazyComponent(() => import("../radix/icon-stack/badge-overlay"))
+const RadixIconStackEmptyStatePreview = lazyComponent(() => import("../radix/icon-stack/empty-state"))
+const RadixIconStackItemMediaPreview = lazyComponent(() => import("../radix/icon-stack/item-media"))
+const RadixIconTilePreview = lazyComponent(() => import("../radix/icon-tile/default"))
+const RadixIconTileDefaultPreview = lazyComponent(() => import("../radix/icon-tile/default"))
+const RadixIconTileElevatedPreview = lazyComponent(() => import("../radix/icon-tile/elevated"))
+const RadixIconTileFramedPreview = lazyComponent(() => import("../radix/icon-tile/framed"))
+const RadixIconTileAllVariantsPreview = lazyComponent(() => import("../radix/icon-tile/all-variants"))
+const RadixIconTileSizesPreview = lazyComponent(() => import("../radix/icon-tile/sizes"))
+const RadixIconTileCircularPreview = lazyComponent(() => import("../radix/icon-tile/circular"))
+const RadixIconTileCustomSizingPreview = lazyComponent(() => import("../radix/icon-tile/custom-sizing"))
+const RadixIconTileColorTonesPreview = lazyComponent(() => import("../radix/icon-tile/color-tones"))
+const RadixIconTileTextContentPreview = lazyComponent(() => import("../radix/icon-tile/text-content"))
+const RadixIconTileListRowPreview = lazyComponent(() => import("../radix/icon-tile/list-row"))
+const RadixIconTileFeatureCardPreview = lazyComponent(() => import("../radix/icon-tile/feature-card"))
+const RadixIconTileEmptyStatePreview = lazyComponent(() => import("../radix/icon-tile/empty-state"))
+const RadixIconTileInteractivePreview = lazyComponent(() => import("../radix/icon-tile/interactive"))
+const RadixIconTileStatusOverlayPreview = lazyComponent(() => import("../radix/icon-tile/status-overlay"))
+const RadixIconTileSoftTonesPreview = lazyComponent(() => import("../radix/icon-tile/soft-tones"))
+const RadixIconTileSolidTonesPreview = lazyComponent(() => import("../radix/icon-tile/solid-tones"))
+const RadixIconTileBrandColorsPreview = lazyComponent(() => import("../radix/icon-tile/brand-colors"))
+const RadixKanbanPreview = lazyComponent(() => import("../radix/kanban/default"))
+const RadixKanbanPlaceholderOverlayPreview = lazyComponent(() => import("../radix/kanban/placeholder-overlay"))
+const RadixKanbanDynamicOverlayPreview = lazyComponent(() => import("../radix/kanban/dynamic-overlay"))
+const RadixKanbanFrameColumnsPreview = lazyComponent(() => import("../radix/kanban/frame-columns"))
+const RadixKanbanStackedFramePreview = lazyComponent(() => import("../radix/kanban/stacked-frame"))
+const RadixKanbanFeatureRoadmapPreview = lazyComponent(() => import("../radix/kanban/feature-roadmap"))
+const RadixKanbanPersistedMovesPreview = lazyComponent(() => import("../radix/kanban/persisted-moves"))
+const RadixNumberFieldPreview = lazyComponent(() => import("../radix/number-field/default"))
+const RadixNumberFieldDefaultSizePreview = lazyComponent(() => import("../radix/number-field/default-size"))
+const RadixNumberFieldSmallSizePreview = lazyComponent(() => import("../radix/number-field/small-size"))
+const RadixNumberFieldLargeSizePreview = lazyComponent(() => import("../radix/number-field/large-size"))
+const RadixNumberFieldButtonsOnRightPreview = lazyComponent(() => import("../radix/number-field/buttons-on-right"))
+const RadixNumberFieldSpinnerButtonsPreview = lazyComponent(() => import("../radix/number-field/spinner-buttons"))
+const RadixNumberFieldFormValidationPreview = lazyComponent(() => import("../radix/number-field/form-validation"))
+const RadixPhoneInputPreview = lazyComponent(() => import("../radix/phone-input/default"))
+const RadixPhoneInputStandardPreview = lazyComponent(() => import("../radix/phone-input/standard"))
+const RadixPhoneInputSmallPreview = lazyComponent(() => import("../radix/phone-input/small"))
+const RadixPhoneInputLargePreview = lazyComponent(() => import("../radix/phone-input/large"))
+const RadixPhoneInputDisabledPreview = lazyComponent(() => import("../radix/phone-input/disabled"))
+const RadixPhoneInputPresetValuePreview = lazyComponent(() => import("../radix/phone-input/preset-value"))
+const RadixPhoneInputErrorStatePreview = lazyComponent(() => import("../radix/phone-input/error-state"))
+const RadixPhoneInputDefaultCountryPreview = lazyComponent(() => import("../radix/phone-input/default-country"))
+const RadixPhoneInputReadOnlyPreview = lazyComponent(() => import("../radix/phone-input/read-only"))
+const RadixRatingPreview = lazyComponent(() => import("../radix/rating/default"))
+const RadixRatingStandardPreview = lazyComponent(() => import("../radix/rating/standard"))
+const RadixRatingDecimalValuePreview = lazyComponent(() => import("../radix/rating/decimal-value"))
+const RadixRatingShowValuePreview = lazyComponent(() => import("../radix/rating/show-value"))
+const RadixRatingEditablePreview = lazyComponent(() => import("../radix/rating/editable"))
+const RadixRatingSizesPreview = lazyComponent(() => import("../radix/rating/sizes"))
+const RadixRatingReviewSummaryPreview = lazyComponent(() => import("../radix/rating/review-summary"))
+const RadixRatingHalfStarInputPreview = lazyComponent(() => import("../radix/rating/half-star-input"))
+const RadixRatingEmojiReactionsPreview = lazyComponent(() => import("../radix/rating/emoji-reactions"))
+const RadixRatingReviewTextPreview = lazyComponent(() => import("../radix/rating/review-text"))
+const RadixScrollspyPreview = lazyComponent(() => import("../radix/scrollspy/default"))
+const RadixScrollspyVerticalNavPreview = lazyComponent(() => import("../radix/scrollspy/vertical-nav"))
+const RadixScrollspyHorizontalNavPreview = lazyComponent(() => import("../radix/scrollspy/horizontal-nav"))
+const RadixSignaturePadPreview = lazyComponent(() => import("../radix/signature-pad/default"))
+const RadixSignaturePadPinnedActionsPreview = lazyComponent(() => import("../radix/signature-pad/pinned-actions"))
+const RadixSignaturePadUndoRedoPreview = lazyComponent(() => import("../radix/signature-pad/undo-redo"))
+const RadixSignaturePadFormValidationPreview = lazyComponent(() => import("../radix/signature-pad/form-validation"))
+const RadixSignaturePadSigningWorkspacePreview = lazyComponent(() => import("../radix/signature-pad/signing-workspace"))
+const RadixSignaturePadExportFormatsPreview = lazyComponent(() => import("../radix/signature-pad/export-formats"))
+const RadixSignaturePadDrawOrTypePreview = lazyComponent(() => import("../radix/signature-pad/draw-or-type"))
+const RadixSignaturePadAgreementCardPreview = lazyComponent(() => import("../radix/signature-pad/agreement-card"))
+const RadixSignaturePadInDialogPreview = lazyComponent(() => import("../radix/signature-pad/in-dialog"))
+const RadixSignaturePadStylusModePreview = lazyComponent(() => import("../radix/signature-pad/stylus-mode"))
+const RadixSignaturePadClauseInitialsPreview = lazyComponent(() => import("../radix/signature-pad/clause-initials"))
+const RadixSignaturePadProofOfDeliveryPreview = lazyComponent(() => import("../radix/signature-pad/proof-of-delivery"))
+const RadixSignaturePadFileUploadPreview = lazyComponent(() => import("../radix/signature-pad/file-upload"))
+const RadixSortablePreview = lazyComponent(() => import("../radix/sortable/default"))
+const RadixSortableFileListPreview = lazyComponent(() => import("../radix/sortable/file-list"))
+const RadixSortableGridLayoutPreview = lazyComponent(() => import("../radix/sortable/grid-layout"))
+const RadixSortableNestedLayoutPreview = lazyComponent(() => import("../radix/sortable/nested-layout"))
+const RadixSortablePlaylistPreview = lazyComponent(() => import("../radix/sortable/playlist"))
+const RadixSortableSettingsPriorityPreview = lazyComponent(() => import("../radix/sortable/settings-priority"))
+const RadixSortableSidebarNavigationPreview = lazyComponent(() => import("../radix/sortable/sidebar-navigation"))
+const RadixSortableImageGalleryPreview = lazyComponent(() => import("../radix/sortable/image-gallery"))
+const RadixSortablePersistedOrderPreview = lazyComponent(() => import("../radix/sortable/persisted-order"))
+const RadixStepperPreview = lazyComponent(() => import("../radix/stepper/default"))
+const RadixStepperStandardPreview = lazyComponent(() => import("../radix/stepper/standard"))
+const RadixStepperCompletedStatePreview = lazyComponent(() => import("../radix/stepper/completed-state"))
+const RadixStepperLoadingStatePreview = lazyComponent(() => import("../radix/stepper/loading-state"))
+const RadixStepperControlledPreview = lazyComponent(() => import("../radix/stepper/controlled"))
+const RadixStepperLabelsBelowPreview = lazyComponent(() => import("../radix/stepper/labels-below"))
+const RadixStepperLeftAlignedTitlesPreview = lazyComponent(() => import("../radix/stepper/left-aligned-titles"))
+const RadixStepperIconsBadgesPreview = lazyComponent(() => import("../radix/stepper/icons-badges"))
+const RadixStepperDescriptionsPreview = lazyComponent(() => import("../radix/stepper/descriptions"))
+const RadixStepperInlineTitlesPreview = lazyComponent(() => import("../radix/stepper/inline-titles"))
+const RadixStepperTitleCaptionPreview = lazyComponent(() => import("../radix/stepper/title-caption"))
+const RadixStepperBarWithTitlesPreview = lazyComponent(() => import("../radix/stepper/bar-with-titles"))
+const RadixStepperSegmentedBarPreview = lazyComponent(() => import("../radix/stepper/segmented-bar"))
+const RadixStepperVerticalDescriptionsPreview = lazyComponent(() => import("../radix/stepper/vertical-descriptions"))
+const RadixStepperVerticalPreview = lazyComponent(() => import("../radix/stepper/vertical"))
+const RadixStepperVerticalTitlesPreview = lazyComponent(() => import("../radix/stepper/vertical-titles"))
+const RadixStepperDeliveryStopsPreview = lazyComponent(() => import("../radix/stepper/delivery-stops"))
+const RadixStepperDottedProgressPreview = lazyComponent(() => import("../radix/stepper/dotted-progress"))
+const RadixStepperStageDetailsPreview = lazyComponent(() => import("../radix/stepper/stage-details"))
+const RadixStepperFrameIconTilesPreview = lazyComponent(() => import("../radix/stepper/frame-icon-tiles"))
+const RadixStepperPurchaseOrdersPreview = lazyComponent(() => import("../radix/stepper/purchase-orders"))
+const RadixStepperSecurityChecksPreview = lazyComponent(() => import("../radix/stepper/security-checks"))
+const RadixStepperBottomColorBarsPreview = lazyComponent(() => import("../radix/stepper/bottom-color-bars"))
+const RadixStepperTopColorBarsPreview = lazyComponent(() => import("../radix/stepper/top-color-bars"))
+const RadixStepperIconTileRowsPreview = lazyComponent(() => import("../radix/stepper/icon-tile-rows"))
+const RadixStepperPhaseTrackPreview = lazyComponent(() => import("../radix/stepper/phase-track"))
+const RadixStepperTimestampedCheckpointsPreview = lazyComponent(() => import("../radix/stepper/timestamped-checkpoints"))
+const RadixStepperTransitArrowPreview = lazyComponent(() => import("../radix/stepper/transit-arrow"))
+const RadixStepperBreadcrumbStepsPreview = lazyComponent(() => import("../radix/stepper/breadcrumb-steps"))
+const RadixStepperCompactInlinePreview = lazyComponent(() => import("../radix/stepper/compact-inline"))
+const RadixStepperTruckRoutePreview = lazyComponent(() => import("../radix/stepper/truck-route"))
+const RadixStepperChevronIconTilesPreview = lazyComponent(() => import("../radix/stepper/chevron-icon-tiles"))
+const RadixStepperNumberedChevronsPreview = lazyComponent(() => import("../radix/stepper/numbered-chevrons"))
+const RadixStepperFilledChevronsPreview = lazyComponent(() => import("../radix/stepper/filled-chevrons"))
+const RadixStepperOutlinedChevronsPreview = lazyComponent(() => import("../radix/stepper/outlined-chevrons"))
+const RadixStepperFlatChevronsPreview = lazyComponent(() => import("../radix/stepper/flat-chevrons"))
+const RadixStepperShippingRoutePreview = lazyComponent(() => import("../radix/stepper/shipping-route"))
+const RadixStepperHorizontalStepCardsPreview = lazyComponent(() => import("../radix/stepper/horizontal-step-cards"))
+const RadixStepperShipmentProgressPreview = lazyComponent(() => import("../radix/stepper/shipment-progress"))
+const RadixStepperVerticalStepCardsPreview = lazyComponent(() => import("../radix/stepper/vertical-step-cards"))
+const RadixStepperSideRailIconsPreview = lazyComponent(() => import("../radix/stepper/side-rail-icons"))
+const RadixStepperStatusListPreview = lazyComponent(() => import("../radix/stepper/status-list"))
+const RadixStepperVerticalStatusBarsPreview = lazyComponent(() => import("../radix/stepper/vertical-status-bars"))
+const RadixStepperCollapsibleSubStepsPreview = lazyComponent(() => import("../radix/stepper/collapsible-sub-steps"))
+const RadixStepperRightAlignedSubStepsPreview = lazyComponent(() => import("../radix/stepper/right-aligned-sub-steps"))
+const RadixTimePickerPreview = lazyComponent(() => import("../radix/time-picker/default"))
+const RadixTimePickerInlinePanelPreview = lazyComponent(() => import("../radix/time-picker/inline-panel"))
+const RadixTimePickerPopoverPreview = lazyComponent(() => import("../radix/time-picker/popover"))
+const RadixTimePickerTypableInputPreview = lazyComponent(() => import("../radix/time-picker/typable-input"))
+const RadixTimePicker12HourSecondsPreview = lazyComponent(() => import("../radix/time-picker/12-hour-seconds"))
+const RadixTimePickerHourOnlyPreview = lazyComponent(() => import("../radix/time-picker/hour-only"))
+const RadixTimePickerOpeningHoursPreview = lazyComponent(() => import("../radix/time-picker/opening-hours"))
+const RadixTimePickerUnavailableSlotsPreview = lazyComponent(() => import("../radix/time-picker/unavailable-slots"))
+const RadixTimePickerStartEndPreview = lazyComponent(() => import("../radix/time-picker/start-end"))
+const RadixTimePickerTimeZonePreview = lazyComponent(() => import("../radix/time-picker/time-zone"))
+const RadixTimePickerConfirmBeforeApplyPreview = lazyComponent(() => import("../radix/time-picker/confirm-before-apply"))
+const RadixTimePickerLocalizedPreview = lazyComponent(() => import("../radix/time-picker/localized"))
+const RadixTimePickerFormValidationPreview = lazyComponent(() => import("../radix/time-picker/form-validation"))
+const RadixTimePickerDateTimePreview = lazyComponent(() => import("../radix/time-picker/date-time"))
+const RadixTimelinePreview = lazyComponent(() => import("../radix/timeline/default"))
+const RadixTimelineStandardPreview = lazyComponent(() => import("../radix/timeline/standard"))
+const RadixTimelineRoadmapPreview = lazyComponent(() => import("../radix/timeline/roadmap"))
+const RadixTimelineOrderStatusPreview = lazyComponent(() => import("../radix/timeline/order-status"))
+const RadixTimelineGitActivityPreview = lazyComponent(() => import("../radix/timeline/git-activity"))
+const RadixTimelineMilestonesPreview = lazyComponent(() => import("../radix/timeline/milestones"))
+const RadixTimelinePipelineStepsPreview = lazyComponent(() => import("../radix/timeline/pipeline-steps"))
+const RadixTimelineRoadmapItemsPreview = lazyComponent(() => import("../radix/timeline/roadmap-items"))
+const RadixTimelineHorizontalPreview = lazyComponent(() => import("../radix/timeline/horizontal"))
+const RadixTimelineLeadingLabelsPreview = lazyComponent(() => import("../radix/timeline/leading-labels"))
+const RadixTimelineDeploymentLogPreview = lazyComponent(() => import("../radix/timeline/deployment-log"))
+const RadixTimelineAvatarActivityPreview = lazyComponent(() => import("../radix/timeline/avatar-activity"))
+const RadixTimelineCompactMilestonesPreview = lazyComponent(() => import("../radix/timeline/compact-milestones"))
+const RadixTreePreview = lazyComponent(() => import("../radix/tree/default"))
+const RadixTreeStandardPreview = lazyComponent(() => import("../radix/tree/standard"))
+const RadixTreeIndentLinesPreview = lazyComponent(() => import("../radix/tree/indent-lines"))
+const RadixTreeFolderFileIconsPreview = lazyComponent(() => import("../radix/tree/folder-file-icons"))
+const RadixTreePlusMinusTogglesPreview = lazyComponent(() => import("../radix/tree/plus-minus-toggles"))
+const RadixTreeFileExplorerPreview = lazyComponent(() => import("../radix/tree/file-explorer"))
+const RadixTreeOrgChartPreview = lazyComponent(() => import("../radix/tree/org-chart"))
+const RadixTreePermissionsPreview = lazyComponent(() => import("../radix/tree/permissions"))
+const BaseAutocompletePreview = lazyComponent(() => import("../base/autocomplete/default"))
+const BaseBadgePreview = lazyComponent(() => import("../base/badge/default"))
+const BaseCascaderPreview = lazyComponent(() => import("../base/cascader/default"))
+const BaseCodeBlockPreview = lazyComponent(() => import("../base/code-block/default"))
+const BaseColorPickerPreview = lazyComponent(() => import("../base/color-picker/default"))
+const BaseDataGridPreview = lazyComponent(() => import("../base/data-grid/default"))
+const BaseDateSelectorPreview = lazyComponent(() => import("../base/date-selector/default"))
+const BaseEmojiPickerPreview = lazyComponent(() => import("../base/emoji-picker/default"))
+const BaseEventCalendarPreview = lazyComponent(() => import("../base/event-calendar/default"))
+const BaseFiltersPreview = lazyComponent(() => import("../base/filters/default"))
+const BaseFramePreview = lazyComponent(() => import("../base/frame/default"))
+const BaseGanttPreview = lazyComponent(() => import("../base/gantt/default"))
+const BaseIconStackPreview = lazyComponent(() => import("../base/icon-stack/default"))
+const BaseIconTilePreview = lazyComponent(() => import("../base/icon-tile/default"))
+const BaseKanbanPreview = lazyComponent(() => import("../base/kanban/default"))
+const BaseNumberFieldPreview = lazyComponent(() => import("../base/number-field/default"))
+const BasePhoneInputPreview = lazyComponent(() => import("../base/phone-input/default"))
+const BaseSignaturePadPreview = lazyComponent(() => import("../base/signature-pad/default"))
+const BaseSortablePreview = lazyComponent(() => import("../base/sortable/default"))
+const BaseStepperPreview = lazyComponent(() => import("../base/stepper/default"))
+const BaseTimePickerPreview = lazyComponent(() => import("../base/time-picker/default"))
+const BaseTimelinePreview = lazyComponent(() => import("../base/timeline/default"))
+const BaseTreePreview = lazyComponent(() => import("../base/tree/default"))
 
-import RadixAlertTitleDescriptionSource from "../radix/alert/title-description.tsx?raw"
-import RadixAlertLeadingIconSource from "../radix/alert/leading-icon.tsx?raw"
-import RadixAlertIconActionsSource from "../radix/alert/icon-actions.tsx?raw"
-import RadixAlertPaymentFailureSource from "../radix/alert/payment-failure.tsx?raw"
-import RadixAlertInfoVariantSource from "../radix/alert/info-variant.tsx?raw"
-import RadixAlertSuccessVariantSource from "../radix/alert/success-variant.tsx?raw"
-import RadixAlertWarningVariantSource from "../radix/alert/warning-variant.tsx?raw"
-import RadixAlertErrorVariantSource from "../radix/alert/error-variant.tsx?raw"
-import RadixAlertInvertVariantSource from "../radix/alert/invert-variant.tsx?raw"
-import RadixAlertTitleActionsSource from "../radix/alert/title-actions.tsx?raw"
-import RadixAlertDescriptionActionsSource from "../radix/alert/description-actions.tsx?raw"
-import RadixAlertFrameResetBordersSource from "../radix/alert/frame-reset-borders.tsx?raw"
-import RadixAlertStackedInFrameSource from "../radix/alert/stacked-in-frame.tsx?raw"
-import RadixAlertFrameWithActionsSource from "../radix/alert/frame-with-actions.tsx?raw"
-import RadixAlertProUpsellSource from "../radix/alert/pro-upsell.tsx?raw"
-import RadixAlertUrgentBillingSource from "../radix/alert/urgent-billing.tsx?raw"
-import RadixAlertServiceStatusSource from "../radix/alert/service-status.tsx?raw"
-import RadixAlertFeatureDiscoverySource from "../radix/alert/feature-discovery.tsx?raw"
-import RadixAlertDirectMessageSource from "../radix/alert/direct-message.tsx?raw"
-import RadixAlertCommentMentionSource from "../radix/alert/comment-mention.tsx?raw"
-import RadixAutocompleteStandardSource from "../radix/autocomplete/standard.tsx?raw"
-import RadixAutocompleteDisabledSource from "../radix/autocomplete/disabled.tsx?raw"
-import RadixAutocompleteAutoHighlightSource from "../radix/autocomplete/auto-highlight.tsx?raw"
-import RadixAutocompleteLabeledSource from "../radix/autocomplete/labeled.tsx?raw"
-import RadixAutocompleteClearButtonSource from "../radix/autocomplete/clear-button.tsx?raw"
-import RadixAutocompleteTriggerButtonSource from "../radix/autocomplete/trigger-button.tsx?raw"
-import RadixAutocompleteClearTriggerSource from "../radix/autocomplete/clear-trigger.tsx?raw"
-import RadixAutocompleteGroupsLabelsSource from "../radix/autocomplete/groups-labels.tsx?raw"
-import RadixAutocompleteSearchResultsSource from "../radix/autocomplete/search-results.tsx?raw"
-import RadixAutocompleteSmallSource from "../radix/autocomplete/small.tsx?raw"
-import RadixAutocompleteLargeSource from "../radix/autocomplete/large.tsx?raw"
-import RadixAutocompleteFormIntegrationSource from "../radix/autocomplete/form-integration.tsx?raw"
-import RadixBadgePrimarySource from "../radix/badge/primary.tsx?raw"
-import RadixBadgeSecondarySource from "../radix/badge/secondary.tsx?raw"
-import RadixBadgeDestructiveSource from "../radix/badge/destructive.tsx?raw"
-import RadixBadgeSuccessSource from "../radix/badge/success.tsx?raw"
-import RadixBadgeInfoSource from "../radix/badge/info.tsx?raw"
-import RadixBadgeWarningSource from "../radix/badge/warning.tsx?raw"
-import RadixBadgeOutlineSource from "../radix/badge/outline.tsx?raw"
-import RadixBadgePrimaryOutlineSource from "../radix/badge/primary-outline.tsx?raw"
-import RadixBadgeDestructiveOutlineSource from "../radix/badge/destructive-outline.tsx?raw"
-import RadixBadgeInfoOutlineSource from "../radix/badge/info-outline.tsx?raw"
-import RadixBadgeSuccessOutlineSource from "../radix/badge/success-outline.tsx?raw"
-import RadixBadgeWarningOutlineSource from "../radix/badge/warning-outline.tsx?raw"
-import RadixBadgePrimaryLightSource from "../radix/badge/primary-light.tsx?raw"
-import RadixBadgeDestructiveLightSource from "../radix/badge/destructive-light.tsx?raw"
-import RadixBadgeSuccessLightSource from "../radix/badge/success-light.tsx?raw"
-import RadixBadgeInfoLightSource from "../radix/badge/info-light.tsx?raw"
-import RadixBadgeWarningLightSource from "../radix/badge/warning-light.tsx?raw"
-import RadixBadgeSizesSource from "../radix/badge/sizes.tsx?raw"
-import RadixBadgeFullRadiusSource from "../radix/badge/full-radius.tsx?raw"
-import RadixBadgeWithIconSource from "../radix/badge/with-icon.tsx?raw"
-import RadixBadgeDismissButtonSource from "../radix/badge/dismiss-button.tsx?raw"
-import RadixBadgeStatusDotSource from "../radix/badge/status-dot.tsx?raw"
-import RadixBadgeAsLinkSource from "../radix/badge/as-link.tsx?raw"
-import RadixBadgeWithAvatarSource from "../radix/badge/with-avatar.tsx?raw"
-import RadixBadgeWithFlagSource from "../radix/badge/with-flag.tsx?raw"
-import RadixCascaderSource from "../radix/cascader/default.tsx?raw"
-import RadixCascaderAttributePickerSource from "../radix/cascader/attribute-picker.tsx?raw"
-import RadixCascaderMultiSelectCapSource from "../radix/cascader/multi-select-cap.tsx?raw"
-import RadixCascaderDeepSearchSource from "../radix/cascader/deep-search.tsx?raw"
-import RadixCascaderFooterFlyoutSource from "../radix/cascader/footer-flyout.tsx?raw"
-import RadixCascaderAvatarRowsSource from "../radix/cascader/avatar-rows.tsx?raw"
-import RadixCascaderPathFormattingSource from "../radix/cascader/path-formatting.tsx?raw"
-import RadixCascaderEmbeddedPanelSource from "../radix/cascader/embedded-panel.tsx?raw"
-import RadixCascaderFlatDataSource from "../radix/cascader/flat-data.tsx?raw"
-import RadixCascaderControlledStateSource from "../radix/cascader/controlled-state.tsx?raw"
-import RadixCascaderTranslatedLabelsSource from "../radix/cascader/translated-labels.tsx?raw"
-import RadixCascaderTwoLineRowsSource from "../radix/cascader/two-line-rows.tsx?raw"
-import RadixCascaderNativeFormFieldSource from "../radix/cascader/native-form-field.tsx?raw"
-import RadixCascaderColumnsModeSource from "../radix/cascader/columns-mode.tsx?raw"
-import RadixCascaderTreeModeSource from "../radix/cascader/tree-mode.tsx?raw"
-import RadixCascaderAsyncLoadingSource from "../radix/cascader/async-loading.tsx?raw"
-import RadixCascaderVirtualizedListSource from "../radix/cascader/virtualized-list.tsx?raw"
-import RadixCascaderRemovableChipsSource from "../radix/cascader/removable-chips.tsx?raw"
-import RadixCascaderTreeMultiSelectSource from "../radix/cascader/tree-multi-select.tsx?raw"
-import RadixCascaderColorDotsSource from "../radix/cascader/color-dots.tsx?raw"
-import RadixCascaderInheritedColorsSource from "../radix/cascader/inherited-colors.tsx?raw"
-import RadixCascaderGlobalSearchSource from "../radix/cascader/global-search.tsx?raw"
-import RadixCodeBlockSource from "../radix/code-block/default.tsx?raw"
-import CodeBlockStandardSource from "../radix/code-block/standard.tsx?raw"
-import CodeBlockPinnedCopySource from "../radix/code-block/pinned-copy.tsx?raw"
-import CodeBlockStreamingAgentSource from "../radix/code-block/streaming-agent.tsx?raw"
-import CodeBlockAiChatSource from "../radix/code-block/ai-chat.tsx?raw"
-import CodeBlockDiffSummarySource from "../radix/code-block/diff-summary.tsx?raw"
-import CodeBlockTransformerDiffSource from "../radix/code-block/transformer-diff.tsx?raw"
-import CodeBlockHighlightsSource from "../radix/code-block/highlights.tsx?raw"
-import CodeBlockFocusWalkthroughSource from "../radix/code-block/focus-walkthrough.tsx?raw"
-import CodeBlockTerminalOutputSource from "../radix/code-block/terminal-output.tsx?raw"
-import CodeBlockLongFileSource from "../radix/code-block/long-file.tsx?raw"
-import CodeBlockDiagnosticsActionsSource from "../radix/code-block/diagnostics-actions.tsx?raw"
-import CodeBlockLineSelectionSource from "../radix/code-block/line-selection.tsx?raw"
-import CodeBlockSearchInFileSource from "../radix/code-block/search-in-file.tsx?raw"
-import CodeBlockFileTabsSource from "../radix/code-block/file-tabs.tsx?raw"
-import CodeBlockPreHighlightedLinesSource from "../radix/code-block/pre-highlighted-lines.tsx?raw"
-import CodeBlockBeforeAfterSource from "../radix/code-block/before-after.tsx?raw"
-import CodeBlockSoftWrapSource from "../radix/code-block/soft-wrap.tsx?raw"
-import CodeBlockUnifiedPatchSource from "../radix/code-block/unified-patch.tsx?raw"
-import CodeBlockDesignTokenThemeSource from "../radix/code-block/design-token-theme.tsx?raw"
-import CodeBlockAlwaysDarkSource from "../radix/code-block/always-dark.tsx?raw"
-import CodeBlockDarkTerminalSource from "../radix/code-block/dark-terminal.tsx?raw"
-import CodeBlockAcceptRejectSource from "../radix/code-block/accept-reject.tsx?raw"
-import CodeBlockCodeFoldingSource from "../radix/code-block/code-folding.tsx?raw"
-import CodeBlockFixWithAiSource from "../radix/code-block/fix-with-ai.tsx?raw"
-import CodeBlockReferenceLinesSource from "../radix/code-block/reference-lines.tsx?raw"
-import CodeBlockExternalScrollSource from "../radix/code-block/external-scroll.tsx?raw"
-import CodeBlockAnsiTerminalSource from "../radix/code-block/ansi-terminal.tsx?raw"
-import RadixColorPickerSource from "../radix/color-picker/default.tsx?raw"
-import RadixColorPickerInlinePanelSource from "../radix/color-picker/inline-panel.tsx?raw"
-import RadixColorPickerPopoverSource from "../radix/color-picker/popover.tsx?raw"
-import RadixColorPickerColorInputSource from "../radix/color-picker/color-input.tsx?raw"
-import RadixColorPickerOpacitySource from "../radix/color-picker/opacity.tsx?raw"
-import RadixColorPickerPresetSwatchesSource from "../radix/color-picker/preset-swatches.tsx?raw"
-import RadixColorPickerOklchTokenSource from "../radix/color-picker/oklch-token.tsx?raw"
-import RadixColorPickerFormatConverterSource from "../radix/color-picker/format-converter.tsx?raw"
-import RadixColorPickerHueWheelSource from "../radix/color-picker/hue-wheel.tsx?raw"
-import RadixColorPickerRecentColorsSource from "../radix/color-picker/recent-colors.tsx?raw"
-import RadixColorPickerTextHighlightSource from "../radix/color-picker/text-highlight.tsx?raw"
-import RadixColorPickerChannelSlidersSource from "../radix/color-picker/channel-sliders.tsx?raw"
-import RadixColorPickerDesignInspectorSource from "../radix/color-picker/design-inspector.tsx?raw"
-import RadixColorPickerContrastCheckerSource from "../radix/color-picker/contrast-checker.tsx?raw"
-import RadixColorPickerBrandScaleSource from "../radix/color-picker/brand-scale.tsx?raw"
-import RadixColorPickerFormValidationSource from "../radix/color-picker/form-validation.tsx?raw"
-import RadixDataGridSource from "../radix/data-grid/default.tsx?raw"
-import RadixDataGridPaginationSource from "../radix/data-grid/pagination.tsx?raw"
-import RadixDataGridCellBordersSource from "../radix/data-grid/cell-borders.tsx?raw"
-import RadixDataGridDenseLayoutSource from "../radix/data-grid/dense-layout.tsx?raw"
-import RadixDataGridBorderlessSource from "../radix/data-grid/borderless.tsx?raw"
-import RadixDataGridStripedRowsSource from "../radix/data-grid/striped-rows.tsx?raw"
-import RadixDataGridAutoWidthSource from "../radix/data-grid/auto-width.tsx?raw"
-import RadixDataGridRowSelectionSource from "../radix/data-grid/row-selection.tsx?raw"
-import RadixDataGridExpandableRowsSource from "../radix/data-grid/expandable-rows.tsx?raw"
-import RadixDataGridSubTableSource from "../radix/data-grid/sub-table.tsx?raw"
-import RadixDataGridColumnIconsSource from "../radix/data-grid/column-icons.tsx?raw"
-import RadixDataGridSortableColumnsSource from "../radix/data-grid/sortable-columns.tsx?raw"
-import RadixDataGridMovableColumnsSource from "../radix/data-grid/movable-columns.tsx?raw"
-import RadixDataGridDraggableColumnsSource from "../radix/data-grid/draggable-columns.tsx?raw"
-import RadixDataGridDraggableRowsSource from "../radix/data-grid/draggable-rows.tsx?raw"
-import RadixDataGridColumnResizingSource from "../radix/data-grid/column-resizing.tsx?raw"
-import RadixDataGridPinnableColumnsSource from "../radix/data-grid/pinnable-columns.tsx?raw"
-import RadixDataGridStickyHeaderSource from "../radix/data-grid/sticky-header.tsx?raw"
-import RadixDataGridColumnControlsSource from "../radix/data-grid/column-controls.tsx?raw"
-import RadixDataGridCardContainerSource from "../radix/data-grid/card-container.tsx?raw"
-import RadixDataGridColumnVisibilitySource from "../radix/data-grid/column-visibility.tsx?raw"
-import RadixDataGridLoadingSkeletonSource from "../radix/data-grid/loading-skeleton.tsx?raw"
-import RadixDataGridCrudAdminSource from "../radix/data-grid/crud-admin.tsx?raw"
-import RadixDataGridCrudInFrameSource from "../radix/data-grid/crud-in-frame.tsx?raw"
-import RadixDataGridTotalsFooterSource from "../radix/data-grid/totals-footer.tsx?raw"
-import RadixDataGridSummaryStatsFooterSource from "../radix/data-grid/summary-stats-footer.tsx?raw"
-import RadixDataGridAggregateFooterSource from "../radix/data-grid/aggregate-footer.tsx?raw"
-import RadixDataGridLocalInfiniteScrollSource from "../radix/data-grid/local-infinite-scroll.tsx?raw"
-import RadixDataGridRemoteInfiniteScrollSource from "../radix/data-grid/remote-infinite-scroll.tsx?raw"
-import RadixDataGridRowPinningSource from "../radix/data-grid/row-pinning.tsx?raw"
-import RadixDataGridTreeRowsSource from "../radix/data-grid/tree-rows.tsx?raw"
-import RadixDataGridSpreadsheetEditingSource from "../radix/data-grid/spreadsheet-editing.tsx?raw"
-import RadixDataGridColumnVirtualizationSource from "../radix/data-grid/column-virtualization.tsx?raw"
-import RadixDataGridLocalizedLabelsSource from "../radix/data-grid/localized-labels.tsx?raw"
-import RadixDataGridServerSidePaginationSource from "../radix/data-grid/server-side-pagination.tsx?raw"
-import RadixDateSelectorSource from "../radix/date-selector/default.tsx?raw"
-import RadixDateSelectorStandardInlineSource from "../radix/date-selector/standard-inline.tsx?raw"
-import RadixDateSelectorPopoverSource from "../radix/date-selector/popover.tsx?raw"
-import RadixDateSelectorDialogSource from "../radix/date-selector/dialog.tsx?raw"
-import RadixDateSelectorLanguageMenuSource from "../radix/date-selector/language-menu.tsx?raw"
-import RadixEmojiPickerSource from "../radix/emoji-picker/default.tsx?raw"
-import RadixEmojiPickerInlineSource from "../radix/emoji-picker/inline.tsx?raw"
-import RadixEmojiPickerChatComposerSource from "../radix/emoji-picker/chat-composer.tsx?raw"
-import RadixEmojiPickerMessageReactionsSource from "../radix/emoji-picker/message-reactions.tsx?raw"
-import RadixEmojiPickerPageIconSource from "../radix/emoji-picker/page-icon.tsx?raw"
-import RadixEmojiPickerCustomTeamEmojiSource from "../radix/emoji-picker/custom-team-emoji.tsx?raw"
-import RadixEmojiPickerShortcodeSuggestionsSource from "../radix/emoji-picker/shortcode-suggestions.tsx?raw"
-import RadixEmojiPickerWorkplaceSafeSetSource from "../radix/emoji-picker/workplace-safe-set.tsx?raw"
-import RadixEmojiPickerLocalizedLabelsSource from "../radix/emoji-picker/localized-labels.tsx?raw"
-import RadixEventCalendarSource from "../radix/event-calendar/default.tsx?raw"
-import RadixEventCalendarAllViewsSource from "../radix/event-calendar/all-views.tsx?raw"
-import RadixEventCalendarRoomBookingsSource from "../radix/event-calendar/room-bookings.tsx?raw"
-import RadixEventCalendarEventFormDialogSource from "../radix/event-calendar/event-form-dialog.tsx?raw"
-import RadixEventCalendarCustomEventChipsSource from "../radix/event-calendar/custom-event-chips.tsx?raw"
-import RadixEventCalendarDragToBookSource from "../radix/event-calendar/drag-to-book.tsx?raw"
-import RadixFileTypeSource from "../radix/file-type/default.tsx?raw"
-import RadixFileTypeCommonFormatsSource from "../radix/file-type/common-formats.tsx?raw"
-import RadixFileTypeVariantsSource from "../radix/file-type/variants.tsx?raw"
-import RadixFileTypeSizesSource from "../radix/file-type/sizes.tsx?raw"
-import RadixFileTypeFamilyGlyphsSource from "../radix/file-type/family-glyphs.tsx?raw"
-import RadixFileTypeAllFormatsSource from "../radix/file-type/all-formats.tsx?raw"
-import RadixFileTypeFileBrowserSource from "../radix/file-type/file-browser.tsx?raw"
-import RadixFileTypeAttachmentListSource from "../radix/file-type/attachment-list.tsx?raw"
-import RadixFileTypeUploadQueueSource from "../radix/file-type/upload-queue.tsx?raw"
-import RadixFileTypeResolveFromNameSource from "../radix/file-type/resolve-from-name.tsx?raw"
-import RadixFileTypeCustomLabelsSource from "../radix/file-type/custom-labels.tsx?raw"
-import RadixFileTypeCustomColorsSource from "../radix/file-type/custom-colors.tsx?raw"
-import RadixFileTypeFormatPickerSource from "../radix/file-type/format-picker.tsx?raw"
-import RadixFileTypeLockedStarredSource from "../radix/file-type/locked-starred.tsx?raw"
-import RadixFileTypeRestyledLabelsSource from "../radix/file-type/restyled-labels.tsx?raw"
-import RadixFileTypeDotfilesBuildNamesSource from "../radix/file-type/dotfiles-build-names.tsx?raw"
-import RadixFiltersSource from "../radix/filters/default.tsx?raw"
-import RadixFiltersFullFilterBarSource from "../radix/filters/full-filter-bar.tsx?raw"
-import RadixFiltersNestedAttributesSource from "../radix/filters/nested-attributes.tsx?raw"
-import RadixFiltersStatusBadgesSource from "../radix/filters/status-badges.tsx?raw"
-import RadixFiltersAvatarsPagingSource from "../radix/filters/avatars-paging.tsx?raw"
-import RadixFiltersDateEditorsSource from "../radix/filters/date-editors.tsx?raw"
-import RadixFiltersSliderEditorSource from "../radix/filters/slider-editor.tsx?raw"
-import RadixFiltersTableFilteringSource from "../radix/filters/table-filtering.tsx?raw"
-import RadixFiltersChoiceControlsSource from "../radix/filters/choice-controls.tsx?raw"
-import RadixFiltersTypedInputsSource from "../radix/filters/typed-inputs.tsx?raw"
-import RadixFiltersPopoverBuilderSource from "../radix/filters/popover-builder.tsx?raw"
-import RadixFiltersInlineBuilderSource from "../radix/filters/inline-builder.tsx?raw"
-import RadixFiltersControlledTranslatedSource from "../radix/filters/controlled-translated.tsx?raw"
-import RadixFrameSource from "../radix/frame/default.tsx?raw"
-import RadixFrameStandardSource from "../radix/frame/standard.tsx?raw"
-import RadixFrameSeparatedPanelsSource from "../radix/frame/separated-panels.tsx?raw"
-import RadixFrameStackedPanelsSource from "../radix/frame/stacked-panels.tsx?raw"
-import RadixFrameStackedDenseSource from "../radix/frame/stacked-dense.tsx?raw"
-import RadixFrameCollapsiblePanelsSource from "../radix/frame/collapsible-panels.tsx?raw"
-import RadixFrameGhostVariantSource from "../radix/frame/ghost-variant.tsx?raw"
-import RadixFrameDenseLayoutSource from "../radix/frame/dense-layout.tsx?raw"
-import RadixFrameStackedRowsSource from "../radix/frame/stacked-rows.tsx?raw"
-import RadixFrameExtraSmallSpacingSource from "../radix/frame/extra-small-spacing.tsx?raw"
-import RadixFrameSmallSpacingSource from "../radix/frame/small-spacing.tsx?raw"
-import RadixFrameDefaultSpacingSource from "../radix/frame/default-spacing.tsx?raw"
-import RadixFrameLargeSpacingSource from "../radix/frame/large-spacing.tsx?raw"
-import RadixFrameSmallRadiusSource from "../radix/frame/small-radius.tsx?raw"
-import RadixFrameMediumRadiusSource from "../radix/frame/medium-radius.tsx?raw"
-import RadixFrameLargeRadiusSource from "../radix/frame/large-radius.tsx?raw"
-import RadixFrameDefaultRadiusSource from "../radix/frame/default-radius.tsx?raw"
-import RadixFrameExtraLargeRadiusSource from "../radix/frame/extra-large-radius.tsx?raw"
-import RadixFrameContentOnlyPanelsSource from "../radix/frame/content-only-panels.tsx?raw"
-import RadixFrameStackedContentOnlySource from "../radix/frame/stacked-content-only.tsx?raw"
-import RadixGanttSource from "../radix/gantt/default.tsx?raw"
-import RadixGanttSettingsMenuSource from "../radix/gantt/settings-menu.tsx?raw"
-import RadixGanttDragReorderSource from "../radix/gantt/drag-reorder.tsx?raw"
-import RadixGanttQuarterRoadmapSource from "../radix/gantt/quarter-roadmap.tsx?raw"
-import RadixGanttCapacityBoardSource from "../radix/gantt/capacity-board.tsx?raw"
-import RadixGanttTaskTableSource from "../radix/gantt/task-table.tsx?raw"
-import RadixGanttBaselineTrackingSource from "../radix/gantt/baseline-tracking.tsx?raw"
-import RadixGanttDependenciesMilestonesSource from "../radix/gantt/dependencies-milestones.tsx?raw"
-import RadixGanttWorkingDaysSource from "../radix/gantt/working-days.tsx?raw"
-import RadixIconStackSource from "../radix/icon-stack/default.tsx?raw"
-import RadixIconStackIsometricSource from "../radix/icon-stack/isometric.tsx?raw"
-import RadixIconStackSizesSource from "../radix/icon-stack/sizes.tsx?raw"
-import RadixIconStackColorsSource from "../radix/icon-stack/colors.tsx?raw"
-import RadixIconStackBadgeOverlaySource from "../radix/icon-stack/badge-overlay.tsx?raw"
-import RadixIconStackEmptyStateSource from "../radix/icon-stack/empty-state.tsx?raw"
-import RadixIconStackItemMediaSource from "../radix/icon-stack/item-media.tsx?raw"
-import RadixIconTileSource from "../radix/icon-tile/default.tsx?raw"
-import RadixIconTileDefaultSource from "../radix/icon-tile/default.tsx?raw"
-import RadixIconTileElevatedSource from "../radix/icon-tile/elevated.tsx?raw"
-import RadixIconTileFramedSource from "../radix/icon-tile/framed.tsx?raw"
-import RadixIconTileAllVariantsSource from "../radix/icon-tile/all-variants.tsx?raw"
-import RadixIconTileSizesSource from "../radix/icon-tile/sizes.tsx?raw"
-import RadixIconTileCircularSource from "../radix/icon-tile/circular.tsx?raw"
-import RadixIconTileCustomSizingSource from "../radix/icon-tile/custom-sizing.tsx?raw"
-import RadixIconTileColorTonesSource from "../radix/icon-tile/color-tones.tsx?raw"
-import RadixIconTileTextContentSource from "../radix/icon-tile/text-content.tsx?raw"
-import RadixIconTileListRowSource from "../radix/icon-tile/list-row.tsx?raw"
-import RadixIconTileFeatureCardSource from "../radix/icon-tile/feature-card.tsx?raw"
-import RadixIconTileEmptyStateSource from "../radix/icon-tile/empty-state.tsx?raw"
-import RadixIconTileInteractiveSource from "../radix/icon-tile/interactive.tsx?raw"
-import RadixIconTileStatusOverlaySource from "../radix/icon-tile/status-overlay.tsx?raw"
-import RadixIconTileSoftTonesSource from "../radix/icon-tile/soft-tones.tsx?raw"
-import RadixIconTileSolidTonesSource from "../radix/icon-tile/solid-tones.tsx?raw"
-import RadixIconTileBrandColorsSource from "../radix/icon-tile/brand-colors.tsx?raw"
-import RadixKanbanSource from "../radix/kanban/default.tsx?raw"
-import RadixKanbanPlaceholderOverlaySource from "../radix/kanban/placeholder-overlay.tsx?raw"
-import RadixKanbanDynamicOverlaySource from "../radix/kanban/dynamic-overlay.tsx?raw"
-import RadixKanbanFrameColumnsSource from "../radix/kanban/frame-columns.tsx?raw"
-import RadixKanbanStackedFrameSource from "../radix/kanban/stacked-frame.tsx?raw"
-import RadixKanbanFeatureRoadmapSource from "../radix/kanban/feature-roadmap.tsx?raw"
-import RadixKanbanPersistedMovesSource from "../radix/kanban/persisted-moves.tsx?raw"
-import RadixNumberFieldSource from "../radix/number-field/default.tsx?raw"
-import RadixNumberFieldDefaultSizeSource from "../radix/number-field/default-size.tsx?raw"
-import RadixNumberFieldSmallSizeSource from "../radix/number-field/small-size.tsx?raw"
-import RadixNumberFieldLargeSizeSource from "../radix/number-field/large-size.tsx?raw"
-import RadixNumberFieldButtonsOnRightSource from "../radix/number-field/buttons-on-right.tsx?raw"
-import RadixNumberFieldSpinnerButtonsSource from "../radix/number-field/spinner-buttons.tsx?raw"
-import RadixNumberFieldFormValidationSource from "../radix/number-field/form-validation.tsx?raw"
-import RadixPhoneInputSource from "../radix/phone-input/default.tsx?raw"
-import RadixPhoneInputStandardSource from "../radix/phone-input/standard.tsx?raw"
-import RadixPhoneInputSmallSource from "../radix/phone-input/small.tsx?raw"
-import RadixPhoneInputLargeSource from "../radix/phone-input/large.tsx?raw"
-import RadixPhoneInputDisabledSource from "../radix/phone-input/disabled.tsx?raw"
-import RadixPhoneInputPresetValueSource from "../radix/phone-input/preset-value.tsx?raw"
-import RadixPhoneInputErrorStateSource from "../radix/phone-input/error-state.tsx?raw"
-import RadixPhoneInputDefaultCountrySource from "../radix/phone-input/default-country.tsx?raw"
-import RadixPhoneInputReadOnlySource from "../radix/phone-input/read-only.tsx?raw"
-import RadixRatingSource from "../radix/rating/default.tsx?raw"
-import RadixRatingStandardSource from "../radix/rating/standard.tsx?raw"
-import RadixRatingDecimalValueSource from "../radix/rating/decimal-value.tsx?raw"
-import RadixRatingShowValueSource from "../radix/rating/show-value.tsx?raw"
-import RadixRatingEditableSource from "../radix/rating/editable.tsx?raw"
-import RadixRatingSizesSource from "../radix/rating/sizes.tsx?raw"
-import RadixRatingReviewSummarySource from "../radix/rating/review-summary.tsx?raw"
-import RadixRatingHalfStarInputSource from "../radix/rating/half-star-input.tsx?raw"
-import RadixRatingEmojiReactionsSource from "../radix/rating/emoji-reactions.tsx?raw"
-import RadixRatingReviewTextSource from "../radix/rating/review-text.tsx?raw"
-import RadixScrollspySource from "../radix/scrollspy/default.tsx?raw"
-import RadixScrollspyVerticalNavSource from "../radix/scrollspy/vertical-nav.tsx?raw"
-import RadixScrollspyHorizontalNavSource from "../radix/scrollspy/horizontal-nav.tsx?raw"
-import RadixSignaturePadSource from "../radix/signature-pad/default.tsx?raw"
-import RadixSignaturePadPinnedActionsSource from "../radix/signature-pad/pinned-actions.tsx?raw"
-import RadixSignaturePadUndoRedoSource from "../radix/signature-pad/undo-redo.tsx?raw"
-import RadixSignaturePadFormValidationSource from "../radix/signature-pad/form-validation.tsx?raw"
-import RadixSignaturePadSigningWorkspaceSource from "../radix/signature-pad/signing-workspace.tsx?raw"
-import RadixSignaturePadExportFormatsSource from "../radix/signature-pad/export-formats.tsx?raw"
-import RadixSignaturePadDrawOrTypeSource from "../radix/signature-pad/draw-or-type.tsx?raw"
-import RadixSignaturePadAgreementCardSource from "../radix/signature-pad/agreement-card.tsx?raw"
-import RadixSignaturePadInDialogSource from "../radix/signature-pad/in-dialog.tsx?raw"
-import RadixSignaturePadStylusModeSource from "../radix/signature-pad/stylus-mode.tsx?raw"
-import RadixSignaturePadClauseInitialsSource from "../radix/signature-pad/clause-initials.tsx?raw"
-import RadixSignaturePadProofOfDeliverySource from "../radix/signature-pad/proof-of-delivery.tsx?raw"
-import RadixSignaturePadFileUploadSource from "../radix/signature-pad/file-upload.tsx?raw"
-import RadixSortableSource from "../radix/sortable/default.tsx?raw"
-import RadixSortableFileListSource from "../radix/sortable/file-list.tsx?raw"
-import RadixSortableGridLayoutSource from "../radix/sortable/grid-layout.tsx?raw"
-import RadixSortableNestedLayoutSource from "../radix/sortable/nested-layout.tsx?raw"
-import RadixSortablePlaylistSource from "../radix/sortable/playlist.tsx?raw"
-import RadixSortableSettingsPrioritySource from "../radix/sortable/settings-priority.tsx?raw"
-import RadixSortableSidebarNavigationSource from "../radix/sortable/sidebar-navigation.tsx?raw"
-import RadixSortableImageGallerySource from "../radix/sortable/image-gallery.tsx?raw"
-import RadixSortablePersistedOrderSource from "../radix/sortable/persisted-order.tsx?raw"
-import RadixStepperSource from "../radix/stepper/default.tsx?raw"
-import RadixStepperStandardSource from "../radix/stepper/standard.tsx?raw"
-import RadixStepperCompletedStateSource from "../radix/stepper/completed-state.tsx?raw"
-import RadixStepperLoadingStateSource from "../radix/stepper/loading-state.tsx?raw"
-import RadixStepperControlledSource from "../radix/stepper/controlled.tsx?raw"
-import RadixStepperLabelsBelowSource from "../radix/stepper/labels-below.tsx?raw"
-import RadixStepperLeftAlignedTitlesSource from "../radix/stepper/left-aligned-titles.tsx?raw"
-import RadixStepperIconsBadgesSource from "../radix/stepper/icons-badges.tsx?raw"
-import RadixStepperDescriptionsSource from "../radix/stepper/descriptions.tsx?raw"
-import RadixStepperInlineTitlesSource from "../radix/stepper/inline-titles.tsx?raw"
-import RadixStepperTitleCaptionSource from "../radix/stepper/title-caption.tsx?raw"
-import RadixStepperBarWithTitlesSource from "../radix/stepper/bar-with-titles.tsx?raw"
-import RadixStepperSegmentedBarSource from "../radix/stepper/segmented-bar.tsx?raw"
-import RadixStepperVerticalDescriptionsSource from "../radix/stepper/vertical-descriptions.tsx?raw"
-import RadixStepperVerticalSource from "../radix/stepper/vertical.tsx?raw"
-import RadixStepperVerticalTitlesSource from "../radix/stepper/vertical-titles.tsx?raw"
-import RadixStepperDeliveryStopsSource from "../radix/stepper/delivery-stops.tsx?raw"
-import RadixStepperDottedProgressSource from "../radix/stepper/dotted-progress.tsx?raw"
-import RadixStepperStageDetailsSource from "../radix/stepper/stage-details.tsx?raw"
-import RadixStepperFrameIconTilesSource from "../radix/stepper/frame-icon-tiles.tsx?raw"
-import RadixStepperPurchaseOrdersSource from "../radix/stepper/purchase-orders.tsx?raw"
-import RadixStepperSecurityChecksSource from "../radix/stepper/security-checks.tsx?raw"
-import RadixStepperBottomColorBarsSource from "../radix/stepper/bottom-color-bars.tsx?raw"
-import RadixStepperTopColorBarsSource from "../radix/stepper/top-color-bars.tsx?raw"
-import RadixStepperIconTileRowsSource from "../radix/stepper/icon-tile-rows.tsx?raw"
-import RadixStepperPhaseTrackSource from "../radix/stepper/phase-track.tsx?raw"
-import RadixStepperTimestampedCheckpointsSource from "../radix/stepper/timestamped-checkpoints.tsx?raw"
-import RadixStepperTransitArrowSource from "../radix/stepper/transit-arrow.tsx?raw"
-import RadixStepperBreadcrumbStepsSource from "../radix/stepper/breadcrumb-steps.tsx?raw"
-import RadixStepperCompactInlineSource from "../radix/stepper/compact-inline.tsx?raw"
-import RadixStepperTruckRouteSource from "../radix/stepper/truck-route.tsx?raw"
-import RadixStepperChevronIconTilesSource from "../radix/stepper/chevron-icon-tiles.tsx?raw"
-import RadixStepperNumberedChevronsSource from "../radix/stepper/numbered-chevrons.tsx?raw"
-import RadixStepperFilledChevronsSource from "../radix/stepper/filled-chevrons.tsx?raw"
-import RadixStepperOutlinedChevronsSource from "../radix/stepper/outlined-chevrons.tsx?raw"
-import RadixStepperFlatChevronsSource from "../radix/stepper/flat-chevrons.tsx?raw"
-import RadixStepperShippingRouteSource from "../radix/stepper/shipping-route.tsx?raw"
-import RadixStepperHorizontalStepCardsSource from "../radix/stepper/horizontal-step-cards.tsx?raw"
-import RadixStepperShipmentProgressSource from "../radix/stepper/shipment-progress.tsx?raw"
-import RadixStepperVerticalStepCardsSource from "../radix/stepper/vertical-step-cards.tsx?raw"
-import RadixStepperSideRailIconsSource from "../radix/stepper/side-rail-icons.tsx?raw"
-import RadixStepperStatusListSource from "../radix/stepper/status-list.tsx?raw"
-import RadixStepperVerticalStatusBarsSource from "../radix/stepper/vertical-status-bars.tsx?raw"
-import RadixStepperCollapsibleSubStepsSource from "../radix/stepper/collapsible-sub-steps.tsx?raw"
-import RadixStepperRightAlignedSubStepsSource from "../radix/stepper/right-aligned-sub-steps.tsx?raw"
-import RadixTimePickerSource from "../radix/time-picker/default.tsx?raw"
-import RadixTimePickerInlinePanelSource from "../radix/time-picker/inline-panel.tsx?raw"
-import RadixTimePickerPopoverSource from "../radix/time-picker/popover.tsx?raw"
-import RadixTimePickerTypableInputSource from "../radix/time-picker/typable-input.tsx?raw"
-import RadixTimePicker12HourSecondsSource from "../radix/time-picker/12-hour-seconds.tsx?raw"
-import RadixTimePickerHourOnlySource from "../radix/time-picker/hour-only.tsx?raw"
-import RadixTimePickerOpeningHoursSource from "../radix/time-picker/opening-hours.tsx?raw"
-import RadixTimePickerUnavailableSlotsSource from "../radix/time-picker/unavailable-slots.tsx?raw"
-import RadixTimePickerStartEndSource from "../radix/time-picker/start-end.tsx?raw"
-import RadixTimePickerTimeZoneSource from "../radix/time-picker/time-zone.tsx?raw"
-import RadixTimePickerConfirmBeforeApplySource from "../radix/time-picker/confirm-before-apply.tsx?raw"
-import RadixTimePickerLocalizedSource from "../radix/time-picker/localized.tsx?raw"
-import RadixTimePickerFormValidationSource from "../radix/time-picker/form-validation.tsx?raw"
-import RadixTimePickerDateTimeSource from "../radix/time-picker/date-time.tsx?raw"
-import RadixTimelineSource from "../radix/timeline/default.tsx?raw"
-import RadixTimelineStandardSource from "../radix/timeline/standard.tsx?raw"
-import RadixTimelineRoadmapSource from "../radix/timeline/roadmap.tsx?raw"
-import RadixTimelineOrderStatusSource from "../radix/timeline/order-status.tsx?raw"
-import RadixTimelineGitActivitySource from "../radix/timeline/git-activity.tsx?raw"
-import RadixTimelineMilestonesSource from "../radix/timeline/milestones.tsx?raw"
-import RadixTimelinePipelineStepsSource from "../radix/timeline/pipeline-steps.tsx?raw"
-import RadixTimelineRoadmapItemsSource from "../radix/timeline/roadmap-items.tsx?raw"
-import RadixTimelineHorizontalSource from "../radix/timeline/horizontal.tsx?raw"
-import RadixTimelineLeadingLabelsSource from "../radix/timeline/leading-labels.tsx?raw"
-import RadixTimelineDeploymentLogSource from "../radix/timeline/deployment-log.tsx?raw"
-import RadixTimelineAvatarActivitySource from "../radix/timeline/avatar-activity.tsx?raw"
-import RadixTimelineCompactMilestonesSource from "../radix/timeline/compact-milestones.tsx?raw"
-import RadixTreeSource from "../radix/tree/default.tsx?raw"
-import RadixTreeStandardSource from "../radix/tree/standard.tsx?raw"
-import RadixTreeIndentLinesSource from "../radix/tree/indent-lines.tsx?raw"
-import RadixTreeFolderFileIconsSource from "../radix/tree/folder-file-icons.tsx?raw"
-import RadixTreePlusMinusTogglesSource from "../radix/tree/plus-minus-toggles.tsx?raw"
-import RadixTreeFileExplorerSource from "../radix/tree/file-explorer.tsx?raw"
-import RadixTreeOrgChartSource from "../radix/tree/org-chart.tsx?raw"
-import RadixTreePermissionsSource from "../radix/tree/permissions.tsx?raw"
-import BaseAutocompleteSource from "../base/autocomplete/default.tsx?raw"
-import BaseBadgeSource from "../base/badge/default.tsx?raw"
-import BaseCascaderSource from "../base/cascader/default.tsx?raw"
-import BaseCodeBlockSource from "../base/code-block/default.tsx?raw"
-import BaseColorPickerSource from "../base/color-picker/default.tsx?raw"
-import BaseDataGridSource from "../base/data-grid/default.tsx?raw"
-import BaseDateSelectorSource from "../base/date-selector/default.tsx?raw"
-import BaseEmojiPickerSource from "../base/emoji-picker/default.tsx?raw"
-import BaseEventCalendarSource from "../base/event-calendar/default.tsx?raw"
-import BaseFiltersSource from "../base/filters/default.tsx?raw"
-import BaseFrameSource from "../base/frame/default.tsx?raw"
-import BaseGanttSource from "../base/gantt/default.tsx?raw"
-import BaseIconStackSource from "../base/icon-stack/default.tsx?raw"
-import BaseIconTileSource from "../base/icon-tile/default.tsx?raw"
-import BaseKanbanSource from "../base/kanban/default.tsx?raw"
-import BaseNumberFieldSource from "../base/number-field/default.tsx?raw"
-import BasePhoneInputSource from "../base/phone-input/default.tsx?raw"
-import BaseSignaturePadSource from "../base/signature-pad/default.tsx?raw"
-import BaseSortableSource from "../base/sortable/default.tsx?raw"
-import BaseStepperSource from "../base/stepper/default.tsx?raw"
-import BaseTimePickerSource from "../base/time-picker/default.tsx?raw"
-import BaseTimelineSource from "../base/timeline/default.tsx?raw"
-import BaseTreeSource from "../base/tree/default.tsx?raw"
-
-const file = (name: string, code: string): BlockFile => ({
-  name,
-  code,
-  lang: "tsx",
-})
+const RadixAlertTitleDescriptionSource = sourceLoader(() => import("../radix/alert/title-description.tsx?raw"))
+const RadixAlertLeadingIconSource = sourceLoader(() => import("../radix/alert/leading-icon.tsx?raw"))
+const RadixAlertIconActionsSource = sourceLoader(() => import("../radix/alert/icon-actions.tsx?raw"))
+const RadixAlertPaymentFailureSource = sourceLoader(() => import("../radix/alert/payment-failure.tsx?raw"))
+const RadixAlertInfoVariantSource = sourceLoader(() => import("../radix/alert/info-variant.tsx?raw"))
+const RadixAlertSuccessVariantSource = sourceLoader(() => import("../radix/alert/success-variant.tsx?raw"))
+const RadixAlertWarningVariantSource = sourceLoader(() => import("../radix/alert/warning-variant.tsx?raw"))
+const RadixAlertErrorVariantSource = sourceLoader(() => import("../radix/alert/error-variant.tsx?raw"))
+const RadixAlertInvertVariantSource = sourceLoader(() => import("../radix/alert/invert-variant.tsx?raw"))
+const RadixAlertTitleActionsSource = sourceLoader(() => import("../radix/alert/title-actions.tsx?raw"))
+const RadixAlertDescriptionActionsSource = sourceLoader(() => import("../radix/alert/description-actions.tsx?raw"))
+const RadixAlertFrameResetBordersSource = sourceLoader(() => import("../radix/alert/frame-reset-borders.tsx?raw"))
+const RadixAlertStackedInFrameSource = sourceLoader(() => import("../radix/alert/stacked-in-frame.tsx?raw"))
+const RadixAlertFrameWithActionsSource = sourceLoader(() => import("../radix/alert/frame-with-actions.tsx?raw"))
+const RadixAlertProUpsellSource = sourceLoader(() => import("../radix/alert/pro-upsell.tsx?raw"))
+const RadixAlertUrgentBillingSource = sourceLoader(() => import("../radix/alert/urgent-billing.tsx?raw"))
+const RadixAlertServiceStatusSource = sourceLoader(() => import("../radix/alert/service-status.tsx?raw"))
+const RadixAlertFeatureDiscoverySource = sourceLoader(() => import("../radix/alert/feature-discovery.tsx?raw"))
+const RadixAlertDirectMessageSource = sourceLoader(() => import("../radix/alert/direct-message.tsx?raw"))
+const RadixAlertCommentMentionSource = sourceLoader(() => import("../radix/alert/comment-mention.tsx?raw"))
+const RadixAutocompleteStandardSource = sourceLoader(() => import("../radix/autocomplete/standard.tsx?raw"))
+const RadixAutocompleteDisabledSource = sourceLoader(() => import("../radix/autocomplete/disabled.tsx?raw"))
+const RadixAutocompleteAutoHighlightSource = sourceLoader(() => import("../radix/autocomplete/auto-highlight.tsx?raw"))
+const RadixAutocompleteLabeledSource = sourceLoader(() => import("../radix/autocomplete/labeled.tsx?raw"))
+const RadixAutocompleteClearButtonSource = sourceLoader(() => import("../radix/autocomplete/clear-button.tsx?raw"))
+const RadixAutocompleteTriggerButtonSource = sourceLoader(() => import("../radix/autocomplete/trigger-button.tsx?raw"))
+const RadixAutocompleteClearTriggerSource = sourceLoader(() => import("../radix/autocomplete/clear-trigger.tsx?raw"))
+const RadixAutocompleteGroupsLabelsSource = sourceLoader(() => import("../radix/autocomplete/groups-labels.tsx?raw"))
+const RadixAutocompleteSearchResultsSource = sourceLoader(() => import("../radix/autocomplete/search-results.tsx?raw"))
+const RadixAutocompleteSmallSource = sourceLoader(() => import("../radix/autocomplete/small.tsx?raw"))
+const RadixAutocompleteLargeSource = sourceLoader(() => import("../radix/autocomplete/large.tsx?raw"))
+const RadixAutocompleteFormIntegrationSource = sourceLoader(() => import("../radix/autocomplete/form-integration.tsx?raw"))
+const RadixBadgePrimarySource = sourceLoader(() => import("../radix/badge/primary.tsx?raw"))
+const RadixBadgeSecondarySource = sourceLoader(() => import("../radix/badge/secondary.tsx?raw"))
+const RadixBadgeDestructiveSource = sourceLoader(() => import("../radix/badge/destructive.tsx?raw"))
+const RadixBadgeSuccessSource = sourceLoader(() => import("../radix/badge/success.tsx?raw"))
+const RadixBadgeInfoSource = sourceLoader(() => import("../radix/badge/info.tsx?raw"))
+const RadixBadgeWarningSource = sourceLoader(() => import("../radix/badge/warning.tsx?raw"))
+const RadixBadgeOutlineSource = sourceLoader(() => import("../radix/badge/outline.tsx?raw"))
+const RadixBadgePrimaryOutlineSource = sourceLoader(() => import("../radix/badge/primary-outline.tsx?raw"))
+const RadixBadgeDestructiveOutlineSource = sourceLoader(() => import("../radix/badge/destructive-outline.tsx?raw"))
+const RadixBadgeInfoOutlineSource = sourceLoader(() => import("../radix/badge/info-outline.tsx?raw"))
+const RadixBadgeSuccessOutlineSource = sourceLoader(() => import("../radix/badge/success-outline.tsx?raw"))
+const RadixBadgeWarningOutlineSource = sourceLoader(() => import("../radix/badge/warning-outline.tsx?raw"))
+const RadixBadgePrimaryLightSource = sourceLoader(() => import("../radix/badge/primary-light.tsx?raw"))
+const RadixBadgeDestructiveLightSource = sourceLoader(() => import("../radix/badge/destructive-light.tsx?raw"))
+const RadixBadgeSuccessLightSource = sourceLoader(() => import("../radix/badge/success-light.tsx?raw"))
+const RadixBadgeInfoLightSource = sourceLoader(() => import("../radix/badge/info-light.tsx?raw"))
+const RadixBadgeWarningLightSource = sourceLoader(() => import("../radix/badge/warning-light.tsx?raw"))
+const RadixBadgeSizesSource = sourceLoader(() => import("../radix/badge/sizes.tsx?raw"))
+const RadixBadgeFullRadiusSource = sourceLoader(() => import("../radix/badge/full-radius.tsx?raw"))
+const RadixBadgeWithIconSource = sourceLoader(() => import("../radix/badge/with-icon.tsx?raw"))
+const RadixBadgeDismissButtonSource = sourceLoader(() => import("../radix/badge/dismiss-button.tsx?raw"))
+const RadixBadgeStatusDotSource = sourceLoader(() => import("../radix/badge/status-dot.tsx?raw"))
+const RadixBadgeAsLinkSource = sourceLoader(() => import("../radix/badge/as-link.tsx?raw"))
+const RadixBadgeWithAvatarSource = sourceLoader(() => import("../radix/badge/with-avatar.tsx?raw"))
+const RadixBadgeWithFlagSource = sourceLoader(() => import("../radix/badge/with-flag.tsx?raw"))
+const RadixCascaderSource = sourceLoader(() => import("../radix/cascader/default.tsx?raw"))
+const RadixCascaderAttributePickerSource = sourceLoader(() => import("../radix/cascader/attribute-picker.tsx?raw"))
+const RadixCascaderMultiSelectCapSource = sourceLoader(() => import("../radix/cascader/multi-select-cap.tsx?raw"))
+const RadixCascaderDeepSearchSource = sourceLoader(() => import("../radix/cascader/deep-search.tsx?raw"))
+const RadixCascaderFooterFlyoutSource = sourceLoader(() => import("../radix/cascader/footer-flyout.tsx?raw"))
+const RadixCascaderAvatarRowsSource = sourceLoader(() => import("../radix/cascader/avatar-rows.tsx?raw"))
+const RadixCascaderPathFormattingSource = sourceLoader(() => import("../radix/cascader/path-formatting.tsx?raw"))
+const RadixCascaderEmbeddedPanelSource = sourceLoader(() => import("../radix/cascader/embedded-panel.tsx?raw"))
+const RadixCascaderFlatDataSource = sourceLoader(() => import("../radix/cascader/flat-data.tsx?raw"))
+const RadixCascaderControlledStateSource = sourceLoader(() => import("../radix/cascader/controlled-state.tsx?raw"))
+const RadixCascaderTranslatedLabelsSource = sourceLoader(() => import("../radix/cascader/translated-labels.tsx?raw"))
+const RadixCascaderTwoLineRowsSource = sourceLoader(() => import("../radix/cascader/two-line-rows.tsx?raw"))
+const RadixCascaderNativeFormFieldSource = sourceLoader(() => import("../radix/cascader/native-form-field.tsx?raw"))
+const RadixCascaderColumnsModeSource = sourceLoader(() => import("../radix/cascader/columns-mode.tsx?raw"))
+const RadixCascaderTreeModeSource = sourceLoader(() => import("../radix/cascader/tree-mode.tsx?raw"))
+const RadixCascaderAsyncLoadingSource = sourceLoader(() => import("../radix/cascader/async-loading.tsx?raw"))
+const RadixCascaderVirtualizedListSource = sourceLoader(() => import("../radix/cascader/virtualized-list.tsx?raw"))
+const RadixCascaderRemovableChipsSource = sourceLoader(() => import("../radix/cascader/removable-chips.tsx?raw"))
+const RadixCascaderTreeMultiSelectSource = sourceLoader(() => import("../radix/cascader/tree-multi-select.tsx?raw"))
+const RadixCascaderColorDotsSource = sourceLoader(() => import("../radix/cascader/color-dots.tsx?raw"))
+const RadixCascaderInheritedColorsSource = sourceLoader(() => import("../radix/cascader/inherited-colors.tsx?raw"))
+const RadixCascaderGlobalSearchSource = sourceLoader(() => import("../radix/cascader/global-search.tsx?raw"))
+const RadixCodeBlockSource = sourceLoader(() => import("../radix/code-block/default.tsx?raw"))
+const CodeBlockStandardSource = sourceLoader(() => import("../radix/code-block/standard.tsx?raw"))
+const CodeBlockPinnedCopySource = sourceLoader(() => import("../radix/code-block/pinned-copy.tsx?raw"))
+const CodeBlockStreamingAgentSource = sourceLoader(() => import("../radix/code-block/streaming-agent.tsx?raw"))
+const CodeBlockAiChatSource = sourceLoader(() => import("../radix/code-block/ai-chat.tsx?raw"))
+const CodeBlockDiffSummarySource = sourceLoader(() => import("../radix/code-block/diff-summary.tsx?raw"))
+const CodeBlockTransformerDiffSource = sourceLoader(() => import("../radix/code-block/transformer-diff.tsx?raw"))
+const CodeBlockHighlightsSource = sourceLoader(() => import("../radix/code-block/highlights.tsx?raw"))
+const CodeBlockFocusWalkthroughSource = sourceLoader(() => import("../radix/code-block/focus-walkthrough.tsx?raw"))
+const CodeBlockTerminalOutputSource = sourceLoader(() => import("../radix/code-block/terminal-output.tsx?raw"))
+const CodeBlockLongFileSource = sourceLoader(() => import("../radix/code-block/long-file.tsx?raw"))
+const CodeBlockDiagnosticsActionsSource = sourceLoader(() => import("../radix/code-block/diagnostics-actions.tsx?raw"))
+const CodeBlockLineSelectionSource = sourceLoader(() => import("../radix/code-block/line-selection.tsx?raw"))
+const CodeBlockSearchInFileSource = sourceLoader(() => import("../radix/code-block/search-in-file.tsx?raw"))
+const CodeBlockFileTabsSource = sourceLoader(() => import("../radix/code-block/file-tabs.tsx?raw"))
+const CodeBlockPreHighlightedLinesSource = sourceLoader(() => import("../radix/code-block/pre-highlighted-lines.tsx?raw"))
+const CodeBlockBeforeAfterSource = sourceLoader(() => import("../radix/code-block/before-after.tsx?raw"))
+const CodeBlockSoftWrapSource = sourceLoader(() => import("../radix/code-block/soft-wrap.tsx?raw"))
+const CodeBlockUnifiedPatchSource = sourceLoader(() => import("../radix/code-block/unified-patch.tsx?raw"))
+const CodeBlockDesignTokenThemeSource = sourceLoader(() => import("../radix/code-block/design-token-theme.tsx?raw"))
+const CodeBlockAlwaysDarkSource = sourceLoader(() => import("../radix/code-block/always-dark.tsx?raw"))
+const CodeBlockDarkTerminalSource = sourceLoader(() => import("../radix/code-block/dark-terminal.tsx?raw"))
+const CodeBlockAcceptRejectSource = sourceLoader(() => import("../radix/code-block/accept-reject.tsx?raw"))
+const CodeBlockCodeFoldingSource = sourceLoader(() => import("../radix/code-block/code-folding.tsx?raw"))
+const CodeBlockFixWithAiSource = sourceLoader(() => import("../radix/code-block/fix-with-ai.tsx?raw"))
+const CodeBlockReferenceLinesSource = sourceLoader(() => import("../radix/code-block/reference-lines.tsx?raw"))
+const CodeBlockExternalScrollSource = sourceLoader(() => import("../radix/code-block/external-scroll.tsx?raw"))
+const CodeBlockAnsiTerminalSource = sourceLoader(() => import("../radix/code-block/ansi-terminal.tsx?raw"))
+const RadixColorPickerSource = sourceLoader(() => import("../radix/color-picker/default.tsx?raw"))
+const RadixColorPickerInlinePanelSource = sourceLoader(() => import("../radix/color-picker/inline-panel.tsx?raw"))
+const RadixColorPickerPopoverSource = sourceLoader(() => import("../radix/color-picker/popover.tsx?raw"))
+const RadixColorPickerColorInputSource = sourceLoader(() => import("../radix/color-picker/color-input.tsx?raw"))
+const RadixColorPickerOpacitySource = sourceLoader(() => import("../radix/color-picker/opacity.tsx?raw"))
+const RadixColorPickerPresetSwatchesSource = sourceLoader(() => import("../radix/color-picker/preset-swatches.tsx?raw"))
+const RadixColorPickerOklchTokenSource = sourceLoader(() => import("../radix/color-picker/oklch-token.tsx?raw"))
+const RadixColorPickerFormatConverterSource = sourceLoader(() => import("../radix/color-picker/format-converter.tsx?raw"))
+const RadixColorPickerHueWheelSource = sourceLoader(() => import("../radix/color-picker/hue-wheel.tsx?raw"))
+const RadixColorPickerRecentColorsSource = sourceLoader(() => import("../radix/color-picker/recent-colors.tsx?raw"))
+const RadixColorPickerTextHighlightSource = sourceLoader(() => import("../radix/color-picker/text-highlight.tsx?raw"))
+const RadixColorPickerChannelSlidersSource = sourceLoader(() => import("../radix/color-picker/channel-sliders.tsx?raw"))
+const RadixColorPickerDesignInspectorSource = sourceLoader(() => import("../radix/color-picker/design-inspector.tsx?raw"))
+const RadixColorPickerContrastCheckerSource = sourceLoader(() => import("../radix/color-picker/contrast-checker.tsx?raw"))
+const RadixColorPickerBrandScaleSource = sourceLoader(() => import("../radix/color-picker/brand-scale.tsx?raw"))
+const RadixColorPickerFormValidationSource = sourceLoader(() => import("../radix/color-picker/form-validation.tsx?raw"))
+const RadixDataGridSource = sourceLoader(() => import("../radix/data-grid/default.tsx?raw"))
+const RadixDataGridPaginationSource = sourceLoader(() => import("../radix/data-grid/pagination.tsx?raw"))
+const RadixDataGridCellBordersSource = sourceLoader(() => import("../radix/data-grid/cell-borders.tsx?raw"))
+const RadixDataGridDenseLayoutSource = sourceLoader(() => import("../radix/data-grid/dense-layout.tsx?raw"))
+const RadixDataGridBorderlessSource = sourceLoader(() => import("../radix/data-grid/borderless.tsx?raw"))
+const RadixDataGridStripedRowsSource = sourceLoader(() => import("../radix/data-grid/striped-rows.tsx?raw"))
+const RadixDataGridAutoWidthSource = sourceLoader(() => import("../radix/data-grid/auto-width.tsx?raw"))
+const RadixDataGridRowSelectionSource = sourceLoader(() => import("../radix/data-grid/row-selection.tsx?raw"))
+const RadixDataGridExpandableRowsSource = sourceLoader(() => import("../radix/data-grid/expandable-rows.tsx?raw"))
+const RadixDataGridSubTableSource = sourceLoader(() => import("../radix/data-grid/sub-table.tsx?raw"))
+const RadixDataGridColumnIconsSource = sourceLoader(() => import("../radix/data-grid/column-icons.tsx?raw"))
+const RadixDataGridSortableColumnsSource = sourceLoader(() => import("../radix/data-grid/sortable-columns.tsx?raw"))
+const RadixDataGridMovableColumnsSource = sourceLoader(() => import("../radix/data-grid/movable-columns.tsx?raw"))
+const RadixDataGridDraggableColumnsSource = sourceLoader(() => import("../radix/data-grid/draggable-columns.tsx?raw"))
+const RadixDataGridDraggableRowsSource = sourceLoader(() => import("../radix/data-grid/draggable-rows.tsx?raw"))
+const RadixDataGridColumnResizingSource = sourceLoader(() => import("../radix/data-grid/column-resizing.tsx?raw"))
+const RadixDataGridPinnableColumnsSource = sourceLoader(() => import("../radix/data-grid/pinnable-columns.tsx?raw"))
+const RadixDataGridStickyHeaderSource = sourceLoader(() => import("../radix/data-grid/sticky-header.tsx?raw"))
+const RadixDataGridColumnControlsSource = sourceLoader(() => import("../radix/data-grid/column-controls.tsx?raw"))
+const RadixDataGridCardContainerSource = sourceLoader(() => import("../radix/data-grid/card-container.tsx?raw"))
+const RadixDataGridColumnVisibilitySource = sourceLoader(() => import("../radix/data-grid/column-visibility.tsx?raw"))
+const RadixDataGridLoadingSkeletonSource = sourceLoader(() => import("../radix/data-grid/loading-skeleton.tsx?raw"))
+const RadixDataGridCrudAdminSource = sourceLoader(() => import("../radix/data-grid/crud-admin.tsx?raw"))
+const RadixDataGridCrudInFrameSource = sourceLoader(() => import("../radix/data-grid/crud-in-frame.tsx?raw"))
+const RadixDataGridTotalsFooterSource = sourceLoader(() => import("../radix/data-grid/totals-footer.tsx?raw"))
+const RadixDataGridSummaryStatsFooterSource = sourceLoader(() => import("../radix/data-grid/summary-stats-footer.tsx?raw"))
+const RadixDataGridAggregateFooterSource = sourceLoader(() => import("../radix/data-grid/aggregate-footer.tsx?raw"))
+const RadixDataGridLocalInfiniteScrollSource = sourceLoader(() => import("../radix/data-grid/local-infinite-scroll.tsx?raw"))
+const RadixDataGridRemoteInfiniteScrollSource = sourceLoader(() => import("../radix/data-grid/remote-infinite-scroll.tsx?raw"))
+const RadixDataGridRowPinningSource = sourceLoader(() => import("../radix/data-grid/row-pinning.tsx?raw"))
+const RadixDataGridTreeRowsSource = sourceLoader(() => import("../radix/data-grid/tree-rows.tsx?raw"))
+const RadixDataGridSpreadsheetEditingSource = sourceLoader(() => import("../radix/data-grid/spreadsheet-editing.tsx?raw"))
+const RadixDataGridColumnVirtualizationSource = sourceLoader(() => import("../radix/data-grid/column-virtualization.tsx?raw"))
+const RadixDataGridLocalizedLabelsSource = sourceLoader(() => import("../radix/data-grid/localized-labels.tsx?raw"))
+const RadixDataGridServerSidePaginationSource = sourceLoader(() => import("../radix/data-grid/server-side-pagination.tsx?raw"))
+const RadixDateSelectorSource = sourceLoader(() => import("../radix/date-selector/default.tsx?raw"))
+const RadixDateSelectorStandardInlineSource = sourceLoader(() => import("../radix/date-selector/standard-inline.tsx?raw"))
+const RadixDateSelectorPopoverSource = sourceLoader(() => import("../radix/date-selector/popover.tsx?raw"))
+const RadixDateSelectorDialogSource = sourceLoader(() => import("../radix/date-selector/dialog.tsx?raw"))
+const RadixDateSelectorLanguageMenuSource = sourceLoader(() => import("../radix/date-selector/language-menu.tsx?raw"))
+const RadixEmojiPickerSource = sourceLoader(() => import("../radix/emoji-picker/default.tsx?raw"))
+const RadixEmojiPickerInlineSource = sourceLoader(() => import("../radix/emoji-picker/inline.tsx?raw"))
+const RadixEmojiPickerChatComposerSource = sourceLoader(() => import("../radix/emoji-picker/chat-composer.tsx?raw"))
+const RadixEmojiPickerMessageReactionsSource = sourceLoader(() => import("../radix/emoji-picker/message-reactions.tsx?raw"))
+const RadixEmojiPickerPageIconSource = sourceLoader(() => import("../radix/emoji-picker/page-icon.tsx?raw"))
+const RadixEmojiPickerCustomTeamEmojiSource = sourceLoader(() => import("../radix/emoji-picker/custom-team-emoji.tsx?raw"))
+const RadixEmojiPickerShortcodeSuggestionsSource = sourceLoader(() => import("../radix/emoji-picker/shortcode-suggestions.tsx?raw"))
+const RadixEmojiPickerWorkplaceSafeSetSource = sourceLoader(() => import("../radix/emoji-picker/workplace-safe-set.tsx?raw"))
+const RadixEmojiPickerLocalizedLabelsSource = sourceLoader(() => import("../radix/emoji-picker/localized-labels.tsx?raw"))
+const RadixEventCalendarSource = sourceLoader(() => import("../radix/event-calendar/default.tsx?raw"))
+const RadixEventCalendarAllViewsSource = sourceLoader(() => import("../radix/event-calendar/all-views.tsx?raw"))
+const RadixEventCalendarRoomBookingsSource = sourceLoader(() => import("../radix/event-calendar/room-bookings.tsx?raw"))
+const RadixEventCalendarEventFormDialogSource = sourceLoader(() => import("../radix/event-calendar/event-form-dialog.tsx?raw"))
+const RadixEventCalendarCustomEventChipsSource = sourceLoader(() => import("../radix/event-calendar/custom-event-chips.tsx?raw"))
+const RadixEventCalendarDragToBookSource = sourceLoader(() => import("../radix/event-calendar/drag-to-book.tsx?raw"))
+const RadixFileTypeSource = sourceLoader(() => import("../radix/file-type/default.tsx?raw"))
+const RadixFileTypeCommonFormatsSource = sourceLoader(() => import("../radix/file-type/common-formats.tsx?raw"))
+const RadixFileTypeVariantsSource = sourceLoader(() => import("../radix/file-type/variants.tsx?raw"))
+const RadixFileTypeSizesSource = sourceLoader(() => import("../radix/file-type/sizes.tsx?raw"))
+const RadixFileTypeFamilyGlyphsSource = sourceLoader(() => import("../radix/file-type/family-glyphs.tsx?raw"))
+const RadixFileTypeAllFormatsSource = sourceLoader(() => import("../radix/file-type/all-formats.tsx?raw"))
+const RadixFileTypeFileBrowserSource = sourceLoader(() => import("../radix/file-type/file-browser.tsx?raw"))
+const RadixFileTypeAttachmentListSource = sourceLoader(() => import("../radix/file-type/attachment-list.tsx?raw"))
+const RadixFileTypeUploadQueueSource = sourceLoader(() => import("../radix/file-type/upload-queue.tsx?raw"))
+const RadixFileTypeResolveFromNameSource = sourceLoader(() => import("../radix/file-type/resolve-from-name.tsx?raw"))
+const RadixFileTypeCustomLabelsSource = sourceLoader(() => import("../radix/file-type/custom-labels.tsx?raw"))
+const RadixFileTypeCustomColorsSource = sourceLoader(() => import("../radix/file-type/custom-colors.tsx?raw"))
+const RadixFileTypeFormatPickerSource = sourceLoader(() => import("../radix/file-type/format-picker.tsx?raw"))
+const RadixFileTypeLockedStarredSource = sourceLoader(() => import("../radix/file-type/locked-starred.tsx?raw"))
+const RadixFileTypeRestyledLabelsSource = sourceLoader(() => import("../radix/file-type/restyled-labels.tsx?raw"))
+const RadixFileTypeDotfilesBuildNamesSource = sourceLoader(() => import("../radix/file-type/dotfiles-build-names.tsx?raw"))
+const RadixFiltersSource = sourceLoader(() => import("../radix/filters/default.tsx?raw"))
+const RadixFiltersFullFilterBarSource = sourceLoader(() => import("../radix/filters/full-filter-bar.tsx?raw"))
+const RadixFiltersNestedAttributesSource = sourceLoader(() => import("../radix/filters/nested-attributes.tsx?raw"))
+const RadixFiltersStatusBadgesSource = sourceLoader(() => import("../radix/filters/status-badges.tsx?raw"))
+const RadixFiltersAvatarsPagingSource = sourceLoader(() => import("../radix/filters/avatars-paging.tsx?raw"))
+const RadixFiltersDateEditorsSource = sourceLoader(() => import("../radix/filters/date-editors.tsx?raw"))
+const RadixFiltersSliderEditorSource = sourceLoader(() => import("../radix/filters/slider-editor.tsx?raw"))
+const RadixFiltersTableFilteringSource = sourceLoader(() => import("../radix/filters/table-filtering.tsx?raw"))
+const RadixFiltersChoiceControlsSource = sourceLoader(() => import("../radix/filters/choice-controls.tsx?raw"))
+const RadixFiltersTypedInputsSource = sourceLoader(() => import("../radix/filters/typed-inputs.tsx?raw"))
+const RadixFiltersPopoverBuilderSource = sourceLoader(() => import("../radix/filters/popover-builder.tsx?raw"))
+const RadixFiltersInlineBuilderSource = sourceLoader(() => import("../radix/filters/inline-builder.tsx?raw"))
+const RadixFiltersControlledTranslatedSource = sourceLoader(() => import("../radix/filters/controlled-translated.tsx?raw"))
+const RadixFrameSource = sourceLoader(() => import("../radix/frame/default.tsx?raw"))
+const RadixFrameStandardSource = sourceLoader(() => import("../radix/frame/standard.tsx?raw"))
+const RadixFrameSeparatedPanelsSource = sourceLoader(() => import("../radix/frame/separated-panels.tsx?raw"))
+const RadixFrameStackedPanelsSource = sourceLoader(() => import("../radix/frame/stacked-panels.tsx?raw"))
+const RadixFrameStackedDenseSource = sourceLoader(() => import("../radix/frame/stacked-dense.tsx?raw"))
+const RadixFrameCollapsiblePanelsSource = sourceLoader(() => import("../radix/frame/collapsible-panels.tsx?raw"))
+const RadixFrameGhostVariantSource = sourceLoader(() => import("../radix/frame/ghost-variant.tsx?raw"))
+const RadixFrameDenseLayoutSource = sourceLoader(() => import("../radix/frame/dense-layout.tsx?raw"))
+const RadixFrameStackedRowsSource = sourceLoader(() => import("../radix/frame/stacked-rows.tsx?raw"))
+const RadixFrameExtraSmallSpacingSource = sourceLoader(() => import("../radix/frame/extra-small-spacing.tsx?raw"))
+const RadixFrameSmallSpacingSource = sourceLoader(() => import("../radix/frame/small-spacing.tsx?raw"))
+const RadixFrameDefaultSpacingSource = sourceLoader(() => import("../radix/frame/default-spacing.tsx?raw"))
+const RadixFrameLargeSpacingSource = sourceLoader(() => import("../radix/frame/large-spacing.tsx?raw"))
+const RadixFrameSmallRadiusSource = sourceLoader(() => import("../radix/frame/small-radius.tsx?raw"))
+const RadixFrameMediumRadiusSource = sourceLoader(() => import("../radix/frame/medium-radius.tsx?raw"))
+const RadixFrameLargeRadiusSource = sourceLoader(() => import("../radix/frame/large-radius.tsx?raw"))
+const RadixFrameDefaultRadiusSource = sourceLoader(() => import("../radix/frame/default-radius.tsx?raw"))
+const RadixFrameExtraLargeRadiusSource = sourceLoader(() => import("../radix/frame/extra-large-radius.tsx?raw"))
+const RadixFrameContentOnlyPanelsSource = sourceLoader(() => import("../radix/frame/content-only-panels.tsx?raw"))
+const RadixFrameStackedContentOnlySource = sourceLoader(() => import("../radix/frame/stacked-content-only.tsx?raw"))
+const RadixGanttSource = sourceLoader(() => import("../radix/gantt/default.tsx?raw"))
+const RadixGanttSettingsMenuSource = sourceLoader(() => import("../radix/gantt/settings-menu.tsx?raw"))
+const RadixGanttDragReorderSource = sourceLoader(() => import("../radix/gantt/drag-reorder.tsx?raw"))
+const RadixGanttQuarterRoadmapSource = sourceLoader(() => import("../radix/gantt/quarter-roadmap.tsx?raw"))
+const RadixGanttCapacityBoardSource = sourceLoader(() => import("../radix/gantt/capacity-board.tsx?raw"))
+const RadixGanttTaskTableSource = sourceLoader(() => import("../radix/gantt/task-table.tsx?raw"))
+const RadixGanttBaselineTrackingSource = sourceLoader(() => import("../radix/gantt/baseline-tracking.tsx?raw"))
+const RadixGanttDependenciesMilestonesSource = sourceLoader(() => import("../radix/gantt/dependencies-milestones.tsx?raw"))
+const RadixGanttWorkingDaysSource = sourceLoader(() => import("../radix/gantt/working-days.tsx?raw"))
+const RadixIconStackSource = sourceLoader(() => import("../radix/icon-stack/default.tsx?raw"))
+const RadixIconStackIsometricSource = sourceLoader(() => import("../radix/icon-stack/isometric.tsx?raw"))
+const RadixIconStackSizesSource = sourceLoader(() => import("../radix/icon-stack/sizes.tsx?raw"))
+const RadixIconStackColorsSource = sourceLoader(() => import("../radix/icon-stack/colors.tsx?raw"))
+const RadixIconStackBadgeOverlaySource = sourceLoader(() => import("../radix/icon-stack/badge-overlay.tsx?raw"))
+const RadixIconStackEmptyStateSource = sourceLoader(() => import("../radix/icon-stack/empty-state.tsx?raw"))
+const RadixIconStackItemMediaSource = sourceLoader(() => import("../radix/icon-stack/item-media.tsx?raw"))
+const RadixIconTileSource = sourceLoader(() => import("../radix/icon-tile/default.tsx?raw"))
+const RadixIconTileDefaultSource = sourceLoader(() => import("../radix/icon-tile/default.tsx?raw"))
+const RadixIconTileElevatedSource = sourceLoader(() => import("../radix/icon-tile/elevated.tsx?raw"))
+const RadixIconTileFramedSource = sourceLoader(() => import("../radix/icon-tile/framed.tsx?raw"))
+const RadixIconTileAllVariantsSource = sourceLoader(() => import("../radix/icon-tile/all-variants.tsx?raw"))
+const RadixIconTileSizesSource = sourceLoader(() => import("../radix/icon-tile/sizes.tsx?raw"))
+const RadixIconTileCircularSource = sourceLoader(() => import("../radix/icon-tile/circular.tsx?raw"))
+const RadixIconTileCustomSizingSource = sourceLoader(() => import("../radix/icon-tile/custom-sizing.tsx?raw"))
+const RadixIconTileColorTonesSource = sourceLoader(() => import("../radix/icon-tile/color-tones.tsx?raw"))
+const RadixIconTileTextContentSource = sourceLoader(() => import("../radix/icon-tile/text-content.tsx?raw"))
+const RadixIconTileListRowSource = sourceLoader(() => import("../radix/icon-tile/list-row.tsx?raw"))
+const RadixIconTileFeatureCardSource = sourceLoader(() => import("../radix/icon-tile/feature-card.tsx?raw"))
+const RadixIconTileEmptyStateSource = sourceLoader(() => import("../radix/icon-tile/empty-state.tsx?raw"))
+const RadixIconTileInteractiveSource = sourceLoader(() => import("../radix/icon-tile/interactive.tsx?raw"))
+const RadixIconTileStatusOverlaySource = sourceLoader(() => import("../radix/icon-tile/status-overlay.tsx?raw"))
+const RadixIconTileSoftTonesSource = sourceLoader(() => import("../radix/icon-tile/soft-tones.tsx?raw"))
+const RadixIconTileSolidTonesSource = sourceLoader(() => import("../radix/icon-tile/solid-tones.tsx?raw"))
+const RadixIconTileBrandColorsSource = sourceLoader(() => import("../radix/icon-tile/brand-colors.tsx?raw"))
+const RadixKanbanSource = sourceLoader(() => import("../radix/kanban/default.tsx?raw"))
+const RadixKanbanPlaceholderOverlaySource = sourceLoader(() => import("../radix/kanban/placeholder-overlay.tsx?raw"))
+const RadixKanbanDynamicOverlaySource = sourceLoader(() => import("../radix/kanban/dynamic-overlay.tsx?raw"))
+const RadixKanbanFrameColumnsSource = sourceLoader(() => import("../radix/kanban/frame-columns.tsx?raw"))
+const RadixKanbanStackedFrameSource = sourceLoader(() => import("../radix/kanban/stacked-frame.tsx?raw"))
+const RadixKanbanFeatureRoadmapSource = sourceLoader(() => import("../radix/kanban/feature-roadmap.tsx?raw"))
+const RadixKanbanPersistedMovesSource = sourceLoader(() => import("../radix/kanban/persisted-moves.tsx?raw"))
+const RadixNumberFieldSource = sourceLoader(() => import("../radix/number-field/default.tsx?raw"))
+const RadixNumberFieldDefaultSizeSource = sourceLoader(() => import("../radix/number-field/default-size.tsx?raw"))
+const RadixNumberFieldSmallSizeSource = sourceLoader(() => import("../radix/number-field/small-size.tsx?raw"))
+const RadixNumberFieldLargeSizeSource = sourceLoader(() => import("../radix/number-field/large-size.tsx?raw"))
+const RadixNumberFieldButtonsOnRightSource = sourceLoader(() => import("../radix/number-field/buttons-on-right.tsx?raw"))
+const RadixNumberFieldSpinnerButtonsSource = sourceLoader(() => import("../radix/number-field/spinner-buttons.tsx?raw"))
+const RadixNumberFieldFormValidationSource = sourceLoader(() => import("../radix/number-field/form-validation.tsx?raw"))
+const RadixPhoneInputSource = sourceLoader(() => import("../radix/phone-input/default.tsx?raw"))
+const RadixPhoneInputStandardSource = sourceLoader(() => import("../radix/phone-input/standard.tsx?raw"))
+const RadixPhoneInputSmallSource = sourceLoader(() => import("../radix/phone-input/small.tsx?raw"))
+const RadixPhoneInputLargeSource = sourceLoader(() => import("../radix/phone-input/large.tsx?raw"))
+const RadixPhoneInputDisabledSource = sourceLoader(() => import("../radix/phone-input/disabled.tsx?raw"))
+const RadixPhoneInputPresetValueSource = sourceLoader(() => import("../radix/phone-input/preset-value.tsx?raw"))
+const RadixPhoneInputErrorStateSource = sourceLoader(() => import("../radix/phone-input/error-state.tsx?raw"))
+const RadixPhoneInputDefaultCountrySource = sourceLoader(() => import("../radix/phone-input/default-country.tsx?raw"))
+const RadixPhoneInputReadOnlySource = sourceLoader(() => import("../radix/phone-input/read-only.tsx?raw"))
+const RadixRatingSource = sourceLoader(() => import("../radix/rating/default.tsx?raw"))
+const RadixRatingStandardSource = sourceLoader(() => import("../radix/rating/standard.tsx?raw"))
+const RadixRatingDecimalValueSource = sourceLoader(() => import("../radix/rating/decimal-value.tsx?raw"))
+const RadixRatingShowValueSource = sourceLoader(() => import("../radix/rating/show-value.tsx?raw"))
+const RadixRatingEditableSource = sourceLoader(() => import("../radix/rating/editable.tsx?raw"))
+const RadixRatingSizesSource = sourceLoader(() => import("../radix/rating/sizes.tsx?raw"))
+const RadixRatingReviewSummarySource = sourceLoader(() => import("../radix/rating/review-summary.tsx?raw"))
+const RadixRatingHalfStarInputSource = sourceLoader(() => import("../radix/rating/half-star-input.tsx?raw"))
+const RadixRatingEmojiReactionsSource = sourceLoader(() => import("../radix/rating/emoji-reactions.tsx?raw"))
+const RadixRatingReviewTextSource = sourceLoader(() => import("../radix/rating/review-text.tsx?raw"))
+const RadixScrollspySource = sourceLoader(() => import("../radix/scrollspy/default.tsx?raw"))
+const RadixScrollspyVerticalNavSource = sourceLoader(() => import("../radix/scrollspy/vertical-nav.tsx?raw"))
+const RadixScrollspyHorizontalNavSource = sourceLoader(() => import("../radix/scrollspy/horizontal-nav.tsx?raw"))
+const RadixSignaturePadSource = sourceLoader(() => import("../radix/signature-pad/default.tsx?raw"))
+const RadixSignaturePadPinnedActionsSource = sourceLoader(() => import("../radix/signature-pad/pinned-actions.tsx?raw"))
+const RadixSignaturePadUndoRedoSource = sourceLoader(() => import("../radix/signature-pad/undo-redo.tsx?raw"))
+const RadixSignaturePadFormValidationSource = sourceLoader(() => import("../radix/signature-pad/form-validation.tsx?raw"))
+const RadixSignaturePadSigningWorkspaceSource = sourceLoader(() => import("../radix/signature-pad/signing-workspace.tsx?raw"))
+const RadixSignaturePadExportFormatsSource = sourceLoader(() => import("../radix/signature-pad/export-formats.tsx?raw"))
+const RadixSignaturePadDrawOrTypeSource = sourceLoader(() => import("../radix/signature-pad/draw-or-type.tsx?raw"))
+const RadixSignaturePadAgreementCardSource = sourceLoader(() => import("../radix/signature-pad/agreement-card.tsx?raw"))
+const RadixSignaturePadInDialogSource = sourceLoader(() => import("../radix/signature-pad/in-dialog.tsx?raw"))
+const RadixSignaturePadStylusModeSource = sourceLoader(() => import("../radix/signature-pad/stylus-mode.tsx?raw"))
+const RadixSignaturePadClauseInitialsSource = sourceLoader(() => import("../radix/signature-pad/clause-initials.tsx?raw"))
+const RadixSignaturePadProofOfDeliverySource = sourceLoader(() => import("../radix/signature-pad/proof-of-delivery.tsx?raw"))
+const RadixSignaturePadFileUploadSource = sourceLoader(() => import("../radix/signature-pad/file-upload.tsx?raw"))
+const RadixSortableSource = sourceLoader(() => import("../radix/sortable/default.tsx?raw"))
+const RadixSortableFileListSource = sourceLoader(() => import("../radix/sortable/file-list.tsx?raw"))
+const RadixSortableGridLayoutSource = sourceLoader(() => import("../radix/sortable/grid-layout.tsx?raw"))
+const RadixSortableNestedLayoutSource = sourceLoader(() => import("../radix/sortable/nested-layout.tsx?raw"))
+const RadixSortablePlaylistSource = sourceLoader(() => import("../radix/sortable/playlist.tsx?raw"))
+const RadixSortableSettingsPrioritySource = sourceLoader(() => import("../radix/sortable/settings-priority.tsx?raw"))
+const RadixSortableSidebarNavigationSource = sourceLoader(() => import("../radix/sortable/sidebar-navigation.tsx?raw"))
+const RadixSortableImageGallerySource = sourceLoader(() => import("../radix/sortable/image-gallery.tsx?raw"))
+const RadixSortablePersistedOrderSource = sourceLoader(() => import("../radix/sortable/persisted-order.tsx?raw"))
+const RadixStepperSource = sourceLoader(() => import("../radix/stepper/default.tsx?raw"))
+const RadixStepperStandardSource = sourceLoader(() => import("../radix/stepper/standard.tsx?raw"))
+const RadixStepperCompletedStateSource = sourceLoader(() => import("../radix/stepper/completed-state.tsx?raw"))
+const RadixStepperLoadingStateSource = sourceLoader(() => import("../radix/stepper/loading-state.tsx?raw"))
+const RadixStepperControlledSource = sourceLoader(() => import("../radix/stepper/controlled.tsx?raw"))
+const RadixStepperLabelsBelowSource = sourceLoader(() => import("../radix/stepper/labels-below.tsx?raw"))
+const RadixStepperLeftAlignedTitlesSource = sourceLoader(() => import("../radix/stepper/left-aligned-titles.tsx?raw"))
+const RadixStepperIconsBadgesSource = sourceLoader(() => import("../radix/stepper/icons-badges.tsx?raw"))
+const RadixStepperDescriptionsSource = sourceLoader(() => import("../radix/stepper/descriptions.tsx?raw"))
+const RadixStepperInlineTitlesSource = sourceLoader(() => import("../radix/stepper/inline-titles.tsx?raw"))
+const RadixStepperTitleCaptionSource = sourceLoader(() => import("../radix/stepper/title-caption.tsx?raw"))
+const RadixStepperBarWithTitlesSource = sourceLoader(() => import("../radix/stepper/bar-with-titles.tsx?raw"))
+const RadixStepperSegmentedBarSource = sourceLoader(() => import("../radix/stepper/segmented-bar.tsx?raw"))
+const RadixStepperVerticalDescriptionsSource = sourceLoader(() => import("../radix/stepper/vertical-descriptions.tsx?raw"))
+const RadixStepperVerticalSource = sourceLoader(() => import("../radix/stepper/vertical.tsx?raw"))
+const RadixStepperVerticalTitlesSource = sourceLoader(() => import("../radix/stepper/vertical-titles.tsx?raw"))
+const RadixStepperDeliveryStopsSource = sourceLoader(() => import("../radix/stepper/delivery-stops.tsx?raw"))
+const RadixStepperDottedProgressSource = sourceLoader(() => import("../radix/stepper/dotted-progress.tsx?raw"))
+const RadixStepperStageDetailsSource = sourceLoader(() => import("../radix/stepper/stage-details.tsx?raw"))
+const RadixStepperFrameIconTilesSource = sourceLoader(() => import("../radix/stepper/frame-icon-tiles.tsx?raw"))
+const RadixStepperPurchaseOrdersSource = sourceLoader(() => import("../radix/stepper/purchase-orders.tsx?raw"))
+const RadixStepperSecurityChecksSource = sourceLoader(() => import("../radix/stepper/security-checks.tsx?raw"))
+const RadixStepperBottomColorBarsSource = sourceLoader(() => import("../radix/stepper/bottom-color-bars.tsx?raw"))
+const RadixStepperTopColorBarsSource = sourceLoader(() => import("../radix/stepper/top-color-bars.tsx?raw"))
+const RadixStepperIconTileRowsSource = sourceLoader(() => import("../radix/stepper/icon-tile-rows.tsx?raw"))
+const RadixStepperPhaseTrackSource = sourceLoader(() => import("../radix/stepper/phase-track.tsx?raw"))
+const RadixStepperTimestampedCheckpointsSource = sourceLoader(() => import("../radix/stepper/timestamped-checkpoints.tsx?raw"))
+const RadixStepperTransitArrowSource = sourceLoader(() => import("../radix/stepper/transit-arrow.tsx?raw"))
+const RadixStepperBreadcrumbStepsSource = sourceLoader(() => import("../radix/stepper/breadcrumb-steps.tsx?raw"))
+const RadixStepperCompactInlineSource = sourceLoader(() => import("../radix/stepper/compact-inline.tsx?raw"))
+const RadixStepperTruckRouteSource = sourceLoader(() => import("../radix/stepper/truck-route.tsx?raw"))
+const RadixStepperChevronIconTilesSource = sourceLoader(() => import("../radix/stepper/chevron-icon-tiles.tsx?raw"))
+const RadixStepperNumberedChevronsSource = sourceLoader(() => import("../radix/stepper/numbered-chevrons.tsx?raw"))
+const RadixStepperFilledChevronsSource = sourceLoader(() => import("../radix/stepper/filled-chevrons.tsx?raw"))
+const RadixStepperOutlinedChevronsSource = sourceLoader(() => import("../radix/stepper/outlined-chevrons.tsx?raw"))
+const RadixStepperFlatChevronsSource = sourceLoader(() => import("../radix/stepper/flat-chevrons.tsx?raw"))
+const RadixStepperShippingRouteSource = sourceLoader(() => import("../radix/stepper/shipping-route.tsx?raw"))
+const RadixStepperHorizontalStepCardsSource = sourceLoader(() => import("../radix/stepper/horizontal-step-cards.tsx?raw"))
+const RadixStepperShipmentProgressSource = sourceLoader(() => import("../radix/stepper/shipment-progress.tsx?raw"))
+const RadixStepperVerticalStepCardsSource = sourceLoader(() => import("../radix/stepper/vertical-step-cards.tsx?raw"))
+const RadixStepperSideRailIconsSource = sourceLoader(() => import("../radix/stepper/side-rail-icons.tsx?raw"))
+const RadixStepperStatusListSource = sourceLoader(() => import("../radix/stepper/status-list.tsx?raw"))
+const RadixStepperVerticalStatusBarsSource = sourceLoader(() => import("../radix/stepper/vertical-status-bars.tsx?raw"))
+const RadixStepperCollapsibleSubStepsSource = sourceLoader(() => import("../radix/stepper/collapsible-sub-steps.tsx?raw"))
+const RadixStepperRightAlignedSubStepsSource = sourceLoader(() => import("../radix/stepper/right-aligned-sub-steps.tsx?raw"))
+const RadixTimePickerSource = sourceLoader(() => import("../radix/time-picker/default.tsx?raw"))
+const RadixTimePickerInlinePanelSource = sourceLoader(() => import("../radix/time-picker/inline-panel.tsx?raw"))
+const RadixTimePickerPopoverSource = sourceLoader(() => import("../radix/time-picker/popover.tsx?raw"))
+const RadixTimePickerTypableInputSource = sourceLoader(() => import("../radix/time-picker/typable-input.tsx?raw"))
+const RadixTimePicker12HourSecondsSource = sourceLoader(() => import("../radix/time-picker/12-hour-seconds.tsx?raw"))
+const RadixTimePickerHourOnlySource = sourceLoader(() => import("../radix/time-picker/hour-only.tsx?raw"))
+const RadixTimePickerOpeningHoursSource = sourceLoader(() => import("../radix/time-picker/opening-hours.tsx?raw"))
+const RadixTimePickerUnavailableSlotsSource = sourceLoader(() => import("../radix/time-picker/unavailable-slots.tsx?raw"))
+const RadixTimePickerStartEndSource = sourceLoader(() => import("../radix/time-picker/start-end.tsx?raw"))
+const RadixTimePickerTimeZoneSource = sourceLoader(() => import("../radix/time-picker/time-zone.tsx?raw"))
+const RadixTimePickerConfirmBeforeApplySource = sourceLoader(() => import("../radix/time-picker/confirm-before-apply.tsx?raw"))
+const RadixTimePickerLocalizedSource = sourceLoader(() => import("../radix/time-picker/localized.tsx?raw"))
+const RadixTimePickerFormValidationSource = sourceLoader(() => import("../radix/time-picker/form-validation.tsx?raw"))
+const RadixTimePickerDateTimeSource = sourceLoader(() => import("../radix/time-picker/date-time.tsx?raw"))
+const RadixTimelineSource = sourceLoader(() => import("../radix/timeline/default.tsx?raw"))
+const RadixTimelineStandardSource = sourceLoader(() => import("../radix/timeline/standard.tsx?raw"))
+const RadixTimelineRoadmapSource = sourceLoader(() => import("../radix/timeline/roadmap.tsx?raw"))
+const RadixTimelineOrderStatusSource = sourceLoader(() => import("../radix/timeline/order-status.tsx?raw"))
+const RadixTimelineGitActivitySource = sourceLoader(() => import("../radix/timeline/git-activity.tsx?raw"))
+const RadixTimelineMilestonesSource = sourceLoader(() => import("../radix/timeline/milestones.tsx?raw"))
+const RadixTimelinePipelineStepsSource = sourceLoader(() => import("../radix/timeline/pipeline-steps.tsx?raw"))
+const RadixTimelineRoadmapItemsSource = sourceLoader(() => import("../radix/timeline/roadmap-items.tsx?raw"))
+const RadixTimelineHorizontalSource = sourceLoader(() => import("../radix/timeline/horizontal.tsx?raw"))
+const RadixTimelineLeadingLabelsSource = sourceLoader(() => import("../radix/timeline/leading-labels.tsx?raw"))
+const RadixTimelineDeploymentLogSource = sourceLoader(() => import("../radix/timeline/deployment-log.tsx?raw"))
+const RadixTimelineAvatarActivitySource = sourceLoader(() => import("../radix/timeline/avatar-activity.tsx?raw"))
+const RadixTimelineCompactMilestonesSource = sourceLoader(() => import("../radix/timeline/compact-milestones.tsx?raw"))
+const RadixTreeSource = sourceLoader(() => import("../radix/tree/default.tsx?raw"))
+const RadixTreeStandardSource = sourceLoader(() => import("../radix/tree/standard.tsx?raw"))
+const RadixTreeIndentLinesSource = sourceLoader(() => import("../radix/tree/indent-lines.tsx?raw"))
+const RadixTreeFolderFileIconsSource = sourceLoader(() => import("../radix/tree/folder-file-icons.tsx?raw"))
+const RadixTreePlusMinusTogglesSource = sourceLoader(() => import("../radix/tree/plus-minus-toggles.tsx?raw"))
+const RadixTreeFileExplorerSource = sourceLoader(() => import("../radix/tree/file-explorer.tsx?raw"))
+const RadixTreeOrgChartSource = sourceLoader(() => import("../radix/tree/org-chart.tsx?raw"))
+const RadixTreePermissionsSource = sourceLoader(() => import("../radix/tree/permissions.tsx?raw"))
+const BaseAutocompleteSource = sourceLoader(() => import("../base/autocomplete/default.tsx?raw"))
+const BaseBadgeSource = sourceLoader(() => import("../base/badge/default.tsx?raw"))
+const BaseCascaderSource = sourceLoader(() => import("../base/cascader/default.tsx?raw"))
+const BaseCodeBlockSource = sourceLoader(() => import("../base/code-block/default.tsx?raw"))
+const BaseColorPickerSource = sourceLoader(() => import("../base/color-picker/default.tsx?raw"))
+const BaseDataGridSource = sourceLoader(() => import("../base/data-grid/default.tsx?raw"))
+const BaseDateSelectorSource = sourceLoader(() => import("../base/date-selector/default.tsx?raw"))
+const BaseEmojiPickerSource = sourceLoader(() => import("../base/emoji-picker/default.tsx?raw"))
+const BaseEventCalendarSource = sourceLoader(() => import("../base/event-calendar/default.tsx?raw"))
+const BaseFiltersSource = sourceLoader(() => import("../base/filters/default.tsx?raw"))
+const BaseFrameSource = sourceLoader(() => import("../base/frame/default.tsx?raw"))
+const BaseGanttSource = sourceLoader(() => import("../base/gantt/default.tsx?raw"))
+const BaseIconStackSource = sourceLoader(() => import("../base/icon-stack/default.tsx?raw"))
+const BaseIconTileSource = sourceLoader(() => import("../base/icon-tile/default.tsx?raw"))
+const BaseKanbanSource = sourceLoader(() => import("../base/kanban/default.tsx?raw"))
+const BaseNumberFieldSource = sourceLoader(() => import("../base/number-field/default.tsx?raw"))
+const BasePhoneInputSource = sourceLoader(() => import("../base/phone-input/default.tsx?raw"))
+const BaseSignaturePadSource = sourceLoader(() => import("../base/signature-pad/default.tsx?raw"))
+const BaseSortableSource = sourceLoader(() => import("../base/sortable/default.tsx?raw"))
+const BaseStepperSource = sourceLoader(() => import("../base/stepper/default.tsx?raw"))
+const BaseTimePickerSource = sourceLoader(() => import("../base/time-picker/default.tsx?raw"))
+const BaseTimelineSource = sourceLoader(() => import("../base/timeline/default.tsx?raw"))
+const BaseTreeSource = sourceLoader(() => import("../base/tree/default.tsx?raw"))
 
 type RegistryItem = {
   name: string
@@ -887,8 +883,8 @@ function componentEntry({
   extraDependencies?: string[]
   extraPackages?: string[]
   installTarget?: string
-  Component: () => React.JSX.Element
-  source: string
+  Component: React.ComponentType
+  source: string | SourceLoader
 }): BlockEntry {
   const registry = registryItem(flavor, item)
   const registryDependencies = [

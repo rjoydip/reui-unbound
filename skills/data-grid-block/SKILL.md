@@ -66,6 +66,9 @@ src/blocks/data-grid/<category>/<name>/
   registry entry.
 - Use `@reui-unbound/<name>` for ReUI kit components, bare shadcn names
   (`button`, `dialog`, …) for `src/components/ui` primitives.
+- Preview modules are lazy: `lazyComponent` / `lazyNamed` for components and
+  `sourceLoader` for `?raw` files, both from `src/blocks/~internal/lazy.ts`.
+  `bun run blocks:sync` already emits lazy entries.
 - Install target is `@reui-unbound/<block-name>` (the folder slug). Preview
   links use `/?preview=<meta.id>`, which may differ from the name.
 

@@ -43,6 +43,7 @@ Capture categories: `app-shell`, `auth`, `navbar`, `onboarding`, `profile`, `ric
 - Reuse `src/components/ui` and `src/components/kit` before writing new UI.
 - Demo data static and deterministic; no backend.
 - One source file per registry item; no duplicate implementations across flavors.
+- Previews and `?raw` sources are lazy: import them with `lazyComponent`, `lazyNamed` or `sourceLoader` from `src/blocks/~internal/lazy.ts`; never add eager block/preview imports.
 - Typecheck, lint and build must pass before finishing.
 
 ## Application block workflow

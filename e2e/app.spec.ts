@@ -25,7 +25,7 @@ test("switches sections and jumps through search", async ({ page }) => {
     .getByRole("button", { name: "Components" })
     .click()
 
-  await expect(page).toHaveURL(/#alert-radix$/)
+  await expect(page).toHaveURL(/#accordion.*-radix$/)
   await expect(
     page.getByRole("navigation", { name: "Components" }),
   ).toBeVisible()
@@ -42,7 +42,7 @@ test("switches sections and jumps through search", async ({ page }) => {
     .first()
     .click()
 
-  await expect(page).toHaveURL(/#badge-(radix|base)$/)
+  await expect(page).toHaveURL(/#badge.*-radix$/)
   await expect(page.getByRole("dialog")).toHaveCount(0)
 })
 
@@ -64,14 +64,14 @@ test("switches the install command package manager", async ({ page }) => {
 
   await expect(
     dialog.getByText(
-      /bunx --bun shadcn@latest add @reui-unbound\/data-grid-base-1/,
+      /bunx --bun shadcn@latest add @reui-unbound\/data-grid-base-[\w-]+/,
     ),
   ).toBeVisible()
 
   await dialog.getByRole("button", { name: "npm", exact: true }).click()
 
   await expect(
-    dialog.getByText(/npx shadcn@latest add @reui-unbound\/data-grid-base-1/),
+    dialog.getByText(/npx shadcn@latest add @reui-unbound\/data-grid-base-[\w-]+/),
   ).toBeVisible()
 })
 

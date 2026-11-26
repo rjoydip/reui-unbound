@@ -1,10 +1,11 @@
-import { useEffect, useRef, useState } from "react"
+import { useState } from "react"
 import { LayoutGridIcon, SearchIcon } from "lucide-react"
 import { toast } from "sonner"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { InstallCommandPill } from "@/components/~app/install-command-pill"
+import { LazyPreview } from "@/components/~app/lazy-preview"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import {
   BLOCK_GROUPS,
@@ -16,37 +17,6 @@ import {
 } from "@/blocks/~internal/registry"
 import type { BlockEntry, PackageManager } from "@/blocks/~internal/registry"
 import { cn } from "cn"
-
-function LazyPreview({ children }: { children: React.ReactNode }) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [visible, setVisible] = useState(false)
-
-  useEffect(() => {
-    const element = ref.current
-    if (!element || visible) return
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          setVisible(true)
-          observer.disconnect()
-        }
-      },
-      { rootMargin: "300px" },
-    )
-    observer.observe(element)
-    return () => observer.disconnect()
-  }, [visible])
-
-  return (
-    <div ref={ref} className="bg-muted/30 relative h-52 w-full overflow-hidden">
-      {visible ? (
-        <div className="pointer-events-none absolute top-0 left-0 w-[250%] origin-top-left scale-[0.4] p-2">
-          {children}
-        </div>
-      ) : null}
-    </div>
-  )
-}
 
 export function BlocksOverview({
   group,
@@ -164,7 +134,10 @@ export function BlocksOverview({
                 aria-label={`Open ${block.name}`}
                 className="hover:bg-muted/30 focus-visible:ring-ring/50 cursor-pointer transition-colors outline-none focus-visible:ring-3"
               >
-                <LazyPreview>
+                <LazyPreview
+                  className="bg-muted/30 relative h-52 w-full overflow-hidden"
+                  contentClassName="pointer-events-none absolute top-0 left-0 w-[250%] origin-top-left scale-[0.4] p-2"
+                >
                   <block.Component />
                 </LazyPreview>
               </div>

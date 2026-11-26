@@ -49,6 +49,8 @@ Each component has a preview under
 `src/blocks/components/~catalog/catalog.tsx` (ReUI kit) or
 `~catalog/ui-catalog.tsx` (shadcn/ui primitives).
 
+- Import previews lazily with `lazyComponent` and sources with `sourceLoader`
+  from `src/blocks/~internal/lazy.ts` — the catalog is code-split per preview.
 - Preview id: `<component>-<variant>-<radix|base>`, or `<component>-<radix|base>`
   for component-level previews.
 - Example items install as `@reui-unbound/<component>-<variant>`;

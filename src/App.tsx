@@ -1,9 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { lazy, Suspense, useEffect, useRef, useState } from "react"
 import { flushSync } from "react-dom"
-import { tokenize } from "kirari"
-import { renderDecorated } from "kirari/decorations"
-import { tsx, typescript } from "kirari/languages"
-import "kirari/themes/github-light.css"
 import { toast } from "sonner"
 
 import { Sheet, SheetContent } from "@/components/ui/sheet"
@@ -22,7 +18,7 @@ import {
 } from "@/components/~app/preview-header"
 import { CustomizePanel } from "@/components/~app/customize-panel"
 import { SiteHeader } from "@/components/~app/site-header"
-import { DocsViewer } from "@/components/~app/docs-viewer"
+import { PreviewFallback } from "@/components/~app/preview-fallback"
 import { ComponentOverview } from "@/components/~app/component-overview"
 import { BlocksOverview } from "@/components/~app/blocks-overview"
 import {
@@ -33,11 +29,18 @@ import { CATALOG, COMPONENT_ENTRIES } from "@/blocks/components/~catalog/catalog
 import { GITHUB_REPOSITORY, githubSourceUrl } from "@/lib/source-url"
 import { installCommandFor, registryName } from "@/blocks/~internal/registry"
 import { BLOCKS, blocksInCategory } from "@/blocks/~internal/registry"
-import type { BlockFile, PackageManager } from "@/blocks/~internal/registry"
+import { lazyNamed } from "@/blocks/~internal/lazy"
+import type { PackageManager } from "@/blocks/~internal/registry"
 import { cn } from "cn"
 
 const FAVORITES_KEY = "reui-demo-favorites"
 const THEME_KEY = "reui-demo-theme"
+
+const CodePanel = lazy(() => import("@/components/~app/code-panel"))
+const DocsViewer = lazyNamed(
+  () => import("@/components/~app/docs-viewer"),
+  "DocsViewer",
+)
 
 type CatalogOverview =
   | { kind: "component"; name: string }
@@ -90,24 +93,6 @@ function readBlockId() {
   return CATALOG.find((block) => block.id === hash)?.id ?? CATALOG[0].id
 }
 
-function CodePanel({ file }: { file: BlockFile }) {
-  const html = useMemo(
-    () =>
-      renderDecorated(
-        tokenize(file.code, file.lang === "tsx" ? tsx : typescript),
-        { lines: true },
-      ),
-    [file],
-  )
-
-  return (
-    <pre
-      className="kirari kirari-lines max-h-[calc(100svh-9rem)] overflow-auto p-4 text-xs leading-5"
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  )
-}
-
 export default function App() {
   const [blockId, setBlockId] = useState(readBlockId)
   const [view, setView] = useState<View>("preview")
@@ -142,6 +127,10 @@ export default function App() {
   const [options, setOptions] = useState<CustomizeOptions>(DEFAULT_OPTIONS)
   const [packageManager, setPackageManager] = useState<PackageManager>("bun")
   const [activeFile, setActiveFile] = useState<string | null>(null)
+  const [fileSource, setFileSource] = useState<{
+    name: string
+    code: string
+  } | null>(null)
 
   const previewRef = useRef<HTMLDivElement>(null)
 
@@ -156,6 +145,8 @@ export default function App() {
       : githubSourceUrl(block)
   const activeFileEntry =
     block.files.find((entry) => entry.name === activeFile) ?? block.files[0]
+  const activeFileName = activeFileEntry.name
+  const codeReady = fileSource?.name === activeFileName
   const favorite = favorites.includes(block.id)
 
   const registryTarget =
@@ -258,6 +249,35 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem(FAVORITES_KEY, JSON.stringify(favorites))
   }, [favorites])
+
+  // Load the selected source file only when the code tab is opened.
+  useEffect(() => {
+    if (view !== "code") return
+
+    const file =
+      block.files.find((entry) => entry.name === activeFileName) ??
+      block.files[0]
+    if (!file) return
+    if (file.code !== undefined) {
+      setFileSource({ name: file.name, code: file.code })
+      return
+    }
+
+    let cancelled = false
+    setFileSource(null)
+    file
+      .load?.()
+      .then((code) => {
+        if (!cancelled) setFileSource({ name: file.name, code })
+      })
+      .catch(() => {
+        if (!cancelled) setFileSource({ name: file.name, code: "" })
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [view, block.files, activeFileName])
 
   useEffect(() => {
     if (!customizeOpen) return
@@ -416,15 +436,17 @@ export default function App() {
     return (
       <TooltipProvider delayDuration={200}>
         <div className="bg-background text-foreground min-h-svh">
-          {standaloneBlock.kind === "component" ? (
-            <div className="flex min-h-svh items-center justify-center p-6 sm:p-10">
-              <div className="flex w-full max-w-5xl justify-center">
-                <standaloneBlock.Component />
+          <Suspense fallback={<PreviewFallback />}>
+            {standaloneBlock.kind === "component" ? (
+              <div className="flex min-h-svh items-center justify-center p-6 sm:p-10">
+                <div className="flex w-full max-w-5xl justify-center">
+                  <standaloneBlock.Component />
+                </div>
               </div>
-            </div>
-          ) : (
-            <standaloneBlock.Component />
-          )}
+            ) : (
+              <standaloneBlock.Component />
+            )}
+          </Suspense>
           <Toaster position="bottom-right" theme={theme} />
         </div>
       </TooltipProvider>
@@ -468,7 +490,9 @@ export default function App() {
       <TooltipProvider delayDuration={200}>
         <div className="bg-background text-foreground flex h-svh flex-col overflow-hidden">
           {siteHeader}
-          <DocsViewer />
+          <Suspense fallback={<PreviewFallback />}>
+            <DocsViewer />
+          </Suspense>
           <Toaster position="bottom-right" theme={theme} />
         </div>
       </TooltipProvider>
@@ -560,19 +584,23 @@ export default function App() {
               >
                 {block.kind === "component" ? (
                   <div
-                    key={refreshKey}
-                    className="flex min-h-[calc(100svh-3.5rem)] items-center justify-center p-6 sm:p-10"
+                    key={`${block.id}-${refreshKey}`}
+                    className="preview-enter flex min-h-[calc(100svh-3.5rem)] items-center justify-center p-6 sm:p-10"
                   >
                     <div className="flex w-full max-w-5xl justify-center">
-                      <block.Component />
+                      <Suspense fallback={<PreviewFallback />}>
+                        <block.Component />
+                      </Suspense>
                     </div>
                   </div>
                 ) : (
                   <div
-                    key={refreshKey}
-                    className="[&>div]:min-h-[calc(100svh-3.5rem)]"
+                    key={`${block.id}-${refreshKey}`}
+                    className="preview-enter [&>div]:min-h-[calc(100svh-3.5rem)]"
                   >
-                    <block.Component />
+                    <Suspense fallback={<PreviewFallback />}>
+                      <block.Component />
+                    </Suspense>
                   </div>
                 )}
               </div>
@@ -598,11 +626,26 @@ export default function App() {
                       </button>
                     ))}
                     <span className="text-muted-foreground ml-auto pr-1 text-xs tabular-nums">
-                      {activeFileEntry.code.split("\n").length} lines
+                      {codeReady
+                        ? `${fileSource.code.split("\n").length} lines`
+                        : "Loading…"}
                     </span>
                   </div>
 
-                  <CodePanel file={activeFileEntry} />
+                  {codeReady ? (
+                    <Suspense
+                      fallback={
+                        <div className="bg-muted/30 h-64 w-full animate-pulse motion-reduce:animate-none" />
+                      }
+                    >
+                      <CodePanel
+                        code={fileSource.code}
+                        lang={activeFileEntry.lang}
+                      />
+                    </Suspense>
+                  ) : (
+                    <div className="bg-muted/30 h-64 w-full animate-pulse motion-reduce:animate-none" />
+                  )}
                 </div>
               </div>
             </main>

@@ -26,7 +26,7 @@ const uiEntries = catalogEntries.filter((entry) => entry.kind === "ui")
 function previewSources(catalogSource) {
   const raw = new Map()
   for (const match of catalogSource.matchAll(
-    /import\s+(\w+)\s+from\s+"\.\.?\/(radix|base)\/([^"?]+)\?raw"/g,
+    /const\s+(\w+)\s+=\s+sourceLoader\(\(\)\s+=>\s+import\("\.\.?\/(radix|base)\/([^"?]+)\?raw"\)\)/g,
   )) {
     raw.set(
       match[1],
