@@ -8,7 +8,24 @@ export type CatalogIndexEntry = Pick<
   "id" | "name" | "category" | "stage" | "flavor" | "variant" | "kind"
 >
 
-export const COMPONENT_INDEX = entries as CatalogIndexEntry[]
+type CatalogTuple = [
+  id: string,
+  name: string,
+  flavor: "radix" | "base",
+  variant?: string | null,
+]
+
+export const COMPONENT_INDEX: CatalogIndexEntry[] = (
+  entries as unknown as CatalogTuple[]
+).map(([id, name, flavor, variant]) => ({
+  id,
+  name,
+  category: "Components",
+  stage: flavor === "base" ? "Base" : "Radix",
+  flavor,
+  variant: variant ?? undefined,
+  kind: "component",
+}))
 
 export function componentGroups() {
   const map = new Map<string, CatalogIndexEntry[]>()
