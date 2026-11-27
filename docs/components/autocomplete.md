@@ -7,21 +7,28 @@ description: Searchable input with async suggestions and keyboard navigation.
 
 Searchable input with async suggestions and keyboard navigation.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`autocomplete-standard-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-standard-radix)
-- **Radix** — [`autocomplete-disabled-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-disabled-radix)
-- **Radix** — [`autocomplete-auto-highlight-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-auto-highlight-radix)
-- **Radix** — [`autocomplete-labeled-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-labeled-radix)
-- **Radix** — [`autocomplete-clear-button-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-clear-button-radix)
-- **Radix** — [`autocomplete-trigger-button-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-trigger-button-radix)
-- **Radix** — [`autocomplete-clear-trigger-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-clear-trigger-radix)
-- **Radix** — [`autocomplete-groups-labels-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-groups-labels-radix)
-- **Radix** — [`autocomplete-search-results-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-search-results-radix)
-- **Radix** — [`autocomplete-small-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-small-radix)
-- **Radix** — [`autocomplete-large-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-large-radix)
-- **Radix** — [`autocomplete-form-integration-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-form-integration-radix)
-- **Base** — [`autocomplete-base`](https://reui-unbound.pages.dev/?preview=autocomplete-base)
+### Radix (12)
+
+- [`autocomplete-standard-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-standard-radix)
+- [`autocomplete-disabled-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-disabled-radix)
+- [`autocomplete-auto-highlight-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-auto-highlight-radix)
+- [`autocomplete-labeled-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-labeled-radix)
+- [`autocomplete-clear-button-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-clear-button-radix)
+- [`autocomplete-trigger-button-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-trigger-button-radix)
+- [`autocomplete-clear-trigger-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-clear-trigger-radix)
+- [`autocomplete-groups-labels-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-groups-labels-radix)
+- [`autocomplete-search-results-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-search-results-radix)
+- [`autocomplete-small-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-small-radix)
+- [`autocomplete-large-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-large-radix)
+- [`autocomplete-form-integration-radix`](https://reui-unbound.pages.dev/?preview=autocomplete-form-integration-radix)
+
+### Base (1)
+
+- [`autocomplete-base`](https://reui-unbound.pages.dev/?preview=autocomplete-base)
 
 ## Install
 

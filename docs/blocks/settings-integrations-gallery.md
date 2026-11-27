@@ -6,9 +6,11 @@ category: Settings
 
 # Integrations Gallery
 
+Integrations Gallery settings block.
+
 **Block:** `settings-integrations-gallery` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-integrations-gallery)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=settings-integrations-gallery)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SettingsIntegrationsGalleryBlock />
 }
 ```
+
+## More in Settings
+
+- [Account Settings](./settings-account-settings.md)
+- [API Integrations](./settings-api-integrations.md)
+- [App Connections](./settings-app-connections.md)
+- [Connected Apps](./settings-connected-apps.md)
+- [General & Display](./settings-general-display.md)
+- [General Settings](./settings-general-settings.md)
 
 ## Files
 

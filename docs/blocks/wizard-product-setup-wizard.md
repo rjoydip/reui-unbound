@@ -6,9 +6,11 @@ category: Wizard
 
 # Product Setup Wizard
 
+Product Setup Wizard wizard block.
+
 **Block:** `wizard-product-setup-wizard` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-product-setup-wizard)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=wizard-product-setup-wizard)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <WizardProductSetupWizardBlock />
 }
 ```
+
+## More in Wizard
+
+- [Billing Setup](./wizard-billing-setup.md)
+- [Fund Transfer](./wizard-fund-transfer.md)
+- [Plan Upgrade](./wizard-plan-upgrade.md)
+- [Send Invoice](./wizard-send-invoice.md)
+- [Team Invitations](./wizard-team-invitations.md)
+- [Vendor Onboarding](./wizard-vendor-onboarding.md)
 
 ## Files
 

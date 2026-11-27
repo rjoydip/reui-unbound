@@ -6,9 +6,11 @@ category: Schedule
 
 # Create Schedule
 
+Create Schedule schedule block.
+
 **Block:** `schedule-create-schedule` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-create-schedule)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=schedule-create-schedule)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ScheduleCreateScheduleBlock />
 }
 ```
+
+## More in Schedule
+
+- [Appointment Planner](./schedule-appointment-planner.md)
+- [Booking Page](./schedule-booking-page.md)
+- [Due Date Picker](./schedule-due-date-picker.md)
+- [Meeting Scheduler](./schedule-meeting-scheduler.md)
+- [Session Booking](./schedule-session-booking.md)
+- [Team Agenda](./schedule-team-agenda.md)
 
 ## Files
 

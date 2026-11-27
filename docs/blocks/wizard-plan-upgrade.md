@@ -6,9 +6,11 @@ category: Wizard
 
 # Plan Upgrade
 
+Plan Upgrade wizard block.
+
 **Block:** `wizard-plan-upgrade` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-plan-upgrade)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=wizard-plan-upgrade)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <WizardPlanUpgradeBlock />
 }
 ```
+
+## More in Wizard
+
+- [Billing Setup](./wizard-billing-setup.md)
+- [Fund Transfer](./wizard-fund-transfer.md)
+- [Product Setup Wizard](./wizard-product-setup-wizard.md)
+- [Send Invoice](./wizard-send-invoice.md)
+- [Team Invitations](./wizard-team-invitations.md)
+- [Vendor Onboarding](./wizard-vendor-onboarding.md)
 
 ## Files
 

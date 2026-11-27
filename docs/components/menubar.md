@@ -7,14 +7,20 @@ description: Menubar component with live previews.
 
 Menubar component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`menubar-radix`](https://reui-unbound.pages.dev/?preview=menubar-radix)
-- **Radix** — [`menubar-standard-radix`](https://reui-unbound.pages.dev/?preview=menubar-standard-radix)
-- **Radix** — [`menubar-submenus-radix`](https://reui-unbound.pages.dev/?preview=menubar-submenus-radix)
-- **Radix** — [`menubar-checkbox-radio-radix`](https://reui-unbound.pages.dev/?preview=menubar-checkbox-radio-radix)
-- **Radix** — [`menubar-icons-radix`](https://reui-unbound.pages.dev/?preview=menubar-icons-radix)
-- **Radix** — [`menubar-formatting-media-radix`](https://reui-unbound.pages.dev/?preview=menubar-formatting-media-radix)
+### Radix (6)
+
+- [`menubar-radix`](https://reui-unbound.pages.dev/?preview=menubar-radix)
+- [`menubar-standard-radix`](https://reui-unbound.pages.dev/?preview=menubar-standard-radix)
+- [`menubar-submenus-radix`](https://reui-unbound.pages.dev/?preview=menubar-submenus-radix)
+- [`menubar-checkbox-radio-radix`](https://reui-unbound.pages.dev/?preview=menubar-checkbox-radio-radix)
+- [`menubar-icons-radix`](https://reui-unbound.pages.dev/?preview=menubar-icons-radix)
+- [`menubar-formatting-media-radix`](https://reui-unbound.pages.dev/?preview=menubar-formatting-media-radix)
+
+
 
 ## Install
 

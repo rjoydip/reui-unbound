@@ -6,9 +6,11 @@ category: Virtualization
 
 # Exception Queue
 
+Exception Queue data grid block.
+
 **Block:** `data-grid-virtualization-exception-queue` · **Category:** Virtualization
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-virtualization-2)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-virtualization-2)
 
 ## Install
 
@@ -25,6 +27,10 @@ export default function Page() {
   return <ExceptionQueueBlock />
 }
 ```
+
+## More in Virtualization
+
+- [Transactions](./data-grid-virtualization-transactions.md)
 
 ## Files
 

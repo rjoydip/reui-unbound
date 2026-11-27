@@ -7,15 +7,21 @@ description: Bubble component with live previews.
 
 Bubble component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`bubble-sender-alignment-radix`](https://reui-unbound.pages.dev/?preview=bubble-sender-alignment-radix)
-- **Radix** — [`bubble-all-variants-radix`](https://reui-unbound.pages.dev/?preview=bubble-all-variants-radix)
-- **Radix** — [`bubble-grouped-messages-radix`](https://reui-unbound.pages.dev/?preview=bubble-grouped-messages-radix)
-- **Radix** — [`bubble-reactions-radix`](https://reui-unbound.pages.dev/?preview=bubble-reactions-radix)
-- **Radix** — [`bubble-show-more-radix`](https://reui-unbound.pages.dev/?preview=bubble-show-more-radix)
-- **Radix** — [`bubble-quick-replies-radix`](https://reui-unbound.pages.dev/?preview=bubble-quick-replies-radix)
-- **Radix** — [`bubble-formatted-answer-radix`](https://reui-unbound.pages.dev/?preview=bubble-formatted-answer-radix)
+### Radix (7)
+
+- [`bubble-sender-alignment-radix`](https://reui-unbound.pages.dev/?preview=bubble-sender-alignment-radix)
+- [`bubble-all-variants-radix`](https://reui-unbound.pages.dev/?preview=bubble-all-variants-radix)
+- [`bubble-grouped-messages-radix`](https://reui-unbound.pages.dev/?preview=bubble-grouped-messages-radix)
+- [`bubble-reactions-radix`](https://reui-unbound.pages.dev/?preview=bubble-reactions-radix)
+- [`bubble-show-more-radix`](https://reui-unbound.pages.dev/?preview=bubble-show-more-radix)
+- [`bubble-quick-replies-radix`](https://reui-unbound.pages.dev/?preview=bubble-quick-replies-radix)
+- [`bubble-formatted-answer-radix`](https://reui-unbound.pages.dev/?preview=bubble-formatted-answer-radix)
+
+
 
 ## Install
 

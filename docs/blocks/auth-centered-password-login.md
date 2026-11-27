@@ -6,9 +6,11 @@ category: Auth
 
 # Centered Password Login
 
+Centered Password Login auth block.
+
 **Block:** `auth-centered-password-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-centered-password-login)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=auth-centered-password-login)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AuthCenteredPasswordLoginBlock />
 }
 ```
+
+## More in Auth
+
+- [Centered Magic Link](./auth-centered-magic-link.md)
+- [Centered Method Picker](./auth-centered-method-picker.md)
+- [Customer Quotes Login](./auth-customer-quotes-login.md)
+- [Founder Story Login](./auth-founder-story-login.md)
+- [Framed Password Login](./auth-framed-password-login.md)
+- [Free Trial Signup](./auth-free-trial-signup.md)
 
 ## Files
 

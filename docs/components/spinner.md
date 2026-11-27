@@ -7,21 +7,27 @@ description: Spinner component with live previews.
 
 Spinner component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`spinner-radix`](https://reui-unbound.pages.dev/?preview=spinner-radix)
-- **Radix** — [`spinner-standard-radix`](https://reui-unbound.pages.dev/?preview=spinner-standard-radix)
-- **Radix** — [`spinner-in-buttons-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-buttons-radix)
-- **Radix** — [`spinner-in-badges-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-badges-radix)
-- **Radix** — [`spinner-in-input-group-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-input-group-radix)
-- **Radix** — [`spinner-in-empty-state-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-empty-state-radix)
-- **Radix** — [`spinner-pending-buttons-radix`](https://reui-unbound.pages.dev/?preview=spinner-pending-buttons-radix)
-- **Radix** — [`spinner-overlay-with-caption-radix`](https://reui-unbound.pages.dev/?preview=spinner-overlay-with-caption-radix)
-- **Radix** — [`spinner-full-page-radix`](https://reui-unbound.pages.dev/?preview=spinner-full-page-radix)
-- **Radix** — [`spinner-inline-text-radix`](https://reui-unbound.pages.dev/?preview=spinner-inline-text-radix)
-- **Radix** — [`spinner-loading-dots-radix`](https://reui-unbound.pages.dev/?preview=spinner-loading-dots-radix)
-- **Radix** — [`spinner-card-overlay-radix`](https://reui-unbound.pages.dev/?preview=spinner-card-overlay-radix)
-- **Radix** — [`spinner-color-variants-radix`](https://reui-unbound.pages.dev/?preview=spinner-color-variants-radix)
+### Radix (13)
+
+- [`spinner-radix`](https://reui-unbound.pages.dev/?preview=spinner-radix)
+- [`spinner-standard-radix`](https://reui-unbound.pages.dev/?preview=spinner-standard-radix)
+- [`spinner-in-buttons-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-buttons-radix)
+- [`spinner-in-badges-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-badges-radix)
+- [`spinner-in-input-group-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-input-group-radix)
+- [`spinner-in-empty-state-radix`](https://reui-unbound.pages.dev/?preview=spinner-in-empty-state-radix)
+- [`spinner-pending-buttons-radix`](https://reui-unbound.pages.dev/?preview=spinner-pending-buttons-radix)
+- [`spinner-overlay-with-caption-radix`](https://reui-unbound.pages.dev/?preview=spinner-overlay-with-caption-radix)
+- [`spinner-full-page-radix`](https://reui-unbound.pages.dev/?preview=spinner-full-page-radix)
+- [`spinner-inline-text-radix`](https://reui-unbound.pages.dev/?preview=spinner-inline-text-radix)
+- [`spinner-loading-dots-radix`](https://reui-unbound.pages.dev/?preview=spinner-loading-dots-radix)
+- [`spinner-card-overlay-radix`](https://reui-unbound.pages.dev/?preview=spinner-card-overlay-radix)
+- [`spinner-color-variants-radix`](https://reui-unbound.pages.dev/?preview=spinner-color-variants-radix)
+
+
 
 ## Install
 

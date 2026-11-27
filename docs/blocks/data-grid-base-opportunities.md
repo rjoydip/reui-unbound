@@ -6,9 +6,11 @@ category: Base
 
 # Opportunities
 
+Opportunities data grid block.
+
 **Block:** `data-grid-base-opportunities` · **Category:** Base
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-3)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-3)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DealPipelineBlock />
 }
 ```
+
+## More in Base
+
+- [API Requests](./data-grid-base-api-requests.md)
+- [Contacts](./data-grid-base-contacts.md)
+- [Customers](./data-grid-base-customers.md)
+- [Members](./data-grid-base-members.md)
+- [Modules](./data-grid-base-modules.md)
+- [Rate Card](./data-grid-base-rate-card.md)
 
 ## Files
 

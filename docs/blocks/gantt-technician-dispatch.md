@@ -6,9 +6,11 @@ category: Gantt
 
 # Technician Dispatch
 
+Technician Dispatch gantt block.
+
 **Block:** `gantt-technician-dispatch` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-technician-dispatch)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=gantt-technician-dispatch)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <GanttTechnicianDispatchBlock />
 }
 ```
+
+## More in Gantt
+
+- [Agent Playbook](./gantt-agent-playbook.md)
+- [Project Timeline](./gantt-project-timeline.md)
+- [Resource Capacity](./gantt-resource-capacity.md)
 
 ## Files
 

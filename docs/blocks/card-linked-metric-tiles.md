@@ -6,9 +6,11 @@ category: Card
 
 # Linked Metric Tiles
 
+Linked Metric Tiles card block.
+
 **Block:** `card-linked-metric-tiles` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-linked-metric-tiles)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-linked-metric-tiles)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardLinkedMetricTilesBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
 
 ## Files
 

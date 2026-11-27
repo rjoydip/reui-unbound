@@ -6,9 +6,11 @@ category: Base
 
 # API Requests
 
+API Requests data grid block.
+
 **Block:** `data-grid-base-api-requests` · **Category:** Base
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-9)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-9)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ApiRequestLogsBlock />
 }
 ```
+
+## More in Base
+
+- [Contacts](./data-grid-base-contacts.md)
+- [Customers](./data-grid-base-customers.md)
+- [Members](./data-grid-base-members.md)
+- [Modules](./data-grid-base-modules.md)
+- [Opportunities](./data-grid-base-opportunities.md)
+- [Rate Card](./data-grid-base-rate-card.md)
 
 ## Files
 

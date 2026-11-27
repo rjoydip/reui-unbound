@@ -6,9 +6,11 @@ category: Flow
 
 # Growth Impact Map
 
+Growth Impact Map flow block.
+
 **Block:** `flow-growth-impact-map` · **Category:** Flow
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=flow-growth-impact-map)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=flow-growth-impact-map)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <FlowGrowthImpactMapBlock />
 }
 ```
+
+## More in Flow
+
+- [AI Agent Builder](./flow-ai-agent-builder.md)
+- [Automation Builder](./flow-automation-builder.md)
+- [Pipeline Run Monitor](./flow-pipeline-run-monitor.md)
 
 ## Files
 

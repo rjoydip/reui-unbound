@@ -6,9 +6,11 @@ category: Flow
 
 # Pipeline Run Monitor
 
+Pipeline Run Monitor flow block.
+
 **Block:** `flow-pipeline-run-monitor` · **Category:** Flow
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=flow-pipeline-run-monitor)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=flow-pipeline-run-monitor)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <FlowPipelineRunMonitorBlock />
 }
 ```
+
+## More in Flow
+
+- [AI Agent Builder](./flow-ai-agent-builder.md)
+- [Automation Builder](./flow-automation-builder.md)
+- [Growth Impact Map](./flow-growth-impact-map.md)
 
 ## Files
 

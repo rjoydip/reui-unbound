@@ -6,9 +6,11 @@ category: Card
 
 # Shortcut Launcher
 
+Shortcut Launcher card block.
+
 **Block:** `card-shortcut-launcher` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-shortcut-launcher)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-shortcut-launcher)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardShortcutLauncherBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
 
 ## Files
 

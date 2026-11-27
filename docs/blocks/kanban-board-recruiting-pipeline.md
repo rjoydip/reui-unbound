@@ -6,9 +6,11 @@ category: Kanban Board
 
 # Recruiting Pipeline
 
+Recruiting Pipeline kanban-board block.
+
 **Block:** `kanban-board-recruiting-pipeline` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-recruiting-pipeline)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-recruiting-pipeline)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <KanbanBoardRecruitingPipelineBlock />
 }
 ```
+
+## More in Kanban Board
+
+- [Access Review](./kanban-board-access-review.md)
+- [Bug Triage](./kanban-board-bug-triage.md)
+- [Collapsible Columns](./kanban-board-collapsible-columns.md)
+- [Feature Roadmap Votes](./kanban-board-feature-roadmap-votes.md)
+- [Progress Ring Workflow](./kanban-board-progress-ring-workflow.md)
+- [Release Readiness](./kanban-board-release-readiness.md)
 
 ## Files
 

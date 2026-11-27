@@ -1,9 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react"
+import { lazy, Suspense, useEffect, useRef, useState } from "react"
 import { flushSync } from "react-dom"
-import { tokenize } from "kirari"
-import { renderDecorated } from "kirari/decorations"
-import { tsx, typescript } from "kirari/languages"
-import "kirari/themes/github-light.css"
 import { toast } from "sonner"
 
 import { Sheet, SheetContent } from "@/components/ui/sheet"
@@ -22,22 +18,41 @@ import {
 } from "@/components/~app/preview-header"
 import { CustomizePanel } from "@/components/~app/customize-panel"
 import { SiteHeader } from "@/components/~app/site-header"
-import { DocsViewer } from "@/components/~app/docs-viewer"
+import { PreviewFallback } from "@/components/~app/preview-fallback"
 import { ComponentOverview } from "@/components/~app/component-overview"
 import { BlocksOverview } from "@/components/~app/blocks-overview"
 import {
   DEFAULT_OPTIONS,
   type CustomizeOptions,
 } from "@/components/~app/customize-options"
-import { CATALOG, COMPONENT_ENTRIES } from "@/blocks/components/~catalog/catalog"
+import { COMPONENT_INDEX } from "@/blocks/components/~catalog/index"
+import { loadComponentCatalog } from "@/blocks/components/~catalog/load"
 import { GITHUB_REPOSITORY, githubSourceUrl } from "@/lib/source-url"
-import { installCommandFor, registryName } from "@/blocks/~internal/registry"
-import { BLOCKS, blocksInCategory } from "@/blocks/~internal/registry"
-import type { BlockFile, PackageManager } from "@/blocks/~internal/registry"
+import {
+  BLOCKS,
+  blocksInCategory,
+  installCommandFor,
+  registryName,
+} from "@/blocks/~internal/registry"
+import { lazyNamed } from "@/blocks/~internal/lazy"
+import type { BlockEntry, PackageManager } from "@/blocks/~internal/registry"
 import { cn } from "cn"
 
 const FAVORITES_KEY = "reui-demo-favorites"
 const THEME_KEY = "reui-demo-theme"
+
+const CodePanel = lazy(() => import("@/components/~app/code-panel"))
+const DocsViewer = lazyNamed(
+  () => import("@/components/~app/docs-viewer"),
+  "DocsViewer",
+)
+
+function findIndexEntry(id: string) {
+  return (
+    BLOCKS.find((block) => block.id === id) ??
+    COMPONENT_INDEX.find((entry) => entry.id === id)
+  )
+}
 
 type CatalogOverview =
   | { kind: "component"; name: string }
@@ -87,25 +102,7 @@ function readTheme(): Theme {
 
 function readBlockId() {
   const hash = window.location.hash.replace("#", "")
-  return CATALOG.find((block) => block.id === hash)?.id ?? CATALOG[0].id
-}
-
-function CodePanel({ file }: { file: BlockFile }) {
-  const html = useMemo(
-    () =>
-      renderDecorated(
-        tokenize(file.code, file.lang === "tsx" ? tsx : typescript),
-        { lines: true },
-      ),
-    [file],
-  )
-
-  return (
-    <pre
-      className="kirari kirari-lines max-h-[calc(100svh-9rem)] overflow-auto p-4 text-xs leading-5"
-      dangerouslySetInnerHTML={{ __html: html }}
-    />
-  )
+  return findIndexEntry(hash)?.id ?? BLOCKS[0].id
 }
 
 export default function App() {
@@ -116,15 +113,11 @@ export default function App() {
   const [favorites, setFavorites] = useState<string[]>(readFavorites)
   const [refreshKey, setRefreshKey] = useState(0)
   const [section, setSection] = useState<Section>(() =>
-    CATALOG.find((entry) => entry.id === readBlockId())?.kind === "component"
-      ? "components"
-      : "blocks",
+    findIndexEntry(readBlockId())?.kind === "component" ? "components" : "blocks",
   )
   const [sidebarView, setSidebarView] = useState<SidebarView>("all")
   const [expanded, setExpanded] = useState<string[]>(() => {
-    const category = CATALOG.find(
-      (entry) => entry.id === readBlockId(),
-    )?.category
+    const category = findIndexEntry(readBlockId())?.category
     return category ? [category] : ["Base"]
   })
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -142,59 +135,88 @@ export default function App() {
   const [options, setOptions] = useState<CustomizeOptions>(DEFAULT_OPTIONS)
   const [packageManager, setPackageManager] = useState<PackageManager>("bun")
   const [activeFile, setActiveFile] = useState<string | null>(null)
+  const [fileSource, setFileSource] = useState<{
+    name: string
+    code: string
+  } | null>(null)
+  const [components, setComponents] = useState<BlockEntry[] | null>(null)
 
   const previewRef = useRef<HTMLDivElement>(null)
 
-  const block = CATALOG.find((entry) => entry.id === blockId) ?? CATALOG[0]
+  const entry = findIndexEntry(blockId) ?? BLOCKS[0]
+  const block =
+    entry.kind === "component"
+      ? (components?.find((item) => item.id === entry.id) ?? null)
+      : (entry as BlockEntry)
+  const standaloneId = new URLSearchParams(window.location.search).get("preview")
+  const standaloneEntry = standaloneId
+    ? findIndexEntry(standaloneId)
+    : undefined
+  const standaloneBlock =
+    standaloneEntry?.kind === "component"
+      ? (components?.find((item) => item.id === standaloneEntry.id) ?? null)
+      : ((standaloneEntry as BlockEntry | undefined) ?? null)
+  const needsComponents =
+    entry.kind === "component" ||
+    overview?.kind === "component" ||
+    section === "components" ||
+    standaloneEntry?.kind === "component"
   const overviewEntries =
-    overview?.kind === "component"
-      ? COMPONENT_ENTRIES.filter((entry) => entry.name === overview.name)
+    overview?.kind === "component" && components
+      ? components.filter((item) => item.name === overview.name)
       : null
   const githubUrl =
     section === "docs"
       ? `${GITHUB_REPOSITORY}/blob/main/docs/README.md`
-      : githubSourceUrl(block)
+      : block
+        ? githubSourceUrl(block)
+        : ""
   const activeFileEntry =
-    block.files.find((entry) => entry.name === activeFile) ?? block.files[0]
-  const favorite = favorites.includes(block.id)
+    block?.files.find((file) => file.name === activeFile) ?? block?.files[0]
+  const activeFileName = activeFileEntry?.name ?? ""
+  const codeReady = !!activeFileName && fileSource?.name === activeFileName
+  const favorite = block ? favorites.includes(block.id) : false
 
-  const registryTarget =
-    block.installTarget ?? registryName(block.registryId ?? block.id)
-  const install = installCommandFor(registryTarget, packageManager)
-  const aiPrompt = [
-    `Build the "${block.name}" (${block.kind === "component" ? "component" : "block"}) from reui-unbound in my app.`,
-    "",
-    `Registry: ${registryTarget}`,
-    `Docs:`,
-    `Install (${packageManager}): ${install}`,
-    "",
-    "Registry dependencies:",
-    ...block.dependencies.registry.map((entry) => {
-      if (entry.startsWith("@reui-unbound/")) {
-        const name = entry.slice("@reui-unbound/".length)
-        if (name.startsWith("base-ui-")) {
-          return `- @/components/kit/base/ui/${name.slice("base-ui-".length)}`
-        }
-        if (name.startsWith("base-")) {
-          return `- @/components/kit/base/${name.slice("base-".length)}`
-        }
-        if (name.startsWith("use-")) {
-          return `- @/hooks/${name}`
-        }
-        return `- @/components/kit/${name}`
-      }
-      if (entry.startsWith("@reui/")) {
-        return `- @/components/kit/${entry.slice("@reui/".length)}`
-      }
-      if (entry.startsWith("@")) return `- ${entry}`
-      return `- @/components/ui/${entry}`
-    }),
-    "",
-    "npm packages:",
-    ...block.dependencies.packages.map((entry) => `- ${entry}`),
-    "",
-    "Keep the layout, design tokens and component variants from the docs, and adapt only the demo data.",
-  ].join("\n")
+  const registryTarget = block
+    ? (block.installTarget ?? registryName(block.registryId ?? block.id))
+    : ""
+  const install = block ? installCommandFor(registryTarget, packageManager) : ""
+  const aiPrompt = block
+    ? [
+        `Build the "${block.name}" (${block.kind === "component" ? "component" : "block"}) from reui-unbound in my app.`,
+        "",
+        `Registry: ${registryTarget}`,
+        `Docs:`,
+        `Install (${packageManager}): ${install}`,
+        "",
+        "Registry dependencies:",
+        ...block.dependencies.registry.map((dependency) => {
+          if (dependency.startsWith("@reui-unbound/")) {
+            const name = dependency.slice("@reui-unbound/".length)
+            if (name.startsWith("base-ui-")) {
+              return `- @/components/kit/base/ui/${name.slice("base-ui-".length)}`
+            }
+            if (name.startsWith("base-")) {
+              return `- @/components/kit/base/${name.slice("base-".length)}`
+            }
+            if (name.startsWith("use-")) {
+              return `- @/hooks/${name}`
+            }
+            return `- @/components/kit/${name}`
+          }
+          if (dependency.startsWith("@reui/")) {
+            return `- @/components/kit/${dependency.slice("@reui/".length)}`
+          }
+          if (dependency.startsWith("@")) return `- ${dependency}`
+          return `- @/components/ui/${dependency}`
+        }),
+        "",
+        "npm packages:",
+        ...block.dependencies.packages.map((dependency) => `- ${dependency}`),
+        "",
+        "Keep the layout, design tokens and component variants from the docs, and adapt only the demo data.",
+      ].join("\n")
+    : ""
 
   function setThemeAnimated(next: Theme, event?: React.MouseEvent) {
     if (next === theme) return
@@ -260,6 +282,48 @@ export default function App() {
   }, [favorites])
 
   useEffect(() => {
+    if (!needsComponents || components) return
+
+    let cancelled = false
+    loadComponentCatalog().then((items) => {
+      if (!cancelled) setComponents(items)
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [needsComponents, components])
+
+  // Load the selected source file only when the code tab is opened.
+  useEffect(() => {
+    if (view !== "code" || !block) return
+
+    const file =
+      block.files.find((entry) => entry.name === activeFileName) ??
+      block.files[0]
+    if (!file) return
+    if (file.code !== undefined) {
+      setFileSource({ name: file.name, code: file.code })
+      return
+    }
+
+    let cancelled = false
+    setFileSource(null)
+    file
+      .load?.()
+      .then((code) => {
+        if (!cancelled) setFileSource({ name: file.name, code })
+      })
+      .catch(() => {
+        if (!cancelled) setFileSource({ name: file.name, code: "" })
+      })
+
+    return () => {
+      cancelled = true
+    }
+  }, [view, block, activeFileName])
+
+  useEffect(() => {
     if (!customizeOpen) return
 
     function onKeyDown(event: KeyboardEvent) {
@@ -293,7 +357,7 @@ export default function App() {
   }, [options.radius, options.baseColor, theme])
 
   function selectBlock(id: string) {
-    const next = CATALOG.find((entry) => entry.id === id)
+    const next = findIndexEntry(id)
     setOverview(null)
     if (next) setSection(next.kind === "component" ? "components" : "blocks")
     setBlockId(id)
@@ -309,8 +373,7 @@ export default function App() {
   }
 
   function selectGroup(name: string) {
-    const entries = COMPONENT_ENTRIES.filter((entry) => entry.name === name)
-    const first = entries[0]
+    const first = COMPONENT_INDEX.find((entry) => entry.name === name)
     if (!first) return
     setSection("components")
     setBlockId(first.id)
@@ -359,8 +422,9 @@ export default function App() {
     setExpanded([])
     setSidebarResetKey((key) => key + 1)
     if (next === "components") {
-      const names = [...new Set(COMPONENT_ENTRIES.map((entry) => entry.name))]
-        .sort((a, b) => a.localeCompare(b))
+      const names = [
+        ...new Set(COMPONENT_INDEX.map((entry) => entry.name)),
+      ].sort((a, b) => a.localeCompare(b))
       if (names[0]) selectGroup(names[0])
     } else if (next === "blocks") {
       selectBlockCategory(null)
@@ -376,6 +440,7 @@ export default function App() {
   }
 
   function toggleFavorite() {
+    if (!block) return
     setFavorites((current) =>
       current.includes(block.id)
         ? current.filter((id) => id !== block.id)
@@ -407,23 +472,24 @@ export default function App() {
     device === "mobile" ? 420 : device === "tablet" ? 900 : undefined
 
   // Standalone block preview: /?preview=<id> renders the block without the demo shell.
-  const standaloneId = new URLSearchParams(window.location.search).get("preview")
-  const standaloneBlock = standaloneId
-    ? CATALOG.find((entry) => entry.id === standaloneId)
-    : undefined
-
-  if (standaloneBlock) {
+  if (standaloneEntry) {
     return (
       <TooltipProvider delayDuration={200}>
         <div className="bg-background text-foreground min-h-svh">
-          {standaloneBlock.kind === "component" ? (
-            <div className="flex min-h-svh items-center justify-center p-6 sm:p-10">
-              <div className="flex w-full max-w-5xl justify-center">
+          {standaloneBlock ? (
+            <Suspense fallback={<PreviewFallback />}>
+              {standaloneBlock.kind === "component" ? (
+                <div className="flex min-h-svh items-center justify-center p-6 sm:p-10">
+                  <div className="flex w-full max-w-5xl justify-center">
+                    <standaloneBlock.Component />
+                  </div>
+                </div>
+              ) : (
                 <standaloneBlock.Component />
-              </div>
-            </div>
+              )}
+            </Suspense>
           ) : (
-            <standaloneBlock.Component />
+            <PreviewFallback />
           )}
           <Toaster position="bottom-right" theme={theme} />
         </div>
@@ -433,12 +499,12 @@ export default function App() {
 
   const sidebar = (
     <CatalogSidebar
-      current={block}
+      current={block ?? entry}
       section={section}
       view={sidebarView}
       onViewChange={setSidebarView}
       favorites={favorites}
-      onSelect={(entry) => selectBlock(entry.id)}
+      onSelect={selectBlock}
       onSelectGroup={selectGroup}
       onSelectBlockCategory={selectBlockCategory}
       blockGroup={blockGroup}
@@ -468,7 +534,9 @@ export default function App() {
       <TooltipProvider delayDuration={200}>
         <div className="bg-background text-foreground flex h-svh flex-col overflow-hidden">
           {siteHeader}
-          <DocsViewer />
+          <Suspense fallback={<PreviewFallback />}>
+            <DocsViewer />
+          </Suspense>
           <Toaster position="bottom-right" theme={theme} />
         </div>
       </TooltipProvider>
@@ -485,7 +553,7 @@ export default function App() {
           </aside>
 
           <div className="flex min-w-0 flex-1 flex-col">
-            {!overview && (
+            {!overview && block && (
               <PreviewHeader
                 block={block}
                 view={view}
@@ -505,6 +573,9 @@ export default function App() {
                 onPackageManagerChange={setPackageManager}
                 aiPrompt={aiPrompt}
               />
+            )}
+            {!overview && !block && (
+              <div className="bg-muted/30 h-14 animate-pulse border-b motion-reduce:animate-none" />
             )}
 
           {overview?.kind === "block" ? (
@@ -526,23 +597,27 @@ export default function App() {
                 }}
               />
             </main>
-          ) : overview?.kind === "component" && overviewEntries ? (
+          ) : overview?.kind === "component" ? (
             <main className="flex-1 overflow-y-auto">
-              <ComponentOverview
-                name={overview.name}
-                entries={overviewEntries}
-                packageManager={packageManager}
-                onPackageManagerChange={setPackageManager}
-                theme={theme}
-                onOpen={(entry) => {
-                  selectBlock(entry.id)
-                  setView("preview")
-                }}
-                onViewCode={(entry) => {
-                  selectBlock(entry.id)
-                  setView("code")
-                }}
-              />
+              {overviewEntries ? (
+                <ComponentOverview
+                  name={overview.name}
+                  entries={overviewEntries}
+                  packageManager={packageManager}
+                  onPackageManagerChange={setPackageManager}
+                  theme={theme}
+                  onOpen={(entry) => {
+                    selectBlock(entry.id)
+                    setView("preview")
+                  }}
+                  onViewCode={(entry) => {
+                    selectBlock(entry.id)
+                    setView("code")
+                  }}
+                />
+              ) : (
+                <PreviewFallback />
+              )}
             </main>
           ) : view === "preview" ? (
             <main
@@ -558,26 +633,36 @@ export default function App() {
                 )}
                 style={{ maxWidth: deviceWidth }}
               >
-                {block.kind === "component" ? (
-                  <div
-                    key={refreshKey}
-                    className="flex min-h-[calc(100svh-3.5rem)] items-center justify-center p-6 sm:p-10"
-                  >
-                    <div className="flex w-full max-w-5xl justify-center">
-                      <block.Component />
+                {block ? (
+                  block.kind === "component" ? (
+                    <div
+                      key={`${block.id}-${refreshKey}`}
+                      className="preview-enter flex min-h-[calc(100svh-3.5rem)] items-center justify-center p-6 sm:p-10"
+                    >
+                      <div className="flex w-full max-w-5xl justify-center">
+                        <Suspense fallback={<PreviewFallback />}>
+                          <block.Component />
+                        </Suspense>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div
+                      key={`${block.id}-${refreshKey}`}
+                      className="preview-enter [&>div]:min-h-[calc(100svh-3.5rem)]"
+                    >
+                      <Suspense fallback={<PreviewFallback />}>
+                        <block.Component />
+                      </Suspense>
+                    </div>
+                  )
                 ) : (
-                  <div
-                    key={refreshKey}
-                    className="[&>div]:min-h-[calc(100svh-3.5rem)]"
-                  >
-                    <block.Component />
+                  <div className="min-h-[calc(100svh-3.5rem)]">
+                    <PreviewFallback />
                   </div>
                 )}
               </div>
             </main>
-          ) : (
+          ) : block && activeFileEntry ? (
             <main className="flex-1">
               <div className="mx-auto w-full max-w-6xl p-4 sm:p-6">
                 <div className="overflow-hidden rounded-xl border">
@@ -598,13 +683,32 @@ export default function App() {
                       </button>
                     ))}
                     <span className="text-muted-foreground ml-auto pr-1 text-xs tabular-nums">
-                      {activeFileEntry.code.split("\n").length} lines
+                      {codeReady
+                        ? `${fileSource.code.split("\n").length} lines`
+                        : "Loading…"}
                     </span>
                   </div>
 
-                  <CodePanel file={activeFileEntry} />
+                  {codeReady ? (
+                    <Suspense
+                      fallback={
+                        <div className="bg-muted/30 h-64 w-full animate-pulse motion-reduce:animate-none" />
+                      }
+                    >
+                      <CodePanel
+                        code={fileSource.code}
+                        lang={activeFileEntry.lang}
+                      />
+                    </Suspense>
+                  ) : (
+                    <div className="bg-muted/30 h-64 w-full animate-pulse motion-reduce:animate-none" />
+                  )}
                 </div>
               </div>
+            </main>
+          ) : (
+            <main className="flex-1">
+              <PreviewFallback />
             </main>
           )}
           </div>
@@ -617,19 +721,21 @@ export default function App() {
         </SheetContent>
       </Sheet>
 
-      <CustomizePanel
-        block={block}
-        open={customizeOpen}
-        onOpenChange={setCustomizeOpen}
-        options={options}
-        onChange={setOptions}
-        theme={theme}
-        onThemeChange={(next) => setThemeAnimated(next)}
-        packageManager={packageManager}
-        onPackageManagerChange={setPackageManager}
-        onShuffle={shuffleOptions}
-        onReset={resetOptions}
-      />
+      {block && (
+        <CustomizePanel
+          block={block}
+          open={customizeOpen}
+          onOpenChange={setCustomizeOpen}
+          options={options}
+          onChange={setOptions}
+          theme={theme}
+          onThemeChange={(next) => setThemeAnimated(next)}
+          packageManager={packageManager}
+          onPackageManagerChange={setPackageManager}
+          onShuffle={shuffleOptions}
+          onReset={resetOptions}
+        />
+      )}
 
       <Toaster position="bottom-right" theme={theme} />
     </TooltipProvider>

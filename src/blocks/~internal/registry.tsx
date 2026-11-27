@@ -1,81 +1,82 @@
-import { CustomerBalancesBlock } from "@/blocks/data-grid/base/customers"
-import { LeadScoringContactsBlock } from "@/blocks/data-grid/base/contacts"
-import { DealPipelineBlock } from "@/blocks/data-grid/base/opportunities"
-import { WeeklyTimesheetBlock } from "@/blocks/data-grid/base/timesheets"
-import { SupportTicketsBlock } from "@/blocks/data-grid/base/support-queue"
-import { TeamMembersBlock } from "@/blocks/data-grid/base/members"
-import { ProjectModulesBlock } from "@/blocks/data-grid/base/modules"
-import { CloudRateCardBlock } from "@/blocks/data-grid/base/rate-card"
-import { ApiRequestLogsBlock } from "@/blocks/data-grid/base/api-requests"
+import { blockFile as file, lazyComponent, lazyNamed, sourceLoader } from "./lazy"
+const CustomerBalancesBlock = lazyNamed(() => import("@/blocks/data-grid/base/customers"), "CustomerBalancesBlock")
+const LeadScoringContactsBlock = lazyNamed(() => import("@/blocks/data-grid/base/contacts"), "LeadScoringContactsBlock")
+const DealPipelineBlock = lazyNamed(() => import("@/blocks/data-grid/base/opportunities"), "DealPipelineBlock")
+const WeeklyTimesheetBlock = lazyNamed(() => import("@/blocks/data-grid/base/timesheets"), "WeeklyTimesheetBlock")
+const SupportTicketsBlock = lazyNamed(() => import("@/blocks/data-grid/base/support-queue"), "SupportTicketsBlock")
+const TeamMembersBlock = lazyNamed(() => import("@/blocks/data-grid/base/members"), "TeamMembersBlock")
+const ProjectModulesBlock = lazyNamed(() => import("@/blocks/data-grid/base/modules"), "ProjectModulesBlock")
+const CloudRateCardBlock = lazyNamed(() => import("@/blocks/data-grid/base/rate-card"), "CloudRateCardBlock")
+const ApiRequestLogsBlock = lazyNamed(() => import("@/blocks/data-grid/base/api-requests"), "ApiRequestLogsBlock")
 
-import { AccessPermissionsBlock } from "@/blocks/data-grid/columns/workspace-access-review"
-import { CourseCatalogBlock } from "@/blocks/data-grid/columns/course-catalog"
-import { WorkQueueBlock } from "@/blocks/data-grid/columns/work-queue"
-import { MemberColumnsBlock } from "@/blocks/data-grid/columns/members"
-import { CompanyAttributesBlock } from "@/blocks/data-grid/columns/companies"
+const AccessPermissionsBlock = lazyNamed(() => import("@/blocks/data-grid/columns/workspace-access-review"), "AccessPermissionsBlock")
+const CourseCatalogBlock = lazyNamed(() => import("@/blocks/data-grid/columns/course-catalog"), "CourseCatalogBlock")
+const WorkQueueBlock = lazyNamed(() => import("@/blocks/data-grid/columns/work-queue"), "WorkQueueBlock")
+const MemberColumnsBlock = lazyNamed(() => import("@/blocks/data-grid/columns/members"), "MemberColumnsBlock")
+const CompanyAttributesBlock = lazyNamed(() => import("@/blocks/data-grid/columns/companies"), "CompanyAttributesBlock")
 
-import { SprintBacklogBlock } from "@/blocks/data-grid/drag-drop/sprint-backlog"
-import { RoutingRulesBlock } from "@/blocks/data-grid/drag-drop/routing-rules"
-import { DispatchLayoutBlock } from "@/blocks/data-grid/drag-drop/dispatch-layout"
-import { SharedDriveBlock } from "@/blocks/data-grid/drag-drop/shared-drive"
+const SprintBacklogBlock = lazyNamed(() => import("@/blocks/data-grid/drag-drop/sprint-backlog"), "SprintBacklogBlock")
+const RoutingRulesBlock = lazyNamed(() => import("@/blocks/data-grid/drag-drop/routing-rules"), "RoutingRulesBlock")
+const DispatchLayoutBlock = lazyNamed(() => import("@/blocks/data-grid/drag-drop/dispatch-layout"), "DispatchLayoutBlock")
+const SharedDriveBlock = lazyNamed(() => import("@/blocks/data-grid/drag-drop/shared-drive"), "SharedDriveBlock")
 
-import { LabelManagerBlock } from "@/blocks/data-grid/editing/labels"
-import { ProductInventoryBlock } from "@/blocks/data-grid/editing/product-inventory"
-import { ProjectIntakeBlock } from "@/blocks/data-grid/editing/project-intake"
-import { PricingPlanEditorBlock } from "@/blocks/data-grid/editing/plans"
-import { TaskSpreadsheetBlock } from "@/blocks/data-grid/editing/launch-runbook"
-import { StockReorderPlanBlock } from "@/blocks/data-grid/editing/reorder-plan"
+const LabelManagerBlock = lazyNamed(() => import("@/blocks/data-grid/editing/labels"), "LabelManagerBlock")
+const ProductInventoryBlock = lazyNamed(() => import("@/blocks/data-grid/editing/product-inventory"), "ProductInventoryBlock")
+const ProjectIntakeBlock = lazyNamed(() => import("@/blocks/data-grid/editing/project-intake"), "ProjectIntakeBlock")
+const PricingPlanEditorBlock = lazyNamed(() => import("@/blocks/data-grid/editing/plans"), "PricingPlanEditorBlock")
+const TaskSpreadsheetBlock = lazyNamed(() => import("@/blocks/data-grid/editing/launch-runbook"), "TaskSpreadsheetBlock")
+const StockReorderPlanBlock = lazyNamed(() => import("@/blocks/data-grid/editing/reorder-plan"), "StockReorderPlanBlock")
 
-import { TaskDeliveryBlock } from "@/blocks/data-grid/expansion/task-delivery"
-import { TreasuryWaterfallBlock } from "@/blocks/data-grid/expansion/treasury-waterfall"
-import { ReleaseReviewsBlock } from "@/blocks/data-grid/expansion/release-reviews"
+const TaskDeliveryBlock = lazyNamed(() => import("@/blocks/data-grid/expansion/task-delivery"), "TaskDeliveryBlock")
+const TreasuryWaterfallBlock = lazyNamed(() => import("@/blocks/data-grid/expansion/treasury-waterfall"), "TreasuryWaterfallBlock")
+const ReleaseReviewsBlock = lazyNamed(() => import("@/blocks/data-grid/expansion/release-reviews"), "ReleaseReviewsBlock")
 
-import { BillingTransactionsBlock } from "@/blocks/data-grid/filtering/transactions"
+const BillingTransactionsBlock = lazyNamed(() => import("@/blocks/data-grid/filtering/transactions"), "BillingTransactionsBlock")
 
-import { AutomationLibraryBlock } from "@/blocks/data-grid/filtering/automation-library"
+const AutomationLibraryBlock = lazyNamed(() => import("@/blocks/data-grid/filtering/automation-library"), "AutomationLibraryBlock")
 
-import { RenewalsReviewBlock } from "@/blocks/data-grid/filtering/renewals-review"
+const RenewalsReviewBlock = lazyNamed(() => import("@/blocks/data-grid/filtering/renewals-review"), "RenewalsReviewBlock")
 
-import { AtRiskRenewalsBlock } from "@/blocks/data-grid/filtering/renewals-risk"
+const AtRiskRenewalsBlock = lazyNamed(() => import("@/blocks/data-grid/filtering/renewals-risk"), "AtRiskRenewalsBlock")
 
-import { RoadmapQueueBlock } from "@/blocks/data-grid/grouping/roadmap-queue"
+const RoadmapQueueBlock = lazyNamed(() => import("@/blocks/data-grid/grouping/roadmap-queue"), "RoadmapQueueBlock")
 
-import { RevenueByRegionBlock } from "@/blocks/data-grid/grouping/revenue-by-region"
+const RevenueByRegionBlock = lazyNamed(() => import("@/blocks/data-grid/grouping/revenue-by-region"), "RevenueByRegionBlock")
 
-import { PatientAccessCohortsBlock } from "@/blocks/data-grid/grouping/access-cohort"
+const PatientAccessCohortsBlock = lazyNamed(() => import("@/blocks/data-grid/grouping/access-cohort"), "PatientAccessCohortsBlock")
 
-import { BillOfMaterialsBlock } from "@/blocks/data-grid/grouping/bill-of-materials"
+const BillOfMaterialsBlock = lazyNamed(() => import("@/blocks/data-grid/grouping/bill-of-materials"), "BillOfMaterialsBlock")
 
-import { ReportingLinesBlock } from "@/blocks/data-grid/grouping/reporting-lines"
+const ReportingLinesBlock = lazyNamed(() => import("@/blocks/data-grid/grouping/reporting-lines"), "ReportingLinesBlock")
 
-import { ProductionDeskBlock } from "@/blocks/data-grid/grouping/production-desk"
+const ProductionDeskBlock = lazyNamed(() => import("@/blocks/data-grid/grouping/production-desk"), "ProductionDeskBlock")
 
-import { DeliveryBoardBlock } from "@/blocks/data-grid/grouping/delivery-board"
+const DeliveryBoardBlock = lazyNamed(() => import("@/blocks/data-grid/grouping/delivery-board"), "DeliveryBoardBlock")
 
-import { TransactionsVirtualizedBlock } from "@/blocks/data-grid/virtualization/transactions"
+const TransactionsVirtualizedBlock = lazyNamed(() => import("@/blocks/data-grid/virtualization/transactions"), "TransactionsVirtualizedBlock")
 
-import { ExceptionQueueBlock } from "@/blocks/data-grid/virtualization/exception-queue"
+const ExceptionQueueBlock = lazyNamed(() => import("@/blocks/data-grid/virtualization/exception-queue"), "ExceptionQueueBlock")
 
-import AdCampaignPerformanceBlock from "@/blocks/data-grid/advanced/campaign-performance"
-import RegionalStorePnlBlock from "@/blocks/data-grid/advanced/store-p-l"
-import CampaignTargetReviewBlock from "@/blocks/data-grid/advanced/campaign-targets"
-import SloReliabilityIndexBlock from "@/blocks/data-grid/advanced/reliability-index"
-import WholesaleOnboardingBlock from "@/blocks/data-grid/advanced/wholesale-applications"
-import StockMixBlock from "@/blocks/data-grid/advanced/stock-mix"
-import FourplexProFormaBlock from "@/blocks/data-grid/advanced/fourplex-pro-forma"
-import ProductKpiGridBlock from "@/blocks/data-grid/advanced/product-kpis"
-import ServiceVisitPlannerBlock from "@/blocks/data-grid/advanced/service-visits"
-import TechnicianCapacityBlock from "@/blocks/data-grid/advanced/technician-capacity"
-import FactoryScorecardBlock from "@/blocks/data-grid/advanced/factory-scorecard"
-import FreightLanesBlock from "@/blocks/data-grid/advanced/freight-cargo-services"
-import HrScorecardBlock from "@/blocks/data-grid/advanced/hr-scorecard"
-import StrategyScorecardBlock from "@/blocks/data-grid/advanced/strategy-scorecard"
-import RetailPnlBlock from "@/blocks/data-grid/advanced/p-l-outlook"
-import StoreKpiBoardBlock from "@/blocks/data-grid/advanced/store-kpis"
-import SupportScorecardBlock from "@/blocks/data-grid/advanced/support-scorecard"
-import JobScheduleBlock from "@/blocks/data-grid/advanced/job-schedule"
-import ProspectDatabaseBlock from "@/blocks/data-grid/advanced/prospects"
-import ProjectBudgetBlock from "@/blocks/data-grid/advanced/project-budget"
+const AdCampaignPerformanceBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/campaign-performance"))
+const RegionalStorePnlBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/store-p-l"))
+const CampaignTargetReviewBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/campaign-targets"))
+const SloReliabilityIndexBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/reliability-index"))
+const WholesaleOnboardingBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/wholesale-applications"))
+const StockMixBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/stock-mix"))
+const FourplexProFormaBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/fourplex-pro-forma"))
+const ProductKpiGridBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/product-kpis"))
+const ServiceVisitPlannerBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/service-visits"))
+const TechnicianCapacityBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/technician-capacity"))
+const FactoryScorecardBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/factory-scorecard"))
+const FreightLanesBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/freight-cargo-services"))
+const HrScorecardBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/hr-scorecard"))
+const StrategyScorecardBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/strategy-scorecard"))
+const RetailPnlBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/p-l-outlook"))
+const StoreKpiBoardBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/store-kpis"))
+const SupportScorecardBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/support-scorecard"))
+const JobScheduleBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/job-schedule"))
+const ProspectDatabaseBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/prospects"))
+const ProjectBudgetBlock = lazyComponent(() => import("@/blocks/data-grid/advanced/project-budget"))
 import { APP_SHELL_BLOCKS } from "@/blocks/application/app-shell/~blocks"
 import { AUTH_BLOCKS } from "@/blocks/application/auth/~blocks"
 import { CARD_BLOCKS } from "@/blocks/application/card/~blocks"
@@ -99,199 +100,199 @@ import { STATS_BLOCKS } from "@/blocks/application/stats/~blocks"
 import { TIMELINE_BLOCKS } from "@/blocks/application/timeline/~blocks"
 import { WHITEBOARD_BLOCKS } from "@/blocks/application/whiteboard/~blocks"
 import { WIZARD_BLOCKS } from "@/blocks/application/wizard/~blocks"
-import { InvoiceManagerBlock } from "@/blocks/data-grid/advanced/invoices"
+const InvoiceManagerBlock = lazyNamed(() => import("@/blocks/data-grid/advanced/invoices"), "InvoiceManagerBlock")
 
 
-import base1Index from "@/blocks/data-grid/base/customers/index.tsx?raw"
-import base1Parts from "@/blocks/data-grid/base/customers/parts.tsx?raw"
-import base1CustomerSheets from "@/blocks/data-grid/base/customers/customer-sheets.tsx?raw"
-import base1Data from "@/blocks/data-grid/base/customers/data.ts?raw"
-import base2Index from "@/blocks/data-grid/base/contacts/index.tsx?raw"
-import base2Parts from "@/blocks/data-grid/base/contacts/parts.tsx?raw"
-import base2ContactFilters from "@/blocks/data-grid/base/contacts/contact-filters.tsx?raw"
-import base2ContactSheets from "@/blocks/data-grid/base/contacts/contact-sheets.tsx?raw"
-import base2Data from "@/blocks/data-grid/base/contacts/data.ts?raw"
-import base3Index from "@/blocks/data-grid/base/opportunities/index.tsx?raw"
-import base3Parts from "@/blocks/data-grid/base/opportunities/parts.tsx?raw"
-import base3PipelineFilters from "@/blocks/data-grid/base/opportunities/pipeline-filters.tsx?raw"
-import base3Data from "@/blocks/data-grid/base/opportunities/data.ts?raw"
-import base4Index from "@/blocks/data-grid/base/timesheets/index.tsx?raw"
-import base4Parts from "@/blocks/data-grid/base/timesheets/parts.tsx?raw"
-import base4Data from "@/blocks/data-grid/base/timesheets/data.ts?raw"
-import base5Index from "@/blocks/data-grid/base/support-queue/index.tsx?raw"
-import base5Parts from "@/blocks/data-grid/base/support-queue/parts.tsx?raw"
-import base5Data from "@/blocks/data-grid/base/support-queue/data.ts?raw"
-import base6Index from "@/blocks/data-grid/base/members/index.tsx?raw"
-import base6Data from "@/blocks/data-grid/base/members/data.ts?raw"
-import base7Index from "@/blocks/data-grid/base/modules/index.tsx?raw"
-import base7Data from "@/blocks/data-grid/base/modules/data.ts?raw"
-import base8Index from "@/blocks/data-grid/base/rate-card/index.tsx?raw"
-import base8Data from "@/blocks/data-grid/base/rate-card/data.ts?raw"
-import base9Index from "@/blocks/data-grid/base/api-requests/index.tsx?raw"
-import base9TrafficChart from "@/blocks/data-grid/base/api-requests/traffic-chart.tsx?raw"
-import base9LogSheet from "@/blocks/data-grid/base/api-requests/log-sheet.tsx?raw"
-import base9Data from "@/blocks/data-grid/base/api-requests/data.ts?raw"
+const base1Index = sourceLoader(() => import("@/blocks/data-grid/base/customers/index.tsx?raw"))
+const base1Parts = sourceLoader(() => import("@/blocks/data-grid/base/customers/parts.tsx?raw"))
+const base1CustomerSheets = sourceLoader(() => import("@/blocks/data-grid/base/customers/customer-sheets.tsx?raw"))
+const base1Data = sourceLoader(() => import("@/blocks/data-grid/base/customers/data.ts?raw"))
+const base2Index = sourceLoader(() => import("@/blocks/data-grid/base/contacts/index.tsx?raw"))
+const base2Parts = sourceLoader(() => import("@/blocks/data-grid/base/contacts/parts.tsx?raw"))
+const base2ContactFilters = sourceLoader(() => import("@/blocks/data-grid/base/contacts/contact-filters.tsx?raw"))
+const base2ContactSheets = sourceLoader(() => import("@/blocks/data-grid/base/contacts/contact-sheets.tsx?raw"))
+const base2Data = sourceLoader(() => import("@/blocks/data-grid/base/contacts/data.ts?raw"))
+const base3Index = sourceLoader(() => import("@/blocks/data-grid/base/opportunities/index.tsx?raw"))
+const base3Parts = sourceLoader(() => import("@/blocks/data-grid/base/opportunities/parts.tsx?raw"))
+const base3PipelineFilters = sourceLoader(() => import("@/blocks/data-grid/base/opportunities/pipeline-filters.tsx?raw"))
+const base3Data = sourceLoader(() => import("@/blocks/data-grid/base/opportunities/data.ts?raw"))
+const base4Index = sourceLoader(() => import("@/blocks/data-grid/base/timesheets/index.tsx?raw"))
+const base4Parts = sourceLoader(() => import("@/blocks/data-grid/base/timesheets/parts.tsx?raw"))
+const base4Data = sourceLoader(() => import("@/blocks/data-grid/base/timesheets/data.ts?raw"))
+const base5Index = sourceLoader(() => import("@/blocks/data-grid/base/support-queue/index.tsx?raw"))
+const base5Parts = sourceLoader(() => import("@/blocks/data-grid/base/support-queue/parts.tsx?raw"))
+const base5Data = sourceLoader(() => import("@/blocks/data-grid/base/support-queue/data.ts?raw"))
+const base6Index = sourceLoader(() => import("@/blocks/data-grid/base/members/index.tsx?raw"))
+const base6Data = sourceLoader(() => import("@/blocks/data-grid/base/members/data.ts?raw"))
+const base7Index = sourceLoader(() => import("@/blocks/data-grid/base/modules/index.tsx?raw"))
+const base7Data = sourceLoader(() => import("@/blocks/data-grid/base/modules/data.ts?raw"))
+const base8Index = sourceLoader(() => import("@/blocks/data-grid/base/rate-card/index.tsx?raw"))
+const base8Data = sourceLoader(() => import("@/blocks/data-grid/base/rate-card/data.ts?raw"))
+const base9Index = sourceLoader(() => import("@/blocks/data-grid/base/api-requests/index.tsx?raw"))
+const base9TrafficChart = sourceLoader(() => import("@/blocks/data-grid/base/api-requests/traffic-chart.tsx?raw"))
+const base9LogSheet = sourceLoader(() => import("@/blocks/data-grid/base/api-requests/log-sheet.tsx?raw"))
+const base9Data = sourceLoader(() => import("@/blocks/data-grid/base/api-requests/data.ts?raw"))
 
-import columns1Index from "@/blocks/data-grid/columns/workspace-access-review/index.tsx?raw"
-import columns1Data from "@/blocks/data-grid/columns/workspace-access-review/data.ts?raw"
-import columns2Index from "@/blocks/data-grid/columns/course-catalog/index.tsx?raw"
-import columns2Data from "@/blocks/data-grid/columns/course-catalog/data.ts?raw"
-import columns3Index from "@/blocks/data-grid/columns/work-queue/index.tsx?raw"
-import columns3Data from "@/blocks/data-grid/columns/work-queue/data.ts?raw"
-import columns4Index from "@/blocks/data-grid/columns/members/index.tsx?raw"
-import columns4Data from "@/blocks/data-grid/columns/members/data.ts?raw"
-import columns5Index from "@/blocks/data-grid/columns/companies/index.tsx?raw"
-import columns5Data from "@/blocks/data-grid/columns/companies/data.ts?raw"
+const columns1Index = sourceLoader(() => import("@/blocks/data-grid/columns/workspace-access-review/index.tsx?raw"))
+const columns1Data = sourceLoader(() => import("@/blocks/data-grid/columns/workspace-access-review/data.ts?raw"))
+const columns2Index = sourceLoader(() => import("@/blocks/data-grid/columns/course-catalog/index.tsx?raw"))
+const columns2Data = sourceLoader(() => import("@/blocks/data-grid/columns/course-catalog/data.ts?raw"))
+const columns3Index = sourceLoader(() => import("@/blocks/data-grid/columns/work-queue/index.tsx?raw"))
+const columns3Data = sourceLoader(() => import("@/blocks/data-grid/columns/work-queue/data.ts?raw"))
+const columns4Index = sourceLoader(() => import("@/blocks/data-grid/columns/members/index.tsx?raw"))
+const columns4Data = sourceLoader(() => import("@/blocks/data-grid/columns/members/data.ts?raw"))
+const columns5Index = sourceLoader(() => import("@/blocks/data-grid/columns/companies/index.tsx?raw"))
+const columns5Data = sourceLoader(() => import("@/blocks/data-grid/columns/companies/data.ts?raw"))
 
-import dnd1Index from "@/blocks/data-grid/drag-drop/sprint-backlog/index.tsx?raw"
-import dnd1Data from "@/blocks/data-grid/drag-drop/sprint-backlog/data.ts?raw"
-import dnd2Index from "@/blocks/data-grid/drag-drop/routing-rules/index.tsx?raw"
-import dnd2Data from "@/blocks/data-grid/drag-drop/routing-rules/data.ts?raw"
-import dnd3Index from "@/blocks/data-grid/drag-drop/dispatch-layout/index.tsx?raw"
-import dnd3Data from "@/blocks/data-grid/drag-drop/dispatch-layout/data.ts?raw"
-import dnd4Index from "@/blocks/data-grid/drag-drop/shared-drive/index.tsx?raw"
-import dnd4Data from "@/blocks/data-grid/drag-drop/shared-drive/data.ts?raw"
+const dnd1Index = sourceLoader(() => import("@/blocks/data-grid/drag-drop/sprint-backlog/index.tsx?raw"))
+const dnd1Data = sourceLoader(() => import("@/blocks/data-grid/drag-drop/sprint-backlog/data.ts?raw"))
+const dnd2Index = sourceLoader(() => import("@/blocks/data-grid/drag-drop/routing-rules/index.tsx?raw"))
+const dnd2Data = sourceLoader(() => import("@/blocks/data-grid/drag-drop/routing-rules/data.ts?raw"))
+const dnd3Index = sourceLoader(() => import("@/blocks/data-grid/drag-drop/dispatch-layout/index.tsx?raw"))
+const dnd3Data = sourceLoader(() => import("@/blocks/data-grid/drag-drop/dispatch-layout/data.ts?raw"))
+const dnd4Index = sourceLoader(() => import("@/blocks/data-grid/drag-drop/shared-drive/index.tsx?raw"))
+const dnd4Data = sourceLoader(() => import("@/blocks/data-grid/drag-drop/shared-drive/data.ts?raw"))
 
-import edit1Index from "@/blocks/data-grid/editing/labels/index.tsx?raw"
-import edit1Data from "@/blocks/data-grid/editing/labels/data.ts?raw"
-import edit2Index from "@/blocks/data-grid/editing/product-inventory/index.tsx?raw"
-import edit2Data from "@/blocks/data-grid/editing/product-inventory/data.ts?raw"
-import edit3Index from "@/blocks/data-grid/editing/project-intake/index.tsx?raw"
-import edit3Data from "@/blocks/data-grid/editing/project-intake/data.ts?raw"
-import edit4Index from "@/blocks/data-grid/editing/plans/index.tsx?raw"
-import edit4Data from "@/blocks/data-grid/editing/plans/data.ts?raw"
-import edit5Index from "@/blocks/data-grid/editing/launch-runbook/index.tsx?raw"
-import edit5Data from "@/blocks/data-grid/editing/launch-runbook/data.ts?raw"
-import edit6Index from "@/blocks/data-grid/editing/reorder-plan/index.tsx?raw"
-import edit6Data from "@/blocks/data-grid/editing/reorder-plan/data.ts?raw"
+const edit1Index = sourceLoader(() => import("@/blocks/data-grid/editing/labels/index.tsx?raw"))
+const edit1Data = sourceLoader(() => import("@/blocks/data-grid/editing/labels/data.ts?raw"))
+const edit2Index = sourceLoader(() => import("@/blocks/data-grid/editing/product-inventory/index.tsx?raw"))
+const edit2Data = sourceLoader(() => import("@/blocks/data-grid/editing/product-inventory/data.ts?raw"))
+const edit3Index = sourceLoader(() => import("@/blocks/data-grid/editing/project-intake/index.tsx?raw"))
+const edit3Data = sourceLoader(() => import("@/blocks/data-grid/editing/project-intake/data.ts?raw"))
+const edit4Index = sourceLoader(() => import("@/blocks/data-grid/editing/plans/index.tsx?raw"))
+const edit4Data = sourceLoader(() => import("@/blocks/data-grid/editing/plans/data.ts?raw"))
+const edit5Index = sourceLoader(() => import("@/blocks/data-grid/editing/launch-runbook/index.tsx?raw"))
+const edit5Data = sourceLoader(() => import("@/blocks/data-grid/editing/launch-runbook/data.ts?raw"))
+const edit6Index = sourceLoader(() => import("@/blocks/data-grid/editing/reorder-plan/index.tsx?raw"))
+const edit6Data = sourceLoader(() => import("@/blocks/data-grid/editing/reorder-plan/data.ts?raw"))
 
-import exp1Index from "@/blocks/data-grid/expansion/task-delivery/index.tsx?raw"
-import exp1Data from "@/blocks/data-grid/expansion/task-delivery/data.ts?raw"
-import exp2Index from "@/blocks/data-grid/expansion/treasury-waterfall/index.tsx?raw"
-import exp2Data from "@/blocks/data-grid/expansion/treasury-waterfall/data.ts?raw"
-import exp3Index from "@/blocks/data-grid/expansion/release-reviews/index.tsx?raw"
-import exp3Data from "@/blocks/data-grid/expansion/release-reviews/data.ts?raw"
+const exp1Index = sourceLoader(() => import("@/blocks/data-grid/expansion/task-delivery/index.tsx?raw"))
+const exp1Data = sourceLoader(() => import("@/blocks/data-grid/expansion/task-delivery/data.ts?raw"))
+const exp2Index = sourceLoader(() => import("@/blocks/data-grid/expansion/treasury-waterfall/index.tsx?raw"))
+const exp2Data = sourceLoader(() => import("@/blocks/data-grid/expansion/treasury-waterfall/data.ts?raw"))
+const exp3Index = sourceLoader(() => import("@/blocks/data-grid/expansion/release-reviews/index.tsx?raw"))
+const exp3Data = sourceLoader(() => import("@/blocks/data-grid/expansion/release-reviews/data.ts?raw"))
 
-import filter1Index from "@/blocks/data-grid/filtering/transactions/index.tsx?raw"
-import filter1Data from "@/blocks/data-grid/filtering/transactions/data.ts?raw"
+const filter1Index = sourceLoader(() => import("@/blocks/data-grid/filtering/transactions/index.tsx?raw"))
+const filter1Data = sourceLoader(() => import("@/blocks/data-grid/filtering/transactions/data.ts?raw"))
 
-import filter2Index from "@/blocks/data-grid/filtering/automation-library/index.tsx?raw"
-import filter2Data from "@/blocks/data-grid/filtering/automation-library/data.ts?raw"
+const filter2Index = sourceLoader(() => import("@/blocks/data-grid/filtering/automation-library/index.tsx?raw"))
+const filter2Data = sourceLoader(() => import("@/blocks/data-grid/filtering/automation-library/data.ts?raw"))
 
-import filter3Index from "@/blocks/data-grid/filtering/renewals-review/index.tsx?raw"
-import filter3Data from "@/blocks/data-grid/filtering/renewals-review/data.ts?raw"
-import filter3Brands from "@/blocks/data-grid/filtering/renewals-review/brand-icons.tsx?raw"
+const filter3Index = sourceLoader(() => import("@/blocks/data-grid/filtering/renewals-review/index.tsx?raw"))
+const filter3Data = sourceLoader(() => import("@/blocks/data-grid/filtering/renewals-review/data.ts?raw"))
+const filter3Brands = sourceLoader(() => import("@/blocks/data-grid/filtering/renewals-review/brand-icons.tsx?raw"))
 
-import filter4Index from "@/blocks/data-grid/filtering/renewals-risk/index.tsx?raw"
-import filter4Data from "@/blocks/data-grid/filtering/renewals-risk/data.ts?raw"
-import filter4Brands from "@/blocks/data-grid/filtering/renewals-risk/brand-icons.tsx?raw"
+const filter4Index = sourceLoader(() => import("@/blocks/data-grid/filtering/renewals-risk/index.tsx?raw"))
+const filter4Data = sourceLoader(() => import("@/blocks/data-grid/filtering/renewals-risk/data.ts?raw"))
+const filter4Brands = sourceLoader(() => import("@/blocks/data-grid/filtering/renewals-risk/brand-icons.tsx?raw"))
 
-import grouping1Index from "@/blocks/data-grid/grouping/roadmap-queue/index.tsx?raw"
-import grouping1Data from "@/blocks/data-grid/grouping/roadmap-queue/data.ts?raw"
+const grouping1Index = sourceLoader(() => import("@/blocks/data-grid/grouping/roadmap-queue/index.tsx?raw"))
+const grouping1Data = sourceLoader(() => import("@/blocks/data-grid/grouping/roadmap-queue/data.ts?raw"))
 
-import grouping2Index from "@/blocks/data-grid/grouping/revenue-by-region/index.tsx?raw"
-import grouping2Data from "@/blocks/data-grid/grouping/revenue-by-region/data.ts?raw"
+const grouping2Index = sourceLoader(() => import("@/blocks/data-grid/grouping/revenue-by-region/index.tsx?raw"))
+const grouping2Data = sourceLoader(() => import("@/blocks/data-grid/grouping/revenue-by-region/data.ts?raw"))
 
-import grouping3Index from "@/blocks/data-grid/grouping/access-cohort/index.tsx?raw"
-import grouping3Data from "@/blocks/data-grid/grouping/access-cohort/data.ts?raw"
+const grouping3Index = sourceLoader(() => import("@/blocks/data-grid/grouping/access-cohort/index.tsx?raw"))
+const grouping3Data = sourceLoader(() => import("@/blocks/data-grid/grouping/access-cohort/data.ts?raw"))
 
-import grouping4Index from "@/blocks/data-grid/grouping/bill-of-materials/index.tsx?raw"
-import grouping4Data from "@/blocks/data-grid/grouping/bill-of-materials/data.ts?raw"
+const grouping4Index = sourceLoader(() => import("@/blocks/data-grid/grouping/bill-of-materials/index.tsx?raw"))
+const grouping4Data = sourceLoader(() => import("@/blocks/data-grid/grouping/bill-of-materials/data.ts?raw"))
 
-import grouping5Index from "@/blocks/data-grid/grouping/reporting-lines/index.tsx?raw"
-import grouping5Data from "@/blocks/data-grid/grouping/reporting-lines/data.ts?raw"
+const grouping5Index = sourceLoader(() => import("@/blocks/data-grid/grouping/reporting-lines/index.tsx?raw"))
+const grouping5Data = sourceLoader(() => import("@/blocks/data-grid/grouping/reporting-lines/data.ts?raw"))
 
-import grouping6Index from "@/blocks/data-grid/grouping/production-desk/index.tsx?raw"
-import grouping6Data from "@/blocks/data-grid/grouping/production-desk/data.ts?raw"
+const grouping6Index = sourceLoader(() => import("@/blocks/data-grid/grouping/production-desk/index.tsx?raw"))
+const grouping6Data = sourceLoader(() => import("@/blocks/data-grid/grouping/production-desk/data.ts?raw"))
 
-import grouping7Index from "@/blocks/data-grid/grouping/delivery-board/index.tsx?raw"
-import grouping7Data from "@/blocks/data-grid/grouping/delivery-board/data.ts?raw"
+const grouping7Index = sourceLoader(() => import("@/blocks/data-grid/grouping/delivery-board/index.tsx?raw"))
+const grouping7Data = sourceLoader(() => import("@/blocks/data-grid/grouping/delivery-board/data.ts?raw"))
 
-import virtualization1Index from "@/blocks/data-grid/virtualization/transactions/index.tsx?raw"
-import virtualization1Data from "@/blocks/data-grid/virtualization/transactions/data.ts?raw"
+const virtualization1Index = sourceLoader(() => import("@/blocks/data-grid/virtualization/transactions/index.tsx?raw"))
+const virtualization1Data = sourceLoader(() => import("@/blocks/data-grid/virtualization/transactions/data.ts?raw"))
 
-import virtualization2Index from "@/blocks/data-grid/virtualization/exception-queue/index.tsx?raw"
-import virtualization2Data from "@/blocks/data-grid/virtualization/exception-queue/data.ts?raw"
+const virtualization2Index = sourceLoader(() => import("@/blocks/data-grid/virtualization/exception-queue/index.tsx?raw"))
+const virtualization2Data = sourceLoader(() => import("@/blocks/data-grid/virtualization/exception-queue/data.ts?raw"))
 
-import adv1Index from "@/blocks/data-grid/advanced/campaign-performance/index.tsx?raw"
-import adv1CampaignSheet from "@/blocks/data-grid/advanced/campaign-performance/campaign-sheet.tsx?raw"
-import adv1Data from "@/blocks/data-grid/advanced/campaign-performance/data.ts?raw"
-import adv1Parts from "@/blocks/data-grid/advanced/campaign-performance/parts.tsx?raw"
-import adv2Index from "@/blocks/data-grid/advanced/store-p-l/index.tsx?raw"
-import adv2Data from "@/blocks/data-grid/advanced/store-p-l/data.ts?raw"
-import adv2Parts from "@/blocks/data-grid/advanced/store-p-l/parts.tsx?raw"
-import adv2StoreSheet from "@/blocks/data-grid/advanced/store-p-l/store-sheet.tsx?raw"
-import adv3Index from "@/blocks/data-grid/advanced/campaign-targets/index.tsx?raw"
-import adv3Data from "@/blocks/data-grid/advanced/campaign-targets/data.ts?raw"
-import adv3Parts from "@/blocks/data-grid/advanced/campaign-targets/parts.tsx?raw"
-import adv3TargetSheet from "@/blocks/data-grid/advanced/campaign-targets/target-sheet.tsx?raw"
-import adv4Index from "@/blocks/data-grid/advanced/reliability-index/index.tsx?raw"
-import adv4Data from "@/blocks/data-grid/advanced/reliability-index/data.ts?raw"
-import adv4Parts from "@/blocks/data-grid/advanced/reliability-index/parts.tsx?raw"
-import adv4SloSheet from "@/blocks/data-grid/advanced/reliability-index/slo-sheet.tsx?raw"
-import adv5Index from "@/blocks/data-grid/advanced/wholesale-applications/index.tsx?raw"
-import adv5AccountSheet from "@/blocks/data-grid/advanced/wholesale-applications/account-sheet.tsx?raw"
-import adv5Data from "@/blocks/data-grid/advanced/wholesale-applications/data.ts?raw"
-import adv5Parts from "@/blocks/data-grid/advanced/wholesale-applications/parts.tsx?raw"
-import adv6Index from "@/blocks/data-grid/advanced/stock-mix/index.tsx?raw"
-import adv6Data from "@/blocks/data-grid/advanced/stock-mix/data.ts?raw"
-import adv6Parts from "@/blocks/data-grid/advanced/stock-mix/parts.tsx?raw"
-import adv7Index from "@/blocks/data-grid/advanced/fourplex-pro-forma/index.tsx?raw"
-import adv7Data from "@/blocks/data-grid/advanced/fourplex-pro-forma/data.ts?raw"
-import adv7Parts from "@/blocks/data-grid/advanced/fourplex-pro-forma/parts.tsx?raw"
-import adv8Index from "@/blocks/data-grid/advanced/product-kpis/index.tsx?raw"
-import adv8Data from "@/blocks/data-grid/advanced/product-kpis/data.ts?raw"
-import adv8Parts from "@/blocks/data-grid/advanced/product-kpis/parts.tsx?raw"
-import adv9Index from "@/blocks/data-grid/advanced/service-visits/index.tsx?raw"
-import adv9Data from "@/blocks/data-grid/advanced/service-visits/data.ts?raw"
-import adv9Parts from "@/blocks/data-grid/advanced/service-visits/parts.tsx?raw"
-import adv10Index from "@/blocks/data-grid/advanced/technician-capacity/index.tsx?raw"
-import adv10Data from "@/blocks/data-grid/advanced/technician-capacity/data.ts?raw"
-import adv10Parts from "@/blocks/data-grid/advanced/technician-capacity/parts.tsx?raw"
-import adv11Index from "@/blocks/data-grid/advanced/factory-scorecard/index.tsx?raw"
-import adv11Data from "@/blocks/data-grid/advanced/factory-scorecard/data.ts?raw"
-import adv11Parts from "@/blocks/data-grid/advanced/factory-scorecard/parts.tsx?raw"
-import adv11Sheets from "@/blocks/data-grid/advanced/factory-scorecard/sheets.tsx?raw"
-import adv12Index from "@/blocks/data-grid/advanced/freight-cargo-services/index.tsx?raw"
-import adv12Data from "@/blocks/data-grid/advanced/freight-cargo-services/data.ts?raw"
-import adv12Parts from "@/blocks/data-grid/advanced/freight-cargo-services/parts.tsx?raw"
-import adv12Sheets from "@/blocks/data-grid/advanced/freight-cargo-services/sheets.tsx?raw"
-import adv13Index from "@/blocks/data-grid/advanced/hr-scorecard/index.tsx?raw"
-import adv13Data from "@/blocks/data-grid/advanced/hr-scorecard/data.ts?raw"
-import adv13Dialogs from "@/blocks/data-grid/advanced/hr-scorecard/dialogs.tsx?raw"
-import adv13Parts from "@/blocks/data-grid/advanced/hr-scorecard/parts.tsx?raw"
-import adv14Index from "@/blocks/data-grid/advanced/strategy-scorecard/index.tsx?raw"
-import adv14Data from "@/blocks/data-grid/advanced/strategy-scorecard/data.ts?raw"
-import adv14Dialogs from "@/blocks/data-grid/advanced/strategy-scorecard/dialogs.tsx?raw"
-import adv14Parts from "@/blocks/data-grid/advanced/strategy-scorecard/parts.tsx?raw"
-import adv15Index from "@/blocks/data-grid/advanced/p-l-outlook/index.tsx?raw"
-import adv15Data from "@/blocks/data-grid/advanced/p-l-outlook/data.ts?raw"
-import adv15Dialogs from "@/blocks/data-grid/advanced/p-l-outlook/dialogs.tsx?raw"
-import adv15Parts from "@/blocks/data-grid/advanced/p-l-outlook/parts.tsx?raw"
-import adv16Index from "@/blocks/data-grid/advanced/store-kpis/index.tsx?raw"
-import adv16Data from "@/blocks/data-grid/advanced/store-kpis/data.ts?raw"
-import adv16Parts from "@/blocks/data-grid/advanced/store-kpis/parts.tsx?raw"
-import adv16StoreSheet from "@/blocks/data-grid/advanced/store-kpis/store-sheet.tsx?raw"
-import adv17Index from "@/blocks/data-grid/advanced/support-scorecard/index.tsx?raw"
-import adv17AgentSheet from "@/blocks/data-grid/advanced/support-scorecard/agent-sheet.tsx?raw"
-import adv17Data from "@/blocks/data-grid/advanced/support-scorecard/data.ts?raw"
-import adv17Parts from "@/blocks/data-grid/advanced/support-scorecard/parts.tsx?raw"
-import adv18Index from "@/blocks/data-grid/advanced/job-schedule/index.tsx?raw"
-import adv18Data from "@/blocks/data-grid/advanced/job-schedule/data.ts?raw"
-import adv18JobSheet from "@/blocks/data-grid/advanced/job-schedule/job-sheet.tsx?raw"
-import adv18Parts from "@/blocks/data-grid/advanced/job-schedule/parts.tsx?raw"
-import adv19Index from "@/blocks/data-grid/advanced/prospects/index.tsx?raw"
-import adv19CompanySheet from "@/blocks/data-grid/advanced/prospects/company-sheet.tsx?raw"
-import adv19Data from "@/blocks/data-grid/advanced/prospects/data.ts?raw"
-import adv19Parts from "@/blocks/data-grid/advanced/prospects/parts.tsx?raw"
-import adv20Index from "@/blocks/data-grid/advanced/project-budget/index.tsx?raw"
-import adv20Data from "@/blocks/data-grid/advanced/project-budget/data.ts?raw"
-import adv20LineSheet from "@/blocks/data-grid/advanced/project-budget/line-sheet.tsx?raw"
-import adv20Parts from "@/blocks/data-grid/advanced/project-budget/parts.tsx?raw"
-import adv21Index from "@/blocks/data-grid/advanced/invoices/index.tsx?raw"
-import adv21CustomerSheet from "@/blocks/data-grid/advanced/invoices/customer-sheet.tsx?raw"
-import adv21Data from "@/blocks/data-grid/advanced/invoices/data.ts?raw"
-import adv21Parts from "@/blocks/data-grid/advanced/invoices/parts.tsx?raw"
+const adv1Index = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-performance/index.tsx?raw"))
+const adv1CampaignSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-performance/campaign-sheet.tsx?raw"))
+const adv1Data = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-performance/data.ts?raw"))
+const adv1Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-performance/parts.tsx?raw"))
+const adv2Index = sourceLoader(() => import("@/blocks/data-grid/advanced/store-p-l/index.tsx?raw"))
+const adv2Data = sourceLoader(() => import("@/blocks/data-grid/advanced/store-p-l/data.ts?raw"))
+const adv2Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/store-p-l/parts.tsx?raw"))
+const adv2StoreSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/store-p-l/store-sheet.tsx?raw"))
+const adv3Index = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-targets/index.tsx?raw"))
+const adv3Data = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-targets/data.ts?raw"))
+const adv3Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-targets/parts.tsx?raw"))
+const adv3TargetSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/campaign-targets/target-sheet.tsx?raw"))
+const adv4Index = sourceLoader(() => import("@/blocks/data-grid/advanced/reliability-index/index.tsx?raw"))
+const adv4Data = sourceLoader(() => import("@/blocks/data-grid/advanced/reliability-index/data.ts?raw"))
+const adv4Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/reliability-index/parts.tsx?raw"))
+const adv4SloSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/reliability-index/slo-sheet.tsx?raw"))
+const adv5Index = sourceLoader(() => import("@/blocks/data-grid/advanced/wholesale-applications/index.tsx?raw"))
+const adv5AccountSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/wholesale-applications/account-sheet.tsx?raw"))
+const adv5Data = sourceLoader(() => import("@/blocks/data-grid/advanced/wholesale-applications/data.ts?raw"))
+const adv5Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/wholesale-applications/parts.tsx?raw"))
+const adv6Index = sourceLoader(() => import("@/blocks/data-grid/advanced/stock-mix/index.tsx?raw"))
+const adv6Data = sourceLoader(() => import("@/blocks/data-grid/advanced/stock-mix/data.ts?raw"))
+const adv6Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/stock-mix/parts.tsx?raw"))
+const adv7Index = sourceLoader(() => import("@/blocks/data-grid/advanced/fourplex-pro-forma/index.tsx?raw"))
+const adv7Data = sourceLoader(() => import("@/blocks/data-grid/advanced/fourplex-pro-forma/data.ts?raw"))
+const adv7Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/fourplex-pro-forma/parts.tsx?raw"))
+const adv8Index = sourceLoader(() => import("@/blocks/data-grid/advanced/product-kpis/index.tsx?raw"))
+const adv8Data = sourceLoader(() => import("@/blocks/data-grid/advanced/product-kpis/data.ts?raw"))
+const adv8Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/product-kpis/parts.tsx?raw"))
+const adv9Index = sourceLoader(() => import("@/blocks/data-grid/advanced/service-visits/index.tsx?raw"))
+const adv9Data = sourceLoader(() => import("@/blocks/data-grid/advanced/service-visits/data.ts?raw"))
+const adv9Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/service-visits/parts.tsx?raw"))
+const adv10Index = sourceLoader(() => import("@/blocks/data-grid/advanced/technician-capacity/index.tsx?raw"))
+const adv10Data = sourceLoader(() => import("@/blocks/data-grid/advanced/technician-capacity/data.ts?raw"))
+const adv10Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/technician-capacity/parts.tsx?raw"))
+const adv11Index = sourceLoader(() => import("@/blocks/data-grid/advanced/factory-scorecard/index.tsx?raw"))
+const adv11Data = sourceLoader(() => import("@/blocks/data-grid/advanced/factory-scorecard/data.ts?raw"))
+const adv11Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/factory-scorecard/parts.tsx?raw"))
+const adv11Sheets = sourceLoader(() => import("@/blocks/data-grid/advanced/factory-scorecard/sheets.tsx?raw"))
+const adv12Index = sourceLoader(() => import("@/blocks/data-grid/advanced/freight-cargo-services/index.tsx?raw"))
+const adv12Data = sourceLoader(() => import("@/blocks/data-grid/advanced/freight-cargo-services/data.ts?raw"))
+const adv12Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/freight-cargo-services/parts.tsx?raw"))
+const adv12Sheets = sourceLoader(() => import("@/blocks/data-grid/advanced/freight-cargo-services/sheets.tsx?raw"))
+const adv13Index = sourceLoader(() => import("@/blocks/data-grid/advanced/hr-scorecard/index.tsx?raw"))
+const adv13Data = sourceLoader(() => import("@/blocks/data-grid/advanced/hr-scorecard/data.ts?raw"))
+const adv13Dialogs = sourceLoader(() => import("@/blocks/data-grid/advanced/hr-scorecard/dialogs.tsx?raw"))
+const adv13Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/hr-scorecard/parts.tsx?raw"))
+const adv14Index = sourceLoader(() => import("@/blocks/data-grid/advanced/strategy-scorecard/index.tsx?raw"))
+const adv14Data = sourceLoader(() => import("@/blocks/data-grid/advanced/strategy-scorecard/data.ts?raw"))
+const adv14Dialogs = sourceLoader(() => import("@/blocks/data-grid/advanced/strategy-scorecard/dialogs.tsx?raw"))
+const adv14Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/strategy-scorecard/parts.tsx?raw"))
+const adv15Index = sourceLoader(() => import("@/blocks/data-grid/advanced/p-l-outlook/index.tsx?raw"))
+const adv15Data = sourceLoader(() => import("@/blocks/data-grid/advanced/p-l-outlook/data.ts?raw"))
+const adv15Dialogs = sourceLoader(() => import("@/blocks/data-grid/advanced/p-l-outlook/dialogs.tsx?raw"))
+const adv15Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/p-l-outlook/parts.tsx?raw"))
+const adv16Index = sourceLoader(() => import("@/blocks/data-grid/advanced/store-kpis/index.tsx?raw"))
+const adv16Data = sourceLoader(() => import("@/blocks/data-grid/advanced/store-kpis/data.ts?raw"))
+const adv16Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/store-kpis/parts.tsx?raw"))
+const adv16StoreSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/store-kpis/store-sheet.tsx?raw"))
+const adv17Index = sourceLoader(() => import("@/blocks/data-grid/advanced/support-scorecard/index.tsx?raw"))
+const adv17AgentSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/support-scorecard/agent-sheet.tsx?raw"))
+const adv17Data = sourceLoader(() => import("@/blocks/data-grid/advanced/support-scorecard/data.ts?raw"))
+const adv17Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/support-scorecard/parts.tsx?raw"))
+const adv18Index = sourceLoader(() => import("@/blocks/data-grid/advanced/job-schedule/index.tsx?raw"))
+const adv18Data = sourceLoader(() => import("@/blocks/data-grid/advanced/job-schedule/data.ts?raw"))
+const adv18JobSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/job-schedule/job-sheet.tsx?raw"))
+const adv18Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/job-schedule/parts.tsx?raw"))
+const adv19Index = sourceLoader(() => import("@/blocks/data-grid/advanced/prospects/index.tsx?raw"))
+const adv19CompanySheet = sourceLoader(() => import("@/blocks/data-grid/advanced/prospects/company-sheet.tsx?raw"))
+const adv19Data = sourceLoader(() => import("@/blocks/data-grid/advanced/prospects/data.ts?raw"))
+const adv19Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/prospects/parts.tsx?raw"))
+const adv20Index = sourceLoader(() => import("@/blocks/data-grid/advanced/project-budget/index.tsx?raw"))
+const adv20Data = sourceLoader(() => import("@/blocks/data-grid/advanced/project-budget/data.ts?raw"))
+const adv20LineSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/project-budget/line-sheet.tsx?raw"))
+const adv20Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/project-budget/parts.tsx?raw"))
+const adv21Index = sourceLoader(() => import("@/blocks/data-grid/advanced/invoices/index.tsx?raw"))
+const adv21CustomerSheet = sourceLoader(() => import("@/blocks/data-grid/advanced/invoices/customer-sheet.tsx?raw"))
+const adv21Data = sourceLoader(() => import("@/blocks/data-grid/advanced/invoices/data.ts?raw"))
+const adv21Parts = sourceLoader(() => import("@/blocks/data-grid/advanced/invoices/parts.tsx?raw"))
 
 
 export type Lang = "tsx" | "typescript"
@@ -299,7 +300,10 @@ export type Lang = "tsx" | "typescript"
 export interface BlockFile {
   name: string
   lang: Lang
-  code: string
+  /** Inline source when it is already in memory. */
+  code?: string
+  /** Lazily loaded source, used for every registry file. */
+  load?: () => Promise<string>
 }
 
 export type PackageManager = "npm" | "pnpm" | "yarn" | "bun"
@@ -312,7 +316,7 @@ export interface BlockEntry {
   /** Block family. Defaults to `data-grid` when omitted. */
   group?: "data-grid" | "application"
   href: string
-  Component: () => React.JSX.Element
+  Component: React.ComponentType
   files: BlockFile[]
   dependencies: {
     registry: string[]
@@ -330,12 +334,6 @@ export interface CategoryEntry {
   count: number
   group?: "data-grid" | "application"
 }
-
-const file = (name: string, code: string, lang: Lang = "tsx"): BlockFile => ({
-  name,
-  lang,
-  code,
-})
 
 /** Counts mirror the ReUI catalog; all Base and Advanced blocks are implemented. */
 export const CATEGORIES: CategoryEntry[] = [

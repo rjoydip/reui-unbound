@@ -7,15 +7,21 @@ description: Kbd component with live previews.
 
 Kbd component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`kbd-radix`](https://reui-unbound.pages.dev/?preview=kbd-radix)
-- **Radix** — [`kbd-standard-keys-radix`](https://reui-unbound.pages.dev/?preview=kbd-standard-keys-radix)
-- **Radix** — [`kbd-grouped-keys-radix`](https://reui-unbound.pages.dev/?preview=kbd-grouped-keys-radix)
-- **Radix** — [`kbd-keys-with-icons-radix`](https://reui-unbound.pages.dev/?preview=kbd-keys-with-icons-radix)
-- **Radix** — [`kbd-in-input-radix`](https://reui-unbound.pages.dev/?preview=kbd-in-input-radix)
-- **Radix** — [`kbd-in-tooltip-radix`](https://reui-unbound.pages.dev/?preview=kbd-in-tooltip-radix)
-- **Radix** — [`kbd-shortcut-list-radix`](https://reui-unbound.pages.dev/?preview=kbd-shortcut-list-radix)
+### Radix (7)
+
+- [`kbd-radix`](https://reui-unbound.pages.dev/?preview=kbd-radix)
+- [`kbd-standard-keys-radix`](https://reui-unbound.pages.dev/?preview=kbd-standard-keys-radix)
+- [`kbd-grouped-keys-radix`](https://reui-unbound.pages.dev/?preview=kbd-grouped-keys-radix)
+- [`kbd-keys-with-icons-radix`](https://reui-unbound.pages.dev/?preview=kbd-keys-with-icons-radix)
+- [`kbd-in-input-radix`](https://reui-unbound.pages.dev/?preview=kbd-in-input-radix)
+- [`kbd-in-tooltip-radix`](https://reui-unbound.pages.dev/?preview=kbd-in-tooltip-radix)
+- [`kbd-shortcut-list-radix`](https://reui-unbound.pages.dev/?preview=kbd-shortcut-list-radix)
+
+
 
 ## Install
 

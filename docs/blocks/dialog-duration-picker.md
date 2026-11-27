@@ -6,9 +6,11 @@ category: Dialog
 
 # Duration Picker
 
+Duration Picker dialog block.
+
 **Block:** `dialog-duration-picker` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-duration-picker)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dialog-duration-picker)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DialogDurationPickerBlock />
 }
 ```
+
+## More in Dialog
+
+- [Account Settings Modal](./dialog-account-settings-modal.md)
+- [Bulk Email Invite](./dialog-bulk-email-invite.md)
+- [Cancel Plan Survey](./dialog-cancel-plan-survey.md)
+- [Connect App Picker](./dialog-connect-app-picker.md)
+- [Duplicate Check](./dialog-duplicate-check.md)
+- [Finance Account Setup](./dialog-finance-account-setup.md)
 
 ## Files
 

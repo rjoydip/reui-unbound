@@ -6,9 +6,11 @@ category: Event Calendar
 
 # Hotel Front Desk
 
+Hotel Front Desk event-calendar block.
+
 **Block:** `event-calendar-hotel-front-desk` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-hotel-front-desk)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-hotel-front-desk)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <EventCalendarHotelFrontDeskBlock />
 }
 ```
+
+## More in Event Calendar
+
+- [Clinic Chair Board](./event-calendar-clinic-chair-board.md)
+- [Lending Deal Calendar](./event-calendar-lending-deal-calendar.md)
+- [Mini Month Calendar](./event-calendar-mini-month-calendar.md)
+- [Personal Calendar](./event-calendar-personal-calendar.md)
+- [Shift Roster](./event-calendar-shift-roster.md)
 
 ## Files
 

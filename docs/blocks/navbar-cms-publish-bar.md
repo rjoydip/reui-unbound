@@ -6,9 +6,11 @@ category: Navbar
 
 # CMS Publish Bar
 
+CMS Publish Bar navbar block.
+
 **Block:** `navbar-cms-publish-bar` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-cms-publish-bar)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=navbar-cms-publish-bar)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <NavbarCmsPublishBarBlock />
 }
 ```
+
+## More in Navbar
+
+- [Admin Command Search](./navbar-admin-command-search.md)
+- [Agent Marketplace](./navbar-agent-marketplace.md)
+- [Analytics Toolbar](./navbar-analytics-toolbar.md)
+- [API Developer Portal](./navbar-api-developer-portal.md)
+- [Design System Manager](./navbar-design-system-manager.md)
+- [Editor Action Bar](./navbar-editor-action-bar.md)
 
 ## Files
 

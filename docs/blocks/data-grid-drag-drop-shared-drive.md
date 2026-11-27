@@ -6,9 +6,11 @@ category: Drag & Drop
 
 # Shared Drive
 
+Shared Drive data grid block.
+
 **Block:** `data-grid-drag-drop-shared-drive` · **Category:** Drag & Drop
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-4)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-4)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <SharedDriveBlock />
 }
 ```
+
+## More in Drag & Drop
+
+- [Dispatch Layout](./data-grid-drag-drop-dispatch-layout.md)
+- [Routing Rules](./data-grid-drag-drop-routing-rules.md)
+- [Sprint Backlog](./data-grid-drag-drop-sprint-backlog.md)
 
 ## Files
 

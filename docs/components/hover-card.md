@@ -7,17 +7,23 @@ description: Hover Card component with live previews.
 
 Hover Card component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`hover-card-radix`](https://reui-unbound.pages.dev/?preview=hover-card-radix)
-- **Radix** — [`hover-card-standard-radix`](https://reui-unbound.pages.dev/?preview=hover-card-standard-radix)
-- **Radix** — [`hover-card-positions-radix`](https://reui-unbound.pages.dev/?preview=hover-card-positions-radix)
-- **Radix** — [`hover-card-profile-radix`](https://reui-unbound.pages.dev/?preview=hover-card-profile-radix)
-- **Radix** — [`hover-card-icon-radix`](https://reui-unbound.pages.dev/?preview=hover-card-icon-radix)
-- **Radix** — [`hover-card-image-text-radix`](https://reui-unbound.pages.dev/?preview=hover-card-image-text-radix)
-- **Radix** — [`hover-card-in-dialog-radix`](https://reui-unbound.pages.dev/?preview=hover-card-in-dialog-radix)
-- **Radix** — [`hover-card-live-timestamp-radix`](https://reui-unbound.pages.dev/?preview=hover-card-live-timestamp-radix)
-- **Radix** — [`hover-card-release-notes-radix`](https://reui-unbound.pages.dev/?preview=hover-card-release-notes-radix)
+### Radix (9)
+
+- [`hover-card-radix`](https://reui-unbound.pages.dev/?preview=hover-card-radix)
+- [`hover-card-standard-radix`](https://reui-unbound.pages.dev/?preview=hover-card-standard-radix)
+- [`hover-card-positions-radix`](https://reui-unbound.pages.dev/?preview=hover-card-positions-radix)
+- [`hover-card-profile-radix`](https://reui-unbound.pages.dev/?preview=hover-card-profile-radix)
+- [`hover-card-icon-radix`](https://reui-unbound.pages.dev/?preview=hover-card-icon-radix)
+- [`hover-card-image-text-radix`](https://reui-unbound.pages.dev/?preview=hover-card-image-text-radix)
+- [`hover-card-in-dialog-radix`](https://reui-unbound.pages.dev/?preview=hover-card-in-dialog-radix)
+- [`hover-card-live-timestamp-radix`](https://reui-unbound.pages.dev/?preview=hover-card-live-timestamp-radix)
+- [`hover-card-release-notes-radix`](https://reui-unbound.pages.dev/?preview=hover-card-release-notes-radix)
+
+
 
 ## Install
 

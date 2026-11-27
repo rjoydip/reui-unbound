@@ -7,15 +7,21 @@ description: Textarea component with live previews.
 
 Textarea component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`textarea-radix`](https://reui-unbound.pages.dev/?preview=textarea-radix)
-- **Radix** — [`textarea-standard-radix`](https://reui-unbound.pages.dev/?preview=textarea-standard-radix)
-- **Radix** — [`textarea-invalid-radix`](https://reui-unbound.pages.dev/?preview=textarea-invalid-radix)
-- **Radix** — [`textarea-with-label-radix`](https://reui-unbound.pages.dev/?preview=textarea-with-label-radix)
-- **Radix** — [`textarea-with-description-radix`](https://reui-unbound.pages.dev/?preview=textarea-with-description-radix)
-- **Radix** — [`textarea-disabled-radix`](https://reui-unbound.pages.dev/?preview=textarea-disabled-radix)
-- **Radix** — [`textarea-auto-resize-counter-radix`](https://reui-unbound.pages.dev/?preview=textarea-auto-resize-counter-radix)
+### Radix (7)
+
+- [`textarea-radix`](https://reui-unbound.pages.dev/?preview=textarea-radix)
+- [`textarea-standard-radix`](https://reui-unbound.pages.dev/?preview=textarea-standard-radix)
+- [`textarea-invalid-radix`](https://reui-unbound.pages.dev/?preview=textarea-invalid-radix)
+- [`textarea-with-label-radix`](https://reui-unbound.pages.dev/?preview=textarea-with-label-radix)
+- [`textarea-with-description-radix`](https://reui-unbound.pages.dev/?preview=textarea-with-description-radix)
+- [`textarea-disabled-radix`](https://reui-unbound.pages.dev/?preview=textarea-disabled-radix)
+- [`textarea-auto-resize-counter-radix`](https://reui-unbound.pages.dev/?preview=textarea-auto-resize-counter-radix)
+
+
 
 ## Install
 

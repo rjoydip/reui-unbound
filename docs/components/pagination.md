@@ -7,24 +7,30 @@ description: Pagination component with live previews.
 
 Pagination component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`pagination-radix`](https://reui-unbound.pages.dev/?preview=pagination-radix)
-- **Radix** — [`pagination-standard-radix`](https://reui-unbound.pages.dev/?preview=pagination-standard-radix)
-- **Radix** — [`pagination-no-labels-radix`](https://reui-unbound.pages.dev/?preview=pagination-no-labels-radix)
-- **Radix** — [`pagination-hover-border-radix`](https://reui-unbound.pages.dev/?preview=pagination-hover-border-radix)
-- **Radix** — [`pagination-circle-buttons-radix`](https://reui-unbound.pages.dev/?preview=pagination-circle-buttons-radix)
-- **Radix** — [`pagination-compact-go-to-radix`](https://reui-unbound.pages.dev/?preview=pagination-compact-go-to-radix)
-- **Radix** — [`pagination-in-card-radix`](https://reui-unbound.pages.dev/?preview=pagination-in-card-radix)
-- **Radix** — [`pagination-arrow-links-radix`](https://reui-unbound.pages.dev/?preview=pagination-arrow-links-radix)
-- **Radix** — [`pagination-centered-page-info-radix`](https://reui-unbound.pages.dev/?preview=pagination-centered-page-info-radix)
-- **Radix** — [`pagination-left-page-info-radix`](https://reui-unbound.pages.dev/?preview=pagination-left-page-info-radix)
-- **Radix** — [`pagination-trailing-ellipsis-radix`](https://reui-unbound.pages.dev/?preview=pagination-trailing-ellipsis-radix)
-- **Radix** — [`pagination-outline-strip-radix`](https://reui-unbound.pages.dev/?preview=pagination-outline-strip-radix)
-- **Radix** — [`pagination-rows-per-page-radix`](https://reui-unbound.pages.dev/?preview=pagination-rows-per-page-radix)
-- **Radix** — [`pagination-page-select-radix`](https://reui-unbound.pages.dev/?preview=pagination-page-select-radix)
-- **Radix** — [`pagination-full-width-go-to-radix`](https://reui-unbound.pages.dev/?preview=pagination-full-width-go-to-radix)
-- **Radix** — [`pagination-info-and-per-page-radix`](https://reui-unbound.pages.dev/?preview=pagination-info-and-per-page-radix)
+### Radix (16)
+
+- [`pagination-radix`](https://reui-unbound.pages.dev/?preview=pagination-radix)
+- [`pagination-standard-radix`](https://reui-unbound.pages.dev/?preview=pagination-standard-radix)
+- [`pagination-no-labels-radix`](https://reui-unbound.pages.dev/?preview=pagination-no-labels-radix)
+- [`pagination-hover-border-radix`](https://reui-unbound.pages.dev/?preview=pagination-hover-border-radix)
+- [`pagination-circle-buttons-radix`](https://reui-unbound.pages.dev/?preview=pagination-circle-buttons-radix)
+- [`pagination-compact-go-to-radix`](https://reui-unbound.pages.dev/?preview=pagination-compact-go-to-radix)
+- [`pagination-in-card-radix`](https://reui-unbound.pages.dev/?preview=pagination-in-card-radix)
+- [`pagination-arrow-links-radix`](https://reui-unbound.pages.dev/?preview=pagination-arrow-links-radix)
+- [`pagination-centered-page-info-radix`](https://reui-unbound.pages.dev/?preview=pagination-centered-page-info-radix)
+- [`pagination-left-page-info-radix`](https://reui-unbound.pages.dev/?preview=pagination-left-page-info-radix)
+- [`pagination-trailing-ellipsis-radix`](https://reui-unbound.pages.dev/?preview=pagination-trailing-ellipsis-radix)
+- [`pagination-outline-strip-radix`](https://reui-unbound.pages.dev/?preview=pagination-outline-strip-radix)
+- [`pagination-rows-per-page-radix`](https://reui-unbound.pages.dev/?preview=pagination-rows-per-page-radix)
+- [`pagination-page-select-radix`](https://reui-unbound.pages.dev/?preview=pagination-page-select-radix)
+- [`pagination-full-width-go-to-radix`](https://reui-unbound.pages.dev/?preview=pagination-full-width-go-to-radix)
+- [`pagination-info-and-per-page-radix`](https://reui-unbound.pages.dev/?preview=pagination-info-and-per-page-radix)
+
+
 
 ## Install
 

@@ -6,9 +6,11 @@ category: Stats
 
 # Adoption Rate
 
+Adoption Rate stats block.
+
 **Block:** `stats-adoption-rate` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-adoption-rate)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=stats-adoption-rate)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <StatsAdoptionRateBlock />
 }
 ```
+
+## More in Stats
+
+- [Analytics Overview](./stats-analytics-overview.md)
+- [API Quota Usage](./stats-api-quota-usage.md)
+- [Capacity Usage](./stats-capacity-usage.md)
+- [Compliance Checks](./stats-compliance-checks.md)
+- [KPI Callouts](./stats-kpi-callouts.md)
+- [KPI Scorecard](./stats-kpi-scorecard.md)
 
 ## Files
 

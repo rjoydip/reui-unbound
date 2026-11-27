@@ -6,9 +6,11 @@ category: Wizard
 
 # Fund Transfer
 
+Fund Transfer wizard block.
+
 **Block:** `wizard-fund-transfer` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-fund-transfer)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=wizard-fund-transfer)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <WizardFundTransferBlock />
 }
 ```
+
+## More in Wizard
+
+- [Billing Setup](./wizard-billing-setup.md)
+- [Plan Upgrade](./wizard-plan-upgrade.md)
+- [Product Setup Wizard](./wizard-product-setup-wizard.md)
+- [Send Invoice](./wizard-send-invoice.md)
+- [Team Invitations](./wizard-team-invitations.md)
+- [Vendor Onboarding](./wizard-vendor-onboarding.md)
 
 ## Files
 

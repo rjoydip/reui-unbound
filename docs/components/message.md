@@ -7,16 +7,22 @@ description: Message component with live previews.
 
 Message component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`message-radix`](https://reui-unbound.pages.dev/?preview=message-radix)
-- **Radix** — [`message-two-sided-chat-radix`](https://reui-unbound.pages.dev/?preview=message-two-sided-chat-radix)
-- **Radix** — [`message-avatars-radix`](https://reui-unbound.pages.dev/?preview=message-avatars-radix)
-- **Radix** — [`message-sender-status-radix`](https://reui-unbound.pages.dev/?preview=message-sender-status-radix)
-- **Radix** — [`message-reply-actions-radix`](https://reui-unbound.pages.dev/?preview=message-reply-actions-radix)
-- **Radix** — [`message-shared-files-radix`](https://reui-unbound.pages.dev/?preview=message-shared-files-radix)
-- **Radix** — [`message-consecutive-messages-radix`](https://reui-unbound.pages.dev/?preview=message-consecutive-messages-radix)
-- **Radix** — [`message-streaming-reply-radix`](https://reui-unbound.pages.dev/?preview=message-streaming-reply-radix)
+### Radix (8)
+
+- [`message-radix`](https://reui-unbound.pages.dev/?preview=message-radix)
+- [`message-two-sided-chat-radix`](https://reui-unbound.pages.dev/?preview=message-two-sided-chat-radix)
+- [`message-avatars-radix`](https://reui-unbound.pages.dev/?preview=message-avatars-radix)
+- [`message-sender-status-radix`](https://reui-unbound.pages.dev/?preview=message-sender-status-radix)
+- [`message-reply-actions-radix`](https://reui-unbound.pages.dev/?preview=message-reply-actions-radix)
+- [`message-shared-files-radix`](https://reui-unbound.pages.dev/?preview=message-shared-files-radix)
+- [`message-consecutive-messages-radix`](https://reui-unbound.pages.dev/?preview=message-consecutive-messages-radix)
+- [`message-streaming-reply-radix`](https://reui-unbound.pages.dev/?preview=message-streaming-reply-radix)
+
+
 
 ## Install
 

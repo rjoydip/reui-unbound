@@ -7,16 +7,23 @@ description: Numeric input with increment, decrement and scrub interactions.
 
 Numeric input with increment, decrement and scrub interactions.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`number-field-radix`](https://reui-unbound.pages.dev/?preview=number-field-radix)
-- **Radix** — [`number-field-default-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-default-size-radix)
-- **Radix** — [`number-field-small-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-small-size-radix)
-- **Radix** — [`number-field-large-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-large-size-radix)
-- **Radix** — [`number-field-buttons-on-right-radix`](https://reui-unbound.pages.dev/?preview=number-field-buttons-on-right-radix)
-- **Radix** — [`number-field-spinner-buttons-radix`](https://reui-unbound.pages.dev/?preview=number-field-spinner-buttons-radix)
-- **Radix** — [`number-field-form-validation-radix`](https://reui-unbound.pages.dev/?preview=number-field-form-validation-radix)
-- **Base** — [`number-field-base`](https://reui-unbound.pages.dev/?preview=number-field-base)
+### Radix (7)
+
+- [`number-field-radix`](https://reui-unbound.pages.dev/?preview=number-field-radix)
+- [`number-field-default-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-default-size-radix)
+- [`number-field-small-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-small-size-radix)
+- [`number-field-large-size-radix`](https://reui-unbound.pages.dev/?preview=number-field-large-size-radix)
+- [`number-field-buttons-on-right-radix`](https://reui-unbound.pages.dev/?preview=number-field-buttons-on-right-radix)
+- [`number-field-spinner-buttons-radix`](https://reui-unbound.pages.dev/?preview=number-field-spinner-buttons-radix)
+- [`number-field-form-validation-radix`](https://reui-unbound.pages.dev/?preview=number-field-form-validation-radix)
+
+### Base (1)
+
+- [`number-field-base`](https://reui-unbound.pages.dev/?preview=number-field-base)
 
 ## Install
 

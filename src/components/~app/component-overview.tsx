@@ -2,6 +2,7 @@ import { toast } from "sonner"
 
 import { Button } from "@/components/ui/button"
 import { InstallCommandPill } from "@/components/~app/install-command-pill"
+import { LazyPreview } from "@/components/~app/lazy-preview"
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard"
 import { installCommandFor, registryName } from "@/blocks/~internal/registry"
 import type { BlockEntry, PackageManager } from "@/blocks/~internal/registry"
@@ -65,7 +66,12 @@ export function ComponentOverview({
                   aria-hidden
                   className="pointer-events-none flex w-full max-w-md items-center justify-center"
                 >
-                  <entry.Component />
+                  <LazyPreview
+                    className="w-full"
+                    contentClassName="flex w-full items-center justify-center"
+                  >
+                    <entry.Component />
+                  </LazyPreview>
                 </div>
               </div>
 

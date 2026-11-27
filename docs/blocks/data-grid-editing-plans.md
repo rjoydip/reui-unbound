@@ -6,9 +6,11 @@ category: Editing
 
 # Plans
 
+Plans data grid block.
+
 **Block:** `data-grid-editing-plans` · **Category:** Editing
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-4)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-editing-4)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <PricingPlanEditorBlock />
 }
 ```
+
+## More in Editing
+
+- [Labels](./data-grid-editing-labels.md)
+- [Launch Runbook](./data-grid-editing-launch-runbook.md)
+- [Product Inventory](./data-grid-editing-product-inventory.md)
+- [Project Intake](./data-grid-editing-project-intake.md)
+- [Reorder Plan](./data-grid-editing-reorder-plan.md)
 
 ## Files
 

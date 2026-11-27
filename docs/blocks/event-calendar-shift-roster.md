@@ -6,9 +6,11 @@ category: Event Calendar
 
 # Shift Roster
 
+Shift Roster event-calendar block.
+
 **Block:** `event-calendar-shift-roster` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-shift-roster)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-shift-roster)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <EventCalendarShiftRosterBlock />
 }
 ```
+
+## More in Event Calendar
+
+- [Clinic Chair Board](./event-calendar-clinic-chair-board.md)
+- [Hotel Front Desk](./event-calendar-hotel-front-desk.md)
+- [Lending Deal Calendar](./event-calendar-lending-deal-calendar.md)
+- [Mini Month Calendar](./event-calendar-mini-month-calendar.md)
+- [Personal Calendar](./event-calendar-personal-calendar.md)
 
 ## Files
 

@@ -7,29 +7,36 @@ description: Layered surface primitives for cards and panels.
 
 Layered surface primitives for cards and panels.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`frame-radix`](https://reui-unbound.pages.dev/?preview=frame-radix)
-- **Radix** — [`frame-standard-radix`](https://reui-unbound.pages.dev/?preview=frame-standard-radix)
-- **Radix** — [`frame-separated-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-separated-panels-radix)
-- **Radix** — [`frame-stacked-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-panels-radix)
-- **Radix** — [`frame-stacked-dense-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-dense-radix)
-- **Radix** — [`frame-collapsible-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-collapsible-panels-radix)
-- **Radix** — [`frame-ghost-variant-radix`](https://reui-unbound.pages.dev/?preview=frame-ghost-variant-radix)
-- **Radix** — [`frame-dense-layout-radix`](https://reui-unbound.pages.dev/?preview=frame-dense-layout-radix)
-- **Radix** — [`frame-stacked-rows-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-rows-radix)
-- **Radix** — [`frame-extra-small-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-extra-small-spacing-radix)
-- **Radix** — [`frame-small-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-small-spacing-radix)
-- **Radix** — [`frame-default-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-default-spacing-radix)
-- **Radix** — [`frame-large-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-large-spacing-radix)
-- **Radix** — [`frame-small-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-small-radius-radix)
-- **Radix** — [`frame-medium-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-medium-radius-radix)
-- **Radix** — [`frame-large-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-large-radius-radix)
-- **Radix** — [`frame-default-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-default-radius-radix)
-- **Radix** — [`frame-extra-large-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-extra-large-radius-radix)
-- **Radix** — [`frame-content-only-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-content-only-panels-radix)
-- **Radix** — [`frame-stacked-content-only-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-content-only-radix)
-- **Base** — [`frame-base`](https://reui-unbound.pages.dev/?preview=frame-base)
+### Radix (20)
+
+- [`frame-radix`](https://reui-unbound.pages.dev/?preview=frame-radix)
+- [`frame-standard-radix`](https://reui-unbound.pages.dev/?preview=frame-standard-radix)
+- [`frame-separated-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-separated-panels-radix)
+- [`frame-stacked-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-panels-radix)
+- [`frame-stacked-dense-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-dense-radix)
+- [`frame-collapsible-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-collapsible-panels-radix)
+- [`frame-ghost-variant-radix`](https://reui-unbound.pages.dev/?preview=frame-ghost-variant-radix)
+- [`frame-dense-layout-radix`](https://reui-unbound.pages.dev/?preview=frame-dense-layout-radix)
+- [`frame-stacked-rows-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-rows-radix)
+- [`frame-extra-small-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-extra-small-spacing-radix)
+- [`frame-small-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-small-spacing-radix)
+- [`frame-default-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-default-spacing-radix)
+- [`frame-large-spacing-radix`](https://reui-unbound.pages.dev/?preview=frame-large-spacing-radix)
+- [`frame-small-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-small-radius-radix)
+- [`frame-medium-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-medium-radius-radix)
+- [`frame-large-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-large-radius-radix)
+- [`frame-default-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-default-radius-radix)
+- [`frame-extra-large-radius-radix`](https://reui-unbound.pages.dev/?preview=frame-extra-large-radius-radix)
+- [`frame-content-only-panels-radix`](https://reui-unbound.pages.dev/?preview=frame-content-only-panels-radix)
+- [`frame-stacked-content-only-radix`](https://reui-unbound.pages.dev/?preview=frame-stacked-content-only-radix)
+
+### Base (1)
+
+- [`frame-base`](https://reui-unbound.pages.dev/?preview=frame-base)
 
 ## Install
 

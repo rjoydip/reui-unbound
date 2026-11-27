@@ -1,50 +1,64 @@
 import { describe, expect, test } from "bun:test"
-import { readFileSync } from "node:fs"
+import { readdirSync, readFileSync } from "node:fs"
+import path from "node:path"
 
-import { readCatalog } from "./test/catalog"
+import { CATALOG } from "@/blocks/components/~catalog/catalog"
+import { COMPONENT_INDEX } from "@/blocks/components/~catalog/index"
+import { BLOCKS } from "@/blocks/~internal/registry"
 
-const catalog = readCatalog()
+const root = path.join(import.meta.dir, "blocks", "components")
 
-function source(file: string) {
-  return readFileSync(file, "utf8")
+function previewFiles(dir: string): string[] {
+  return readdirSync(path.join(root, dir), { withFileTypes: true }).flatMap(
+    (entry) => {
+      const relative = `${dir}/${entry.name}`
+      if (entry.isDirectory()) return previewFiles(relative)
+      if (!entry.name.endsWith(".tsx") || entry.name.startsWith("~")) return []
+      return [relative]
+    },
+  )
 }
 
-const blockRegistry = source("src/blocks/registry.tsx")
-const componentCatalog = source("src/blocks/components/catalog.tsx")
-const uiCatalog = source("src/blocks/components/ui-catalog.tsx")
+function previewImports(): Set<string> {
+  const source =
+    readFileSync(path.join(root, "~catalog", "catalog.tsx"), "utf8") +
+    readFileSync(path.join(root, "~catalog", "ui-catalog.tsx"), "utf8")
+  return new Set(
+    [...source.matchAll(/import\("\.\.\/((?:radix|base)\/[^"?]+\.tsx)/g)].map(
+      (match) => match[1],
+    ),
+  )
+}
+
+const files = new Set([...previewFiles("radix"), ...previewFiles("base")])
+const imported = previewImports()
+const componentEntries = CATALOG.filter((entry) => entry.kind === "component")
 
 describe("catalog", () => {
   test("has unique ids", () => {
-    expect(new Set(catalog.map((item) => item.id)).size).toBe(catalog.length)
+    expect(new Set(CATALOG.map((entry) => entry.id)).size).toBe(CATALOG.length)
   })
 
-  test("covers every block folder and component preview", () => {
-    expect(catalog.filter((item) => item.kind === "block")).toHaveLength(61)
-    expect(catalog.filter((item) => item.kind === "component")).toHaveLength(110)
+  test("index mirrors the component catalog", () => {
+    expect(COMPONENT_INDEX).toHaveLength(componentEntries.length)
+
+    for (const entry of COMPONENT_INDEX) {
+      const full = componentEntries.find((item) => item.id === entry.id)
+      expect(full).toBeDefined()
+      expect(full?.name).toBe(entry.name)
+      expect(full?.flavor).toBe(entry.flavor)
+      expect(full?.variant).toBe(entry.variant)
+      expect(full?.stage).toBe(entry.stage)
+    }
   })
 
-  for (const item of catalog) {
-    test(`${item.kind} ${item.id} is registered and exports a component`, () => {
-      const file = source(item.sourceFile)
-      expect(file).toMatch(/export (default )?(function|const|class)/)
+  test("every entry exposes a component", () => {
+    expect(CATALOG.every((entry) => entry.Component)).toBe(true)
+    expect(BLOCKS.every((block) => block.files.length > 0)).toBe(true)
+  })
 
-      if (item.kind === "block") {
-        expect(blockRegistry).toContain(`@/blocks/${item.id}"`)
-        return
-      }
-
-      if (item.flavor === "base") {
-        expect(componentCatalog).toContain(`"./base/${item.module}"`)
-        expect(componentCatalog).toContain(`id: "${item.id}"`)
-        return
-      }
-
-      expect(`${componentCatalog}${uiCatalog}`).toContain(
-        `"./radix/${item.module}"`,
-      )
-      const registeredById = componentCatalog.includes(`id: "${item.id}"`)
-      const registeredByName = uiCatalog.includes(`name: "${item.module}"`)
-      expect(registeredById || registeredByName).toBe(true)
-    })
-  }
+  test("registers every preview file", () => {
+    expect([...files].filter((file) => !imported.has(file))).toEqual([])
+    expect([...imported].filter((file) => !files.has(file))).toEqual([])
+  })
 })

@@ -6,9 +6,11 @@ category: Filtering
 
 # Renewals Review
 
+Renewals Review data grid block.
+
 **Block:** `data-grid-filtering-renewals-review` · **Category:** Filtering
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-3)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-3)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <RenewalsReviewBlock />
 }
 ```
+
+## More in Filtering
+
+- [Automation Library](./data-grid-filtering-automation-library.md)
+- [Renewals Risk](./data-grid-filtering-renewals-risk.md)
+- [Transactions](./data-grid-filtering-transactions.md)
 
 ## Files
 

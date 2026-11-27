@@ -6,9 +6,11 @@ category: Auth
 
 # Social Proof Login
 
+Social Proof Login auth block.
+
 **Block:** `auth-social-proof-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-social-proof-login)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=auth-social-proof-login)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AuthSocialProofLoginBlock />
 }
 ```
+
+## More in Auth
+
+- [Centered Magic Link](./auth-centered-magic-link.md)
+- [Centered Method Picker](./auth-centered-method-picker.md)
+- [Centered Password Login](./auth-centered-password-login.md)
+- [Customer Quotes Login](./auth-customer-quotes-login.md)
+- [Founder Story Login](./auth-founder-story-login.md)
+- [Framed Password Login](./auth-framed-password-login.md)
 
 ## Files
 

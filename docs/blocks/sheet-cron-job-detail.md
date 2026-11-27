@@ -6,9 +6,11 @@ category: Sheet
 
 # Cron Job Detail
 
+Cron Job Detail sheet block.
+
 **Block:** `sheet-cron-job-detail` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-cron-job-detail)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=sheet-cron-job-detail)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SheetCronJobDetailBlock />
 }
 ```
+
+## More in Sheet
+
+- [AI Model Chat](./sheet-ai-model-chat.md)
+- [Audit Event Detail](./sheet-audit-event-detail.md)
+- [Canary Rollout](./sheet-canary-rollout.md)
+- [Comment Thread](./sheet-comment-thread.md)
+- [Copilot Chat](./sheet-copilot-chat.md)
+- [Create Project](./sheet-create-project.md)
 
 ## Files
 

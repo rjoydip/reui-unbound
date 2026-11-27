@@ -6,9 +6,11 @@ category: Gantt
 
 # Resource Capacity
 
+Resource Capacity gantt block.
+
 **Block:** `gantt-resource-capacity` · **Category:** Gantt
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=gantt-resource-capacity)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=gantt-resource-capacity)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <GanttResourceCapacityBlock />
 }
 ```
+
+## More in Gantt
+
+- [Agent Playbook](./gantt-agent-playbook.md)
+- [Project Timeline](./gantt-project-timeline.md)
+- [Technician Dispatch](./gantt-technician-dispatch.md)
 
 ## Files
 

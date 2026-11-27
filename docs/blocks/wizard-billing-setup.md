@@ -6,9 +6,11 @@ category: Wizard
 
 # Billing Setup
 
+Billing Setup wizard block.
+
 **Block:** `wizard-billing-setup` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-billing-setup)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=wizard-billing-setup)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <WizardBillingSetupBlock />
 }
 ```
+
+## More in Wizard
+
+- [Fund Transfer](./wizard-fund-transfer.md)
+- [Plan Upgrade](./wizard-plan-upgrade.md)
+- [Product Setup Wizard](./wizard-product-setup-wizard.md)
+- [Send Invoice](./wizard-send-invoice.md)
+- [Team Invitations](./wizard-team-invitations.md)
+- [Vendor Onboarding](./wizard-vendor-onboarding.md)
 
 ## Files
 

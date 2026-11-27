@@ -7,14 +7,20 @@ description: Attachment component with live previews.
 
 Attachment component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`attachment-assistant-reply-radix`](https://reui-unbound.pages.dev/?preview=attachment-assistant-reply-radix)
-- **Radix** — [`attachment-composer-tray-radix`](https://reui-unbound.pages.dev/?preview=attachment-composer-tray-radix)
-- **Radix** — [`attachment-image-strip-radix`](https://reui-unbound.pages.dev/?preview=attachment-image-strip-radix)
-- **Radix** — [`attachment-three-sizes-radix`](https://reui-unbound.pages.dev/?preview=attachment-three-sizes-radix)
-- **Radix** — [`attachment-upload-queue-radix`](https://reui-unbound.pages.dev/?preview=attachment-upload-queue-radix)
-- **Radix** — [`attachment-file-picker-radix`](https://reui-unbound.pages.dev/?preview=attachment-file-picker-radix)
+### Radix (6)
+
+- [`attachment-assistant-reply-radix`](https://reui-unbound.pages.dev/?preview=attachment-assistant-reply-radix)
+- [`attachment-composer-tray-radix`](https://reui-unbound.pages.dev/?preview=attachment-composer-tray-radix)
+- [`attachment-image-strip-radix`](https://reui-unbound.pages.dev/?preview=attachment-image-strip-radix)
+- [`attachment-three-sizes-radix`](https://reui-unbound.pages.dev/?preview=attachment-three-sizes-radix)
+- [`attachment-upload-queue-radix`](https://reui-unbound.pages.dev/?preview=attachment-upload-queue-radix)
+- [`attachment-file-picker-radix`](https://reui-unbound.pages.dev/?preview=attachment-file-picker-radix)
+
+
 
 ## Install
 

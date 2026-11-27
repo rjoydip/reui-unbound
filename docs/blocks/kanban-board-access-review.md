@@ -6,9 +6,11 @@ category: Kanban Board
 
 # Access Review
 
+Access Review kanban-board block.
+
 **Block:** `kanban-board-access-review` · **Category:** Kanban Board
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-access-review)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=kanban-board-access-review)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <KanbanBoardAccessReviewBlock />
 }
 ```
+
+## More in Kanban Board
+
+- [Bug Triage](./kanban-board-bug-triage.md)
+- [Collapsible Columns](./kanban-board-collapsible-columns.md)
+- [Feature Roadmap Votes](./kanban-board-feature-roadmap-votes.md)
+- [Progress Ring Workflow](./kanban-board-progress-ring-workflow.md)
+- [Recruiting Pipeline](./kanban-board-recruiting-pipeline.md)
+- [Release Readiness](./kanban-board-release-readiness.md)
 
 ## Files
 

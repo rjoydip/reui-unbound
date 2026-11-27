@@ -6,9 +6,11 @@ category: Navbar
 
 # Admin Command Search
 
+Admin Command Search navbar block.
+
 **Block:** `navbar-admin-command-search` · **Category:** Navbar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=navbar-admin-command-search)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=navbar-admin-command-search)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <NavbarAdminCommandSearchBlock />
 }
 ```
+
+## More in Navbar
+
+- [Agent Marketplace](./navbar-agent-marketplace.md)
+- [Analytics Toolbar](./navbar-analytics-toolbar.md)
+- [API Developer Portal](./navbar-api-developer-portal.md)
+- [CMS Publish Bar](./navbar-cms-publish-bar.md)
+- [Design System Manager](./navbar-design-system-manager.md)
+- [Editor Action Bar](./navbar-editor-action-bar.md)
 
 ## Files
 

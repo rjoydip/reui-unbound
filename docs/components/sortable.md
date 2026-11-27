@@ -7,18 +7,25 @@ description: Drag-and-drop sortable lists with keyboard support.
 
 Drag-and-drop sortable lists with keyboard support.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`sortable-radix`](https://reui-unbound.pages.dev/?preview=sortable-radix)
-- **Radix** — [`sortable-file-list-radix`](https://reui-unbound.pages.dev/?preview=sortable-file-list-radix)
-- **Radix** — [`sortable-grid-layout-radix`](https://reui-unbound.pages.dev/?preview=sortable-grid-layout-radix)
-- **Radix** — [`sortable-nested-layout-radix`](https://reui-unbound.pages.dev/?preview=sortable-nested-layout-radix)
-- **Radix** — [`sortable-playlist-radix`](https://reui-unbound.pages.dev/?preview=sortable-playlist-radix)
-- **Radix** — [`sortable-settings-priority-radix`](https://reui-unbound.pages.dev/?preview=sortable-settings-priority-radix)
-- **Radix** — [`sortable-sidebar-navigation-radix`](https://reui-unbound.pages.dev/?preview=sortable-sidebar-navigation-radix)
-- **Radix** — [`sortable-image-gallery-radix`](https://reui-unbound.pages.dev/?preview=sortable-image-gallery-radix)
-- **Radix** — [`sortable-persisted-order-radix`](https://reui-unbound.pages.dev/?preview=sortable-persisted-order-radix)
-- **Base** — [`sortable-base`](https://reui-unbound.pages.dev/?preview=sortable-base)
+### Radix (9)
+
+- [`sortable-radix`](https://reui-unbound.pages.dev/?preview=sortable-radix)
+- [`sortable-file-list-radix`](https://reui-unbound.pages.dev/?preview=sortable-file-list-radix)
+- [`sortable-grid-layout-radix`](https://reui-unbound.pages.dev/?preview=sortable-grid-layout-radix)
+- [`sortable-nested-layout-radix`](https://reui-unbound.pages.dev/?preview=sortable-nested-layout-radix)
+- [`sortable-playlist-radix`](https://reui-unbound.pages.dev/?preview=sortable-playlist-radix)
+- [`sortable-settings-priority-radix`](https://reui-unbound.pages.dev/?preview=sortable-settings-priority-radix)
+- [`sortable-sidebar-navigation-radix`](https://reui-unbound.pages.dev/?preview=sortable-sidebar-navigation-radix)
+- [`sortable-image-gallery-radix`](https://reui-unbound.pages.dev/?preview=sortable-image-gallery-radix)
+- [`sortable-persisted-order-radix`](https://reui-unbound.pages.dev/?preview=sortable-persisted-order-radix)
+
+### Base (1)
+
+- [`sortable-base`](https://reui-unbound.pages.dev/?preview=sortable-base)
 
 ## Install
 

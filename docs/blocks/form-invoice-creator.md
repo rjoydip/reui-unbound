@@ -6,9 +6,11 @@ category: Form
 
 # Invoice Creator
 
+Invoice Creator form block.
+
 **Block:** `form-invoice-creator` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-invoice-creator)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=form-invoice-creator)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <FormInvoiceCreatorBlock />
 }
 ```
+
+## More in Form
+
+- [API Keys Manager](./form-api-keys-manager.md)
+- [Auth Method Settings](./form-auth-method-settings.md)
+- [Business Verification](./form-business-verification.md)
+- [Checkout Setup](./form-checkout-setup.md)
+- [Customer Onboarding](./form-customer-onboarding.md)
+- [Deploy App Setup](./form-deploy-app-setup.md)
 
 ## Files
 

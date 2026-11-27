@@ -6,9 +6,11 @@ category: Timeline
 
 # Finance Activity
 
+Finance Activity timeline block.
+
 **Block:** `timeline-finance-activity` · **Category:** Timeline
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=timeline-finance-activity)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=timeline-finance-activity)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <TimelineFinanceActivityBlock />
 }
 ```
+
+## More in Timeline
+
+- [Account Rollout](./timeline-account-rollout.md)
+- [Activity Dropdown](./timeline-activity-dropdown.md)
+- [Approval Workflow](./timeline-approval-workflow.md)
+- [Customer Activation](./timeline-customer-activation.md)
+- [Finance Activity Sheet](./timeline-finance-activity-sheet.md)
+- [Release Changelog](./timeline-release-changelog.md)
 
 ## Files
 

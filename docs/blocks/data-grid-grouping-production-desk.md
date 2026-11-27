@@ -6,9 +6,11 @@ category: Grouping
 
 # Production Desk
 
+Production Desk data grid block.
+
 **Block:** `data-grid-grouping-production-desk` · **Category:** Grouping
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-6)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-grouping-6)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ProductionDeskBlock />
 }
 ```
+
+## More in Grouping
+
+- [Access Cohort](./data-grid-grouping-access-cohort.md)
+- [Bill Of Materials](./data-grid-grouping-bill-of-materials.md)
+- [Delivery Board](./data-grid-grouping-delivery-board.md)
+- [Reporting Lines](./data-grid-grouping-reporting-lines.md)
+- [Revenue By Region](./data-grid-grouping-revenue-by-region.md)
+- [Roadmap Queue](./data-grid-grouping-roadmap-queue.md)
 
 ## Files
 

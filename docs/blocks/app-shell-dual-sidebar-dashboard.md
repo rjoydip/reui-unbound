@@ -6,9 +6,11 @@ category: App Shell
 
 # Dual Sidebar Dashboard
 
+Dual Sidebar Dashboard app-shell block.
+
 **Block:** `app-shell-dual-sidebar-dashboard` · **Category:** App Shell
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-dual-sidebar-dashboard)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=app-shell-dual-sidebar-dashboard)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AppShellDualSidebarDashboardBlock />
 }
 ```
+
+## More in App Shell
+
+- [AI Agents Console](./app-shell-ai-agents-console.md)
+- [Apps Grid Header](./app-shell-apps-grid-header.md)
+- [Calendar Contacts Hub](./app-shell-calendar-contacts-hub.md)
+- [Community Feed App](./app-shell-community-feed-app.md)
+- [Endpoint Protection](./app-shell-endpoint-protection.md)
+- [Environment Switcher](./app-shell-environment-switcher.md)
 
 ## Files
 

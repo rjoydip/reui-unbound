@@ -6,9 +6,11 @@ category: Empty State
 
 # Empty Report Brief
 
+Empty Report Brief empty-state block.
+
 **Block:** `empty-state-empty-report-brief` · **Category:** Empty State
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-empty-report-brief)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=empty-state-empty-report-brief)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <EmptyStateEmptyReportBriefBlock />
 }
 ```
+
+## More in Empty State
+
+- [Blueprint Library](./empty-state-blueprint-library.md)
+- [Cloud Storage Connect](./empty-state-cloud-storage-connect.md)
+- [Data Import Start](./empty-state-data-import-start.md)
+- [Enable Organizations](./empty-state-enable-organizations.md)
+- [Export Filters](./empty-state-export-filters.md)
+- [First Project](./empty-state-first-project.md)
 
 ## Files
 

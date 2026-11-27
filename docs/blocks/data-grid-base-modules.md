@@ -6,9 +6,11 @@ category: Base
 
 # Modules
 
+Modules data grid block.
+
 **Block:** `data-grid-base-modules` · **Category:** Base
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-7)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-base-7)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ProjectModulesBlock />
 }
 ```
+
+## More in Base
+
+- [API Requests](./data-grid-base-api-requests.md)
+- [Contacts](./data-grid-base-contacts.md)
+- [Customers](./data-grid-base-customers.md)
+- [Members](./data-grid-base-members.md)
+- [Opportunities](./data-grid-base-opportunities.md)
+- [Rate Card](./data-grid-base-rate-card.md)
 
 ## Files
 

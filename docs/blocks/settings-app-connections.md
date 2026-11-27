@@ -6,9 +6,11 @@ category: Settings
 
 # App Connections
 
+App Connections settings block.
+
 **Block:** `settings-app-connections` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-app-connections)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=settings-app-connections)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SettingsAppConnectionsBlock />
 }
 ```
+
+## More in Settings
+
+- [Account Settings](./settings-account-settings.md)
+- [API Integrations](./settings-api-integrations.md)
+- [Connected Apps](./settings-connected-apps.md)
+- [General & Display](./settings-general-display.md)
+- [General Settings](./settings-general-settings.md)
+- [Import Sources](./settings-import-sources.md)
 
 ## Files
 

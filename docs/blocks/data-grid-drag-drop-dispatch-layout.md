@@ -6,9 +6,11 @@ category: Drag & Drop
 
 # Dispatch Layout
 
+Dispatch Layout data grid block.
+
 **Block:** `data-grid-drag-drop-dispatch-layout` · **Category:** Drag & Drop
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-3)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-drag-drop-3)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <DispatchLayoutBlock />
 }
 ```
+
+## More in Drag & Drop
+
+- [Routing Rules](./data-grid-drag-drop-routing-rules.md)
+- [Shared Drive](./data-grid-drag-drop-shared-drive.md)
+- [Sprint Backlog](./data-grid-drag-drop-sprint-backlog.md)
 
 ## Files
 

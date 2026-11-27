@@ -6,9 +6,11 @@ category: Auth
 
 # Framed Password Login
 
+Framed Password Login auth block.
+
 **Block:** `auth-framed-password-login` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-framed-password-login)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=auth-framed-password-login)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AuthFramedPasswordLoginBlock />
 }
 ```
+
+## More in Auth
+
+- [Centered Magic Link](./auth-centered-magic-link.md)
+- [Centered Method Picker](./auth-centered-method-picker.md)
+- [Centered Password Login](./auth-centered-password-login.md)
+- [Customer Quotes Login](./auth-customer-quotes-login.md)
+- [Founder Story Login](./auth-founder-story-login.md)
+- [Free Trial Signup](./auth-free-trial-signup.md)
 
 ## Files
 

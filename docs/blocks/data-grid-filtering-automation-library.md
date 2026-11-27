@@ -6,9 +6,11 @@ category: Filtering
 
 # Automation Library
 
+Automation Library data grid block.
+
 **Block:** `data-grid-filtering-automation-library` · **Category:** Filtering
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-2)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-filtering-2)
 
 ## Install
 
@@ -25,6 +27,12 @@ export default function Page() {
   return <AutomationLibraryBlock />
 }
 ```
+
+## More in Filtering
+
+- [Renewals Review](./data-grid-filtering-renewals-review.md)
+- [Renewals Risk](./data-grid-filtering-renewals-risk.md)
+- [Transactions](./data-grid-filtering-transactions.md)
 
 ## Files
 

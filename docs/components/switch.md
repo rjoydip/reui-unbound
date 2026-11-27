@@ -7,23 +7,29 @@ description: Switch component with live previews.
 
 Switch component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`switch-radix`](https://reui-unbound.pages.dev/?preview=switch-radix)
-- **Radix** — [`switch-standard-radix`](https://reui-unbound.pages.dev/?preview=switch-standard-radix)
-- **Radix** — [`switch-with-description-radix`](https://reui-unbound.pages.dev/?preview=switch-with-description-radix)
-- **Radix** — [`switch-disabled-radix`](https://reui-unbound.pages.dev/?preview=switch-disabled-radix)
-- **Radix** — [`switch-sizes-radix`](https://reui-unbound.pages.dev/?preview=switch-sizes-radix)
-- **Radix** — [`switch-switch-group-radix`](https://reui-unbound.pages.dev/?preview=switch-switch-group-radix)
-- **Radix** — [`switch-card-separators-radix`](https://reui-unbound.pages.dev/?preview=switch-card-separators-radix)
-- **Radix** — [`switch-card-with-icons-radix`](https://reui-unbound.pages.dev/?preview=switch-card-with-icons-radix)
-- **Radix** — [`switch-in-frame-radix`](https://reui-unbound.pages.dev/?preview=switch-in-frame-radix)
-- **Radix** — [`switch-tooltip-info-radix`](https://reui-unbound.pages.dev/?preview=switch-tooltip-info-radix)
-- **Radix** — [`switch-with-badges-radix`](https://reui-unbound.pages.dev/?preview=switch-with-badges-radix)
-- **Radix** — [`switch-colored-radix`](https://reui-unbound.pages.dev/?preview=switch-colored-radix)
-- **Radix** — [`switch-destructive-confirm-radix`](https://reui-unbound.pages.dev/?preview=switch-destructive-confirm-radix)
-- **Radix** — [`switch-compact-table-radix`](https://reui-unbound.pages.dev/?preview=switch-compact-table-radix)
-- **Radix** — [`switch-card-grid-radix`](https://reui-unbound.pages.dev/?preview=switch-card-grid-radix)
+### Radix (15)
+
+- [`switch-radix`](https://reui-unbound.pages.dev/?preview=switch-radix)
+- [`switch-standard-radix`](https://reui-unbound.pages.dev/?preview=switch-standard-radix)
+- [`switch-with-description-radix`](https://reui-unbound.pages.dev/?preview=switch-with-description-radix)
+- [`switch-disabled-radix`](https://reui-unbound.pages.dev/?preview=switch-disabled-radix)
+- [`switch-sizes-radix`](https://reui-unbound.pages.dev/?preview=switch-sizes-radix)
+- [`switch-switch-group-radix`](https://reui-unbound.pages.dev/?preview=switch-switch-group-radix)
+- [`switch-card-separators-radix`](https://reui-unbound.pages.dev/?preview=switch-card-separators-radix)
+- [`switch-card-with-icons-radix`](https://reui-unbound.pages.dev/?preview=switch-card-with-icons-radix)
+- [`switch-in-frame-radix`](https://reui-unbound.pages.dev/?preview=switch-in-frame-radix)
+- [`switch-tooltip-info-radix`](https://reui-unbound.pages.dev/?preview=switch-tooltip-info-radix)
+- [`switch-with-badges-radix`](https://reui-unbound.pages.dev/?preview=switch-with-badges-radix)
+- [`switch-colored-radix`](https://reui-unbound.pages.dev/?preview=switch-colored-radix)
+- [`switch-destructive-confirm-radix`](https://reui-unbound.pages.dev/?preview=switch-destructive-confirm-radix)
+- [`switch-compact-table-radix`](https://reui-unbound.pages.dev/?preview=switch-compact-table-radix)
+- [`switch-card-grid-radix`](https://reui-unbound.pages.dev/?preview=switch-card-grid-radix)
+
+
 
 ## Install
 

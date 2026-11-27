@@ -7,16 +7,23 @@ description: Drag-and-drop board with columns, cards and overlays.
 
 Drag-and-drop board with columns, cards and overlays.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`kanban-radix`](https://reui-unbound.pages.dev/?preview=kanban-radix)
-- **Radix** — [`kanban-placeholder-overlay-radix`](https://reui-unbound.pages.dev/?preview=kanban-placeholder-overlay-radix)
-- **Radix** — [`kanban-dynamic-overlay-radix`](https://reui-unbound.pages.dev/?preview=kanban-dynamic-overlay-radix)
-- **Radix** — [`kanban-frame-columns-radix`](https://reui-unbound.pages.dev/?preview=kanban-frame-columns-radix)
-- **Radix** — [`kanban-stacked-frame-radix`](https://reui-unbound.pages.dev/?preview=kanban-stacked-frame-radix)
-- **Radix** — [`kanban-feature-roadmap-radix`](https://reui-unbound.pages.dev/?preview=kanban-feature-roadmap-radix)
-- **Radix** — [`kanban-persisted-moves-radix`](https://reui-unbound.pages.dev/?preview=kanban-persisted-moves-radix)
-- **Base** — [`kanban-base`](https://reui-unbound.pages.dev/?preview=kanban-base)
+### Radix (7)
+
+- [`kanban-radix`](https://reui-unbound.pages.dev/?preview=kanban-radix)
+- [`kanban-placeholder-overlay-radix`](https://reui-unbound.pages.dev/?preview=kanban-placeholder-overlay-radix)
+- [`kanban-dynamic-overlay-radix`](https://reui-unbound.pages.dev/?preview=kanban-dynamic-overlay-radix)
+- [`kanban-frame-columns-radix`](https://reui-unbound.pages.dev/?preview=kanban-frame-columns-radix)
+- [`kanban-stacked-frame-radix`](https://reui-unbound.pages.dev/?preview=kanban-stacked-frame-radix)
+- [`kanban-feature-roadmap-radix`](https://reui-unbound.pages.dev/?preview=kanban-feature-roadmap-radix)
+- [`kanban-persisted-moves-radix`](https://reui-unbound.pages.dev/?preview=kanban-persisted-moves-radix)
+
+### Base (1)
+
+- [`kanban-base`](https://reui-unbound.pages.dev/?preview=kanban-base)
 
 ## Install
 

@@ -6,9 +6,11 @@ category: Auth
 
 # Split Method Picker
 
+Split Method Picker auth block.
+
 **Block:** `auth-split-method-picker` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-split-method-picker)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=auth-split-method-picker)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AuthSplitMethodPickerBlock />
 }
 ```
+
+## More in Auth
+
+- [Centered Magic Link](./auth-centered-magic-link.md)
+- [Centered Method Picker](./auth-centered-method-picker.md)
+- [Centered Password Login](./auth-centered-password-login.md)
+- [Customer Quotes Login](./auth-customer-quotes-login.md)
+- [Founder Story Login](./auth-founder-story-login.md)
+- [Framed Password Login](./auth-framed-password-login.md)
 
 ## Files
 

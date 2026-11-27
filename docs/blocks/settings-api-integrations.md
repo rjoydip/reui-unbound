@@ -6,9 +6,11 @@ category: Settings
 
 # API Integrations
 
+API Integrations settings block.
+
 **Block:** `settings-api-integrations` · **Category:** Settings
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=settings-api-integrations)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=settings-api-integrations)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SettingsApiIntegrationsBlock />
 }
 ```
+
+## More in Settings
+
+- [Account Settings](./settings-account-settings.md)
+- [App Connections](./settings-app-connections.md)
+- [Connected Apps](./settings-connected-apps.md)
+- [General & Display](./settings-general-display.md)
+- [General Settings](./settings-general-settings.md)
+- [Import Sources](./settings-import-sources.md)
 
 ## Files
 

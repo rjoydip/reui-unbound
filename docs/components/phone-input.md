@@ -7,18 +7,25 @@ description: International phone input with country selector and flags.
 
 International phone input with country selector and flags.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`phone-input-radix`](https://reui-unbound.pages.dev/?preview=phone-input-radix)
-- **Radix** — [`phone-input-standard-radix`](https://reui-unbound.pages.dev/?preview=phone-input-standard-radix)
-- **Radix** — [`phone-input-small-radix`](https://reui-unbound.pages.dev/?preview=phone-input-small-radix)
-- **Radix** — [`phone-input-large-radix`](https://reui-unbound.pages.dev/?preview=phone-input-large-radix)
-- **Radix** — [`phone-input-disabled-radix`](https://reui-unbound.pages.dev/?preview=phone-input-disabled-radix)
-- **Radix** — [`phone-input-preset-value-radix`](https://reui-unbound.pages.dev/?preview=phone-input-preset-value-radix)
-- **Radix** — [`phone-input-error-state-radix`](https://reui-unbound.pages.dev/?preview=phone-input-error-state-radix)
-- **Radix** — [`phone-input-default-country-radix`](https://reui-unbound.pages.dev/?preview=phone-input-default-country-radix)
-- **Radix** — [`phone-input-read-only-radix`](https://reui-unbound.pages.dev/?preview=phone-input-read-only-radix)
-- **Base** — [`phone-input-base`](https://reui-unbound.pages.dev/?preview=phone-input-base)
+### Radix (9)
+
+- [`phone-input-radix`](https://reui-unbound.pages.dev/?preview=phone-input-radix)
+- [`phone-input-standard-radix`](https://reui-unbound.pages.dev/?preview=phone-input-standard-radix)
+- [`phone-input-small-radix`](https://reui-unbound.pages.dev/?preview=phone-input-small-radix)
+- [`phone-input-large-radix`](https://reui-unbound.pages.dev/?preview=phone-input-large-radix)
+- [`phone-input-disabled-radix`](https://reui-unbound.pages.dev/?preview=phone-input-disabled-radix)
+- [`phone-input-preset-value-radix`](https://reui-unbound.pages.dev/?preview=phone-input-preset-value-radix)
+- [`phone-input-error-state-radix`](https://reui-unbound.pages.dev/?preview=phone-input-error-state-radix)
+- [`phone-input-default-country-radix`](https://reui-unbound.pages.dev/?preview=phone-input-default-country-radix)
+- [`phone-input-read-only-radix`](https://reui-unbound.pages.dev/?preview=phone-input-read-only-radix)
+
+### Base (1)
+
+- [`phone-input-base`](https://reui-unbound.pages.dev/?preview=phone-input-base)
 
 ## Install
 

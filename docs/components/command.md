@@ -7,17 +7,23 @@ description: Command component with live previews.
 
 Command component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`command-radix`](https://reui-unbound.pages.dev/?preview=command-radix)
-- **Radix** — [`command-standard-radix`](https://reui-unbound.pages.dev/?preview=command-standard-radix)
-- **Radix** — [`command-shortcuts-radix`](https://reui-unbound.pages.dev/?preview=command-shortcuts-radix)
-- **Radix** — [`command-groups-radix`](https://reui-unbound.pages.dev/?preview=command-groups-radix)
-- **Radix** — [`command-many-groups-radix`](https://reui-unbound.pages.dev/?preview=command-many-groups-radix)
-- **Radix** — [`command-file-search-radix`](https://reui-unbound.pages.dev/?preview=command-file-search-radix)
-- **Radix** — [`command-user-search-radix`](https://reui-unbound.pages.dev/?preview=command-user-search-radix)
-- **Radix** — [`command-action-palette-radix`](https://reui-unbound.pages.dev/?preview=command-action-palette-radix)
-- **Radix** — [`command-recent-favorites-radix`](https://reui-unbound.pages.dev/?preview=command-recent-favorites-radix)
+### Radix (9)
+
+- [`command-radix`](https://reui-unbound.pages.dev/?preview=command-radix)
+- [`command-standard-radix`](https://reui-unbound.pages.dev/?preview=command-standard-radix)
+- [`command-shortcuts-radix`](https://reui-unbound.pages.dev/?preview=command-shortcuts-radix)
+- [`command-groups-radix`](https://reui-unbound.pages.dev/?preview=command-groups-radix)
+- [`command-many-groups-radix`](https://reui-unbound.pages.dev/?preview=command-many-groups-radix)
+- [`command-file-search-radix`](https://reui-unbound.pages.dev/?preview=command-file-search-radix)
+- [`command-user-search-radix`](https://reui-unbound.pages.dev/?preview=command-user-search-radix)
+- [`command-action-palette-radix`](https://reui-unbound.pages.dev/?preview=command-action-palette-radix)
+- [`command-recent-favorites-radix`](https://reui-unbound.pages.dev/?preview=command-recent-favorites-radix)
+
+
 
 ## Install
 

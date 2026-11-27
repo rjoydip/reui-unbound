@@ -6,9 +6,11 @@ category: Stats
 
 # Capacity Usage
 
+Capacity Usage stats block.
+
 **Block:** `stats-capacity-usage` · **Category:** Stats
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=stats-capacity-usage)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=stats-capacity-usage)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <StatsCapacityUsageBlock />
 }
 ```
+
+## More in Stats
+
+- [Adoption Rate](./stats-adoption-rate.md)
+- [Analytics Overview](./stats-analytics-overview.md)
+- [API Quota Usage](./stats-api-quota-usage.md)
+- [Compliance Checks](./stats-compliance-checks.md)
+- [KPI Callouts](./stats-kpi-callouts.md)
+- [KPI Scorecard](./stats-kpi-scorecard.md)
 
 ## Files
 

@@ -6,9 +6,11 @@ category: Form
 
 # Deploy App Setup
 
+Deploy App Setup form block.
+
 **Block:** `form-deploy-app-setup` · **Category:** Form
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=form-deploy-app-setup)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=form-deploy-app-setup)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <FormDeployAppSetupBlock />
 }
 ```
+
+## More in Form
+
+- [API Keys Manager](./form-api-keys-manager.md)
+- [Auth Method Settings](./form-auth-method-settings.md)
+- [Business Verification](./form-business-verification.md)
+- [Checkout Setup](./form-checkout-setup.md)
+- [Customer Onboarding](./form-customer-onboarding.md)
+- [Invoice Creator](./form-invoice-creator.md)
 
 ## Files
 

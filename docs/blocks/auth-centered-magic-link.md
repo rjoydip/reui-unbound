@@ -6,9 +6,11 @@ category: Auth
 
 # Centered Magic Link
 
+Centered Magic Link auth block.
+
 **Block:** `auth-centered-magic-link` · **Category:** Auth
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=auth-centered-magic-link)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=auth-centered-magic-link)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <AuthCenteredMagicLinkBlock />
 }
 ```
+
+## More in Auth
+
+- [Centered Method Picker](./auth-centered-method-picker.md)
+- [Centered Password Login](./auth-centered-password-login.md)
+- [Customer Quotes Login](./auth-customer-quotes-login.md)
+- [Founder Story Login](./auth-founder-story-login.md)
+- [Framed Password Login](./auth-framed-password-login.md)
+- [Free Trial Signup](./auth-free-trial-signup.md)
 
 ## Files
 

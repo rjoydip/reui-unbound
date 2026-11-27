@@ -6,9 +6,11 @@ category: Dashboard
 
 # Worklog Timesheet
 
+Worklog Timesheet dashboard block.
+
 **Block:** `dashboard-worklog-timesheet` · **Category:** Dashboard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-worklog-timesheet)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dashboard-worklog-timesheet)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DashboardWorklogTimesheetBlock />
 }
 ```
+
+## More in Dashboard
+
+- [Edge Security Telemetry](./dashboard-edge-security-telemetry.md)
+- [Fulfillment Exceptions](./dashboard-fulfillment-exceptions.md)
+- [Module Tracker](./dashboard-module-tracker.md)
+- [Retail Revenue](./dashboard-retail-revenue.md)
+- [Royalty Payouts](./dashboard-royalty-payouts.md)
+- [Voice Agent Calls](./dashboard-voice-agent-calls.md)
 
 ## Files
 

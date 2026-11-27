@@ -10,4 +10,21 @@ export default defineConfig({
       '@': path.resolve(import.meta.dirname, './src'),
     },
   },
+  build: {
+    rolldownOptions: {
+      // "use no memo" is a React Compiler module directive: it only matters
+      // when compiling source, and the registry publishes source files, so
+      // dropping it from the bundle is fine. Rolldown warns for every
+      // top-level custom directive it cannot preserve.
+      onLog(level, log, handler) {
+        if (
+          log.code === 'MODULE_LEVEL_DIRECTIVE' &&
+          log.message.includes('"use no memo"')
+        ) {
+          return
+        }
+        handler(level, log)
+      },
+    },
+  },
 })

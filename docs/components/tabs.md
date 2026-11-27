@@ -7,18 +7,24 @@ description: Tabs component with live previews.
 
 Tabs component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`tabs-radix`](https://reui-unbound.pages.dev/?preview=tabs-radix)
-- **Radix** — [`tabs-standard-radix`](https://reui-unbound.pages.dev/?preview=tabs-standard-radix)
-- **Radix** — [`tabs-line-variant-radix`](https://reui-unbound.pages.dev/?preview=tabs-line-variant-radix)
-- **Radix** — [`tabs-vertical-radix`](https://reui-unbound.pages.dev/?preview=tabs-vertical-radix)
-- **Radix** — [`tabs-vertical-line-radix`](https://reui-unbound.pages.dev/?preview=tabs-vertical-line-radix)
-- **Radix** — [`tabs-icons-radix`](https://reui-unbound.pages.dev/?preview=tabs-icons-radix)
-- **Radix** — [`tabs-full-width-icons-radix`](https://reui-unbound.pages.dev/?preview=tabs-full-width-icons-radix)
-- **Radix** — [`tabs-badge-counts-radix`](https://reui-unbound.pages.dev/?preview=tabs-badge-counts-radix)
-- **Radix** — [`tabs-side-list-icons-radix`](https://reui-unbound.pages.dev/?preview=tabs-side-list-icons-radix)
-- **Radix** — [`tabs-segmented-control-radix`](https://reui-unbound.pages.dev/?preview=tabs-segmented-control-radix)
+### Radix (10)
+
+- [`tabs-radix`](https://reui-unbound.pages.dev/?preview=tabs-radix)
+- [`tabs-standard-radix`](https://reui-unbound.pages.dev/?preview=tabs-standard-radix)
+- [`tabs-line-variant-radix`](https://reui-unbound.pages.dev/?preview=tabs-line-variant-radix)
+- [`tabs-vertical-radix`](https://reui-unbound.pages.dev/?preview=tabs-vertical-radix)
+- [`tabs-vertical-line-radix`](https://reui-unbound.pages.dev/?preview=tabs-vertical-line-radix)
+- [`tabs-icons-radix`](https://reui-unbound.pages.dev/?preview=tabs-icons-radix)
+- [`tabs-full-width-icons-radix`](https://reui-unbound.pages.dev/?preview=tabs-full-width-icons-radix)
+- [`tabs-badge-counts-radix`](https://reui-unbound.pages.dev/?preview=tabs-badge-counts-radix)
+- [`tabs-side-list-icons-radix`](https://reui-unbound.pages.dev/?preview=tabs-side-list-icons-radix)
+- [`tabs-segmented-control-radix`](https://reui-unbound.pages.dev/?preview=tabs-segmented-control-radix)
+
+
 
 ## Install
 

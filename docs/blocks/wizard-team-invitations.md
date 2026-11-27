@@ -6,9 +6,11 @@ category: Wizard
 
 # Team Invitations
 
+Team Invitations wizard block.
+
 **Block:** `wizard-team-invitations` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-team-invitations)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=wizard-team-invitations)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <WizardTeamInvitationsBlock />
 }
 ```
+
+## More in Wizard
+
+- [Billing Setup](./wizard-billing-setup.md)
+- [Fund Transfer](./wizard-fund-transfer.md)
+- [Plan Upgrade](./wizard-plan-upgrade.md)
+- [Product Setup Wizard](./wizard-product-setup-wizard.md)
+- [Send Invoice](./wizard-send-invoice.md)
+- [Vendor Onboarding](./wizard-vendor-onboarding.md)
 
 ## Files
 

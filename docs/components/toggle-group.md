@@ -7,25 +7,31 @@ description: Toggle Group component with live previews.
 
 Toggle Group component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`toggle-group-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-radix)
-- **Radix** — [`toggle-group-standard-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-standard-radix)
-- **Radix** — [`toggle-group-outline-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-outline-radix)
-- **Radix** — [`toggle-group-sizes-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-sizes-radix)
-- **Radix** — [`toggle-group-custom-spacing-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-custom-spacing-radix)
-- **Radix** — [`toggle-group-filter-control-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-filter-control-radix)
-- **Radix** — [`toggle-group-vertical-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-vertical-radix)
-- **Radix** — [`toggle-group-text-alignment-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-text-alignment-radix)
-- **Radix** — [`toggle-group-view-mode-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-view-mode-radix)
-- **Radix** — [`toggle-group-vertical-settings-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-vertical-settings-radix)
-- **Radix** — [`toggle-group-color-theme-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-color-theme-radix)
-- **Radix** — [`toggle-group-font-size-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-font-size-radix)
-- **Radix** — [`toggle-group-time-range-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-time-range-radix)
-- **Radix** — [`toggle-group-notification-channels-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-notification-channels-radix)
-- **Radix** — [`toggle-group-layout-columns-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-layout-columns-radix)
-- **Radix** — [`toggle-group-sort-direction-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-sort-direction-radix)
-- **Radix** — [`toggle-group-pricing-tier-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-pricing-tier-radix)
+### Radix (17)
+
+- [`toggle-group-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-radix)
+- [`toggle-group-standard-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-standard-radix)
+- [`toggle-group-outline-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-outline-radix)
+- [`toggle-group-sizes-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-sizes-radix)
+- [`toggle-group-custom-spacing-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-custom-spacing-radix)
+- [`toggle-group-filter-control-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-filter-control-radix)
+- [`toggle-group-vertical-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-vertical-radix)
+- [`toggle-group-text-alignment-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-text-alignment-radix)
+- [`toggle-group-view-mode-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-view-mode-radix)
+- [`toggle-group-vertical-settings-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-vertical-settings-radix)
+- [`toggle-group-color-theme-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-color-theme-radix)
+- [`toggle-group-font-size-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-font-size-radix)
+- [`toggle-group-time-range-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-time-range-radix)
+- [`toggle-group-notification-channels-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-notification-channels-radix)
+- [`toggle-group-layout-columns-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-layout-columns-radix)
+- [`toggle-group-sort-direction-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-sort-direction-radix)
+- [`toggle-group-pricing-tier-radix`](https://reui-unbound.pages.dev/?preview=toggle-group-pricing-tier-radix)
+
+
 
 ## Install
 

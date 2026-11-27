@@ -7,19 +7,25 @@ description: Resizable component with live previews.
 
 Resizable component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`resizable-radix`](https://reui-unbound.pages.dev/?preview=resizable-radix)
-- **Radix** — [`resizable-horizontal-layout-radix`](https://reui-unbound.pages.dev/?preview=resizable-horizontal-layout-radix)
-- **Radix** — [`resizable-vertical-layout-radix`](https://reui-unbound.pages.dev/?preview=resizable-vertical-layout-radix)
-- **Radix** — [`resizable-mixed-directions-radix`](https://reui-unbound.pages.dev/?preview=resizable-mixed-directions-radix)
-- **Radix** — [`resizable-nested-grips-radix`](https://reui-unbound.pages.dev/?preview=resizable-nested-grips-radix)
-- **Radix** — [`resizable-animated-pill-radix`](https://reui-unbound.pages.dev/?preview=resizable-animated-pill-radix)
-- **Radix** — [`resizable-spring-pill-radix`](https://reui-unbound.pages.dev/?preview=resizable-spring-pill-radix)
-- **Radix** — [`resizable-capsule-expansion-radix`](https://reui-unbound.pages.dev/?preview=resizable-capsule-expansion-radix)
-- **Radix** — [`resizable-nested-pills-radix`](https://reui-unbound.pages.dev/?preview=resizable-nested-pills-radix)
-- **Radix** — [`resizable-three-panels-radix`](https://reui-unbound.pages.dev/?preview=resizable-three-panels-radix)
-- **Radix** — [`resizable-size-tracking-radix`](https://reui-unbound.pages.dev/?preview=resizable-size-tracking-radix)
+### Radix (11)
+
+- [`resizable-radix`](https://reui-unbound.pages.dev/?preview=resizable-radix)
+- [`resizable-horizontal-layout-radix`](https://reui-unbound.pages.dev/?preview=resizable-horizontal-layout-radix)
+- [`resizable-vertical-layout-radix`](https://reui-unbound.pages.dev/?preview=resizable-vertical-layout-radix)
+- [`resizable-mixed-directions-radix`](https://reui-unbound.pages.dev/?preview=resizable-mixed-directions-radix)
+- [`resizable-nested-grips-radix`](https://reui-unbound.pages.dev/?preview=resizable-nested-grips-radix)
+- [`resizable-animated-pill-radix`](https://reui-unbound.pages.dev/?preview=resizable-animated-pill-radix)
+- [`resizable-spring-pill-radix`](https://reui-unbound.pages.dev/?preview=resizable-spring-pill-radix)
+- [`resizable-capsule-expansion-radix`](https://reui-unbound.pages.dev/?preview=resizable-capsule-expansion-radix)
+- [`resizable-nested-pills-radix`](https://reui-unbound.pages.dev/?preview=resizable-nested-pills-radix)
+- [`resizable-three-panels-radix`](https://reui-unbound.pages.dev/?preview=resizable-three-panels-radix)
+- [`resizable-size-tracking-radix`](https://reui-unbound.pages.dev/?preview=resizable-size-tracking-radix)
+
+
 
 ## Install
 

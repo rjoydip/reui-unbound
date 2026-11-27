@@ -6,9 +6,11 @@ category: Card
 
 # Applicant Record
 
+Applicant Record card block.
+
 **Block:** `card-applicant-record` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-applicant-record)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-applicant-record)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardApplicantRecordBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
+- [Compliance Strip](./card-compliance-strip.md)
 
 ## Files
 

@@ -6,9 +6,11 @@ category: Wizard
 
 # Vendor Onboarding
 
+Vendor Onboarding wizard block.
+
 **Block:** `wizard-vendor-onboarding` · **Category:** Wizard
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=wizard-vendor-onboarding)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=wizard-vendor-onboarding)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <WizardVendorOnboardingBlock />
 }
 ```
+
+## More in Wizard
+
+- [Billing Setup](./wizard-billing-setup.md)
+- [Fund Transfer](./wizard-fund-transfer.md)
+- [Plan Upgrade](./wizard-plan-upgrade.md)
+- [Product Setup Wizard](./wizard-product-setup-wizard.md)
+- [Send Invoice](./wizard-send-invoice.md)
+- [Team Invitations](./wizard-team-invitations.md)
 
 ## Files
 

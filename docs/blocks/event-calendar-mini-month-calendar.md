@@ -6,9 +6,11 @@ category: Event Calendar
 
 # Mini Month Calendar
 
+Mini Month Calendar event-calendar block.
+
 **Block:** `event-calendar-mini-month-calendar` · **Category:** Event Calendar
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-mini-month-calendar)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=event-calendar-mini-month-calendar)
 
 ## Install
 
@@ -25,6 +27,14 @@ export default function Page() {
   return <EventCalendarMiniMonthCalendarBlock />
 }
 ```
+
+## More in Event Calendar
+
+- [Clinic Chair Board](./event-calendar-clinic-chair-board.md)
+- [Hotel Front Desk](./event-calendar-hotel-front-desk.md)
+- [Lending Deal Calendar](./event-calendar-lending-deal-calendar.md)
+- [Personal Calendar](./event-calendar-personal-calendar.md)
+- [Shift Roster](./event-calendar-shift-roster.md)
 
 ## Files
 

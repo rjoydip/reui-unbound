@@ -6,9 +6,11 @@ category: Rich Text Editor
 
 # Collaborative Editor
 
+Collaborative Editor rich-text-editor block.
+
 **Block:** `rich-text-editor-collaborative-editor` · **Category:** Rich Text Editor
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-collaborative-editor)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=rich-text-editor-collaborative-editor)
 
 ## Install
 
@@ -25,6 +27,13 @@ export default function Page() {
   return <RichTextEditorCollaborativeEditorBlock />
 }
 ```
+
+## More in Rich Text Editor
+
+- [AI Writing Assistant](./rich-text-editor-ai-writing-assistant.md)
+- [Contract Redlines](./rich-text-editor-contract-redlines.md)
+- [Document Editor](./rich-text-editor-document-editor.md)
+- [Wiki Page Editor](./rich-text-editor-wiki-page-editor.md)
 
 ## Files
 

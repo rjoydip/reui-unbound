@@ -40,10 +40,17 @@ import {
   categoriesInGroup,
 } from "@/blocks/~internal/registry"
 import type { BlockEntry } from "@/blocks/~internal/registry"
-import { COMPONENT_ENTRIES } from "@/blocks/components/~catalog/catalog"
+import {
+  COMPONENT_INDEX,
+  componentGroups,
+  type CatalogIndexEntry,
+} from "@/blocks/components/~catalog/index"
+import { loadComponentCatalog } from "@/blocks/components/~catalog/load"
 
 export type SidebarView = "all" | "favorites"
 export type Section = "blocks" | "components" | "docs"
+
+type CatalogItem = Pick<BlockEntry, "id" | "name" | "kind" | "category">
 
 const COMPONENT_NOTES: Record<string, string> = {
   Alert: "Inline status messages with title, description and actions.",
@@ -75,18 +82,6 @@ const COMPONENT_NOTES: Record<string, string> = {
   Tree: "Accessible expandable tree with keyboard navigation.",
 }
 
-function componentGroups() {
-  const map = new Map<string, BlockEntry[]>()
-  for (const entry of COMPONENT_ENTRIES) {
-    const list = map.get(entry.name) ?? []
-    list.push(entry)
-    map.set(entry.name, list)
-  }
-  return [...map.entries()]
-    .map(([name, entries]) => ({ name, entries }))
-    .sort((a, b) => a.name.localeCompare(b.name))
-}
-
 const COMPONENT_GROUPS = componentGroups()
 
 const GROUP_ICONS: Record<string, typeof BoxesIcon> = {
@@ -114,12 +109,12 @@ export function CatalogSidebar({
   onToggleCategory,
   resetKey,
 }: {
-  current: BlockEntry
+  current: CatalogItem
   section: Section
   view: SidebarView
   onViewChange: (view: SidebarView) => void
   favorites: string[]
-  onSelect: (block: BlockEntry) => void
+  onSelect: (id: string) => void
   onSelectGroup: (name: string) => void
   onSelectBlockCategory: (name: string) => void
   blockGroup: string | null
@@ -138,7 +133,7 @@ export function CatalogSidebar({
     setExpandedComponents([])
   }, [resetKey])
 
-  const favoriteBlocks = [...BLOCKS, ...COMPONENT_ENTRIES].filter((block) =>
+  const favoriteBlocks = [...BLOCKS, ...COMPONENT_INDEX].filter((block) =>
     favorites.includes(block.id),
   )
   const filteredGroups = useMemo(() => {
@@ -254,7 +249,7 @@ export function CatalogSidebar({
             <BoxesIcon className="size-4" />
             All Components
             <span className="text-muted-foreground ml-auto text-xs tabular-nums">
-              {COMPONENT_ENTRIES.length}
+              {COMPONENT_INDEX.length}
             </span>
           </button>
         ) : (
@@ -401,7 +396,7 @@ export function CatalogSidebar({
                             <button
                               key={block.id}
                               type="button"
-                              onClick={() => onSelect(block)}
+                              onClick={() => onSelect(block.id)}
                               className={cn(
                                 "truncate rounded-md px-2 py-1.5 text-left text-sm transition-colors",
                                 block.id === current.id
@@ -443,7 +438,7 @@ export function CatalogSidebar({
                 <button
                   key={block.id}
                   type="button"
-                  onClick={() => onSelect(block)}
+                  onClick={() => onSelect(block.id)}
                   className={cn(
                     "flex items-center gap-2 rounded-md px-2 py-2 text-left text-sm transition-colors",
                     block.id === current.id
@@ -556,7 +551,7 @@ export function CatalogSidebar({
                           <button
                             key={entry.id}
                             type="button"
-                            onClick={() => onSelect(entry)}
+                            onClick={() => onSelect(entry.id)}
                             className={cn(
                               "rounded-md px-2 py-1 text-left text-sm transition-colors",
                               entry.id === current.id
@@ -624,9 +619,27 @@ function BlockCategoryHover({
   )
 }
 
-function ComponentHover({ group }: { group: { name: string; entries: BlockEntry[] } }) {
+function ComponentHover({
+  group,
+}: {
+  group: { name: string; entries: CatalogIndexEntry[] }
+}) {
+  const [entries, setEntries] = useState<BlockEntry[] | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    loadComponentCatalog().then((all) => {
+      if (!cancelled) {
+        setEntries(all.filter((entry) => entry.name === group.name))
+      }
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [group.name])
+
   const base = group.entries.some((entry) => entry.flavor === "base")
-  const First = group.entries[0]?.Component
+  const First = entries?.[0]?.Component
   return (
     <HoverCardContent
       side="right"

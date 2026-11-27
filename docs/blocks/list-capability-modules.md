@@ -6,9 +6,11 @@ category: List
 
 # Capability Modules
 
+Capability Modules list block.
+
 **Block:** `list-capability-modules` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-capability-modules)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=list-capability-modules)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ListCapabilityModulesBlock />
 }
 ```
+
+## More in List
+
+- [Capital Inflows](./list-capital-inflows.md)
+- [Crypto Activity Feed](./list-crypto-activity-feed.md)
+- [Crypto Portfolio](./list-crypto-portfolio.md)
+- [Fund Leaderboard](./list-fund-leaderboard.md)
+- [Integrations Directory](./list-integrations-directory.md)
+- [Order KPI List](./list-order-kpi-list.md)
 
 ## Files
 

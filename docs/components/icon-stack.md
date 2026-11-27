@@ -7,16 +7,23 @@ description: Overlapping icon or avatar stacks with overflow counts.
 
 Overlapping icon or avatar stacks with overflow counts.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`icon-stack-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-radix)
-- **Radix** — [`icon-stack-isometric-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-isometric-radix)
-- **Radix** — [`icon-stack-sizes-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-sizes-radix)
-- **Radix** — [`icon-stack-colors-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-colors-radix)
-- **Radix** — [`icon-stack-badge-overlay-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-badge-overlay-radix)
-- **Radix** — [`icon-stack-empty-state-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-empty-state-radix)
-- **Radix** — [`icon-stack-item-media-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-item-media-radix)
-- **Base** — [`icon-stack-base`](https://reui-unbound.pages.dev/?preview=icon-stack-base)
+### Radix (7)
+
+- [`icon-stack-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-radix)
+- [`icon-stack-isometric-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-isometric-radix)
+- [`icon-stack-sizes-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-sizes-radix)
+- [`icon-stack-colors-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-colors-radix)
+- [`icon-stack-badge-overlay-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-badge-overlay-radix)
+- [`icon-stack-empty-state-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-empty-state-radix)
+- [`icon-stack-item-media-radix`](https://reui-unbound.pages.dev/?preview=icon-stack-item-media-radix)
+
+### Base (1)
+
+- [`icon-stack-base`](https://reui-unbound.pages.dev/?preview=icon-stack-base)
 
 ## Install
 

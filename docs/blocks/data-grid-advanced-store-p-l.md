@@ -6,9 +6,11 @@ category: Advanced
 
 # Store P&L
 
+Store P&L data grid block.
+
 **Block:** `data-grid-advanced-store-p-l` · **Category:** Advanced
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-2)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=data-grid-advanced-2)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <RegionalStorePnlBlock />
 }
 ```
+
+## More in Advanced
+
+- [Campaign Performance](./data-grid-advanced-campaign-performance.md)
+- [Campaign Targets](./data-grid-advanced-campaign-targets.md)
+- [Factory Scorecard](./data-grid-advanced-factory-scorecard.md)
+- [Fourplex Pro Forma](./data-grid-advanced-fourplex-pro-forma.md)
+- [Freight & Cargo Services](./data-grid-advanced-freight-cargo-services.md)
+- [HR Scorecard](./data-grid-advanced-hr-scorecard.md)
 
 ## Files
 

@@ -6,9 +6,11 @@ category: List
 
 # Wallet Transfers
 
+Wallet Transfers list block.
+
 **Block:** `list-wallet-transfers` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-wallet-transfers)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=list-wallet-transfers)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ListWalletTransfersBlock />
 }
 ```
+
+## More in List
+
+- [Capability Modules](./list-capability-modules.md)
+- [Capital Inflows](./list-capital-inflows.md)
+- [Crypto Activity Feed](./list-crypto-activity-feed.md)
+- [Crypto Portfolio](./list-crypto-portfolio.md)
+- [Fund Leaderboard](./list-fund-leaderboard.md)
+- [Integrations Directory](./list-integrations-directory.md)
 
 ## Files
 

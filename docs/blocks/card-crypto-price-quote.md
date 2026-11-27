@@ -6,9 +6,11 @@ category: Card
 
 # Crypto Price Quote
 
+Crypto Price Quote card block.
+
 **Block:** `card-crypto-price-quote` · **Category:** Card
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=card-crypto-price-quote)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=card-crypto-price-quote)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <CardCryptoPriceQuoteBlock />
 }
 ```
+
+## More in Card
+
+- [Account Balances](./card-account-balances.md)
+- [Applicant Record](./card-applicant-record.md)
+- [Application Summary](./card-application-summary.md)
+- [Audience Reach Stats](./card-audience-reach-stats.md)
+- [Brand Logo Grid](./card-brand-logo-grid.md)
+- [Company Snapshot](./card-company-snapshot.md)
 
 ## Files
 

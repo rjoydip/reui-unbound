@@ -6,9 +6,11 @@ category: Dialog
 
 # Connect App Picker
 
+Connect App Picker dialog block.
+
 **Block:** `dialog-connect-app-picker` · **Category:** Dialog
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=dialog-connect-app-picker)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=dialog-connect-app-picker)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <DialogConnectAppPickerBlock />
 }
 ```
+
+## More in Dialog
+
+- [Account Settings Modal](./dialog-account-settings-modal.md)
+- [Bulk Email Invite](./dialog-bulk-email-invite.md)
+- [Cancel Plan Survey](./dialog-cancel-plan-survey.md)
+- [Duplicate Check](./dialog-duplicate-check.md)
+- [Duration Picker](./dialog-duration-picker.md)
+- [Finance Account Setup](./dialog-finance-account-setup.md)
 
 ## Files
 

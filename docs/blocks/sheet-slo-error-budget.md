@@ -6,9 +6,11 @@ category: Sheet
 
 # SLO Error Budget
 
+SLO Error Budget sheet block.
+
 **Block:** `sheet-slo-error-budget` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-slo-error-budget)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=sheet-slo-error-budget)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SheetSloErrorBudgetBlock />
 }
 ```
+
+## More in Sheet
+
+- [AI Model Chat](./sheet-ai-model-chat.md)
+- [Audit Event Detail](./sheet-audit-event-detail.md)
+- [Canary Rollout](./sheet-canary-rollout.md)
+- [Comment Thread](./sheet-comment-thread.md)
+- [Copilot Chat](./sheet-copilot-chat.md)
+- [Create Project](./sheet-create-project.md)
 
 ## Files
 

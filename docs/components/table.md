@@ -7,26 +7,32 @@ description: Table component with live previews.
 
 Table component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`table-radix`](https://reui-unbound.pages.dev/?preview=table-radix)
-- **Radix** — [`table-standard-radix`](https://reui-unbound.pages.dev/?preview=table-standard-radix)
-- **Radix** — [`table-with-footer-radix`](https://reui-unbound.pages.dev/?preview=table-with-footer-radix)
-- **Radix** — [`table-status-badges-radix`](https://reui-unbound.pages.dev/?preview=table-status-badges-radix)
-- **Radix** — [`table-actions-column-radix`](https://reui-unbound.pages.dev/?preview=table-actions-column-radix)
-- **Radix** — [`table-interactive-rows-radix`](https://reui-unbound.pages.dev/?preview=table-interactive-rows-radix)
-- **Radix** — [`table-team-members-radix`](https://reui-unbound.pages.dev/?preview=table-team-members-radix)
-- **Radix** — [`table-orders-radix`](https://reui-unbound.pages.dev/?preview=table-orders-radix)
-- **Radix** — [`table-projects-radix`](https://reui-unbound.pages.dev/?preview=table-projects-radix)
-- **Radix** — [`table-activity-log-radix`](https://reui-unbound.pages.dev/?preview=table-activity-log-radix)
-- **Radix** — [`table-subscriptions-radix`](https://reui-unbound.pages.dev/?preview=table-subscriptions-radix)
-- **Radix** — [`table-inventory-radix`](https://reui-unbound.pages.dev/?preview=table-inventory-radix)
-- **Radix** — [`table-api-keys-radix`](https://reui-unbound.pages.dev/?preview=table-api-keys-radix)
-- **Radix** — [`table-file-manager-radix`](https://reui-unbound.pages.dev/?preview=table-file-manager-radix)
-- **Radix** — [`table-issues-radix`](https://reui-unbound.pages.dev/?preview=table-issues-radix)
-- **Radix** — [`table-leaderboard-radix`](https://reui-unbound.pages.dev/?preview=table-leaderboard-radix)
-- **Radix** — [`table-employee-profile-radix`](https://reui-unbound.pages.dev/?preview=table-employee-profile-radix)
-- **Radix** — [`table-server-config-radix`](https://reui-unbound.pages.dev/?preview=table-server-config-radix)
+### Radix (18)
+
+- [`table-radix`](https://reui-unbound.pages.dev/?preview=table-radix)
+- [`table-standard-radix`](https://reui-unbound.pages.dev/?preview=table-standard-radix)
+- [`table-with-footer-radix`](https://reui-unbound.pages.dev/?preview=table-with-footer-radix)
+- [`table-status-badges-radix`](https://reui-unbound.pages.dev/?preview=table-status-badges-radix)
+- [`table-actions-column-radix`](https://reui-unbound.pages.dev/?preview=table-actions-column-radix)
+- [`table-interactive-rows-radix`](https://reui-unbound.pages.dev/?preview=table-interactive-rows-radix)
+- [`table-team-members-radix`](https://reui-unbound.pages.dev/?preview=table-team-members-radix)
+- [`table-orders-radix`](https://reui-unbound.pages.dev/?preview=table-orders-radix)
+- [`table-projects-radix`](https://reui-unbound.pages.dev/?preview=table-projects-radix)
+- [`table-activity-log-radix`](https://reui-unbound.pages.dev/?preview=table-activity-log-radix)
+- [`table-subscriptions-radix`](https://reui-unbound.pages.dev/?preview=table-subscriptions-radix)
+- [`table-inventory-radix`](https://reui-unbound.pages.dev/?preview=table-inventory-radix)
+- [`table-api-keys-radix`](https://reui-unbound.pages.dev/?preview=table-api-keys-radix)
+- [`table-file-manager-radix`](https://reui-unbound.pages.dev/?preview=table-file-manager-radix)
+- [`table-issues-radix`](https://reui-unbound.pages.dev/?preview=table-issues-radix)
+- [`table-leaderboard-radix`](https://reui-unbound.pages.dev/?preview=table-leaderboard-radix)
+- [`table-employee-profile-radix`](https://reui-unbound.pages.dev/?preview=table-employee-profile-radix)
+- [`table-server-config-radix`](https://reui-unbound.pages.dev/?preview=table-server-config-radix)
+
+
 
 ## Install
 

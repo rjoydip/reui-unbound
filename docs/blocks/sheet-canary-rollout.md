@@ -6,9 +6,11 @@ category: Sheet
 
 # Canary Rollout
 
+Canary Rollout sheet block.
+
 **Block:** `sheet-canary-rollout` · **Category:** Sheet
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=sheet-canary-rollout)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=sheet-canary-rollout)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <SheetCanaryRolloutBlock />
 }
 ```
+
+## More in Sheet
+
+- [AI Model Chat](./sheet-ai-model-chat.md)
+- [Audit Event Detail](./sheet-audit-event-detail.md)
+- [Comment Thread](./sheet-comment-thread.md)
+- [Copilot Chat](./sheet-copilot-chat.md)
+- [Create Project](./sheet-create-project.md)
+- [Cron Job Detail](./sheet-cron-job-detail.md)
 
 ## Files
 

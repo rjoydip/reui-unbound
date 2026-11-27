@@ -7,22 +7,29 @@ description: Vertical event timeline with dates, indicators and content.
 
 Vertical event timeline with dates, indicators and content.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`timeline-radix`](https://reui-unbound.pages.dev/?preview=timeline-radix)
-- **Radix** — [`timeline-standard-radix`](https://reui-unbound.pages.dev/?preview=timeline-standard-radix)
-- **Radix** — [`timeline-roadmap-radix`](https://reui-unbound.pages.dev/?preview=timeline-roadmap-radix)
-- **Radix** — [`timeline-order-status-radix`](https://reui-unbound.pages.dev/?preview=timeline-order-status-radix)
-- **Radix** — [`timeline-git-activity-radix`](https://reui-unbound.pages.dev/?preview=timeline-git-activity-radix)
-- **Radix** — [`timeline-milestones-radix`](https://reui-unbound.pages.dev/?preview=timeline-milestones-radix)
-- **Radix** — [`timeline-pipeline-steps-radix`](https://reui-unbound.pages.dev/?preview=timeline-pipeline-steps-radix)
-- **Radix** — [`timeline-roadmap-items-radix`](https://reui-unbound.pages.dev/?preview=timeline-roadmap-items-radix)
-- **Radix** — [`timeline-horizontal-radix`](https://reui-unbound.pages.dev/?preview=timeline-horizontal-radix)
-- **Radix** — [`timeline-leading-labels-radix`](https://reui-unbound.pages.dev/?preview=timeline-leading-labels-radix)
-- **Radix** — [`timeline-deployment-log-radix`](https://reui-unbound.pages.dev/?preview=timeline-deployment-log-radix)
-- **Radix** — [`timeline-avatar-activity-radix`](https://reui-unbound.pages.dev/?preview=timeline-avatar-activity-radix)
-- **Radix** — [`timeline-compact-milestones-radix`](https://reui-unbound.pages.dev/?preview=timeline-compact-milestones-radix)
-- **Base** — [`timeline-base`](https://reui-unbound.pages.dev/?preview=timeline-base)
+### Radix (13)
+
+- [`timeline-radix`](https://reui-unbound.pages.dev/?preview=timeline-radix)
+- [`timeline-standard-radix`](https://reui-unbound.pages.dev/?preview=timeline-standard-radix)
+- [`timeline-roadmap-radix`](https://reui-unbound.pages.dev/?preview=timeline-roadmap-radix)
+- [`timeline-order-status-radix`](https://reui-unbound.pages.dev/?preview=timeline-order-status-radix)
+- [`timeline-git-activity-radix`](https://reui-unbound.pages.dev/?preview=timeline-git-activity-radix)
+- [`timeline-milestones-radix`](https://reui-unbound.pages.dev/?preview=timeline-milestones-radix)
+- [`timeline-pipeline-steps-radix`](https://reui-unbound.pages.dev/?preview=timeline-pipeline-steps-radix)
+- [`timeline-roadmap-items-radix`](https://reui-unbound.pages.dev/?preview=timeline-roadmap-items-radix)
+- [`timeline-horizontal-radix`](https://reui-unbound.pages.dev/?preview=timeline-horizontal-radix)
+- [`timeline-leading-labels-radix`](https://reui-unbound.pages.dev/?preview=timeline-leading-labels-radix)
+- [`timeline-deployment-log-radix`](https://reui-unbound.pages.dev/?preview=timeline-deployment-log-radix)
+- [`timeline-avatar-activity-radix`](https://reui-unbound.pages.dev/?preview=timeline-avatar-activity-radix)
+- [`timeline-compact-milestones-radix`](https://reui-unbound.pages.dev/?preview=timeline-compact-milestones-radix)
+
+### Base (1)
+
+- [`timeline-base`](https://reui-unbound.pages.dev/?preview=timeline-base)
 
 ## Install
 

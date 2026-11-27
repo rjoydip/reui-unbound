@@ -7,27 +7,34 @@ description: Tinted icon container for compact visual anchors.
 
 Tinted icon container for compact visual anchors.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`icon-tile-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-radix)
-- **Radix** — [`icon-tile-default-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-default-radix)
-- **Radix** — [`icon-tile-elevated-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-elevated-radix)
-- **Radix** — [`icon-tile-framed-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-framed-radix)
-- **Radix** — [`icon-tile-all-variants-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-all-variants-radix)
-- **Radix** — [`icon-tile-sizes-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-sizes-radix)
-- **Radix** — [`icon-tile-circular-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-circular-radix)
-- **Radix** — [`icon-tile-custom-sizing-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-custom-sizing-radix)
-- **Radix** — [`icon-tile-color-tones-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-color-tones-radix)
-- **Radix** — [`icon-tile-text-content-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-text-content-radix)
-- **Radix** — [`icon-tile-list-row-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-list-row-radix)
-- **Radix** — [`icon-tile-feature-card-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-feature-card-radix)
-- **Radix** — [`icon-tile-empty-state-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-empty-state-radix)
-- **Radix** — [`icon-tile-interactive-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-interactive-radix)
-- **Radix** — [`icon-tile-status-overlay-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-status-overlay-radix)
-- **Radix** — [`icon-tile-soft-tones-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-soft-tones-radix)
-- **Radix** — [`icon-tile-solid-tones-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-solid-tones-radix)
-- **Radix** — [`icon-tile-brand-colors-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-brand-colors-radix)
-- **Base** — [`icon-tile-base`](https://reui-unbound.pages.dev/?preview=icon-tile-base)
+### Radix (18)
+
+- [`icon-tile-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-radix)
+- [`icon-tile-default-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-default-radix)
+- [`icon-tile-elevated-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-elevated-radix)
+- [`icon-tile-framed-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-framed-radix)
+- [`icon-tile-all-variants-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-all-variants-radix)
+- [`icon-tile-sizes-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-sizes-radix)
+- [`icon-tile-circular-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-circular-radix)
+- [`icon-tile-custom-sizing-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-custom-sizing-radix)
+- [`icon-tile-color-tones-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-color-tones-radix)
+- [`icon-tile-text-content-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-text-content-radix)
+- [`icon-tile-list-row-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-list-row-radix)
+- [`icon-tile-feature-card-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-feature-card-radix)
+- [`icon-tile-empty-state-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-empty-state-radix)
+- [`icon-tile-interactive-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-interactive-radix)
+- [`icon-tile-status-overlay-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-status-overlay-radix)
+- [`icon-tile-soft-tones-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-soft-tones-radix)
+- [`icon-tile-solid-tones-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-solid-tones-radix)
+- [`icon-tile-brand-colors-radix`](https://reui-unbound.pages.dev/?preview=icon-tile-brand-colors-radix)
+
+### Base (1)
+
+- [`icon-tile-base`](https://reui-unbound.pages.dev/?preview=icon-tile-base)
 
 ## Install
 

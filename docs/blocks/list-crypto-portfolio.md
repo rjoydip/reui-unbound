@@ -6,9 +6,11 @@ category: List
 
 # Crypto Portfolio
 
+Crypto Portfolio list block.
+
 **Block:** `list-crypto-portfolio` · **Category:** List
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=list-crypto-portfolio)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=list-crypto-portfolio)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ListCryptoPortfolioBlock />
 }
 ```
+
+## More in List
+
+- [Capability Modules](./list-capability-modules.md)
+- [Capital Inflows](./list-capital-inflows.md)
+- [Crypto Activity Feed](./list-crypto-activity-feed.md)
+- [Fund Leaderboard](./list-fund-leaderboard.md)
+- [Integrations Directory](./list-integrations-directory.md)
+- [Order KPI List](./list-order-kpi-list.md)
 
 ## Files
 

@@ -5,7 +5,8 @@ import {
   SunIcon,
 } from "lucide-react"
 
-import { CATALOG } from "@/blocks/components/~catalog/catalog"
+import { COMPONENT_INDEX } from "@/blocks/components/~catalog/index"
+import { BLOCKS } from "@/blocks/~internal/registry"
 import type { Section } from "@/components/~app/catalog-sidebar"
 import { Button } from "@/components/ui/button"
 import { Logo } from "@/components/~app/logo"
@@ -31,6 +32,8 @@ function GithubMark({ className }: { className?: string }) {
     </svg>
   )
 }
+
+const SEARCH_ENTRIES = [...BLOCKS, ...COMPONENT_INDEX]
 
 export function SiteHeader({
   section,
@@ -67,11 +70,17 @@ export function SiteHeader({
     const term = query.trim().toLowerCase()
     if (!term) {
       return [
-        ...CATALOG.filter((entry) => entry.kind !== "component").slice(0, 8),
-        ...CATALOG.filter((entry) => entry.kind === "component").slice(0, 8),
+        ...SEARCH_ENTRIES.filter((entry) => entry.kind !== "component").slice(
+          0,
+          8,
+        ),
+        ...SEARCH_ENTRIES.filter((entry) => entry.kind === "component").slice(
+          0,
+          8,
+        ),
       ]
     }
-    return CATALOG.filter((entry) =>
+    return SEARCH_ENTRIES.filter((entry) =>
       [entry.name, entry.category, entry.stage].some((value) =>
         value.toLowerCase().includes(term),
       ),

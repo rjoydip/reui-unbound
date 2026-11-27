@@ -6,9 +6,11 @@ category: Onboarding
 
 # Split-Screen Signup
 
+Split-Screen Signup onboarding block.
+
 **Block:** `onboarding-split-screen-signup` · **Category:** Onboarding
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-split-screen-signup)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=onboarding-split-screen-signup)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <OnboardingSplitScreenSignupBlock />
 }
 ```
+
+## More in Onboarding
+
+- [Agent & API Setup](./onboarding-agent-api-setup.md)
+- [Centered Setup Flow](./onboarding-centered-setup-flow.md)
+- [CLI Agent Setup](./onboarding-cli-agent-setup.md)
+- [Live Preview Wizard](./onboarding-live-preview-wizard.md)
+- [Marketing Hero Signup](./onboarding-marketing-hero-signup.md)
+- [Onboarding Dialog](./onboarding-onboarding-dialog.md)
 
 ## Files
 

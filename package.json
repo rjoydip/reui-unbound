@@ -14,7 +14,7 @@
     "typecheck": "bunx --bun tsc -b",
     "test": "bun test src",
     "test:e2e": "bunx playwright test",
-    "registry:generate": "bun scripts/generate-registry.mjs",
+    "registry:generate": "bun scripts/generate-registry.mjs && bun scripts/generate-catalog-index.mjs",
     "registry:build": "bun run registry:generate && bun scripts/clean-registry.mjs && bunx --bun shadcn build && bun scripts/verify-registry.mjs",
     "prebuild": "bun run registry:build",
     "predev": "bun run registry:build",

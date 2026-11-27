@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from "react"
+import { useEffect, useMemo, useRef, useState } from "react"
 import ReactMarkdown from "react-markdown"
 import rehypeHighlight from "rehype-highlight"
 import remarkGfm from "remark-gfm"
@@ -16,11 +16,19 @@ import {
 import { Input } from "@/components/ui/input"
 import { cn } from "cn"
 
-const source = import.meta.glob("../../docs/**/*.md", {
-  eager: true,
+import docIndex from "../../../docs/~index.json"
+
+const source = import.meta.glob("../../../docs/**/*.md", {
   query: "?raw",
   import: "default",
-}) as Record<string, string>
+}) as Record<string, () => Promise<string>>
+
+const LOADERS = new Map(
+  Object.entries(source).map(([path, load]) => [
+    path.replace(/^.*docs\//, "docs/"),
+    load,
+  ]),
+)
 
 const PROD_PREVIEW_ORIGIN = "https://reui-unbound.pages.dev"
 
@@ -48,10 +56,14 @@ function firstHref(node: HastNode): string | undefined {
   return undefined
 }
 
-type DocEntry = {
+type DocMeta = {
   key: string
   title: string
   group: "Overview" | "Blocks" | "Components"
+  category?: string
+}
+
+type DocBody = {
   content: string
   files: string[]
   dependencies: string[]
@@ -68,35 +80,11 @@ function normalizePath(value: string) {
   return parts.join("/")
 }
 
-function buildDocs() {
-  return Object.entries(source)
-    .map(([path, content]) => {
-      const key = path.replace(/^.*docs\//, "docs/")
-      const title =
-        content.match(/^---[\s\S]*?\ntitle:\s*(.+)$/m)?.[1]?.trim() ??
-        content.match(/^#\s+(.+)$/m)?.[1]?.trim() ??
-        key.split("/").pop() ??
-        key
-      const group = key.startsWith("docs/blocks/")
-        ? "Blocks"
-        : key.startsWith("docs/components/")
-          ? "Components"
-          : "Overview"
-      const body = content
-        .replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, "")
-        .trim()
-      const anatomy = splitAnatomy(body)
-      return {
-        key,
-        title,
-        group,
-        content: anatomy.content,
-        files: anatomy.files,
-        dependencies: anatomy.dependencies,
-        registryDependencies: anatomy.registryDependencies,
-      } satisfies DocEntry
-    })
-    .sort((a, b) => a.title.localeCompare(b.title))
+function parseDoc(content: string): DocBody {
+  const body = content
+    .replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n?/, "")
+    .trim()
+  return splitAnatomy(body)
 }
 
 /**
@@ -181,7 +169,7 @@ function DocAnatomy({
   files,
   dependencies,
   registryDependencies,
-}: Pick<DocEntry, "files" | "dependencies" | "registryDependencies">) {
+}: Pick<DocBody, "files" | "dependencies" | "registryDependencies">) {
   if (!files.length && !dependencies.length && !registryDependencies.length) {
     return null
   }
@@ -280,8 +268,8 @@ function DocAnatomy({
   )
 }
 
-const DOCS = buildDocs()
-const GROUPS: DocEntry["group"][] = ["Overview", "Blocks", "Components"]
+const DOCS = docIndex as DocMeta[]
+const GROUPS: DocMeta["group"][] = ["Overview", "Blocks", "Components"]
 
 // Local dev and every deployment preview themselves; override only when the
 // docs are hosted somewhere other than the app.
@@ -387,7 +375,14 @@ function DocsTable({ node }: { node?: HastNode }) {
                           <ArrowUpRightIcon className="size-3" />
                         </DocLink>
                       ) : (
-                        <span className="truncate font-mono text-[11px]">
+                        <span
+                          className={cn(
+                            /[\d@/_-]/.test(cell.text) &&
+                              !/\s/.test(cell.text) &&
+                              "truncate font-mono text-[11px]",
+                          )}
+                          title={cell.text}
+                        >
                           {cell.text}
                         </span>
                       )}
@@ -403,11 +398,70 @@ function DocsTable({ node }: { node?: HastNode }) {
   )
 }
 
+function blockCategories(docs: DocMeta[]) {
+  const groups = new Map<string, DocMeta[]>()
+  for (const doc of docs) {
+    const category = doc.category ?? "General"
+    groups.set(category, [...(groups.get(category) ?? []), doc])
+  }
+  return [...groups.entries()].sort(([a], [b]) => a.localeCompare(b))
+}
+
+/** Keep the documentation index first in the Overview group. */
+function overviewFirst(docs: DocMeta[]) {
+  return [...docs].sort(
+    (a, b) =>
+      Number(b.key === "docs/README.md") - Number(a.key === "docs/README.md"),
+  )
+}
+
+function DocNavItem({
+  doc,
+  active,
+  onOpen,
+}: {
+  doc: DocMeta
+  active: boolean
+  onOpen: (key: string) => void
+}) {
+  return (
+    <button
+      type="button"
+      onClick={() => onOpen(doc.key)}
+      className={cn(
+        "truncate rounded-md px-2 py-1.5 text-left text-sm transition-colors",
+        active
+          ? "bg-accent text-accent-foreground font-medium"
+          : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
+      )}
+    >
+      {doc.title}
+    </button>
+  )
+}
+
 export function DocsViewer() {
   const [query, setQuery] = useState("")
   const [active, setActive] = useState("docs/README.md")
+  const [body, setBody] = useState<{ key: string; page: DocBody } | null>(null)
   const [expanded, setExpanded] = useState<string[]>(["Overview"])
   const contentRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const load = LOADERS.get(active)
+    if (!load) return
+
+    let cancelled = false
+    load().then((content) => {
+      if (!cancelled) setBody({ key: active, page: parseDoc(content) })
+    })
+
+    return () => {
+      cancelled = true
+    }
+  }, [active])
+
+  const page = body?.key === active ? body.page : null
 
   const term = query.trim().toLowerCase()
   const filtered = useMemo(() => {
@@ -431,8 +485,14 @@ export function DocsViewer() {
   function openDoc(key: string) {
     const doc = DOCS.find((entry) => entry.key === key)
     setActive(key)
-    if (doc && !expanded.includes(doc.group)) {
-      setExpanded((groups) => [...groups, doc.group])
+    if (doc) {
+      setExpanded((groups) => [
+        ...new Set([
+          ...groups,
+          doc.group,
+          ...(doc.category ? [`${doc.group}/${doc.category}`] : []),
+        ]),
+      ])
     }
     contentRef.current?.scrollTo({ top: 0 })
   }
@@ -516,6 +576,7 @@ export function DocsViewer() {
           {GROUPS.map((group) => {
             const docs = filtered.filter((doc) => doc.group === group)
             if (docs.length === 0) return null
+            const ordered = group === "Overview" ? overviewFirst(docs) : docs
             const isOpen = term ? true : expanded.includes(group)
             const isActive = docs.some((doc) => doc.key === active)
             return (
@@ -544,21 +605,54 @@ export function DocsViewer() {
 
                 {isOpen && (
                   <div className="border-border/70 ml-4 flex flex-col gap-0.5 border-l py-1 pl-2">
-                    {docs.map((doc) => (
-                      <button
-                        key={doc.key}
-                        type="button"
-                        onClick={() => openDoc(doc.key)}
-                        className={cn(
-                          "truncate rounded-md px-2 py-1.5 text-left text-sm transition-colors",
-                          doc.key === active
-                            ? "bg-accent text-accent-foreground font-medium"
-                            : "text-muted-foreground hover:text-foreground hover:bg-muted/60",
-                        )}
-                      >
-                        {doc.title}
-                      </button>
-                    ))}
+                    {group === "Blocks"
+                      ? blockCategories(ordered).map(([category, items]) => {
+                          const categoryKey = `${group}/${category}`
+                          const categoryOpen = term
+                            ? true
+                            : expanded.includes(categoryKey)
+                          return (
+                            <div key={category}>
+                              <button
+                                type="button"
+                                aria-expanded={categoryOpen}
+                                onClick={() => toggleGroup(categoryKey)}
+                                className="hover:bg-muted/60 flex w-full items-center gap-1.5 rounded-md px-2 py-1.5 text-left text-sm transition-colors"
+                              >
+                                <ChevronRightIcon
+                                  className={cn(
+                                    "text-muted-foreground size-3 shrink-0 transition-transform",
+                                    categoryOpen && "rotate-90",
+                                  )}
+                                />
+                                <span className="truncate">{category}</span>
+                                <span className="text-muted-foreground ml-auto text-xs tabular-nums">
+                                  {items.length}
+                                </span>
+                              </button>
+                              {categoryOpen && (
+                                <div className="border-border/70 ml-3 flex flex-col gap-0.5 border-l py-1 pl-2">
+                                  {items.map((doc) => (
+                                    <DocNavItem
+                                      key={doc.key}
+                                      doc={doc}
+                                      active={doc.key === active}
+                                      onOpen={openDoc}
+                                    />
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          )
+                        })
+                      : ordered.map((doc) => (
+                          <DocNavItem
+                            key={doc.key}
+                            doc={doc}
+                            active={doc.key === active}
+                            onOpen={openDoc}
+                          />
+                        ))}
                   </div>
                 )}
               </div>
@@ -584,45 +678,61 @@ export function DocsViewer() {
               onChange={(event) => openDoc(event.target.value)}
               className="bg-background h-9 w-full rounded-md border px-2 text-sm"
             >
-              {GROUPS.map((group) => (
-                <optgroup key={group} label={group}>
-                  {DOCS.filter((doc) => doc.group === group).map((doc) => (
-                    <option key={doc.key} value={doc.key}>
-                      {doc.title}
-                    </option>
-                  ))}
-                </optgroup>
-              ))}
+              {GROUPS.map((group) => {
+                const docs = DOCS.filter((doc) => doc.group === group)
+                const ordered =
+                  group === "Overview" ? overviewFirst(docs) : docs
+                return (
+                  <optgroup key={group} label={group}>
+                    {ordered.map((doc) => (
+                      <option key={doc.key} value={doc.key}>
+                        {doc.title}
+                      </option>
+                    ))}
+                  </optgroup>
+                )
+              })}
             </select>
           </div>
 
           <div
-            className="docs-prose"
+            className="docs-prose preview-enter"
             data-group={current.group}
             onClick={handleContentClick}
             key={current.key}
           >
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm]}
-              rehypePlugins={[rehypeHighlight]}
-              components={{
-                a: ({ href, children, ...props }) => (
-                  <DocLink href={href} {...props}>
-                    {children}
-                  </DocLink>
-                ),
-                table: ({ node }) => <DocsTable node={node as HastNode} />,
-              }}
-            >
-              {current.content}
-            </ReactMarkdown>
+            {page ? (
+              <ReactMarkdown
+                remarkPlugins={[remarkGfm]}
+                rehypePlugins={[rehypeHighlight]}
+                components={{
+                  a: ({ href, children, ...props }) => (
+                    <DocLink href={href} {...props}>
+                      {children}
+                    </DocLink>
+                  ),
+                  table: ({ node }) => <DocsTable node={node as HastNode} />,
+                }}
+              >
+                {page.content}
+              </ReactMarkdown>
+            ) : (
+              <div aria-hidden className="space-y-3">
+                <div className="bg-muted h-4 w-3/4 animate-pulse rounded motion-reduce:animate-none" />
+                <div className="bg-muted h-4 w-full animate-pulse rounded motion-reduce:animate-none" />
+                <div className="bg-muted h-4 w-5/6 animate-pulse rounded motion-reduce:animate-none" />
+                <div className="bg-muted h-4 w-2/3 animate-pulse rounded motion-reduce:animate-none" />
+              </div>
+            )}
           </div>
 
-          <DocAnatomy
-            files={current.files}
-            dependencies={current.dependencies}
-            registryDependencies={current.registryDependencies}
-          />
+          {page && (
+            <DocAnatomy
+              files={page.files}
+              dependencies={page.dependencies}
+              registryDependencies={page.registryDependencies}
+            />
+          )}
         </div>
       </main>
     </div>

@@ -7,17 +7,23 @@ description: Progress component with live previews.
 
 Progress component with live previews.
 
+[← All components](./README.md)
+
 ## Preview
 
-- **Radix** — [`progress-radix`](https://reui-unbound.pages.dev/?preview=progress-radix)
-- **Radix** — [`progress-standard-radix`](https://reui-unbound.pages.dev/?preview=progress-standard-radix)
-- **Radix** — [`progress-small-radix`](https://reui-unbound.pages.dev/?preview=progress-small-radix)
-- **Radix** — [`progress-large-radix`](https://reui-unbound.pages.dev/?preview=progress-large-radix)
-- **Radix** — [`progress-status-messages-radix`](https://reui-unbound.pages.dev/?preview=progress-status-messages-radix)
-- **Radix** — [`progress-file-uploads-radix`](https://reui-unbound.pages.dev/?preview=progress-file-uploads-radix)
-- **Radix** — [`progress-with-slider-radix`](https://reui-unbound.pages.dev/?preview=progress-with-slider-radix)
-- **Radix** — [`progress-multi-step-radix`](https://reui-unbound.pages.dev/?preview=progress-multi-step-radix)
-- **Radix** — [`progress-custom-colors-radix`](https://reui-unbound.pages.dev/?preview=progress-custom-colors-radix)
+### Radix (9)
+
+- [`progress-radix`](https://reui-unbound.pages.dev/?preview=progress-radix)
+- [`progress-standard-radix`](https://reui-unbound.pages.dev/?preview=progress-standard-radix)
+- [`progress-small-radix`](https://reui-unbound.pages.dev/?preview=progress-small-radix)
+- [`progress-large-radix`](https://reui-unbound.pages.dev/?preview=progress-large-radix)
+- [`progress-status-messages-radix`](https://reui-unbound.pages.dev/?preview=progress-status-messages-radix)
+- [`progress-file-uploads-radix`](https://reui-unbound.pages.dev/?preview=progress-file-uploads-radix)
+- [`progress-with-slider-radix`](https://reui-unbound.pages.dev/?preview=progress-with-slider-radix)
+- [`progress-multi-step-radix`](https://reui-unbound.pages.dev/?preview=progress-multi-step-radix)
+- [`progress-custom-colors-radix`](https://reui-unbound.pages.dev/?preview=progress-custom-colors-radix)
+
+
 
 ## Install
 

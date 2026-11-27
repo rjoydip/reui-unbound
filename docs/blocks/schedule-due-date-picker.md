@@ -6,9 +6,11 @@ category: Schedule
 
 # Due Date Picker
 
+Due Date Picker schedule block.
+
 **Block:** `schedule-due-date-picker` · **Category:** Schedule
 
-[Open live preview](https://reui-unbound.pages.dev/?preview=schedule-due-date-picker)
+[← All blocks](./README.md) · [Open live preview](https://reui-unbound.pages.dev/?preview=schedule-due-date-picker)
 
 ## Install
 
@@ -25,6 +27,15 @@ export default function Page() {
   return <ScheduleDueDatePickerBlock />
 }
 ```
+
+## More in Schedule
+
+- [Appointment Planner](./schedule-appointment-planner.md)
+- [Booking Page](./schedule-booking-page.md)
+- [Create Schedule](./schedule-create-schedule.md)
+- [Meeting Scheduler](./schedule-meeting-scheduler.md)
+- [Session Booking](./schedule-session-booking.md)
+- [Team Agenda](./schedule-team-agenda.md)
 
 ## Files
 

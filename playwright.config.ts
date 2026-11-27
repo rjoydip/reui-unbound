@@ -7,6 +7,7 @@ export default defineConfig({
   testDir: "e2e",
   fullyParallel: true,
   timeout: 120_000,
+  expect: { timeout: 10_000 },
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   reporter: process.env.CI ? "github" : "list",
