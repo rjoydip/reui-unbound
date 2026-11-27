@@ -434,6 +434,44 @@ bun run docs:generate
 `,
 )
 
+/* Sidebar metadata only: page bodies load on demand in the docs viewer. */
+function docFiles(dir) {
+  const result = []
+  for (const entry of fs.readdirSync(path.join(root, dir), {
+    withFileTypes: true,
+  })) {
+    const child = path.posix.join(dir, entry.name)
+    if (entry.isDirectory()) result.push(...docFiles(child))
+    else if (entry.name.endsWith(".md")) result.push(child)
+  }
+  return result
+}
+
+const docIndex = docFiles("docs")
+  .map((key) => {
+    const content = read(key)
+    const title =
+      content.match(/^---[\s\S]*?\ntitle:\s*(.+)$/m)?.[1]?.trim() ??
+      content.match(/^#\s+(.+)$/m)?.[1]?.trim() ??
+      key.split("/").pop() ??
+      key
+    const category = content
+      .match(/^---[\s\S]*?\ncategory:\s*(.+)$/m)?.[1]
+      ?.trim()
+    const group = key.startsWith("docs/blocks/")
+      ? "Blocks"
+      : key.startsWith("docs/components/")
+        ? "Components"
+        : "Overview"
+    return { key, title, group, ...(category ? { category } : {}) }
+  })
+  .sort((a, b) => a.title.localeCompare(b.title))
+
+fs.writeFileSync(
+  path.join(root, "docs/~index.json"),
+  JSON.stringify(docIndex, null, 2) + "\n",
+)
+
 console.log(
   `docs: ${blocksRegistry.length} blocks, ${groups.size} components, ${reuiEntries.length + uiEntries.length} previews`,
 )

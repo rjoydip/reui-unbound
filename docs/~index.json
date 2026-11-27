@@ -1,0 +1,2658 @@
+[
+  {
+    "key": "docs/blocks/data-grid-grouping-access-cohort.md",
+    "title": "Access Cohort",
+    "group": "Blocks",
+    "category": "Grouping"
+  },
+  {
+    "key": "docs/blocks/kanban-board-access-review.md",
+    "title": "Access Review",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/components/accordion.md",
+    "title": "Accordion",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/profile-account-team-settings.md",
+    "title": "Account & Team Settings",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/blocks/card-account-balances.md",
+    "title": "Account Balances",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/timeline-account-rollout.md",
+    "title": "Account Rollout",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/settings-account-settings.md",
+    "title": "Account Settings",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/profile-account-settings-hub.md",
+    "title": "Account Settings Hub",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/blocks/dialog-account-settings-modal.md",
+    "title": "Account Settings Modal",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/timeline-activity-dropdown.md",
+    "title": "Activity Dropdown",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/navbar-admin-command-search.md",
+    "title": "Admin Command Search",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/profile-admin-permissions.md",
+    "title": "Admin Permissions",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/blocks/stats-adoption-rate.md",
+    "title": "Adoption Rate",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/onboarding-agent-api-setup.md",
+    "title": "Agent & API Setup",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/blocks/navbar-agent-marketplace.md",
+    "title": "Agent Marketplace",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/gantt-agent-playbook.md",
+    "title": "Agent Playbook",
+    "group": "Blocks",
+    "category": "Gantt"
+  },
+  {
+    "key": "docs/blocks/flow-ai-agent-builder.md",
+    "title": "AI Agent Builder",
+    "group": "Blocks",
+    "category": "Flow"
+  },
+  {
+    "key": "docs/blocks/app-shell-ai-agents-console.md",
+    "title": "AI Agents Console",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/sheet-ai-model-chat.md",
+    "title": "AI Model Chat",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/rich-text-editor-ai-writing-assistant.md",
+    "title": "AI Writing Assistant",
+    "group": "Blocks",
+    "category": "Rich Text Editor"
+  },
+  {
+    "key": "docs/components/alert.md",
+    "title": "Alert",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/alert-dialog.md",
+    "title": "Alert Dialog",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/stats-analytics-overview.md",
+    "title": "Analytics Overview",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/navbar-analytics-toolbar.md",
+    "title": "Analytics Toolbar",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/navbar-api-developer-portal.md",
+    "title": "API Developer Portal",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/settings-api-integrations.md",
+    "title": "API Integrations",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/form-api-keys-manager.md",
+    "title": "API Keys Manager",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/stats-api-quota-usage.md",
+    "title": "API Quota Usage",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-api-requests.md",
+    "title": "API Requests",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/blocks/settings-app-connections.md",
+    "title": "App Connections",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/card-applicant-record.md",
+    "title": "Applicant Record",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/card-application-summary.md",
+    "title": "Application Summary",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/schedule-appointment-planner.md",
+    "title": "Appointment Planner",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/timeline-approval-workflow.md",
+    "title": "Approval Workflow",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/app-shell-apps-grid-header.md",
+    "title": "Apps Grid Header",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/components/aspect-ratio.md",
+    "title": "Aspect Ratio",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/attachment.md",
+    "title": "Attachment",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-audience-reach-stats.md",
+    "title": "Audience Reach Stats",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/sheet-audit-event-detail.md",
+    "title": "Audit Event Detail",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/form-auth-method-settings.md",
+    "title": "Auth Method Settings",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/components/autocomplete.md",
+    "title": "Autocomplete",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/flow-automation-builder.md",
+    "title": "Automation Builder",
+    "group": "Blocks",
+    "category": "Flow"
+  },
+  {
+    "key": "docs/blocks/data-grid-filtering-automation-library.md",
+    "title": "Automation Library",
+    "group": "Blocks",
+    "category": "Filtering"
+  },
+  {
+    "key": "docs/components/avatar.md",
+    "title": "Avatar",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/badge.md",
+    "title": "Badge",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-grouping-bill-of-materials.md",
+    "title": "Bill Of Materials",
+    "group": "Blocks",
+    "category": "Grouping"
+  },
+  {
+    "key": "docs/blocks/profile-billing-settings.md",
+    "title": "Billing Settings",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/blocks/wizard-billing-setup.md",
+    "title": "Billing Setup",
+    "group": "Blocks",
+    "category": "Wizard"
+  },
+  {
+    "key": "docs/block-coverage.md",
+    "title": "Block coverage",
+    "group": "Overview"
+  },
+  {
+    "key": "docs/blocks/README.md",
+    "title": "Blocks",
+    "group": "Blocks"
+  },
+  {
+    "key": "docs/blocks/empty-state-blueprint-library.md",
+    "title": "Blueprint Library",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/schedule-booking-page.md",
+    "title": "Booking Page",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/card-brand-logo-grid.md",
+    "title": "Brand Logo Grid",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/components/breadcrumb.md",
+    "title": "Breadcrumb",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/bubble.md",
+    "title": "Bubble",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/kanban-board-bug-triage.md",
+    "title": "Bug Triage",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/blocks/dialog-bulk-email-invite.md",
+    "title": "Bulk Email Invite",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/form-business-verification.md",
+    "title": "Business Verification",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/components/button.md",
+    "title": "Button",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/button-group.md",
+    "title": "Button Group",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/calendar.md",
+    "title": "Calendar",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/app-shell-calendar-contacts-hub.md",
+    "title": "Calendar Contacts Hub",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-campaign-performance.md",
+    "title": "Campaign Performance",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-campaign-targets.md",
+    "title": "Campaign Targets",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/sheet-canary-rollout.md",
+    "title": "Canary Rollout",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/dialog-cancel-plan-survey.md",
+    "title": "Cancel Plan Survey",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/list-capability-modules.md",
+    "title": "Capability Modules",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/stats-capacity-usage.md",
+    "title": "Capacity Usage",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/list-capital-inflows.md",
+    "title": "Capital Inflows",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/components/card.md",
+    "title": "Card",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/carousel.md",
+    "title": "Carousel",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/cascader.md",
+    "title": "Cascader",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/auth-centered-magic-link.md",
+    "title": "Centered Magic Link",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-centered-method-picker.md",
+    "title": "Centered Method Picker",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-centered-password-login.md",
+    "title": "Centered Password Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/onboarding-centered-setup-flow.md",
+    "title": "Centered Setup Flow",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/components/chart.md",
+    "title": "Chart",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/checkbox.md",
+    "title": "Checkbox",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/form-checkout-setup.md",
+    "title": "Checkout Setup",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/onboarding-cli-agent-setup.md",
+    "title": "CLI Agent Setup",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/blocks/event-calendar-clinic-chair-board.md",
+    "title": "Clinic Chair Board",
+    "group": "Blocks",
+    "category": "Event Calendar"
+  },
+  {
+    "key": "docs/blocks/empty-state-cloud-storage-connect.md",
+    "title": "Cloud Storage Connect",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/navbar-cms-publish-bar.md",
+    "title": "CMS Publish Bar",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/components/code-block.md",
+    "title": "Code Block",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/rich-text-editor-collaborative-editor.md",
+    "title": "Collaborative Editor",
+    "group": "Blocks",
+    "category": "Rich Text Editor"
+  },
+  {
+    "key": "docs/components/collapsible.md",
+    "title": "Collapsible",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/kanban-board-collapsible-columns.md",
+    "title": "Collapsible Columns",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/components/color-picker.md",
+    "title": "Color Picker",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/combobox.md",
+    "title": "Combobox",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/command.md",
+    "title": "Command",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/sheet-comment-thread.md",
+    "title": "Comment Thread",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/app-shell-community-feed-app.md",
+    "title": "Community Feed App",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/data-grid-columns-companies.md",
+    "title": "Companies",
+    "group": "Blocks",
+    "category": "Columns"
+  },
+  {
+    "key": "docs/blocks/card-company-snapshot.md",
+    "title": "Company Snapshot",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/stats-compliance-checks.md",
+    "title": "Compliance Checks",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/card-compliance-strip.md",
+    "title": "Compliance Strip",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/component-coverage.md",
+    "title": "Component coverage",
+    "group": "Overview"
+  },
+  {
+    "key": "docs/components/README.md",
+    "title": "Components",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/dialog-connect-app-picker.md",
+    "title": "Connect App Picker",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/settings-connected-apps.md",
+    "title": "Connected Apps",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-contacts.md",
+    "title": "Contacts",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/components/context-menu.md",
+    "title": "Context Menu",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/rich-text-editor-contract-redlines.md",
+    "title": "Contract Redlines",
+    "group": "Blocks",
+    "category": "Rich Text Editor"
+  },
+  {
+    "key": "docs/blocks/card-contributor-portfolio.md",
+    "title": "Contributor Portfolio",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/sheet-copilot-chat.md",
+    "title": "Copilot Chat",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/data-grid-columns-course-catalog.md",
+    "title": "Course Catalog",
+    "group": "Blocks",
+    "category": "Columns"
+  },
+  {
+    "key": "docs/blocks/sheet-create-project.md",
+    "title": "Create Project",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/schedule-create-schedule.md",
+    "title": "Create Schedule",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/sheet-cron-job-detail.md",
+    "title": "Cron Job Detail",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/list-crypto-activity-feed.md",
+    "title": "Crypto Activity Feed",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/list-crypto-portfolio.md",
+    "title": "Crypto Portfolio",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/card-crypto-price-quote.md",
+    "title": "Crypto Price Quote",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/timeline-customer-activation.md",
+    "title": "Customer Activation",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/form-customer-onboarding.md",
+    "title": "Customer Onboarding",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/card-customer-profile.md",
+    "title": "Customer Profile",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/auth-customer-quotes-login.md",
+    "title": "Customer Quotes Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-customers.md",
+    "title": "Customers",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/blocks/sheet-data-connection.md",
+    "title": "Data Connection",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/components/data-grid.md",
+    "title": "Data Grid",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/empty-state-data-import-start.md",
+    "title": "Data Import Start",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/sheet-dataset-preview.md",
+    "title": "Dataset Preview",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/components/date-selector.md",
+    "title": "Date Selector",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-deal-invoice-tiles.md",
+    "title": "Deal Invoice Tiles",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/data-grid-grouping-delivery-board.md",
+    "title": "Delivery Board",
+    "group": "Blocks",
+    "category": "Grouping"
+  },
+  {
+    "key": "docs/blocks/card-delivery-tracking.md",
+    "title": "Delivery Tracking",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/form-deploy-app-setup.md",
+    "title": "Deploy App Setup",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/whiteboard-design-review-board.md",
+    "title": "Design Review Board",
+    "group": "Blocks",
+    "category": "Whiteboard"
+  },
+  {
+    "key": "docs/blocks/navbar-design-system-manager.md",
+    "title": "Design System Manager",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/card-detail-fact-tiles.md",
+    "title": "Detail Fact Tiles",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/profile-developer-api-keys.md",
+    "title": "Developer API Keys",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/components/dialog.md",
+    "title": "Dialog",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-drag-drop-dispatch-layout.md",
+    "title": "Dispatch Layout",
+    "group": "Blocks",
+    "category": "Drag & Drop"
+  },
+  {
+    "key": "docs/blocks/rich-text-editor-document-editor.md",
+    "title": "Document Editor",
+    "group": "Blocks",
+    "category": "Rich Text Editor"
+  },
+  {
+    "key": "docs/README.md",
+    "title": "Documentation",
+    "group": "Overview"
+  },
+  {
+    "key": "docs/components/drawer.md",
+    "title": "Drawer",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/dropdown-menu.md",
+    "title": "Dropdown Menu",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/app-shell-dual-sidebar-dashboard.md",
+    "title": "Dual Sidebar Dashboard",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/schedule-due-date-picker.md",
+    "title": "Due Date Picker",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/dialog-duplicate-check.md",
+    "title": "Duplicate Check",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/dialog-duration-picker.md",
+    "title": "Duration Picker",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/dashboard-edge-security-telemetry.md",
+    "title": "Edge Security Telemetry",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/sheet-edit-firewall-rule.md",
+    "title": "Edit Firewall Rule",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/navbar-editor-action-bar.md",
+    "title": "Editor Action Bar",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/components/emoji-picker.md",
+    "title": "Emoji Picker",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/empty.md",
+    "title": "Empty",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/empty-state-empty-report-brief.md",
+    "title": "Empty Report Brief",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/empty-state-enable-organizations.md",
+    "title": "Enable Organizations",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/app-shell-endpoint-protection.md",
+    "title": "Endpoint Protection",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-environment-switcher.md",
+    "title": "Environment Switcher",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/components/event-calendar.md",
+    "title": "Event Calendar",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-virtualization-exception-queue.md",
+    "title": "Exception Queue",
+    "group": "Blocks",
+    "category": "Virtualization"
+  },
+  {
+    "key": "docs/blocks/empty-state-export-filters.md",
+    "title": "Export Filters",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-factory-scorecard.md",
+    "title": "Factory Scorecard",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/sheet-failed-deploy.md",
+    "title": "Failed Deploy",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/card-feature-highlights.md",
+    "title": "Feature Highlights",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/kanban-board-feature-roadmap-votes.md",
+    "title": "Feature Roadmap Votes",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/components/field.md",
+    "title": "Field",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/file-type.md",
+    "title": "File Type",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/file-upload.md",
+    "title": "File Upload",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/filters.md",
+    "title": "Filters",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/dialog-finance-account-setup.md",
+    "title": "Finance Account Setup",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/timeline-finance-activity.md",
+    "title": "Finance Activity",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/timeline-finance-activity-sheet.md",
+    "title": "Finance Activity Sheet",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/sheet-firewall-request.md",
+    "title": "Firewall Request",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/empty-state-first-project.md",
+    "title": "First Project",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/card-fitness-stats.md",
+    "title": "Fitness Stats",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/app-shell-fleet-center.md",
+    "title": "Fleet Center",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-fleet-operator-console.md",
+    "title": "Fleet Operator Console",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-floating-sidebar-admin.md",
+    "title": "Floating Sidebar Admin",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-folder-tab-workspace.md",
+    "title": "Folder Tab Workspace",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/auth-founder-story-login.md",
+    "title": "Founder Story Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-fourplex-pro-forma.md",
+    "title": "Fourplex Pro Forma",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/components/frame.md",
+    "title": "Frame",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/auth-framed-password-login.md",
+    "title": "Framed Password Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-free-trial-signup.md",
+    "title": "Free Trial Signup",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-freight-cargo-services.md",
+    "title": "Freight & Cargo Services",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/dashboard-fulfillment-exceptions.md",
+    "title": "Fulfillment Exceptions",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/list-fund-leaderboard.md",
+    "title": "Fund Leaderboard",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/wizard-fund-transfer.md",
+    "title": "Fund Transfer",
+    "group": "Blocks",
+    "category": "Wizard"
+  },
+  {
+    "key": "docs/components/gantt.md",
+    "title": "Gantt",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/settings-general-display.md",
+    "title": "General & Display",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/settings-general-settings.md",
+    "title": "General Settings",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/flow-growth-impact-map.md",
+    "title": "Growth Impact Map",
+    "group": "Blocks",
+    "category": "Flow"
+  },
+  {
+    "key": "docs/blocks/sheet-help-center.md",
+    "title": "Help Center",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/card-help-center-guides.md",
+    "title": "Help Center Guides",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/event-calendar-hotel-front-desk.md",
+    "title": "Hotel Front Desk",
+    "group": "Blocks",
+    "category": "Event Calendar"
+  },
+  {
+    "key": "docs/components/hover-card.md",
+    "title": "Hover Card",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-hr-scorecard.md",
+    "title": "HR Scorecard",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/app-shell-icon-rail-dashboard.md",
+    "title": "Icon Rail Dashboard",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/components/icon-stack.md",
+    "title": "Icon Stack",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/icon-tile.md",
+    "title": "Icon Tile",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/settings-import-sources.md",
+    "title": "Import Sources",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/components/input.md",
+    "title": "Input",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/input-group.md",
+    "title": "Input Group",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/input-otp.md",
+    "title": "Input Otp",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-installed-integration.md",
+    "title": "Installed Integration",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/card-integration-connector.md",
+    "title": "Integration Connector",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/settings-integration-events.md",
+    "title": "Integration Events",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/list-integrations-directory.md",
+    "title": "Integrations Directory",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/settings-integrations-gallery.md",
+    "title": "Integrations Gallery",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/app-shell-inventory-admin.md",
+    "title": "Inventory Admin",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/card-inventory-counters.md",
+    "title": "Inventory Counters",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/card-investor-profile.md",
+    "title": "Investor Profile",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/empty-state-invite-first-member.md",
+    "title": "Invite First Member",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/empty-state-invite-members-prompt.md",
+    "title": "Invite Members Prompt",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/auth-invite-only-sign-in.md",
+    "title": "Invite-Only Sign-In",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/form-invoice-creator.md",
+    "title": "Invoice Creator",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/app-shell-invoice-matching.md",
+    "title": "Invoice Matching",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-invoices.md",
+    "title": "Invoices",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/components/item.md",
+    "title": "Item",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-job-recommendation.md",
+    "title": "Job Recommendation",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-job-schedule.md",
+    "title": "Job Schedule",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/components/kanban.md",
+    "title": "Kanban",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/kbd.md",
+    "title": "Kbd",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/sheet-keyboard-shortcuts.md",
+    "title": "Keyboard Shortcuts",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/card-kpi-area-charts.md",
+    "title": "KPI Area Charts",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/stats-kpi-callouts.md",
+    "title": "KPI Callouts",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/card-kpi-report-links.md",
+    "title": "KPI Report Links",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/stats-kpi-scorecard.md",
+    "title": "KPI Scorecard",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/components/label.md",
+    "title": "Label",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-editing-labels.md",
+    "title": "Labels",
+    "group": "Blocks",
+    "category": "Editing"
+  },
+  {
+    "key": "docs/blocks/dialog-launch-checklist.md",
+    "title": "Launch Checklist",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/data-grid-editing-launch-runbook.md",
+    "title": "Launch Runbook",
+    "group": "Blocks",
+    "category": "Editing"
+  },
+  {
+    "key": "docs/blocks/stats-leads-overview.md",
+    "title": "Leads Overview",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/event-calendar-lending-deal-calendar.md",
+    "title": "Lending Deal Calendar",
+    "group": "Blocks",
+    "category": "Event Calendar"
+  },
+  {
+    "key": "docs/blocks/card-linked-metric-tiles.md",
+    "title": "Linked Metric Tiles",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/onboarding-live-preview-wizard.md",
+    "title": "Live Preview Wizard",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/blocks/card-logistics-kpi-tiles.md",
+    "title": "Logistics KPI Tiles",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/auth-magic-link-card.md",
+    "title": "Magic Link Card",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-magic-link-logos.md",
+    "title": "Magic Link Logos",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-magic-link-reviews.md",
+    "title": "Magic Link Reviews",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/app-shell-mail-inbox.md",
+    "title": "Mail Inbox",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/profile-mailbox-accounts.md",
+    "title": "Mailbox Accounts",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/components/marker.md",
+    "title": "Marker",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/onboarding-marketing-hero-signup.md",
+    "title": "Marketing Hero Signup",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/blocks/navbar-marketing-mega-menu.md",
+    "title": "Marketing Mega Menu",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/card-meeting-agenda-cards.md",
+    "title": "Meeting Agenda Cards",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/profile-meeting-capture.md",
+    "title": "Meeting Capture",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/blocks/schedule-meeting-scheduler.md",
+    "title": "Meeting Scheduler",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/form-member-profile-admin.md",
+    "title": "Member Profile Admin",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-members.md",
+    "title": "Members",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/blocks/data-grid-columns-members.md",
+    "title": "Members",
+    "group": "Blocks",
+    "category": "Columns"
+  },
+  {
+    "key": "docs/components/menubar.md",
+    "title": "Menubar",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/message.md",
+    "title": "Message",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/message-scroller.md",
+    "title": "Message Scroller",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/sheet-metric-detail-sheet.md",
+    "title": "Metric Detail Sheet",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/event-calendar-mini-month-calendar.md",
+    "title": "Mini Month Calendar",
+    "group": "Blocks",
+    "category": "Event Calendar"
+  },
+  {
+    "key": "docs/blocks/app-shell-mission-control.md",
+    "title": "Mission Control",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-model-picker-chat.md",
+    "title": "Model Picker Chat",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/dashboard-module-tracker.md",
+    "title": "Module Tracker",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-modules.md",
+    "title": "Modules",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/components/native-select.md",
+    "title": "Native Select",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/navigation-menu.md",
+    "title": "Navigation Menu",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/sheet-new-connection.md",
+    "title": "New Connection",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/sheet-new-cron-job.md",
+    "title": "New Cron Job",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/sheet-new-firewall-rule.md",
+    "title": "New Firewall Rule",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/form-new-product-form.md",
+    "title": "New Product Form",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/sheet-new-slo.md",
+    "title": "New SLO",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/empty-state-no-search-results.md",
+    "title": "No Search Results",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/card-notice-cards.md",
+    "title": "Notice Cards",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/settings-notification-channels.md",
+    "title": "Notification Channels",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/settings-notification-delivery.md",
+    "title": "Notification Delivery",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/profile-notification-digest.md",
+    "title": "Notification Digest",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/blocks/sheet-notifications-feed.md",
+    "title": "Notifications Feed",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/components/number-field.md",
+    "title": "Number Field",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-numbered-setup-steps.md",
+    "title": "Numbered Setup Steps",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/dialog-oauth-consent.md",
+    "title": "OAuth Consent",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/app-shell-observability-console.md",
+    "title": "Observability Console",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/onboarding-onboarding-dialog.md",
+    "title": "Onboarding Dialog",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/blocks/app-shell-operations-workbench.md",
+    "title": "Operations Workbench",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-opportunities.md",
+    "title": "Opportunities",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/blocks/app-shell-ops-presence-console.md",
+    "title": "Ops Presence Console",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/list-order-kpi-list.md",
+    "title": "Order KPI List",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/navbar-org-environment-switcher.md",
+    "title": "Org & Environment Switcher",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-p-l-outlook.md",
+    "title": "P&L Outlook",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/components/pagination.md",
+    "title": "Pagination",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-partner-showcase.md",
+    "title": "Partner Showcase",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/dialog-per-person-invite.md",
+    "title": "Per-Person Invite",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/card-period-trend-kpis.md",
+    "title": "Period Trend KPIs",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/event-calendar-personal-calendar.md",
+    "title": "Personal Calendar",
+    "group": "Blocks",
+    "category": "Event Calendar"
+  },
+  {
+    "key": "docs/blocks/profile-personal-profile.md",
+    "title": "Personal Profile",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/components/phone-input.md",
+    "title": "Phone Input",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/auth-photo-backdrop-login.md",
+    "title": "Photo Backdrop Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-photo-magic-link.md",
+    "title": "Photo Magic Link",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-photo-split-login.md",
+    "title": "Photo Split Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/app-shell-pinnable-favorites-nav.md",
+    "title": "Pinnable Favorites Nav",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/flow-pipeline-run-monitor.md",
+    "title": "Pipeline Run Monitor",
+    "group": "Blocks",
+    "category": "Flow"
+  },
+  {
+    "key": "docs/blocks/wizard-plan-upgrade.md",
+    "title": "Plan Upgrade",
+    "group": "Blocks",
+    "category": "Wizard"
+  },
+  {
+    "key": "docs/blocks/data-grid-editing-plans.md",
+    "title": "Plans",
+    "group": "Blocks",
+    "category": "Editing"
+  },
+  {
+    "key": "docs/components/popover.md",
+    "title": "Popover",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/stats-portfolio-allocation.md",
+    "title": "Portfolio Allocation",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/settings-privacy-controls.md",
+    "title": "Privacy Controls",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/data-grid-editing-product-inventory.md",
+    "title": "Product Inventory",
+    "group": "Blocks",
+    "category": "Editing"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-product-kpis.md",
+    "title": "Product KPIs",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/wizard-product-setup-wizard.md",
+    "title": "Product Setup Wizard",
+    "group": "Blocks",
+    "category": "Wizard"
+  },
+  {
+    "key": "docs/blocks/data-grid-grouping-production-desk.md",
+    "title": "Production Desk",
+    "group": "Blocks",
+    "category": "Grouping"
+  },
+  {
+    "key": "docs/blocks/form-profile-settings.md",
+    "title": "Profile Settings",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/card-profile-stat-strip.md",
+    "title": "Profile Stat Strip",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/components/progress.md",
+    "title": "Progress",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/kanban-board-progress-ring-workflow.md",
+    "title": "Progress Ring Workflow",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-project-budget.md",
+    "title": "Project Budget",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/card-project-deadline-cards.md",
+    "title": "Project Deadline Cards",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/data-grid-editing-project-intake.md",
+    "title": "Project Intake",
+    "group": "Blocks",
+    "category": "Editing"
+  },
+  {
+    "key": "docs/blocks/dialog-project-templates.md",
+    "title": "Project Templates",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/gantt-project-timeline.md",
+    "title": "Project Timeline",
+    "group": "Blocks",
+    "category": "Gantt"
+  },
+  {
+    "key": "docs/blocks/app-shell-project-tracker-sidebar.md",
+    "title": "Project Tracker Sidebar",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/dialog-project-with-cover.md",
+    "title": "Project With Cover",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/navbar-project-workspace.md",
+    "title": "Project Workspace",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-prospects.md",
+    "title": "Prospects",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/components/questionnaire.md",
+    "title": "Questionnaire",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/dialog-quick-create-entry.md",
+    "title": "Quick Create Entry",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/card-quick-link-tiles.md",
+    "title": "Quick Link Tiles",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/components/radio-group.md",
+    "title": "Radio Group",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-rate-card.md",
+    "title": "Rate Card",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/components/rating.md",
+    "title": "Rating",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/list-recent-investments.md",
+    "title": "Recent Investments",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/kanban-board-recruiting-pipeline.md",
+    "title": "Recruiting Pipeline",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/blocks/profile-referral-rewards.md",
+    "title": "Referral Rewards",
+    "group": "Blocks",
+    "category": "Profile"
+  },
+  {
+    "key": "docs/blocks/sheet-relay-settings.md",
+    "title": "Relay Settings",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/timeline-release-changelog.md",
+    "title": "Release Changelog",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/kanban-board-release-readiness.md",
+    "title": "Release Readiness",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/blocks/data-grid-expansion-release-reviews.md",
+    "title": "Release Reviews",
+    "group": "Blocks",
+    "category": "Expansion"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-reliability-index.md",
+    "title": "Reliability Index",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/data-grid-filtering-renewals-review.md",
+    "title": "Renewals Review",
+    "group": "Blocks",
+    "category": "Filtering"
+  },
+  {
+    "key": "docs/blocks/data-grid-filtering-renewals-risk.md",
+    "title": "Renewals Risk",
+    "group": "Blocks",
+    "category": "Filtering"
+  },
+  {
+    "key": "docs/blocks/kanban-board-renewals-risk.md",
+    "title": "Renewals Risk",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/blocks/data-grid-editing-reorder-plan.md",
+    "title": "Reorder Plan",
+    "group": "Blocks",
+    "category": "Editing"
+  },
+  {
+    "key": "docs/blocks/stats-rep-performance.md",
+    "title": "Rep Performance",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/navbar-repo-branch-picker.md",
+    "title": "Repo Branch Picker",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/card-report-updates.md",
+    "title": "Report Updates",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/data-grid-grouping-reporting-lines.md",
+    "title": "Reporting Lines",
+    "group": "Blocks",
+    "category": "Grouping"
+  },
+  {
+    "key": "docs/blocks/empty-state-reports-workspace.md",
+    "title": "Reports Workspace",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/components/resizable.md",
+    "title": "Resizable",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/app-shell-resizable-ai-chat.md",
+    "title": "Resizable AI Chat",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/gantt-resource-capacity.md",
+    "title": "Resource Capacity",
+    "group": "Blocks",
+    "category": "Gantt"
+  },
+  {
+    "key": "docs/blocks/card-resource-hub-cards.md",
+    "title": "Resource Hub Cards",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/dashboard-retail-revenue.md",
+    "title": "Retail Revenue",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/data-grid-grouping-revenue-by-region.md",
+    "title": "Revenue By Region",
+    "group": "Blocks",
+    "category": "Grouping"
+  },
+  {
+    "key": "docs/blocks/data-grid-grouping-roadmap-queue.md",
+    "title": "Roadmap Queue",
+    "group": "Blocks",
+    "category": "Grouping"
+  },
+  {
+    "key": "docs/blocks/settings-role-capabilities.md",
+    "title": "Role Capabilities",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/form-role-permission-invite.md",
+    "title": "Role Permission Invite",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/blocks/auth-rotating-quotes-login.md",
+    "title": "Rotating Quotes Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/app-shell-route-search-sidebar.md",
+    "title": "Route Search Sidebar",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/data-grid-drag-drop-routing-rules.md",
+    "title": "Routing Rules",
+    "group": "Blocks",
+    "category": "Drag & Drop"
+  },
+  {
+    "key": "docs/blocks/dashboard-royalty-payouts.md",
+    "title": "Royalty Payouts",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/stats-sales-churn-metrics.md",
+    "title": "Sales & Churn Metrics",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/card-sales-outreach-counters.md",
+    "title": "Sales Outreach Counters",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/kanban-board-sales-pipeline.md",
+    "title": "Sales Pipeline",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/blocks/app-shell-scheduling-planner.md",
+    "title": "Scheduling Planner",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/onboarding-screenshot-carousel-setup.md",
+    "title": "Screenshot Carousel Setup",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/components/scroll-area.md",
+    "title": "Scroll Area",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/scrollspy.md",
+    "title": "Scrollspy",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/empty-state-section-add-prompt.md",
+    "title": "Section Add Prompt",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/app-shell-section-tabs-admin.md",
+    "title": "Section Tabs Admin",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-section-tile-rail.md",
+    "title": "Section Tile Rail",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-security-scope-console.md",
+    "title": "Security Scope Console",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/settings-security-settings.md",
+    "title": "Security Settings",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/components/select.md",
+    "title": "Select",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/wizard-send-invoice.md",
+    "title": "Send Invoice",
+    "group": "Blocks",
+    "category": "Wizard"
+  },
+  {
+    "key": "docs/components/separator.md",
+    "title": "Separator",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-service-status-tiles.md",
+    "title": "Service Status Tiles",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-service-visits.md",
+    "title": "Service Visits",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/schedule-session-booking.md",
+    "title": "Session Booking",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/empty-state-settings-setup-tabs.md",
+    "title": "Settings Setup Tabs",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/data-grid-drag-drop-shared-drive.md",
+    "title": "Shared Drive",
+    "group": "Blocks",
+    "category": "Drag & Drop"
+  },
+  {
+    "key": "docs/blocks/card-shared-kpi-panels.md",
+    "title": "Shared KPI Panels",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/components/sheet.md",
+    "title": "Sheet",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/event-calendar-shift-roster.md",
+    "title": "Shift Roster",
+    "group": "Blocks",
+    "category": "Event Calendar"
+  },
+  {
+    "key": "docs/blocks/card-shortcut-launcher.md",
+    "title": "Shortcut Launcher",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/components/sidebar.md",
+    "title": "Sidebar",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/onboarding-sidebar-stepper-wizard.md",
+    "title": "Sidebar Stepper Wizard",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/components/signature-pad.md",
+    "title": "Signature Pad",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/skeleton.md",
+    "title": "Skeleton",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/slider.md",
+    "title": "Slider",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/sheet-slo-error-budget.md",
+    "title": "SLO Error Budget",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/auth-social-proof-login.md",
+    "title": "Social Proof Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/components/sonner.md",
+    "title": "Sonner",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/sortable.md",
+    "title": "Sortable",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-source-link-cards.md",
+    "title": "Source Link Cards",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/list-spending-feed.md",
+    "title": "Spending Feed",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/components/spinner.md",
+    "title": "Spinner",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/auth-split-method-picker.md",
+    "title": "Split Method Picker",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/auth-split-testimonial-login.md",
+    "title": "Split Testimonial Login",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/onboarding-split-screen-signup.md",
+    "title": "Split-Screen Signup",
+    "group": "Blocks",
+    "category": "Onboarding"
+  },
+  {
+    "key": "docs/blocks/data-grid-drag-drop-sprint-backlog.md",
+    "title": "Sprint Backlog",
+    "group": "Blocks",
+    "category": "Drag & Drop"
+  },
+  {
+    "key": "docs/blocks/whiteboard-sprint-planning-board.md",
+    "title": "Sprint Planning Board",
+    "group": "Blocks",
+    "category": "Whiteboard"
+  },
+  {
+    "key": "docs/blocks/stats-stats-overview.md",
+    "title": "Stats Overview",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/components/stepper.md",
+    "title": "Stepper",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-stock-mix.md",
+    "title": "Stock Mix",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-store-kpis.md",
+    "title": "Store KPIs",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-store-p-l.md",
+    "title": "Store P&L",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-strategy-scorecard.md",
+    "title": "Strategy Scorecard",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/stats-subscription-renewals.md",
+    "title": "Subscription Renewals",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/kanban-board-support-escalations.md",
+    "title": "Support Escalations",
+    "group": "Blocks",
+    "category": "Kanban Board"
+  },
+  {
+    "key": "docs/blocks/dialog-support-hub.md",
+    "title": "Support Hub",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/blocks/stats-support-metrics.md",
+    "title": "Support Metrics",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-support-queue.md",
+    "title": "Support Queue",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-support-scorecard.md",
+    "title": "Support Scorecard",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/components/switch.md",
+    "title": "Switch",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/table.md",
+    "title": "Table",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/tabs.md",
+    "title": "Tabs",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-expansion-task-delivery.md",
+    "title": "Task Delivery",
+    "group": "Blocks",
+    "category": "Expansion"
+  },
+  {
+    "key": "docs/blocks/stats-task-progress.md",
+    "title": "Task Progress",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/timeline-team-activity-feed.md",
+    "title": "Team Activity Feed",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/timeline-team-activity-sheet.md",
+    "title": "Team Activity Sheet",
+    "group": "Blocks",
+    "category": "Timeline"
+  },
+  {
+    "key": "docs/blocks/schedule-team-agenda.md",
+    "title": "Team Agenda",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/schedule-team-attendance.md",
+    "title": "Team Attendance",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/app-shell-team-calendar-panel.md",
+    "title": "Team Calendar Panel",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/wizard-team-invitations.md",
+    "title": "Team Invitations",
+    "group": "Blocks",
+    "category": "Wizard"
+  },
+  {
+    "key": "docs/blocks/empty-state-team-launch-steps.md",
+    "title": "Team Launch Steps",
+    "group": "Blocks",
+    "category": "Empty State"
+  },
+  {
+    "key": "docs/blocks/navbar-team-presence.md",
+    "title": "Team Presence",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/app-shell-team-presence-workspace.md",
+    "title": "Team Presence Workspace",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-team-project-switcher.md",
+    "title": "Team Project Switcher",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-technician-capacity.md",
+    "title": "Technician Capacity",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/gantt-technician-dispatch.md",
+    "title": "Technician Dispatch",
+    "group": "Blocks",
+    "category": "Gantt"
+  },
+  {
+    "key": "docs/blocks/dialog-template-library.md",
+    "title": "Template Library",
+    "group": "Blocks",
+    "category": "Dialog"
+  },
+  {
+    "key": "docs/components/textarea.md",
+    "title": "Textarea",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/sheet-ticket-edit-sheet.md",
+    "title": "Ticket Edit Sheet",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/form-ticket-properties.md",
+    "title": "Ticket Properties",
+    "group": "Blocks",
+    "category": "Form"
+  },
+  {
+    "key": "docs/components/time-picker.md",
+    "title": "Time Picker",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/schedule-time-range-picker.md",
+    "title": "Time Range Picker",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/components/timeline.md",
+    "title": "Timeline",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-base-timesheets.md",
+    "title": "Timesheets",
+    "group": "Blocks",
+    "category": "Base"
+  },
+  {
+    "key": "docs/blocks/app-shell-to-do-ai-assistant.md",
+    "title": "To-Do AI Assistant",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/components/toggle.md",
+    "title": "Toggle",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/toggle-group.md",
+    "title": "Toggle Group",
+    "group": "Components"
+  },
+  {
+    "key": "docs/components/tooltip.md",
+    "title": "Tooltip",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/list-top-movers.md",
+    "title": "Top Movers",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/app-shell-top-navbar-admin.md",
+    "title": "Top Navbar Admin",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/card-topic-shortcuts.md",
+    "title": "Topic Shortcuts",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/stats-total-revenue.md",
+    "title": "Total Revenue",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/components/trace.md",
+    "title": "Trace",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/data-grid-filtering-transactions.md",
+    "title": "Transactions",
+    "group": "Blocks",
+    "category": "Filtering"
+  },
+  {
+    "key": "docs/blocks/data-grid-virtualization-transactions.md",
+    "title": "Transactions",
+    "group": "Blocks",
+    "category": "Virtualization"
+  },
+  {
+    "key": "docs/blocks/data-grid-expansion-treasury-waterfall.md",
+    "title": "Treasury Waterfall",
+    "group": "Blocks",
+    "category": "Expansion"
+  },
+  {
+    "key": "docs/components/tree.md",
+    "title": "Tree",
+    "group": "Components"
+  },
+  {
+    "key": "docs/blocks/card-upsell-promo.md",
+    "title": "Upsell Promo",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/card-uptime-monitoring-promo.md",
+    "title": "Uptime Monitoring Promo",
+    "group": "Blocks",
+    "category": "Card"
+  },
+  {
+    "key": "docs/blocks/wizard-vendor-onboarding.md",
+    "title": "Vendor Onboarding",
+    "group": "Blocks",
+    "category": "Wizard"
+  },
+  {
+    "key": "docs/blocks/sheet-view-customizer.md",
+    "title": "View Customizer",
+    "group": "Blocks",
+    "category": "Sheet"
+  },
+  {
+    "key": "docs/blocks/app-shell-view-toolbar-workspace.md",
+    "title": "View Toolbar Workspace",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/dashboard-voice-agent-calls.md",
+    "title": "Voice Agent Calls",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/stats-wallet-balance.md",
+    "title": "Wallet Balance",
+    "group": "Blocks",
+    "category": "Stats"
+  },
+  {
+    "key": "docs/blocks/list-wallet-transfers.md",
+    "title": "Wallet Transfers",
+    "group": "Blocks",
+    "category": "List"
+  },
+  {
+    "key": "docs/blocks/settings-webhook-endpoints.md",
+    "title": "Webhook Endpoints",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/schedule-webinar-rsvp.md",
+    "title": "Webinar RSVP",
+    "group": "Blocks",
+    "category": "Schedule"
+  },
+  {
+    "key": "docs/blocks/app-shell-webmail-client.md",
+    "title": "Webmail Client",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/app-shell-whiteboard-workspace.md",
+    "title": "Whiteboard Workspace",
+    "group": "Blocks",
+    "category": "App Shell"
+  },
+  {
+    "key": "docs/blocks/data-grid-advanced-wholesale-applications.md",
+    "title": "Wholesale Applications",
+    "group": "Blocks",
+    "category": "Advanced"
+  },
+  {
+    "key": "docs/blocks/rich-text-editor-wiki-page-editor.md",
+    "title": "Wiki Page Editor",
+    "group": "Blocks",
+    "category": "Rich Text Editor"
+  },
+  {
+    "key": "docs/blocks/auth-work-email-continue.md",
+    "title": "Work Email Continue",
+    "group": "Blocks",
+    "category": "Auth"
+  },
+  {
+    "key": "docs/blocks/data-grid-columns-work-queue.md",
+    "title": "Work Queue",
+    "group": "Blocks",
+    "category": "Columns"
+  },
+  {
+    "key": "docs/blocks/navbar-workflow-editor.md",
+    "title": "Workflow Editor",
+    "group": "Blocks",
+    "category": "Navbar"
+  },
+  {
+    "key": "docs/blocks/dashboard-workforce-coverage.md",
+    "title": "Workforce Coverage",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/dashboard-worklog-timesheet.md",
+    "title": "Worklog Timesheet",
+    "group": "Blocks",
+    "category": "Dashboard"
+  },
+  {
+    "key": "docs/blocks/data-grid-columns-workspace-access-review.md",
+    "title": "Workspace Access Review",
+    "group": "Blocks",
+    "category": "Columns"
+  },
+  {
+    "key": "docs/blocks/settings-workspace-preferences.md",
+    "title": "Workspace Preferences",
+    "group": "Blocks",
+    "category": "Settings"
+  },
+  {
+    "key": "docs/blocks/auth-workspace-sign-in.md",
+    "title": "Workspace Sign-In",
+    "group": "Blocks",
+    "category": "Auth"
+  }
+]
